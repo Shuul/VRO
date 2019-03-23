@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<components>
+	<component name="obliterator_bullet" class="bullet">
+		<source geometry="extensions\VRO\assets\fx\weaponFx\obliterator_bullet_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="240" g="43" b="20" range="100" shadowrange="100" lighteffect="1" trigger="1" intensity="0.6">
+						<lightanimations/>
+						<offset>
+							<position x="-2.762699E-02" y="5.310202E-02" z="1.839346"/>
+						</offset>
+					</omni>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="bullet">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part animation textureanimation  ">
+				<offset/>
+				<animations>
+					<animation name="loop" start="1" end="300"/>
+				</animations>
+				<parts>
+					<part name="anim_beam_core">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.beam_fight_alpha"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="2.128976" y="2.128976" z="0.5"/>
+							<center x="0" y="0" z="0.4999999"/>
+						</size>
+						<size_raw>
+							<max x="2.128976" y="2.128977" z="7.788444E-08"/>
+							<center x="0" y="-1.192093E-07" z="0.4999999"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="300" value="8"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection02" tags="part animation iklink textureanimation  " parent="anim_beam_core">
+				<animations/>
+				<parts>
+					<part name="anim_beam_pulse">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.beam_fight_alpha_p2"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="2.243319" y="2.243319" z="0.5"/>
+							<center x="0" y="0" z="0.5"/>
+						</size>
+						<size_raw>
+							<max x="2.243319" y="2.243319" z="0"/>
+							<center x="0" y="0" z="0.5"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="300" value="24"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part nocollision iklink  " parent="anim_beam_core">
+				<parts>
+					<part name="fx_glow">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.gradient_white_add"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="53.10398" y="53.10398" z="0.5000003"/>
+							<center x="0" y="0" z="0.4999998"/>
+						</size>
+						<size_raw>
+							<max x="53.10398" y="53.10398" z="4.813086E-07"/>
+							<center x="0" y="0" z="0.4999998"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection04" tags="part nocollision animation iklink textureanimation  " parent="anim_beam_core">
+				<animations/>
+				<parts>
+					<part name="anim_beam_smoke">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.beam_fight_alpha"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="10.13486" y="10.13486" z="0.5000008"/>
+							<center x="0" y="0" z="0.5"/>
+						</size>
+						<size_raw>
+							<max x="10.13486" y="10.13486" z="5.489824E-07"/>
+							<center x="0" y="0" z="0.4999998"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="300" value="4"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="connection_laser01" tags="laser">
+				<offset/>
+			</connection>
+		</connections>
+	</component>
+</components>

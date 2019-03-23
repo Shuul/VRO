@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 13.02.2019_13-56-55-->
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="missile_swarm_heavy_mk1_macro" class="missile">
+    <component ref="missile_swarm_heavy_mk1" />
+    <properties>
+      <identification name="{20105,6074}" basename="{20105,6071}" description="{20105,6072}" />
+      <ammunition value="1" />
+      <missile amount="8" barrelamount="1" lifetime="25.2" range="14000" swarm="1" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+      <explosiondamage value="690" />
+      <reload time="12" />
+      <hull max="3" />
+      <effects>
+        <explosion ref="missile_explosion_medium_01" />
+        <launch ref="missile_guided_muzzle" />
+      </effects>
+      <weapon system="missile_guided" />
+      <countermeasure resilience="0.86" />
+      <physics mass="1.107">
+        <inertia pitch="0.904" yaw="0.904" roll="0.904" />
+        <drag forward="0.321" reverse="1.286" horizontal="2.716" vertical="2.716" pitch="0.904" yaw="0.904" roll="0.904" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_swarm_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+  </replace>
+</diff>
+
+<!-- <macros>
+  <macro name="missile_swarm_heavy_mk1_macro" class="missile">
+    <component ref="missile_swarm_heavy_mk1" />
+    <properties>
+      <identification name="{20105,6074}" basename="{20105,6071}" description="{20105,6072}" />
+      <ammunition value="1" />
+      <missile amount="8" barrelamount="1" lifetime="43.2" range="5500" swarm="1" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+      <explosiondamage value="690" />
+      <reload time="12" />
+      <hull max="3" />
+      <effects>
+        <explosion ref="missile_explosion_medium_01" />
+        <launch ref="missile_guided_muzzle" />
+      </effects>
+      <weapon system="missile_guided" />
+      <countermeasure resilience="0.86" />
+      <physics mass="1.607">
+        <inertia pitch="0.904" yaw="0.904" roll="0.904" />
+        <drag forward="0.321" reverse="1.286" horizontal="2.716" vertical="2.716" pitch="0.904" yaw="0.904" roll="0.904" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_swarm_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->

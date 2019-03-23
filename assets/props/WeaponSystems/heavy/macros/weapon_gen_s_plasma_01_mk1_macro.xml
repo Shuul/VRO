@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 30.11.2018_10-43-30-->
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="weapon_gen_s_plasma_01_mk1_macro" class="weapon">
+    <component ref="weapon_gen_s_plasma_01_mk1" />
+    <properties>
+      <identification name="{20105,1064}" basename="{20105,1061}" shortname="{20105,1065}" description="{20105,1062}" mk="1" />
+      <bullet class="bullet_gen_s_plasma_01_mk1_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+      <rotationspeed max="47.4" />
+      <rotationacceleration max="23.7" />
+      <reload />
+      <hull max="500" hittable="0" />
+      <effects>
+        <firing start="startshooting_gen_s_plasma_01_mk1" stop="stopshooting_gen_s_plasma_01_mk1" />
+      </effects>
+    </properties>
+  </macro>
+</macros>
+  </replace>
+</diff>
+
+<!-- <macros>
+  <macro name="weapon_gen_s_plasma_01_mk1_macro" class="weapon">
+    <component ref="weapon_gen_s_plasma_01_mk1" />
+    <properties>
+      <identification name="{20105,1064}" basename="{20105,1061}" shortname="{20105,1065}" description="{20105,1062}" mk="1" />
+      <bullet class="bullet_gen_s_plasma_01_mk1_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+      <rotationspeed max="47.4" />
+      <rotationacceleration max="23.7" />
+      <reload />
+      <hull max="500" hittable="0" />
+      <effects>
+        <firing start="startshooting_gen_s_plasma_01_mk1" stop="stopshooting_gen_s_plasma_01_mk1" />
+      </effects>
+    </properties>
+  </macro>
+</macros> -->

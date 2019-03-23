@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<components>
+	<component name="obliterator_impact" class="effectobject">
+		<source geometry="extensions\VRO\assets\fx\weaponFx\obliterator_impact_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="effectobject">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part animation nocollision  ">
+				<offset/>
+				<animations>
+					<animation name="playonce" start="1" end="10"/>
+				</animations>
+				<parts>
+					<part name="anim_main">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.beam_impact_core"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1.656405" y="1.656405" z="1.656405"/>
+							<center x="0" y="0" z="0"/>
+						</size>
+						<size_raw>
+							<max x="1.656405" y="1.656405" z="1.656405"/>
+							<center x="0" y="0" z="0"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection02" tags="part animation nocollision  ">
+				<offset>
+					<position x="0" y="0" z="5"/>
+				</offset>
+				<animations>
+					<animation name="playonce" start="1" end="10"/>
+				</animations>
+				<parts>
+					<part name="anim_haze">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="lensflares.vertexcolor_lightcone"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="12.34428" y="12.34428" z="12.15674"/>
+							<center x="0" y="2.861023E-06" z="0"/>
+						</size>
+						<size_raw>
+							<max x="12.34428" y="12.34427" z="12.15674"/>
+							<center x="0" y="2.861023E-06" z="0"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part  ">
+				<offset/>
+				<parts>
+					<part name="part_test">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.bullets_master_01_lightcone_geometry"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="11.0614" y="11.0614" z="11.0614"/>
+							<center x="0" y="0" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+		</connections>
+	</component>
+</components>

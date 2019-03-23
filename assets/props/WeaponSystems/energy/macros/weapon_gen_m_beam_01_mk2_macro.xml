@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 30.11.2018_10-43-10-->
+
+<diff> 
+<replace sel="//macros">
+<macros>
+  <macro name="weapon_gen_m_beam_01_mk2_macro" class="weapon">
+    <component ref="weapon_gen_m_beam_01_mk2" />
+    <properties>
+      <identification name="{20105,2094}" basename="{20105,2091}" shortname="{20105,2095}" description="{20105,2092}" mk="2" />
+      <bullet class="bullet_gen_m_beam_01_mk2_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+      <rotationspeed max="60" />
+      <rotationacceleration max="30" />
+      <reload />
+      <hull max="1001" hittable="0" />
+	  <effects>
+        <firing start="startshooting_gen_s_beam_01_mk1" stop="stopshooting_gen_s_beam_01_mk1" />
+      </effects>
+    <sounds>
+        <firing ref="wpn_lancer_shoot" />
+    </sounds>
+    </properties>
+  </macro>
+</macros>
+  </replace>
+</diff>
+
+<!--<macros>
+  <macro name="weapon_gen_m_beam_01_mk2_macro" class="weapon">
+    <component ref="weapon_gen_m_beam_01_mk2" />
+    <properties>
+      <identification name="{20105,2094}" basename="{20105,2091}" shortname="{20105,2095}" description="{20105,2092}" mk="2" />
+      <bullet class="bullet_gen_m_beam_01_mk2_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="7500" />
+      <rotationspeed max="60" />
+      <rotationacceleration max="30" />
+      <reload />
+      <hull max="1001" hittable="0" />
+    </properties>
+  </macro>
+</macros>-->

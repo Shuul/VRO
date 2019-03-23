@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<components>
+	<component name="impact_gen_l_beam_01_mk1" class="effectobject">
+		<source geometry="extensions\VRO\assets\fx\weaponFx\impact_gen_l_beam_01_mk1_data"></source>
+		<layers>
+			<layer>
+				<waypoints></waypoints>
+				<lights></lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"></connection>
+			<connection name="position" tags="position" value="1" optional="1"></connection>
+			<connection name="space" tags="effectobject">
+				<offset></offset>
+			</connection>
+			<connection name="Connection01" tags="part animation nocollision  ">
+				<offset></offset>
+				<animations>
+					<animation name="playonce" start="1" end="10"></animation>
+				</animations>
+				<parts>
+					<part name="anim_main">
+						<size>
+							<max x="1.656405" y="1.656405" z="1.656405"></max>
+							<center x="0" y="0" z="0"></center>
+						</size>
+						<size_raw>
+							<max x="1.656405" y="1.656405" z="1.656405"></max>
+							<center x="0" y="0" z="0"></center>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection02" tags="part animation nocollision  ">
+				<offset>
+					<position x="0" y="0" z="5"></position>
+				</offset>
+				<animations>
+					<animation name="playonce" start="1" end="10"></animation>
+				</animations>
+				<parts>
+					<part name="anim_haze">
+						<size>
+							<max x="12.34428" y="12.34428" z="12.15674"></max>
+							<center x="0" y="2.861023E-06" z="0"></center>
+						</size>
+						<size_raw>
+							<max x="12.34428" y="12.34427" z="12.15674"></max>
+							<center x="0" y="2.861023E-06" z="0"></center>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part  ">
+				<offset></offset>
+				<parts>
+					<part name="part_test">
+						<size>
+							<max x="11.0614" y="11.0614" z="11.0614"></max>
+							<center x="0" y="0" z="0"></center>
+						</size>
+					</part>
+				</parts>
+			</connection>
+		</connections>
+	</component>
+</components>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.56) at 30.09.2018_13-34-08-->
+<diff>
+  <replace sel="//macros">
+ <macros>
+  <macro name="bullet_gen_m_plasma_01_mk2_macro" class="bullet">
+    <component ref="bullet_gen_m_plasma_01_mk2" />
+    <properties>
+	<ammunition value="3" reload="3" />
+      <bullet speed="2500" lifetime="2" amount="3" barrelamount="1" icon="weapon_plasma_mk2" timediff="0.004" angle="0.9" maxhits="3" ricochet="0" scale="0" attach="0" />
+      <heat value="350" />
+      <reload rate="3" />
+      <damage value="260" shield="40" repair="0" />
+      <effects>
+        <impact ref="impact_gen_m_plasma_01_mk1" />
+        <launch ref="muzzle_gen_m_plasma_incinerator" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros> 
+  </replace>
+  </diff>
+  
+  
+  
+
+<!--<macros>
+  <macro name="bullet_gen_m_plasma_01_mk2_macro" class="bullet">
+    <component ref="bullet_gen_m_plasma_01_mk2" />
+    <properties>
+      <bullet speed="403" lifetime="16" amount="1" barrelamount="1" icon="weapon_plasma_mk2" timediff="0.004" angle="0.04" maxhits="1" ricochet="0" scale="0" attach="0" />
+      <heat value="1879" />
+      <reload rate="0.9" />
+      <damage value="1173" repair="0" />
+      <effects>
+        <impact ref="impact_gen_m_plasma_01_mk1" />
+        <launch ref="muzzle_gen_m_plasma_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>-->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.52) at 27.11.2018_23-53-04-->
+<diff>
+  <replace sel="//macros">
+  <macros>
+  <macro name="bullet_gen_s_laser_01_mk1_macro" class="bullet">
+    <component ref="bullet_gen_s_laser_01_mk1" />
+    <properties>
+      <ammunition value="3" reload="0.5" />
+      <bullet speed="4800" lifetime="1.3" amount="1" barrelamount="1" icon="weapon_laser_mk1" timediff="0.02" angle="0.15" maxhits="1" ricochet="0" scale="0" attach="0" />
+      <heat value="120" />
+      <reload rate="12" />
+      <damage value="30" repair="0" />
+      <effects>
+        <impact ref="impact_gen_s_laser_01_mk1" />
+        <launch ref="muzzle_gen_s_laser_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+  </replace>
+  </diff>
+  
+  
+  
+
+<!--<macros>
+  <macro name="bullet_gen_s_laser_01_mk1_macro" class="bullet">
+    <component ref="bullet_gen_s_laser_01_mk1" />
+    <properties>
+      <ammunition value="2" reload="0.5" />
+      <bullet speed="4147" lifetime="0.75" amount="1" barrelamount="1" icon="weapon_laser_mk1" timediff="0.025" angle="0.25" maxhits="1" ricochet="0" scale="0" attach="0" />
+      <heat value="25" />
+      <reload rate="14" />
+      <damage value="26" repair="0" />
+      <effects>
+        <impact ref="impact_gen_s_laser_01_mk1" />
+        <launch ref="muzzle_gen_s_laser_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>-->

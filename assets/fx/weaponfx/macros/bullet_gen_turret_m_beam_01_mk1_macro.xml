@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Markus (192.168.3.123) at 04.02.2019_11-20-24-->
+<diff>
+  <replace sel="//macros">
+  <macros>
+  <macro name="bullet_gen_turret_m_beam_01_mk1_macro" class="bullet">
+    <component ref="bullet_gen_s_beam_01_mk1" />
+    <properties>
+      <ammunition value="3" reload="2.5" />  
+      <bullet speed="30000" lifetime="0.3" range="5000" amount="1" barrelamount="2" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="0" />
+      <reload rate ="3" />
+      <damage value="125" repair="0" />
+      <effects>
+        <impact ref="impact_gen_m_beam_01_mk1" />
+        <launch ref="muzzle_gen_m_cyclon_turret" />
+      </effects>
+      <weapon system="turret_shortrange" />
+    </properties>
+  </macro>
+</macros>
+
+  </replace>
+  </diff>
+
+
+<!--<macros>
+  <macro name="bullet_gen_turret_m_beam_01_mk1_macro" class="bullet">
+    <component ref="bullet_gen_s_beam_01_mk1" />
+    <properties>
+      <bullet speed="7000" lifetime="1" range="2550" amount="1" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
+      <reload time="3" />
+      <damage value="78" repair="0" />
+      <effects>
+        <impact ref="impact_gen_m_beam_01_mk1" />
+        <launch ref="muzzle_gen_m_beam_01_mk1" />
+      </effects>
+      <weapon system="turret_shortrange" />
+    </properties>
+  </macro>
+</macros>-->

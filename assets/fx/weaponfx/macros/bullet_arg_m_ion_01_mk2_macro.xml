@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.56) at 30.09.2018_13-31-09-->
+<diff>
+  <replace sel="//macros">
+  <macros>
+  <macro name="bullet_arg_m_ion_01_mk2_macro" class="bullet">
+    <component ref="bullet_arg_m_ion_01_mk2" />
+    <properties>
+      <bullet speed="5000" lifetime="1.1" amount="7" barrelamount="1" icon="weapon_ion_mk2" timediff="0.008" angle="1.0" maxhits="7" ricochet="0" scale="0" attach="0" />
+      <heat value="230" />
+      <reload rate="0.5" />
+      <damage value="50" shield="140" repair="0" />
+      <effects>
+        <impact ref="impact_arg_m_ion_01_mk1" />
+        <launch ref="wpn_heavy_arc_discharger_shoot" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+  </replace>
+  </diff>
+  
+  
+  
+<!--<macros>
+  <macro name="bullet_arg_m_ion_01_mk2_macro" class="bullet">
+    <component ref="bullet_arg_m_ion_01_mk2" />
+    <properties>
+      <bullet speed="2496" lifetime="1.85" amount="1" barrelamount="1" icon="weapon_ion_mk2" timediff="0.008" angle="0.08" maxhits="1" ricochet="0" scale="0" attach="0" />
+      <heat value="284" />
+      <reload rate="2" />
+      <damage value="12" shield="826" repair="0" />
+      <effects>
+        <impact ref="impact_arg_m_ion_01_mk1" />
+        <launch ref="muzzle_arg_m_ion_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>-->

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<components>
+	<component name="bullet_gen_l_beam_01_mk1" class="bullet">
+		<source geometry="extensions\VRO\assets\fx\weaponFx\bullet_gen_l_beam_01_mk1_data"/>
+		<layers>
+			<layer>
+				<waypoints></waypoints>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="240" g="43" b="20" range="100" shadowrange="100" lighteffect="1" trigger="1" intensity="0.6">
+						<lightanimations></lightanimations>
+						<offset>
+							<position x="-2.762699E-02" y="1.976633" z="1.839346"></position>
+						</offset>
+					</omni>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"></connection>
+			<connection name="position" tags="position" value="1" optional="1"></connection>
+			<connection name="space" tags="bullet">
+				<offset></offset>
+			</connection>
+			<connection name="Connection01" tags="part animation textureanimation  ">
+				<offset></offset>
+				<animations>
+					<animation name="loop" start="1" end="300"></animation>
+				</animations>
+				<parts>
+					<part name="anim_beam_core">
+						<size>
+							<max x="8.363364" y="8.363365" z="0.5000001"></max>
+							<center x="0" y="0" z="0.4999999"></center>
+						</size>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"></key>
+									<key frame="300" value="8"></key>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection02" tags="part animation textureanimation  ">
+				<offset></offset>
+				<animations>
+					<animation name="loop" start="1" end="300"></animation>
+				</animations>
+				<parts>
+					<part name="anim_beam_smoke_small">
+						<size>
+							<max x="12.29983" y="12.29983" z="0.5000003"></max>
+							<center x="0" y="0" z="0.4999999"></center>
+						</size>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"></key>
+									<key frame="300" value="3"></key>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part animation textureanimation  ">
+				<offset></offset>
+				<animations>
+					<animation name="loop" start="1" end="300"></animation>
+				</animations>
+				<parts>
+					<part name="anim_beam_smoke_big">
+						<size>
+							<max x="14.13913" y="14.13913" z="0.5000004"></max>
+							<center x="0" y="0" z="0.5000001"></center>
+						</size>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="1"></key>
+									<key frame="300" value="2"></key>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection04" tags="part animation textureanimation  ">
+				<offset></offset>
+				<animations>
+					<animation name="loop" start="1" end="300"></animation>
+				</animations>
+				<parts>
+					<part name="anim_beam_pulse">
+						<size>
+							<max x="8.942122" y="8.942122" z="0.5"></max>
+							<center x="0" y="0" z="0.5"></center>
+						</size>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"></key>
+									<key frame="300" value="24"></key>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="connection_laser01" tags="laser">
+				<offset></offset>
+			</connection>
+		</connections>
+	</component>
+</components>

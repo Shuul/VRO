@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 12.02.2019_15-02-16-->
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="missile_cluster_heavy_mk1_macro" class="missile">
+    <component ref="missile_cluster_heavy_mk1" />
+    <properties>
+      <identification name="{20105,6114}" basename="{20105,6111}" description="{20105,6112}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="259.2" range="14000" distribute="1" guided="0" icon="missile_dumbfire_mk1" tags="dumbfire" />
+      <explosiondamage value="12141" />
+      <reload time="45" />
+      <hull max="2" />
+      <effects>
+        <explosion ref="missile_explosion_medium_01" />
+        <launch ref="missile_dumbfire_muzzle" />
+      </effects>
+      <detach macro="missile_swarm_heavy_mk1_macro" />
+      <weapon system="missile_dumbfire" />
+      <countermeasure resilience="1" />
+      <physics mass="25.258">
+        <inertia pitch="76.915" yaw="76.915" roll="76.915" />
+        <drag forward="1.607" reverse="6.427" horizontal="38.258" vertical="38.258" pitch="19.229" yaw="19.229" roll="19.229" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_dumbfire_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+  </replace>
+</diff>
+
+
+<!-- <macros>
+  <macro name="missile_cluster_heavy_mk1_macro" class="missile">
+    <component ref="missile_cluster_heavy_mk1" />
+    <properties>
+      <identification name="{20105,6114}" basename="{20105,6111}" description="{20105,6112}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="259.2" range="7000" distribute="1" guided="0" icon="missile_dumbfire_mk1" tags="dumbfire" />
+      <explosiondamage value="12141" />
+      <reload time="45" />
+      <hull max="2" />
+      <effects>
+        <explosion ref="missile_explosion_medium_01" />
+        <launch ref="missile_dumbfire_muzzle" />
+      </effects>
+      <detach macro="missile_swarm_heavy_mk1_macro" />
+      <weapon system="missile_dumbfire" />
+      <countermeasure resilience="1" />
+      <physics mass="38.258">
+        <inertia pitch="76.915" yaw="76.915" roll="76.915" />
+        <drag forward="1.607" reverse="6.427" horizontal="38.258" vertical="38.258" pitch="19.229" yaw="19.229" roll="19.229" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_dumbfire_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->

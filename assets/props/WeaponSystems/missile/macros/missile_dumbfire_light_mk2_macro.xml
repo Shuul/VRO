@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 12.02.2019_18-40-49-->
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="missile_dumbfire_light_mk2_macro" class="missile">
+    <component ref="missile_dumbfire_light_mk2" />
+    <properties>
+      <identification name="{20105,6014}" basename="{20105,6011}" description="{20105,6012}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="20" range="13000" guided="0" icon="missile_dumbfire_mk2" tags="dumbfire" />
+      <explosiondamage value="1200" />
+      <reload time="1.5" />
+      <hull max="1" />
+      <effects>
+        <explosion ref="missile_explosion_light_01" />
+        <launch ref="missile_dumbfire_muzzle" />
+      </effects>
+      <weapon system="missile_dumbfire" />
+      <countermeasure resilience="1" />
+      <physics mass="0.243">
+        <inertia pitch="0.467" yaw="0.467" roll="0.467" />
+        <drag forward="0.049" reverse="0.194" horizontal="0.349" vertical="0.349" pitch="0.221" yaw="0.221" roll="0.221" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_dumbfire_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+  </replace>
+</diff>
+
+<!-- <macros>
+  <macro name="missile_dumbfire_light_mk2_macro" class="missile">
+    <component ref="missile_dumbfire_light_mk2" />
+    <properties>
+      <identification name="{20105,6014}" basename="{20105,6011}" description="{20105,6012}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="12" range="8000" guided="0" icon="missile_dumbfire_mk2" tags="dumbfire" />
+      <explosiondamage value="1200" />
+      <reload time="1.5" />
+      <hull max="1" />
+      <effects>
+        <explosion ref="missile_explosion_light_01" />
+        <launch ref="missile_dumbfire_muzzle" />
+      </effects>
+      <weapon system="missile_dumbfire" />
+      <countermeasure resilience="1" />
+      <physics mass="0.243">
+        <inertia pitch="0.467" yaw="0.467" roll="0.467" />
+        <drag forward="0.049" reverse="0.194" horizontal="0.349" vertical="0.349" pitch="0.221" yaw="0.221" roll="0.221" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_dumbfire_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->

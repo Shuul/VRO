@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Matthias (192.168.3.144) at 22.01.2019_13-40-30-->
+<macros>
+  <macro name="ship_arg_s_fighter_02_a_macro" class="ship_s">
+    <component ref="ship_arg_s_fighter_02" />
+    <properties>
+      <identification name="{20101,11902}" basename="{20101,11901}" description="{20101,11912}" variation="{20111,1101}" shortvariation="{20111,1103}" icon="ship_s_fight_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage missile="20" />
+      <hull max="1800" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="2" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_02" />
+      </sounds>
+      <physics mass="3.772">
+        <inertia pitch="0.451" yaw="0.451" roll="0.361" />
+        <drag forward="2.193" reverse="8.772" horizontal="3.381" vertical="3.381" pitch="2.585" yaw="2.585" roll="2.585" />
+      </physics>
+      <thruster tags="small" />
+      <ship type="interceptor" />
+      <sound_occlusion inside="0.5" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_arg_s_fighter_02_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>

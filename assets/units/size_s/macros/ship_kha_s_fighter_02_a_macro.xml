@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 17.12.2018_16-04-45-->
+<macros>
+  <macro name="ship_kha_s_fighter_02_a_macro" class="ship_s">
+    <component ref="ship_kha_s_fighter_02" />
+    <properties>
+      <identification name="{20101,90101}" makerrace="khaak" description="{20101,90111}" icon="ship_s_fight_01" />
+      <software>
+        <software ware="software_dockmk2" default="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk2" default="1" />
+        <software ware="software_scannerobjectmk2" default="1" />
+        <software ware="software_targetmk1" default="1" />
+      </software>
+      <storage missile="0" unit="0" />
+      <hull max="2000" />
+      <secrecy level="3" />
+      <purpose primary="fight" />
+      <people capacity="0" />
+      <physics mass="5">
+        <inertia pitch="1" yaw="1" roll="1" />
+        <drag forward="4" reverse="17" horizontal="3" vertical="3" pitch="2" yaw="2" roll="2" />
+      </physics>
+      <thruster tags="small" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_kha_s_combat_01_mk1_macro" path="../con_engine_01" />
+            <shield macro="shield_kha_s_standard_01_mk1_macro" path="../con_shield_01" optional="1" />
+            <weapon macro="weapon_kha_s_laser_01_mk1_macro" path="../con_primaryweapon_01" optional="1" />
+          </macros>
+          <ammunition>
+            <ammunition macro="countermeasure_flares_01_macro" min="0" max="1" optional="1" />
+          </ammunition>
+          <virtualmacros>
+            <thruster macro="thruster_gen_s_combat_01_mk3_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <capture allow="0" />
+      <ship type="fighter" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>

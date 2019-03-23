@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 12.02.2019_14-51-59-->
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="missile_emp_mk1_macro" class="missile">
+    <component ref="missile_emp_mk1" />
+    <properties>
+      <identification name="{20105,6164}" basename="{20105,6161}" description="{20105,6162}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="20" range="20000" influencelist="emp_missile" guided="1" icon="missile_guided_mk1" retarget="0" tags="guided" />
+      <explosiondamage value="350" />
+      <reload time="22.5" />
+      <hull max="1" />
+      <effects>
+        <explosion ref="missile_explosion_emp" />
+        <launch ref="missile_guided_muzzle" />
+      </effects>
+      <lock time="2" range="20000" />
+      <longrangescan minlevel="15" />
+      <weapon system="missile_guided" />
+      <countermeasure resilience="0.74" />
+      <physics mass="0.309">
+        <inertia pitch="0.254" yaw="0.254" roll="0.254" />
+        <drag forward="0.001" reverse="0.247" horizontal="0.522" vertical="0.522" pitch="0.254" yaw="0.254" roll="0.254" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+  </replace>
+</diff>
+
+<!-- <macros>
+  <macro name="missile_emp_mk1_macro" class="missile">
+    <component ref="missile_emp_mk1" />
+    <properties>
+      <identification name="{20105,6164}" basename="{20105,6161}" description="{20105,6162}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="10" range="20000" influencelist="emp_missile" guided="1" icon="missile_guided_mk1" retarget="0" tags="guided" />
+      <explosiondamage value="0" />
+      <reload time="22.5" />
+      <hull max="1" />
+      <effects>
+        <explosion ref="missile_explosion_emp" />
+        <launch ref="missile_guided_muzzle" />
+      </effects>
+      <lock time="2" range="20000" />
+      <longrangescan minlevel="15" />
+      <weapon system="missile_guided" />
+      <countermeasure resilience="0.74" />
+      <physics mass="0.309">
+        <inertia pitch="0.254" yaw="0.254" roll="0.254" />
+        <drag forward="0.001" reverse="0.247" horizontal="0.522" vertical="0.522" pitch="0.254" yaw="0.254" roll="0.254" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->

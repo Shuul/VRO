@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Alexei (192.168.3.58) at 23.11.2018_10-54-55-->
+<macros>
+  <macro name="ship_arg_s_trans_container_02_b_macro" class="ship_s">
+    <component ref="ship_arg_s_trans_container_02" />
+    <properties>
+      <identification name="{20101,12903}" basename="{20101,12901}" description="{20101,12913}" variation="{20111,1201}" shortvariation="{20111,1203}" icon="ship_s_trade_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" default="1" />
+      </software>
+      <storage missile="4" />
+      <hull max="2500" />
+      <secrecy level="2" />
+      <purpose primary="trade" />
+      <people capacity="2" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_02" />
+      </sounds>
+      <physics mass="19.472">
+        <inertia pitch="4.877" yaw="4.877" roll="3.902" />
+        <drag forward="5.604" reverse="24.722" horizontal="15.198" vertical="15.198" pitch="7.023" yaw="7.023" roll="7.023" />
+      </physics>
+      <thruster tags="small" />
+      <ship type="courier" />
+      <sound_occlusion inside="0.5" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_arg_s_trans_container_02_b_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>

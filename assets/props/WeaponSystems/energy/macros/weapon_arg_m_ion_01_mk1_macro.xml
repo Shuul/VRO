@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 30.11.2018_10-42-42-->
+<diff> 
+<replace sel="//macros">
+<macros>
+  <macro name="weapon_arg_m_ion_01_mk1_macro" class="weapon">
+    <component ref="weapon_arg_m_ion_01_mk1" />
+    <properties>
+      <identification name="{20105,2184}" basename="{20105,2181}" shortname="{20105,2185}" description="{20105,2182}" mk="1" />
+      <bullet class="bullet_arg_m_ion_01_mk1_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+      <rotationspeed max="73.6" />
+      <rotationacceleration max="36.8" />
+      <reload />
+      <hull max="1001" hittable="0" />
+      <effects>
+        <firing start="startshooting_arg_s_ion_01_mk1" stop="stopshooting_arg_s_ion_01_mk1" />
+      </effects>
+    </properties>
+  </macro>
+</macros>
+</replace>
+  </diff>
+<!-- <macros>
+  <macro name="weapon_arg_m_ion_01_mk1_macro" class="weapon">
+    <component ref="weapon_arg_m_ion_01_mk1" />
+    <properties>
+      <identification name="{20105,2184}" basename="{20105,2181}" shortname="{20105,2185}" description="{20105,2182}" mk="1" />
+      <bullet class="bullet_arg_m_ion_01_mk1_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+      <rotationspeed max="73.6" />
+      <rotationacceleration max="36.8" />
+      <reload />
+      <hull max="1001" hittable="0" />
+      <effects>
+        <firing start="startshooting_arg_s_ion_01_mk1" stop="stopshooting_arg_s_ion_01_mk1" />
+      </effects>
+    </properties>
+  </macro>
+</macros> -->

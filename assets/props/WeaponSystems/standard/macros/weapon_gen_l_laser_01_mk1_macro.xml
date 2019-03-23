@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 30.11.2018_10-42-44-->
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="weapon_gen_l_laser_01_mk1_macro" class="weapon">
+    <component ref="weapon_gen_l_laser_01_mk1" />
+    <properties>
+      <identification mk="1" />
+      <bullet class="bullet_gen_l_laser_01_mk1_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+      <rotationspeed max="32.3" />
+      <rotationacceleration max="16.15" />
+      <reload />
+      <hull max="20000" />
+    </properties>
+  </macro>
+</macros>
+  </replace>
+</diff>
+
+<!-- <macros>
+  <macro name="weapon_gen_l_laser_01_mk1_macro" class="weapon">
+    <component ref="weapon_gen_l_laser_01_mk1" />
+    <properties>
+      <identification mk="1" />
+      <bullet class="bullet_gen_l_laser_01_mk1_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+      <rotationspeed max="32.3" />
+      <rotationacceleration max="16.15" />
+      <reload />
+      <hull max="8000" />
+    </properties>
+  </macro>
+</macros> -->

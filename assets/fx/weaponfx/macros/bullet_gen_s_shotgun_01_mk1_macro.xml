@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.56) at 30.09.2018_13-25-37-->
+<diff>
+  <replace sel="//macros">
+  <macros>
+  <macro name="bullet_gen_s_shotgun_01_mk1_macro" class="bullet">
+    <component ref="bullet_gen_s_shotgun_01_mk1" />
+    <properties>
+      <bullet speed="5500" lifetime="0.8" amount="6" barrelamount="1" icon="weapon_shotgun_mk1" timediff="0.02" angle="0.9" maxhits="6" ricochet="0.5" restitution="0.5" scale="0" attach="0" />
+      <heat value="60" />
+      <reload rate="3" />
+      <damage value="20" repair="0" />
+	  <ammunition value="6" reload="2" />
+      <effects>
+        <impact ref="impact_gen_s_shotgun_01_mk1" />
+        <launch ref="muzzle_gen_s_shotgun_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+  </replace>
+  </diff>
+  
+  
+  
+
+<!--<macros>
+  <macro name="bullet_gen_s_shotgun_01_mk1_macro" class="bullet">
+    <component ref="bullet_gen_s_shotgun_01_mk1" />
+    <properties>
+      <bullet speed="2880" lifetime="0.8" amount="5" barrelamount="1" icon="weapon_shotgun_mk1" timediff="0.004" angle="1.25" maxhits="3" ricochet="0.5" restitution="0.5" scale="0" attach="0" />
+      <heat value="125" />
+      <reload rate="1" />
+      <damage value="25" repair="0" />
+      <effects>
+        <impact ref="impact_gen_s_shotgun_01_mk1" />
+        <launch ref="muzzle_gen_s_shotgun_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>-->

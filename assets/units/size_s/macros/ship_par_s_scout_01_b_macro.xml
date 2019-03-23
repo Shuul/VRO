@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.81) at 21.11.2018_21-26-17-->
+<macros>
+  <macro name="ship_par_s_scout_01_b_macro" class="ship_s">
+    <component ref="ship_par_s_scout_01" />
+    <properties>
+      <identification name="{20101,30103}" basename="{20101,30101}" description="{20101,30113}" variation="{20111,1201}" shortvariation="{20111,1203}" icon="ship_s_fight_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk2" default="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage missile="20" />
+      <hull max="1600" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="1" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_02" />
+      </sounds>
+      <physics mass="6.918">
+        <inertia pitch="0.951" yaw="0.951" roll="0.761" />
+        <drag forward="3.446" reverse="8.793" horizontal="4.908" vertical="4.908" pitch="3.568" yaw="3.568" roll="3.568" />
+      </physics>
+      <thruster tags="small" />
+      <ship type="scout" />
+      <sound_occlusion inside="0.5" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_par_s_scout_01_b_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>

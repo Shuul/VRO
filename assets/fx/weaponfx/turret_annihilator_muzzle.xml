@@ -1,0 +1,50 @@
+<components>
+  <component name="turret_annihilator_muzzle" class="effectobject">
+    <source geometry="extensions\VRO\assets\fx\weaponFx\turret_annihilator_muzzle_data"/>
+    <layers>
+      <layer>
+        <waypoints/>
+        <lights/>
+      </layer>
+    </layers>
+    <connections>
+      <connection name="container" tags="contents" value="0" optional="0"/>
+      <connection name="position" tags="position" value="1" optional="1"/>
+      <connection name="space" tags="effectobject">
+        <offset/>
+      </connection>
+      <connection name="Connection01" tags="part animation ">
+        <offset>
+          <position x="-4.831684E-02" y="-0.3304794" z="8.476521"/>
+        </offset>
+        <animations>
+          <animation name="playonce" start="1" end="6"/>
+        </animations>
+        <parts>
+          <part name="anim_muzzle02">
+            <size>
+              <max x="22.79386" y="29.33249" z="20.22806"/>
+              <center x="0.7422007" y="1.762476" z="12.32942"/>
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="Connection02" tags="part animation ">
+        <offset>
+          <position x="-4.831684E-02" y="-0.3304794" z="8.476521"/>
+        </offset>
+        <animations>
+          <animation name="playonce" start="1" end="8"/>
+        </animations>
+        <parts>
+          <part name="anim_muzzle01">
+            <size>
+              <max x="10.38101" y="11.98696" z="55.39831"/>
+              <center x="4.831493E-02" y="-0.2934959" z="57.46987"/>
+            </size>
+          </part>
+        </parts>
+      </connection>
+    </connections>
+  </component>
+</components>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 12.02.2019_18-40-59-->
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="missile_smart_light_mk1_macro" class="missile">
+    <component ref="missile_smart_light_mk1" />
+    <properties>
+      <identification name="{20105,6124}" basename="{20105,6121}" description="{20105,6122}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="20" range="25000" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+      <explosiondamage value="657" />
+      <reload time="2" />
+      <hull max="1" />
+      <effects>
+        <explosion ref="missile_explosion_light_01" />
+        <launch ref="missile_guided_muzzle" />
+      </effects>
+      <weapon system="missile_guided" />
+      <countermeasure resilience="0.98" />
+      <physics mass="0.37">
+        <inertia pitch="0.271" yaw="0.271" roll="0.271" />
+        <drag forward="0.074" reverse="0.296" horizontal="0.53" vertical="0.53" pitch="0.128" yaw="0.128" roll="0.128" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+  </replace>
+</diff>
+
+<!-- <macros>
+  <macro name="missile_smart_light_mk1_macro" class="missile">
+    <component ref="missile_smart_light_mk1" />
+    <properties>
+      <identification name="{20105,6124}" basename="{20105,6121}" description="{20105,6122}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="10" range="4000" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
+      <explosiondamage value="657" />
+      <reload time="2" />
+      <hull max="1" />
+      <effects>
+        <explosion ref="missile_explosion_light_01" />
+        <launch ref="missile_guided_muzzle" />
+      </effects>
+      <weapon system="missile_guided" />
+      <countermeasure resilience="0.98" />
+      <physics mass="0.37">
+        <inertia pitch="0.271" yaw="0.271" roll="0.271" />
+        <drag forward="0.074" reverse="0.296" horizontal="0.53" vertical="0.53" pitch="0.128" yaw="0.128" roll="0.128" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->

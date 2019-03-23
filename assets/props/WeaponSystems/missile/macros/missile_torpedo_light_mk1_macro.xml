@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 12.02.2019_18-41-10-->
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="missile_torpedo_light_mk1_macro" class="missile">
+    <component ref="missile_torpedo_light_mk1" />
+    <properties>
+      <identification name="{20105,6144}" basename="{20105,6141}" description="{20105,6142}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="50" range="8000" guided="1" icon="missile_torpedo_mk1" retarget="0" tags="torpedo" />
+      <explosiondamage value="4791" />
+      <reload time="10" />
+      <hull max="8" />
+      <effects>
+        <explosion ref="missile_explosion_heavy_01" />
+        <launch ref="missile_torpedo_muzzle" />
+      </effects>
+      <weapon system="torpedo" />
+      <countermeasure resilience="0.86" />
+      <physics mass="4.421">
+        <inertia pitch="2.311" yaw="2.311" roll="2.311" />
+        <drag forward="0.575" reverse="2.299" horizontal="7.472" vertical="7.472" pitch="2.311" yaw="2.311" roll="2.311" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+  </replace>
+</diff>
+
+<!-- <macros>
+  <macro name="missile_torpedo_light_mk1_macro" class="missile">
+    <component ref="missile_torpedo_light_mk1" />
+    <properties>
+      <identification name="{20105,6144}" basename="{20105,6141}" description="{20105,6142}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="50" range="3000" guided="1" icon="missile_torpedo_mk1" retarget="0" tags="torpedo" />
+      <explosiondamage value="4791" />
+      <reload time="10" />
+      <hull max="8" />
+      <effects>
+        <explosion ref="missile_explosion_heavy_01" />
+        <launch ref="missile_torpedo_muzzle" />
+      </effects>
+      <weapon system="torpedo" />
+      <countermeasure resilience="0.86" />
+      <physics mass="4.421">
+        <inertia pitch="2.311" yaw="2.311" roll="2.311" />
+        <drag forward="0.575" reverse="2.299" horizontal="7.472" vertical="7.472" pitch="2.311" yaw="2.311" roll="2.311" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->

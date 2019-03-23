@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<components>
+	<component name="muzzle_gen_l_beam_01_mk1" class="effectobject">
+		<source geometry="extensions\VRO\assets\fx\weaponFx\muzzle_gen_l_beam_01_mk1_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="124" g="255" b="255" range="400" shadowrange="400" lighteffect="1" trigger="1" intensity="0.1">
+						<animations>
+							<animation name="loop" start="1" end="60"/>
+						</animations>
+						<lightanimations>
+							<lightanimation name="intensity" controller="bezier_float">
+								<key frame="0" value="0.1" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="6" value="0.5" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="8" value="0.1" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="10" value="0.2" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="16" value="0.5" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="20" value="0.2" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="25" value="0.1" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="29" value="0.5" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="32" value="0.1" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="33" value="0.1" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="34" value="0.2" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="36" value="0.5" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="40" value="0.5" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="44" value="0.2" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="49" value="0.1" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="53" value="0.5" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="57" value="0.1" in_tangent_type="auto" out_tangent_type="auto"/>
+								<key frame="60" value="0.5" in_tangent_type="auto" out_tangent_type="auto"/>
+							</lightanimation>
+						</lightanimations>
+						<offset>
+							<position x="0" y="0" z="18.03462"/>
+						</offset>
+					</omni>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="effectobject">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part nocollision animation  ">
+				<offset/>
+				<animations>
+					<animation name="loop" start="1" end="50"/>
+				</animations>
+				<parts>
+					<part name="anim_streak">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.beam_muzzle"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="43.51762" y="68.93765" z="160.9723"/>
+							<center x="-2.450562E-02" y="0" z="82.45105"/>
+						</size>
+						<size_raw>
+							<max x="43.11102" y="68.2551" z="77.74377"/>
+							<center x="-2.426529E-02" y="0" z="81.6347"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+		</connections>
+	</component>
+</components>
