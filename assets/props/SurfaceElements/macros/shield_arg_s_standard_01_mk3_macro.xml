@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Exported by: nick (192.168.3.120) at 29.11.2018_12-45-52-->
+<diff> 
+<replace sel="//macros">
 <macros>
+  <macro name="shield_arg_s_standard_01_mk3_macro" class="shieldgenerator">
+    <component ref="shield_arg_s_standard_01_mk3" />
+    <properties>
+      <identification name="{20106,1084}" basename="{20106,1081}" shortname="{20106,1085}" makerrace="argon" description="{20106,1082}" mk="3" />
+      <recharge max="1580" rate="8" delay="0" />
+      <hull integrated="1" />
+    </properties>
+  </macro>
+</macros>
+</replace>
+</diff>
+
+<!-- <macros>
   <macro name="shield_arg_s_standard_01_mk3_macro" class="shieldgenerator">
     <component ref="shield_arg_s_standard_01_mk3" />
     <properties>
@@ -9,4 +24,4 @@
       <hull integrated="1" />
     </properties>
   </macro>
-</macros>
+</macros> -->
