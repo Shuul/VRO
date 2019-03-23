@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 27.11.2018_14-44-10-->
+<diff> 
+<replace sel="//macros">
+
+<macros>
+  <macro name="ship_arg_l_miner_solid_01_a_macro" class="ship_l">
+    <component ref="ship_arg_l_miner_solid_01" />
+    <properties>
+      <identification name="{20101,11102}" basename="{20101,11101}" description="{20101,11112}" variation="{20111,3101} {20111,1101}" shortvariation="{20111,3101} {20111,1103}" icon="ship_l_mine_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="8000" />
+      <storage missile="30" unit="10" />
+      <hull max="67000" />
+      <secrecy level="1" />
+      <purpose primary="mine" />
+      <people capacity="46" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_l_01" />
+      </sounds>
+      <physics mass="204.245">
+        <inertia pitch="173.733" yaw="173.733" roll="173.186" />
+        <drag forward="51.594" reverse="291.396" horizontal="140.239" vertical="140.239" pitch="155.528" yaw="155.528" roll="155.528" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="largeminer" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_arg_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_01">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_02">
+        <macro ref="dockarea_arg_s_ship_02_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage01">
+        <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage02">
+        <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_arg_l_miner_solid_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!-- 
+<macros>
+  <macro name="ship_arg_l_miner_solid_01_a_macro" class="ship_l">
+    <component ref="ship_arg_l_miner_solid_01" />
+    <properties>
+      <identification name="{20101,11102}" basename="{20101,11101}" description="{20101,11112}" variation="{20111,3101} {20111,1101}" shortvariation="{20111,3101} {20111,1103}" icon="ship_l_mine_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="8000" />
+      <storage missile="30" unit="10" />
+      <hull max="26000" />
+      <secrecy level="1" />
+      <purpose primary="mine" />
+      <people capacity="46" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_l_01" />
+      </sounds>
+      <physics mass="204.245">
+        <inertia pitch="132.733" yaw="132.733" roll="106.186" />
+        <drag forward="56.594" reverse="323.396" horizontal="127.239" vertical="127.239" pitch="140.528" yaw="140.528" roll="140.528" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="largeminer" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_arg_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_01">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_02">
+        <macro ref="dockarea_arg_s_ship_02_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage01">
+        <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage02">
+        <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_arg_l_miner_solid_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->

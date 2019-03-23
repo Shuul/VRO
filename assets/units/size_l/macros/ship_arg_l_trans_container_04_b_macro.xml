@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.81) at 21.11.2018_18-11-54-->
+<diff> 
+<replace sel="//macros">
+
+<macros>
+  <macro name="ship_arg_l_trans_container_04_b_macro" class="ship_l">
+    <component ref="ship_arg_l_trans_container_04" />
+    <properties>
+      <identification name="{20101,12403}" basename="{20101,12401}" description="{20101,12413}" variation="{20111,1201}" shortvariation="{20111,1203}" icon="ship_l_trade_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" default="1" />
+      </software>
+      <explosiondamage value="8000" />
+      <storage missile="70" unit="15" />
+      <hull max="148000" />
+      <secrecy level="1" />
+      <purpose primary="trade" />
+      <people capacity="187" />
+      <physics mass="780.498">
+        <inertia pitch="485.804" yaw="485.804" roll="485.243" />
+        <drag forward="176.1" reverse="706.399" horizontal="123.722" vertical="123.722" pitch="245.1" yaw="245.1" roll="245.1" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="freighter" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_arg_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_004">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_01">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_arg_l_trans_container_04_b_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!-- 
+<macros>
+  <macro name="ship_arg_l_trans_container_04_b_macro" class="ship_l">
+    <component ref="ship_arg_l_trans_container_04" />
+    <properties>
+      <identification name="{20101,12403}" basename="{20101,12401}" description="{20101,12413}" variation="{20111,1201}" shortvariation="{20111,1203}" icon="ship_l_trade_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" default="1" />
+      </software>
+      <explosiondamage value="8000" />
+      <storage missile="30" unit="10" />
+      <hull max="101000" />
+      <secrecy level="1" />
+      <purpose primary="trade" />
+      <people capacity="187" />
+      <physics mass="780.498">
+        <inertia pitch="372.804" yaw="372.804" roll="298.243" />
+        <drag forward="196.1" reverse="784.399" horizontal="111.722" vertical="111.722" pitch="223.1" yaw="223.1" roll="223.1" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="freighter" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_arg_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_004">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_01">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_arg_l_trans_container_04_b_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->
