@@ -296,11 +296,11 @@
   <effect name="muzzle_gen_m_cyclon_turret" alignment="object">
     <elements>
       <!-- Muzzle Smoke-->
-      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="10.0" minscale="1.5"  maxscale="1.5" fadeout="1.0" forklod="none"></element>
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="0.2" minscale="1.5"  maxscale="1.5" fadeout="1.0" forklod="none"></element>
       <!-- Geometry -->
-      <element id="2" ref="muzzle_gen_m_beam_01_mk1_macro" forkeffect="none" duration="10.0" minscale="2.0" maxscale="2.0" forklod="none"></element>
+      <element id="2" ref="muzzle_gen_m_beam_01_mk1_macro" forkeffect="none" duration="0.2" minscale="2.0" maxscale="2.0" forklod="none"></element>
       <!-- Geometry Light -->
-      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="10.0" minscale="5.0" maxscale="5.0" fadeout="1.0" forklod="none"></element>
+      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.2" minscale="5.0" maxscale="5.0" fadeout="1.0" forklod="none"></element>
       <!-- Sound -->
       <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none"> 
       <sound ref="wpn_cyclon_turret_shoot"></sound> 
@@ -348,13 +348,13 @@
   <effect name="muzzle_gen_turret_heavy_lance" alignment="object">
     <elements>
       <!-- Muzzle Smoke-->
-      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="2.0" minscale="1.5"  maxscale="1.5" fadeout="1.0" forklod="none"></element>
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="1.5" minscale="1.5"  maxscale="1.5" fadeout="1.0" forklod="none"></element>
       <!-- Geometry -->
-      <element id="2" ref="muzzle_gen_l_beam_01_mk1_macro" forkeffect="none" duration="2.0" minscale="1.0" maxscale="1.0" forklod="none"></element>
+      <element id="2" ref="muzzle_gen_l_beam_01_mk1_macro" forkeffect="none" duration="1.5" minscale="1.0" maxscale="1.0" forklod="none"></element>
       <!-- Geometry Light -->
-      <element id="3" ref="impact_light_blue_macro" forkeffect="none" duration="2.0" minscale="1" maxscale="1" fadeout="1.0" forklod="none"></element>
+      <element id="3" ref="impact_light_blue_macro" forkeffect="none" duration="1.5" minscale="1.0" maxscale="1.0" fadeout="1.0" forklod="none"></element>
       <!-- Sound -->
-      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="4.0" forklod="none"> 
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="3.0" forklod="none"> 
       <sound ref="wpn_heavy_lance_turret_shoot"></sound> 
       </element>
     </elements>
@@ -432,7 +432,7 @@
       <!-- Impact Fire Particles-->
       <element id="3" ref="dummyemitter_macro" forkeffect="railgun_impact_fire_01" alignment="normal" duration="1.0" minscale="1.5" maxscale="1.5" fadein="0.0" fadeout="0.5" forklod="none"></element>
       <!-- Geometry Light -->
-      <element id="4" ref="impact_light_cyan_macro" forkeffect="none" duration="0.2" minscale="5.0" maxscale="5.0" fadeout="0.2" forklod="none"></element>
+      <element id="4" ref="impact_light_cyan_macro" forkeffect="none" duration="0.2" minscale="3.0" maxscale="3.0" fadeout="0.2" forklod="none"></element>
       <!-- Sound -->
       <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="2.0" forklod="none">
         <sound ref="wpn_annihilator_turret_impact"></sound>
@@ -493,11 +493,11 @@
   <effect name="muzzle_xen_obliterator_turret" alignment="object">
     <elements>
       <!-- Muzzle Smoke-->
-      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="2.0" minscale="1.0"  maxscale="1.0" fadeout="1.0" forklod="none"></element>
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="1.5" minscale="1.0"  maxscale="1.0" fadeout="1.0" forklod="none"></element>
       <!-- Geometry -->
-      <element id="2" ref="obliterator_muzzle_macro" forkeffect="none" duration="2.0" minscale="1.0" maxscale="1.0" forklod="none"></element>
+      <element id="2" ref="obliterator_muzzle_macro" forkeffect="none" duration="1.5" minscale="1.0" maxscale="1.0" forklod="none"></element>
       <!-- Geometry Light -->
-      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="2.0" minscale="1.0" maxscale="1.0" fadeout="1.0" forklod="none"></element>
+      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="1.5" minscale="1.0" maxscale="1.0" fadeout="1.0" forklod="none"></element>
       <!-- Sound -->
       <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="2.3" forklod="none"> 
       <sound ref="wpn_xen_obliterator_shoot"></sound> 
@@ -513,7 +513,7 @@
       <!-- Impact Fire Particles-->
       <element id="3" ref="dummyemitter_macro" forkeffect="laser_impact_fire_01" alignment="normal" duration="1.0" minscale="1.0" maxscale="1.0" fadein="0.0" fadeout="0.5" forklod="none"></element>
       <!-- Geometry Light -->
-      <element id="4" ref="impact_gen_l_beam_01_mk1_light_macro" forkeffect="none" duration="2.0" minscale="5.0" maxscale="5.0" fadeout="1.0" forklod="none"></element>
+      <element id="4" ref="impact_gen_l_beam_01_mk1_light_macro" forkeffect="none" duration="2.0" minscale="2.0" maxscale="2.0" fadeout="1.0" forklod="none"></element>
       <!-- Sound -->
       <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
         <sound ref="wpn_xen_obliterator_impact"></sound>

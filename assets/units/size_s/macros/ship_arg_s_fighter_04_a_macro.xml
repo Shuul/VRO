@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Exported by: Alexei (192.168.3.58) at 23.11.2018_10-40-22-->
+<!--Exported by: Alexei (192.168.3.58) at 23.11.2018_10-40-22 QUASSAR-->
+<diff> 
+  <replace sel="//macros">
+  
 <macros>
   <macro name="ship_arg_s_fighter_04_a_macro" class="ship_s">
     <component ref="ship_arg_s_fighter_04" />
@@ -48,3 +51,54 @@
     </connections>
   </macro>
 </macros>
+ </replace>
+</diff>
+<!-- 
+<macros>
+  <macro name="ship_arg_s_fighter_04_a_macro" class="ship_s">
+    <component ref="ship_arg_s_fighter_04" />
+    <properties>
+      <identification name="{20101,12702}" basename="{20101,12701}" makerrace="argon" description="{20101,12712}" icon="ship_s_fight_01" />
+      <software>
+        <software ware="software_dockmk1" default="1" />
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage missile="20" />
+      <hull max="1700" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="2" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_03" />
+      </sounds>
+      <physics mass="6.976">
+        <inertia pitch="1.156" yaw="1.156" roll="1.272" />
+        <drag forward="4.675" reverse="17.964" horizontal="4.158" vertical="4.158" pitch="3.586" yaw="3.586" roll="3.586" />
+      </physics>
+      <thruster tags="small" />
+      <ship type="heavyfighter" />
+      <sound_occlusion inside="0.5" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_arg_s_fighter_04_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Exported by: nick (192.168.3.120) at 14.02.2019_11-21-27-->
+<diff> 
+  <replace sel="//macros">
+  
 <macros>
   <macro name="ship_gen_s_fightingdrone_01_a_macro" class="ship_s">
     <component ref="ship_gen_s_fightingdrone_01" />
@@ -45,3 +48,51 @@
     </connections>
   </macro>
 </macros>
+ </replace>
+</diff>
+<!-- 
+<macros>
+  <macro name="ship_gen_s_fightingdrone_01_a_macro" class="ship_s">
+    <component ref="ship_gen_s_fightingdrone_01" />
+    <properties>
+      <identification name="{20101,100401}" description="{20101,100411}" unit="1" icon="ship_s_fight_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage countermeasure="0" />
+      <hull max="1900" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <physics mass="7.365">
+        <inertia pitch="1.323" yaw="1.323" roll="1.059" />
+        <drag forward="3.969" reverse="12.365" horizontal="6.494" vertical="6.494" pitch="3.239" yaw="3.239" roll="3.239" />
+      </physics>
+      <thruster tags="small" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_arg_s_combat_01_mk2_macro" path="../con_engine_01" />
+            <weapon macro="weapon_gen_s_laser_01_mk1_macro" path="../con_weapon_01" optional="1" />
+          </macros>
+          <virtualmacros>
+            <thruster macro="thruster_gen_s_combat_01_mk1_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <capture allow="0" />
+      <ship type="smalldrone" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_invisible_01_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->
