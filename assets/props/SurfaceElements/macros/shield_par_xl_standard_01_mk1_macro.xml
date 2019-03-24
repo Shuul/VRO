@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Exported by: nick (192.168.3.120) at 22.01.2019_16-08-01-->
+<diff> 
+<replace sel="//macros">
+
+<macros>
+  <macro name="shield_par_xl_standard_01_mk1_macro" class="shieldgenerator">
+    <component ref="shield_arg_xl_standard_01_mk1" />
+    <properties>
+      <identification name="{20106,4014}" basename="{20106,4011}" shortname="{20106,4015}" makerrace="paranid" description="{20106,4012}" mk="1" />
+      <recharge max="1000333" rate="160" delay="0" />
+      <hull max="60000" threshold="0.2" />
+    </properties>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!-- 
 <macros>
   <macro name="shield_par_xl_standard_01_mk1_macro" class="shieldgenerator">
     <component ref="shield_arg_xl_standard_01_mk1" />
@@ -9,4 +25,4 @@
       <hull max="6000" threshold="0.2" />
     </properties>
   </macro>
-</macros>
+</macros> -->
