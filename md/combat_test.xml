@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mdscript name="Combat_Test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4 extract 2.0b1/libraries/md.xsd">
+<mdscript name="Combat_Test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
     <cues>
         <cue name="Fleetcombat_Position">
             <conditions>
@@ -11,6 +11,7 @@
                 <warp object="player.ship" sector="$Sector.random">
                     <position min="500km" max="600km" />
                 </warp>
+                <create_group groupname="$PlayerShips" />
             </actions>
             <cues>
                 <cue name="Fleetcombat_Spawn" instantiate="true">
@@ -285,6 +286,21 @@
                         <remove_value name="$PDestroyer" />
                         <remove_value name="$PMedium" /> -->
                         <debug_text text="'SHIPS ' + $PlayerShips.count" />
+                    
+                    </actions>
+                </cue>
+                <cue name="ShieldsOnShip" instantiate="true" checkinterval="45s" checktime="30s">
+                    <actions>
+                        <do_all exact="$PlayerShips.count" counter="$shields">
+                            <debug_text text="$PlayerShips.{$shields}.knownname" />
+                            <debug_text text="'ALL THE FUCKING SHIELDS ' + $PlayerShips.{$shields}.shields.all.list" />
+                            <set_value name="$Shieldspership" exact="$PlayerShips.{$shields}.shields.all.list"/>
+                            <do_all exact="$Shieldspership.count" counter="$shield">
+                                <debug_text text="'Shieldspershipcounty ' + $Shieldspership.{$shield}.knownname" />
+
+                            </do_all>
+                        </do_all>
+                        
                     </actions>
                 </cue>
             </cues>
