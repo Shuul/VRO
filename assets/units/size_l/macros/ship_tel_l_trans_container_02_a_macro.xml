@@ -3,9 +3,55 @@
 <diff> 
 <replace sel="//macros">
 
+<macros>
+  <macro name="ship_tel_l_trans_container_02_a_macro" class="ship_l">
+    <component ref="ship_tel_l_trans_container_02" />
+    <properties>
+      <identification name="{20101,21402}" basename="{20101,21401}" description="{20101,21412}" variation="{20111,1101}" shortvariation="{20111,1103}" icon="ship_l_trade_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" default="1" />
+      </software>
+      <storage missile="80" unit="35" />
+      <hull max="76000" />
+      <secrecy level="1" />
+      <purpose primary="trade" />
+      <people capacity="101" />
+      <physics mass="367.5">
+        <inertia pitch="192" yaw="192" roll="153" />
+        <drag forward="140" reverse="562" horizontal="111" vertical="111" pitch="155" yaw="155" roll="155" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="freighter" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_tel_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_tel_l_transporter_01">
+        <macro ref="dockarea_tel_l_transporter_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_tel_l_trans_container_02_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
 </replace>
 </diff>
-
+<!-- 
 <macros>
   <macro name="ship_tel_l_trans_container_02_a_macro" class="ship_l">
     <component ref="ship_tel_l_trans_container_02" />
@@ -51,4 +97,4 @@
       </connection>
     </connections>
   </macro>
-</macros>
+</macros> -->

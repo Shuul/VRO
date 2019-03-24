@@ -3,9 +3,98 @@
 <diff> 
 <replace sel="//macros">
 
+<macros>
+  <macro name="ship_xen_xl_carrier_01_a_macro" class="ship_xl">
+    <component ref="ship_xen_xl_carrier_01" />
+    <properties>
+      <identification name="{20101,70601}" description="{20101,70611}" icon="ship_xl_fight_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <hull max="780000" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="0" />
+      <physics mass="876.951">
+        <inertia pitch="2235.525" yaw="2235.525" roll="1788.82" />
+        <drag forward="255.39" reverse="1021.561" horizontal="215.309" vertical="215.309" pitch="1382.851" yaw="1382.851" roll="1382.851" />
+      </physics>
+      <thruster tags="extralarge" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_xen_xl_allround_01_mk1_macro" path="../con_engine_01" />
+            <engine macro="engine_xen_xl_allround_01_mk1_macro" path="../con_engine_02" />
+            <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../connection_shieldgen_external01" optional="1" />
+            <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../connection_shieldgen_external02" optional="1" />
+            <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../connection_shieldgen_external03" optional="1" />
+            <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../connection_shieldgen_external04" optional="1" />
+            <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../connection_shieldgen_external05" optional="1" />
+          </macros>
+          <groups>
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group01" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group02" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group03" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group04" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group05" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group06" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group07" exact="2" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group08" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group09" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group10" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group11" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group12" exact="2" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group13" exact="2" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group14" exact="2" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group15" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group16" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group17" exact="2" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group01" exact="1" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group02" exact="1" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group03" exact="1" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group04" exact="1" optional="1" />
+            <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group05" exact="1" optional="1" />
+            <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group06" exact="1" optional="1" />
+            <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group07" exact="4" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group08" exact="2" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group09" exact="2" optional="1" />
+            <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group10" exact="3" optional="1" />
+            <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group11" exact="3" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group12" exact="2" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group13" exact="2" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group14" exact="4" optional="1" />
+            <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group15" exact="4" optional="1" />
+            <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group16" exact="4" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group17" exact="4" optional="1" />
+          </groups>
+          <ammunition>
+            <ammunition macro="countermeasure_flares_01_macro" min="100" max="200" optional="1" />
+          </ammunition>
+          <virtualmacros>
+            <thruster macro="thruster_gen_xl_allround_01_mk1_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <capture allow="0" />
+      <ship type="battleship" />
+    </properties>
+    <connections>
+      <connection ref="connection_cockpit">
+        <macro ref="cockpit_gen_invisible_01_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
 </replace>
 </diff>
-
+<!-- 
 <macros>
   <macro name="ship_xen_xl_carrier_01_a_macro" class="ship_xl">
     <component ref="ship_xen_xl_carrier_01" />
@@ -94,4 +183,4 @@
       </connection>
     </connections>
   </macro>
-</macros>
+</macros> -->

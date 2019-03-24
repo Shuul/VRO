@@ -3,9 +3,56 @@
 <diff> 
 <replace sel="//macros">
 
+<macros>
+  <macro name="ship_tel_l_miner_solid_01_b_macro" class="ship_l">
+    <component ref="ship_tel_l_miner_solid_01" />
+    <properties>
+      <identification name="{20101,20903}" basename="{20101,20901}" description="{20101,20913}" variation="{20111,3101} {20111,1201}" shortvariation="{20111,3101} {20111,1203}" icon="ship_l_mine_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="8000" />
+      <storage missile="80" unit="40" />
+      <hull max="90000" />
+      <secrecy level="1" />
+      <purpose primary="mine" />
+      <people capacity="43" />
+      <physics mass="282.023">
+        <inertia pitch="238" yaw="238" roll="190" />
+        <drag forward="84" reverse="477" horizontal="138" vertical="138" pitch="185" yaw="185" roll="185" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="largeminer" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_tel_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_tel_l_transporter_01">
+        <macro ref="dockarea_tel_l_transporter_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_tel_l_miner_solid_01_b_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
 </replace>
 </diff>
-
+<!-- 
 <macros>
   <macro name="ship_tel_l_miner_solid_01_b_macro" class="ship_l">
     <component ref="ship_tel_l_miner_solid_01" />
@@ -52,4 +99,4 @@
       </connection>
     </connections>
   </macro>
-</macros>
+</macros> -->
