@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<diff> 
+<add sel="//components/component[@name='ship_xen_s_fighter_02']/connections">
+<connection name="con_internalshieldgen01" tags="internal shield generator">
+				<offset>
+					<position x="0" y="0" z="0"/>
+					<quaternion qx="0" qy="0" qz="0" qw="0"/>
+				</offset>
+</connection>
+</add>
+</diff>
+<!-- 
+<components>
+	<component name="ship_xen_s_fighter_02" class="ship_s">
+		<source geometry="assets\units\size_s\ship_xen_s_fighter_02_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni10" shadow="0" r="255" g="0" b="0" range="5" shadowrange="5" lighteffect="1" trigger="1" intensity="0.75" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-2.612227" y="-0.2957178" z="-10.02846"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni11" shadow="0" r="255" g="33" b="0" range="7.1" shadowrange="7.1" lighteffect="1" trigger="1" intensity="0.75" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="2.606706" y="-0.2963689" z="-10.0274"/>
+						</offset>
+					</omni>
+				</lights>
+				<trailemitters>
+					<emitter name="trail_ship_s_01" type="trail_ship_s_01">
+						<offset>
+							<position x="-5.53623" y="5.153708" z="-18.12531"/>
+						</offset>
+					</emitter>
+					<emitter name="trail_ship_s_01" type="trail_ship_s_01">
+						<offset>
+							<position x="5.427994" y="5.153708" z="-18.12531"/>
+						</offset>
+					</emitter>
+					<emitter name="trail_ship_s_01" type="trail_ship_s_01">
+						<offset>
+							<position x="-5.53623" y="-5.577576" z="-18.12531"/>
+						</offset>
+					</emitter>
+					<emitter name="trail_ship_s_01" type="trail_ship_s_01">
+						<offset>
+							<position x="5.427994" y="-5.577576" z="-18.12531"/>
+						</offset>
+					</emitter>
+					<emitter name="wingtip_vortex_ship_s_01" type="wingtip_vortex_ship_s_01">
+						<offset>
+							<position x="6.993395" y="-3.829067" z="-14.25836"/>
+						</offset>
+					</emitter>
+					<emitter name="wingtip_vortex_ship_s_01" type="wingtip_vortex_ship_s_01">
+						<offset>
+							<position x="-7.181523" y="-3.829067" z="-14.25836"/>
+						</offset>
+					</emitter>
+					<emitter name="wingtip_vortex_ship_s_01" type="wingtip_vortex_ship_s_01">
+						<offset>
+							<position x="-7.181523" y="3.481294" z="-14.25836"/>
+						</offset>
+					</emitter>
+					<emitter name="wingtip_vortex_ship_s_01" type="wingtip_vortex_ship_s_01">
+						<offset>
+							<position x="6.993395" y="3.481294" z="-14.25836"/>
+						</offset>
+					</emitter>
+				</trailemitters>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="ship ship_s">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part  ">
+				<offset/>
+				<parts>
+					<part name="part_main" wreck="part_main_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="xenon.xenon_unique_01"/>
+									<material id="2" ref="xenon.xenon_unique_01"/>
+									<material id="3" ref="generic.generic_engines_01"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="xenon.xenon_unique_01"/>
+									<material id="2" ref="xenon.xenon_unique_01"/>
+									<material id="3" ref="generic.generic_engines_01"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="xenon.xenon_unique_01"/>
+									<material id="2" ref="xenon.xenon_unique_01"/>
+									<material id="3" ref="generic.generic_engines_01"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="xenon.xenon_unique_01"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="11.98228" y="12.50208" z="17.27588"/>
+							<center x="0" y="0" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="con_engine_01" tags="engine small platformcollision ">
+				<offset>
+					<position x="-5.590139" y="-6.188423" z="-11.054"/>
+					<quaternion qx="-4.176006E-07" qy="-5.329213E-07" qz="-0.906308" qw="-0.4226179"/>
+				</offset>
+			</connection>
+			<connection name="con_engine_02" tags="engine small platformcollision ">
+				<offset>
+					<position x="5.660837" y="-6.027495" z="-11.054"/>
+					<quaternion qx="1.080403E-07" qy="-5.038E-08" qz="-0.9063079" qw="0.4226181"/>
+				</offset>
+			</connection>
+			<connection name="con_shield_01" tags="small shield unhittable ">
+				<offset>
+					<position x="0" y="-4.161448" z="-5.325171"/>
+					<quaternion qx="-1" qy="-8.742278E-08" qz="-6.600237E-15" qw="-7.54979E-08"/>
+				</offset>
+			</connection>
+			<connection name="con_primaryweapon_01" tags="weapon small platformcollision standard missile symmetry symmetry_right">
+				<offset>
+					<position x="1.457059" y="0.321408" z="2.980415"/>
+				</offset>
+			</connection>
+			<connection name="con_primaryweapon_02" tags="weapon small platformcollision standard missile symmetry symmetry_left">
+				<offset>
+					<position x="-1.503397" y="0.3225303" z="2.980414"/>
+				</offset>
+			</connection>
+			<connection name="con_dockpos" tags="dockpos ">
+				<offset>
+					<position x="0" y="-8.204689" z="17.29487"/>
+				</offset>
+			</connection>
+			<connection name="con_cockpit" tags="cockpit cockpit_visible">
+				<offset>
+					<position x="1.40667E-05" y="9.343122" z="3.080021"/>
+				</offset>
+			</connection>
+			<connection name="con_storage01" tags="storage ">
+				<offset>
+					<position x="0" y="9.422574" z="-2.7799"/>
+				</offset>
+			</connection>
+			<connection name="con_control01" value="-1" tags="npc  pilot control sit ">
+				<offset>
+					<position x="0.03255" y="9.336396" z="0.1571398"/>
+				</offset>
+			</connection>
+			<connection name="con_engine_03" tags="engine small platformcollision ">
+				<offset>
+					<position x="-5.590139" y="5.496387" z="-11.054"/>
+					<quaternion qx="-5.329213E-07" qy="-4.176007E-07" qz="-0.4226184" qw="-0.9063078"/>
+				</offset>
+			</connection>
+			<connection name="con_engine_04" tags="engine small platformcollision ">
+				<offset>
+					<position x="5.815237" y="5.434033" z="-11.054"/>
+					<quaternion qx="-1.870628E-08" qy="4.028787E-08" qz="0.4226184" qw="-0.9063078"/>
+				</offset>
+			</connection>
+			<connection name="con_countermeasures_01" tags="countermeasures ">
+				<offset>
+					<position x="0" y="-3.906849" z="-9.831865"/>
+					<quaternion qx="-0.8870107" qy="-0" qz="-0" qw="-0.4617489"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components> -->

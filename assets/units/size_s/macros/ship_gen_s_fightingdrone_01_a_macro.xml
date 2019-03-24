@@ -19,7 +19,7 @@
         <software ware="software_trademk1" compatible="1" />
       </software>
       <storage countermeasure="0" />
-      <hull max="1900" />
+      <hull max="1000" />
       <secrecy level="2" />
       <purpose primary="fight" />
       <physics mass="7.365">
@@ -44,6 +44,9 @@
     <connections>
       <connection ref="con_cockpit">
         <macro ref="cockpit_gen_invisible_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_internalshieldgen01">
+        <macro ref="shield_arg_l_behe_01_macro" connection="ShipConnection" />
       </connection>
     </connections>
   </macro>

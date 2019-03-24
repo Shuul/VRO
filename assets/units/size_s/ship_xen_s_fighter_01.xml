@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<diff> 
+<add sel="//components/component[@name='ship_xen_s_fighter_01']/connections">
+<connection name="con_internalshieldgen01" tags="internal shield generator">
+				<offset>
+					<position x="0" y="0" z="0"/>
+					<quaternion qx="0" qy="0" qz="0" qw="0"/>
+				</offset>
+</connection>
+</add>
+</diff>
+<!-- 
+<components>
+	<component name="ship_xen_s_fighter_01" class="ship_s">
+		<source geometry="assets\units\size_s\ship_xen_s_fighter_01_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+				<trailemitters>
+					<emitter name="trail_ship_s_01" type="trail_ship_s_01">
+						<offset>
+							<position x="-5.53623" y="-1.626042" z="-18.12531"/>
+						</offset>
+					</emitter>
+					<emitter name="trail_ship_s_01" type="trail_ship_s_01">
+						<offset>
+							<position x="5.427994" y="-1.626042" z="-18.12531"/>
+						</offset>
+					</emitter>
+					<emitter name="wingtip_vortex_ship_s_01" type="wingtip_vortex_ship_s_01">
+						<offset>
+							<position x="7.98213" y="-3.410057" z="-16.26564"/>
+						</offset>
+					</emitter>
+					<emitter name="wingtip_vortex_ship_s_01" type="wingtip_vortex_ship_s_01">
+						<offset>
+							<position x="-8.012725" y="-3.410057" z="-16.26564"/>
+						</offset>
+					</emitter>
+				</trailemitters>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="ship ship_s">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part  ">
+				<offset/>
+				<parts>
+					<part name="part_main" wreck="part_main_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="xenon.xenon_unique_01"/>
+									<material id="2" ref="generic.generic_engines_01"/>
+									<material id="3" ref="xenon.xenon_unique_01"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="xenon.xenon_unique_01"/>
+									<material id="2" ref="xenon.xenon_unique_01"/>
+									<material id="3" ref="generic.generic_engines_01"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="xenon.xenon_unique_01"/>
+									<material id="2" ref="xenon.xenon_unique_01"/>
+									<material id="3" ref="generic.generic_engines_01"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="xenon.xenon_unique_01"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="8.320498" y="8.142408" z="17.33907"/>
+							<center x="0" y="0" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="con_engine_01" tags="engine small platformcollision ">
+				<offset>
+					<position x="-5.590139" y="-1.72991" z="-12.50201"/>
+					<quaternion qx="-5.109939E-07" qy="-3.175984E-07" qz="-0.1736484" qw="-0.9848077"/>
+				</offset>
+			</connection>
+			<connection name="con_engine_02" tags="engine small platformcollision ">
+				<offset>
+					<position x="5.815237" y="-1.792263" z="-12.50201"/>
+					<quaternion qx="-7.691809E-09" qy="4.380322E-08" qz="0.1736483" qw="-0.9848077"/>
+				</offset>
+			</connection>
+			<connection name="con_shield_01" tags="small shield unhittable ">
+				<offset>
+					<position x="0" y="-3.567032" z="-7.76886"/>
+					<quaternion qx="-1" qy="-8.742278E-08" qz="-6.600237E-15" qw="-7.54979E-08"/>
+				</offset>
+			</connection>
+			<connection name="con_primaryweapon_01" tags="weapon small platformcollision standard missile symmetry symmetry_right">
+				<offset>
+					<position x="1.102872" y="-2.613802" z="-0.7824755"/>
+				</offset>
+			</connection>
+			<connection name="con_primaryweapon_02" tags="weapon small platformcollision standard missile symmetry symmetry_left">
+				<offset>
+					<position x="-1.112257" y="-2.61268" z="-0.7824762"/>
+				</offset>
+			</connection>
+			<connection name="con_dockpos" tags="dockpos ">
+				<offset>
+					<position x="8.752731E-07" y="-8.204688" z="17.36825"/>
+				</offset>
+			</connection>
+			<connection name="con_cockpit" tags="cockpit cockpit_visible">
+				<offset>
+					<position x="1.40667E-05" y="7.1935" z="3.991692"/>
+				</offset>
+			</connection>
+			<connection name="con_storage01" tags="storage ">
+				<offset>
+					<position x="0" y="5.252662" z="-3.31752"/>
+				</offset>
+			</connection>
+			<connection name="con_control01" value="-1" tags="npc  pilot control sit ">
+				<offset>
+					<position x="0.03255" y="-0.2522627" z="4.106823"/>
+				</offset>
+			</connection>
+			<connection name="con_countermeasures_01" tags="countermeasures ">
+				<offset>
+					<position x="0" y="-3.179758" z="-15.25125"/>
+					<quaternion qx="-0.8433912" qy="-0" qz="-0" qw="-0.5372999"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components> -->

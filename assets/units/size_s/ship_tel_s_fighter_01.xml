@@ -1,0 +1,2406 @@
+<?xml version="1.0"?>
+<diff> 
+<add sel="//components/component[@name='ship_tel_s_fighter_01']/connections">
+<connection name="con_internalshieldgen01" tags="internal shield generator">
+				<offset>
+					<position x="0" y="0" z="0"/>
+					<quaternion qx="0" qy="0" qz="0" qw="0"/>
+				</offset>
+</connection>
+</add>
+</diff>
+<!-- 
+<components>
+	<component name="ship_tel_s_fighter_01" class="ship_s">
+		<source geometry="assets\units\size_s\ship_tel_s_fighter_01_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<arealight name="XU AreaLight002" areax="0" areay="0" radius="0.1" r="255" g="221" b="208" lighteffect="1" range="2" spotattenuation="0.8105555" specularintensity="1" trigger="1" intensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="1.361355" y="2.60271" z="-2.435279"/>
+							<quaternion qx="-0.187442" qy="0.4881481" qz="-0.1082197" qw="-0.8454971"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight004" areax="0" areay="0" radius="0.1" r="255" g="221" b="208" lighteffect="1" range="2" spotattenuation="0.8105555" specularintensity="1" trigger="1" intensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="1.073516" y="2.597057" z="-2.601245"/>
+							<quaternion qx="-0.1830126" qy="0.6830127" qz="0.1830128" qw="-0.6830127"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight005" areax="0.6" areay="0" radius="0" r="255" g="232" b="208" lighteffect="1" range="3" spotattenuation="0" specularintensity="0" trigger="1" intensity="0.1">
+						<lightanimations/>
+						<offset>
+							<position x="1.193369" y="1.790534" z="-2.214133"/>
+							<quaternion qx="-0.5000001" qy="-0.5000001" qz="0.4999999" qw="0.4999999"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight006" areax="0" areay="0" radius="0.1" r="255" g="221" b="208" lighteffect="1" range="2" spotattenuation="0.8105555" specularintensity="1" trigger="1" intensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0.7688456" y="2.60271" z="-2.446841"/>
+							<quaternion qx="-0.1961606" qy="-0.4126007" qz="9.147124E-02" qw="-0.8848247"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight007" areax="0" areay="0" radius="0.1" r="255" g="221" b="208" lighteffect="1" range="2" spotattenuation="0.8105555" specularintensity="1" trigger="1" intensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0.7828084" y="2.60271" z="-2.036109"/>
+							<quaternion qx="-0.1082197" qy="-0.8454971" qz="0.187442" qw="-0.4881481"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight008" areax="0" areay="0" radius="0.1" r="255" g="221" b="208" lighteffect="1" range="2" spotattenuation="0.8105555" specularintensity="1" trigger="1" intensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="1.070647" y="2.597057" z="-1.870143"/>
+							<quaternion qx="0.1830128" qy="-0.6830127" qz="0.1830126" qw="-0.6830127"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight009" areax="0" areay="0" radius="0.1" r="255" g="221" b="208" lighteffect="1" range="2" spotattenuation="0.8105555" specularintensity="1" trigger="1" intensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="1.375318" y="2.60271" z="-2.024547"/>
+							<quaternion qx="9.147122E-02" qy="-0.8848248" qz="0.1961606" qw="0.4126005"/>
+						</offset>
+					</arealight>
+					<omni name="XU Omni01" shadow="0" r="255" g="208" b="189" range="0.05" shadowrange="0.05" lighteffect="1" trigger="1" intensity="20" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0.7784234" y="2.588235" z="-2.031734"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni002" shadow="0" r="255" g="208" b="189" range="0.05" shadowrange="0.05" lighteffect="1" trigger="1" intensity="20" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0.7758494" y="2.588235" z="-2.434936"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni003" shadow="0" r="255" g="208" b="189" range="0.05" shadowrange="0.05" lighteffect="1" trigger="1" intensity="20" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="1.063832" y="2.588235" z="-2.584659"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni004" shadow="0" r="255" g="208" b="189" range="0.05" shadowrange="0.05" lighteffect="1" trigger="1" intensity="20" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="1.351487" y="2.588235" z="-2.435557"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni005" shadow="0" r="255" g="208" b="189" range="0.05" shadowrange="0.05" lighteffect="1" trigger="1" intensity="20" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="1.351639" y="2.588235" z="-2.032107"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni006" shadow="0" r="255" g="208" b="189" range="0.05" shadowrange="0.05" lighteffect="1" trigger="1" intensity="20" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="1.065021" y="2.588235" z="-1.882277"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni07" shadow="0" r="255" g="132" b="0" range="1.000004" shadowrange="1.000004" lighteffect="1" trigger="1" intensity="2" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0.7060532" y="1.243876" z="2.941718"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni008" shadow="0" r="255" g="132" b="0" range="1.000004" shadowrange="1.000004" lighteffect="1" trigger="1" intensity="2" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-0.7788311" y="1.243876" z="2.941718"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni009" shadow="0" r="148" g="194" b="206" range="0.9000038" shadowrange="0.9000038" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-0.9757758" y="1.081171" z="0.8251617"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni010" shadow="0" r="148" g="194" b="206" range="0.9000038" shadowrange="0.9000038" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0.8596538" y="1.081171" z="0.8251617"/>
+						</offset>
+					</omni>
+					<arealight name="XU AreaLight10" areax="0.7" areay="0.1999998" radius="0" r="255" g="255" b="255" lighteffect="1" range="3.699999" spotattenuation="0.7366667" specularintensity="1" trigger="1" intensity="0.6999999">
+						<lightanimations/>
+						<offset>
+							<position x="-4.444052E-03" y="2.541209" z="-0.3170192"/>
+							<quaternion qx="0.1468483" qy="-0" qz="-0" qw="-0.989159"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight011" areax="1.2" areay="0.1" radius="0" r="81" g="155" b="174" lighteffect="1" range="3.999999" spotattenuation="0.8455556" specularintensity="1" trigger="1" intensity="0.7">
+						<lightanimations/>
+						<offset>
+							<position x="-0.6093085" y="2.196506" z="2.120901"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight012" areax="1.2" areay="0.1" radius="0" r="81" g="155" b="174" lighteffect="1" range="3.999999" spotattenuation="0.8455556" specularintensity="1" trigger="1" intensity="0.7">
+						<lightanimations/>
+						<offset>
+							<position x="0.6661054" y="2.196506" z="2.120901"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</arealight>
+					<omni name="XU Omni011" shadow="0" r="250" g="182" b="0" range="1.400004" shadowrange="1.400004" lighteffect="1" trigger="1" intensity="0.4999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-5.504704E-02" y="0.9523107" z="4.863798"/>
+						</offset>
+					</omni>
+					<arealight name="XU AreaLight013" areax="1.6" areay="0.6" radius="0" r="151" g="169" b="174" lighteffect="1" range="3.399999" spotattenuation="0.8455556" specularintensity="1" trigger="1" intensity="0.7">
+						<lightanimations/>
+						<offset>
+							<position x="-1.637632E-02" y="2.361771" z="-3.847096"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</arealight>
+					<omni name="XU Omni12" shadow="0" r="156" g="212" b="255" range="0.9000001" shadowrange="0.9000001" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0.6152938" y="1.768604" z="-7.036539"/>
+							<quaternion qx="5.340016E-02" qy="3.400444E-08" qz="1.818437E-09" qw="-0.9985732"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni013" shadow="0" r="156" g="212" b="255" range="0.9000001" shadowrange="0.9000001" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-0.6342422" y="1.768604" z="-7.036539"/>
+							<quaternion qx="5.340016E-02" qy="3.400444E-08" qz="1.818437E-09" qw="-0.9985732"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni014" shadow="0" r="255" g="204" b="0" range="0.6" shadowrange="0.6" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0.3816907" y="2.27192" z="-4.146595"/>
+							<quaternion qx="5.340016E-02" qy="3.400444E-08" qz="1.818437E-09" qw="-0.9985732"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni015" shadow="0" r="255" g="204" b="0" range="0.6" shadowrange="0.6" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-0.518041" y="2.27192" z="-4.146595"/>
+							<quaternion qx="5.340016E-02" qy="3.400444E-08" qz="1.818437E-09" qw="-0.9985732"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni016" shadow="0" r="156" g="212" b="255" range="0.6" shadowrange="0.6" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0.6152938" y="1.954297" z="-5.542277"/>
+							<quaternion qx="5.340016E-02" qy="3.400444E-08" qz="1.818437E-09" qw="-0.9985732"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni017" shadow="0" r="156" g="212" b="255" range="0.6" shadowrange="0.6" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-0.6179017" y="1.954297" z="-5.542277"/>
+							<quaternion qx="5.340016E-02" qy="3.400444E-08" qz="1.818437E-09" qw="-0.9985732"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni18" shadow="0" r="255" g="255" b="255" range="5" shadowrange="5" lighteffect="1" trigger="1" intensity="1.5" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-7.190134" y="-2.235675" z="-2.622418"/>
+							<quaternion qx="-0.9880582" qy="-0" qz="-0" qw="0.1540811"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni019" shadow="0" r="255" g="255" b="255" range="5" shadowrange="5" lighteffect="1" trigger="1" intensity="1.5" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="7.049936" y="-2.235675" z="-2.622418"/>
+							<quaternion qx="-0.9880582" qy="-0" qz="-0" qw="0.1540811"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni020" shadow="0" r="255" g="255" b="255" range="5" shadowrange="5" lighteffect="1" trigger="1" intensity="1.5" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="4.159149" y="-2.360351" z="3.024943"/>
+							<quaternion qx="-0.9880582" qy="-0" qz="-0" qw="0.1540811"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni021" shadow="0" r="255" g="255" b="255" range="5" shadowrange="5" lighteffect="1" trigger="1" intensity="1.5" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-4.23038" y="-2.360351" z="3.024943"/>
+							<quaternion qx="-0.9880582" qy="-0" qz="-0" qw="0.1540811"/>
+						</offset>
+					</omni>
+					<arealight name="XU AreaLight16" areax="0.6999998" areay="0.1999998" radius="0" r="255" g="255" b="255" lighteffect="1" range="20" spotattenuation="0.7455555" specularintensity="1" trigger="1" intensity="2">
+						<lightanimations/>
+						<offset>
+							<position x="-1.974857" y="2.408164" z="-2.855796"/>
+							<quaternion qx="-0.4445924" qy="-0.5498526" qz="0.4445938" qw="-0.5498511"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight017" areax="0.6999998" areay="0.1999998" radius="0" r="255" g="255" b="255" lighteffect="1" range="20" spotattenuation="0.7455555" specularintensity="1" trigger="1" intensity="2">
+						<lightanimations/>
+						<offset>
+							<position x="1.86805" y="2.408164" z="-2.86269"/>
+							<quaternion qx="0.4605019" qy="-0.5365988" qz="-0.4605033" qw="-0.5365971"/>
+						</offset>
+					</arealight>
+					<omni name="XU Omni007" shadow="0" r="210" g="234" b="255" range="3.5" shadowrange="3.5" lighteffect="1" lenseffect="modelight" trigger="1" intensity="1.25" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="1.367991" z="2.640164"/>
+						</offset>
+					</omni>
+				</lights>
+				<trailemitters>
+					<emitter name="wingtip_vortex_ship_s_01" type="wingtip_vortex_ship_s_01">
+						<offset>
+							<position x="11.526" y="0.6655607" z="-1.710489"/>
+						</offset>
+					</emitter>
+					<emitter name="wingtip_vortex_ship_s_01" type="wingtip_vortex_ship_s_01">
+						<offset>
+							<position x="-11.52583" y="0.6655607" z="-1.710489"/>
+						</offset>
+					</emitter>
+				</trailemitters>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="ship ship_s">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part animation  ">
+				<offset/>
+				<animations>
+					<animation name="landinggears_inactive" start="1" end="1"/>
+					<animation name="landinggears_activating" start="1" end="60"/>
+					<animation name="landinggears_active" start="60" end="60"/>
+					<animation name="landinggears_deactivating" start="60" end="120"/>
+				</animations>
+				<parts>
+					<part name="anim_main" wreck="anim_main_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_hullpattern"/>
+									<material id="3" ref="p1.multimat"/>
+									<material id="4" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_hullpattern"/>
+									<material id="3" ref="p1.multimat"/>
+									<material id="4" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_hullpattern"/>
+									<material id="3" ref="p1.multimat"/>
+									<material id="4" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_hullpattern"/>
+									<material id="3" ref="p1.multimat"/>
+									<material id="4" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="11.81782" y="2.984189" z="9.649031"/>
+							<center x="0" y="1.489878E-02" z="0"/>
+						</size>
+						<size_raw>
+							<max x="11.81782" y="2.984189" z="9.649031"/>
+							<center x="0" y="1.489866E-02" z="0"/>
+						</size_raw>
+						<lights>
+							<arealight name="XU AreaLight015" areax="2.099998" areay="9.999943E-02" radius="0" r="255" g="255" b="255" lighteffect="1" range="13.9" spotattenuation="0.75" specularintensity="1" trigger="1" intensity="0">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="0"/>
+										<key frame="60" value="5"/>
+										<key frame="120" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="0.9527859" y="0.3190489" z="-7.63063"/>
+									<quaternion qx="-0.1103922" qy="-0.6989405" qz="-0.109424" qw="-0.6980847"/>
+								</offset>
+							</arealight>
+							<arealight name="XU AreaLight018" areax="1.600002" areay="0.3" radius="0" r="255" g="255" b="255" lighteffect="1" range="800" spotattenuation="0.9611111" specularintensity="1" trigger="1" intensity="500">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="500"/>
+										<key frame="60" value="0"/>
+										<key frame="120" value="500"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="10.37662" y="-0.4031954" z="7.485322"/>
+									<quaternion qx="0.7064338" qy="3.084355E-02" qz="3.084357E-02" qw="-0.7064338"/>
+								</offset>
+							</arealight>
+							<arealight name="XU AreaLight019" areax="1.599998" areay="0.1999994" radius="0" r="255" g="255" b="255" lighteffect="1" range="7.7" spotattenuation="0.75" specularintensity="1" trigger="1" intensity="0">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="0"/>
+										<key frame="60" value="5"/>
+										<key frame="120" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="6.294855" y="-1.693674" z="-2.707898"/>
+									<quaternion qx="-4.913003E-02" qy="-0.6867438" qz="-0.1699243" qw="-0.7050496"/>
+								</offset>
+							</arealight>
+							<arealight name="XU AreaLight021" areax="0.2" areay="0.1" radius="0" r="151" g="169" b="174" lighteffect="1" range="3.199999" spotattenuation="0.7405556" specularintensity="1" trigger="1" intensity="0.4">
+								<lightanimations/>
+								<offset>
+									<position x="-6.551279E-03" y="0.7470627" z="-7.61214"/>
+									<quaternion qx="-7.302059E-08" qy="-0.9659258" qz="0.258819" qw="-2.725166E-07"/>
+								</offset>
+							</arealight>
+							<arealight name="XU AreaLight022" areax="2.099998" areay="9.999943E-02" radius="0" r="255" g="255" b="255" lighteffect="1" range="13.9" spotattenuation="0.75" specularintensity="1" trigger="1" intensity="0">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="0"/>
+										<key frame="60" value="5"/>
+										<key frame="120" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-0.9294711" y="0.3190489" z="-7.63063"/>
+									<quaternion qx="-0.1103922" qy="-0.6989405" qz="-0.109424" qw="-0.6980847"/>
+								</offset>
+							</arealight>
+							<arealight name="XU AreaLight023" areax="1.599998" areay="0.1999994" radius="0" r="255" g="255" b="255" lighteffect="1" range="7.7" spotattenuation="0.75" specularintensity="1" trigger="1" intensity="0">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="0"/>
+										<key frame="60" value="5"/>
+										<key frame="120" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-6.188529" y="-1.693674" z="-2.707898"/>
+									<quaternion qx="-0.1676354" qy="-0.6677793" qz="-4.491211E-02" qw="-0.7238454"/>
+								</offset>
+							</arealight>
+							<arealight name="XU AreaLight024" areax="1.600002" areay="0.3" radius="0" r="255" g="255" b="255" lighteffect="1" range="800" spotattenuation="0.9611111" specularintensity="1" trigger="1" intensity="500">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="500"/>
+										<key frame="60" value="0"/>
+										<key frame="120" value="500"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-10.78143" y="-0.403195" z="7.485322"/>
+									<quaternion qx="0.7064338" qy="-3.084357E-02" qz="-3.084355E-02" qw="-0.7064338"/>
+								</offset>
+							</arealight>
+						</lights>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection02" tags="part noshadowcaster platformcollision detail_s " parent="anim_main">
+				<offset>
+					<position x="0" y="1.437528" z="3.30612"/>
+				</offset>
+				<parts>
+					<part name="detail_xl_glass_inside">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1.cockpit_glass_inside_01"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1.03692" y="1.18208" z="3.838934"/>
+							<center x="0" y="3.576279E-07" z="-4.768372E-07"/>
+						</size>
+						<size_raw>
+							<max x="1.03692" y="1.18208" z="3.838934"/>
+							<center x="0" y="3.576279E-07" z="-2.384186E-07"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part animation detail_xl forceoutline iklink nocollision " parent="anim_main">
+				<offset>
+					<position x="-4.469807" y="-1.630406" z="7.410761"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_f_l_hatch">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.8425401" y="0.2795407" z="3.231095"/>
+							<center x="0" y="9.418726E-02" z="-1.59173"/>
+						</size>
+						<size_raw>
+							<max x="0.8425403" y="0.1853534" z="1.639365"/>
+							<center x="0" y="0" z="0"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection04" tags="part animation detail_xl forceoutline iklink nocollision " parent="anim_main">
+				<offset>
+					<position x="4.454406" y="-1.617693" z="7.403151"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_f_r_hatch">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.8425401" y="0.2729154" z="3.227466"/>
+							<center x="0" y="8.756208E-02" z="-1.588101"/>
+						</size>
+						<size_raw>
+							<max x="0.8425399" y="0.1853532" z="1.639365"/>
+							<center x="0" y="0" z="0"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection05" tags="part animation iklink detail_xl platformcollision forceoutline  " parent="anim_main">
+				<offset>
+					<position x="-5.012177" y="-0.6475463" z="-2.533371"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_b_l_02">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.4493203" y="1.585911" z="1.386403"/>
+							<center x="0" y="-0.2530051" z="-6.980753E-02"/>
+						</size>
+						<size_raw>
+							<max x="0.4493202" y="0.5383726" z="0.6416075"/>
+							<center x="0" y="0.3972665" z="0.3374939"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection06" tags="part animation iklink detail_xl platformcollision forceoutline  " parent="landinggear_b_l_02">
+				<offset>
+					<position x="4.634857E-04" y="0.9458811" z="0.7847309"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_b_l_01">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1.multimat"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.6718913" y="2.324141" z="2.047982"/>
+							<center x="0" y="-1.963723" z="-1.483323"/>
+						</size>
+						<size_raw>
+							<max x="0.6718915" y="2.078143" z="2.54088"/>
+							<center x="0" y="-0.8588626" z="-0.9881108"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection07" tags="part animation iklink detail_xl platformcollision forceoutline  " parent="anim_main">
+				<offset>
+					<position x="5.034977" y="-0.6475463" z="-2.533371"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_b_r_02">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.4493203" y="1.586095" z="1.386403"/>
+							<center x="0" y="-0.2531897" z="-6.980753E-02"/>
+						</size>
+						<size_raw>
+							<max x="0.4493202" y="0.5383726" z="0.6416075"/>
+							<center x="0" y="0.3972665" z="0.3374939"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection08" tags="part animation iklink detail_xl platformcollision forceoutline  " parent="landinggear_b_r_02">
+				<offset>
+					<position x="4.634857E-04" y="0.9458811" z="0.7847309"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_b_r_01">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1.multimat"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.6718915" y="2.324325" z="2.047982"/>
+							<center x="-4.768372E-07" y="-1.963907" z="-1.483323"/>
+						</size>
+						<size_raw>
+							<max x="0.6718915" y="2.078143" z="2.54088"/>
+							<center x="-4.768372E-07" y="-0.8588626" z="-0.9881108"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection09" tags="part animation iklink detail_xl platformcollision forceoutline  " parent="anim_main">
+				<offset>
+					<position x="-4.485183" y="-0.618041" z="7.177187"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_f_l_02">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.4493203" y="1.574592" z="1.164404"/>
+							<center x="0" y="-0.3298295" z="-1.268864E-03"/>
+						</size>
+						<size_raw>
+							<max x="0.4493203" y="0.286462" z="1.165673"/>
+							<center x="0" y="0.4791501" z="-0.1840897"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection10" tags="part animation iklink detail_xl platformcollision forceoutline  " parent="landinggear_f_l_02">
+				<offset>
+					<position x="-4.634857E-04" y="1.104332" z="-0.5644646"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_f_l_01">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1.multimat"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.6718916" y="2.32593" z="1.808213"/>
+							<center x="0" y="-2.182842" z="1.216233"/>
+						</size>
+						<size_raw>
+							<max x="0.6718914" y="1.989987" z="0.5919796"/>
+							<center x="0" y="-0.9234498" z="0.8114672"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection11" tags="part animation iklink detail_xl platformcollision forceoutline  " parent="anim_main">
+				<offset>
+					<position x="4.334323" y="-0.618041" z="7.177187"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_f_r_02">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.4493203" y="1.574592" z="1.164404"/>
+							<center x="0" y="-0.3298295" z="-1.268864E-03"/>
+						</size>
+						<size_raw>
+							<max x="0.4493203" y="0.286462" z="1.165673"/>
+							<center x="0" y="0.4791501" z="-0.1840897"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection12" tags="part animation iklink detail_xl platformcollision forceoutline  " parent="landinggear_f_r_02">
+				<offset>
+					<position x="-4.634857E-04" y="1.104332" z="-0.5644646"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_f_r_01">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1.multimat"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.6718916" y="2.32593" z="1.808213"/>
+							<center x="0" y="-2.182842" z="1.216233"/>
+						</size>
+						<size_raw>
+							<max x="0.6718914" y="1.989987" z="0.5919796"/>
+							<center x="0" y="-0.9234498" z="0.8114672"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection13" tags="part animation detail_s forceoutline iklink nocollision " parent="anim_main">
+				<offset>
+					<position x="-5.743272" y="-1.437746" z="-3.073162"/>
+					<quaternion qx="7.348251E-02" qy="-0" qz="-0" qw="0.9972965"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_b_l_rotator">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hullpattern"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="6.473379E-02" y="0.7605678" z="0.4758095"/>
+							<center x="4.768372E-07" y="0.57037" z="0.2846913"/>
+						</size>
+						<size_raw>
+							<max x="6.473359E-02" y="6.806511E-02" z="0.2707376"/>
+							<center x="4.768372E-07" y="-1.192093E-07" z="0"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection14" tags="part animation detail_xl forceoutline iklink nocollision " parent="landinggear_b_l_rotator">
+				<offset>
+					<position x="1.053429E-02" y="-1.076269E-02" z="-3.498149E-02"/>
+					<quaternion qx="1.41874E-13" qy="-1.585803E-08" qz="4.363284E-03" qw="0.9999905"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_b_l_hatch">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.7618734" y="1.627659" z="1.994678"/>
+							<center x="0.7027602" y="-0.1065831" z="0.074857"/>
+						</size>
+						<size_raw>
+							<max x="2.290505E-02" y="4.528636E-02" z="1.718433"/>
+							<center x="0.7193971" y="5.541801E-03" z="-9.219646E-04"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection15" tags="part animation detail_s forceoutline iklink nocollision " parent="anim_main">
+				<offset>
+					<position x="5.743814" y="-1.460287" z="-3.076849"/>
+					<quaternion qx="7.648548E-02" qy="-0" qz="-0" qw="0.9970707"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_b_r_rotator001">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hullpattern"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="6.473379E-02" y="0.67641" z="0.4574981"/>
+							<center x="0" y="0.484943" z="0.2527816"/>
+						</size>
+						<size_raw>
+							<max x="6.473359E-02" y="6.806512E-02" z="0.2707377"/>
+							<center x="0" y="0" z="0"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection16" tags="part animation detail_xl forceoutline iklink nocollision " parent="landinggear_b_r_rotator001">
+				<offset>
+					<position x="-9.049225E-02" y="-3.237188E-02" z="-2.264857E-02"/>
+					<quaternion qx="-6.916755E-14" qy="4.836206E-11" qz="-4.363293E-03" qw="0.9999905"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="landinggear_b_r_hatch">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.7444721" y="1.409074" z="1.933775"/>
+							<center x="-0.6349483" y="2.222562E-02" z="0.1240129"/>
+						</size>
+						<size_raw>
+							<max x="1.377648" y="4.435498E-02" z="1.716708"/>
+							<center x="-0.6353016" y="5.479336E-03" z="8.459091E-04"/>
+						</size_raw>
+						<pivot>
+							<offset>
+								<position x="-0.6353259" y="9.31263E-04" z="1.724482E-03"/>
+							</offset>
+						</pivot>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection17" tags="part detail_l platformcollision forceoutline  ">
+				<offset>
+					<position x="0" y="1.147721" z="-0.2983906"/>
+				</offset>
+				<parts>
+					<part name="anim_cockpit">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture_02"/>
+									<material id="2" ref="p1.multimat"/>
+									<material id="3" ref="generic.generic_p1_int_lights_01"/>
+									<material id="4" ref="p1.multimat"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1.513795" y="1.688489" z="7.39734"/>
+							<center x="0" y="2.072334E-03" z="-2.384186E-07"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection18" tags="part detail_m nocollision animation textureanimation forceoutline  ">
+				<offset>
+					<position x="2.845287E-03" y="0.2986594" z="-1.401777"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="100"/>
+				</animations>
+				<parts>
+					<part name="anim_poslights">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1effects.p1_gradient_colour"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="11.34226" y="2.531333" z="7.85683"/>
+							<center x="4.768372E-07" y="-1.192093E-07" z="4.768372E-07"/>
+						</size>
+						<size_raw>
+							<max x="11.34226" y="2.531333" z="7.85683"/>
+							<center x="4.768372E-07" y="-1.192093E-07" z="2.384186E-07"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="u_offset" controller="bezier_float">
+									<key frame="0" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="4" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="5" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="9" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="10" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="14" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="15" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="64" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="65" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="69" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="70" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="99" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="100" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+						<lights>
+							<omni name="XU Omni058" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-8.832129" y="0.8051217" z="-4.547049"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni059" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="8.920565" y="0.8051217" z="-4.547049"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni060" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-0.6134996" y="2.229036" z="-7.401564"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni061" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="0.5823177" y="2.229036" z="-7.401564"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni062" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="0.914669" y="0.4359721" z="-8.019745"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni063" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-0.9269683" y="0.4359721" z="-8.019745"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni064" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-2.551536" y="-1.38684" z="-2.310388"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni065" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="2.521426" y="-1.38684" z="-2.310388"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni066" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="3.701995" y="2.066759" z="-1.926523"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni067" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-3.78086" y="2.066759" z="-1.926523"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni068" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-11.27813" y="1.064692" z="0.6639807"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni069" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="11.29714" y="1.064692" z="0.6639807"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni070" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="11.29714" y="-2.082689" z="4.971776"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni071" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="3.519764" y="-2.879957" z="5.13915"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni072" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="1.606719" y="-2.376133" z="6.439591"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni073" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="3.764587" y="1.023392" z="7.766564"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni074" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-3.833576" y="1.023392" z="7.766564"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni075" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="4.142857E-02" y="3.02557" z="0.8518167"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni076" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-11.28608" y="-2.082689" z="4.971776"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni077" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-1.607835" y="-2.376133" z="6.439591"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni078" shadow="0" r="255" g="144" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-3.458965" y="-2.879957" z="5.13915"/>
+								</offset>
+							</omni>
+						</lights>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection19" tags="part animation platformcollision forceoutline detail_xl anim_dockdoor ">
+				<offset>
+					<position x="1.559883" y="-2.963492" z="1.604531"/>
+				</offset>
+				<animations>
+					<animation name="dockingbay_closed" start="0" end="0"/>
+					<animation name="dockingbay_opening" start="0" end="60"/>
+					<animation name="dockingbay_open" start="60" end="60"/>
+					<animation name="dockingbay_closing" start="60" end="120"/>
+				</animations>
+				<parts>
+					<part name="xs_dock_hatch_r">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.7728096" y="1.521814" z="1.595702"/>
+							<center x="-0.7728094" y="-2.380514E-02" z="1.192093E-07"/>
+						</size>
+						<size_raw>
+							<max x="0.756878" y="4.039409E-02" z="1.595702"/>
+							<center x="-0.7887411" y="4.039407E-02" z="1.192093E-07"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection20" tags="part animation detail_xl platformcollision anim_cockpit  ">
+				<offset>
+					<position x="-1.818806E-03" y="7.264075E-02" z="-7.005688"/>
+				</offset>
+				<animations>
+					<animation name="cockpit_closed" start="1" end="1"/>
+					<animation name="cockpit_opening" start="1" end="30"/>
+					<animation name="cockpit_open" start="30" end="30"/>
+					<animation name="cockpit_closing" start="30" end="60"/>
+				</animations>
+				<parts>
+					<part name="anim_door_a">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_hulltexture_02"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.4438924" y="0.4372981" z="1.302573"/>
+							<center x="0" y="0.2028323" z="-0.6161942"/>
+						</size>
+						<size_raw>
+							<max x="0.4438924" y="0.2339736" z="0.6862002"/>
+							<center x="0" y="-4.922301E-04" z="1.788139E-04"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection21" tags="part animation platformcollision forceoutline detail_xl anim_dockdoor ">
+				<offset>
+					<position x="-1.537355" y="-2.963492" z="1.604531"/>
+				</offset>
+				<animations>
+					<animation name="dockingbay_closed" start="0" end="0"/>
+					<animation name="dockingbay_opening" start="0" end="60"/>
+					<animation name="dockingbay_open" start="60" end="60"/>
+					<animation name="dockingbay_closing" start="60" end="120"/>
+				</animations>
+				<parts>
+					<part name="xs_dock_hatch_l">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.7728096" y="1.553423" z="1.595703"/>
+							<center x="0.7728096" y="7.803679E-03" z="1.192093E-07"/>
+						</size>
+						<size_raw>
+							<max x="0.7568783" y="4.039409E-02" z="1.595703"/>
+							<center x="0.7887411" y="4.039407E-02" z="1.192093E-07"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection22" tags="part detail_xl platformcollision forceoutline  ">
+				<offset>
+					<position x="-6.186673" y="1.854902" z="-8.527912"/>
+				</offset>
+				<restrictions>
+					<restriction type="rotation_x">
+						<limits>
+							<min value="-30.0  "/>
+							<max value="30  "/>
+						</limits>
+					</restriction>
+				</restrictions>
+				<parts>
+					<part name="flap_l">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="2.832429" y="0.3254821" z="1.688644"/>
+							<center x="1.689305" y="-0.1619303" z="-1.449928"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection23" tags="part detail_m platformcollision forceoutline  ">
+				<offset>
+					<position x="0" y="-0.3203064" z="-8.250237E-03"/>
+				</offset>
+				<parts>
+					<part name="detail_xl">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1.multimat"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="10.9553" y="2.430779" z="9.777714"/>
+							<center x="0" y="0.1252443" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection24" tags="part detail_xl platformcollision forceoutline  ">
+				<offset>
+					<position x="6.126192" y="1.854902" z="-8.527912"/>
+				</offset>
+				<restrictions>
+					<restriction type="rotation_x">
+						<limits>
+							<min value="-30.0  "/>
+							<max value="30  "/>
+						</limits>
+					</restriction>
+				</restrictions>
+				<parts>
+					<part name="flap_r">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="2.832429" y="0.325482" z="1.688644"/>
+							<center x="-1.689305" y="-0.1619295" z="-1.449928"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection25" group="cabin_01" tags="part animation detail_l platformcollision forceoutline  ">
+				<offset>
+					<position x="1.065797" y="1.571691" z="-2.234183"/>
+					<quaternion qx="-0" qy="-0.1736482" qz="-0" qw="-0.9848078"/>
+				</offset>
+				<animations>
+					<animation name="doors_open" start="0" end="0"/>
+					<animation name="doors_closing" start="0" end="30"/>
+					<animation name="doors_closed" start="30" end="30"/>
+					<animation name="doors_opening" start="30" end="60"/>
+				</animations>
+				<parts>
+					<part name="detail_xl_door">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="p1.multimat"/>
+									<material id="3" ref="p1paint.paint_p1_decal_01"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.5071403" y="1.069761" z="0.5441678"/>
+							<center x="-4.217696E-02" y="-0.14906" z="2.373672E-02"/>
+						</size>
+						<size_raw>
+							<max x="0.4593886" y="1.069761" z="0.1318675"/>
+							<center x="0.1437101" y="-0.14906" z="0.3948405"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection26" tags="part detail_l platformcollision forceoutline  ">
+				<offset>
+					<position x="1.065797" y="1.571691" z="-2.234183"/>
+					<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+				</offset>
+				<parts>
+					<part name="detail_xl_airlock">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+									<material id="3" ref="p1.multimat"/>
+									<material id="4" ref="p1paint.paint_p1_decal_01"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.618134" y="1.168217" z="0.618134"/>
+							<center x="0" y="-0.1182173" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection27" tags="part ui transporter trigger_interact detail_xl location_cockpit platformcollision forceoutline  ">
+				<offset>
+					<position x="1.416867" y="1.613058" z="-2.233903"/>
+				</offset>
+				<parts>
+					<part name="detail_xl_switch">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_int_lights_01"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+									<material id="3" ref="p1effects.p1_terminal_displays_01"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="4.358801E-02" y="0.2735191" z="0.1155996"/>
+							<center x="0" y="0" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection28" tags="part detail_m nocollision forceoutline  ">
+				<offset>
+					<position x="0" y="0.9615706" z="2.907905"/>
+				</offset>
+				<parts>
+					<part name="part_fx_paneldisp">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1effects.p1_chair_ui"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.9523609" y="0.2217961" z="0.5669132"/>
+							<center x="0" y="8.010167E-02" z="-4.949808E-03"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection29" tags="part noshadowcaster platformcollision detail_xl ">
+				<offset>
+					<position x="0" y="1.448785" z="3.309533"/>
+				</offset>
+				<parts>
+					<part name="detail_xl_glass_outside">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1.cockpit_glass_outside_02"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1.04479" y="1.184011" z="3.842347"/>
+							<center x="0" y="0" z="2.384186E-07"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection30" tags="part animation detail_xl platformcollision anim_cockpit  ">
+				<offset>
+					<position x="-1.818806E-03" y="-0.3483181" z="-5.667572"/>
+				</offset>
+				<animations>
+					<animation name="cockpit_closed" start="1" end="1"/>
+					<animation name="cockpit_opening" start="1" end="30"/>
+					<animation name="cockpit_open" start="30" end="30"/>
+					<animation name="cockpit_closing" start="30" end="60"/>
+				</animations>
+				<parts>
+					<part name="anim_door_b">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_hulltexture_02"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.4438925" y="0.6660718" z="1.953489"/>
+							<center x="-2.980232E-08" y="0.4259184" z="-1.267894"/>
+						</size>
+						<size_raw>
+							<max x="0.4438925" y="0.2369407" z="0.6797724"/>
+							<center x="-2.980232E-08" y="-3.212661E-03" z="5.822182E-03"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection31" tags="part ">
+				<offset>
+					<position x="11.80701" y="-0.4220744" z="1.46078"/>
+				</offset>
+				<restrictions>
+					<restriction type="rotation_x"/>
+				</restrictions>
+				<parts>
+					<part name="rotator_r">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="2.50165" y="1.268053" z="4.194097"/>
+							<center x="2.403605" y="3.082359E-02" z="0.6558607"/>
+						</size>
+						<trailemitters>
+							<emitter name="trail_ship_s_01" type="trail_ship_s_01">
+								<offset>
+									<position x="1.517809" y="-0.6986502" z="-9.740829"/>
+								</offset>
+							</emitter>
+						</trailemitters>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="con_engine_02" tags="engine small platformcollision " parent="rotator_r">
+				<offset>
+					<position x="2.479946" y="5.700564E-02" z="-2.135468"/>
+				</offset>
+			</connection>
+			<connection name="Connection32" tags="part animation  " parent="rotator_r">
+				<offset>
+					<position x="4.957554" y="2.685905E-03" z="-2.108209"/>
+					<quaternion qx="1.685874E-07" qy="-0.7071068" qz="1.685874E-07" qw="0.7071067"/>
+				</offset>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_08"/>
+				</parts>
+				<animations/>
+			</connection>
+			<connection name="Connection33" tags="part detail_xl nocollision animation textureanimation iklink forceoutline  " parent="rotator_r">
+				<offset>
+					<position x="4.84614" y="2.309686E-02" z="0.3863385"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="100"/>
+				</animations>
+				<parts>
+					<part name="anim_poslights_right">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1effects.p1_gradient_colour"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1.835847" y="0.6197623" z="0.1317801"/>
+							<center x="-1.799227" y="4.124612E-02" z="0"/>
+						</size>
+						<size_raw>
+							<max x="3.635074" y="0.5785162" z="0.1317801"/>
+							<center x="-1.799227" y="4.124612E-02" z="0"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="u_offset" controller="bezier_float">
+									<key frame="0" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="4" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="5" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="9" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="10" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="14" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="15" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="64" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="65" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="69" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="70" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="99" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="100" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+						<lights>
+							<omni name="XU Omni084" shadow="0" r="18" g="255" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="0.5531006" y="0.6153452" z="-3.797865E-02"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni083" shadow="0" r="18" g="255" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="0.5531006" y="-0.5218056" z="-3.797865E-02"/>
+								</offset>
+							</omni>
+						</lights>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection34" group="pilotcontrol" tags="part  ">
+				<offset>
+					<position x="7.746536E-04" y="0.335799" z="2.653048"/>
+				</offset>
+				<parts>
+					<part ref="interiors_chair_02_body.part_chair_01" name="part_chair_01"/>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="con_control01" tags="npc pilot sit_pilot sit_terminal_left sit_terminal_right" value="-1" group="pilotcontrol" parent="part_chair_01">
+				<offset>
+					<position x="2.240068E-02" y="1.907015E-02" z="9.820461E-04"/>
+				</offset>
+			</connection>
+			<connection name="Connection35" tags="part iklink  " group="pilotcontrol" parent="part_chair_01">
+				<offset>
+					<position x="2.760348E-03" y="0.2860189" z="-0.2292099"/>
+				</offset>
+				<parts>
+					<part ref="interiors_chair_02_body.part_chair_02" name="part_chair_02"/>
+				</parts>
+			</connection>
+			<connection name="Connection36" tags="part iklink  " group="pilotcontrol" parent="part_chair_02">
+				<offset>
+					<position x="-2.760656E-03" y="2.135694E-02" z="-0.2675586"/>
+				</offset>
+				<parts>
+					<part ref="interiors_chair_02_body.part_chair_03" name="part_chair_03"/>
+				</parts>
+			</connection>
+			<connection name="Connection37" tags="part iklink  " group="pilotcontrol" parent="part_chair_03">
+				<offset>
+					<position x="2.424349E-07" y="-7.305861E-03" z="0.3341103"/>
+				</offset>
+				<parts>
+					<part ref="interiors_chair_02_body.part_chair_04" name="part_chair_04"/>
+				</parts>
+			</connection>
+			<connection name="Connection38" tags="part iklink  " group="pilotcontrol" parent="part_chair_04">
+				<offset>
+					<position x="-1.465669E-07" y="0.1074176" z="-0.2239385"/>
+				</offset>
+				<parts>
+					<part ref="interiors_chair_02_body.part_chair_05" name="part_chair_05"/>
+				</parts>
+			</connection>
+			<connection name="Connection39" tags="part iklink  " group="pilotcontrol" parent="part_chair_05">
+				<offset>
+					<position x="-7.339986E-08" y="0.2139989" z="-6.664085E-02"/>
+				</offset>
+				<parts>
+					<part ref="interiors_chair_02_body.part_chair_06" name="part_chair_06"/>
+				</parts>
+			</connection>
+			<connection name="Connection40" tags="part iklink  " group="pilotcontrol" parent="part_chair_04">
+				<offset>
+					<position x="-6.318442E-07" y="9.568346E-02" z="-6.022692E-02"/>
+				</offset>
+				<parts>
+					<part ref="interiors_chair_02_body.part_chair_07" name="part_chair_07"/>
+				</parts>
+			</connection>
+			<connection name="Connection41" tags="part ">
+				<offset>
+					<position x="-11.76272" y="-0.4220744" z="1.46078"/>
+				</offset>
+				<restrictions>
+					<restriction type="rotation_x"/>
+				</restrictions>
+				<parts>
+					<part name="rotator_l">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="2.50165" y="1.268053" z="4.194097"/>
+							<center x="-2.403605" y="3.082359E-02" z="0.6558607"/>
+						</size>
+						<trailemitters>
+							<emitter name="trail_ship_s_01" type="trail_ship_s_01">
+								<offset>
+									<position x="-1.922794" y="-0.6986502" z="-9.740828"/>
+								</offset>
+							</emitter>
+						</trailemitters>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="con_engine_01" tags="engine small platformcollision " parent="rotator_l">
+				<offset>
+					<position x="-2.212578" y="9.618843E-02" z="-2.166066"/>
+				</offset>
+			</connection>
+			<connection name="Connection42" tags="part animation  " parent="rotator_l">
+				<offset>
+					<position x="-4.92839" y="2.685905E-03" z="-2.111387"/>
+					<quaternion qx="8.429365E-08" qy="0.7071068" qz="-2.528811E-07" qw="0.7071067"/>
+				</offset>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_09"/>
+				</parts>
+				<animations/>
+			</connection>
+			<connection name="Connection43" tags="part detail_xl nocollision animation textureanimation iklink forceoutline  " parent="rotator_l">
+				<offset>
+					<position x="-4.835429" y="2.309686E-02" z="0.3863385"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="100"/>
+				</animations>
+				<parts>
+					<part name="anim_poslights_left">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1effects.p1_gradient_colour"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1.583828" y="0.5785162" z="0.1317804"/>
+							<center x="1.547207" y="0" z="2.384186E-07"/>
+						</size>
+						<size_raw>
+							<max x="3.662109E-02" y="0.5785162" z="0.1317801"/>
+							<center x="1.547207" y="0" z="2.384186E-07"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="u_offset" controller="bezier_float">
+									<key frame="0" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="4" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="5" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="9" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="10" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="14" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="15" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="64" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="65" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="69" value="0" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="70" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="99" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+									<key frame="100" value="-0.4" in_tangent_type="step" out_tangent_type="step"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+						<lights>
+							<omni name="XU Omni081" shadow="0" r="255" g="0" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-0.3621559" y="0.5891544" z="-3.797865E-02"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni082" shadow="0" r="255" g="0" b="0" range="2" shadowrange="2" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="1"/>
+										<key frame="4" value="1"/>
+										<key frame="5" value="0"/>
+										<key frame="9" value="0"/>
+										<key frame="10" value="1"/>
+										<key frame="14" value="1"/>
+										<key frame="15" value="0"/>
+										<key frame="64" value="0"/>
+										<key frame="65" value="1"/>
+										<key frame="69" value="1"/>
+										<key frame="70" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-0.3621559" y="-0.5218056" z="-3.797865E-02"/>
+								</offset>
+							</omni>
+						</lights>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection44" tags="part nocollision forceoutline detail_s  ">
+				<offset>
+					<position x="4.56371" y="-2.003829" z="5.031582"/>
+				</offset>
+				<parts>
+					<part name="part_decals">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1paint.paint_p1_decal_01"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="11.43443" y="2.98964" z="8.694427"/>
+							<center x="-4.563711" y="2.046893" z="-4.476362"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection45" tags="part nocollision forceoutline detail_m fx ">
+				<offset>
+					<position x="-2.523531E-02" y="0.5493569" z="-1.393672"/>
+				</offset>
+				<parts>
+					<part name="fx_licence">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1paint.paint_idcode"/>
+									<material id="2" ref="p1paint.paint_logo"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="9.123363" y="2.35196" z="7.547788"/>
+							<center x="2.922304E-05" y="-1.066665" z="2.382803E-02"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection46" tags="part detail_s noshadowcaster forceoutline nocollision ">
+				<offset>
+					<position x="0" y="1.437528" z="3.30612"/>
+				</offset>
+				<parts>
+					<part name="fx_glass_mode">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="arcp1.cp1_modes"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1.025825" y="0.8526199" z="3.350127"/>
+							<center x="0" y="-0.298813" z="0.392436"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection47" tags="part detail_s noshadowcaster forceoutline nocollision ">
+				<offset>
+					<position x="2.999306E-04" y="1.43975" z="3.27495"/>
+				</offset>
+				<parts>
+					<part name="detail_s_glass_dirt">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1effects.p1_window_trim_01"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1.0319" y="1.15365" z="3.80775"/>
+							<center x="0" y="0" z="2.384186E-07"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection48" tags="part animation walk_stairway platformcollision anim_cockpit collisiononly   ">
+				<offset>
+					<position x="-7.827029E-03" y="0.815341" z="-5.073724"/>
+					<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+				</offset>
+				<animations>
+					<animation name="cockpit_closed" start="1" end="1"/>
+					<animation name="cockpit_opening" start="1" end="30"/>
+					<animation name="cockpit_open" start="30" end="30"/>
+					<animation name="cockpit_closing" start="30" end="60"/>
+				</animations>
+				<parts>
+					<part name="anim_ladder">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hullpattern"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.0200001" y="7.999992E-02" z="2.000001E-02"/>
+							<center x="0.5199999" y="0" z="-0.1599998"/>
+						</size>
+						<size_raw>
+							<max x="2.000001E-02" y="7.999992E-02" z="0.02"/>
+							<center x="0.5199999" y="0" z="-0.1599998"/>
+						</size_raw>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection49" tags="part animation iklink nocollision detail_l anim_cockpit   " parent="anim_ladder">
+				<offset>
+					<position x="0.1516933" y="-0.9000001" z="0"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="anim_ladder_board">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1.multimat"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.4372375" y="3.965654E-02" z="0.2881706"/>
+							<center x="5.504116E-07" y="6.113276E-03" z="-0.1493583"/>
+						</size>
+						<size_raw>
+							<max x="0.2148924" y="3.354327E-02" z="0.2881711"/>
+							<center x="5.355105E-07" y="6.113276E-03" z="3.649378E-02"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection50" tags="part animation iklink nocollision detail_l anim_cockpit   " parent="anim_ladder_board">
+				<offset>
+					<position x="0.1296372" y="-1.219034E-02" z="0"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part name="anim_ladder_steps">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1.multimat"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.8730812" y="1.967073" z="0.2881713"/>
+							<center x="1.518056E-07" y="-1.932696" z="-0.8714361"/>
+						</size>
+						<size_raw>
+							<max x="0.4045171" y="3.320555E-02" z="0.2881713"/>
+							<center x="3.259629E-08" y="5.859584E-04" z="-0.201436"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection51" tags="part animation  ">
+				<offset>
+					<position x="-6.787133" y="-2.118043" z="3.321148"/>
+					<quaternion qx="5.338509E-08" qy="-0.7071067" qz="-0.7071068" qw="-5.338508E-08"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_07"/>
+				</parts>
+			</connection>
+			<connection name="Connection52" tags="part animation  ">
+				<offset>
+					<position x="-3.419767" y="0.9250418" z="-6.979148"/>
+					<quaternion qx="6.21958E-09" qy="-0.7071069" qz="-0.7071066" qw="1.129897E-07"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_06"/>
+				</parts>
+			</connection>
+			<connection name="Connection53" tags="part animation  ">
+				<offset>
+					<position x="-2.821722" y="1.932033" z="-3.556292"/>
+					<quaternion qx="5.338509E-08" qy="0.7071067" qz="-0.7071068" qw="5.338508E-08"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_05"/>
+				</parts>
+			</connection>
+			<connection name="Connection54" tags="part animation  ">
+				<offset>
+					<position x="5.97644" y="-0.4193886" z="9.868656"/>
+					<quaternion qx="-1.80001E-14" qy="-1" qz="2.384186E-07" qw="-7.54979E-08"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_04"/>
+				</parts>
+			</connection>
+			<connection name="Connection55" tags="part animation  ">
+				<offset>
+					<position x="5.291035" y="1.125741" z="5.686647"/>
+					<quaternion qx="5.338509E-08" qy="0.7071067" qz="-0.7071068" qw="5.338508E-08"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_03"/>
+				</parts>
+			</connection>
+			<connection name="Connection56" tags="part animation  ">
+				<offset>
+					<position x="6.866669" y="-2.118043" z="3.321148"/>
+					<quaternion qx="7.445852E-08" qy="-0.7071068" qz="-0.7071068" qw="-3.231164E-08"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_02"/>
+				</parts>
+			</connection>
+			<connection name="Connection57" tags="part animation  ">
+				<offset>
+					<position x="2.817566" y="1.932033" z="-3.556292"/>
+					<quaternion qx="5.338509E-08" qy="0.7071067" qz="-0.7071068" qw="5.338508E-08"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_01"/>
+				</parts>
+			</connection>
+			<connection name="Connection58" tags="part animation  ">
+				<offset>
+					<position x="3.43292" y="0.9250418" z="-6.979148"/>
+					<quaternion qx="5.338507E-08" qy="-0.7071071" qz="-0.7071064" qw="-5.338509E-08"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_00"/>
+				</parts>
+			</connection>
+			<connection name="Connection59" tags="part animation  ">
+				<offset>
+					<position x="-5.95555" y="-0.4193886" z="9.868656"/>
+					<quaternion qx="-1.80001E-14" qy="-1" qz="2.384186E-07" qw="-7.54979E-08"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_10"/>
+				</parts>
+			</connection>
+			<connection name="Connection60" tags="part animation  ">
+				<offset>
+					<position x="-5.398968" y="1.125741" z="5.686647"/>
+					<quaternion qx="3.848392E-08" qy="0.7071067" qz="-0.7071068" qw="6.828623E-08"/>
+				</offset>
+				<animations/>
+				<parts>
+					<part ref="thruster_ship_s_01.anim_thruster_001" name="anim_thruster_11"/>
+				</parts>
+			</connection>
+			<connection name="Connection61" tags="part detail_l platformcollision forceoutline  ">
+				<offset>
+					<position x="0" y="1.147721" z="-0.2983906"/>
+				</offset>
+				<parts>
+					<part name="Object01">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture_02"/>
+									<material id="2" ref="p1.multimat"/>
+									<material id="3" ref="generic.generic_p1_int_lights_01"/>
+									<material id="4" ref="p1.multimat"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.8635354" y="0.6792684" z="0.2728057"/>
+							<center x="-5.791277E-03" y="-0.3887984" z="-4.6882"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="con_playercontrol" tags="playercontrol">
+				<offset>
+					<position x="0.2251749" y="4.995248" z="-3.001919"/>
+				</offset>
+			</connection>
+			<connection name="con_scanner_01" tags="jumpdrive small">
+				<offset>
+					<position x="0.2251749" y="4.995248" z="-0.5158014"/>
+					<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+				</offset>
+			</connection>
+			<connection name="con_shield_01" tags="small shield unhittable ">
+				<offset>
+					<position x="-4.01672" y="1.310914" z="-0.2079433"/>
+				</offset>
+			</connection>
+			<connection name="con_storage01" tags="storage ">
+				<offset>
+					<position x="0.2251749" y="4.995248" z="-5.44949"/>
+				</offset>
+			</connection>
+			<connection name="con_cargotube" tags="cargotube">
+				<offset>
+					<position x="1.171803E-02" y="-3.004842" z="4.047713"/>
+				</offset>
+			</connection>
+			<connection name="con_npc_teleport01" group="cabin_01" tags="npc_waypoint npctransport stand ">
+				<offset>
+					<position x="1.065008" y="0.343" z="-2.233809"/>
+					<quaternion qx="-0" qy="0.7071066" qz="-0" qw="-0.7071069"/>
+				</offset>
+			</connection>
+			<connection name="con_countermeasures_01" tags="countermeasures ">
+				<offset>
+					<position x="3.625059E-02" y="1.511816" z="-9.666428"/>
+					<quaternion qx="-0.9848077" qy="-0" qz="-0" qw="-0.1736483"/>
+				</offset>
+			</connection>
+			<connection name="con_shipstorage_xs_01" tags="dockingbay ">
+				<offset>
+					<position x="0.2251749" y="5.037749" z="-7.740235"/>
+				</offset>
+			</connection>
+			<connection name="con_weapon_01" tags="weapon small standard missile platformcollision ">
+				<offset>
+					<position x="-4.35631" y="-0.5395111" z="9.600989"/>
+				</offset>
+			</connection>
+			<connection name="con_shield_02" tags="small shield unhittable ">
+				<offset>
+					<position x="4.362367" y="1.310914" z="-0.2079433"/>
+				</offset>
+			</connection>
+			<connection name="con_weapon_02" tags="weapon small standard missile platformcollision ">
+				<offset>
+					<position x="4.339504" y="-0.5395111" z="9.60099"/>
+				</offset>
+			</connection>
+			<connection name="con_dock_xs" tags="dock_xs ">
+				<offset>
+					<position x="0" y="-1.388262" z="1.629345"/>
+					<quaternion qx="-0.7071068" qy="-0" qz="-0" qw="-0.7071067"/>
+				</offset>
+			</connection>
+			<connection name="con_tagweapon" tags="tagger_slot  weapon_tag">
+				<offset>
+					<position x="-1.182216E-02" y="-0.4291032" z="7.994762"/>
+				</offset>
+			</connection>
+			<connection name="con_dockpos" tags="dockpos ">
+				<offset>
+					<position x="0" y="-3.963894" z="17.5284"/>
+				</offset>
+			</connection>
+			<connection name="con_cockpit" tags="cockpit cockpit_visible">
+				<offset>
+					<position x="1.643002E-02" y="1.523944" z="1.15119"/>
+				</offset>
+			</connection>
+			<connection name="con_player01" value="-1" tags="player">
+				<offset>
+					<position x="-7.976413E-03" y="1.534685" z="1.760528"/>
+					<quaternion qx="0.5" qy="-0.5" qz="-0.5" qw="-0.5"/>
+				</offset>
+			</connection>
+			<connection name="con_tochair" group="pilotcontrol" tags="tochair ">
+				<offset>
+					<position x="-4.263256E-14" y="0.3595484" z="1.697859"/>
+				</offset>
+			</connection>
+			<connection name="con_uianchor" group="pilotcontrol" tags="uianchor ">
+				<offset>
+					<position x="6.771358E-03" y="1.493789" z="2.538811"/>
+				</offset>
+			</connection>
+			<connection name="con_npc_ladder_bottom" tags="npc_waypoint  ladder_bottom">
+				<offset>
+					<position x="-6.325932E-03" y="-3.984658" z="-6.465467"/>
+				</offset>
+			</connection>
+			<connection name="con_npc_ladder_top" tags="npc_waypoint  ladder_top">
+				<offset>
+					<position x="-2.573681E-02" y="-7.207656E-02" z="-5.258614"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components> -->
