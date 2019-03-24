@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Exported by: Michael (192.168.3.81) at 21.11.2018_18-13-09-->
+<!--Exported by: Michael (192.168.3.81) at 21.11.2018_21-26-41-->
 <diff> 
 <replace sel="//macros">
 
 <macros>
-  <macro name="ship_arg_m_bomber_01_b_macro" class="ship_m">
-    <component ref="ship_arg_m_bomber_01" />
+  <macro name="ship_tel_s_fighter_02_b_macro" class="ship_s">
+    <component ref="ship_tel_s_fighter_02" />
     <properties>
-      <identification name="{20101,10504}" basename="{20101,10501}" description="{20101,10514}" variation="{20111,1201}" shortvariation="{20111,1203}" icon="ship_m_fight_01" />
+      <identification name="{20101, 21603}" basename="{20101, 21601}" description="{20101, 21613}" variation="{20111,1201}" shortvariation="{20111,1203}" icon="ship_s_fight_01" />
       <software>
         <software ware="software_dockmk2" compatible="1" />
         <software ware="software_flightassistmk1" default="1" />
@@ -18,22 +18,18 @@
         <software ware="software_targetmk1" default="1" />
         <software ware="software_trademk1" compatible="1" />
       </software>
-      <explosiondamage value="5000" />
-      <storage missile="140" />
-      <hull max="37000" />
+      <storage missile="25" />
+      <hull max="8900" />
       <secrecy level="2" />
       <purpose primary="fight" />
-      <people capacity="7" />
-      <sounds>
-        <shipdetail ref="shipdetail_ship_m_03" />
-      </sounds>
-      <physics mass="39.1">
-        <inertia pitch="14.5" yaw="14.5" roll="14.5" />
-        <drag forward="5.6" reverse="25" horizontal="21.6" vertical="21.6" pitch="16.5" yaw="16.5" roll="16.5" />
+      <people capacity="2" />
+      <physics mass="10.437">
+        <inertia pitch="4.6" yaw="4.6" roll="5" />
+        <drag forward="4" reverse="22.9" horizontal="5.2" vertical="5.2" pitch="4.8" yaw="4.8" roll="4.8" />
       </physics>
-      <thruster tags="medium" />
-      <ship type="bomber" />
-      <sound_occlusion inside="0.4" />
+      <thruster tags="small" />
+      <ship type="fighter" />
+      <sound_occlusion inside="0.5" />
     </properties>
     <connections>
       <connection ref="con_cockpit">
@@ -46,7 +42,7 @@
         <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
       </connection>
       <connection ref="con_storage01">
-        <macro ref="storage_arg_m_bomber_01_b_macro" connection="ShipConnection" />
+        <macro ref="storage_tel_s_fighter_02_b_macro" connection="ShipConnection" />
       </connection>
     </connections>
   </macro>
@@ -55,10 +51,10 @@
 </diff>
 <!-- 
 <macros>
-  <macro name="ship_arg_m_bomber_01_b_macro" class="ship_m">
-    <component ref="ship_arg_m_bomber_01" />
+  <macro name="ship_tel_s_fighter_02_b_macro" class="ship_s">
+    <component ref="ship_tel_s_fighter_02" />
     <properties>
-      <identification name="{20101,10504}" basename="{20101,10501}" description="{20101,10514}" variation="{20111,1201}" shortvariation="{20111,1203}" icon="ship_m_fight_01" />
+      <identification name="{20101, 21603}" basename="{20101, 21601}" description="{20101, 21613}" variation="{20111,1201}" shortvariation="{20111,1203}" icon="ship_s_fight_01" />
       <software>
         <software ware="software_dockmk2" compatible="1" />
         <software ware="software_flightassistmk1" default="1" />
@@ -69,22 +65,18 @@
         <software ware="software_targetmk1" default="1" />
         <software ware="software_trademk1" compatible="1" />
       </software>
-      <explosiondamage value="5000" />
-      <storage missile="40" />
-      <hull max="14000" />
+      <storage missile="20" />
+      <hull max="5000" />
       <secrecy level="2" />
       <purpose primary="fight" />
-      <people capacity="7" />
-      <sounds>
-        <shipdetail ref="shipdetail_ship_m_03" />
-      </sounds>
-      <physics mass="35.505">
-        <inertia pitch="6.578" yaw="6.578" roll="5.263" />
-        <drag forward="6.257" reverse="25.028" horizontal="16.62" vertical="16.62" pitch="11.376" yaw="11.376" roll="11.376" />
+      <people capacity="2" />
+      <physics mass="10.437">
+        <inertia pitch="2.532" yaw="2.532" roll="2.786" />
+        <drag forward="5.707" reverse="25.472" horizontal="4.536" vertical="4.536" pitch="4.199" yaw="4.199" roll="4.199" />
       </physics>
-      <thruster tags="medium" />
-      <ship type="bomber" />
-      <sound_occlusion inside="0.4" />
+      <thruster tags="small" />
+      <ship type="fighter" />
+      <sound_occlusion inside="0.5" />
     </properties>
     <connections>
       <connection ref="con_cockpit">
@@ -97,7 +89,7 @@
         <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
       </connection>
       <connection ref="con_storage01">
-        <macro ref="storage_arg_m_bomber_01_b_macro" connection="ShipConnection" />
+        <macro ref="storage_tel_s_fighter_02_b_macro" connection="ShipConnection" />
       </connection>
     </connections>
   </macro>

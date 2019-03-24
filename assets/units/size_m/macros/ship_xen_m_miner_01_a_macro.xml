@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.81) at 16.01.2019_16-59-28-->
+<diff> 
+<replace sel="//macros">
+
+<macros>
+  <macro name="ship_xen_m_miner_01_a_macro" class="ship_m">
+    <component ref="ship_xen_m_miner_01" />
+    <properties>
+      <identification name="{20101,70401}" description="{20101,70411}" icon="ship_m_mine_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <hull max="20000" />
+      <secrecy level="2" />
+      <purpose primary="mine" />
+      <people capacity="0" />
+      <physics mass="49.951">
+        <inertia pitch="10.5" yaw="10.5" roll="8" />
+        <drag forward="7" reverse="28" horizontal="28" vertical="28" pitch="16" yaw="16" roll="16" />
+      </physics>
+      <thruster tags="medium" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_xen_m_travel_01_mk1_macro" path="../con_engine_01" />
+            <shield macro="shield_xen_m_standard_01_mk1_macro" path="../con_shield_01" optional="1" />
+            <shield macro="shield_xen_m_standard_01_mk1_macro" path="../con_shield_02" optional="1" />
+            <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_01" optional="1" />
+            <weapon macro="weapon_xen_m_mining_01_mk1_macro" path="../con_primaryweapon_001" optional="1" />
+          </macros>
+          <ammunition>
+            <ammunition macro="countermeasure_flares_01_macro" min="20" max="40" optional="1" />
+          </ammunition>
+          <virtualmacros>
+            <thruster macro="thruster_gen_m_allround_01_mk1_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <capture allow="0" />
+      <ship type="miner" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_xen_m_miner_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!-- 
+<macros>
+  <macro name="ship_xen_m_miner_01_a_macro" class="ship_m">
+    <component ref="ship_xen_m_miner_01" />
+    <properties>
+      <identification name="{20101,70401}" description="{20101,70411}" icon="ship_m_mine_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <hull max="6000" />
+      <secrecy level="2" />
+      <purpose primary="mine" />
+      <people capacity="0" />
+      <physics mass="49.951">
+        <inertia pitch="8.129" yaw="8.129" roll="6.503" />
+        <drag forward="8.243" reverse="32.973" horizontal="25.807" vertical="25.807" pitch="14.988" yaw="14.988" roll="14.988" />
+      </physics>
+      <thruster tags="medium" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_xen_m_travel_01_mk1_macro" path="../con_engine_01" />
+            <shield macro="shield_xen_m_standard_01_mk1_macro" path="../con_shield_01" optional="1" />
+            <shield macro="shield_xen_m_standard_01_mk1_macro" path="../con_shield_02" optional="1" />
+            <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_01" optional="1" />
+            <weapon macro="weapon_xen_m_mining_01_mk1_macro" path="../con_primaryweapon_001" optional="1" />
+          </macros>
+          <ammunition>
+            <ammunition macro="countermeasure_flares_01_macro" min="20" max="40" optional="1" />
+          </ammunition>
+          <virtualmacros>
+            <thruster macro="thruster_gen_m_allround_01_mk1_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <capture allow="0" />
+      <ship type="miner" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_xen_m_miner_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Exported by: Michael (192.168.3.81) at 21.11.2018_18-13-09-->
+<!--Exported by: nick (192.168.3.120) at 27.11.2018_14-43-12-->
 <diff> 
 <replace sel="//macros">
 
 <macros>
-  <macro name="ship_arg_m_bomber_01_b_macro" class="ship_m">
-    <component ref="ship_arg_m_bomber_01" />
+  <macro name="ship_par_m_trans_container_02_a_macro" class="ship_m">
+    <component ref="ship_par_m_trans_container_02" />
     <properties>
-      <identification name="{20101,10504}" basename="{20101,10501}" description="{20101,10514}" variation="{20111,1201}" shortvariation="{20111,1203}" icon="ship_m_fight_01" />
+      <identification name="{20101,31302}" basename="{20101,31301}" description="{20101,31312}" variation="{20111,1101}" shortvariation="{20111,1103}" icon="ship_m_trade_01" />
       <software>
         <software ware="software_dockmk2" compatible="1" />
         <software ware="software_flightassistmk1" default="1" />
@@ -15,24 +15,21 @@
         <software ware="software_scannerlongrangemk2" compatible="1" />
         <software ware="software_scannerobjectmk1" default="1" />
         <software ware="software_scannerobjectmk2" compatible="1" />
-        <software ware="software_targetmk1" default="1" />
-        <software ware="software_trademk1" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" default="1" />
       </software>
-      <explosiondamage value="5000" />
-      <storage missile="140" />
-      <hull max="37000" />
+      <explosiondamage value="1000" />
+      <storage missile="20" />
+      <hull max="25000" />
       <secrecy level="2" />
-      <purpose primary="fight" />
-      <people capacity="7" />
-      <sounds>
-        <shipdetail ref="shipdetail_ship_m_03" />
-      </sounds>
-      <physics mass="39.1">
-        <inertia pitch="14.5" yaw="14.5" roll="14.5" />
-        <drag forward="5.6" reverse="25" horizontal="21.6" vertical="21.6" pitch="16.5" yaw="16.5" roll="16.5" />
+      <purpose primary="trade" />
+      <people capacity="20" />
+      <physics mass="40.327">
+        <inertia pitch="8" yaw="8" roll="6.4" />
+        <drag forward="4.4" reverse="17.6" horizontal="26.3" vertical="26.3" pitch="13.8" yaw="13.8" roll="13.8" />
       </physics>
       <thruster tags="medium" />
-      <ship type="bomber" />
+      <ship type="transporter" />
       <sound_occlusion inside="0.4" />
     </properties>
     <connections>
@@ -46,7 +43,7 @@
         <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
       </connection>
       <connection ref="con_storage01">
-        <macro ref="storage_arg_m_bomber_01_b_macro" connection="ShipConnection" />
+        <macro ref="storage_par_m_trans_container_02_a_macro" connection="ShipConnection" />
       </connection>
     </connections>
   </macro>
@@ -55,10 +52,10 @@
 </diff>
 <!-- 
 <macros>
-  <macro name="ship_arg_m_bomber_01_b_macro" class="ship_m">
-    <component ref="ship_arg_m_bomber_01" />
+  <macro name="ship_par_m_trans_container_02_a_macro" class="ship_m">
+    <component ref="ship_par_m_trans_container_02" />
     <properties>
-      <identification name="{20101,10504}" basename="{20101,10501}" description="{20101,10514}" variation="{20111,1201}" shortvariation="{20111,1203}" icon="ship_m_fight_01" />
+      <identification name="{20101,31302}" basename="{20101,31301}" description="{20101,31312}" variation="{20111,1101}" shortvariation="{20111,1103}" icon="ship_m_trade_01" />
       <software>
         <software ware="software_dockmk2" compatible="1" />
         <software ware="software_flightassistmk1" default="1" />
@@ -66,24 +63,21 @@
         <software ware="software_scannerlongrangemk2" compatible="1" />
         <software ware="software_scannerobjectmk1" default="1" />
         <software ware="software_scannerobjectmk2" compatible="1" />
-        <software ware="software_targetmk1" default="1" />
-        <software ware="software_trademk1" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" default="1" />
       </software>
-      <explosiondamage value="5000" />
-      <storage missile="40" />
-      <hull max="14000" />
+      <explosiondamage value="1000" />
+      <storage missile="20" />
+      <hull max="5000" />
       <secrecy level="2" />
-      <purpose primary="fight" />
-      <people capacity="7" />
-      <sounds>
-        <shipdetail ref="shipdetail_ship_m_03" />
-      </sounds>
-      <physics mass="35.505">
-        <inertia pitch="6.578" yaw="6.578" roll="5.263" />
-        <drag forward="6.257" reverse="25.028" horizontal="16.62" vertical="16.62" pitch="11.376" yaw="11.376" roll="11.376" />
+      <purpose primary="trade" />
+      <people capacity="20" />
+      <physics mass="40.327">
+        <inertia pitch="6.121" yaw="6.121" roll="4.897" />
+        <drag forward="5.19" reverse="20.76" horizontal="23.88" vertical="23.88" pitch="12.582" yaw="12.582" roll="12.582" />
       </physics>
       <thruster tags="medium" />
-      <ship type="bomber" />
+      <ship type="transporter" />
       <sound_occlusion inside="0.4" />
     </properties>
     <connections>
@@ -97,7 +91,7 @@
         <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
       </connection>
       <connection ref="con_storage01">
-        <macro ref="storage_arg_m_bomber_01_b_macro" connection="ShipConnection" />
+        <macro ref="storage_par_m_trans_container_02_a_macro" connection="ShipConnection" />
       </connection>
     </connections>
   </macro>
