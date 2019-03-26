@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Last exported: 13.02.2019 14:43:03-->
+<diff>
+<!-- loadout thresholds -->
+	<replace sel="//wares/ware[@id='turret_arg_l_beam_01_mk1']/use/@threshold">0.85</replace>
+  <replace sel="//wares/ware[@id='turret_arg_l_plasma_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_beam_01_mk1']/use/@threshold">0.85</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_beam_02_mk1']/use/@threshold">0.85</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_gatling_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_gatling_02_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_plasma_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_plasma_02_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_par_l_beam_01_mk1']/use/@threshold">0.85</replace>
+  <replace sel="//wares/ware[@id='turret_par_l_plasma_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_beam_01_mk1']/use/@threshold">0.85</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_beam_02_mk1']/use/@threshold">0.85</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_gatling_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_gatling_02_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_plasma_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_plasma_02_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_shotgun_02_mk1']/use/@threshold">0.0</replace>	
+  <replace sel="//wares/ware[@id='turret_tel_l_beam_01_mk1']/use/@threshold">0.85</replace>
+  <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_beam_01_mk1']/use/@threshold">0.85</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/use/@threshold">0.85</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_gatling_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_gatling_02_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_plasma_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
+<!-- L and XL ships prices -->
+  <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_a']/price">
+  <price min="6295057" average="7458890" max="8522724" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_b']/price">
+    <price min="7559033" average="8892980" max="10226927" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_arg_xl_carrier_01_a']/price">
+    <price min="12453215" average="14697900" max="16942585" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_arg_xl_carrier_01_b']/price">
+    <price min="15038308" average="17650950" max="20263593" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_par_l_destroyer_01_a']/price">
+    <price min="6725188" average="7947280" max="9169372" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_par_l_destroyer_01_b']/price">
+    <price min="8075338" average="9482750" max="10990163" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_par_xl_carrier_01_a']/price">
+    <price min="16300230" average="19200270" max="22000311" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_par_xl_carrier_01_b']/price">
+    <price min="19514739" average="22993810" max="26472882" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_a']/price">
+    <price min="6776958" average="8043480" max="9210002" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_b']/price">
+    <price min="68151401" average="9607530" max="11063660" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_tel_xl_carrier_01_a']/price">
+    <price min="13272631" average="15614860" max="17957089" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_tel_xl_carrier_01_b']/price">
+    <price min="15892256" average="18743830" max="21595405" />
+  </replace>
+
+	</diff>
