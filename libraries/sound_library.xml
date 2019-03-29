@@ -11,6 +11,13 @@
         </sample>
         <volume start="1.0" distance="10"/>
     </sound> 
+    <!-- AUTO/CANNON hit-->
+    <sound id="wpn_cannon_impact" description=" CANNON impact" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\cannon_hit_1"/>
+        </sample>
+        <volume start="1.0" distance="8"/>
+    </sound>
     <!-- BURST CANNON-->
     <sound id="wpn_burst_cannon_shoot" description="BURST CANNON shooting" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
