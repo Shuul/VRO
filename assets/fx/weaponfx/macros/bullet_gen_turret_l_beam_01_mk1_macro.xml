@@ -6,9 +6,9 @@
   <macro name="bullet_gen_turret_l_beam_01_mk1_macro" class="bullet">
     <component ref="bullet_gen_l_beam_01_mk1" />
     <properties>
-      <bullet speed="17000" lifetime="1.3" amount="1" barrelamount="2" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="0" />
+      <bullet speed="16500" lifetime="1.3" amount="1" barrelamount="2" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
       <reload rate ="0.04" />
-      <damage value="20500" shield="4000" repair="0" />
+      <damage value="1000" shield="500" repair="0" />
       <effects>
         <impact ref="impact_gen_turret_heavy_lance" />
         <launch ref="muzzle_gen_turret_heavy_lance" /> 
