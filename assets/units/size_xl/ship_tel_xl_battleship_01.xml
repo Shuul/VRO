@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<components>
+	<component name="ship_tel_xl_battleship_01" class="ship_xl">
+		<source geometry="assets\units\size_xl\ship_tel_xl_resupplier_01_data"/>
+		<layers>
+			<layer>
+				<waypoints>
+					<waypoint name="XU_Waypoint08" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="14.22231" y="-64.05214" z="844.4619" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links/>
+					</waypoint>
+					<waypoint name="XU_Waypoint06" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="-12.77769" y="-64.05214" z="844.4619" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links/>
+					</waypoint>
+					<waypoint name="XU_Waypoint05" tags="sizeLevel1 typedock start dynamicmasstraffic " x="6.0301" y="-46.92715" z="501.024" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+						<links>
+							<link ref="XU_Waypoint010"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint03" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="14.22231" y="-29.80215" z="844.4619" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint012"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint02" tags="sizeLevel1 typedock end dynamicmasstraffic " x="-6.691213" y="-46.92715" z="501.024" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+						<links/>
+					</waypoint>
+					<waypoint name="XU_Waypoint01" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="-12.77769" y="-29.80215" z="844.4619" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint013"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint009" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-6.691207" y="-46.92715" z="762.7331" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+						<links>
+							<link ref="XU_Waypoint02"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint010" tags="typenormal sizeLevel1 dynamicmasstraffic " x="6.030106" y="-46.92715" z="762.733" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+						<links>
+							<link ref="XU_Waypoint014"/>
+							<link ref="XU_Waypoint011"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint011" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-12.77769" y="-64.05214" z="809.6458" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint06"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint012" tags="typenormal sizeLevel1 dynamicmasstraffic " x="14.22231" y="-29.80215" z="809.6458" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint009"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint013" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-12.77769" y="-29.80215" z="809.6458" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint009"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint014" tags="typenormal sizeLevel1 dynamicmasstraffic " x="14.22231" y="-64.05214" z="809.6458" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint08"/>
+						</links>
+					</waypoint>
+				</waypoints>
+				<lights>
+					<omni name="XU Omni001" shadow="0" r="153" g="208" b="255" range="200" shadowrange="200" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="437.2579" y="0" z="290.5038"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni002" shadow="0" r="153" g="208" b="255" range="200" shadowrange="200" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="218.6289" y="378.6764" z="290.5038"/>
+							<quaternion qx="-0" qy="-0" qz="-0.5000001" qw="-0.8660253"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni003" shadow="0" r="153" g="208" b="255" range="200" shadowrange="200" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-218.629" y="378.6764" z="290.5038"/>
+							<quaternion qx="-0" qy="-0" qz="-0.8660254" qw="-0.5"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni004" shadow="0" r="153" g="208" b="255" range="200" shadowrange="200" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-437.2579" y="-6.103516E-05" z="290.5038"/>
+							<quaternion qx="-0" qy="-0" qz="-1" qw="4.371139E-08"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni005" shadow="0" r="153" g="208" b="255" range="200" shadowrange="200" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-218.6289" y="-378.6765" z="290.5038"/>
+							<quaternion qx="-0" qy="-0" qz="0.8660254" qw="-0.5000001"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni006" shadow="0" r="153" g="208" b="255" range="200" shadowrange="200" lighteffect="1" trigger="1" intensity="1" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="218.629" y="-378.6764" z="290.5038"/>
+							<quaternion qx="-0" qy="-0" qz="0.5" qw="-0.8660254"/>
+						</offset>
+					</omni>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="ship ship_xl">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part  ">
+				<offset>
+					<position x="-4.58602E-04" y="-2.748429E-05" z="0"/>
+					<quaternion qx="-0" qy="-0" qz="0.2588191" qw="-0.9659258"/>
+				</offset>
+				<parts>
+					<part name="part_main" wreck="part_main_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="495.6998" y="563.1744" z="934.519"/>
+							<center x="6.187346E-05" y="-3.033289E-06" z="-230.1756"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection02" tags="part detail_s nocollision forceoutline ">
+				<offset>
+					<position x="-1.351669E-03" y="0" z="-194.4763"/>
+				</offset>
+				<parts>
+					<part name="detail_s_decoration">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1.multimat"/>
+									<material id="2" ref="p1paint.paint_p1_decal_01"/>
+									<material id="3" ref="generic.generic_p1_int_lights_01"/>
+									<material id="4" ref="generic.generic_p1_hulltexture"/>
+									<material id="5" ref="p1paint.paint_p1_decal_02"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="195.8633" y="171.1648" z="105.0655"/>
+							<center x="1.251962" y="24.92966" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part nocollision forceoutline detail_l fx  ">
+				<offset>
+					<position x="-1.385498E-02" y="36.284" z="-1072.705"/>
+				</offset>
+				<parts>
+					<part name="fx_licence">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1paint.paint_idcode"/>
+									<material id="2" ref="p1paint.paint_logo"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="155.9783" y="6.560146" z="44.96957"/>
+							<center x="0" y="-3.814697E-06" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection04" tags="part detail_l nocollision fx  ">
+				<offset>
+					<position x="-3.931237E-05" y="0" z="-181.6893"/>
+				</offset>
+				<parts>
+					<part name="detail_l_lights">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1effects.p1_lightcone_soft_near"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="284.8723" y="246.7067" z="136.818"/>
+							<center x="-6.463997E-06" y="32.31876" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection05" tags="part animation  ">
+				<offset>
+					<position x="-4.474688E-07" y="-4.474688E-07" z="-502.13"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="400"/>
+				</animations>
+				<parts>
+					<part name="anim_living" wreck="anim_living_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="372.4296" y="372.4296" z="76.64496"/>
+							<center x="4.474688E-07" y="4.474688E-07" z="0.2791443"/>
+						</size>
+						<size_raw>
+							<max x="372.4295" y="369.9527" z="76.64491"/>
+							<center x="-7.584647E-05" y="2.476838" z="0.2791443"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection06" tags="part detail_s nocollision forceoutline ">
+				<offset>
+					<position x="-3.800397E-04" y="5.004666E-06" z="454.2556"/>
+					<quaternion qx="-0" qy="-0" qz="0.2588191" qw="-0.9659258"/>
+				</offset>
+				<parts>
+					<part name="detail_s_main">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="488.7516" y="560.1503" z="195.3727"/>
+							<center x="1.382883E-05" y="-3.552222E-05" z="43.00519"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection07" tags="part detail_s nocollision forceoutline ">
+				<offset>
+					<position x="-2.951722E-04" y="8.417877E-05" z="507.7413"/>
+					<quaternion qx="-0" qy="-0" qz="0.2588191" qw="-0.9659258"/>
+				</offset>
+				<parts>
+					<part name="detail_s_alpha">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_alphatexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="444.2375" y="498.0671" z="122.9779"/>
+							<center x="-1.00036E-05" y="-2.314361E-05" z="71.30548"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection08" tags="part animation detail_xl nocollision forceoutline anim_dockdoor ">
+				<offset>
+					<position x="0" y="118.1739" z="689.5646"/>
+					<quaternion qx="-1" qy="-0" qz="-0" qw="7.54979E-08"/>
+				</offset>
+				<animations>
+					<animation name="dockingbay_closed" start="1" end="1"/>
+					<animation name="dockingbay_opening" start="1" end="25"/>
+					<animation name="dockingbay_open" start="25" end="25"/>
+					<animation name="dockingbay_closing" start="25" end="50"/>
+				</animations>
+				<parts>
+					<part name="anim_hatch">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1.800216" y="1.74839" z="0.113848"/>
+							<center x="0" y="0" z="0"/>
+						</size>
+						<size_raw>
+							<max x="1.800216" y="1.748389" z="0.1138477"/>
+							<center x="0" y="0" z="0"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="con_playercontrol" tags="playercontrol">
+				<offset>
+					<position x="9.119629" y="570.4039" z="597.4468"/>
+				</offset>
+			</connection>
+			<connection name="con_storage01" tags="storage ">
+				<offset>
+					<position x="9.119629" y="573.5208" z="462.7467"/>
+				</offset>
+			</connection>
+			<connection name="con_cockpit" tags="cockpit cockpit_visible">
+				<offset>
+					<position x="0" y="0" z="694.8326"/>
+				</offset>
+			</connection>
+			<connection name="con_shipstorage01" tags="dockingbay ">
+				<offset>
+					<position x="5.559937" y="569.41" z="494.3568"/>
+				</offset>
+			</connection>
+			<connection name="con_shipstorage02" tags="dockingbay ">
+				<offset>
+					<position x="5.559937" y="569.41" z="523.8873"/>
+				</offset>
+			</connection>
+			<connection name="con_countermeasures_01" tags="countermeasures ">
+				<offset>
+					<position x="6.458282E-03" y="176.4872" z="-1135.989"/>
+					<quaternion qx="-1" qy="-0" qz="-0" qw="7.54979E-08"/>
+				</offset>
+			</connection>
+			<connection name="con_shipstorage03" tags="dockingbay ">
+				<offset>
+					<position x="5.559937" y="569.41" z="552.5052"/>
+				</offset>
+			</connection>
+			<connection name="con_countermeasures_002" tags="countermeasures ">
+				<offset>
+					<position x="152.4502" y="-88.0632" z="-1135.989"/>
+					<quaternion qx="-1" qy="-0" qz="-0" qw="7.54979E-08"/>
+				</offset>
+			</connection>
+			<connection name="con_countermeasures_003" tags="countermeasures ">
+				<offset>
+					<position x="-152.467" y="-88.0632" z="-1135.989"/>
+					<quaternion qx="-1" qy="-0" qz="-0" qw="7.54979E-08"/>
+				</offset>
+			</connection>
+			<connection name="con_dock_xs" tags="dock_xs ">
+				<offset>
+					<position x="0" y="118.1739" z="687.2365"/>
+				</offset>
+			</connection>
+			<connection name="con_dockarea_tel_xl_carrier_01_a" tags="dockarea">
+				<offset>
+					<position x="0" y="189.4631" z="-193.9589"/>
+				</offset>
+			</connection>
+			<connection name="con_dockarea_tel_xl_carrier_01_b" tags="dockarea">
+				<offset>
+					<position x="-164.0799" y="-94.7316" z="-193.9589"/>
+					<quaternion qx="-0" qy="-0" qz="-0.8660254" qw="-0.5"/>
+				</offset>
+			</connection>
+			<connection name="con_dockarea_tel_xl_carrier_01_c" tags="dockarea">
+				<offset>
+					<position x="164.08" y="-94.73154" z="-193.9589"/>
+					<quaternion qx="-0" qy="-0" qz="0.8660254" qw="-0.5000001"/>
+				</offset>
+			</connection>
+			<connection name="con_launchtube_arg_s_01_a" tags="dockingbay ">
+				<offset>
+					<position x="2.861023E-06" y="113.1622" z="-713.6737"/>
+					<quaternion qx="-0.5000001" qy="0.5" qz="-0.5000001" qw="-0.4999999"/>
+				</offset>
+			</connection>
+			<connection name="con_launchtube_arg_s_01_b" tags="dockingbay ">
+				<offset>
+					<position x="0" y="113.1622" z="-776.3827"/>
+					<quaternion qx="-0.5" qy="0.5" qz="-0.5" qw="-0.4999999"/>
+				</offset>
+			</connection>
+			<connection name="con_launchtube_arg_s_01_c" tags="dockingbay ">
+				<offset>
+					<position x="-98.00137" y="-56.58115" z="-713.6737"/>
+					<quaternion qx="-0.6830126" qy="-0.1830128" qz="-0.6830127" qw="0.1830129"/>
+				</offset>
+			</connection>
+			<connection name="con_launchtube_arg_s_01_d" tags="dockingbay ">
+				<offset>
+					<position x="-98.00137" y="-56.58115" z="-776.3827"/>
+					<quaternion qx="-0.6830126" qy="-0.1830128" qz="-0.6830127" qw="0.183013"/>
+				</offset>
+			</connection>
+			<connection name="con_launchtube_arg_s_01_e" tags="dockingbay ">
+				<offset>
+					<position x="98.00142" y="-56.5811" z="-713.6737"/>
+					<quaternion qx="0.1830125" qy="0.6830127" qz="0.1830127" qw="-0.6830127"/>
+				</offset>
+			</connection>
+			<connection name="con_launchtube_arg_s_01_f" tags="dockingbay ">
+				<offset>
+					<position x="98.00142" y="-56.5811" z="-776.3827"/>
+					<quaternion qx="0.1830124" qy="0.6830127" qz="0.1830128" qw="-0.6830127"/>
+				</offset>
+			</connection>
+			<connection name="con_buildmodule" tags="buildmodule">
+				<offset>
+					<position x="5.559937" y="569.41" z="629.6989"/>
+				</offset>
+			</connection>
+<!--=================================================================EDITS BY BLACKSCORP81=================================================================-->			
+<!--Main Shields XtraLARGE-->
+			<connection name="con_shieldgen_xl_01" tags="extralarge shield">
+				<offset>
+					<position x="95.88" y="55.35962" z="104.6917"/>
+					<quaternion qx="0.3535534" qy="0.6123724" qz="0.3535534" qw="-0.6123724"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_xl_002" tags="extralarge shield">
+				<offset>
+					<position x="0" y="-110" z="104.7198"/>
+					<quaternion qx="-0.7071068" qy="-2.219725E-07" qz="0.7071068" qw="-8.432165E-09"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_xl_003" tags="extralarge shield">
+				<offset>
+					<position x="-95.86763" y="55.2746" z="104.7198"/>
+					<quaternion qx="0.3535534" qy="-0.6123725" qz="-0.3535534" qw="-0.6123723"/>
+				</offset>
+			</connection>
+<!--Engines XtraLARGE-->			
+			<connection name="con_engine_01" group="group_back_bottom " tags="engine extralarge">
+				<offset>
+					<position x="77.533" y="-44.78594" z="-1155.65"/>
+				</offset>
+			</connection>
+			<connection name="con_engine_02" group="group_back_bottom " tags="engine extralarge">
+				<offset>
+					<position x="-77.44943" y="-44.74587" z="-1155.65"/>
+				</offset>
+			</connection>
+			<connection name="con_engine_03" group="group_back_bottom " tags="engine extralarge">
+				<offset>
+					<position x="0.1350555" y="89.62669" z="-1155.65"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_m_engines01" group="group_back_bottom " tags="medium shield hittable ">
+				<offset>
+					<position x="-0" y="192" z="-1065"/>
+				</offset>
+			</connection>
+<!--Turrets LARGE left_turret_large-->
+			<connection name="con_turret_ltL01" group="group_left_turret_large " tags="turret large standard ">
+				<offset>
+					<position x="-90" y="55" z="-115"/>
+					<quaternion qx="0.3535534" qy="-0.6123725" qz="-0.3535534" qw="-0.6123723"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_ltL02" group="group_left_turret_large " tags="turret large standard ">
+				<offset>
+					<position x="-88" y="51" z="-744"/>
+					<quaternion qx="0.3535534" qy="-0.6123725" qz="-0.3535534" qw="-0.6123723"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_l_ltL01" group="group_left_turret_large " tags="large shield hittable ">
+				<offset>
+					<position x="-94" y="54.5" z="-925"/>
+					<quaternion qx="0.3535534" qy="-0.6123725" qz="-0.3535534" qw="-0.6123723"/>
+				</offset>
+			</connection>
+<!--Turrets LARGE right_turret_large-->
+			<connection name="con_turret_rtL01" group="group_right_turret_large " tags="turret large standard ">
+				<offset>
+					<position x="90" y="55" z="-115"/>
+					<quaternion qx="0.3535534" qy="0.6123724" qz="0.3535534" qw="-0.6123724"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_rtL02" group="group_right_turret_large " tags="turret large standard ">
+				<offset>
+					<position x="88" y="51" z="-744"/>
+					<quaternion qx="0.3535534" qy="0.6123724" qz="0.3535534" qw="-0.6123724"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_l_rtL01" group="group_right_turret_large " tags="large shield hittable ">
+				<offset>
+					<position x="94" y="54.5" z="-925"/>
+					<quaternion qx="0.3535534" qy="0.6123724" qz="0.3535534" qw="-0.6123724"/>
+				</offset>
+			</connection>
+<!--Turrets LARGE down_turret_large-->
+			<connection name="con_turret_dtL01" group="group_down_turret_large " tags="turret large standard ">
+				<offset>
+					<position x="0" y="-105" z="-115"/>
+					<quaternion qx="-0.7071068" qy="-2.219725E-07" qz="0.7071068" qw="-8.432165E-09"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_dtL02" group="group_down_turret_large " tags="turret large standard ">
+				<offset>
+					<position x="0" y="-100" z="-744"/>
+					<quaternion qx="-0.7071068" qy="-2.219725E-07" qz="0.7071068" qw="-8.432165E-09"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_l_dtL01" group="group_down_turret_large " tags="large shield hittable ">
+				<offset>
+					<position x="0" y="-109" z="-925"/>
+					<quaternion qx="-0.7071068" qy="-2.219725E-07" qz="0.7071068" qw="-8.432165E-09"/>
+				</offset>
+			</connection>
+<!--Turrets MEDIUM center_bottom_left-->	
+			<connection name="con_turret_cblM01" group="group_center_bottom_left " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="-116.8888" y="-67.50318" z="143"/>
+					<quaternion qx="4.451076E-07" qy="4.451076E-07" qz="-0.8660254" qw="-0.5"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_cblM02" group="group_center_bottom_left " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="-116.8888" y="-67.50318" z="65"/>
+					<quaternion qx="4.451076E-07" qy="4.451076E-07" qz="-0.8660254" qw="-0.5"/>
+				</offset>
+			</connection>	
+			<connection name="con_shieldgen_m_cbmM01" group="group_center_bottom_left " tags="medium shield hittable ">
+				<offset>
+					<position x="-116.8888" y="-67.50233" z="104.9013"/>
+					<quaternion qx="-2.499755E-07" qy="-2.819745E-07" qz="-0.8660254" qw="-0.5"/>
+				</offset>
+			</connection>			
+<!--Turrets MEDIUM center_bottom_right-->			
+			<connection name="con_turret_cbrM01" group="group_center_bottom_right " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="117.3849" y="-67.78113" z="143"/>
+					<quaternion qx="3.576848E-07" qy="-2.936869E-07" qz="-0.8660254" qw="0.5"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_cbrM02" group="group_center_bottom_right " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="117.3849" y="-67.78113" z="65"/>
+					<quaternion qx="3.576848E-07" qy="-2.936869E-07" qz="-0.8660254" qw="0.5"/>
+				</offset>
+			</connection>				
+			<connection name="con_shieldgen_m_cbrM01" group="group_center_bottom_right " tags="medium shield hittable ">
+				<offset>
+					<position x="117.385" y="-67.78028" z="104.9012"/>
+					<quaternion qx="-1.033445E-07" qy="1.607725E-08" qz="0.8660254" qw="-0.5000001"/>
+				</offset>
+			</connection>
+<!--Turrets MEDIUM center_top_center-->	
+			<connection name="con_turret_cbcM01" group="group_center_top_center " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="1.032246E-02" y="135.5644" z="143"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_cbcM02" group="group_center_top_center " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="1.032246E-02" y="135.5644" z="65"/>
+				</offset>
+			</connection>			
+			<connection name="con_shieldgen_m_cbcM01" group="group_center_top_center " tags="medium shield hittable ">
+				<offset>
+					<position x="1.032246E-02" y="135.5652" z="104.9736"/>
+				</offset>
+			</connection>
+<!--Turrets MEDIUM back_bottom_left-->			
+			<connection name="con_turret_bbl01" group="group_back_bottom_left " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="-117.5109" y="-67.85088" z="-910"/>
+					<quaternion qx="1.629776E-07" qy="-4.355587E-08" qz="-0.8660254" qw="-0.5"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_bbl02" group="group_back_bottom_left " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="-166" y="-96" z="-1100"/>
+					<quaternion qx="1.629776E-07" qy="-4.355587E-08" qz="-0.8660254" qw="-0.5"/>
+				</offset>
+			</connection>		
+			<connection name="con_shieldgen_m_bbl01" group="group_back_bottom_left " tags="medium shield hittable ">
+				<offset>
+					<position x="-117.5109" y="-67.85088" z="-928"/>
+					<quaternion qx="-1.307662E-07" qy="-7.549789E-08" qz="-0.8660254" qw="-0.4999999"/>
+				</offset>
+			</connection>
+<!--Turrets MEDIUM back_bottom_right-->			
+			<connection name="con_turret_bbr01" group="group_back_bottom_right " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="117.5138" y="-67.84444" z="-910"/>
+					<quaternion qx="2.225823E-07" qy="-5.968241E-08" qz="-0.8660254" qw="0.5"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_bbr02" group="group_back_bottom_right " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="166" y="-96" z="-1100"/>
+					<quaternion qx="2.225823E-07" qy="-5.968241E-08" qz="-0.8660254" qw="0.5"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_m_bbr01" group="group_back_bottom_right " tags="medium shield hittable ">
+				<offset>
+					<position x="117.5138" y="-67.84443" z="-928"/>
+					<quaternion qx="1.307662E-07" qy="-7.549792E-08" qz="0.8660254" qw="-0.5000001"/>
+				</offset>
+			</connection>
+<!--Turrets MEDIUM back_top_center-->			
+			<connection name="con_turret_btc01" group="group_back_top_center " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="-0" y="135.7075" z="-910"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_btc02" group="group_back_top_center " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="-0" y="192" z="-1100"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_m_btc01" group="group_back_top_center " tags="medium shield hittable ">
+				<offset>
+					<position x="-0" y="135.7075" z="-928"/>
+				</offset>
+			</connection>
+<!--Turrets MEDIUM front_top_left-->			
+			<connection name="con_turret_ftl01" group="group_front_top_left " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="-371.3223" y="146.0084" z="559.9584"/>
+					<quaternion qx="-0.3426389" qy="-0.2253904" qz="-0.510629" qw="-0.7556823"/>
+				</offset>
+			</connection>		
+			<connection name="con_turret_ftl02" group="group_front_top_left " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="-311.9288" y="248.9608" z="559.8674"/>
+					<quaternion qx="-0.3668191" qy="-0.1834097" qz="-0.3988445" qw="-0.8201998"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_m_ftl01" group="group_front_top_left " tags="medium shield hittable ">
+				<offset>
+					<position x="-118" y="68" z="270"/>
+					<quaternion qx="0.3535534" qy="-0.6123725" qz="-0.3535534" qw="-0.6123723"/>
+				</offset>
+			</connection>
+<!--Turrets MEDIUM front_top_right-->			
+			<connection name="con_turret_ftr01" group="group_front_top_right " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="371.133" y="146.4019" z="559.9857"/>
+					<quaternion qx="-0.3396097" qy="0.2298603" qz="0.5126483" qw="-0.7543349"/>
+				</offset>
+			</connection>			
+			<connection name="con_turret_ftr02" group="group_front_top_right " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="312.6584" y="248.2852" z="559.7327"/>
+					<quaternion qx="-0.3657808" qy="0.1855423" qz="0.399797" qw="-0.81972"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_m_ftr01" group="group_front_top_right " tags="medium shield hittable ">
+				<offset>
+					<position x="118" y="68" z="270"/>
+					<quaternion qx="0.3535534" qy="0.6123724" qz="0.3535534" qw="-0.6123724"/>
+				</offset>
+			</connection>
+<!--Turrets MEDIUM front_down_center-->			
+			<connection name="con_turret_fdc01" group="group_front_down_center " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="59.75798" y="-393.7805" z="560.5874"/>
+					<quaternion qx="0.037473" qy="-0.4084209" qz="-0.909296" qw="7.049032E-02"/>
+				</offset>
+			</connection>			
+			<connection name="con_turret_fdc02" group="group_front_down_center " tags="turret medium standard missile hittable ">
+				<offset>
+					<position x="-58.95737" y="-394.3227" z="560.2162"/>
+					<quaternion qx="-3.853039E-02" qy="-0.4083388" qz="-0.9092517" qw="-0.0709654"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_m_fdc01" group="group_front_down_center " tags="medium shield hittable ">
+				<offset>
+					<position x="0" y="-136" z="270"/>
+					<quaternion qx="-0.7071068" qy="-2.219725E-07" qz="0.7071068" qw="-8.432165E-09"/>
+				</offset>
+			</connection>			
+		</connections>
+	</component>
+</components>

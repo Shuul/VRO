@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+
+  <!-- ############################# -->
+  <!--    ARGON FEDERATION -->
+  <!-- ############################# -->
+
+	<add sel="//ships">
+		<ship id="argon_battleship_xl" group="arg_battleship_xl">
+			<category tags="[military, battleship, mission]" faction="[argon, scaleplate, hatikvah, alliance]" size="ship_xl"/>
+			<pilot>
+				<select faction="argon" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_large_military"/>
+			<people ref="argon_military_crew"/>
+		</ship>
+	</add>
+
+  <!-- ############################# -->
+  <!--    ANTIGONE REPUBLIC -->
+  <!-- ############################# -->
+	
+	<add sel="//ships">
+		<ship id="antigone_battleship_xl" group="ant_battleship_xl">
+			<category tags="[military, battleship, mission]" faction="[antigone, scaleplate, hatikvah, alliance]" size="ship_xl"/>
+			<pilot>
+				<select faction="argon" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_large_military"/>
+			<people ref="argon_military_crew"/>
+		</ship>
+	</add>
+	
+  <!-- ############################# -->
+  <!--    GODREALM OF THE PARANID -->
+  <!-- ############################# -->
+  
+	<add sel="//ships">
+		<ship id="paranid_battleship_xl" group="par_battleship_xl">
+			<category tags="[military, battleship, mission]" faction="[paranid, alliance]" size="ship_xl"/>
+			<pilot>
+				<select faction="paranid" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_large_military"/>
+			<people ref="paranid_military_crew"/>
+		</ship>
+	</add>
+	
+  <!-- ############################# -->
+  <!--    HOLY ORDER OF THE PONTIFEX -->
+  <!-- ############################# -->
+  
+	<add sel="//ships">
+		<ship id="holyorder_battleship_xl" group="hol_battleship_xl">
+			<category tags="[military, battleship, mission]" faction="[holyorder, alliance]" size="ship_xl"/>
+			<pilot>
+				<select faction="paranid" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_large_military"/>
+			<people ref="paranid_military_crew"/>
+		</ship>
+	</add>
+	
+  <!-- ############################# -->
+  <!--    TELADI COMPANY & MINISTRY OF FINANCE-->
+  <!-- ############################# -->
+  
+	<add sel="//ships">
+		<ship id="teladi_battleship_xl" group="tel_battleship_xl">
+			<category tags="[military, battleship, mission]" faction="[teladi, ministry, scaleplate]" size="ship_xl"/>
+			<pilot>
+				<select faction="teladi" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_large_military"/>
+			<people ref="teladi_military_crew"/>
+		</ship>
+	</add>
+	
+</diff>
