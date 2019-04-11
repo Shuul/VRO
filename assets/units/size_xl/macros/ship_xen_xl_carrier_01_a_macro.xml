@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Exported by: nick (192.168.3.120) at 12.02.2019_17-29-39-->
 <diff> 
-<replace sel="//macros">
+<replace sel="//macros/macro[@name='ship_xen_xl_carrier_01_a_macro']">
 
-<macros>
+
   <macro name="ship_xen_xl_carrier_01_a_macro" class="ship_xl">
     <component ref="ship_xen_xl_carrier_01" />
     <properties>
@@ -18,7 +18,7 @@
         <software ware="software_targetmk1" default="1" />
         <software ware="software_trademk1" compatible="1" />
       </software>
-      <hull max="980000" />
+      <hull max="750000" />
       <secrecy level="2" />
       <purpose primary="fight" />
       <people capacity="0" />
@@ -91,7 +91,7 @@
       </connection>
     </connections>
   </macro>
-</macros>
+
 </replace>
 </diff>
 <!-- 
