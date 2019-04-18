@@ -21,7 +21,7 @@
 		<ship>
 			<select faction="argon" tags="[military, battleship]" size="ship_xl"/>
 			<loadout>
-				<level min="0.5" max="1.0"/>
+				<level min="0.9" max="1.0"/>
 			</loadout>
 			<owner exact="argon" overridenpc="true"/>
 		</ship>
@@ -50,7 +50,7 @@
 		<ship>
 			<select faction="antigone" tags="[military, battleship]" size="ship_xl"/>
 			<loadout>
-				<level min="0.5" max="1.0"/>
+				<level min="0.9" max="1.0"/>
 			</loadout>
 			<owner exact="antigone" overridenpc="true"/>
 		</ship>
@@ -79,7 +79,7 @@
 		<ship>
 			<select faction="paranid" tags="[military, battleship]" size="ship_xl"/>
 			<loadout>
-				<level min="0.5" max="1.0"/>
+				<level min="0.9" max="1.0"/>
 			</loadout>
 			<owner exact="paranid" overridenpc="true"/>
 		</ship>
@@ -108,7 +108,7 @@
 		<ship>
 			<select faction="holyorder" tags="[military, battleship]" size="ship_xl"/>
 			<loadout>
-				<level min="1.0" max="1.0"/>
+				<level min="0.9" max="1.0"/>
 			</loadout>
 			<owner exact="holyorder" overridenpc="true"/>
 		</ship>
@@ -137,7 +137,7 @@
 		<ship>
 			<select faction="teladi" tags="[military, battleship]" size="ship_xl"/>
 			<loadout>
-				<level min="1.0" max="1.0"/>
+				<level min="0.9" max="1.0"/>
 			</loadout>
 			<owner exact="teladi" overridenpc="true"/>
 		</ship>
@@ -166,7 +166,7 @@
 		<ship>
 			<select faction="ministry" tags="[military, battleship]" size="ship_xl"/>
 			<loadout>
-				<level min="1.0" max="1.0"/>
+				<level min="0.9" max="1.0"/>
 			</loadout>
 			<owner exact="ministry" overridenpc="true"/>
 		</ship>
@@ -176,4 +176,92 @@
 	  </job>
 	</add>
 
+<!-- Changes to loadout levels -->
+<!-- arg -->
+  <replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/ship/loadout">
+<loadout>
+				<level min="0.9" max="1.0"/>
+			</loadout>  </replace>
+  <replace sel="//jobs/job[@id='argon_destroyer_patrol_l_sector']/ship/loadout">
+<loadout>
+				<level min="0.6" max="1.0"/>
+			</loadout>  </replace>
+	<replace sel="//jobs/job[@id='argon_destroyer_escort_l']/ship/loadout">
+<loadout>
+				<level min="0.6" max="1.0"/>
+			</loadout>  </replace>
+	<replace sel="//jobs/job[@id='argon_resupplier_escort_xl']/ship/loadout">
+<loadout>
+				<level min="0.6" max="1.0"/>
+			</loadout>  </replace>
+			<!-- ant -->
+	<replace sel="//jobs/job[@id='antigone_destroyer_patrol_l_border_sector']/ship/loadout">
+<loadout>
+				<level min="0.6" max="1.0"/>
+			</loadout>  </replace>
+	<replace sel="//jobs/job[@id='antigone_destroyer_escort_l']/ship/loadout">
+<loadout>
+				<level min="0.6" max="1.0"/>
+			</loadout>  </replace>
+	<!-- par -->
+	<replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster']/ship/loadout">
+<loadout>
+				<level min="0.9" max="1.0"/>
+			</loadout>  </replace>
+	<replace sel="//jobs/job[@id='paranid_destroyer_patrol_l_sector_exp']/ship/loadout">
+<loadout>
+				<level min="0.7" max="1.0"/>
+			</loadout>  </replace>
+	<replace sel="//jobs/job[@id='paranid_destroyer_escort_l']/ship/loadout">
+<loadout>
+				<level min="0.7" max="1.0"/>
+			</loadout>  </replace>
+	<replace sel="//jobs/job[@id='paranid_resupplier_escort_xl']/ship/loadout">
+<loadout>
+				<level min="0.7" max="1.0"/>
+			</loadout>  </replace>
+	<!-- hop -->
+	<replace sel="//jobs/job[@id='holyorder_destroyer_patrol_l_cluster_exp']/ship/loadout">
+<loadout>
+				<level min="0.7" max="1.0"/>
+			</loadout>  </replace>
+	<replace sel="//jobs/job[@id='holyorder_destroyer_escort_l']/ship/loadout">
+<loadout>
+				<level min="0.7" max="1.0"/>
+			</loadout>  </replace>
+	<replace sel="//jobs/job[@id='holyorder_resupplier_escort_xl']/ship/loadout">
+<loadout>
+				<level min="0.7" max="1.0"/>
+			</loadout>  </replace>
+	<!-- tel -->
+	<replace sel="//jobs/job[@id='teladi_carrier_patrol_xl_cluster']/ship/loadout">
+<loadout>
+				<level min="0.9" max="1.0"/>
+			</loadout>  </replace>
+  <replace sel="//jobs/job[@id='teladi_destroyer_patrol_l_border_cluster']/ship/loadout">
+<loadout>
+				<level min="0.6" max="1.0"/>
+			</loadout>  </replace>
+	<replace sel="//jobs/job[@id='teladi_destroyer_escort_l']/ship/loadout">
+<loadout>
+				<level min="0.6" max="1.0"/>
+			</loadout>  </replace>
+	<replace sel="//jobs/job[@id='teladi_resupplier_escort_xl']/ship/loadout">
+<loadout>
+				<level min="0.6" max="1.0"/>
+			</loadout>  </replace>
+	<!-- min -->
+	<replace sel="//jobs/job[@id='ministry_destroyer_patrol_l_comp']/ship/loadout">
+<loadout>
+				<level min="0.6" max="1.0"/>
+			</loadout>  </replace>
+	<replace sel="//jobs/job[@id='ministry_destroyer_escort_l']/ship/loadout">
+<loadout>
+				<level min="0.6" max="1.0"/>
+			</loadout>  </replace>
+<!-- sca -->
+	<replace sel="//jobs/job[@id='scaleplate_plunderer_l_cluster']/ship/loadout">
+<loadout>
+				<level min="0.6" max="0.94"/>
+			</loadout>  </replace>
 </diff>

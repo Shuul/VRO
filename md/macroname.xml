@@ -1,0 +1,34 @@
+<!-- <?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="Macroname" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/x4 extract 2.0b1/libraries/md.xsd">
+    <cues>
+        <cue name="MacronameStart">
+            <conditions>
+                <event_cue_signalled cue="md.Setup.GameStart" />
+            </conditions>
+            <delay exact="15s" />
+            <actions>
+                
+                <create_list name="$TestShipMacros" />
+                <append_to_list name="$TestShipMacros" exact="macro.env_ast_ore_m_01_macro" />
+                <append_to_list name="$TestShipMacros" exact="macro.env_ast_ore_m_02_macro" />
+                <append_to_list name="$TestShipMacros" exact="macro.env_ast_ore_m_03_macro" />
+                <append_to_list name="$TestShipMacros" exact="macro.env_ast_ore_m_04_macro" />
+                <append_to_list name="$TestShipMacros" exact="macro.env_ast_ore_m_05_macro" />
+                <append_to_list name="$TestShipMacros" exact="macro.env_ast_ore_m_06_macro" />
+              
+                <do_all exact="$TestShipMacros.count" counter="$macro">
+                    <set_value name="$Xoffset" exact="2km" operation="add" />
+                    <create_object groupname="$TestShips" name="$TestShip" macro="$TestShipMacros.{$macro}" zone="player.zone">
+                        <position object="player.ship" x="$Xoffset" />
+                    </create_object>
+                
+                    <debug_to_file text="'macro ' + $TestShipMacros.{$macro}" name="'macro.log'" />
+                    <debug_to_file text="'name ' + $TestShipMacros.{$macro}.knownname" name="'macro.log'" />
+                    <debug_text text="'macro ' + $TestShipMacros.{$macro}" />
+                    <debug_text text="'name ' + $TestShipMacros.{$macro}.knownname" />
+                </do_all>
+             
+            </actions>
+        </cue>
+    </cues>
+</mdscript> -->

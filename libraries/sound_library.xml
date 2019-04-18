@@ -250,6 +250,21 @@
         </sample>
         <volume start="1.0" distance="10"/>
     </sound>
+    <!-- FLAK Turret-->
+    <sound id="wpn_flak_turret_shoot" description="flak shooting" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\flak_1"/>
+          <!-- <select start="extensions\VRO\sfx\weapons\flak_2"/> -->
+        </sample>
+        <volume start="1.3" distance="16"/>
+    </sound>
+    <sound id="wpn_flak_turret_impact" description="flak impact" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\flak_hit_1"/>
+          <select start="extensions\VRO\sfx\weapons\flak_hit_2"/>
+        </sample>
+        <volume start="1.5" distance="12"/>
+    </sound>
 
 
 

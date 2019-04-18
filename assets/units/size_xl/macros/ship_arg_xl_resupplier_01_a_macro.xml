@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Exported by: nick (192.168.3.120) at 27.11.2018_14-45-26-->
+<!--Exported by: lino (192.168.3.146) at 04.03.2019_10-13-58-->
 <macros>
-  <macro name="ship_arg_xl_battleship_01_macro" class="ship_xl">
-    <component ref="ship_arg_xl_battleship_01" />
+  <macro name="ship_arg_xl_resupplier_01_a_macro" class="ship_xl">
+    <component ref="ship_arg_xl_resupplier_01" />
     <properties>
-      <identification name="{20101,13001}" basename="{20101,13001}" description="{20006,102}" variation="" shortvariation="" icon="ship_xl_fight_01" />
+      <identification name="{20101,11502}" basename="{20101,11501}" description="{20101,11512}" variation="{20111,1101}" shortvariation="{20111,1103}" icon="ship_xl_neutral_01" />
       <software>
         <software ware="software_dockmk2" compatible="1" />
         <software ware="software_flightassistmk1" default="1" />
@@ -16,22 +16,25 @@
         <software ware="software_trademk1" default="1" />
       </software>
       <explosiondamage value="12000" />
-      <storage missile="400" unit="20" />
-      <hull max="620000" />
+      <storage missile="40" unit="100" />
+      <hull max="286000" />
       <secrecy level="1" />
-      <purpose primary="fight" />
-      <people capacity="120" />
+      <purpose primary="auxiliary" />
+      <people capacity="220" />
       <sounds>
         <shipdetail ref="shipdetail_ship_xl_01" />
       </sounds>
-      <physics mass="659.63">
+      <physics mass="679.63">
         <inertia pitch="1160.604" yaw="1160.604" roll="950.883" />
-        <drag forward="230.326" reverse="847.304" horizontal="358.421" vertical="358.421" pitch="1050.326" yaw="1050.326" roll="1050.326" />
+        <drag forward="230.326" reverse="847.304" horizontal="358.421" vertical="358.421" pitch="1000.326" yaw="1000.326" roll="1000.326" />
       </physics>
       <thruster tags="extralarge" />
-      <ship type="battleship" />
+      <ship type="resupplier" />
     </properties>
     <connections>
+      <connection ref="con_buildmodule">
+        <macro ref="buildmodule_gen_resupplier_macro" connection="object" />
+      </connection>
       <connection ref="con_cockpit">
         <macro ref="bridge_arg_xl_01_macro" connection="con_cockpit" />
       </connection>
@@ -42,13 +45,13 @@
         <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
       </connection>
       <connection ref="con_shipstorage01">
-        <macro ref="shipstorage_gen_s_cap10_macro" connection="object" />
+        <macro ref="shipstorage_gen_s_cap73_macro" connection="object" />
       </connection>
-	  <connection ref="con_shipstorage02">
-        <macro ref="shipstorage_gen_m_cap3_macro" connection="object" />
+      <connection ref="con_shipstorage02">
+        <macro ref="shipstorage_gen_m_cap10_macro" connection="object" />
       </connection>
       <connection ref="con_storage01">
-        <macro ref="storage_arg_xl_battleship_01_a_macro" connection="ShipConnection" />
+        <macro ref="storage_par_xl_resupplier_01_a_macro" connection="ShipConnection" />
       </connection>
     </connections>
   </macro>
