@@ -32,15 +32,15 @@
   <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/use/@threshold">0.65</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
-  <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/use/@threshold">0.65</replace>
-  <replace sel="//wares/ware[@id='turret_par_l_laser_01_mk1']/use/@threshold">0.65</replace>
-  <replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/use/@threshold">0.65</replace>
-  <replace sel="//wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/use/@threshold">0.75</replace>
-  <replace sel="//wares/ware[@id='turret_par_l_dumbfire_01_mk1']/use/@threshold">0.75</replace>
-  <replace sel="//wares/ware[@id='turret_tel_l_dumbfire_01_mk1']/use/@threshold">0.75</replace>
-  <replace sel="//wares/ware[@id='turret_arg_l_guided_01_mk1']/use/@threshold">0.75</replace>
-  <replace sel="//wares/ware[@id='turret_par_l_guided_01_mk1']/use/@threshold">0.75</replace>
-  <replace sel="//wares/ware[@id='turret_tel_l_guided_01_mk1']/use/@threshold">0.75</replace>
+  <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_par_l_laser_01_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/use/@threshold">0.0</replace> 
+  <replace sel="//wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/use/@threshold">0.2</replace>
+  <replace sel="//wares/ware[@id='turret_par_l_dumbfire_01_mk1']/use/@threshold">0.2</replace>
+  <replace sel="//wares/ware[@id='turret_tel_l_dumbfire_01_mk1']/use/@threshold">0.2</replace>
+  <replace sel="//wares/ware[@id='turret_arg_l_guided_01_mk1']/use/@threshold">0.3</replace>
+  <replace sel="//wares/ware[@id='turret_par_l_guided_01_mk1']/use/@threshold">0.3</replace>
+  <replace sel="//wares/ware[@id='turret_tel_l_guided_01_mk1']/use/@threshold">0.3</replace>
 <!-- L and XL ships prices -->
   <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_a']/price">
   <price min="6295057" average="7458890" max="8522724" />
@@ -138,7 +138,7 @@
     </production>
     <component ref="turret_arg_l_flak_macro" amount="1" />
     <restriction licence="generaluseequipment" />
-    <use threshold="0.6" />
+    <use threshold="0.4" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
@@ -155,7 +155,7 @@
     </production>
     <component ref="turret_par_l_flak_macro" amount="1" />
     <restriction licence="generaluseequipment" />
-    <use threshold="0.6" />
+    <use threshold="0.4" />
     <owner faction="alliance" />
     <owner faction="holyorder" />
     <owner faction="paranid" />
@@ -172,7 +172,7 @@
     </production>
     <component ref="turret_tel_l_flak_macro" amount="1" />
     <restriction licence="generaluseequipment" />
-    <use threshold="0.6" />
+    <use threshold="0.4" />
     <owner faction="alliance" />
     <owner faction="ministry" />
     <owner faction="teladi" />
@@ -197,5 +197,9 @@
     <container ref="sm_gen_pickup_equipment_01_macro" />
     <use threshold="0" />
   </ware> -->
+  
+
   </add>
+
+
 	</diff>

@@ -309,15 +309,30 @@
 	<effect name="muzzle_gen_l_kinetic_artillery" alignment="object">
     <elements>
       <!-- Muzzle Smoke-->
-      <element id="1" ref="dummyemitter_up_macro" forkeffect="gatling_muzzle_smoke_01" alignment="object" duration="3.0" minscale="5.0" maxscale="5.0"  forklod="none"></element>
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="gatling_muzzle_smoke_01" alignment="object" duration="3.0" minscale="7.0" maxscale="7.0"  forklod="largeeffect"></element>
       <!-- Geometry -->
       <!-- <element id="3" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="1.5" forklod="none"></element> -->
-      <element id="2" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.1" minscale="4" maxscale="4.0" forklod="none"></element>
+      <element id="2" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.1" minscale="6.0" maxscale="6.0" forklod="largeeffect"></element>
       <!-- Geometry Light -->
-      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.2" minscale="10.0" maxscale="10.0" fadeout="0.2" forklod="none"></element>
+      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.2" minscale="10.0" maxscale="10.0" fadeout="0.2" forklod="largeeffect"></element>
       <!-- Sound -->
       <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
         <sound ref="wpn_kinetic_artillery_shoot"></sound>
+      </element>
+    </elements>
+  </effect>
+  <effect name="impact_gen_l_kinetic_artillery" alignment="normal">
+    <elements>
+      <!-- 6 Lightsources to make sure at liest one is outsite of the mesh -->
+      <element id="1" ref="missile_impact_01_light_macro" forkeffect="none" alignment="normal" duration="0.8" forklod="largeeffect"></element>
+      <!-- Explosion Fork Particles-->
+      <element id="2" ref="dummyemitter_macro" forkeffect="missile_explosion_light_01" duration="7.0" minscale="4.0" maxscale="4.0" forklod="largeeffect"></element>
+      <!-- Sound -->
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="3.0" forklod="largeeffect">
+        <sound ref="explosion_small"></sound>
+      </element>
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="2.0" forklod="none">
+        <sound ref="wpn_kinetic_artillery_impact"></sound>
       </element>
     </elements>
   </effect>

@@ -171,6 +171,13 @@
         </sample>
         <volume start="1.5" distance="18"/>
     </sound>
+    <sound id="wpn_kinetic_artillery_impact" description="kinetic_artillery shooting" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\kinetic_arty_hit_1"/>
+          <select start="extensions\VRO\sfx\weapons\kinetic_arty_hit_2"/>
+        </sample>
+        <volume start="1.5" distance="12"/>
+    </sound>
     <!-- CIWS-->
     <sound id="wpn_CIWS_shoot" description="ciws" repeat="-1" is3d="1" preload="1" amount="1" >
         <sample loop="extensions\VRO\sfx\weapons\ciws" />
