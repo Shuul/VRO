@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<components>
+	<component name="missile_cruise" class="missile">
+		<source geometry="extensions\VRO\assets\props\WeaponSystems\missile\missile_cruise_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="181" g="255" b="255" range="25" shadowrange="25" lighteffect="1" trigger="1" intensity="0.5">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="-1.576692"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni002" shadow="0" r="181" g="255" b="255" range="0.1999999" shadowrange="0.1999999" lighteffect="1" trigger="1" intensity="10">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="-1.369349"/>
+						</offset>
+					</omni>
+				</lights>
+				<trailemitters>
+					<emitter name="trail_missile_player_torpedo" type="trail_missile_player_torpedo">
+						<offset>
+							<position x="0" y="0" z="-1.18546"/>
+						</offset>
+					</emitter>
+				</trailemitters>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="missile">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part  ">
+				<offset/>
+				<parts>
+					<part name="part_main">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.3765197" y="0.3765197" z="1.639968"/>
+							<center x="-1.788139E-07" y="1.788139E-07" z="0.3460522"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection02" tags="part  ">
+				<offset>
+					<position x="0" y="0" z="-0.3938475"/>
+				</offset>
+				<parts/>
+			</connection>
+			<connection name="Connection03" tags="part nocollision animation textureanimation  ">
+				<offset>
+					<position x="0" y="0" z="-2.139295"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="500"/>
+				</animations>
+				<parts>
+					<part name="anim_booster">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.booster"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="effects.booster"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="effects.booster"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="effects.booster"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.2670897" y="0.2670897" z="3.654186"/>
+							<center x="0" y="-1.192093E-07" z="-2.776973"/>
+						</size>
+						<size_raw>
+							<max x="0.2670897" y="0.2670898" z="6.431159"/>
+							<center x="0" y="-1.043081E-07" z="-2.776973"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="500" value="-50"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="con_engine01" tags="engine ">
+				<offset>
+					<position x="0" y="0" z="-1.848475"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

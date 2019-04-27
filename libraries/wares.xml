@@ -177,6 +177,75 @@
     <owner faction="ministry" />
     <owner faction="teladi" />
   </ware>
+<!-- CRUISE MISSILES  -->
+
+<ware id="weapon_arg_l_cruise_launcher" name="{6699,1070}" description="{6699,1070}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1222815" average="1247572" max="1272330" />
+    <production time="10" amount="1" method="default" name="{6699,1070}">
+      <primary>
+        <ware ware="advancedelectronics" amount="100" />
+        <ware ware="energycells" amount="1000" />
+        <ware ware="weaponcomponents" amount="100" />
+      </primary>
+    </production>
+    <component ref="weapon_arg_l_cruise_launcher_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+  </ware>
+  <ware id="weapon_par_l_cruise_launcher" name="{6699,1070}" description="{6699,1070}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1222815" average="1247572" max="1272330" />
+    <production time="10" amount="1" method="default" name="{6699,1070}">
+      <primary>
+        <ware ware="advancedelectronics" amount="100" />
+        <ware ware="energycells" amount="1000" />
+        <ware ware="weaponcomponents" amount="100" />
+      </primary>
+    </production>
+    <component ref="weapon_par_l_cruise_launcher_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="holyorder" />
+    <owner faction="paranid" />
+  </ware>
+  <ware id="weapon_tel_l_cruise_launcher" name="{6699,1070}" description="{6699,1070}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1222815" average="1247572" max="1272330" />
+    <production time="10" amount="1" method="default" name="{6699,1070}">
+      <primary>
+        <ware ware="advancedelectronics" amount="100" />
+        <ware ware="energycells" amount="1000" />
+        <ware ware="weaponcomponents" amount="100" />
+      </primary>
+    </production>
+    <component ref="weapon_tel_l_cruise_launcher_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="ministry" />
+    <owner faction="teladi" />
+  </ware>
+
+  <ware id="missile_cruise" name="{6699,1060}" description="{6699,1060}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+    <price min="17563" average="20663" max="23762" />
+    <production time="6" amount="1" method="default" name="{6699,1060}">
+      <primary>
+        <ware ware="energycells" amount="40" />
+        <ware ware="missilecomponents" amount="40" />
+        <ware ware="smartchips" amount="35" />
+      </primary>
+    </production>
+    <component ref="missile_cruise_macro" amount="1" />
+    <container ref="sm_gen_pickup_equipment_01_macro" />
+    <use threshold="0" />
+  </ware>
+
+
+
+
+
 <!-- 
 <ware id="missile_flak_macro" name="{6699,1001}" description="{6699,1001}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
     <price min="451" average="530" max="610" />
