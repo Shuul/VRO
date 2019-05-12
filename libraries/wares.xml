@@ -32,15 +32,7 @@
   <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/use/@threshold">0.65</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
-  <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/use/@threshold">0.0</replace>
-  <replace sel="//wares/ware[@id='turret_par_l_laser_01_mk1']/use/@threshold">0.0</replace>
-  <replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/use/@threshold">0.0</replace> 
-  <replace sel="//wares/ware[@id='turret_arg_l_dumbfire_01_mk1']/use/@threshold">0.2</replace>
-  <replace sel="//wares/ware[@id='turret_par_l_dumbfire_01_mk1']/use/@threshold">0.2</replace>
-  <replace sel="//wares/ware[@id='turret_tel_l_dumbfire_01_mk1']/use/@threshold">0.2</replace>
-  <replace sel="//wares/ware[@id='turret_arg_l_guided_01_mk1']/use/@threshold">0.3</replace>
-  <replace sel="//wares/ware[@id='turret_par_l_guided_01_mk1']/use/@threshold">0.3</replace>
-  <replace sel="//wares/ware[@id='turret_tel_l_guided_01_mk1']/use/@threshold">0.3</replace>
+
 <!-- L and XL ships prices -->
   <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_a']/price">
   <price min="6295057" average="7458890" max="8522724" />
@@ -179,7 +171,7 @@
   </ware>
 <!-- CRUISE MISSILES  -->
 
-<ware id="weapon_arg_l_cruise_launcher" name="{6699,1070}" description="{6699,1070}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+<!-- <ware id="weapon_arg_l_cruise_launcher" name="{6699,1070}" description="{6699,1070}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="1222815" average="1247572" max="1272330" />
     <production time="10" amount="1" method="default" name="{6699,1070}">
       <primary>
@@ -226,6 +218,57 @@
     <owner faction="alliance" />
     <owner faction="ministry" />
     <owner faction="teladi" />
+  </ware> -->
+
+  <ware id="turret_arg_l_cruise" name="{6699,1072}" description="{6699,1072}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="122281" average="124757" max="127233" />
+    <production time="10" amount="1" method="default" name="{6699,1072}">
+      <primary>
+        <ware ware="advancedelectronics" amount="10" />
+        <ware ware="energycells" amount="100" />
+        <ware ware="turretcomponents" amount="35" />
+      </primary>
+    </production>
+    <component ref="turret_arg_l_cruise_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+  </ware>
+
+  <ware id="turret_par_l_cruise" name="{6699,1072}" description="{6699,1072}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="122281" average="124757" max="127233" />
+    <production time="10" amount="1" method="default" name="{6699,1072}">
+      <primary>
+        <ware ware="advancedelectronics" amount="10" />
+        <ware ware="energycells" amount="100" />
+        <ware ware="turretcomponents" amount="35" />
+      </primary>
+    </production>
+    <component ref="turret_par_l_cruise_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.4" />
+    <owner faction="alliance" />
+    <owner faction="holyorder" />
+    <owner faction="paranid" />
+  </ware>
+
+  <ware id="turret_tel_l_cruise" name="{6699,1072}" description="{6699,1072}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="122281" average="124757" max="127233" />
+    <production time="10" amount="1" method="default" name="{6699,1072}">
+      <primary>
+        <ware ware="advancedelectronics" amount="10" />
+        <ware ware="energycells" amount="100" />
+        <ware ware="turretcomponents" amount="35" />
+      </primary>
+    </production>
+    <component ref="turret_tel_l_cruise_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.4" />
+    <owner faction="alliance" />
+    <owner faction="ministry" />
+    <owner faction="teladi" />
   </ware>
 
   <ware id="missile_cruise" name="{6699,1060}" description="{6699,1060}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -239,34 +282,8 @@
     </production>
     <component ref="missile_cruise_macro" amount="1" />
     <container ref="sm_gen_pickup_equipment_01_macro" />
-    <use threshold="0" />
+    <use threshold="0.4" />
   </ware>
-
-
-
-
-
-<!-- 
-<ware id="missile_flak_macro" name="{6699,1001}" description="{6699,1001}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-    <price min="451" average="530" max="610" />
-    <production time="1" amount="1" method="default" name="{6699,1014}">
-      <primary>
-        <ware ware="energycells" amount="7" />
-        <ware ware="missilecomponents" amount="5" />
-      </primary>
-    </production>
-    <production time="10" amount="1" method="xenon" name="{6699,1014}">
-      <primary>
-        <ware ware="energycells" amount="2" />
-        <ware ware="ore" amount="1" />
-        <ware ware="silicon" amount="1" />
-      </primary>
-    </production>
-    <component ref="missile_flak_macro" amount="1" />
-    <container ref="sm_gen_pickup_equipment_01_macro" />
-    <use threshold="0" />
-  </ware> -->
-  
 
   </add>
 

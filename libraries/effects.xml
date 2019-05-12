@@ -523,6 +523,52 @@
   </effect>
 	<!-- FRAGSTORM TURRET-->
   <!-- N/A -->
+
+
+<!-- Cruise Missile-->
+<effect name="muzzle_gen_cruise" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="gatling_muzzle_smoke_01" alignment="object" duration="3.0" minscale="5.0" maxscale="5.0" forklod="none"></element>
+      <!-- Geometry -->
+      <!-- <element id="3" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="1.5" forklod="none"></element> -->
+      <!-- <element id="2" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="2.0" minscale="5.0" maxscale="5.0" forklod="none"></element> -->
+      <!-- Geometry Light -->
+      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.2" minscale="2.0" maxscale="2.0" fadeout="0.2" forklod="none"></element>
+      <!-- <element id="5" ref="muzzle_gen_s_gatling_03_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="1.5" forklod="none"></element> -->
+      <!-- Sound -->
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="3.0" forklod="none">
+        <sound ref="wpn_cruise_shoot"></sound>
+      </element>
+    </elements>
+  </effect>
+<effect name="explosion_missile_cruise" alignment="random" emitterspace="zone">
+     <elements>
+      <!-- Distortion Bubble -->
+      <element id="1" ref="explosion_m_02_distortion01_macro" forkeffect="none" duration="1.0" fadeout="0.35" emitterspace="zone" forklod="largeeffect"></element>
+      <!-- Distortion Particles -->
+      <element id="2" ref="dummyemitter_macro" forkeffect="explosion_m_02_distortion01" duration="0.5" alignment="object" emitterspace="zone" forklod="largeeffect"></element>
+      <!-- 6 Lightsources to make sure at liest one is outsite of the mesh -->
+      <element id="1" ref="missile_impact_01_heavy_macro" forkeffect="none" alignment="normal" duration="6.0" forklod="largeeffect"></element>
+      <!-- Explosion Fork Particles-->
+      <element id="2" ref="dummyemitter_macro" forkeffect="missile_explosion_heavy_01" duration="13.0" minscale="8" maxscale="8" forklod="largeeffect"></element>
+      <!-- Damage -->
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
+        <areadamage range="250" falloff="1" duration="1" />
+      </element>
+      <!-- Sound -->
+      <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="4.0" forklod="largeeffect">
+        <sound ref="wpn_cruise_impact"></sound>
+      </element>
+      <element id="6" ref="dummyemitter_macro" forkeffect="explosion_m_02_trash01" duration="5.0" delay="0.25" alignment="random" forklod="mediumeffect"></element>
+    </elements>
+  </effect>
+
+
+
+
+
+
   
 	<!-- Xenon Laser-->
   <effect name="muzzle_xen_s_laser_gun" alignment="object">
