@@ -6,20 +6,25 @@
 			<layer>
 				<waypoints/>
 				<lights>
-					<omni name="XU Omni01" shadow="0" r="181" g="255" b="255" range="25" shadowrange="25" lighteffect="1" trigger="1" intensity="2.0">
+					<omni name="XU Omni01" shadow="0" r="255" g="150" b="0" range="15" shadowrange="15" lighteffect="1" lenseffect="missile_cruise" trigger="1" intensity="0.5">
 						<lightanimations/>
 						<offset>
-							<position x="0" y="0" z="-1.576692"/>
+							<position x="0" y="0" z="-0.6525317"/>
 						</offset>
 					</omni>
-					<omni name="XU Omni002" shadow="0" r="181" g="255" b="255" range="0.1999999" shadowrange="0.1999999" lighteffect="1" trigger="1" intensity="10">
+					<omni name="XU Omni002" shadow="0" r="255" g="150" b="0" range="0.1999999" shadowrange="0.1999999" lighteffect="1" trigger="1" intensity="10">
 						<lightanimations/>
 						<offset>
-							<position x="0" y="0" z="-1.369349"/>
+							<position x="0" y="0" z="-2.369349"/>
 						</offset>
 					</omni>
 				</lights>
 				<trailemitters>
+					<emitter name="trail_missile_npc_dumbfire" type="trail_missile_npc_dumbfire">
+						<offset>
+							<position x="0" y="0" z="-1.18546"/>
+						</offset>
+					</emitter>
 					<emitter name="trail_cruise_missile" type="trail_cruise_missile">
 						<offset>
 							<position x="0" y="0" z="-1.18546"/>

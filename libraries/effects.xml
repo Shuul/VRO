@@ -442,7 +442,7 @@
       </element>
     </elements>
   </effect>
-  <effect name="impact_gen_turret_flak" alignment="normal">
+  <effect name="impact_gen_turret_flak" alignment="random" emitterspace="zone">
     <elements>
       <!-- Light -->
       <element id="1" ref="explosion_m_02_explosion01" forkeffect="none" duration="1.0" fadein="0.02" fadeout="0.5" alignment="normal" forklod="largeeffect"></element>
@@ -554,13 +554,13 @@
       <element id="2" ref="dummyemitter_macro" forkeffect="missile_explosion_heavy_01" duration="13.0" minscale="8" maxscale="8" forklod="largeeffect"></element>
       <!-- Damage -->
       <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
-        <areadamage range="250" falloff="1" duration="1" />
+        <areadamage range="80" falloff="1" duration="1" />
       </element>
       <!-- Sound -->
       <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="4.0" forklod="largeeffect">
         <sound ref="wpn_cruise_impact"></sound>
       </element>
-      <element id="6" ref="dummyemitter_macro" forkeffect="explosion_m_02_trash01" duration="5.0" delay="0.25" alignment="random" forklod="mediumeffect"></element>
+      <element id="6" ref="dummyemitter_macro" forkeffect="explosion_m_02_trash01" duration="5.0" delay="0.25" alignment="random" forklod="largeeffect"></element>
     </elements>
   </effect>
 
