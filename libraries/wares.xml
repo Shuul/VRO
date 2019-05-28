@@ -3,35 +3,38 @@
 <diff>
 <!-- loadout thresholds -->
 	<replace sel="//wares/ware[@id='turret_arg_l_beam_01_mk1']/use/@threshold">0.95</replace>
-  <replace sel="//wares/ware[@id='turret_arg_l_plasma_01_mk1']/use/@threshold">0.9</replace>
+  <replace sel="//wares/ware[@id='turret_arg_l_plasma_01_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_beam_01_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_beam_02_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_gatling_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_gatling_02_mk1']/use/@threshold">0.0</replace>
-  <replace sel="//wares/ware[@id='turret_arg_m_plasma_01_mk1']/use/@threshold">0.65</replace>
-  <replace sel="//wares/ware[@id='turret_arg_m_plasma_02_mk1']/use/@threshold">0.65</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_plasma_01_mk1']/use/@threshold">0.4</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_plasma_02_mk1']/use/@threshold">0.4</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_par_l_beam_01_mk1']/use/@threshold">0.95</replace>
-  <replace sel="//wares/ware[@id='turret_par_l_plasma_01_mk1']/use/@threshold">0.9</replace>
+  <replace sel="//wares/ware[@id='turret_par_l_plasma_01_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_par_m_beam_01_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_par_m_beam_02_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_par_m_gatling_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_par_m_gatling_02_mk1']/use/@threshold">0.0</replace>
-  <replace sel="//wares/ware[@id='turret_par_m_plasma_01_mk1']/use/@threshold">0.65</replace>
-  <replace sel="//wares/ware[@id='turret_par_m_plasma_02_mk1']/use/@threshold">0.65</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_plasma_01_mk1']/use/@threshold">0.4</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_plasma_02_mk1']/use/@threshold">0.4</replace>
   <replace sel="//wares/ware[@id='turret_par_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_par_m_shotgun_02_mk1']/use/@threshold">0.0</replace>	
   <replace sel="//wares/ware[@id='turret_tel_l_beam_01_mk1']/use/@threshold">0.95</replace>
-  <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/use/@threshold">0.9</replace>
+  <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_beam_01_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_gatling_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_gatling_02_mk1']/use/@threshold">0.0</replace>
-  <replace sel="//wares/ware[@id='turret_tel_m_plasma_01_mk1']/use/@threshold">0.65</replace>
-  <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/use/@threshold">0.65</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_plasma_01_mk1']/use/@threshold">0.4</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/use/@threshold">0.4</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
+  <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/use/@threshold">0.45</replace>
+  <replace sel="//wares/ware[@id='turret_par_l_laser_01_mk1']/use/@threshold">0.45</replace>
+  <replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/use/@threshold">0.45</replace>
 
 <!-- L and XL ships prices -->
   <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_a']/price">
@@ -69,6 +72,17 @@
   </replace>
   <replace sel="//wares/ware[@id='ship_tel_xl_carrier_01_b']/price">
     <price min="16892256" average="19743830" max="22595405" />
+  </replace>
+
+<!-- weapons prices -->
+  <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/price">
+    <price min="78261" average="86957" max="95652" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_l_laser_01_mk1']/price">
+    <price min="78261" average="86957" max="95652" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/price">
+    <price min="78261" average="86957" max="95652" />
   </replace>
 
 
@@ -120,7 +134,7 @@
     </ware>
 <!-- FLAK TURRETS -->
 	<ware id="turret_arg_l_flak" name="{6699,1011}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="65261" average="73957" max="90652" />
+    <price min="78261" average="86957" max="95652" />
     <production time="10" amount="1" method="default" name="{6699,1011}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
@@ -130,14 +144,14 @@
     </production>
     <component ref="turret_arg_l_flak_macro" amount="1" />
     <restriction licence="generaluseequipment" />
-    <use threshold="0.4" />
+    <use threshold="0.45" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
   </ware>
 
 <ware id="turret_par_l_flak" name="{6699,1011}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="62289" average="78099" max="93909" />
+    <price min="78261" average="86957" max="95652" />
     <production time="10" amount="1" method="default" name="{6699,1012}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
@@ -147,14 +161,14 @@
     </production>
     <component ref="turret_par_l_flak_macro" amount="1" />
     <restriction licence="generaluseequipment" />
-    <use threshold="0.4" />
+    <use threshold="0.45" />
     <owner faction="alliance" />
     <owner faction="holyorder" />
     <owner faction="paranid" />
   </ware>
 
 <ware id="turret_tel_l_flak" name="{6699,1011}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="52286" average="60096" max="73906" />
+    <price min="78261" average="86957" max="95652" />
     <production time="10" amount="1" method="default" name="{6699,1013}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
@@ -164,7 +178,7 @@
     </production>
     <component ref="turret_tel_l_flak_macro" amount="1" />
     <restriction licence="generaluseequipment" />
-    <use threshold="0.4" />
+    <use threshold="0.45" />
     <owner faction="alliance" />
     <owner faction="ministry" />
     <owner faction="teladi" />
@@ -221,33 +235,33 @@
   </ware> -->
 
   <ware id="turret_arg_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="122281" average="124757" max="127233" />
+    <price min="78261" average="86957" max="95652" />
     <production time="10" amount="1" method="default" name="{6699,1071}">
       <primary>
-        <ware ware="advancedelectronics" amount="10" />
-        <ware ware="energycells" amount="100" />
-        <ware ware="turretcomponents" amount="35" />
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="10" />
+        <ware ware="turretcomponents" amount="20" />
       </primary>
     </production>
     <component ref="turret_arg_l_cruise_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.4" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
   </ware>
 
   <ware id="turret_par_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="122281" average="124757" max="127233" />
+    <price min="78261" average="86957" max="95652" />
     <production time="10" amount="1" method="default" name="{6699,1072}">
       <primary>
-        <ware ware="advancedelectronics" amount="10" />
-        <ware ware="energycells" amount="100" />
-        <ware ware="turretcomponents" amount="35" />
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="10" />
+        <ware ware="turretcomponents" amount="20" />
       </primary>
     </production>
     <component ref="turret_par_l_cruise_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
+    <restriction licence="capitalequipment" />
     <use threshold="0.4" />
     <owner faction="alliance" />
     <owner faction="holyorder" />
@@ -255,16 +269,16 @@
   </ware>
 
   <ware id="turret_tel_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="122281" average="124757" max="127233" />
+    <price min="78261" average="86957" max="95652" />
     <production time="10" amount="1" method="default" name="{6699,1073}">
       <primary>
-        <ware ware="advancedelectronics" amount="10" />
-        <ware ware="energycells" amount="100" />
-        <ware ware="turretcomponents" amount="35" />
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="10" />
+        <ware ware="turretcomponents" amount="20" />
       </primary>
     </production>
     <component ref="turret_tel_l_cruise_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
+    <restriction licence="capitalequipment" />
     <use threshold="0.4" />
     <owner faction="alliance" />
     <owner faction="ministry" />
@@ -282,7 +296,7 @@
     </production>
     <component ref="missile_cruise_macro" amount="1" />
     <container ref="sm_gen_pickup_equipment_01_macro" />
-    <use threshold="0.4" />
+    <use threshold="0" />
   </ware>
 
   </add>
