@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Exported by: nick (192.168.3.120) at 12.02.2019_17-27-48-->
 <diff> 
+  
 <replace sel="//macros/macro[@name='ship_xen_xl_destroyer_01_a_macro']">
-
-
+<!-- <hull max="370000" />  -->
   <macro name="ship_xen_xl_destroyer_01_a_macro" class="ship_xl">
     <component ref="ship_xen_xl_destroyer_01" />
     <properties>
@@ -18,14 +17,14 @@
         <software ware="software_targetmk1" default="1" />
         <software ware="software_trademk1" compatible="1" />
       </software>
-      <hull max="340000" />
+      <hull max="270000" />
       <secrecy level="2" />
       <docksize tag="dock_xl" />
       <purpose primary="fight" />
       <people capacity="0" />
-      <physics mass="421.625">
+      <physics mass="422">
         <inertia pitch="800.904" yaw="800.904" roll="600.323" />
-        <drag forward="164.325" reverse="657.3" horizontal="421.885" vertical="421.885" pitch="850.892" yaw="850.892" roll="850.892" />
+        <drag forward="144.325" reverse="657.3" horizontal="351.885" vertical="421.885" pitch="600.892" yaw="600.892" roll="600.892" />
       </physics>
       <thruster tags="large" />
       <loadouts>
@@ -53,6 +52,7 @@
             <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group06" exact="1" optional="1" />
             <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group07" exact="1" optional="1" />
             <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group08" exact="1" optional="1" />
+            <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group09" exact="4" optional="1" />
           </groups>
           <ammunition>
             <ammunition macro="countermeasure_flares_01_macro" min="100" max="200" optional="1" />
@@ -70,10 +70,10 @@
         <macro ref="cockpit_gen_invisible_01_macro" connection="ship" />
       </connection>
     </connections>
-  </macro>
+  </macro> 
 
-</replace>
-</diff>
+</replace> 
+</diff> 
 <!-- 
 <macros>
   <macro name="ship_xen_xl_destroyer_01_a_macro" class="ship_xl">
