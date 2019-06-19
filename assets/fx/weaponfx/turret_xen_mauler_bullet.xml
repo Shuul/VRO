@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<components>
+	<component name="turret_xen_mauler_bullet" class="bullet">
+		<source geometry="extensions\VRO\assets\fx\weaponFx\turret_xen_mauler_bullet_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="255" g="138" b="107" range="200" shadowrange="200" lighteffect="1" lenseffect="turret_medium_bb_xe_bullet" trigger="1" intensity="0.5">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="9.491652"/>
+						</offset>
+					</omni>
+				</lights>
+				<particleemitters>
+					<emitter name="turret_medium_bb_xe_bullet_flash01" type="turret_medium_bb_xe_bullet_flash01">
+						<offset>
+							<position x="0" y="0" z="12.64937"/>
+							<quaternion qx="0.7071068" qy="-0" qz="-0" qw="-0.7071068"/>
+						</offset>
+					</emitter>
+				</particleemitters>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="bullet">
+				<offset/>
+			</connection>
+			<connection name="Connection02" tags="part animation textureanimation  ">
+				<offset>
+					<position x="0" y="0" z="-34.5299"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="25"/>
+				</animations>
+				<parts>
+					<part name="anim_foreheat">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.fume2"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="38.53632" y="38.53632" z="32.33376"/>
+							<center x="0" y="0" z="32.33376"/>
+						</size>
+						<size_raw>
+							<max x="38.53632" y="38.53632" z="5.653414E-06"/>
+							<center x="0" y="0" z="32.33376"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="2">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="25" value="-2"/>
+								</uv_property>
+							</uv_animation>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="25" value="-1"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part animation textureanimation  ">
+				<offset>
+					<position x="0" y="-1.164577" z="-17.7771"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="25"/>
+				</animations>
+				<parts>
+					<part name="anim_Trail">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.fume2"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="16.90777" y="19.65628" z="90.43996"/>
+							<center x="-0.0463047" y="0.5652022" z="-55.62271"/>
+						</size>
+						<size_raw>
+							<max x="16.95408" y="19.09107" z="146.0627"/>
+							<center x="-0.0463047" y="0.5652022" z="-55.62271"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="3">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="25" value="-2"/>
+								</uv_property>
+							</uv_animation>
+							<uv_animation mapchannel="2">
+								<uv_property name="u_offset" controller="linear_float">
+									<key frame="0" value="0"/>
+									<key frame="25" value="-1"/>
+								</uv_property>
+							</uv_animation>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="25" value="-1"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection04" tags="part animation textureanimation nocollision detail_s  ">
+				<offset>
+					<position x="0" y="0" z="-213.5286"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="40"/>
+				</animations>
+				<parts>
+					<part name="anim_heat_haze">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.distortion_master_geometry"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="122.5266" y="122.5266" z="221.2946"/>
+							<center x="0" y="7.629395E-06" z="3.051758E-05"/>
+						</size>
+						<size_raw>
+							<max x="122.5266" y="122.5266" z="221.2945"/>
+							<center x="-3.814697E-06" y="7.629395E-06" z="3.051758E-05"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="u_offset" controller="linear_float">
+									<key frame="0" value="0"/>
+									<key frame="40" value="-1"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection05" tags="part  ">
+				<offset>
+					<position x="-1.072359E-02" y="-3.522396E-03" z="-16.68764"/>
+				</offset>
+				<parts>
+					<part name="part_bullet">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.bullets_master_01_geometry"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="9.431892" y="9.43189" z="39.47467"/>
+							<center x="0" y="0" z="-1.907349E-06"/>
+						</size>
+						<pivot>
+							<offset>
+								<position x="1.072359E-02" y="6.417799E-02" z="5.015728"/>
+							</offset>
+						</pivot>
+						<trailemitters>
+							<emitter name="turret_medium_bb_xe_bullet_trail" type="turret_medium_bb_xe_bullet_trail">
+								<offset>
+									<position x="0.435591" y="3.522396E-03" z="13.70181"/>
+								</offset>
+							</emitter>
+						</trailemitters>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection01" tags="laser">
+				<offset/>
+			</connection>
+		</connections>
+	</component>
+</components>

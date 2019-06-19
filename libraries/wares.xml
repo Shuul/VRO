@@ -32,9 +32,9 @@
   <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/use/@threshold">0.4</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
-  <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/use/@threshold">0.45</replace>
+  <!-- <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/use/@threshold">0.45</replace>
   <replace sel="//wares/ware[@id='turret_par_l_laser_01_mk1']/use/@threshold">0.45</replace>
-  <replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/use/@threshold">0.45</replace>
+  <replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/use/@threshold">0.45</replace> -->
 
 <!-- L and XL ships prices -->
   <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_a']/price">
@@ -76,13 +76,23 @@
 
 <!-- weapons prices -->
   <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/price">
-    <price min="78261" average="86957" max="95652" />
+    <price min="89261" average="97057" max="106652" />
   </replace>
   <replace sel="//wares/ware[@id='turret_par_l_laser_01_mk1']/price">
-    <price min="78261" average="86957" max="95652" />
+    <price min="89261" average="97057" max="106652" />
   </replace>
   <replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/price">
-    <price min="78261" average="86957" max="95652" />
+    <price min="79261" average="87057" max="96652" />
+  </replace>
+
+  <replace sel="//wares/ware[@id='turret_arg_l_plasma_01_mk1']/price">
+    <price min="125464" average="140515" max="155567" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_l_plasma_01_mk1']/price">
+    <price min="125464" average="140515" max="155567" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/price">
+    <price min="125464" average="140515" max="155567" />
   </replace>
 
 
@@ -134,7 +144,7 @@
     </ware>
 <!-- FLAK TURRETS -->
 	<ware id="turret_arg_l_flak" name="{6699,1011}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="78261" average="86957" max="95652" />
+    <price min="88261" average="96957" max="105652" />
     <production time="10" amount="1" method="default" name="{6699,1011}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
@@ -151,7 +161,7 @@
   </ware>
 
 <ware id="turret_par_l_flak" name="{6699,1012}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="78261" average="86957" max="95652" />
+    <price min="88261" average="96957" max="105652" />
     <production time="10" amount="1" method="default" name="{6699,1012}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
@@ -168,7 +178,7 @@
   </ware>
 
 <ware id="turret_tel_l_flak" name="{6699,1013}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="78261" average="86957" max="95652" />
+    <price min="88261" average="96957" max="105652" />
     <production time="10" amount="1" method="default" name="{6699,1013}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
@@ -235,7 +245,7 @@
   </ware> -->
 
   <ware id="turret_arg_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="78261" average="86957" max="95652" />
+    <price min="68261" average="76957" max="85652" />
     <production time="10" amount="1" method="default" name="{6699,1071}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
@@ -252,7 +262,7 @@
   </ware>
 
   <ware id="turret_par_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="78261" average="86957" max="95652" />
+    <price min="68261" average="76957" max="85652" />
     <production time="10" amount="1" method="default" name="{6699,1072}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
@@ -269,7 +279,7 @@
   </ware>
 
   <ware id="turret_tel_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="78261" average="86957" max="95652" />
+    <price min="68261" average="76957" max="85652" />
     <production time="10" amount="1" method="default" name="{6699,1073}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
@@ -298,6 +308,25 @@
     <container ref="sm_gen_pickup_equipment_01_macro" />
     <use threshold="0" />
   </ware>
+
+
+<!-- XENON MAULER  -->
+<ware id="turret_xen_l_mauler" name="{6699,1022}" description="{6699,1022}" group="turrets" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
+    <price min="13392" average="14880" max="16368" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="25" />
+        <ware ware="ore" amount="20" />
+        <ware ware="silicon" amount="20" />
+      </primary>
+    </production>
+    <component ref="turret_xen_l_mauler_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" factions="xenon" />
+    <owner faction="xenon" />
+  </ware>
+
+
 
   </add>
 

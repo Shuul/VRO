@@ -413,15 +413,15 @@
       <!-- Impact Fire Particles-->
       <element id="3" ref="dummyemitter_macro" forkeffect="laser_impact_fire_01" alignment="normal" duration="1.0" minscale="1.0" maxscale="1.0" fadein="0.0" fadeout="0.5" forklod="largeeffect"></element>
       <!-- Geometry Light -->
-      <element id="4" ref="impact_gen_l_beam_01_mk1_light_macro" forkeffect="none" duration="2.0" minscale="5.0" maxscale="5.0" fadeout="1.0" forklod="largeeffect"></element>
+      <element id="4" ref="impact_gen_l_beam_01_mk1_light_macro" forkeffect="none" duration="1.0" minscale="1.0" maxscale="1.0" fadeout="1.0" forklod="largeeffect"></element>
       <!-- Sound -->
       <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="2.0" forklod="none">
         <sound ref="wpn_heavy_lance_turret_impact"></sound>
       </element>
       <!-- 6 Lightsources to make sure at liest one is outsite of the mesh -->
-      <element id="1" ref="missile_impact_01_heavy_macro" forkeffect="none" alignment="normal" duration="4.0" fadeout="1.0" forklod="largeeffect"></element>
+      <element id="1" ref="missile_impact_01_heavy_macro" forkeffect="none" alignment="normal" duration="2.0" minscale="0.5" maxscale="0.5" fadeout="1.0" forklod="largeeffect"></element>
       <!-- Explosion Fork Particles-->
-      <element id="2" ref="dummyemitter_macro" forkeffect="missile_explosion_heavy_01" duration="5.0" minscale="2" maxscale="4" forklod="largeeffect"></element>    
+      <element id="2" ref="dummyemitter_macro" forkeffect="missile_explosion_heavy_01" duration="2.5" minscale="1" maxscale="1" forklod="largeeffect"></element>    
       </elements>
   </effect>
   
@@ -564,12 +564,6 @@
     </elements>
   </effect>
 
-
-
-
-
-
-  
 	<!-- Xenon Laser-->
   <effect name="muzzle_xen_s_laser_gun" alignment="object">
     <elements>
@@ -645,6 +639,34 @@
       <!-- Sound -->
       <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
         <sound ref="wpn_xen_obliterator_impact"></sound>
+      </element>
+    </elements>
+  </effect>
+<!-- XENON MAULER TURRET-->
+<effect name="muzzle_xen_mauler_turret" alignment="object">
+    <elements>
+      <!-- Muzzle Geometry -->
+      <element id="1" ref="muzzle_xen_turret_mauler_macro" forkeffect="none" duration="1.5" minscale="2.0" maxscale="2.0" forklod="largeeffect">
+      </element>
+      <!-- Sound -->
+      <element id="2" ref="effect_dummy_macro" forkeffect="none" duration="2" forklod="mediumeffect">
+        <sound ref="wpn_xen_mauler_shoot"></sound>
+      </element>
+    </elements>
+  </effect>
+    <effect name="impact_xen_mauler_turret" alignment="object">
+    <elements>
+      <!-- Distortion Bubble Particle -->
+      <element id="1" ref="dummyemitter_macro" forkeffect="turret_l_impact01_distortion01" duration="1.0" emitterspace="zone" alignment="impact" forklod="largeeffect"></element>
+      <!-- Blue impact explosion. -->
+      <element id="2" ref="dummyemitter_macro" forkeffect="turret_medium_bb_xe_impact01_explosion01" duration="3.5" emitterspace="zone" alignment="impact" forklod="largeeffect"></element>
+         
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
+        <areadamage range="250" falloff="1" duration="1" />
+      </element>
+         <!-- Sound -->
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="smalleffect">
+        <sound ref="wpn_xen_mauler_impact"></sound>
       </element>
     </elements>
   </effect>

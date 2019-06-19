@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<components>
+	<component name="turret_xen_mauler_muzzle" class="effectobject">
+		<source geometry="extensions\VRO\assets\fx\weaponFx\turret_xen_mauler_muzzle_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="effectobject">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part animation ">
+				<offset>
+					<position x="-4.831684E-02" y="-0.3304794" z="8.476521"/>
+				</offset>
+				<animations>
+					<animation name="playonce" start="1" end="6"/>
+				</animations>
+				<parts>
+					<part name="anim_muzzle02">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="particles.explosion_master_01_geometry"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="41.02895" y="52.79849" z="36.4105"/>
+							<center x="1.33596" y="3.172456" z="22.19297"/>
+						</size>
+						<size_raw>
+							<max x="22.05166" y="27.57002" z="7.898631"/>
+							<center x="0.7422007" y="1.762476" z="12.32942"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection02" tags="part animation ">
+				<offset>
+					<position x="-4.831684E-02" y="-0.3304794" z="8.476521"/>
+				</offset>
+				<animations>
+					<animation name="playonce" start="1" end="8"/>
+				</animations>
+				<parts>
+					<part name="anim_muzzle01">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="particles.explosion_master_01_geometry"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="15.57152" y="17.98043" z="101.5814"/>
+							<center x="7.247245E-02" y="-0.4402421" z="101.5813"/>
+						</size>
+						<size_raw>
+							<max x="10.3327" y="12.28045" z="2.071556"/>
+							<center x="4.831493E-02" y="-0.2934959" z="57.46987"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+		</connections>
+	</component>
+</components>
