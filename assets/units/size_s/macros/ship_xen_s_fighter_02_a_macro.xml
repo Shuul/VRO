@@ -19,13 +19,13 @@
         <software ware="software_trademk1" compatible="1" />
       </software>
       <storage missile="20" />
-      <hull max="6500" />
+      <hull max="6000" />
       <secrecy level="2" />
       <purpose primary="fight" />
       <people capacity="0" />
-      <physics mass="7.622">
+      <physics mass="12.622">
         <inertia pitch="3.7" yaw="3.7" roll="3" />
-        <drag forward="5.8" reverse="28.4" horizontal="4" vertical="4.2" pitch="5.5" yaw="5.5" roll="5.5" />
+        <drag forward="7.6" reverse="28.4" horizontal="4" vertical="4.2" pitch="5.5" yaw="5.5" roll="5.5" />
       </physics>
       <thruster tags="small" />
       <loadouts>
@@ -36,6 +36,7 @@
             <engine macro="engine_xen_s_combat_01_mk1_macro" path="../con_engine_03" />
             <engine macro="engine_xen_s_combat_01_mk1_macro" path="../con_engine_04" />
             <shield macro="shield_xen_s_standard_01_mk2_macro" path="../con_shield_01" optional="1" />
+            <shield macro="shield_xen_s_standard_01_mk2_macro" path="../con_shield_02" optional="1" />
             <weapon macro="weapon_xen_s_laser_01_mk1_macro" path="../con_primaryweapon_01" optional="1" />
             <weapon macro="weapon_xen_s_laser_01_mk1_macro" path="../con_primaryweapon_02" optional="1" />
           </macros>
@@ -54,12 +55,11 @@
       <connection ref="con_cockpit">
         <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
       </connection>
-
     </connections>
   </macro>
 
 </replace>
-</diff>
+</diff> 
 <!-- 
 <macros>
   <macro name="ship_xen_s_fighter_02_a_macro" class="ship_s">
