@@ -75,5 +75,19 @@
 			<people ref="teladi_military_crew"/>
 		</ship>
 	</add>
-	
+
+<!-- ############################# -->
+<!--    Xenons-->
+<!-- ############################# -->
+
+<add sel="//ships">
+		<ship id="xen_xl_mdestroyer_01_a_macro" group="xen_mdestroyer_xl" capturable="false">
+    <category tags="[military, destroyer, mission]" faction="[xenon]" size="ship_xl"/>
+    <pilot>
+      <select faction="xenon" tags="fighterpilot"/>
+    </pilot>
+    <drop ref="ship_large_xenon"/>
+  </ship>
+</add>
+
 </diff>

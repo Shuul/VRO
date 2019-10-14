@@ -3,7 +3,13 @@
 <diff>
 <add sel="/influencelistconfigurations"> 
 
-
+ <influencelist name="interdictor_missile">
+    <influences>
+        <influence type="disabletravel">
+        <profile type="continuous" duration="60" />
+      </influence>
+    </influences>
+  </influencelist>
 
 </add>
 </diff>

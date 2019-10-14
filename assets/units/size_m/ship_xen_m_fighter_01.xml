@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<diff> 
+<add sel="//components/component[@name='ship_xen_m_fighter_01']/connections">
+
+<!-- new connections -->
+			<connection name="con_primaryweapon_03" tags="weapon medium standard missile platformcollision">
+				<offset>
+					<position x="0" y="-15.5671" z="62.53819"/>
+				</offset>
+			</connection>
+
+
+</add>
+</diff>
+<!--<components>
+	<component name="ship_xen_m_fighter_01" class="ship_m">
+		<source geometry="assets\units\size_m\ship_xen_m_fighter_01_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni002" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-20.7918" y="-14.9484" z="51.7406"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni003" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="20.86237" y="-14.9484" z="51.74059"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni01" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="1.008676E-05" y="-8.404372" z="66.80161"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni008" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-21.63412" y="3.847748" z="-30.31778"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni009" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="21.64436" y="3.847748" z="-30.31778"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni010" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="10.59323" y="-1.843807" z="-50.40103"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni011" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-10.57148" y="-1.843807" z="-50.40103"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni014" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="6.793376" y="3.627624" z="-54.84901"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni015" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-6.853973" y="3.627624" z="-54.53648"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni016" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="-26.69382" y="6.051495" z="-11.1548"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni017" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="26.86836" y="6.051495" z="-11.1548"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+					<box name="XU BoxLight01" shadow="0" r="255" g="113" b="0" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<size x="100" y="40" z="40"/>
+						<lightanimations/>
+						<offset>
+							<position x="-26.79945" y="16.60687" z="-26.98296"/>
+							<quaternion qx="6.162841E-02" qy="0.704416" qz="-0.0616284" qw="-0.704416"/>
+						</offset>
+					</box>
+					<box name="XU BoxLight002" shadow="0" r="255" g="113" b="0" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<size x="100" y="40" z="40"/>
+						<lightanimations/>
+						<offset>
+							<position x="27.06958" y="16.60687" z="-26.98296"/>
+							<quaternion qx="6.162841E-02" qy="0.704416" qz="-0.0616284" qw="-0.704416"/>
+						</offset>
+					</box>
+					<omni name="XU Omni018" shadow="0" r="255" g="124" b="0" range="20" shadowrange="20" lighteffect="1" trigger="1" intensity="0.5999999" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="8.586971" z="-67.03428"/>
+							<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+						</offset>
+					</omni>
+				</lights>
+				<trailemitters>
+					<emitter name="trail_ship_m_01" type="trail_ship_m_01">
+						<offset>
+							<position x="-23.45626" y="-4.487692" z="-24.44021"/>
+						</offset>
+					</emitter>
+					<emitter name="trail_ship_m_01" type="trail_ship_m_01">
+						<offset>
+							<position x="21.90851" y="-4.487692" z="-24.44021"/>
+						</offset>
+					</emitter>
+					<emitter name="wingtip_vortex_ship_m_01" type="wingtip_vortex_ship_m_01">
+						<offset>
+							<position x="-18.09894" y="4.471188" z="-51.05104"/>
+						</offset>
+					</emitter>
+					<emitter name="wingtip_vortex_ship_m_01" type="wingtip_vortex_ship_m_01">
+						<offset>
+							<position x="17.68802" y="4.471188" z="-51.05104"/>
+						</offset>
+					</emitter>
+				</trailemitters>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="ship ship_m">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part  ">
+				<offset/>
+				<parts>
+					<part name="part_main" wreck="part_main_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_fx"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+									<material id="3" ref="p1xenon.xen_p1_hullpattern_02"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_fx"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+									<material id="3" ref="p1xenon.xen_p1_hullpattern_02"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="p1xenon.xen_p1_hullpattern_02"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="p1xenon.xen_p1_hullpattern_02"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="29.36642" y="25.09467" z="64.09747"/>
+							<center x="1.907349E-06" y="0.1030254" z="3.978788"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection02" tags="part detail_m nocollision forceoutline  ">
+				<offset/>
+				<parts>
+					<part name="detail_m_main">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_fx"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="38.44333" y="29.61529" z="67.01822"/>
+							<center x="-3.814697E-06" y="3.951248" z="-2.622406"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="con_engine_01" tags="engine medium platformcollision ">
+				<offset/>
+			</connection>
+			<connection name="con_dockpos" tags="dockpos ">
+				<offset>
+					<position x="0" y="-25.78609" z="68.5067"/>
+				</offset>
+			</connection>
+			<connection name="con_playercontrol" tags="playercontrol">
+				<offset>
+					<position x="0" y="27.04314" z="0.3386583"/>
+				</offset>
+			</connection>
+			<connection name="con_shield_01" tags="medium shield unhittable platformcollision ">
+				<offset>
+					<position x="0" y="2.685177" z="-16.21134"/>
+					<quaternion qx="0.7071067" qy="1.152023E-07" qz="-0.7071068" qw="-8.43217E-09"/>
+				</offset>
+			</connection>
+			<connection name="con_cockpit" tags="cockpit cockpit_visible">
+				<offset>
+					<position x="6.000042E-03" y="27.05147" z="2.826822"/>
+				</offset>
+			</connection>
+			<connection name="con_primaryweapon_01" tags="weapon medium standard platformcollision symmetry symmetry_left">
+				<offset>
+					<position x="-8.844477" y="-15.5671" z="62.53819"/>
+				</offset>
+			</connection>
+			<connection name="con_storage01" tags="storage ">
+				<offset>
+					<position x="0" y="26.94825" z="-2.672149"/>
+				</offset>
+			</connection>
+			<connection name="con_primaryweapon_02" tags="weapon medium standard platformcollision symmetry symmetry_right">
+				<offset>
+					<position x="8.858631" y="-15.5734" z="62.53819"/>
+				</offset>
+			</connection>
+			<connection name="con_shield_02" tags="medium shield unhittable platformcollision ">
+				<offset>
+					<position x="0" y="-10.20299" z="5.856657"/>
+					<quaternion qx="0.8433915" qy="7.373163E-08" qz="-4.697221E-08" qw="-0.5372996"/>
+				</offset>
+			</connection>
+			<connection name="con_control01" value="-1" tags="npc  pilot control sit ">
+				<offset>
+					<position x="0.03255" y="26.98256" z="5.90697"/>
+				</offset>
+			</connection>
+			<connection name="con_countermeasures_01" tags="countermeasures ">
+				<offset>
+					<position x="0" y="0.8637945" z="-59.28061"/>
+					<quaternion qx="-0.9238796" qy="-0" qz="-0" qw="-0.3826834"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_top" tags="turret medium standard missile platformcollision unhittable ">
+				<offset>
+					<position x="0" y="21.06926" z="20.55078"/>
+					<quaternion qx="-1.311008E-08" qy="-0.9848077" qz="-0.1736483" qw="7.435091E-08"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_bottom" tags="turret medium standard missile platformcollision unhittable ">
+				<offset>
+					<position x="0" y="-19.03532" z="20.17132"/>
+					<quaternion qx="-7.54979E-08" qy="1.629207E-07" qz="-1" qw="-1.230017E-14"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components> -->

@@ -3,7 +3,6 @@
 <diff> 
 <replace sel="//macros/macro[@name='ship_kha_s_fighter_02_a_macro']">
 
-<macros>
   <macro name="ship_kha_s_fighter_02_a_macro" class="ship_s">
     <component ref="ship_kha_s_fighter_02" />
     <properties>
@@ -22,7 +21,7 @@
       <people capacity="0" />
       <physics mass="5">
         <inertia pitch="1" yaw="1" roll="1" />
-        <drag forward="3.5" reverse="17" horizontal="3.5" vertical="3.5" pitch="3" yaw="3" roll="3" />
+        <drag forward="0.7" reverse="17" horizontal="2" vertical="2" pitch="2" yaw="2" roll="2" />
       </physics>
       <thruster tags="small" />
       <loadouts>
@@ -46,7 +45,6 @@
     <connections>
     </connections>
   </macro>
-</macros>
 </replace>
 </diff>
 <!-- 

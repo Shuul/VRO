@@ -18,6 +18,7 @@
         <software ware="software_targetmk1" default="1" />
         <software ware="software_trademk1" compatible="1" />
       </software>
+      <storage missile="10" />
       <hull max="50000" />
       <secrecy level="2" />
       <purpose primary="fight" />
@@ -37,9 +38,11 @@
             <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_top" optional="1" />
             <weapon macro="weapon_xen_m_laser_01_mk1_macro" path="../con_primaryweapon_01" optional="1" />
             <weapon macro="weapon_xen_m_laser_01_mk1_macro" path="../con_primaryweapon_02" optional="1" />
+            <weapon macro="weapon_xen_light_launcher_macro" path="../con_primaryweapon_03" optional="1" />
           </macros>
           <ammunition>
             <ammunition macro="countermeasure_flares_01_macro" min="20" max="40" optional="1" />
+            <ammunition macro="missile_xen_xn101_macro" min="10" max="20" optional="1" />
           </ammunition>
           <virtualmacros>
             <thruster macro="thruster_gen_m_combat_01_mk3_macro" />

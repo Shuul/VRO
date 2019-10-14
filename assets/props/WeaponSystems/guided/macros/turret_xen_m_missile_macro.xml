@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 30.11.2018_10-44-07-->
+<macros>
+  <macro name="turret_xen_m_missile_macro" class="missileturret">
+    <component ref="turret_xen_m_missile_comp" />
+    <properties>
+      <identification name="{6699,1077}" basename="{6699,1078}" shortname="{6699,1078}" makerrace="xenon" description="{6699,1077}" mk="1" />
+      <ammunition tags="guided" />
+      <bullet class="missile_guided_light_mk1_macro" />
+      <rotationspeed max="90" />
+      <reload />
+      <storage capacity="10" />
+      <hull max="1105" threshold="0.2" integrated="1" />
+    </properties>
+  </macro>
+</macros>
+
+
+<!-- <macros>
+  <macro name="weapon_xen_m_laser_01_mk1_macro" class="weapon">
+    <component ref="weapon_xen_m_laser_01_mk1" />
+    <properties>
+      <identification name="{20105,2004}" basename="{20105,2001}" shortname="{20105,2005}" makerrace="xenon" description="{20105,2002}" mk="1" />
+      <bullet class="bullet_xen_m_laser_01_mk1_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+      <rotationspeed max="128.6" />
+      <rotationacceleration max="64.3" />
+      <reload />
+      <hull max="1001" hittable="0" />
+    </properties>
+  </macro>
+</macros> -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 12.02.2019_18-41-07-->
+
+<macros>
+  <macro name="missile_xen_cruise_macro" class="missile">
+    <component ref="missile_cruise" />
+    <properties>
+      <identification name="{6699,1079}" basename="{6699,1079}" description="{6699,1080}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="20" range="45000" guided="1" icon="missile_torpedo_mk1" retarget="1" tags="cruise" />
+      <explosiondamage value="20000" />
+      <reload time="50" />
+      <hull max="50" />
+      <effects>
+        <explosion ref="explosion_xen_missile_cruise" />
+        <launch ref="muzzle_gen_cruise" />
+      </effects>
+      <weapon system="torpedo" />
+      <countermeasure resilience="1" />
+      <physics mass="20.337">
+        <inertia pitch="35.646" yaw="35.646" roll="35.646" />
+        <drag forward="0.03" reverse="3.417" horizontal="35.188" vertical="35.188" pitch="50.269" yaw="50.269" roll="50.269" />
+      </physics>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+
