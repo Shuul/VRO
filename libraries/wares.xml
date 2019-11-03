@@ -103,8 +103,8 @@
 		<price min="32000000" average="37000000" max="42000000" />
 		<production time="800" amount="1" method="default" name="{20206,101}">
 		  <primary>
-			<ware ware="energycells" amount="3500" />
-			<ware ware="hullparts" amount="12600" />
+			<ware ware="energycells" amount="3000" />
+			<ware ware="hullparts" amount="15600" />
 		  </primary>
 		</production>
 		<component ref="ship_par_xl_battleship_01_macro" amount="1" />
@@ -119,7 +119,7 @@
 		<production time="750" amount="1" method="default" name="{20206,101}">
 		  <primary>
 			<ware ware="energycells" amount="3600" />
-			<ware ware="hullparts" amount="11500" />
+			<ware ware="hullparts" amount="14500" />
 		  </primary>
 		</production>
 		<component ref="ship_arg_xl_battleship_01_macro" amount="1" />
@@ -133,8 +133,8 @@
 		<price min="29000000" average="33000000" max="39000000" />
 		<production time="700" amount="1" method="default" name="{20206,101}">
 		  <primary>
-			<ware ware="energycells" amount="4000" />
-			<ware ware="hullparts" amount="10300" />
+			<ware ware="energycells" amount="6000" />
+			<ware ware="hullparts" amount="13300" />
 		  </primary>
 		</production>
 		<component ref="ship_tel_xl_battleship_01_macro" amount="1" />
@@ -254,7 +254,7 @@
     <use threshold="0" factions="xenon" />
     <owner faction="xenon" />
   </ware> -->
-
+<!-- 
   <ware id="missile_xen_swarm" name="{6699,1060}" description="{6699,1061}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
     <price min="17563" average="20663" max="23762" />
     <production time="1" amount="1" method="default" name="{6699,1060}">
@@ -267,8 +267,37 @@
     <container ref="sm_gen_pickup_equipment_01_macro" />
     <use threshold="0" factions="xenon" />
     <owner faction="xenon" />
+  </ware> -->
+  
+  <ware id="missile_xen_cruise" name="{6699,1079}" description="{6699,1080}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+    <price min="12392" average="13880" max="15368" />
+    <production time="6" amount="1" method="default" name="{6699,1079}">
+      <primary>
+        <ware ware="energycells" amount="5" />
+        <ware ware="ore" amount="2" />
+        <ware ware="silicon" amount="2" />
+      </primary>
+    </production>
+    <component ref="missile_xen_cruise_macro" amount="1" />
+    <container ref="sm_gen_pickup_equipment_01_macro" />
+    <use threshold="0" factions="xenon" />
+    <owner faction="xenon" />
   </ware>
 
+   <ware id="missile_xen_xn101" name="{6699,1070}" description="{6699,1070}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+    <price min="1239" average="1388" max="1536" />
+    <production time="6" amount="1" method="default" name="{6699,1070}">
+      <primary>
+        <ware ware="energycells" amount="3" />
+        <ware ware="ore" amount="1" />
+        <ware ware="silicon" amount="1" />
+      </primary>
+    </production>
+    <component ref="missile_xen_xn101_macro" amount="1" />
+    <container ref="sm_gen_pickup_equipment_01_macro" />
+    <use threshold="0" factions="xenon" />
+    <owner faction="xenon" />
+  </ware>
 
 <!-- CRUISE MISSILES  -->
   <ware id="turret_arg_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
@@ -373,39 +402,29 @@
     <use threshold="0" />
   </ware>
 
-   <ware id="missile_xen_cruise" name="{6699,1079}" description="{6699,1080}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-    <price min="12392" average="13880" max="15368" />
-    <production time="6" amount="1" method="default" name="{6699,1079}">
-      <primary>
-        <ware ware="energycells" amount="5" />
-        <ware ware="ore" amount="2" />
-        <ware ware="silicon" amount="2" />
-      </primary>
-    </production>
-    <component ref="missile_xen_cruise_macro" amount="1" />
-    <container ref="sm_gen_pickup_equipment_01_macro" />
-    <use threshold="0" factions="xenon" />
-    <owner faction="xenon" />
-  </ware>
+ <!-- BOMBER WEAPONS -->
 
-   <ware id="missile_xen_xn101" name="{6699,1070}" description="{6699,1070}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-    <price min="1239" average="1388" max="1536" />
-    <production time="6" amount="1" method="default" name="{6699,1070}">
+<ware id="weapon_gen_m_plasmabomb" name="{6699,1090}" description="{6699,1090}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="250867" average="267630" max="284393" />
+    <production time="10" amount="1" method="default" name="{6699,1090}">
       <primary>
-        <ware ware="energycells" amount="3" />
-        <ware ware="ore" amount="1" />
-        <ware ware="silicon" amount="1" />
+        <ware ware="advancedelectronics" amount="20" />
+        <ware ware="energycells" amount="10" />
+        <ware ware="weaponcomponents" amount="65" />
       </primary>
     </production>
-    <component ref="missile_xen_xn101_macro" amount="1" />
-    <container ref="sm_gen_pickup_equipment_01_macro" />
-    <use threshold="0" factions="xenon" />
-    <owner faction="xenon" />
+    <component ref="weapon_gen_m_plasmabomb_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="ministry" />
+    <owner faction="teladi" />
   </ware>
 
 <!-- XENON MAULER  -->
 <ware id="turret_xen_l_mauler" name="{6699,1022}" description="{6699,1022}" group="turrets" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
-    <price min="13392" average="14880" max="16368" />
+    <price min="13092" average="14580" max="16068" />
     <production time="15" amount="1" method="default" name="{6699,1022}">
       <primary>
         <ware ware="energycells" amount="25" />

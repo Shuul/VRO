@@ -9,7 +9,7 @@
       <missile amount="1" barrelamount="1" lifetime="25" range="20000" swarm="0" guided="1" icon="missile_guided_mk1" retarget="1" tags="guided" />
       <explosiondamage value="2200" />
       <reload time="15" />
-      <hull max="10" />
+      <hull max="5" />
       <effects>
         <explosion ref="missile_explosion_light_01" />
         <launch ref="missile_guided_muzzle" />
@@ -18,12 +18,12 @@
       <countermeasure resilience="0.86" />
       <physics mass="0.349">
         <inertia pitch="0.275" yaw="0.275" roll="0.275" />
-        <drag forward="0.075" reverse="0.28" horizontal="1" vertical="1" pitch="1.1" yaw="1.1" roll="1.1" />
+        <drag forward="0.1" reverse="0.28" horizontal="1" vertical="1" pitch="0.4" yaw="0.4" roll="0.4" />
       </physics>
     </properties>
     <connections>
       <connection ref="con_engine01">
-        <macro ref="engine_missile_swarm_mk1_macro" connection="ship" />
+        <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
       </connection>
     </connections>
   </macro>

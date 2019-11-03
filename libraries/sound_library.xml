@@ -1,5 +1,4 @@
-<!-- <?xml version="1.0" encoding="utf-8"?>
-<soundlibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:\GalaxyClient\Games\X4 2.2b2\libraries\sound_library.xsd"> -->
+<!-- <?xml version="1.0" encoding="utf-8"?>-->
 <diff>
   <add sel="//soundlibrary">
     <!-- PLASMA GUN-->
@@ -272,7 +271,7 @@
         </sample>
         <volume start="1.3" distance="6"/>
     </sound>
-<!-- Cruise missile-->
+  <!-- Cruise missile-->
     <sound id="wpn_cruise_shoot" description="cruise shooting" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
           <select start="extensions\VRO\sfx\weapons\cruise_1"/>
@@ -285,6 +284,14 @@
           <select start="extensions\VRO\sfx\weapons\cruise_hit_1"/>
         </sample>
         <volume start="1.5" distance="20"/>
+    </sound>
+
+  <!-- bomber weapon -->
+    <sound id="wpn_gen_bomb_launch" description="x" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\bomb_launch"/>
+        </sample>
+        <volume start="3" distance="6"/>
     </sound>
 
 
@@ -349,7 +356,20 @@
         <volume start="1.3" distance="20"/>
     </sound>
 
-
-    <!-- PLASMA GUN-->
+  
   </add>
+
+<!-- Missiles-->
+<replace sel="//soundlibrary/sound[@id='wpn_missile_launch']">
+<sound id="wpn_missile_launch" description="Missile launch" repeat="1" is3d="1" preload="1">
+    <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\missile_01"/>
+          <select start="extensions\VRO\sfx\weapons\missile_02"/>
+          <select start="extensions\VRO\sfx\weapons\missile_03"/>
+        </sample>
+        <volume start="0.8" distance="4"/>
+    </sound>
+
+</replace>
+
 </diff>
