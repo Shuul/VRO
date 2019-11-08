@@ -264,4 +264,34 @@
 <loadout>
 				<level min="0.6" max="0.94"/>
 			</loadout>  </replace>
+
+<!-- carrier groups boost -->
+<replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/quota">
+<quota galaxy="2"/>
+</replace>
+
+<replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/location">
+<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact"/>
+</replace>
+
+<replace sel="//jobs/job[@id='teladi_carrier_patrol_xl_cluster']/quota">
+<quota galaxy="2"/>
+</replace>
+
+<replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster']/quota">
+<quota galaxy="2"/>
+</replace>
+
+<replace sel="//jobs/job[@id='argon_fighter_escort_s_carrier']/quota">
+<quota wing="35" variation="10"/>
+</replace>
+
+<replace sel="//jobs/job[@id='paranid_fighter_escort_s_carrier']/quota">
+<quota wing="40" variation="5"/>
+</replace>
+
+<replace sel="//jobs/job[@id='argon_fighter_escort_s_carrier']/quota">
+<quota wing="35" variation="10"/>
+</replace>
+
 </diff>

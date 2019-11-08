@@ -15,7 +15,7 @@
         <software ware="software_targetmk1" default="1" />
       </software>
       <storage missile="0" unit="0" />
-      <hull max="8000" />
+      <hull max="5000" />
       <secrecy level="3" />
       <purpose primary="fight" />
       <people capacity="0" />
@@ -43,6 +43,9 @@
       <ship type="fighter" />
     </properties>
     <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
     </connections>
   </macro>
 </replace>
