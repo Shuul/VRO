@@ -445,7 +445,7 @@
   <effect name="impact_gen_turret_flak" alignment="random" emitterspace="zone">
     <elements>
       <!-- Light -->
-      <element id="1" ref="explosion_m_02_explosion01" forkeffect="none" duration="1.0" fadein="0.02" fadeout="0.5" alignment="normal" forklod="largeeffect"></element>
+      <!-- <element id="1" ref="explosion_m_02_explosion01" forkeffect="none" duration="1.0" fadein="0.02" fadeout="0.5" alignment="normal" forklod="largeeffect"></element> -->
       <!-- Explosion -->
       <element id="2" ref="dummyemitter_up_macro" forkeffect="explosion_props_wps_mine_01_explosion_01" duration="1.5" delay="0.1" fadeout="1.0" alignment="normal" forklod="largeeffect"></element>
      <!-- area damage -->
@@ -506,7 +506,7 @@
  <effect name="turret_annihilator_impact" alignment="normal">
     <elements>
       <!-- Impact Geometry -->
-      <element id="1" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" minscale="1.7" maxscale="1.7" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element>
+      <!-- <element id="1" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" minscale="1.7" maxscale="1.7" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element> -->
       <element id="1" ref="turret_annihilator_impact_macro" forkeffect="none" duration="2.0" minscale="1.5" maxscale="1.5" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element>
       <!-- Impact Smoke Particles-->
       <element id="2" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="1.0" minscale="5.0" maxscale="5.0" forklod="largeeffect"></element>
@@ -542,7 +542,7 @@
 <effect name="impact_gen_m_plasmabomb" alignment="normal">
     <elements>
       <!-- Impact Geometry -->
-      <element id="1" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" minscale="1" maxscale="1" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element>
+      <!-- <element id="1" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" minscale="1" maxscale="1" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element> -->
       <element id="1" ref="turret_annihilator_impact_macro" forkeffect="none" duration="2.0" minscale="0.8" maxscale="0.8" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element>
       <!-- Impact Smoke Particles-->
       <element id="2" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="1.0" minscale="5.0" maxscale="5.0" forklod="largeeffect"></element>
