@@ -11,8 +11,10 @@
       <heat value="1000" />
       <reload rate="2" />
       <damage value="900" shield="350"  repair="0" />
+        <multiplier surfaceelement="2" />
       <effects>
-        <impact ref="impact_gen_m_gatling_01_mk1" />
+        <impact ref="impact_gen_m_gatling_01_mk1" inside="impact_gen_m_gatling_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_m_gatling_01_mk1_bigobject" inside="impact_gen_m_gatling_01_mk1_bigobject_inside" />
         <launch ref="muzzle_gen_m_reaper_cannon" />
       </effects>
       <weapon system="weapon_standard" />

@@ -12,7 +12,8 @@
       <!-- <damage value="72" shield="8" repair="0" /> -->
       <damage min="50" max="90" value="90" time="1"/> 
       <effects>
-        <impact ref="impact_gen_m_shotgun_01_mk1" />
+        <impact ref="impact_gen_m_shotgun_01_mk1" inside="impact_gen_m_shotgun_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_m_shotgun_01_mk1_bigobject" inside="impact_gen_m_shotgun_01_mk1_bigobject_inside" />
         <launch ref="muzzle_gen_m_demolisher_scatter_cannon" />
       </effects>
       <weapon system="weapon_standard" />

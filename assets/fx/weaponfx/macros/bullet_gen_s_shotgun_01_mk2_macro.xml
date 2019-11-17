@@ -13,7 +13,8 @@
       <damage min="40" max="95" value="95" time="1"/> 
 	  <ammunition value="3" reload="2.5" />
       <effects>
-        <impact ref="impact_gen_s_shotgun_01_mk1" />
+        <impact ref="impact_gen_s_shotgun_01_mk1" inside="impact_gen_s_shotgun_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_s_shotgun_01_mk1_bigobject" inside="impact_gen_s_shotgun_01_mk1_bigobject_inside" />
         <launch ref="muzzle_gen_s_shotgun_01_mk1" />
       </effects>
       <weapon system="weapon_standard" />

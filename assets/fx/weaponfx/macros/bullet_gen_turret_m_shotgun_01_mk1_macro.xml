@@ -10,7 +10,8 @@
       <reload rate="0.5" />
       <damage value="80" shield="15" repair="0" />
       <effects>
-        <impact ref="impact_gen_s_shotgun_01_mk1" />
+        <impact ref="impact_gen_s_shotgun_01_mk1" inside="impact_gen_s_shotgun_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_s_shotgun_01_mk1_bigobject" inside="impact_gen_s_shotgun_01_mk1_bigobject_inside" />
         <launch ref="muzzle_gen_m_demolisher_scatter_cannon" />
       </effects>
       <weapon system="turret_shortrange" />

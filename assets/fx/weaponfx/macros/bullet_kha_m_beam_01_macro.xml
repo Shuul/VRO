@@ -12,7 +12,8 @@
       <reload time="3.75" />
       <damage value="1000" repair="0" />
       <effects>
-        <impact ref="impact_gen_m_beam_01_mk1" />
+        <impact ref="impact_gen_m_beam_01_mk1" inside="impact_gen_m_beam_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_m_beam_01_mk1_bigobject" inside="impact_gen_m_beam_01_mk1_bigobject_inside" />
         <launch ref="muzzle_gen_m_beam_01_mk1" />
       </effects>
       <sounds>

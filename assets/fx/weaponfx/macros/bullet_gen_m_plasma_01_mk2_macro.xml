@@ -11,8 +11,10 @@
       <heat value="600" />
       <reload rate="3" />
       <damage value="345" shield="150" repair="0" />
+      <multiplier surfaceelement="3" />
       <effects>
-        <impact ref="plasmaemitter_impact_02" />
+        <impact ref="impact_gen_m_plasma_01_mk1" inside="impact_gen_m_plasma_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_m_plasma_01_mk1_bigobject" inside="impact_gen_m_plasma_01_mk1_bigobject_inside" />
         <launch ref="muzzle_gen_m_plasma_incinerator" />
       </effects>
       <weapon system="weapon_standard" />

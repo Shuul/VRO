@@ -11,7 +11,8 @@
       <reload rate="2" />
       <damage value="150" shield="50" repair="0" />
       <effects>
-        <impact ref="impact_xen_s_laser_01_mk1" />
+        <impact ref="impact_xen_s_laser_01_mk1" inside="impact_xen_s_laser_01_mk1_inside" />
+        <bigobjectimpact ref="impact_xen_s_laser_01_mk1_bigobject" inside="impact_xen_s_laser_01_mk1_bigobject_inside" />
         <launch ref="muzzle_xen_repeater_turret" />
       </effects>
       <weapon system="turret_midrange" />

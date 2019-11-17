@@ -11,7 +11,8 @@
       <reload rate="0.4" />
       <damage value="40" shield="320" repair="0" />
       <effects>
-        <impact ref="impact_arg_m_ion_01_mk1" />
+        <impact ref="impact_arg_m_ion_01_mk1" inside="impact_arg_m_ion_01_mk1_inside" />
+        <bigobjectimpact ref="impact_arg_m_ion_01_mk1_bigobject" inside="impact_arg_m_ion_01_mk1_bigobject_inside" />
         <launch ref="muzzle_arg_m_heavy_arc_discharger" />
       </effects>
       <weapon system="weapon_standard" />

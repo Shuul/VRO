@@ -10,7 +10,9 @@
       <reload rate="0.4" />
       <damage value="550" shield="140" repair="0" />
       <effects>
-        <impact ref="plasmaemitter_impact_02" />
+        <impact ref="impact_gen_s_plasma_01_mk1" inside="impact_gen_s_plasma_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_s_plasma_01_mk1_bigobject" inside="impact_gen_s_plasma_01_mk1_bigobject_inside" />
+        <!-- <impact ref="plasmaemitter_impact_02" /> -->
         <launch ref="muzzle_gen_m_plasma_cannon" />
       </effects>
       <weapon system="turret_longrange" />

@@ -12,7 +12,8 @@
       <reload rate="20" />
       <damage value="390" shield="45" repair="0" />
       <effects>
-        <impact ref="plasmaemitter_impact" />
+        <impact ref="impact_gen_m_laser_01_mk1" inside="impact_gen_m_laser_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_m_laser_01_mk1_bigobject" inside="impact_gen_m_laser_01_mk1_bigobject_inside" />
         <launch ref="muzzle_gen_m_fusion_repeater" />
       </effects>
       <weapon system="weapon_standard" />

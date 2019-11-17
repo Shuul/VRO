@@ -12,7 +12,8 @@
       <reload rate="4" />
       <damage value="115" repair="0" />
       <effects>
-        <impact ref="impact_xen_s_laser_01_mk1" />
+        <impact ref="impact_xen_s_laser_01_mk1" inside="impact_xen_s_laser_01_mk1_inside" />
+        <bigobjectimpact ref="impact_xen_s_laser_01_mk1_bigobject" inside="impact_xen_s_laser_01_mk1_bigobject_inside" />
         <launch ref="muzzle_xen_s_laser_gun" />
       </effects>
       <weapon system="weapon_standard" />
