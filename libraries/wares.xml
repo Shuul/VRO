@@ -402,6 +402,28 @@
     <use threshold="0" />
   </ware>
 
+  <!-- HEPT -->
+  <ware id="weapon_gen_s_hept" name="{6699,1101}" description="{20105,1104}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="54827" average="61030" max="67233" />
+    <production time="10" amount="1" method="default" name="{6699,1103}">
+      <primary>
+        <ware ware="advancedelectronics" amount="5" />
+        <ware ware="energycells" amount="30" />
+        <ware ware="weaponcomponents" amount="15" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_s_hept_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0.4" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="holyorder" />
+    <owner faction="ministry" />
+    <owner faction="paranid" />
+    <owner faction="teladi" />
+  </ware>
+
  <!-- BOMBER WEAPONS -->
 
 <ware id="weapon_gen_m_plasmabomb" name="{6699,1090}" description="{6699,1090}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">

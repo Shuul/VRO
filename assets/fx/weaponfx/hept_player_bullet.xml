@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<components>
+	<component name="hept_player_bullet" class="bullet">
+		<source geometry="extensions\VRO\assets\fx\weaponFx\hept_player_bullet_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="bullet">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part  ">
+				<offset>
+					<position x="0" y="0" z="-1.335886E-06"/>
+				</offset>
+				<parts>
+					<part name="part_impulseemitter_bullet">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="weapons.shotgun_muzzle_blob"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.3198509" y="0.3198506" z="12.22353"/>
+							<center x="-1.298726E-03" y="1.225099E-03" z="-1.69374"/>
+						</size>
+						<lights>
+							<omni name="XU Omni01" shadow="0" r="0" g="132" b="255" range="60" shadowrange="60" lighteffect="1" lenseffect="1" trigger="1" intensity="0.5">
+								<lightanimations/>
+								<offset>
+									<position x="-2.171135E-04" y="-2.125939E-03" z="8.572392"/>
+									<quaternion qx="3.032212E-08" qy="1.992883E-09" qz="0.3826834" qw="-0.9238796"/>
+								</offset>
+							</omni>
+						</lights>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection_Laser01" tags="laser">
+				<offset/>
+			</connection>
+		</connections>
+	</component>
+</components>
