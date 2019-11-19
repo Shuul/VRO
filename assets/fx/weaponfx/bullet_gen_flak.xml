@@ -6,6 +6,12 @@
 			<layer>
 				<waypoints/>
 				<lights>
+					<omni name="XU Omni01" shadow="0" r="181" g="255" b="255" range="15" shadowrange="15" lighteffect="1" lenseffect="missile_xenonlight" trigger="1" intensity="0.5">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="0"/>
+						</offset>
+					</omni>
 					<box name="XU BoxLight24" shadow="0" r="254" g="184" b="137" lighteffect="1" trigger="1" intensity="3">
 						<size x="76.5" y="33.39999" z="33.39999"/>
 						<lightanimations/>
@@ -37,7 +43,8 @@
 							</lod>
 						</lods>
 						<size>
-							<max x="0.8719953" y="0.8293167" z="41.54486"/>
+						<max x="100" y="100" z="100"/>
+							<!-- <max x="0.8719953" y="0.8293167" z="41.54486"/> -->
 							<center x="-2.430263E-02" y="-6.258488E-06" z="-40.50113"/>
 						</size>
 					</part>
