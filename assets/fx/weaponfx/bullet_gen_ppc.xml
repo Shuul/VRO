@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<components>
+	<component name="bullet_gen_ppc" class="bullet">
+		<source geometry="extensions\VRO\assets\fx\weaponFx\bullet_gen_ppc_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<box name="XU BoxLight24" shadow="0" r="254" g="184" b="137" lighteffect="1" lenseffect="ppc" trigger="1" intensity="3" specularintensity="1">
+						<size x="76.5" y="33.39999" z="33.39999"/>
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="42.4733"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</box>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="bullet">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part animation  ">
+				<offset>
+					<position x="0" y="1.700214E-02" z="83.52215"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="100"/>
+				</animations>
+				<parts>
+					<part name="part_bullet">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.bullets_fx_master"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="5.6146" y="5.6146" z="42.53001"/>
+							<center x="0" y="-2.980232E-08" z="-40.99214"/>
+						</size>
+						<size_raw>
+							<max x="5.596763" y="5.596763" z="42.53001"/>
+							<center x="1.215959E-02" y="-1.306847E-02" z="-40.99214"/>
+						</size_raw>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection02" tags="part iklink animation textureanimation  " parent="part_bullet">
+				<offset>
+					<quaternion qx="-0" qy="-0" qz="-0.8910072" qw="-0.453989"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="100"/>
+				</animations>
+				<parts>
+					<part name="part_shockwave">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.bullets_fx_master_multilayer"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="10.11932" y="10.11932" z="26.60327"/>
+							<center x="-9.536743E-07" y="-5.066395E-07" z="-25.41713"/>
+						</size>
+						<size_raw>
+							<max x="10.09688" y="10.11932" z="52.0204"/>
+							<center x="1.055765E-02" y="1.439521E-02" z="-25.41713"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="3">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="100" value="-2"/>
+								</uv_property>
+							</uv_animation>
+							<uv_animation mapchannel="2">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="100" value="4"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection_Laser01" tags="laser">
+				<offset/>
+			</connection>
+		</connections>
+	</component>
+</components>

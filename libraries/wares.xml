@@ -351,7 +351,7 @@
     <owner faction="teladi" />
   </ware>
 
-<ware id="turret_xen_l_cruise" name="{6699,1076}" description="{6699,1076}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+  <ware id="turret_xen_l_cruise" name="{6699,1076}" description="{6699,1076}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
     <price min="1039" average="1088" max="1136" />
     <production time="10" amount="1" method="default" name="{6699,1076}">
       <primary>
@@ -402,7 +402,7 @@
     <use threshold="0" />
   </ware>
 
-  <!-- HEPT -->
+<!-- HEPT -->
   <ware id="weapon_gen_s_hept" name="{6699,1101}" description="{20105,1104}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="54827" average="61030" max="67233" />
     <production time="10" amount="1" method="default" name="{6699,1103}">
@@ -423,10 +423,52 @@
     <owner faction="paranid" />
     <owner faction="teladi" />
   </ware>
+<!-- EBC -->
+  <ware id="weapon_gen_s_ebc" name="{6699,1121}" description="{6699,1124}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="43055" average="47839" max="52623" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="8" />
+        <ware ware="energycells" amount="5" />
+        <ware ware="weaponcomponents" amount="3" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_s_ebc_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0.2" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="holyorder" />
+    <owner faction="ministry" />
+    <owner faction="paranid" />
+    <owner faction="teladi" />
+  </ware>
+<!-- CIG -->
+  <ware id="weapon_gen_m_cig" name="{6699,1131}" description="{20105,1134}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="54827" average="61030" max="67233" />
+    <production time="10" amount="1" method="default" name="{6699,1103}">
+      <primary>
+        <ware ware="advancedelectronics" amount="5" />
+        <ware ware="energycells" amount="30" />
+        <ware ware="weaponcomponents" amount="15" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_m_cig_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0.4" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="holyorder" />
+    <owner faction="ministry" />
+    <owner faction="paranid" />
+    <owner faction="teladi" />
+  </ware>
 
- <!-- BOMBER WEAPONS -->
+<!-- BOMBER WEAPONS -->
 
-<ware id="weapon_gen_m_plasmabomb" name="{6699,1090}" description="{6699,1090}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+  <ware id="weapon_gen_m_plasmabomb" name="{6699,1090}" description="{6699,1090}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="250867" average="267630" max="284393" />
     <production time="10" amount="1" method="default" name="{6699,1090}">
       <primary>

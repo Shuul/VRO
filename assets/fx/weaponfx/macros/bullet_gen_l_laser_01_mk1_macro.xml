@@ -4,15 +4,16 @@
   <replace sel="//macros">
   <macros>
   <macro name="bullet_gen_l_laser_01_mk1_macro" class="bullet">
-    <component ref="bullet_gen_l_laser_01_mk1" />
+    <component ref="bullet_gen_fa" />
     <properties>
-      <bullet speed="7500" lifetime="2.5" amount="1" barrelamount="1" icon="weapon_laser_mk1" timediff="0.008" angle="0.45" maxhits="1" ricochet="0" scale="0" attach="0" />
-      <heat value="2500" />
-      <reload rate="0.15" />
-      <damage value="10000" shield="5000" repair="0" />
+      <ammunition value="3" reload="10" />
+      <bullet speed="5500" lifetime="3" amount="1" barrelamount="1" icon="weapon_laser_mk1" timediff="0.008" angle="0.45" maxhits="1" ricochet="0" scale="0" attach="0" />
+      <heat value="2700" />
+      <reload rate="0.5" />
+      <damage value="8500" shield="4000" repair="0" />
       <effects>
-        <impact ref="impact_gen_l_kinetic_artillery" />
-        <launch ref="muzzle_gen_l_kinetic_artillery" />
+        <impact ref="turret_fa_impact" />
+        <launch ref="turret_fa_muzzle"  />
       </effects>
       <weapon system="weapon_standard" />
     </properties>
