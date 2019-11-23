@@ -7,15 +7,17 @@
     <component ref="bullet_gen_s_plasma_01_mk2" />
     <properties>
       <bullet speed="1500" lifetime="4" amount="1" barrelamount="1" icon="weapon_plasma_mk2" timediff="0.004" angle="0.4" maxhits="1" ricochet="0" scale="0" attach="0" />
-      <heat value="700" />
+      <heat value="630" />
       <reload rate="7" />
-      <damage value="480" shield="0" repair="0" />
-	  <ammunition value="4" reload="3" />
-      <effects>
-        <bigobjectimpact ref="plasmaemitter_impact_02" inside="impact_gen_s_plasma_01_mk1_bigobject_inside" />
-        <impact ref="plasmaemitter_impact_02" inside="impact_gen_s_plasma_01_mk1_inside" />
-        <launch ref="muzzle_gen_s_plasma_01_mk1" />
-      </effects>
+      <damage value="400" shield="50" repair="0" >
+      <multiplier surfaceelement="2" />
+      </damage>
+	    <ammunition value="4" reload="3" />
+    <effects>
+      <bigobjectimpact ref="plasmaemitter_impact_02" inside="impact_gen_s_plasma_01_mk1_bigobject_inside" />
+      <impact ref="plasmaemitter_impact_02" inside="impact_gen_s_plasma_01_mk1_inside" />
+      <launch ref="muzzle_gen_s_plasma_01_mk1" />
+    </effects>
       <weapon system="weapon_standard" />
     </properties>
   </macro>

@@ -7,9 +7,11 @@
     <component ref="bullet_gen_s_plasma_01_mk1" />
     <properties>
       <bullet speed="1800" lifetime="3" amount="1" barrelamount="1" icon="weapon_plasma_mk1" timediff="0.02" angle="0.3" maxhits="1" ricochet="0" scale="0" attach="0" />
-      <heat value="600" />
+      <heat value="400" />
       <reload rate="1.2" />
-      <damage value="425" shield="20" repair="0" />
+      <damage value="370" shield="18" repair="0" >
+      <multiplier surfaceelement="2" />
+      </damage>
       <effects>
         <bigobjectimpact ref="plasmaemitter_impact_02" inside="impact_gen_s_plasma_01_mk1_bigobject_inside" />
         <impact ref="plasmaemitter_impact_02" inside="impact_gen_s_plasma_01_mk1_inside" />

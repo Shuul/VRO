@@ -145,7 +145,7 @@
 <!-- FLAK TURRETS -->
 	<ware id="turret_arg_l_flak" name="{6699,1011}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
     <price min="88261" average="96957" max="105652" />
-    <production time="10" amount="1" method="default" name="{6699,1011}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="10" />
@@ -160,9 +160,9 @@
     <owner faction="argon" />
   </ware>
 
-<ware id="turret_par_l_flak" name="{6699,1012}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+  <ware id="turret_par_l_flak" name="{6699,1012}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
     <price min="88261" average="96957" max="105652" />
-    <production time="10" amount="1" method="default" name="{6699,1012}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="10" />
@@ -177,9 +177,9 @@
     <owner faction="paranid" />
   </ware>
 
-<ware id="turret_tel_l_flak" name="{6699,1013}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+  <ware id="turret_tel_l_flak" name="{6699,1013}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
     <price min="88261" average="96957" max="105652" />
-    <production time="10" amount="1" method="default" name="{6699,1013}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="10" />
@@ -192,6 +192,41 @@
     <owner faction="alliance" />
     <owner faction="ministry" />
     <owner faction="teladi" />
+  </ware>
+
+<!-- PPC  -->
+	<ware id="turret_arg_l_ppc" name="{6699,1111}" description="{6699,1114}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="165464" average="170515" max="185567" />
+    <production time="20" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="10" />
+        <ware ware="energycells" amount="10" />
+        <ware ware="turretcomponents" amount="37" />
+      </primary>
+    </production>
+    <component ref="turret_arg_l_ppc_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.85" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+  </ware>
+
+  <!-- GAUSS  -->
+	<ware id="turret_tel_l_gauss" name="{6699,1141}" description="{6699,1144}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="165464" average="170515" max="185567" />
+    <production time="20" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="5" />
+        <ware ware="energycells" amount="10" />
+        <ware ware="turretcomponents" amount="45" />
+      </primary>
+    </production>
+    <component ref="turret_tel_l_gauss_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.85" />
+		<owner faction="teladi" />
+		<owner faction="ministry" />
   </ware>
 
 <!-- Xenon missiles  -->
@@ -213,7 +248,7 @@
 
   <ware id="weapon_xen_light_launcher" name="{6699,1077}" description="{6699,1077}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint weapon">
     <price min="1222815" average="1247572" max="1272330" />
-    <production time="10" amount="1" method="default" name="{6699,1077}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="energycells" amount="10" />
         <ware ware="ore" amount="30" />
@@ -228,7 +263,7 @@
 
   <ware id="turret_xen_m_missile" name="{6699,1077}" description="{6699,1077}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
     <price min="1222815" average="1247572" max="1272330" />
-    <production time="10" amount="1" method="default" name="{6699,1077}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="energycells" amount="10" />
         <ware ware="ore" amount="30" />
@@ -271,7 +306,7 @@
   
   <ware id="missile_xen_cruise" name="{6699,1079}" description="{6699,1080}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
     <price min="12392" average="13880" max="15368" />
-    <production time="6" amount="1" method="default" name="{6699,1079}">
+    <production time="6" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="energycells" amount="5" />
         <ware ware="ore" amount="2" />
@@ -286,7 +321,7 @@
 
    <ware id="missile_xen_xn101" name="{6699,1070}" description="{6699,1070}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
     <price min="1239" average="1388" max="1536" />
-    <production time="6" amount="1" method="default" name="{6699,1070}">
+    <production time="6" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="energycells" amount="3" />
         <ware ware="ore" amount="1" />
@@ -302,7 +337,7 @@
 <!-- CRUISE MISSILES  -->
   <ware id="turret_arg_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
     <price min="68261" average="76957" max="85652" />
-    <production time="10" amount="1" method="default" name="{6699,1071}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="10" />
@@ -319,7 +354,7 @@
 
   <ware id="turret_par_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
     <price min="68261" average="76957" max="85652" />
-    <production time="10" amount="1" method="default" name="{6699,1072}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="10" />
@@ -336,7 +371,7 @@
 
   <ware id="turret_tel_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
     <price min="68261" average="76957" max="85652" />
-    <production time="10" amount="1" method="default" name="{6699,1073}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="10" />
@@ -353,7 +388,7 @@
 
   <ware id="turret_xen_l_cruise" name="{6699,1076}" description="{6699,1076}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
     <price min="1039" average="1088" max="1136" />
-    <production time="10" amount="1" method="default" name="{6699,1076}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="energycells" amount="25" />
         <ware ware="ore" amount="15" />
@@ -368,7 +403,7 @@
 
   <ware id="turret_xen_m_missile" name="{6699,1077}" description="{6699,1077}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
     <price min="682" average="769" max="856" />
-    <production time="10" amount="1" method="default" name="{6699,1077}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="energycells" amount="15" />
         <ware ware="ore" amount="10" />
@@ -383,7 +418,7 @@
 
   <ware id="missile_cruise" name="{6699,1060}" description="{6699,1061}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
     <price min="12392" average="13880" max="15368" />
-    <production time="6" amount="1" method="default" name="{6699,1060}">
+    <production time="6" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="energycells" amount="40" />
         <ware ware="missilecomponents" amount="40" />
@@ -447,7 +482,7 @@
 <!-- CIG -->
   <ware id="weapon_gen_m_cig" name="{6699,1131}" description="{20105,1134}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="54827" average="61030" max="67233" />
-    <production time="10" amount="1" method="default" name="{6699,1103}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="5" />
         <ware ware="energycells" amount="30" />
@@ -455,7 +490,7 @@
       </primary>
     </production>
     <component ref="weapon_gen_m_cig_macro" amount="1" />
-    <restriction licence="militaryequipment" />
+    <restriction licence="capitalequipment" />
     <use threshold="0.4" />
     <owner faction="alliance" />
     <owner faction="antigone" />
@@ -470,7 +505,7 @@
 
   <ware id="weapon_gen_m_plasmabomb" name="{6699,1090}" description="{6699,1090}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="250867" average="267630" max="284393" />
-    <production time="10" amount="1" method="default" name="{6699,1090}">
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="20" />
         <ware ware="energycells" amount="10" />
@@ -489,7 +524,7 @@
 <!-- XENON MAULER  -->
 <ware id="turret_xen_l_mauler" name="{6699,1022}" description="{6699,1022}" group="turrets" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
     <price min="13092" average="14580" max="16068" />
-    <production time="15" amount="1" method="default" name="{6699,1022}">
+    <production time="15" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="energycells" amount="25" />
         <ware ware="ore" amount="15" />
@@ -506,7 +541,7 @@
 
 <ware id="ship_xen_xl_mdestroyer_01_a" name="{20101,71501}" description="{20101,71501}" group="ships_xenon" transport="ship" volume="1" tags="noplayerblueprint ship">
     <price min="1033787" average="1216220" max="1398653" />
-    <production time="526" amount="1" method="default" name="{20101,71501}">
+    <production time="526" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="energycells" amount="2908" />
         <ware ware="ore" amount="2437" />

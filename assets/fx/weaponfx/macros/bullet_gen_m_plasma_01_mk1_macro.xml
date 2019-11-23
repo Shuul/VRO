@@ -8,10 +8,11 @@
     <component ref="bullet_gen_m_plasma_01_mk1" />
     <properties>
       <bullet speed="3400" lifetime="3" amount="1" barrelamount="1" icon="weapon_plasma_mk1" timediff="0.02" angle="0.3" maxhits="1" ricochet="0" scale="0" attach="0" selfdestruct="1" />
-      <heat value="2000" />
-      <reload rate="0.3" />
-      <damage value="2950" shield="559" repair="0" />
-      <multiplier surfaceelement="3" />
+      <heat value="1300" />
+      <reload rate="0.6" />
+      <damage value="1440" shield="90" repair="0" >
+      <multiplier surfaceelement="2" />
+      </damage>
       <effects>
         <bigobjectimpact ref="plasmaemitter_impact_02" inside="impact_gen_s_plasma_01_mk1_bigobject_inside" />
         <impact ref="plasmaemitter_impact_02" inside="impact_gen_s_plasma_01_mk1_inside" />
