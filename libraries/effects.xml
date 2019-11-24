@@ -109,7 +109,6 @@
           </rumble>
         </force>
       </element>
-
     </elements>
   </effect>
 <!-- EBC-->
@@ -143,6 +142,25 @@
       </element>
     </elements>
   </effect>
+<!-- FBL-->
+    <effect name="muzzle_gen_fbl" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <element id="1" ref="dummyemitter_macro" forkeffect="shotgun_muzzle_smoke_01" alignment="object" duration="1.0" minscale="1.0" maxscale="1.0" forklod="none"></element>
+      <!-- Geometry Light -->
+      <element id="2" ref="impact_light_orange_macro" forkeffect="none" duration="0.1" minscale="1.0" maxscale="1.0" fadeout="0.1" forklod="largeffect"></element>
+      <!-- Geometry -->
+      <element id="3" ref="muzzle_gen_s_flak_01_mk1_macro" forkeffect="none" duration="0.12" minscale="1.0" maxscale="1.0" forklod="none" fadeout="0.02"></element>
+      <!-- Sound -->
+      <!--element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_shotgun_muzzle"></sound>
+      </element-->
+      <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_FBL_shoot"></sound>
+      </element>
+    </elements>
+  </effect>
+
 <!-- CIG-->
   <effect name="muzzle_gen_m_cig" alignment="object">
     <elements>

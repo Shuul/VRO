@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Alexei (192.168.3.58) at 08.11.2019_12-32-27-->
+<diff>
+  <replace sel="//macros">
+  <macros>
+  <macro name="bullet_gen_s_cannon_01_mk2_macro" class="bullet">
+    <component ref="bullet_gen_s_cannon_01_mk2" />
+    <properties>
+      <bullet speed="10000" lifetime="0.5" range="5000" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" selfdestruct="1" />
+      <heat value="525" />
+      <reload rate="1" />
+      <areadamage value="250" range="120" falloff="1" lifetime="1" />
+      <damage value="290" repair="0" />
+      <effects>
+        <impact ref="explosion_flak" />
+        <launch ref="muzzle_gen_s_flak_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+  </replace>
+  </diff>
+  
