@@ -32,9 +32,7 @@
   <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/use/@threshold">0.4</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
-  <!-- <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/use/@threshold">0.45</replace>
-  <replace sel="//wares/ware[@id='turret_par_l_laser_01_mk1']/use/@threshold">0.45</replace>
-  <replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/use/@threshold">0.45</replace> -->
+  <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/use/@threshold">0.85</replace>
 
 <!-- L and XL ships prices -->
   <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_a']/price">
@@ -75,6 +73,8 @@
   </replace>
 
 <!-- weapons prices -->
+
+
   <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/price">
     <price min="89261" average="97057" max="106652" />
   </replace>
@@ -93,6 +93,26 @@
   </replace>
   <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/price">
     <price min="135464" average="150515" max="165567" />
+  </replace>
+
+  <replace sel="//wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/price">
+    <price min="12865" average="15406" max="17946" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_dumbfire_02_mk1']/price">
+    <price min="12865" average="15406" max="17946" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/price">
+    <price min="12865" average="15406" max="17946" />
+  </replace>
+
+  <replace sel="//wares/ware[@id='turret_arg_m_guided_02_mk1']/price">
+    <price min="16317" average="18242" max="20166" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_guided_02_mk1']/price">
+    <price min="16317" average="18242" max="20166" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_guided_02_mk1']/price">
+    <price min="16317" average="18242" max="20166" />
   </replace>
 
 
@@ -231,21 +251,6 @@
 
 <!-- Xenon missiles  -->
 
-<!-- <ware id="weapon_xen_interdictor_launcher" name="{6699,1070}" description="{6699,1070}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint weapon">
-    <price min="1222815" average="1247572" max="1272330" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="energycells" amount="10" />
-        <ware ware="ore" amount="30" />
-        <ware ware="silicon" amount="30" />
-      </primary>
-    </production>
-    <component ref="weapon_xen_interdictor_launcher_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" factions="xenon" />
-    <owner faction="xenon" />
-  </ware>  -->
-
   <ware id="weapon_xen_light_launcher" name="{6699,1077}" description="{6699,1077}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint weapon">
     <price min="1222815" average="1247572" max="1272330" />
     <production time="10" amount="1" method="default" name="{20206,101}">
@@ -276,33 +281,20 @@
     <owner faction="xenon" />
   </ware> 
 
-  <!-- <ware id="missile_xen_interdictor" name="{6699,1060}" description="{6699,1061}" group="missiles" transport="equipment" volume="1" tags="equipment noplayerblueprint missile">
-    <price min="17563" average="20663" max="23762" />
-    <production time="2" amount="1" method="default" name="{6699,1060}">
+      <ware id="turret_xen_l_cruise" name="{6699,1076}" description="{6699,1076}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="1039" average="1088" max="1136" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
-        <ware ware="energycells" amount="5" />
-        <ware ware="silicon" amount="5" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="ore" amount="15" />
+        <ware ware="silicon" amount="15" />
       </primary>
     </production>
-    <component ref="missile_xen_interdictor_macro" amount="1" />
-    <container ref="sm_gen_pickup_equipment_01_macro" />
+    <component ref="turret_xen_l_cruise_macro" amount="1" />
+    <restriction licence="capitalequipment" />
     <use threshold="0" factions="xenon" />
     <owner faction="xenon" />
-  </ware> -->
-<!-- 
-  <ware id="missile_xen_swarm" name="{6699,1060}" description="{6699,1061}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-    <price min="17563" average="20663" max="23762" />
-    <production time="1" amount="1" method="default" name="{6699,1060}">
-      <primary>
-        <ware ware="energycells" amount="15" />
-        <ware ware="silicon" amount="5" />
-      </primary>
-    </production>
-    <component ref="missile_xen_swarm_macro" amount="10" />
-    <container ref="sm_gen_pickup_equipment_01_macro" />
-    <use threshold="0" factions="xenon" />
-    <owner faction="xenon" />
-  </ware> -->
+  </ware>
   
   <ware id="missile_xen_cruise" name="{6699,1079}" description="{6699,1080}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
     <price min="12392" average="13880" max="15368" />
@@ -384,36 +376,6 @@
     <owner faction="alliance" />
     <owner faction="ministry" />
     <owner faction="teladi" />
-  </ware>
-
-  <ware id="turret_xen_l_cruise" name="{6699,1076}" description="{6699,1076}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="1039" average="1088" max="1136" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="energycells" amount="25" />
-        <ware ware="ore" amount="15" />
-        <ware ware="silicon" amount="15" />
-      </primary>
-    </production>
-    <component ref="turret_xen_l_cruise_macro" amount="1" />
-    <restriction licence="capitalequipment" />
-    <use threshold="0" factions="xenon" />
-    <owner faction="xenon" />
-  </ware>
-
-  <ware id="turret_xen_m_missile" name="{6699,1077}" description="{6699,1077}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="682" average="769" max="856" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="energycells" amount="15" />
-        <ware ware="ore" amount="10" />
-        <ware ware="silicon" amount="10" />
-      </primary>
-    </production>
-    <component ref="turret_xen_m_missile_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" factions="xenon" />
-    <owner faction="xenon" />
   </ware>
 
   <ware id="missile_cruise" name="{6699,1060}" description="{6699,1061}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
