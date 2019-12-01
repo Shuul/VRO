@@ -115,6 +115,25 @@
     <price min="16317" average="18242" max="20166" />
   </replace>
 
+  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/price">
+    <price min="16317" average="18242" max="20166" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/price">
+    <price min="16317" average="18242" max="20166" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/price">
+    <price min="16317" average="18242" max="20166" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/price">
+    <price min="16317" average="18242" max="20166" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1']/price">
+    <price min="16317" average="18242" max="20166" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/price">
+    <price min="16317" average="18242" max="20166" />
+  </replace>
+
 
 <!-- Faction Battleships -->
 <add sel="/wares">  
@@ -267,12 +286,12 @@
   </ware> 
 
   <ware id="turret_xen_m_missile" name="{6699,1077}" description="{6699,1077}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
-    <price min="1222815" average="1247572" max="1272330" />
+    <price min="1039" average="1088" max="1136" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
-        <ware ware="energycells" amount="10" />
-        <ware ware="ore" amount="30" />
-        <ware ware="silicon" amount="30" />
+        <ware ware="energycells" amount="5" />
+        <ware ware="ore" amount="10" />
+        <ware ware="silicon" amount="10" />
       </primary>
     </production>
     <component ref="turret_xen_m_missile_macro" amount="1" />
@@ -378,7 +397,7 @@
     <owner faction="teladi" />
   </ware>
 
-  <ware id="missile_cruise" name="{6699,1060}" description="{6699,1061}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <!-- <ware id="missile_cruise" name="{6699,1060}" description="{6699,1061}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
     <price min="12392" average="13880" max="15368" />
     <production time="6" amount="1" method="default" name="{20206,101}">
       <primary>
@@ -397,7 +416,7 @@
     <component ref="missile_cruise_macro" amount="1" />
     <container ref="sm_gen_pickup_equipment_01_macro" />
     <use threshold="0" />
-  </ware>
+  </ware> -->
 
 <!-- HEPT -->
   <ware id="weapon_gen_s_hept" name="{6699,1101}" description="{20105,1104}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
@@ -481,6 +500,487 @@
     <owner faction="argon" />
     <owner faction="ministry" />
     <owner faction="teladi" />
+  </ware>
+<!-- NEW MISSILES  -->
+
+  <ware id="missile_tornado" name="{6699, 1222}" description="{6699, 1224}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="12240" average="14400" max="16560" />
+  <production time="5" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="50" />
+  <ware ware="missilecomponents" amount="24" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_tornado_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+  
+  <ware id="missile_rapier" name="{6699, 1201}" description="{6699, 1203}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="191" average="225" max="258" />
+  <production time="1" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="6" />
+  <ware ware="missilecomponents" amount="3" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_rapier_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_firefly" name="{6699, 1204}" description="{6699, 1206}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="531" average="625" max="718" />
+  <production time="1" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="10" />
+  <ware ware="missilecomponents" amount="5" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_firefly_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_firelance" name="{6699, 1207}" description="{6699, 1209}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="1360" average="1600" max="1840" />
+  <production time="2" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="17" />
+  <ware ware="missilecomponents" amount="8" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_firelance_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  <owner faction="teladi"/>
+  <owner faction="ministry"/>
+  </ware>
+
+  <ware id="missile_beluga" name="{6699, 1210}" description="{6699, 1212}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="1917" average="2256" max="2594" />
+  <production time="3" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="20" />
+  <ware ware="missilecomponents" amount="10" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_beluga_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_blizzard" name="{6699, 1213}" description="{6699, 1215}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="3777" average="4444" max="5110" />
+  <production time="4" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="28" />
+  <ware ware="missilecomponents" amount="13" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_blizzard_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  <owner faction="holyorder"/>
+  <owner faction="paranid"/>
+  </ware>
+
+  <ware id="missile_dragonfly" name="{6699, 1216}" description="{6699, 1218}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="2125" average="2500" max="2875" />
+  <production time="4" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="21" />
+  <ware ware="missilecomponents" amount="10" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_dragonfly_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_aurora" name="{6699, 1219}" description="{6699, 1221}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="7833" average="9216" max="10598" />
+  <production time="5" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="40" />
+  <ware ware="missilecomponents" amount="19" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_aurora_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_cyclone" name="{6699, 1222}" description="{6699, 1224}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="12240" average="14400" max="16560" />
+  <production time="5" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="50" />
+  <ware ware="missilecomponents" amount="24" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_cyclone_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_tempest" name="{6699, 1225}" description="{6699, 1227}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="14365" average="16900" max="19435" />
+  <production time="5" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="54" />
+  <ware ware="missilecomponents" amount="26" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_tempest_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  <owner faction="antigone"/>
+  <owner faction="argon"/>
+  </ware>
+
+  <ware id="missile_mosquito" name="{6699, 1228}" description="{6699, 1230}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="122" average="144" max="165" />
+  <production time="1" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="5" />
+  <ware ware="missilecomponents" amount="2" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_mosquito_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_wasp" name="{6699, 1231}" description="{6699, 1233}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="489" average="576" max="662" />
+  <production time="3" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="10" />
+  <ware ware="missilecomponents" amount="3" />]
+  <ware ware="smartchips" amount="3" />
+  </primary>
+  </production>
+  <component ref="missile_wasp_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_wildfire" name="{6699, 1234}" description="{6699, 1236}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="306" average="361" max="415" />
+  <production time="2" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="8" />
+  <ware ware="missilecomponents" amount="3" />]
+  <ware ware="smartchips" amount="3" />
+  </primary>
+  </production>
+  <component ref="missile_wildfire_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_cyclone" name="{6699, 1237}" description="{6699, 1239}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="765" average="900" max="1035" />
+  <production time="2" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="13" />
+  <ware ware="missilecomponents" amount="6" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_cyclone_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  <owner faction="holyorder"/>
+  <owner faction="paranid"/>
+  </ware>
+
+  <ware id="missile_silkworm" name="{6699, 1240}" description="{6699, 1242}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="3930" average="4624" max="5317" />
+  <production time="4" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="28" />
+  <ware ware="missilecomponents" amount="10" />]
+  <ware ware="smartchips" amount="11" />
+  </primary>
+  </production>
+  <component ref="missile_silkworm_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  <owner faction="antigone"/>
+  <owner faction="argon"/>
+  </ware>
+
+  <ware id="missile_hurricane" name="{6699, 1243}" description="{6699, 1245}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="1499" average="1764" max="2028" />
+  <production time="4" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="18" />
+  <ware ware="missilecomponents" amount="6" />]
+  <ware ware="smartchips" amount="7" />
+  </primary>
+  </production>
+  <component ref="missile_hurricane_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_windstalker" name="{6699, 1246}" description="{6699, 1248}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="2125" average="2500" max="2875" />
+  <production time="5" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="21" />
+  <ware ware="missilecomponents" amount="7" />]
+  <ware ware="smartchips" amount="8" />
+  </primary>
+  </production>
+  <component ref="missile_windstalker_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_tempest" name="{6699, 1249}" description="{6699, 1251}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="3373" average="3969" max="4564" />
+  <production time="5" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="26" />
+  <ware ware="missilecomponents" amount="9" />]
+  <ware ware="smartchips" amount="11" />
+  </primary>
+  </production>
+  <component ref="missile_tempest_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_thunderbolt" name="{6699, 1252}" description="{6699, 1254}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="4165" average="4900" max="5635" />
+  <production time="6" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="29" />
+  <ware ware="missilecomponents" amount="14" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_thunderbolt_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_hornet" name="{6699, 1255}" description="{6699, 1257}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="12240" average="14400" max="16560" />
+  <production time="6" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="50" />
+  <ware ware="missilecomponents" amount="17" />]
+  <ware ware="smartchips" amount="20" />
+  </primary>
+  </production>
+  <component ref="missile_hornet_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_hammerhead" name="{6699, 1258}" description="{6699, 1260}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="21760" average="25600" max="29440" />
+  <production time="7" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="67" />
+  <ware ware="missilecomponents" amount="22" />]
+  <ware ware="smartchips" amount="27" />
+  </primary>
+  </production>
+  <component ref="missile_hammerhead_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  <owner faction="teladi"/>
+  <owner faction="ministry"/>
+  </ware>
+
+  <ware id="missile_RGW" name="{6699, 1261}" description="{6699, 1263}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="34000" average="40000" max="46000" />
+  <production time="7" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="83" />
+  <ware ware="missilecomponents" amount="40" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_RGW_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_banshee" name="{6699, 1264}" description="{6699, 1266}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="7955" average="9359" max="10762" />
+  <production time="5" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="40" />
+  <ware ware="missilecomponents" amount="14" />]
+  <ware ware="smartchips" amount="16" />
+  </primary>
+  </production>
+  <component ref="missile_banshee_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  <owner faction="antigone"/>
+  <owner faction="argon"/>
+  </ware>
+
+  <ware id="missile_typhoon" name="{6699, 1267}" description="{6699, 1269}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="24854" average="29241" max="33627" />
+  <production time="6" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="71" />
+  <ware ware="missilecomponents" amount="24" />]
+  <ware ware="smartchips" amount="29" />
+  </primary>
+  </production>
+  <component ref="missile_typhoon_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_phantom" name="{6699, 1270}" description="{6699, 1272}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="12240" average="14400" max="16560" />
+  <production time="7" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="50" />
+  <ware ware="missilecomponents" amount="24" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_phantom_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_ibis" name="{6699, 1273}" description="{6699, 1275}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="10285" average="12100" max="13915" />
+  <production time="8" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="46" />
+  <ware ware="missilecomponents" amount="15" />]
+  <ware ware="smartchips" amount="18" />
+  </primary>
+  </production>
+  <component ref="missile_ibis_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  <owner faction="teladi"/>
+  <owner faction="ministry"/>
+  </ware>
+
+  <ware id="missile_tomahawk" name="{6699, 1276}" description="{6699, 1278}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="19125" average="22500" max="25875" />
+  <production time="8" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="63" />
+  <ware ware="missilecomponents" amount="21" />]
+  <ware ware="smartchips" amount="25" />
+  </primary>
+  </production>
+  <component ref="missile_tomahawk_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_firestorm" name="{6699, 1279}" description="{6699, 1281}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="53125" average="62500" max="71875" />
+  <production time="8" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="104" />
+  <ware ware="missilecomponents" amount="35" />]
+  <ware ware="smartchips" amount="42" />
+  </primary>
+  </production>
+  <component ref="missile_firestorm_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_spectre" name="{6699, 1282}" description="{6699, 1284}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="46276" average="54443" max="62609" />
+  <production time="10" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="97" />
+  <ware ware="missilecomponents" amount="33" />]
+  <ware ware="smartchips" amount="39" />
+  </primary>
+  </production>
+  <component ref="missile_spectre_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  <owner faction="holyorder"/>
+  <owner faction="paranid"/>
+  </ware>
+
+  <ware id="missile_flail" name="{6699, 1285}" description="{6699, 1287}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="31497" average="37056" max="42614" />
+  <production time="10" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="80" />
+  <ware ware="missilecomponents" amount="27" />]
+  <ware ware="smartchips" amount="32" />
+  </primary>
+  </production>
+  <component ref="missile_flail_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_shadow" name="{6699, 1288}" description="{6699, 1290}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="76500" average="90000" max="103500" />
+  <production time="10" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="125" />
+  <ware ware="missilecomponents" amount="60" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_shadow_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_wraith" name="{6699, 1291}" description="{6699, 1293}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="116365" average="136900" max="157435" />
+  <production time="10" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="154" />
+  <ware ware="missilecomponents" amount="74" />]
+  <ware ware="smartchips" amount="0" />
+  </primary>
+  </production>
+  <component ref="missile_wraith_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
+  </ware>
+
+  <ware id="missile_disruptor" name="{6699, 1294}" description="{6699, 1296}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+  <price min="1700" average="2000" max="2300" />
+  <production time="5" amount="1" method="default" name="{20206,101}">
+  <primary>
+  <ware ware="energycells" amount="10" />
+  <ware ware="missilecomponents" amount="5" />]
+  <ware ware="smartchips" amount="1" />
+  </primary>
+  </production>
+  <component ref="missile_disruptor_macro" amount="1" />
+  <container ref="sm_gen_pickup_equipment_01_macro" />
+  <use threshold="0"/>
   </ware>
 
 <!-- XENON MAULER  -->

@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<components>
+	<component name="missile_heavy_swarm" class="missile">
+		<source geometry="assets\props\WeaponSystems\missile\missile_guided_heavy_mk1_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="181" g="255" b="255" range="15" shadowrange="15" lighteffect="1" lenseffect="missile_heavy_swarm" trigger="1" intensity="0.5">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="0.2"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni002" shadow="0" r="181" g="255" b="255" range="0.1999999" shadowrange="0.1999999" lighteffect="1" trigger="1" intensity="10">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="-0.5446432"/>
+						</offset>
+					</omni>
+				</lights>
+				<trailemitters>
+					<emitter name="trail_missile_npc_dumbfire" type="trail_missile_npc_dumbfire">
+						<offset>
+							<position x="1.160752E-10" y="1.160752E-10" z="-0.4367035"/>
+						</offset>
+					</emitter>
+				</trailemitters>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="missile">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part  ">
+				<offset/>
+				<parts>
+					<part name="part_main">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.1032457" y="0.1032457" z="0.8501485"/>
+							<center x="-1.41561E-07" y="1.41561E-07" z="0.3673407"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection02" tags="part nocollision animation textureanimation  ">
+				<offset>
+					<position x="0" y="0" z="-0.9628994"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="500"/>
+				</animations>
+				<parts>
+					<part name="anim_booster">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.booster"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.1473436" y="0.1473436" z="2.01588"/>
+							<center x="0" y="-5.960464E-08" z="-1.531954"/>
+						</size>
+						<size_raw>
+							<max x="0.1473436" y="0.1473436" z="3.547834"/>
+							<center x="0" y="-5.960464E-08" z="-1.531954"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="500" value="-50"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part  ">
+				<offset/>
+				<parts/>
+			</connection>
+			<connection name="con_engine01" tags="engine ">
+				<offset>
+					<position x="0" y="0" z="-0.8024648"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

@@ -11,12 +11,12 @@
 		<modifiers commandeerable="false"/>
 		<orders>
 			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
+       		 <param name="range" value="class.cluster"/>
 			</order>
 		</orders>
 		<category faction="argon" tags="[factionlogic, military, battleship]" size="ship_xl"/>
 		<quota galaxy="10" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact"/>
+   		 <location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact"/>
 		<environment buildatshipyard="true"/>
 		<ship>
 			<select faction="argon" tags="[military, battleship]" size="ship_xl"/>
@@ -40,7 +40,7 @@
 		<modifiers commandeerable="false"/>
 		<orders>
 			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
+				<param name="range" value="class.cluster"/>
 			</order>
 		</orders>
 		<category faction="antigone" tags="[factionlogic, military, battleship]" size="ship_xl"/>
@@ -69,7 +69,7 @@
 		<modifiers commandeerable="false"/>
 		<orders>
 			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
+				<param name="range" value="class.cluster"/>
 			</order>
 		</orders>
 		<category faction="paranid" tags="[factionlogic, military, battleship]" size="ship_xl"/>
@@ -98,7 +98,7 @@
 		<modifiers commandeerable="false"/>
 		<orders>
 			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
+				<param name="range" value="class.cluster"/>
 			</order>
 		</orders>
 		<category faction="holyorder" tags="[factionlogic, military, battleship]" size="ship_xl"/>
@@ -127,7 +127,7 @@
 		<modifiers commandeerable="false"/>
 		<orders>
 			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
+				<param name="range" value="class.cluster"/>
 			</order>
 		</orders>
 		<category faction="teladi" tags="[factionlogic, military, battleship]" size="ship_xl"/>
@@ -156,7 +156,7 @@
 		<modifiers commandeerable="false"/>
 		<orders>
 			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
+				<param name="range" value="class.cluster"/>
 			</order>
 		</orders>
 		<category faction="ministry" tags="[factionlogic, military, battleship]" size="ship_xl"/>
@@ -175,6 +175,16 @@
 		</subordinates>
 	  </job>
 	</add>
+  <!-- ############################# -->
+  <!--      XENON				      -->
+  <!-- ############################# -->
+
+  	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_frigate']/quota">
+	<quota wing="13" variation="3"/>
+	</replace>
+	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_patrol']/quota">
+	<quota wing="8" variation="2"/>
+	</replace>
 
 <!-- Changes to loadout levels -->
 <!-- arg -->

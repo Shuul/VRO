@@ -20,12 +20,49 @@
     </elements>
   </lenseffect>
 
+<lenseffect name="missile_medium">
+    <parameters scale="100" lengthscale="100" distancescale="linear" hueshift="0" sizeinfluence="none"></parameters>
+    <elements>
+      <element name="sun_element 1" part="part_newglow_v3_green" position="1" minsize="10" maxsize="10" inviewvariation="5" inviewduration="1" blendorder="behind" shinebehind="1" distancescale="linear" rotation="0" fadeangle="0" r2dtype="static" active="1" glow="1" facecamera="1"></element>
+      <element name="sun_element 2" part="part_rays_01" position="1" minsize="5" maxsize="10" inviewvariation="5" inviewduration="1" blendorder="behind" shinebehind="1" distancescale="linear" rotation="0" fadeangle="0" r2dtype="static" active="1" glow="1" facecamera="1"></element>
+      <element name="sun_element 3" part="part_newglow_v3_green" position="3" minsize="8" maxsize="2" inviewvariation="2" inviewduration="1" blendorder="behind" shinebehind="1" distancescale="linear" rotation="0" fadeangle="0" r2dtype="static" active="1" glow="1" facecamera="1"></element>
+      <element name="streaks" part="part_streak_g" position="1" minsize="10" maxsize="15" inviewvariation="0" inviewduration="0" blendorder="behind" shinebehind="0" distancescale="linear" rotation="0" fadeangle="0" r2dtype="static" active="1" glow="1" facecamera="0"></element>
+    </elements>
+  </lenseffect>
+
+<lenseffect name="missile_heavy">
+    <parameters scale="100" lengthscale="100" distancescale="linear" hueshift="0" sizeinfluence="none"></parameters>
+    <elements>
+      <element name="sun_element 1" part="part_newglow_v3_purple" position="1" minsize="15" maxsize="15" inviewvariation="5" inviewduration="1" blendorder="behind" shinebehind="1" distancescale="linear" rotation="0" fadeangle="0" r2dtype="static" active="1" glow="1" facecamera="1"></element>
+      <element name="sun_element 3" part="part_newglow_v2" position="1" minsize="10" maxsize="10" inviewvariation="2" inviewduration="1" blendorder="behind" shinebehind="1" distancescale="linear" rotation="0" fadeangle="0" r2dtype="static" active="1" glow="1" facecamera="1"></element>
+      <element name="streaks" part="part_streak_a" position="1" minsize="50" maxsize="60" inviewvariation="0" inviewduration="0" blendorder="behind" shinebehind="0" distancescale="linear" rotation="0" fadeangle="0" r2dtype="static" active="1" glow="1" facecamera="0"></element>
+    </elements>
+  </lenseffect>
+
+<lenseffect name="missile_heavy_swarm">
+    <parameters scale="50" lengthscale="100" distancescale="linear" hueshift="0" sizeinfluence="none"></parameters>
+    <elements>
+      <element name="sun_element 1"  part="part_enginesystems_engine_xl_glow_red" 	position="1" minsize="5" maxsize="7"  distancescale="linear" glow="1" shinebehind="1"></element>
+      <element name="sun_element 2"  part="part_enginesystems_engine_xl_red" 		position="1" minsize="2" maxsize="3" distancefactor="100"	distancescale="linear" inviewvariation="50" inviewduration="1"></element>
+      <element name="streak" part="part_enginesystems_engine_xl_streak_red" position="1" minsize="7" maxsize="10" distancefactor="100"	distancescale="linear" inviewvariation="50" inviewduration="1"></element>
+    </elements>
+  </lenseffect>
+
 <lenseffect name="ebc">
     <parameters scale="100" lengthscale="100" distancescale="linear" hueshift="0" sizeinfluence="none"></parameters>
     <elements>
       <element name="glow1" 	part="part_newglow_v4" 		position="1" minsize="5" maxsize="5" distancefactor="10000"	distancescale="linear" inviewvariation="1" inviewduration="1" blendorder="behind" shinebehind="1" glow="1" facecamera="1"></element>
-      <element name="glow2" 	part="part_newglow_v3_green" position="1" minsize="15" maxsize="15" distancefactor="10000"	distancescale="linear" inviewvariation="1" inviewduration="1" blendorder="behind" shinebehind="1" glow="1" facecamera="1"></element>
-      <element name="streaks" part="part_streak_g" position="1" minsize="5" maxsize="5" blendorder="behind" shinebehind="1" distancescale="linear" rotation="0" fadeangle="0" r2dtype="static" active="1" glow="0" facecamera="1"></element>
+      <element name="glow2" 	part="part_enginesystems_engine_s_glow_orange" position="1" minsize="15" maxsize="15" distancefactor="10000"	distancescale="linear" inviewvariation="1" inviewduration="1" blendorder="behind" shinebehind="1" glow="1" facecamera="1"></element>
+      <element name="streaks" part="part_enginesystems_engine_s_streak_orange" position="1" minsize="3" maxsize="3" blendorder="behind" shinebehind="1" distancescale="linear" rotation="0" fadeangle="0" r2dtype="static" active="1" glow="0" facecamera="1"></element>
+    </elements>
+</lenseffect>
+
+<lenseffect name="hept">
+    <parameters scale="100" lengthscale="100" distancescale="linear" hueshift="0" sizeinfluence="none"></parameters>
+    <elements>
+      <element name="glow1" 	part="part_newglow_v3_green" 		position="1" minsize="5" maxsize="5" distancescale="linear" inviewvariation="1" inviewduration="1" blendorder="behind" shinebehind="1" glow="1" facecamera="1"></element>
+      <element name="glow2" 	part="part_newglow_v3_purple" position="1" minsize="5" maxsize="5" 	distancescale="linear" inviewvariation="1" inviewduration="1" blendorder="behind" shinebehind="1" glow="1" facecamera="1"></element>
+      <element name="streaks" part="part_streak_g" position="1" minsize="8" maxsize="8" blendorder="behind" shinebehind="1" distancescale="linear" rotation="0" fadeangle="0" r2dtype="static" active="1" glow="0" facecamera="1"></element>
     </elements>
 </lenseffect>
 
