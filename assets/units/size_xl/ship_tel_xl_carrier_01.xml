@@ -41,7 +41,7 @@
 			</offset>
 		</connection>
 		
-		<connection group="group_back_bottom" name="con_shieldgen_m_017" tags="medium shield hittable">
+		<!-- <connection group="group_back_bottom" name="con_shieldgen_m_017" tags="medium shield hittable">
 			<offset>
 				<position x="0.21359999999999998" y="177.3415" z="-874.4173"/>
 				<quaternion qw="-0.5000000443375536" qx="0.49999998522081457" qy="0.49999998522081457" qz="-0.49999998522081457"/>
@@ -58,6 +58,15 @@
 				<position x="-152.9657" y="-90.80030000000001" z="-874.4118000000001"/>
 				<quaternion qw="-0.6802237388977704" qx="0.6802236589714332" qy="0.193120996806993" qz="-0.193120996806993"/>
 			</offset>
-		</connection>
+		</connection> -->
 	</add>
+
+<add sel="//components/component/connections">
+ <connection name="con_ishield_01" tags="ishield">
+  <offset>
+   <position x="0" y="0" z="0"/>
+     <quaternion qx="0" qy="0" qz="0" qw="0"/>
+  </offset>
+ </connection>
+</add>
 </diff>

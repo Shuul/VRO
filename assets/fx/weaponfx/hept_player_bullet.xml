@@ -6,50 +6,47 @@
 			<layer>
 				<waypoints/>
 				<lights>
-					<omni name="XU Omni01" shadow="0" r="100" g="209" b="191" range="44.7" lenseffect="hept" shadowrange="44.7" lighteffect="1" trigger="1" intensity="2">
+					<omni name="XU Omni01" shadow="0" r="165" g="254" b="144" range="20" shadowrange="20" lenseffect="hept" lighteffect="1" trigger="1" intensity="5" specularintensity="1">
 						<lightanimations/>
 						<offset>
-							<position x="0" y="0" z="35"/>
+							<position x="4.060364E-02" y="0" z="15.04399"/>
 						</offset>
 					</omni>
 				</lights>
 			</layer>
 		</layers>
 		<connections>
-			<connection name="container" tags="contents" value="0" optional="0"/>
-			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
 			<connection name="space" tags="bullet">
 				<offset/>
 			</connection>
-			<connection name="Connection01" tags="part  ">
+			<connection name="Connection01" tags="part animation  ">
 				<offset>
-					<position x="0" y="0" z="-1.335886E-06"/>
+					<position x="0" y="0" z="15.85679"/>
 				</offset>
+				<animations>
+					<animation name="loop" start="1" end="100"/>
+				</animations>
 				<parts>
-					<part name="part_impulseemitter_bullet">
+					<part name="anim_bullet">
 						<lods>
 							<lod index="0">
 								<materials>
-									<material id="1" ref="weapons.shotgun_muzzle_blob"/>
+									<material id="1" ref="effects.bullets_fx_master"/>
 								</materials>
 							</lod>
 						</lods>
 						<size>
-							<max x="0.3198509" y="0.3198506" z="12.22353"/>
-							<center x="-1.298726E-03" y="1.225099E-03" z="-1.69374"/>
+							<max x="2.676342" y="2.703561" z="9.930487"/>
+							<center x="1.293564E-02" y="-8.188248E-03" z="-4.92873"/>
 						</size>
-						<lights>
-							<omni name="XU Omni01" shadow="0" r="0" g="132" b="255" range="60" shadowrange="60" lighteffect="1" lenseffect="1" trigger="1" intensity="0.5">
-								<lightanimations/>
-								<offset>
-									<position x="-2.171135E-04" y="-2.125939E-03" z="8.572392"/>
-									<quaternion qx="3.032212E-08" qy="1.992883E-09" qz="0.3826834" qw="-0.9238796"/>
-								</offset>
-							</omni>
-						</lights>
+						<size_raw>
+							<max x="2.438426" y="2.532297" z="9.930487"/>
+							<center x="6.252527E-04" y="1.529634E-02" z="-4.92873"/>
+						</size_raw>
 					</part>
 				</parts>
-				<waypoints/>
 			</connection>
 			<connection name="Connection_Laser01" tags="laser">
 				<offset/>
