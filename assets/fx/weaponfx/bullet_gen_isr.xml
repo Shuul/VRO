@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<components>
+	<component name="bullet_gen_isr" class="bullet">
+		<source geometry="extensions\VRO\assets\fx\weaponFx\bullet_gen_flak_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="181" g="255" b="255" range="15" shadowrange="15" lighteffect="1" lenseffect="isr" trigger="1" intensity="0.5">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="0"/>
+						</offset>
+					</omni>
+					<box name="XU BoxLight24" shadow="0" r="254" g="184" b="137" lighteffect="1" trigger="1" intensity="3">
+						<size x="76.5" y="33.39999" z="33.39999"/>
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="42.4733"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</box>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="bullet">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part  ">
+				<offset>
+					<position x="0" y="0" z="82.15091"/>
+				</offset>
+				<parts>
+					<part name="part_bullet">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.bullets_fx_master"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+						<max x="100" y="100" z="100"/>
+							<!-- <max x="0.8719953" y="0.8293167" z="41.54486"/> -->
+							<center x="-2.430263E-02" y="-6.258488E-06" z="-40.50113"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection_Laser01" tags="laser">
+				<offset/>
+			</connection>
+		</connections>
+	</component>
+</components>

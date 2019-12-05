@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<components>
+	<component name="bullet_gen_pbe" class="bullet">
+		<source geometry="extensions\VRO\assets\fx\weaponFx\bullet_gen_ebc_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="255" g="50" b="50" range="44.7" lenseffect="pbe" shadowrange="44.7" lighteffect="1" trigger="1" intensity="2">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="35"/>
+						</offset>
+					</omni>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="bullet">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part  ">
+				<offset>
+					<position x="0" y="2.015167E-08" z="35.86891"/>
+				</offset>
+				<parts>
+					<part name="part_bullet">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.bullets_fx_master"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.6466458" y="0.6466466" z="18.61345"/>
+							<center x="0" y="9.650648E-09" z="-17.53744"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection_Laser01" tags="laser">
+				<offset/>
+			</connection>
+		</connections>
+	</component>
+</components>

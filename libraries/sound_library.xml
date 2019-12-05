@@ -25,6 +25,13 @@
         </sample>
         <volume start="1.0" distance="6"/>
     </sound>
+    <!-- PBE -->
+    <sound id="wpn_pbe_shoot" description="PBE shooting" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\PBE_muzzle_1"/>
+        </sample>
+        <volume start="1.0" distance="6"/>
+    </sound>
     <!-- beamer-->
     <sound id="wpn_beamer_shoot" description="Beam sound" repeat="-1" is3d="1" preload="1">
         <sample start="sfx\weapons\beam\wpn_beam_gen_01"/>
@@ -203,6 +210,19 @@
         <sample selection="random">
           <select start="extensions\VRO\sfx\weapons\CIG_hit_1"/>
           <select start="extensions\VRO\sfx\weapons\CIG_hit_2"/>
+        </sample>
+        <volume start="1.2" distance="8"/>
+    </sound>
+    <!-- ISR -->
+    <sound id="wpn_ISR_shoot" description="ISR_cannon shooting" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\isr_muzzle_1"/>
+        </sample>
+        <volume start="1.2" distance="10"/>
+    </sound>
+    <sound id="wpn_ist_impact" description="ISR impact" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\isr_hit_1"/>
         </sample>
         <volume start="1.2" distance="8"/>
     </sound>

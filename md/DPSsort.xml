@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="DPSsort" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/x4 extract/libraries/md.xsd">
+    <cues>
+        <cue name="DPSsortStart">
+            <!-- <conditions>
+                <event_cue_signalled cue="md.Setup.GameStart" />
+            </conditions> -->
+            <delay exact="15s" />
+            <actions>
+                
+               <find_ship name="$TopDps" space="player.galaxy" multiple="true" sortbyvalue="loop.element.dps.all" sortdescending="true" sortlimit="10"/>
+             
+            </actions>
+        </cue>
+    </cues>
+</mdscript>

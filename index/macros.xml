@@ -18,9 +18,18 @@
 <!-- EBC -->
   <entry name="bullet_gen_s_ebc_macro" value="extensions\VRO\assets\fx\weaponFx\macros\bullet_gen_s_ebc_macro"/>
   <entry name="weapon_gen_s_ebc_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\weapon_gen_s_ebc_macro"/>
+<!-- PBE -->
+<entry name="bullet_gen_s_pbe_macro" value="extensions\VRO\assets\fx\weaponFx\macros\bullet_gen_s_pbe_macro"/>
+<entry name="weapon_gen_s_pbe_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\weapon_gen_s_pbe_macro"/>
+<!-- Xenon Plasma -->
+<entry name="bullet_xen_s_plasma_macro" value="extensions\VRO\assets\fx\weaponFx\macros\bullet_xen_s_plasma_macro"/>
+<entry name="weapon_xen_s_plasma_macro" value="extensions\vro\assets\props\WeaponSystems\standard\macros\weapon_xen_s_plasma_macro"/>
 <!-- CIG -->
   <entry name="bullet_gen_m_cig_macro" value="extensions\VRO\assets\fx\weaponFx\macros\bullet_gen_m_cig_macro"/>
   <entry name="weapon_gen_m_cig_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\weapon_gen_m_cig_macro"/>
+  <!-- CIG -->
+  <entry name="bullet_gen_m_isr_macro" value="extensions\VRO\assets\fx\weaponFx\macros\bullet_gen_m_isr_macro"/>
+  <entry name="weapon_gen_m_isr_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\weapon_gen_m_isr_macro"/>
 <!-- PPC -->
   <entry name="bullet_gen_turret_l_ppc_macro" value="extensions\VRO\assets\fx\weaponFx\macros\bullet_gen_turret_l_ppc_macro"/>
   <entry name="turret_arg_l_ppc_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\turret_arg_l_ppc_macro"/>
@@ -57,6 +66,7 @@
   <!-- NEW MISSILES -->
   <entry name="missile_tornado_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_tornado_macro"/>
   <entry name="missile_rapier_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_rapier_macro"/>
+  <entry name="missile_flycatcher_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_flycatcher_macro"/>
   <entry name="missile_firefly_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_firefly_macro"/>
   <entry name="missile_firelance_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_firelance_macro"/>
   <entry name="missile_beluga_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_beluga_macro"/>
@@ -76,7 +86,7 @@
   <entry name="missile_thunderbolt_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_thunderbolt_macro"/>
   <entry name="missile_hornet_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_hornet_macro"/>
   <entry name="missile_hammerhead_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_hammerhead_macro"/>
-  <entry name="missile_RGW_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_RGW_macro"/>
+  <entry name="missile_rgw_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_rgw_macro"/>
   <entry name="missile_banshee_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_banshee_macro"/>
   <entry name="missile_typhoon_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_typhoon_macro"/>
   <entry name="missile_phantom_macro" value="extensions\VRO\assets\props\WeaponSystems\missile\macros\missile_phantom_macro"/>
@@ -254,7 +264,25 @@
   <entry name="ishield_ship_arg_xl_battleship_01" value="extensions\VRO\assets\props\SurfaceElements\macros\ishield_ship_arg_xl_battleship_01"/>
   <entry name="ishield_ship_par_xl_battleship_01" value="extensions\VRO\assets\props\SurfaceElements\macros\ishield_ship_par_xl_battleship_01"/>
   <entry name="ishield_ship_tel_xl_battleship_01" value="extensions\VRO\assets\props\SurfaceElements\macros\ishield_ship_tel_xl_battleship_01"/>
+  </add>
+<!-- Vanilla removal -->
+ <remove sel="//entry[@name='missile_cluster_heavy_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_cluster_light_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_dumbfire_heavy_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_dumbfire_heavy_mk2_macro']"/>
+ <remove sel="//entry[@name='missile_dumbfire_light_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_dumbfire_light_mk2_macro']"/>
+ <remove sel="//entry[@name='missile_guided_heavy_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_guided_light_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_heatseeker_heavy_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_heatseeker_light_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_smart_heavy_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_smart_light_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_swarm_heavy_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_swarm_light_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_torpedo_heavy_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_torpedo_light_mk1_macro']"/>
+ <remove sel="//entry[@name='missile_emp_mk1_macro']"/>
 
- 
-	</add>
+	
 </diff>

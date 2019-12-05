@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 30.11.2018_11-11-53-->
+
+<macros>
+  <macro name="weapon_gen_s_pbe_macro" class="weapon">
+    <component ref="weapon_gen_s_gatling_01_mk1" />
+    <properties>
+      <identification name="{6699,1151}" basename="{6699,1152}" shortname="{6699,1153}" description="{6699,1154}" mk="2" />
+      <bullet class="bullet_gen_s_pbe_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+      <rotationspeed max="163.9" />
+      <rotationacceleration max="100.95" />
+      <reload />
+      <hull max="500" hittable="0" />
+      <effects>
+        <firing start="startshooting_gen_s_gatling_01_mk1" stop="stopshooting_gen_s_gatling_01_mk1" />
+      </effects>
+    </properties>
+  </macro>
+</macros>
+

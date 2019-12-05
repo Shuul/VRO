@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.52) at 27.11.2018_23-52-55-->
+
+  <macros>
+  <macro name="bullet_gen_s_pbe_macro" class="bullet">
+    <component ref="bullet_gen_pbe" />
+    <properties>
+      <bullet speed="6500" lifetime="0.33" amount="1" barrelamount="1" icon="weapon_gatling_mk1" timediff="0.03" angle="0.1" maxhits="1" ricochet="0" restitution="0" scale="0" attach="0" />
+      <heat value="100" />
+      <reload rate="14" />
+      <damage value="20" shield="4" repair="0" />
+      <effects>
+        <impact ref="impact_gen_s_gatling_01_mk1" inside="impact_gen_s_gatling_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_s_gatling_01_mk1_bigobject" inside="impact_gen_s_gatling_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_gen_pbe" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+
+  
+  
+  

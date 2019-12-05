@@ -142,6 +142,37 @@
       </element>
     </elements>
   </effect>
+  <!-- PBE-->
+  	<effect name="muzzle_gen_pbe" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <element id="2" ref="dummyemitter_up_macro" forkeffect="gatling_muzzle_smoke_01" alignment="object" duration="0.5" minscale="0.5" maxscale="0.5" forklod="none"></element>
+      <!-- Geometry -->
+      <element id="3" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="0.3" maxscale="0.3" forklod="none"></element>
+      <!-- Geometry Light -->
+      <element id="4" ref="impact_light_orange_macro" forkeffect="none" duration="0.1" minscale="0.5" maxscale="0.5" fadeout="0.0" forklod="none"></element>
+      <!-- Sound -->
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_PBE_shoot"></sound>
+      </element>
+            <element id="5" ref="effect_dummy_macro" forkeffect="none" delay="0" duration="0.2" forklod="none">
+        <force range="15" falloff="0.0">
+          <rumble>
+            <camera>
+              <component frequency="1" attackduration="0.05" sustainduration="0" releaseduration="0.05">
+                <amplitude randomize="false">
+                  <position x="0.001" y="0.001" z="0.001" />
+                </amplitude>
+              </component>
+            </camera>
+            <controller>
+              <low amplitude="0.015" attackduration="0.1" sustainduration="0.0" releaseduration="0.1" />
+            </controller>
+          </rumble>
+        </force>
+      </element>
+    </elements>
+  </effect>
 <!-- FBL-->
     <effect name="muzzle_gen_fbl" alignment="object">
     <elements>
@@ -199,7 +230,7 @@
       <!-- Impact Geometry -->
       <element id="1" ref="impact_gen_s_plasma_01_mk1_macro" forkeffect="none" duration="1.0" minscale="3.0" maxscale="3.0" fadein="0.0" fadeout="0.0" forklod="none"></element>
       <!-- Glow sphere, Light, Sparkles -->
-      <element id="2" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" forklod="none"></element>
+      <!-- <element id="2" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" forklod="none"></element> -->
       <!-- Plasma Particles -->
       <element id="3" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="1.0" forklod="mediumeffect"></element>
       <!-- Area Damage -->
@@ -209,6 +240,53 @@
       <!-- Sound -->
       <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
         <sound ref="wpn_CIG_impact"></sound>
+      </element>
+    </elements>
+  </effect>
+
+<!-- ISR-->
+  <effect name="muzzle_gen_m_isr" alignment="object">
+    <elements>
+      <!-- Geometry -->
+      <element id="2" ref="muzzle_gen_m_laser_01_mk1_macro" forkeffect="none" duration="0.3" minscale="3.0" maxscale="3.0" forklod="none"/>
+      <!-- Geometry Light -->
+      <element id="4" ref="impact_light_blue_macro" forkeffect="none" duration="0.1" minscale="5.0" maxscale="5.0" fadeout="0.1" forklod="none"/>
+      <!-- Sound -->
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_ISR_shoot"></sound>
+      </element>
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" delay="0" duration="0.2" forklod="none">
+        <force range="100" falloff="0.0">
+          <rumble>
+            <camera>
+              <component frequency="1.5" attackduration="0.1" sustainduration="0" releaseduration="0.1">
+                <amplitude randomize="false">
+                  <position x="0.002" y="0.002" z="0.002" />
+                </amplitude>
+              </component>
+            </camera>
+            <controller>
+              <low amplitude="0.025" attackduration="0.1" sustainduration="0.0" releaseduration="0.1" />
+            </controller>
+          </rumble>
+        </force>
+      </element>
+
+    </elements>
+  </effect>
+
+  <effect name="impact_gen_m_isr" alignment="normal">
+    <elements>
+      <element id="1" ref="impact_gen_m_laser_01_mk1_macro" forkeffect="none" duration="1.0" minscale="4.0" maxscale="4.0" fadein="0.0" fadeout="0.0" forklod="none"></element>
+      <!-- Impact Smoke Particles-->
+      <element id="2" ref="dummyemitter_macro" forkeffect="laser_impact_smoke_01" alignment="normal" duration="2.0" minscale="2.0" maxscale="3.0" forklod="none"></element>
+      <!-- Impact Fire Particles-->
+      <element id="3" ref="dummyemitter_macro" forkeffect="laser_impact_fire_01" alignment="normal" duration="1.0" minscale="1.3" maxscale="1.3" fadein="0.0" fadeout="0.5" forklod="none"></element>
+      <!-- Geometry Light -->
+      <element id="4" ref="impact_light_blue_macro" forkeffect="none" duration="0.2" minscale="10.0" maxscale="10.0" fadeout="0.2" forklod="none"></element>
+      <!-- Sound -->
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
+        <sound ref="wpn_isr_impact"></sound>
       </element>
     </elements>
   </effect>
@@ -1039,6 +1117,21 @@
       <!-- Sound -->
       <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
         <sound ref="wpn_xen_laser_gun_shoot"></sound>
+      </element>
+    </elements>
+  </effect>
+  <!-- Xenon Plasma-->
+  <effect name="muzzle_xen_s_plasma" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <!-- <element id="1" ref="dummyemitter_macro" forkeffect="laser_muzzle_smoke_04" alignment="object" duration="1.0" minscale="0.7" maxscale="0.7" forklod="none"></element> -->
+      <!-- Geometry Light -->
+      <element id="1" ref="impact_light_red_macro" forkeffect="none" duration="1.0" minscale="1.0" maxscale="1.0" fadeout="0.5" forklod="none"></element>
+      <!-- Geometry -->
+      <element id="2" ref="muzzle_xen_s_laser_01_mk1_macro" forkeffect="none" duration="0.6" minscale="1.4" maxscale="1.4" forklod="none"></element>
+      <!-- Sound -->
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_plasma_cannon_shoot"></sound>
       </element>
     </elements>
   </effect>

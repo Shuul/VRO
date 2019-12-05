@@ -72,17 +72,15 @@
     <price min="16892256" average="19743830" max="22595405" />
   </replace>
 
-<!-- weapons prices -->
-
-
+<!-- L turrets prices and materials-->
 <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/price">
     <price min="337000" average="347000" max="357000" />
   </replace>
   <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="41" />
-        <ware ware="energycells" amount="104" />
-        <ware ware="weaponcomponents" amount="69" />
+        <ware ware="advancedelectronics" amount="28" />
+        <ware ware="energycells" amount="56" />
+        <ware ware="turretcomponents" amount="42" />
       </primary>
 </replace>
   <replace sel="//wares/ware[@id='turret_par_l_laser_01_mk1']/price">
@@ -90,9 +88,9 @@
   </replace>
   <replace sel="//wares/ware[@id='turret_par_l_laser_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="41" />
-        <ware ware="energycells" amount="104" />
-        <ware ware="weaponcomponents" amount="69" />
+        <ware ware="advancedelectronics" amount="28" />
+        <ware ware="energycells" amount="56" />
+        <ware ware="turretcomponents" amount="42" />
       </primary>
 </replace>
   <replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/price">
@@ -100,9 +98,9 @@
   </replace>
   <replace sel="//wares/ware[@id='turret_tel_l_laser_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="41" />
-        <ware ware="energycells" amount="104" />
-        <ware ware="weaponcomponents" amount="69" />
+        <ware ware="advancedelectronics" amount="28" />
+        <ware ware="energycells" amount="56" />
+        <ware ware="turretcomponents" amount="42" />
       </primary>
 </replace>
 
@@ -111,9 +109,9 @@
   </replace>
   <replace sel="//wares/ware[@id='turret_arg_l_plasma_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="77" />
-        <ware ware="energycells" amount="193" />
-        <ware ware="weaponcomponents" amount="129" />
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="86" />
+        <ware ware="turretcomponents" amount="64" />
       </primary>
 </replace>
   <replace sel="//wares/ware[@id='turret_par_l_plasma_01_mk1']/price">
@@ -121,9 +119,9 @@
   </replace>
   <replace sel="//wares/ware[@id='turret_par_l_plasma_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="77" />
-        <ware ware="energycells" amount="193" />
-        <ware ware="weaponcomponents" amount="129" />
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="86" />
+        <ware ware="turretcomponents" amount="64" />
       </primary>
 </replace>
   <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/price">
@@ -131,9 +129,9 @@
   </replace>
   <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="77" />
-        <ware ware="energycells" amount="193" />
-        <ware ware="weaponcomponents" amount="129" />
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="86" />
+        <ware ware="turretcomponents" amount="64" />
       </primary>
 </replace>
 
@@ -142,9 +140,9 @@
   </replace>
   <replace sel="//wares/ware[@id='turret_arg_l_beam_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="41" />
-        <ware ware="energycells" amount="104" />
-        <ware ware="weaponcomponents" amount="69" />
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="86" />
+        <ware ware="turretcomponents" amount="64" />
       </primary>
 </replace>
 <replace sel="//wares/ware[@id='turret_par_l_beam_01_mk1']/price">
@@ -152,9 +150,9 @@
   </replace>
   <replace sel="//wares/ware[@id='turret_par_l_beam_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="41" />
-        <ware ware="energycells" amount="104" />
-        <ware ware="weaponcomponents" amount="69" />
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="86" />
+        <ware ware="turretcomponents" amount="64" />
       </primary>
 </replace>
 <replace sel="//wares/ware[@id='turret_tel_l_beam_01_mk1']/price">
@@ -162,60 +160,133 @@
   </replace>
   <replace sel="//wares/ware[@id='turret_tel_l_beam_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="41" />
-        <ware ware="energycells" amount="104" />
-        <ware ware="weaponcomponents" amount="69" />
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="86" />
+        <ware ware="turretcomponents" amount="64" />
       </primary>
 </replace>
 
-
+<!-- missile turrets prices -->
   <replace sel="//wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/price">
-    <price min="12865" average="15406" max="17946" />
+      <price min="60200" average="63000" max="65300" />
   </replace>
   <replace sel="//wares/ware[@id='turret_par_m_dumbfire_02_mk1']/price">
-    <price min="12865" average="15406" max="17946" />
+      <price min="60200" average="63000" max="65300" />
   </replace>
   <replace sel="//wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/price">
-    <price min="12865" average="15406" max="17946" />
+      <price min="60200" average="63000" max="65300" />
   </replace>
 
   <replace sel="//wares/ware[@id='turret_arg_m_guided_02_mk1']/price">
-    <price min="16317" average="18242" max="20166" />
+    <price min="75000" average="77000" max="79000" />
   </replace>
   <replace sel="//wares/ware[@id='turret_par_m_guided_02_mk1']/price">
-    <price min="16317" average="18242" max="20166" />
+    <price min="75000" average="77000" max="79000" />
   </replace>
   <replace sel="//wares/ware[@id='turret_tel_m_guided_02_mk1']/price">
-    <price min="16317" average="18242" max="20166" />
+    <price min="75000" average="77000" max="79000" />
+  </replace>
+<!-- medium turrets prices -->
+  <replace sel="//wares/ware[@id='turret_arg_m_gatling_02_mk1']/price">
+      <price min="62200" average="65000" max="67300" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_gatling_02_mk1']/price">
+      <price min="62200" average="65000" max="67300" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_gatling_02_mk1']/price">
+      <price min="62200" average="65000" max="67300" />
   </replace>
 
-  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/price">
-    <price min="16317" average="18242" max="20166" />
+  <replace sel="//wares/ware[@id='turret_arg_m_laser_02_mk1']/price">
+    <price min="78000" average="81000" max="84000" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/price">
-    <price min="16317" average="18242" max="20166" />
+  <replace sel="//wares/ware[@id='turret_par_m_laser_02_mk1']/price">
+    <price min="78000" average="81000" max="84000" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/price">
-    <price min="16317" average="18242" max="20166" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/price">
-    <price min="16317" average="18242" max="20166" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1']/price">
-    <price min="16317" average="18242" max="20166" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/price">
-    <price min="16317" average="18242" max="20166" />
+  <replace sel="//wares/ware[@id='turret_tel_m_laser_02_mk1']/price">
+    <price min="78000" average="81000" max="84000" />
   </replace>
 
-  <replace sel="//wares/ware[@id='weapon_arg_s_ion_01_mk1']/price">
+  <replace sel="//wares/ware[@id='turret_arg_m_beam_02_mk1']/price">
+    <price min="76000" average="79000" max="82000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_beam_02_mk1']/price">
+    <price min="76000" average="79000" max="82000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/price">
+    <price min="76000" average="79000" max="82000" />
+  </replace>
+
+  <replace sel="//wares/ware[@id='turret_arg_m_plasma_02_mk1']/price">
+    <price min="870000" average="89000" max="910000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_plasma_02_mk1']/price">
+    <price min="870000" average="89000" max="910000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/price">
+    <price min="870000" average="89000" max="910000" />
+  </replace>
+
+  <replace sel="//wares/ware[@id='turret_arg_m_shotgun_02_mk1']/price">
+      <price min="59200" average="62000" max="65300" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_shotgun_02_mk1']/price">
+      <price min="59200" average="62000" max="65300" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/price">
+      <price min="59200" average="62000" max="65300" />
+  </replace>
+
+
+<!-- launchers -->
+  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1_macro']/price">
+  <price min="116396" average="132269" max="148141" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2_macro']/price">
+  <price min="153964" average="174960" max="195955" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1_macro']/price">
+    <price min="52175" average="59290" max="66404" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk2_macro']/price">
+  <price min="60459" average="68704" max="76948" />
+  </replace>
+
+  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1_macro']/price">
+  <price min="116396" average="132269" max="148141" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2_macro']/price">
+  <price min="153964" average="174960" max="195955" />
+  </replace>
+   <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2_macro']/price">
+    <price min="52175" average="59290" max="66404" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2_macro']/price">
+  <price min="60459" average="68704" max="76948" />
+  </replace>
+
+  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1_macro']/price">
+  <price min="116396" average="132269" max="148141" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1_macro']/price">
+  <price min="153964" average="174960" max="195955" />
+  </replace>
+   <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1_macro']/price">
+    <price min="52175" average="59290" max="66404" />
+  </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk2_macro']/price">
+  <price min="60459" average="68704" max="76948" />
+  </replace>
+
+<!-- Other vanilla weapons prices adn materials -->
+<replace sel="//wares/ware[@id='weapon_arg_s_ion_01_mk1']/price">
   <price min="60459" average="68704" max="76948" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_arg_s_ion_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="3" />
-        <ware ware="energycells" amount="12" />
-        <ware ware="weaponcomponents" amount="9" />
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="9" />
+        <ware ware="weaponcomponents" amount="7" />
       </primary>
 </replace>
 
@@ -224,42 +295,42 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_arg_s_ion_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="17" />
-        <ware ware="weaponcomponents" amount="12" />
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="12" />
+        <ware ware="weaponcomponents" amount="9" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk1']/price">
-  <price min="33447" average="38009" max="42570" />
+  <price min="37277" average="42361" max="47444" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="2" />
-        <ware ware="energycells" amount="7" />
-        <ware ware="weaponcomponents" amount="5" />
+        <ware ware="advancedelectronics" amount="1" />
+        <ware ware="energycells" amount="6" />
+        <ware ware="weaponcomponents" amount="4" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk2']/price">
-  <price min="53025" average="60256" max="67486" />
+  <price min="48655" average="55290" max="61924" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="3" />
-        <ware ware="energycells" amount="11" />
-        <ware ware="weaponcomponents" amount="8" />
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="8" />
+        <ware ware="weaponcomponents" amount="6" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk1']/price">
-  <price min="33447" average="38009" max="42570" />
+  <price min="39037" average="44361" max="49684" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="2" />
-        <ware ware="energycells" amount="7" />
-        <ware ware="weaponcomponents" amount="5" />
+        <ware ware="advancedelectronics" amount="1" />
+        <ware ware="energycells" amount="6" />
+        <ware ware="weaponcomponents" amount="4" />
       </primary>
 </replace>
 
@@ -268,9 +339,9 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="3" />
-        <ware ware="energycells" amount="10" />
-        <ware ware="weaponcomponents" amount="8" />
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="8" />
+        <ware ware="weaponcomponents" amount="6" />
       </primary>
 </replace>
 
@@ -280,8 +351,8 @@
 <replace sel="//wares/ware[@id='weapon_gen_s_laser_01_mk1']/production/primary">
     <primary>
         <ware ware="advancedelectronics" amount="1" />
-        <ware ware="energycells" amount="5" />
-        <ware ware="weaponcomponents" amount="4" />
+        <ware ware="energycells" amount="4" />
+        <ware ware="weaponcomponents" amount="3" />
       </primary>
 </replace>
 
@@ -290,53 +361,53 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_s_laser_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="2" />
-        <ware ware="energycells" amount="7" />
-        <ware ware="weaponcomponents" amount="5" />
+        <ware ware="advancedelectronics" amount="1" />
+        <ware ware="energycells" amount="5" />
+        <ware ware="weaponcomponents" amount="4" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk1']/price">
-  <price min="72872" average="82810" max="92747" />
+  <price min="84515" average="96040" max="107564" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="15" />
-        <ware ware="weaponcomponents" amount="11" />
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="12" />
+        <ware ware="weaponcomponents" amount="9" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk2']/price">
-  <price min="83119" average="94454" max="105788" />
+  <price min="103499" average="117613" max="131726" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="17" />
-        <ware ware="weaponcomponents" amount="12" />
+        <ware ware="advancedelectronics" amount="5" />
+        <ware ware="energycells" amount="19" />
+        <ware ware="weaponcomponents" amount="14" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk1']/price">
-  <price min="97020" average="110250" max="123480" />
+  <price min="86739" average="98568" max="110396" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="5" />
-        <ware ware="energycells" amount="19" />
-        <ware ware="weaponcomponents" amount="15" />
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="16" />
+        <ware ware="weaponcomponents" amount="12" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk2']/price">
-  <price min="111771" average="127013" max="142254" />
+  <price min="93915" average="106722" max="119528" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="6" />
-        <ware ware="energycells" amount="22" />
-        <ware ware="weaponcomponents" amount="17" />
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="17" />
+        <ware ware="weaponcomponents" amount="13" />
       </primary>
 </replace>
 
@@ -345,9 +416,9 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="17" />
-        <ware ware="weaponcomponents" amount="13" />
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="13" />
+        <ware ware="weaponcomponents" amount="9" />
       </primary>
 </replace>
 
@@ -356,9 +427,9 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="6" />
-        <ware ware="energycells" amount="25" />
-        <ware ware="weaponcomponents" amount="19" />
+        <ware ware="advancedelectronics" amount="5" />
+        <ware ware="energycells" amount="18" />
+        <ware ware="weaponcomponents" amount="14" />
       </primary>
 </replace>
 
@@ -367,42 +438,42 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_arg_m_ion_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="12" />
-        <ware ware="energycells" amount="48" />
-        <ware ware="weaponcomponents" amount="36" />
+        <ware ware="advancedelectronics" amount="9" />
+        <ware ware="energycells" amount="37" />
+        <ware ware="weaponcomponents" amount="19" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_arg_m_ion_01_mk2']/price">
-  <price min="155232" average="176400" max="197568" />
+  <price min="211288" average="240100" max="268912" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_arg_m_ion_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="16" />
-        <ware ware="energycells" amount="64" />
-        <ware ware="weaponcomponents" amount="48" />
+        <ware ware="advancedelectronics" amount="17" />
+        <ware ware="energycells" amount="67" />
+        <ware ware="weaponcomponents" amount="34" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk1']/price">
-  <price min="104135" average="118336" max="132536" />
+  <price min="97095" average="110336" max="123576" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="11" />
-        <ware ware="energycells" amount="43" />
-        <ware ware="weaponcomponents" amount="32" />
+        <ware ware="advancedelectronics" amount="8" />
+        <ware ware="energycells" amount="33" />
+        <ware ware="weaponcomponents" amount="17" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk2']/price">
-  <price min="117361" average="133365" max="149368" />
+  <price min="126502" average="143753" max="161003" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="12" />
-        <ware ware="energycells" amount="48" />
-        <ware ware="weaponcomponents" amount="36" />
+        <ware ware="advancedelectronics" amount="11" />
+        <ware ware="energycells" amount="43" />
+        <ware ware="weaponcomponents" amount="22" />
       </primary>
 </replace>
 
@@ -411,9 +482,9 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_m_gatling_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="11" />
-        <ware ware="energycells" amount="43" />
-        <ware ware="weaponcomponents" amount="32" />
+        <ware ware="advancedelectronics" amount="8" />
+        <ware ware="energycells" amount="33" />
+        <ware ware="weaponcomponents" amount="17" />
       </primary>
 </replace>
 
@@ -422,9 +493,9 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_m_gatling_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="14" />
-        <ware ware="energycells" amount="55" />
-        <ware ware="weaponcomponents" amount="42" />
+        <ware ware="advancedelectronics" amount="11" />
+        <ware ware="energycells" amount="43" />
+        <ware ware="weaponcomponents" amount="22" />
       </primary>
 </replace>
 
@@ -433,9 +504,9 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_m_laser_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="10" />
-        <ware ware="energycells" amount="40" />
-        <ware ware="weaponcomponents" amount="30" />
+        <ware ware="advancedelectronics" amount="8" />
+        <ware ware="energycells" amount="31" />
+        <ware ware="weaponcomponents" amount="16" />
       </primary>
 </replace>
 
@@ -444,9 +515,9 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_m_laser_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="12" />
-        <ware ware="energycells" amount="48" />
-        <ware ware="weaponcomponents" amount="36" />
+        <ware ware="advancedelectronics" amount="9" />
+        <ware ware="energycells" amount="37" />
+        <ware ware="weaponcomponents" amount="19" />
       </primary>
 </replace>
 
@@ -455,9 +526,9 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="18" />
-        <ware ware="energycells" amount="71" />
-        <ware ware="weaponcomponents" amount="54" />
+        <ware ware="advancedelectronics" amount="14" />
+        <ware ware="energycells" amount="56" />
+        <ware ware="weaponcomponents" amount="28" />
       </primary>
 </replace>
 
@@ -466,31 +537,31 @@
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="19" />
-        <ware ware="energycells" amount="77" />
-        <ware ware="weaponcomponents" amount="58" />
+        <ware ware="advancedelectronics" amount="15" />
+        <ware ware="energycells" amount="60" />
+        <ware ware="weaponcomponents" amount="30" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/price">
-  <price min="174653" average="198470" max="222286" />
+  <price min="130990" average="148853" max="166715" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="18" />
-        <ware ware="energycells" amount="71" />
-        <ware ware="weaponcomponents" amount="54" />
+        <ware ware="advancedelectronics" amount="14" />
+        <ware ware="energycells" amount="56" />
+        <ware ware="weaponcomponents" amount="28" />
       </primary>
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/price">
-  <price min="256608" average="291600" max="326592" />
+  <price min="153964" average="174960" max="195955" />
 </replace>
 <replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/production/primary">
     <primary>
-        <ware ware="advancedelectronics" amount="26" />
-        <ware ware="energycells" amount="105" />
-        <ware ware="weaponcomponents" amount="79" />
+        <ware ware="advancedelectronics" amount="20" />
+        <ware ware="energycells" amount="82" />
+        <ware ware="weaponcomponents" amount="41" />
       </primary>
 </replace>
 
@@ -607,7 +678,7 @@
     </production>
     <component ref="turret_arg_l_ppc_macro" amount="1" />
     <restriction licence="capitalequipment" />
-    <use threshold="0.85" />
+    <use threshold="0.9" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
@@ -782,12 +853,12 @@
 
 <!-- HEPT -->
   <ware id="weapon_gen_s_hept" name="{6699,1101}" description="{20105,1104}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-    <price min="79356" average="82356" max="86356" />
+    <price min="91883" average="101883" max="111883" />
     <production time="10" amount="1" method="default" name="{6699,1103}">
       <primary>
-        <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="11" />
-        <ware ware="weaponcomponents" amount="14" />
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="13" />
+        <ware ware="weaponcomponents" amount="10" />
       </primary>
     </production>
     <component ref="weapon_gen_s_hept_macro" amount="1" />
@@ -803,17 +874,38 @@
   </ware>
 <!-- EBC -->
   <ware id="weapon_gen_s_ebc" name="{6699,1121}" description="{6699,1124}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-    <price min="57256" average="60256" max="63256" />
+    <price min="65063" average="68063" max="70063" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
-        <ware ware="advancedelectronics" amount="3" />
-        <ware ware="energycells" amount="8" />
-        <ware ware="weaponcomponents" amount="11" />
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="9" />
+        <ware ware="weaponcomponents" amount="7" />
       </primary>
     </production>
     <component ref="weapon_gen_s_ebc_macro" amount="1" />
     <restriction licence="militaryequipment" />
-    <use threshold="0.2" />
+    <use threshold="0.5" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="holyorder" />
+    <owner faction="ministry" />
+    <owner faction="paranid" />
+    <owner faction="teladi" />
+  </ware>
+  <!-- PBE -->
+  <ware id="weapon_gen_s_pbe" name="{6699,1151}" description="{6699,1154}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="56290" average="59290" max="62290" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="8" />
+        <ware ware="weaponcomponents" amount="6" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_s_pbe_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0.1" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
@@ -824,17 +916,39 @@
   </ware>
 <!-- CIG -->
   <ware id="weapon_gen_m_cig" name="{6699,1131}" description="{20105,1134}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-    <price min="259000" average="269000" max="280000" />
+    <price min="259750" average="269750" max="280750" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
-        <ware ware="advancedelectronics" amount="24" />
-        <ware ware="energycells" amount="97" />
-        <ware ware="weaponcomponents" amount="73" />
+        <ware ware="advancedelectronics" amount="19" />
+        <ware ware="energycells" amount="76" />
+        <ware ware="weaponcomponents" amount="38" />
       </primary>
     </production>
     <component ref="weapon_gen_m_cig_macro" amount="1" />
     <restriction licence="capitalequipment" />
-    <use threshold="0.4" />
+    <use threshold="0.6" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="holyorder" />
+    <owner faction="ministry" />
+    <owner faction="paranid" />
+    <owner faction="teladi" />
+  </ware>
+
+<!-- ISR -->
+  <ware id="weapon_gen_m_isr" name="{6699,1161}" description="{20105,1164}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="215000" average="228604" max="232000" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="16" />
+        <ware ware="energycells" amount="64" />
+        <ware ware="weaponcomponents" amount="32" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_m_isr_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.2" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
@@ -852,7 +966,7 @@
       <primary>
         <ware ware="advancedelectronics" amount="15" />
         <ware ware="energycells" amount="61" />
-        <ware ware="weaponcomponents" amount="46" />
+        <ware ware="weaponcomponents" amount="30" />
       </primary>
     </production>
     <component ref="weapon_gen_m_plasmabomb_macro" amount="1" />
@@ -866,11 +980,11 @@
 <!-- NEW MISSILES  -->
 
 <ware id="missile_rapier" name="{6699, 1201}" description="{6699, 1203}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="287" average="338" max="388" />
+<price min="257" average="293" max="328" />
 <production time="1" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="6" />
-<ware ware="missilecomponents" amount="3" />]
+<ware ware="energycells" amount="5" />
+<ware ware="missilecomponents" amount="2" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -880,11 +994,11 @@
 </ware>
 
 <ware id="missile_firefly" name="{6699, 1204}" description="{6699, 1206}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="797" average="938" max="1078" />
+<price min="715" average="813" max="910" />
 <production time="1" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="10" />
-<ware ware="missilecomponents" amount="5" />]
+<ware ware="energycells" amount="8" />
+<ware ware="missilecomponents" amount="4" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -894,11 +1008,11 @@
 </ware>
 
 <ware id="missile_firelance" name="{6699, 1207}" description="{6699, 1209}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="2040" average="2400" max="2760" />
+<price min="1830" average="2080" max="2329" />
 <production time="2" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="17" />
-<ware ware="missilecomponents" amount="8" />]
+<ware ware="energycells" amount="13" />
+<ware ware="missilecomponents" amount="6" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -910,11 +1024,11 @@
 </ware>
 
 <ware id="missile_beluga" name="{6699, 1210}" description="{6699, 1212}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="2876" average="3384" max="3891" />
+<price min="2581" average="2933" max="3284" />
 <production time="3" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="20" />
-<ware ware="missilecomponents" amount="10" />]
+<ware ware="energycells" amount="16" />
+<ware ware="missilecomponents" amount="7" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -924,11 +1038,11 @@
 </ware>
 
 <ware id="missile_blizzard" name="{6699, 1213}" description="{6699, 1215}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="5665" average="6665" max="7664" />
+<price min="5083" average="5777" max="6470" />
 <production time="4" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="28" />
-<ware ware="missilecomponents" amount="13" />]
+<ware ware="energycells" amount="22" />
+<ware ware="missilecomponents" amount="10" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -940,11 +1054,11 @@
 </ware>
 
 <ware id="missile_dragonfly" name="{6699, 1216}" description="{6699, 1218}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="3187" average="3750" max="4312" />
+<price min="2860" average="3250" max="3640" />
 <production time="4" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="21" />
-<ware ware="missilecomponents" amount="10" />]
+<ware ware="energycells" amount="17" />
+<ware ware="missilecomponents" amount="8" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -954,11 +1068,11 @@
 </ware>
 
 <ware id="missile_aurora" name="{6699, 1219}" description="{6699, 1221}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="11750" average="13824" max="15897" />
+<price min="10543" average="11981" max="13418" />
 <production time="5" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="40" />
-<ware ware="missilecomponents" amount="19" />]
+<ware ware="energycells" amount="32" />
+<ware ware="missilecomponents" amount="14" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -968,11 +1082,11 @@
 </ware>
 
 <ware id="missile_tornado" name="{6699, 1222}" description="{6699, 1224}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="15993" average="18816" max="21638" />
+<price min="14350" average="16307" max="18263" />
 <production time="5" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="47" />
-<ware ware="missilecomponents" amount="22" />]
+<ware ware="energycells" amount="37" />
+<ware ware="missilecomponents" amount="17" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -982,11 +1096,11 @@
 </ware>
 
 <ware id="missile_flycatcher" name="{6699, 1225}" description="{6699, 1227}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="14057" average="16538" max="19018" />
+<price min="12613" average="14333" max="16052" />
 <production time="5" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="44" />
-<ware ware="missilecomponents" amount="21" />]
+<ware ware="energycells" amount="35" />
+<ware ware="missilecomponents" amount="16" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -998,10 +1112,10 @@
 </ware>
 
 <ware id="missile_mosquito" name="{6699, 1228}" description="{6699, 1230}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="183" average="216" max="248" />
+<price min="164" average="187" max="209" />
 <production time="1" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="5" />
+<ware ware="energycells" amount="4" />
 <ware ware="missilecomponents" amount="2" />]
 <ware ware="smartchips" amount="0" />
 </primary>
@@ -1012,11 +1126,11 @@
 </ware>
 
 <ware id="missile_wasp" name="{6699, 1231}" description="{6699, 1233}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="734" average="864" max="993" />
+<price min="659" average="749" max="838" />
 <production time="3" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="10" />
-<ware ware="missilecomponents" amount="3" />]
+<ware ware="energycells" amount="8" />
+<ware ware="missilecomponents" amount="4" />]
 <ware ware="smartchips" amount="3" />
 </primary>
 </production>
@@ -1026,10 +1140,10 @@
 </ware>
 
 <ware id="missile_wildfire" name="{6699, 1234}" description="{6699, 1236}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="460" average="542" max="623" />
+<price min="412" average="469" max="525" />
 <production time="2" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="8" />
+<ware ware="energycells" amount="6" />
 <ware ware="missilecomponents" amount="3" />]
 <ware ware="smartchips" amount="3" />
 </primary>
@@ -1040,11 +1154,11 @@
 </ware>
 
 <ware id="missile_cyclone" name="{6699, 1237}" description="{6699, 1239}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="1147" average="1350" max="1552" />
+<price min="1029" average="1170" max="1310" />
 <production time="2" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="13" />
-<ware ware="missilecomponents" amount="6" />]
+<ware ware="energycells" amount="10" />
+<ware ware="missilecomponents" amount="5" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -1056,12 +1170,12 @@
 </ware>
 
 <ware id="missile_silkworm" name="{6699, 1240}" description="{6699, 1242}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="5895" average="6936" max="7976" />
+<price min="5289" average="6011" max="6732" />
 <production time="4" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="28" />
+<ware ware="energycells" amount="23" />
 <ware ware="missilecomponents" amount="10" />]
-<ware ware="smartchips" amount="11" />
+<ware ware="smartchips" amount="8" />
 </primary>
 </production>
 <component ref="missile_silkworm_macro" amount="1" />
@@ -1072,12 +1186,12 @@
 </ware>
 
 <ware id="missile_hurricane" name="{6699, 1243}" description="{6699, 1245}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="2249" average="2646" max="3042" />
+<price min="2017" average="2293" max="2568" />
 <production time="4" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="18" />
+<ware ware="energycells" amount="14" />
 <ware ware="missilecomponents" amount="6" />]
-<ware ware="smartchips" amount="7" />
+<ware ware="smartchips" amount="5" />
 </primary>
 </production>
 <component ref="missile_hurricane_macro" amount="1" />
@@ -1086,12 +1200,12 @@
 </ware>
 
 <ware id="missile_windstalker" name="{6699, 1246}" description="{6699, 1248}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="3187" average="3750" max="4312" />
+<price min="2860" average="3250" max="3640" />
 <production time="5" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="21" />
-<ware ware="missilecomponents" amount="7" />]
-<ware ware="smartchips" amount="8" />
+<ware ware="energycells" amount="17" />
+<ware ware="missilecomponents" amount="8" />]
+<ware ware="smartchips" amount="6" />
 </primary>
 </production>
 <component ref="missile_windstalker_macro" amount="1" />
@@ -1100,12 +1214,12 @@
 </ware>
 
 <ware id="missile_tempest" name="{6699, 1249}" description="{6699, 1251}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="5060" average="5954" max="6847" />
+<price min="4540" average="5160" max="5779" />
 <production time="5" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="26" />
+<ware ware="energycells" amount="21" />
 <ware ware="missilecomponents" amount="9" />]
-<ware ware="smartchips" amount="11" />
+<ware ware="smartchips" amount="8" />
 </primary>
 </production>
 <component ref="missile_tempest_macro" amount="1" />
@@ -1114,11 +1228,11 @@
 </ware>
 
 <ware id="missile_thunderbolt" name="{6699, 1252}" description="{6699, 1254}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="9212" average="10838" max="12463" />
+<price min="8265" average="9393" max="10520" />
 <production time="6" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="35" />
-<ware ware="missilecomponents" amount="17" />]
+<ware ware="energycells" amount="28" />
+<ware ware="missilecomponents" amount="13" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -1128,12 +1242,12 @@
 </ware>
 
 <ware id="missile_hornet" name="{6699, 1255}" description="{6699, 1257}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="18360" average="21600" max="24840" />
+<price min="16473" average="18720" max="20966" />
 <production time="6" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="50" />
-<ware ware="missilecomponents" amount="17" />]
-<ware ware="smartchips" amount="20" />
+<ware ware="energycells" amount="40" />
+<ware ware="missilecomponents" amount="18" />]
+<ware ware="smartchips" amount="14" />
 </primary>
 </production>
 <component ref="missile_hornet_macro" amount="1" />
@@ -1142,12 +1256,12 @@
 </ware>
 
 <ware id="missile_hammerhead" name="{6699, 1258}" description="{6699, 1260}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="32640" average="38400" max="44160" />
+<price min="29286" average="33280" max="37273" />
 <production time="7" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="67" />
-<ware ware="missilecomponents" amount="22" />]
-<ware ware="smartchips" amount="27" />
+<ware ware="energycells" amount="53" />
+<ware ware="missilecomponents" amount="24" />]
+<ware ware="smartchips" amount="19" />
 </primary>
 </production>
 <component ref="missile_hammerhead_macro" amount="1" />
@@ -1157,27 +1271,27 @@
 <owner faction="ministry"/>
 </ware>
 
-<ware id="missile_RGW" name="{6699, 1261}" description="{6699, 1263}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="51000" average="60000" max="69000" />
+<ware id="missile_rgw" name="{6699, 1261}" description="{6699, 1263}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+<price min="45760" average="52000" max="58240" />
 <production time="7" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="83" />
-<ware ware="missilecomponents" amount="40" />]
+<ware ware="energycells" amount="67" />
+<ware ware="missilecomponents" amount="30" />]
 <ware ware="smartchips" amount="24" />
 </primary>
 </production>
-<component ref="missile_RGW_macro" amount="1" />
+<component ref="missile_rgw_macro" amount="1" />
 <container ref="sm_gen_pickup_equipment_01_macro" />
 <use threshold="0"/>
 </ware>
 
 <ware id="missile_banshee" name="{6699, 1264}" description="{6699, 1266}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="11932" average="14038" max="16143" />
+<price min="10706" average="12166" max="13625" />
 <production time="5" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="40" />
-<ware ware="missilecomponents" amount="14" />]
-<ware ware="smartchips" amount="16" />
+<ware ware="energycells" amount="32" />
+<ware ware="missilecomponents" amount="15" />]
+<ware ware="smartchips" amount="12" />
 </primary>
 </production>
 <component ref="missile_banshee_macro" amount="1" />
@@ -1188,12 +1302,12 @@
 </ware>
 
 <ware id="missile_typhoon" name="{6699, 1267}" description="{6699, 1269}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="18360" average="21600" max="24840" />
+<price min="16473" average="18720" max="20966" />
 <production time="6" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="50" />
-<ware ware="missilecomponents" amount="17" />]
-<ware ware="smartchips" amount="20" />
+<ware ware="energycells" amount="40" />
+<ware ware="missilecomponents" amount="18" />]
+<ware ware="smartchips" amount="14" />
 </primary>
 </production>
 <component ref="missile_typhoon_macro" amount="1" />
@@ -1202,11 +1316,11 @@
 </ware>
 
 <ware id="missile_phantom" name="{6699, 1270}" description="{6699, 1272}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="32640" average="38400" max="44160" />
+<price min="29286" average="33280" max="37273" />
 <production time="7" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="67" />
-<ware ware="missilecomponents" amount="32" />]
+<ware ware="energycells" amount="53" />
+<ware ware="missilecomponents" amount="24" />]
 <ware ware="smartchips" amount="0" />
 </primary>
 </production>
@@ -1216,12 +1330,12 @@
 </ware>
 
 <ware id="missile_ibis" name="{6699, 1273}" description="{6699, 1275}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="24990" average="29400" max="33810" />
+<price min="22422" average="25480" max="28537" />
 <production time="8" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="58" />
-<ware ware="missilecomponents" amount="20" />]
-<ware ware="smartchips" amount="24" />
+<ware ware="energycells" amount="47" />
+<ware ware="missilecomponents" amount="21" />]
+<ware ware="smartchips" amount="17" />
 </primary>
 </production>
 <component ref="missile_ibis_macro" amount="1" />
@@ -1232,12 +1346,12 @@
 </ware>
 
 <ware id="missile_tomahawk" name="{6699, 1276}" description="{6699, 1278}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="99960" average="117600" max="135240" />
+<price min="89689" average="101920" max="114150" />
 <production time="8" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="117" />
-<ware ware="missilecomponents" amount="39" />]
-<ware ware="smartchips" amount="47" />
+<ware ware="energycells" amount="93" />
+<ware ware="missilecomponents" amount="42" />]
+<ware ware="smartchips" amount="34" />
 </primary>
 </production>
 <component ref="missile_tomahawk_macro" amount="1" />
@@ -1246,12 +1360,12 @@
 </ware>
 
 <ware id="missile_firestorm" name="{6699, 1279}" description="{6699, 1281}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="204000" average="240000" max="276000" />
+<price min="183040" average="208000" max="232960" />
 <production time="8" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="167" />
-<ware ware="missilecomponents" amount="56" />]
-<ware ware="smartchips" amount="67" />
+<ware ware="energycells" amount="133" />
+<ware ware="missilecomponents" amount="60" />]
+<ware ware="smartchips" amount="48" />
 </primary>
 </production>
 <component ref="missile_firestorm_macro" amount="1" />
@@ -1260,12 +1374,12 @@
 </ware>
 
 <ware id="missile_spectre" name="{6699, 1282}" description="{6699, 1284}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="141663" average="166663" max="191662" />
+<price min="127108" average="144442" max="161775" />
 <production time="10" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="139" />
-<ware ware="missilecomponents" amount="47" />]
-<ware ware="smartchips" amount="56" />
+<ware ware="energycells" amount="111" />
+<ware ware="missilecomponents" amount="50" />]
+<ware ware="smartchips" amount="40" />
 </primary>
 </production>
 <component ref="missile_spectre_macro" amount="1" />
@@ -1276,12 +1390,12 @@
 </ware>
 
 <ware id="missile_flail" name="{6699, 1285}" description="{6699, 1287}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="47246" average="55584" max="63921" />
+<price min="42392" average="48173" max="53953" />
 <production time="10" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="80" />
-<ware ware="missilecomponents" amount="27" />]
-<ware ware="smartchips" amount="32" />
+<ware ware="energycells" amount="64" />
+<ware ware="missilecomponents" amount="29" />]
+<ware ware="smartchips" amount="23" />
 </primary>
 </production>
 <component ref="missile_flail_macro" amount="1" />
@@ -1290,12 +1404,12 @@
 </ware>
 
 <ware id="missile_shadow" name="{6699, 1288}" description="{6699, 1290}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="147390" average="173400" max="199410" />
+<price min="132246" average="150280" max="168313" />
 <production time="10" amount="1" method="default" name="{20206,101}">
 <primary>
 <ware ware="energycells" amount="113" />
-<ware ware="missilecomponents" amount="48" />]
-<ware ware="smartchips" amount="29" />
+<ware ware="missilecomponents" amount="51" />]
+<ware ware="smartchips" amount="41" />
 </primary>
 </production>
 <component ref="missile_shadow_macro" amount="1" />
@@ -1304,12 +1418,12 @@
 </ware>
 
 <ware id="missile_wraith" name="{6699, 1291}" description="{6699, 1293}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="174547" average="205350" max="236152" />
+<price min="156613" average="177970" max="199326" />
 <production time="10" amount="1" method="default" name="{20206,101}">
 <primary>
 <ware ware="energycells" amount="123" />
-<ware ware="missilecomponents" amount="52" />]
-<ware ware="smartchips" amount="31" />
+<ware ware="missilecomponents" amount="56" />]
+<ware ware="smartchips" amount="44" />
 </primary>
 </production>
 <component ref="missile_wraith_macro" amount="1" />
@@ -1318,10 +1432,10 @@
 </ware>
 
 <ware id="missile_disruptor" name="{6699, 1294}" description="{6699, 1296}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-<price min="1275" average="1500" max="1725" />
+<price min="13200" average="15000" max="16800" />
 <production time="5" amount="1" method="default" name="{20206,101}">
 <primary>
-<ware ware="energycells" amount="10" />
+<ware ware="energycells" amount="25" />
 <ware ware="missilecomponents" amount="5" />]
 <ware ware="smartchips" amount="1" />
 </primary>
@@ -1347,6 +1461,21 @@
     <use threshold="0" factions="xenon" />
     <owner faction="xenon" />
   </ware>
+  
+<!-- XENON PLASMA  -->
+<ware id="weapon_xen_s_plasma" name="{20105,1011}" description="{20105,1012}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint weapon">
+    <price min="778" average="864" max="950" />
+    <production time="4" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="105" />
+        <ware ware="ore" amount="5" />
+      </primary>
+    </production>
+    <component ref="weapon_xen_s_plasma_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" factions="xenon" />
+    <owner faction="xenon" />
+  </ware>
 
 <!-- XENON V  -->
 
@@ -1365,6 +1494,22 @@
   </ware>
 
   </add>
-
-
-	</diff>
+<!-- Vanilla removal -->
+ <remove sel="//ware[@id='missile_cluster_heavy_mk1']"/>
+ <remove sel="//ware[@id='missile_cluster_light_mk1']"/>
+ <remove sel="//ware[@id='missile_dumbfire_heavy_mk1']"/>
+ <remove sel="//ware[@id='missile_dumbfire_heavy_mk2']"/>
+ <remove sel="//ware[@id='missile_dumbfire_light_mk1']"/>
+ <remove sel="//ware[@id='missile_dumbfire_light_mk2']"/>
+ <remove sel="//ware[@id='missile_emp_mk1']"/>
+ <remove sel="//ware[@id='missile_guided_heavy_mk1']"/>
+ <remove sel="//ware[@id='missile_guided_light_mk1']"/>
+ <remove sel="//ware[@id='missile_heatseeker_heavy_mk1']"/>
+ <remove sel="//ware[@id='missile_heatseeker_light_mk1']"/>
+ <remove sel="//ware[@id='missile_smart_heavy_mk1']"/>
+ <remove sel="//ware[@id='missile_smart_light_mk1']"/>
+ <remove sel="//ware[@id='missile_swarm_heavy_mk1']"/>
+ <remove sel="//ware[@id='missile_swarm_light_mk1']"/>
+ <remove sel="//ware[@id='missile_torpedo_heavy_mk1']"/>
+ <remove sel="//ware[@id='missile_torpedo_light_mk1']"/>
+</diff>
