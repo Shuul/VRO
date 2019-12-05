@@ -23,7 +23,7 @@
   <replace sel="//wares/ware[@id='turret_par_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_par_m_shotgun_02_mk1']/use/@threshold">0.0</replace>	
   <replace sel="//wares/ware[@id='turret_tel_l_beam_01_mk1']/use/@threshold">0.95</replace>
-  <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/use/@threshold">0.85</replace>
+  <!-- <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/use/@threshold">0.85</replace> -->
   <replace sel="//wares/ware[@id='turret_tel_m_beam_01_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_gatling_01_mk1']/use/@threshold">0.0</replace>
@@ -124,7 +124,9 @@
         <ware ware="turretcomponents" amount="64" />
       </primary>
 </replace>
-  <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/price">
+
+<remove sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']"/>
+  <!-- <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/price">
     <price min="516000" average="536000" max="556000" />
   </replace>
   <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/production/primary">
@@ -133,7 +135,7 @@
         <ware ware="energycells" amount="86" />
         <ware ware="turretcomponents" amount="64" />
       </primary>
-</replace>
+</replace> -->
 
 <replace sel="//wares/ware[@id='turret_arg_l_beam_01_mk1']/price">
     <price min="412000" average="432000" max="462000" />
@@ -240,10 +242,10 @@
 
 <!-- launchers -->
   <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1_macro']/price">
-  <price min="116396" average="132269" max="148141" />
+  <price min="106396" average="122269" max="138141" />
   </replace>
   <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2_macro']/price">
-  <price min="153964" average="174960" max="195955" />
+  <price min="143964" average="164960" max="185955" />
   </replace>
   <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1_macro']/price">
     <price min="52175" average="59290" max="66404" />
@@ -253,16 +255,16 @@
   </replace>
 
   <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1_macro']/price">
-  <price min="116396" average="132269" max="148141" />
+  <price min="126396" average="142269" max="158141" />
   </replace>
   <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2_macro']/price">
-  <price min="153964" average="174960" max="195955" />
+  <price min="163964" average="184960" max="205955" />
   </replace>
    <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2_macro']/price">
-    <price min="52175" average="59290" max="66404" />
+    <price min="54175" average="61290" max="68404" />
   </replace>
   <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2_macro']/price">
-  <price min="60459" average="68704" max="76948" />
+  <price min="62459" average="70704" max="78948" />
   </replace>
 
   <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1_macro']/price">
@@ -686,7 +688,7 @@
 
   <!-- GAUSS  -->
 	<ware id="turret_tel_l_gauss" name="{6699,1141}" description="{6699,1144}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="401800" average="441800" max="481800" />
+    <price min="451800" average="491800" max="531800" />
     <production time="20" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="64" />
@@ -696,7 +698,7 @@
     </production>
     <component ref="turret_tel_l_gauss_macro" amount="1" />
     <restriction licence="capitalequipment" />
-    <use threshold="0.85" />
+    <use threshold="0.7" />
 		<owner faction="teladi" />
 		<owner faction="ministry" />
   </ware>
@@ -780,12 +782,12 @@
 
 <!-- CRUISE MISSILES  -->
   <ware id="turret_arg_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="68261" average="76957" max="85652" />
+    <price min="131000" average="141000" max="147000" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
-        <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="10" />
-        <ware ware="turretcomponents" amount="20" />
+        <ware ware="advancedelectronics" amount="20" />
+        <ware ware="energycells" amount="51" />
+        <ware ware="turretcomponents" amount="34" />
       </primary>
     </production>
     <component ref="turret_arg_l_cruise_macro" amount="1" />
@@ -797,12 +799,12 @@
   </ware>
 
   <ware id="turret_par_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="68261" average="76957" max="85652" />
+    <price min="131000" average="141000" max="147000" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
-        <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="10" />
-        <ware ware="turretcomponents" amount="20" />
+        <ware ware="advancedelectronics" amount="20" />
+        <ware ware="energycells" amount="51" />
+        <ware ware="turretcomponents" amount="34" />
       </primary>
     </production>
     <component ref="turret_par_l_cruise_macro" amount="1" />
@@ -814,12 +816,12 @@
   </ware>
 
   <ware id="turret_tel_l_cruise" name="{6699,1075}" description="{6699,1074}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="68261" average="76957" max="85652" />
+    <price min="131000" average="141000" max="147000" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
-        <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="10" />
-        <ware ware="turretcomponents" amount="20" />
+        <ware ware="advancedelectronics" amount="20" />
+        <ware ware="energycells" amount="51" />
+        <ware ware="turretcomponents" amount="34" />
       </primary>
     </production>
     <component ref="turret_tel_l_cruise_macro" amount="1" />
@@ -1446,8 +1448,8 @@
 </ware>
 
 
-<!-- XENON MAULER  -->
-<ware id="turret_xen_l_mauler" name="{6699,1022}" description="{6699,1022}" group="turrets" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
+<!-- XENON xppc  -->
+<ware id="turret_xen_l_xppc" name="{6699,1022}" description="{6699,1022}" group="turrets" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
     <price min="13092" average="14580" max="16068" />
     <production time="15" amount="1" method="default" name="{20206,101}">
       <primary>
@@ -1456,7 +1458,23 @@
         <ware ware="silicon" amount="15" />
       </primary>
     </production>
-    <component ref="turret_xen_l_mauler_macro" amount="1" />
+    <component ref="turret_xen_l_xppc_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" factions="xenon" />
+    <owner faction="xenon" />
+  </ware>
+  
+<!-- XENON OBLITERATOR  -->
+<ware id="turret_xen_l_obliterator" name="{6699,1020}" description="{6699,1020}" group="turrets" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
+    <price min="13092" average="14580" max="16068" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="25" />
+        <ware ware="ore" amount="15" />
+        <ware ware="silicon" amount="15" />
+      </primary>
+    </production>
+    <component ref="turret_xen_l_obliterator_macro" amount="1" />
     <restriction licence="generaluseequipment" />
     <use threshold="0" factions="xenon" />
     <owner faction="xenon" />

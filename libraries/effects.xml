@@ -1226,6 +1226,30 @@
       </element>
     </elements>
   </effect>
+<!-- XENON Phase Cannon TURRET-->
+  <effect name="muzzle_xen_phase_turret" alignment="object">
+    <elements>
+      <!-- Muzzle Geometry -->
+      <element id="1" ref="muzzle_xen_turret_mauler_macro" forkeffect="none" duration="1.5" minscale="1.0" maxscale="1.0" forklod="largeeffect">
+      </element>
+      <!-- Sound -->
+      <element id="2" ref="effect_dummy_macro" forkeffect="none" duration="2" forklod="mediumeffect">
+        <sound ref="wpn_xen_phase_shoot"></sound>
+      </element>
+    </elements>
+  </effect>
+    <effect name="impact_xen_phase_turret" alignment="object">
+    <elements>
+      <!-- Distortion Bubble Particle -->
+      <element id="1" ref="dummyemitter_macro" forkeffect="turret_l_impact01_distortion01" duration="0.6" minscale="0.3" maxscale="0.3" emitterspace="zone" alignment="impact" forklod="largeeffect"></element>
+      <!-- Blue impact explosion. -->
+      <element id="2" ref="dummyemitter_macro" forkeffect="turret_medium_bb_xe_impact01_explosion01" duration="1.2" minscale="0.25" maxscale="0.25" emitterspace="zone" alignment="impact" forklod="largeeffect"></element>
+         <!-- Sound -->
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="smalleffect">
+        <sound ref="wpn_xen_phase_impact"></sound>
+      </element>
+    </elements>
+  </effect>
 </add>
 </diff>
 

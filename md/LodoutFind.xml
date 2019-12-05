@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mdscript name="LodoutFind" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/x4 extract/libraries/md.xsd">
+    <cues>
+ <cue name="Loadouts" instantiate="true">
+            <conditions>
+                <event_player_changed_target />
+            </conditions>
+            <!-- <delay exact="15s" /> -->
+            <actions>
+                <debug_to_file text="'start'" name="'loadouts.log'" directory="'loadouts'" append="false" />
+                <debug_to_file text="event.param.macro" name="'loadouts.log'" directory="'loadouts'" />
+                <debug_to_file text="event.param.knownname" name="'loadouts.log'" directory="'loadouts'" />
+                <set_value name="$Level" exact="0.0" />
+                <do_all exact="11">
+                    <generate_loadout result="$Loadout" macro="event.param.macro" faction="event.param.owner" variation="0.0" level="$Level" />
+                    <set_value name="$Level" operation="add" exact="0.1" />
+                    <debug_to_file text="$Level" name="'loadouts.log'" directory="'loadouts'" />
+                    <debug_to_file text="$Loadout.{1}" name="'loadouts.log'" directory="'loadouts'" />
+                    <do_all exact="$Loadout.{1}.wares.list.count" counter="$i">
+                        <debug_to_file text="'Loadout: %s'.[$Loadout.{1}.wares.list.{$i}]" name="'loadouts.log'" directory="'loadouts'" />
+                    </do_all>
+                </do_all>
+                <!-- </do_if> -->
+            </actions>
+        </cue>    </cues>
+</mdscript>
