@@ -257,7 +257,7 @@
         <volume start="1.0" distance="10"/>
     </sound>
 
-    <!-- Kinetic Artillery-->
+<!-- Kinetic Artillery / gauss -->
     <sound id="wpn_kinetic_artillery_shoot" description="kinetic_artillery shooting" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
           <select start="extensions\VRO\sfx\weapons\kinetic_arty_1"/>
@@ -272,7 +272,7 @@
         </sample>
         <volume start="1.6" distance="15"/>
     </sound>
-    <!-- CIWS-->
+<!-- CIWS-->
     <sound id="wpn_CIWS_shoot" description="ciws" repeat="-1" is3d="1" preload="1" amount="1" >
         <sample loop="extensions\VRO\sfx\weapons\ciws" />
         <volume start="0.8" distance="5"/>
@@ -289,7 +289,7 @@
         <volume start="0.6" distance="5"/>
     </sound>
 
-    <!-- Heavy Lance Turret-->
+<!-- Heavy Lance Turret-->
     <sound id="wpn_heavy_lance_turret_shoot" description="heavy_lance_turret shooting" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
           <select start="extensions\VRO\sfx\weapons\heavy_lance_1"/>
@@ -320,7 +320,7 @@
         </sample>
       <volume start="0.4" distance="3"/>
     </sound>
-    <!-- Annihilator Turret-->
+<!-- Annihilator Turret-->
     <sound id="wpn_annihilator_turret_shoot" description="annihilator_turret shooting" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
           <select start="extensions\VRO\sfx\weapons\annihilator_1"/>
@@ -335,7 +335,7 @@
         </sample>
         <volume start="1.3" distance="10"/>
     </sound>
-    <!-- Fusion Ray Turret-->
+<!-- Fusion Burst Turret-->
     <sound id="wpn_fusion_ray_turret_shoot" description="fusion_ray shooting" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
           <select start="extensions\VRO\sfx\weapons\fusion_ray_turret_1"/>
@@ -351,7 +351,7 @@
         </sample>
         <volume start="0.7" distance="4"/>
     </sound>
-    <!-- FLAK Turret-->
+<!-- FLAK Turret-->
     <sound id="wpn_flak_turret_shoot" description="flak shooting" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
           <select start="extensions\VRO\sfx\weapons\flak_1"/>
@@ -366,6 +366,33 @@
         </sample>
         <volume start="1.3" distance="10"/>
     </sound>
+<!-- TRI-->
+    <sound id="wpn_tri_shoot" description="TRI shooting" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\tri_1"/>
+        </sample>
+        <volume start="1.0" distance="12"/>
+    </sound>
+    <sound id="wpn_tri_impact" description="TRI impact" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\tri_hit_1"/>
+        </sample>
+        <volume start="1.3" distance="10"/>
+    </sound>
+<!-- plasma array-->
+    <sound id="wpn_parray_shoot" description="parray shooting" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\parray_1"/>
+        </sample>
+        <volume start="1.0" distance="15"/>
+    </sound>
+    <sound id="wpn_parray_impact" description="parray impact" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\parray_hit_1"/>
+        </sample>
+        <volume start="1.3" distance="15"/>
+    </sound>
+
   <!-- Cruise missile-->
     <sound id="wpn_cruise_shoot" description="cruise shooting" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
@@ -425,7 +452,7 @@
           <select start="extensions\VRO\sfx\weapons\xenon_obliterator_1"/>
           <select start="extensions\VRO\sfx\weapons\xenon_obliterator_2"/>
         </sample>
-        <volume start="1.3" distance="10"/>
+        <volume start="1.3" distance="15"/>
     </sound>
     <sound id="wpn_xen_obliterator_impact" description="x" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
@@ -441,7 +468,7 @@
           <select start="extensions\VRO\sfx\weapons\xenon_mauler_1"/>
           <select start="extensions\VRO\sfx\weapons\xenon_mauler_2"/>
         </sample>
-        <volume start="1.3" distance="10"/>
+        <volume start="1.3" distance="20"/>
     </sound>
     <sound id="wpn_xen_mauler_impact" description="x" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
@@ -457,13 +484,13 @@
           <select start="extensions\VRO\sfx\weapons\xenon_phase_2"/>
           <select start="extensions\VRO\sfx\weapons\xenon_phase_3"/>
         </sample>
-        <volume start="1.3" distance="10"/>
+        <volume start="1.3" distance="15"/>
     </sound>
     <sound id="wpn_xen_phase_impact" description="x" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
           <select start="extensions\VRO\sfx\weapons\xenon_phase_hit_1"/>
         </sample>
-        <volume start="1.3" distance="15"/>
+        <volume start="1.3" distance="12"/>
     </sound>
 <!-- Missiles-->
   <sound id="wpn_missile_medium_launch" description="Missile launch" repeat="1" is3d="1" preload="1">
@@ -471,7 +498,7 @@
           <select start="extensions\VRO\sfx\weapons\medium_missile_1"/>
           <select start="extensions\VRO\sfx\weapons\medium_missile_2"/>
         </sample>
-        <volume start="0.8" distance="5"/>
+        <volume start="0.8" distance="6"/>
     </sound>
   <sound id="wpn_missile_torpedo_launch" description="Missile launch" repeat="1" is3d="1" preload="1">
     <sample selection="random">
@@ -479,7 +506,7 @@
           <select start="extensions\VRO\sfx\weapons\torpedo_2"/>
           <select start="extensions\VRO\sfx\weapons\torpedo_3"/>
         </sample>
-        <volume start="0.8" distance="5"/>
+        <volume start="0.8" distance="6"/>
     </sound>
   <sound id="wpn_missile_heavy_launch" description="Missile launch" repeat="1" is3d="1" preload="1">
     <sample selection="random">
@@ -487,12 +514,10 @@
           <select start="extensions\VRO\sfx\weapons\heavy_missile_2"/>
           <select start="extensions\VRO\sfx\weapons\heavy_missile_3"/>
         </sample>
-        <volume start="0.8" distance="5"/>
+        <volume start="0.8" distance="6"/>
     </sound>
 
 </add>
-
-<!-- Missiles-->
 <replace sel="//soundlibrary/sound[@id='wpn_missile_launch']">
 <sound id="wpn_missile_launch" description="Missile launch" repeat="1" is3d="1" preload="1">
     <sample selection="random">

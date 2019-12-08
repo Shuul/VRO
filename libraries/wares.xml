@@ -72,6 +72,116 @@
     <price min="16892256" average="19743830" max="22595405" />
   </replace>
 
+<!-- L guns -->
+<replace sel="//wares/ware[@id='weapon_arg_l_destroyer_01_mk1']">
+  <ware id="weapon_arg_l_destroyer_01_mk1" name="{6699,1181}" description="{6699,1184}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1036709" average="1240788" max="1344866" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="173" />
+        <ware ware="weaponcomponents" amount="86" />
+      </primary>
+    </production>
+    <component ref="weapon_arg_l_destroyer_01_mk1_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+  </ware>
+</replace>
+
+  <replace sel="//wares/ware[@id='weapon_par_l_destroyer_01_mk1']">
+  <ware id="weapon_par_l_destroyer_01_mk1" name="{6699,1181}" description="{6699,1184}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1100201" average="1211335" max="1322468" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="173" />
+        <ware ware="weaponcomponents" amount="86" />
+      </primary>
+    </production>
+    <component ref="weapon_par_l_destroyer_01_mk1_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="holyorder" />
+    <owner faction="paranid" />
+  </ware>
+</replace>
+
+  <replace sel="//wares/ware[@id='weapon_tel_l_destroyer_01_mk1']">
+  <ware id="weapon_tel_l_destroyer_01_mk1" name="{6699,1181}" description="{6699,1184}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="973217" average="1070241" max="1167265" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="173" />
+        <ware ware="weaponcomponents" amount="86" />
+      </primary>
+    </production>
+    <component ref="weapon_tel_l_destroyer_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="ministry" />
+    <owner faction="teladi" />
+  </ware>
+</replace>
+
+<add sel="/wares">
+  <ware id="weapon_arg_l_parray" name="{6699,1191}" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1100201" average="1211335" max="1322468" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="173" />
+        <ware ware="weaponcomponents" amount="86" />
+      </primary>
+    </production>
+    <component ref="weapon_arg_l_parray_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+  </ware>
+
+  <ware id="weapon_par_l_parray" name="{6699,1191}" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1000201" average="1111335" max="1222468" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="173" />
+        <ware ware="weaponcomponents" amount="86" />
+      </primary>
+    </production>
+    <component ref="weapon_par_l_parray_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="holyorder" />
+    <owner faction="paranid" />
+  </ware>
+
+  <ware id="weapon_tel_l_parray" name="{6699,1191}" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="973217" average="1070241" max="1167265" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="173" />
+        <ware ware="weaponcomponents" amount="86" />
+      </primary>
+    </production>
+    <component ref="weapon_tel_l_parray_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="ministry" />
+    <owner faction="teladi" />
+  </ware>
+</add>
 <!-- L turrets prices and materials-->
 <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/price">
     <price min="337000" average="347000" max="357000" />
@@ -125,8 +235,8 @@
       </primary>
 </replace>
 
-<remove sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']"/>
-  <!-- <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/price">
+<!-- <remove sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']"/> -->
+  <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/price">
     <price min="516000" average="536000" max="556000" />
   </replace>
   <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/production/primary">
@@ -135,7 +245,7 @@
         <ware ware="energycells" amount="86" />
         <ware ware="turretcomponents" amount="64" />
       </primary>
-</replace> -->
+</replace>
 
 <replace sel="//wares/ware[@id='turret_arg_l_beam_01_mk1']/price">
     <price min="412000" average="432000" max="462000" />
@@ -686,9 +796,26 @@
     <owner faction="argon" />
   </ware>
 
+<!-- TRI  -->
+	<ware id="turret_par_l_tri" name="{6699,1171}" description="{6699,1174}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="553333" average="593333" max="633333" />
+    <production time="20" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="90" />
+        <ware ware="energycells" amount="226" />
+        <ware ware="turretcomponents" amount="151" />
+      </primary>
+    </production>
+    <component ref="turret_par_l_tri_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.9" />
+    <owner faction="holyorder" />
+    <owner faction="paranid" />
+  </ware>
+
   <!-- GAUSS  -->
 	<ware id="turret_tel_l_gauss" name="{6699,1141}" description="{6699,1144}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="451800" average="491800" max="531800" />
+    <price min="516113" average="546113" max="586113" />
     <production time="20" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="64" />

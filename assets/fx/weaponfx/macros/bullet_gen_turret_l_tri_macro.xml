@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Markus (192.168.3.123) at 04.02.2019_11-29-21-->
+
+<macros>
+  <macro name="bullet_gen_turret_l_tri_macro" class="bullet">
+    <component ref="bullet_gen_tri" />
+    <properties>
+      <ammunition value="3" reload="13" />
+      <bullet speed="3333" lifetime="4.81" amount="1" barrelamount="1" icon="weapon_plasma_mk1" timediff="0.003" angle="0.66" maxhits="1" ricochet="0" scale="0" attach="0" selfdestruct="0" />
+      <reload rate="3" />
+      <damage value="9666" shield="333" repair="0" />
+      <effects>
+        <impact ref="turret_tri_impact" />
+        <launch ref="turret_tri_muzzle" />
+      </effects>
+      <weapon system="turret_longrange" />
+    </properties>
+  </macro>
+</macros>
