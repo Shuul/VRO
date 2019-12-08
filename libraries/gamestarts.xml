@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <diff> 
+  <replace sel="//gamestarts/gamestart[@id='x4ep1_gamestart_fight']/player/ship/loadout/ammunition">
+          <ammunition>
+            <ammunition macro="missile_windstalker_macro" exact="10" optional="true" />
+            <ammunition macro="eq_arg_satellite_01_macro" exact="5" optional="true"/>
+            <ammunition macro="env_deco_nav_beacon_t1_macro" exact="5" optional="true"/>
+            <ammunition macro="eq_arg_resourceprobe_01_macro" exact="5" optional="true"/>
+          </ammunition>
+ </replace>
+
+ <replace sel="//gamestarts/gamestart[@id='x4ep1_gamestart_tutorial2']/player/ship/loadout/ammunition">
+          <ammunition>
+            <ammunition macro="missile_guided_light_mk1_macro" exact="10" optional="true" />
+            <ammunition macro="eq_arg_satellite_01_macro" exact="5" optional="true"/>
+            <ammunition macro="env_deco_nav_beacon_t1_macro" exact="5" optional="true"/>
+            <ammunition macro="eq_arg_resourceprobe_01_macro" exact="5" optional="true"/>
+          </ammunition>
+ </replace>
+
+<replace sel="//gamestarts/gamestart[@id='custom_creative']/player/ship/loadout/ammunition">
+          <ammunition>
+            <ammunition macro="missile_dumbfire_light_mk1_macro" exact="20" optional="1" />
+            <ammunition macro="countermeasure_flares_01_macro" exact="4" optional="false"/>
+            <ammunition macro="eq_arg_satellite_01_macro" exact="10" optional="true" />
+          </ammunition>
+ </replace>
+
+</diff>

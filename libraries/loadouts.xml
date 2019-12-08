@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//loadouts/loadout[@id='flightschool_m_bomber']/ammunition">
+    <ammunition>
+      <ammunition macro="missile_phantom_macro" exact="10" optional="1" />
+      <ammunition macro="missile_dragonfly_macro" exact="10" optional="1" />
+      <ammunition macro="missile_aurora_macro" exact="10" optional="1" />
+      <ammunition macro="missile_hurricane_macro" exact="10" optional="1" />
+      <ammunition macro="countermeasure_flares_01_macro" min="0" max="2" optional="1" />
+    </ammunition>
+  </replace>
+
+  <replace sel="//loadouts/loadout[@id='scenario_combat_arg_destroyer']/ammunition">
+    <ammunition>
+      <ammunition macro="missile_beluga_macro" exact="50"/>
+      <ammunition macro="missile_dragonfly_macro" exact="50"/>
+      <ammunition macro="missile_windstalker_macro" exact="50"/>
+      <ammunition macro="missile_silkworm_macro" exact="50"/>
+      <ammunition macro="ship_gen_s_lasertower_01_a_macro" exact="50"/>
+      <ammunition macro="countermeasure_flares_01_macro" exact="20"/>
+      <unit macro="ship_gen_xs_repairdrone_01_a_macro" exact="3"/>
+      <unit macro="ship_gen_s_fightingdrone_01_a_macro" exact="7"/>
+    </ammunition>
+  </replace>
+
+  <replace sel="//loadouts/loadout[@id='scenario_combat_arg_bomber']/ammunition">
+    <ammunition>
+      <ammunition macro="missile_windstalker_macro" exact="24"/>
+      <ammunition macro="missile_hurricane_macro" exact="24"/>
+    </ammunition>
+  </replace>
+
+  <replace sel="//loadouts/loadout[@id='story_paranid_gride_gorgon']/ammunition">
+    <ammunition>
+      <ammunition macro="missile_firestorm_macro" exact="60"/>
+      <ammunition macro="missile_phantom_macro" exact="44"/>
+      <ammunition macro="ship_gen_xs_lasertower_01_a_macro" exact="10"/>
+      <ammunition macro="weapon_gen_mine_03_macro" exact="10"/>
+      <ammunition macro="eq_arg_satellite_02_macro"/>
+      <ammunition macro="ship_gen_s_lasertower_01_a_macro" exact="20"/>
+      <ammunition macro="countermeasure_flares_01_macro" exact="8"/>
+      <unit macro="ship_gen_xs_repairdrone_01_a_macro" exact="3"/>
+      <unit macro="ship_gen_s_fightingdrone_01_a_macro" exact="5"/>
+    </ammunition>
+  </replace>
+
+</diff>

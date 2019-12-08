@@ -1,0 +1,231 @@
+<!-- <mdscript name="WeaponFind" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/x4 extract/libraries/md.xsd"> -->
+<mdscript name="WeaponFind" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/x4 extract/libraries/md.xsd">
+    <cues>
+        <cue name="Run" instantiate="true" checktime="30s" checkinterval="300s">
+            <actions>
+                <debug_to_file append="false" text="'start' + player.age" name="'count.log'" directory="'map_reduce'" />
+                <debug_to_file append="false" text="'start' + player.age" name="'wares.log'" directory="'map_reduce'" />
+                <debug_to_file append="false" text="'start' + player.age" name="'jobs.log'" directory="'map_reduce'" />
+                <signal_cue cue="Count" />
+                <signal_cue cue="Wares" />
+                <signal_cue cue="Jobs" />
+            </actions>
+        </cue>
+        <cue name="Count" instantiate="true">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <!-- create table -->
+                <set_value name="$Table" exact="table[]" />
+                <!-- set the factions as keys of the table -->
+                <set_value name="$Factions" exact="lookup.faction.list" />
+                <do_for_each in="$Factions">
+                    <set_value name="$Table.{loop.element}" exact="table[
+                        $ShipsTotal = 0,
+                        $MilitaryShips = 0,
+                        $Stations = 0,
+                        $Claims = 0,
+                        $Sectors = 0,
+                    ]" />
+                </do_for_each>
+                <!-- find all the ships -->
+                <find_ship name="$Ships" space="player.galaxy" multiple="true" sortbyvalue="loop.element.dps.all" sortdescending="true" />
+                <!-- place the ships under their corresponding faction -->
+                <do_for_each in="$Ships">
+                    <set_value name="$Table.{loop.element.owner}.$ShipsTotal" exact="1" operation="add" />
+                    <do_if value="loop.element.primarypurpose == purpose.fight">
+                        <set_value name="$Table.{loop.element.owner}.$MilitaryShips" exact="1" operation="add" />
+                    </do_if>
+                </do_for_each>
+                <!-- find all the stations -->
+                <find_station name="$Stations" space="player.galaxy" multiple="true" />
+                <do_for_each in="$Stations">
+                    <set_value name="$Table.{loop.element.owner}.$Stations" exact="1" operation="add" />
+                    <do_if value="loop.element.canclaimownership">
+                        <set_value name="$Table.{loop.element.owner}.$Claims" exact="1" operation="add" />
+                    </do_if>
+                </do_for_each>
+                <!-- find all the sectors -->
+                <find_sector name="$Sectors" multiple="true" space="player.galaxy"></find_sector>
+                <do_for_each in="$Sectors">
+                    <set_value name="$Table.{loop.element.owner}.$Sectors" exact="1" operation="add" />
+                </do_for_each>
+                <!--  -->
+                <do_for_each in="$Table">
+                    <debug_to_file text="'faction: %s'.[loop.key]" name="'count.log'" directory="'map_reduce'" />
+                    <do_for_each in="$Table.{loop.key}">
+                        <debug_to_file text="' key: %s value: %s'.[loop.key, loop.value]" name="'count.log'" directory="'map_reduce'" />
+                    </do_for_each>
+                </do_for_each>
+            </actions>
+        </cue>
+        <cue name="Wares" instantiate="true">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <set_value name="$WareTable" exact="table[]" />
+                <find_station name="$Stations" space="player.galaxy" multiple="true" />
+                <do_for_each in="$Stations" name="$Station">
+                    <do_if value="not $WareTable.{$Station.owner}?">
+                        <set_value name="$WareTable.{$Station.owner}" exact="table[]" />
+                    </do_if>
+                    <do_for_each in="$Station.cargo.table">
+                        <do_if value="not $WareTable.{$Station.owner}.{loop.key}?">
+                            <set_value name="$WareTable.{$Station.owner}.{loop.key}" exact="table[
+                            $Count = 0,
+                            $Volume = 0,
+                            ]" />
+                        </do_if>
+                        <set_value name="$WareTable.{$Station.owner}.{loop.key}.$Count" exact="loop.value" operation="add" />
+                        <set_value name="$WareTable.{$Station.owner}.{loop.key}.$Volume" exact="(loop.value * loop.key.volume)i" operation="add" />
+                        <!-- <debug_text text="loop.key" />
+                        <debug_text text="loop.value" /> -->
+                    </do_for_each>
+                </do_for_each>
+                <do_for_each in="$WareTable">
+                    <debug_to_file text="loop.key.knownname" name="'wares.log'" directory="'map_reduce'" />
+                    <do_for_each in="$WareTable.{loop.key}">
+                        <debug_to_file text="'ware: %s %s'.[loop.key.name, loop.value]" name="'wares.log'" directory="'map_reduce'" />
+                    </do_for_each>
+                </do_for_each>
+                <!-- <signal_cue_instantly cue="TableRecurse" param="$WareTable" /> -->
+                <!-- <do_for_each in="$Stations" name="$Station">
+             
+                    <do_if value="$Station.cargo.count gt 0">
+                    <set_value name="$Cargo" exact="$Station.cargo" />
+                            <do_if value="not $WareTable.{$Station.owner}.{$Ware}?">
+                                <set_value name="$WareTable.{$Station.owner}.{$Ware}" exact="table[
+                            $Count = 0,
+                            $Volume = 0,
+                            ]" />
+                            </do_if>
+                            <set_value name="$WareTable.{$Station.owner}.{$Ware}.$Count" exact="$Cargo.{$Ware}.count" operation="add" />
+                            <set_value name="$WareTable.{$Station.owner}.{$Ware}.$Volume" exact="($Cargo.{$Ware}.count * $Ware.volume)i" operation="add" />
+                        </do_for_each>
+                    </do_if>
+                </do_for_each>
+                <do_for_each in="$WareTable" name="$Faction" valuename="$Wares">
+                    <debug_to_file text="$Faction.knownname" name="'wares.log'" directory="'map_reduce'" />
+                    <do_for_each in="$Wares" name="$Ware">
+                        <debug_to_file text="'ware: %s count: %s volume: %s'.[$Ware.name, $Ware.Count, $Ware.$Volume]" name="'wares.log'" directory="'map_reduce'" />
+                    </do_for_each>
+                </do_for_each> -->
+            </actions>
+        </cue>
+        <cue name="Jobs" instantiate="true">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <set_value name="$JobTable" exact="table[]" />
+                <find_ship name="$Ships" space="player.galaxy" multiple="true" />
+                <do_for_each in="$Ships" name="$Ship">
+                    <do_if value="not $JobTable.{$Ship.owner}?">
+                        <set_value name="$JobTable.{$Ship.owner}" exact="table[]" />
+                    </do_if>
+                    <do_if value="not $JobTable.{$Ship.owner}.{'$' + $Ship.job}?">
+                        <set_value name="$JobTable.{$Ship.owner}.{'$' + $Ship.job}" exact="table[$Count = 0]" />
+                    </do_if>
+                    <set_value name="$JobTable.{$Ship.owner}.{'$' + $Ship.job}.$Count" exact="1" operation="add" />
+                </do_for_each>
+                <do_for_each in="$JobTable" name="$Faction" valuename="$Jobs">
+                    <debug_to_file text="$Faction.knownname" name="'jobs.log'" directory="'map_reduce'" />
+                    <do_for_each in="$Jobs" name="$Job">
+                        <debug_to_file text="'job: %s count: %s'.[$Job, loop.value]" name="'jobs.log'" directory="'map_reduce'" />
+                    </do_for_each>
+                </do_for_each>
+            </actions>
+        </cue>
+        <cue name="TableRecurse" instantiate="true">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <set_value name="$Table" exact="event.param" />
+                <do_for_each in="$Table">
+                    <debug_to_file text="'tablelog: key - ' + loop.key" name="'table.log'" directory="'teleportations_main'" chance="global.$TpwarDebugChance" />
+                    <debug_to_file text="'tablelog: value - ' + loop.value" name="'table.log'" directory="'teleportations_main'" chance="global.$TpwarDebugChance" />
+                    <do_if value="typeof loop.value == datatype.table">
+                        <signal_cue_instantly cue="PassThrough" param="loop.value" />
+                    </do_if>
+                    <do_if value="typeof loop.value == datatype.list">
+                        <do_all exact="loop.value.count" counter="$i">
+                            <debug_to_file text="'list - ' + loop.value.{$i}" name="'table.log'" directory="'teleportations_main'" chance="global.$TpwarDebugChance" />
+                        </do_all>
+                    </do_if>
+                    <do_if value="typeof loop.value == datatype.group">
+                        <do_all exact="loop.value.count" counter="$i">
+                            <debug_to_file text="'group - ' + loop.value.{$i}" name="'table.log'" directory="'teleportations_main'" chance="global.$TpwarDebugChance" />
+                        </do_all>
+                    </do_if>
+                </do_for_each>
+            </actions>
+        </cue>
+        <cue name="PassThrough" instantiate="true">
+            <conditions>
+                <event_cue_signalled />
+            </conditions>
+            <actions>
+                <set_value name="$Table" exact="event.param" />
+                <signal_cue_instantly cue="TableRecurse" param="$Table" />
+            </actions>
+        </cue>
+        <!-- <cue name="WeaponFindStart">
+            <conditions>
+                <event_cue_signalled cue="md.Setup.GameStart" />
+            </conditions>
+            <delay exact="15s" />
+            <actions>
+                <debug_to_file text="'start'" name="'macrotable.log'" directory="'macrotable'" append="false"/>
+
+                <set_value name="$MacroTable" exact="table[]" />
+                <set_value name="$AllMacros" exact="lookup.macro.list" />
+                <find_ship name="$Ships" space="player.galaxy" multiple="true" />
+                <do_for_each in="$Ships" name="$Ship">
+                    <find_object_component name="$Weapons" object="$Ship" multiple="true">
+                        <match_any>
+                            <match class="[class.turret, class.weapon]" negate="true" />
+                            <match integrated="true" />
+                            <match integrated="false" />
+                        </match_any>
+                    </find_object_component>
+                    <do_for_each in="$Weapons" name="$Weapon">
+                        <do_for_each in="$AllMacros" name="$Macro">
+                            <do_if value="$Weapon.macro == $Macro">
+                                <do_if value="not $MacroTable.{$Macro}.$Count?">
+                                    <set_value name="$MacroTable.{loop.element}" exact="table[$Count = 0]" />
+                                </do_if>
+                                <set_value name="$MacroTable.{$Macro}.$Count" exact="1" operation="add" />
+                            </do_if>
+                        </do_for_each>
+                    </do_for_each>
+                </do_for_each>
+                <do_for_each in="$MacroTable" valuename="$Amount">
+                    <debug_to_file text="'macro: %s count %s'.[loop.key.name, $Amount]" name="'macrotable.log'" directory="'macrotable'" />
+                </do_for_each>
+            </actions>
+        </cue> -->
+        <!-- <cue name="Loadouts" instantiate="true">
+            <conditions>
+                <event_player_changed_target />
+            </conditions>
+            <actions>
+                <debug_to_file text="'start'" name="'loadouts.log'" directory="'loadouts'" append="false" />
+                <debug_to_file text="event.param.macro" name="'loadouts.log'" directory="'loadouts'" />
+                <debug_to_file text="event.param.knownname" name="'loadouts.log'" directory="'loadouts'" />
+                <set_value name="$Level" exact="0.0" />
+                <do_all exact="11">
+                    <generate_loadout result="$Loadout" macro="event.param.macro" faction="event.param.owner" variation="0.0" level="$Level" />
+                    <set_value name="$Level" operation="add" exact="0.1" />
+                    <debug_to_file text="$Level" name="'loadouts.log'" directory="'loadouts'" />
+                    <debug_to_file text="$Loadout.{1}" name="'loadouts.log'" directory="'loadouts'" />
+                    <do_all exact="$Loadout.{1}.wares.list.count" counter="$i">
+                        <debug_to_file text="'Loadout: %s'.[$Loadout.{1}.wares.list.{$i}]" name="'loadouts.log'" directory="'loadouts'" />
+                    </do_all>
+                </do_all>
+            </actions>
+        </cue> -->
+    </cues>
+</mdscript>
