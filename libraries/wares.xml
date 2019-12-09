@@ -351,43 +351,43 @@
 
 
 <!-- launchers -->
-  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1_macro']/price">
+  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/price">
   <price min="106396" average="122269" max="138141" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2_macro']/price">
+  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/price">
   <price min="143964" average="164960" max="185955" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1_macro']/price">
-    <price min="52175" average="59290" max="66404" />
+  <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']/price">
+    <price min="22175" average="29290" max="26404" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk2_macro']/price">
-  <price min="60459" average="68704" max="76948" />
+  <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']/price">
+  <price min="30459" average="38704" max="40948" />
   </replace>
 
-  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1_macro']/price">
+  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1']/price">
   <price min="126396" average="142269" max="158141" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2_macro']/price">
+  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/price">
   <price min="163964" average="184960" max="205955" />
   </replace>
-   <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2_macro']/price">
-    <price min="54175" average="61290" max="68404" />
+   <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/price">
+    <price min="14175" average="21290" max="28404" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2_macro']/price">
-  <price min="62459" average="70704" max="78948" />
+  <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/price">
+  <price min="32459" average="40704" max="48948" />
   </replace>
 
-  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1_macro']/price">
+  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/price">
   <price min="116396" average="132269" max="148141" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1_macro']/price">
+  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/price">
   <price min="153964" average="174960" max="195955" />
   </replace>
-   <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1_macro']/price">
-    <price min="52175" average="59290" max="66404" />
+   <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/price">
+    <price min="22175" average="29290" max="46404" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk2_macro']/price">
-  <price min="60459" average="68704" max="76948" />
+  <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk2']/price">
+  <price min="30459" average="38704" max="46948" />
   </replace>
 
 <!-- Other vanilla weapons prices adn materials -->
@@ -1636,6 +1636,14 @@
     <component ref="ship_xen_xl_mdestroyer_01_a_macro" />
     <restriction licence="capitalship" />
     <owner faction="xenon" />
+  </ware>
+
+<!-- TEST  -->
+  <ware id="ishield_arg_s_fighter_02_a" name="{6699,9999}" description="{6699,9999}" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_fighter_02_a_macro" amount="1" />
+    <use threshold="0" />
+    <owner faction="argon" />
   </ware>
 
   </add>
