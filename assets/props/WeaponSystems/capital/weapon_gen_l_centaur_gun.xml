@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<components>
+	<component name="weapon_gen_l_centaur_gun" class="weapon">
+		<source geometry="assets\props\WeaponSystems\standard\weapon_xen_m_laser_01_mk1_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="Connection01" hidden="true" tags="part platformcollision forceoutline  ">
+				<offset/>
+				<restrictions>
+					<restriction type="rotation_y">
+						<limits>
+							<min value="-10"/>
+							<max value="10"/>
+						</limits>
+					</restriction>
+				</restrictions>
+				<parts>
+					<part name="part_rotator">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="5.000001E-02" y="5.000001E-02" z="5.000001E-02"/>
+							<center x="0" y="0" z="0"/>
+						</size>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection02" tags="part platformcollision forceoutline  " hidden="true" parent="part_rotator">
+				<restrictions>
+					<restriction type="rotation_x">
+						<limits>
+							<min value="-10"/>
+							<max value="10"/>
+						</limits>
+					</restriction>
+				</restrictions>
+				<offset>
+					<position x="5.245209E-06" y="0" z="0.5196567"/>
+				</offset>
+				<parts>
+					<part name="part_gun">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="5.000001E-02" y="5.000001E-02" z="5.000001E-02"/>
+							<center x="0" y="0" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="con_laser01" tags="laser " parent="part_gun">
+				<offset>
+					<position x="2.401304E-02" y="-1.844508E-03" z="0.1305029"/>
+				</offset>
+			</connection>
+			<connection name="WeaponCon_01" tags="component weapon large centaur ">
+				<offset/>
+			</connection>
+		</connections>
+	</component>
+</components>

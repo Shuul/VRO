@@ -8,8 +8,8 @@
   <replace sel="//wares/ware[@id='turret_arg_m_beam_02_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_gatling_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_gatling_02_mk1']/use/@threshold">0.0</replace>
-  <replace sel="//wares/ware[@id='turret_arg_m_plasma_01_mk1']/use/@threshold">0.4</replace>
-  <replace sel="//wares/ware[@id='turret_arg_m_plasma_02_mk1']/use/@threshold">0.4</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_plasma_01_mk1']/use/@threshold">0.91</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_plasma_02_mk1']/use/@threshold">0.91</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_par_l_beam_01_mk1']/use/@threshold">0.95</replace>
@@ -18,8 +18,8 @@
   <replace sel="//wares/ware[@id='turret_par_m_beam_02_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_par_m_gatling_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_par_m_gatling_02_mk1']/use/@threshold">0.0</replace>
-  <replace sel="//wares/ware[@id='turret_par_m_plasma_01_mk1']/use/@threshold">0.4</replace>
-  <replace sel="//wares/ware[@id='turret_par_m_plasma_02_mk1']/use/@threshold">0.4</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_plasma_01_mk1']/use/@threshold">0.91</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_plasma_02_mk1']/use/@threshold">0.91</replace>
   <replace sel="//wares/ware[@id='turret_par_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_par_m_shotgun_02_mk1']/use/@threshold">0.0</replace>	
   <replace sel="//wares/ware[@id='turret_tel_l_beam_01_mk1']/use/@threshold">0.95</replace>
@@ -28,8 +28,8 @@
   <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/use/@threshold">0.85</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_gatling_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_gatling_02_mk1']/use/@threshold">0.0</replace>
-  <replace sel="//wares/ware[@id='turret_tel_m_plasma_01_mk1']/use/@threshold">0.4</replace>
-  <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/use/@threshold">0.4</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_plasma_01_mk1']/use/@threshold">0.91</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/use/@threshold">0.91</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/use/@threshold">0.85</replace>
@@ -131,6 +131,26 @@
 </replace>
 
 <add sel="/wares">
+  <ware id="weapon_arg_l_fa_centaur" name="{6699,1181}" description="{6699,1184}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1036709" average="1240788" max="1344866" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="173" />
+        <ware ware="weaponcomponents" amount="86" />
+      </primary>
+    </production>
+    <component ref="weapon_arg_l_fa_centaur_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+  </ware>
+</add>
+<!-- Heavy Plasma Array -->
+
+<add sel="/wares">
   <ware id="weapon_arg_l_parray" name="{6699,1191}" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="1100201" average="1211335" max="1322468" />
     <production time="10" amount="1" method="default" name="{20206,101}">
@@ -141,6 +161,23 @@
       </primary>
     </production>
     <component ref="weapon_arg_l_parray_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+  </ware>
+
+  <ware id="weapon_arg_l_parray_centaur" name="{6699,1191}" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1100201" average="1211335" max="1322468" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="173" />
+        <ware ware="weaponcomponents" amount="86" />
+      </primary>
+    </production>
+    <component ref="weapon_arg_l_parray_centaur_macro" amount="1" />
     <restriction licence="capitalequipment" />
     <use threshold="0" />
     <owner faction="alliance" />
@@ -235,7 +272,6 @@
       </primary>
 </replace>
 
-<!-- <remove sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']"/> -->
   <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/price">
     <price min="516000" average="536000" max="556000" />
   </replace>
@@ -278,117 +314,547 @@
       </primary>
 </replace>
 
+<!-- M turrets prices and materials-->
+<replace sel="//wares/ware[@id='turret_arg_m_beam_01_mk1']/price">
+    <price min="76000" average="81000" max="85000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_beam_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_arg_m_beam_02_mk1']/price">
+    <price min="76000" average="81000" max="85000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_beam_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+
+  <replace sel="//wares/ware[@id='turret_par_m_beam_01_mk1']/price">
+    <price min="76000" average="81000" max="85000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_beam_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_beam_02_mk1']/price">
+    <price min="76000" average="81000" max="85000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_beam_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+
+  <replace sel="//wares/ware[@id='turret_tel_m_beam_01_mk1']/price">
+    <price min="76000" average="81000" max="85000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_beam_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/price">
+    <price min="76000" average="81000" max="85000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+<!---->
+<replace sel="//wares/ware[@id='turret_arg_m_flak_01_mk1']/price">
+    <price min="59000" average="61500" max="70000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_flak_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="22" />
+        <ware ware="turretcomponents" amount="14" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_arg_m_flak_02_mk1']/price">
+    <price min="59000" average="61500" max="70000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_flak_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="22" />
+        <ware ware="turretcomponents" amount="14" />
+      </primary>
+</replace>
+<!---->
+<replace sel="//wares/ware[@id='turret_arg_m_gatling_01_mk1']/price">
+    <price min="65000" average="67500" max="70000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_gatling_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="21" />
+        <ware ware="turretcomponents" amount="11" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_arg_m_gatling_02_mk1']/price">
+    <price min="65000" average="67500" max="70000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_gatling_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="21" />
+        <ware ware="turretcomponents" amount="11" />
+      </primary>
+</replace>
+
+<replace sel="//wares/ware[@id='turret_par_m_gatling_01_mk1']/price">
+    <price min="65000" average="67500" max="70000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_gatling_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="21" />
+        <ware ware="turretcomponents" amount="11" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_par_m_gatling_02_mk1']/price">
+    <price min="65000" average="67500" max="70000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_gatling_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="21" />
+        <ware ware="turretcomponents" amount="11" />
+      </primary>
+</replace>
+
+<replace sel="//wares/ware[@id='turret_tel_m_gatling_01_mk1']/price">
+    <price min="65000" average="67500" max="70000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_gatling_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="21" />
+        <ware ware="turretcomponents" amount="11" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_tel_m_gatling_02_mk1']/price">
+    <price min="65000" average="67500" max="70000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_gatling_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="21" />
+        <ware ware="turretcomponents" amount="11" />
+      </primary>
+</replace>
+<!---->
+<replace sel="//wares/ware[@id='turret_arg_m_laser_01_mk1']/price">
+    <price min="74573" average="80145" max="86400" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_laser_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_arg_m_laser_02_mk1']/price">
+    <price min="74573" average="80145" max="86400" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_laser_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+
+<replace sel="//wares/ware[@id='turret_par_m_laser_01_mk1']/price">
+    <price min="74573" average="80145" max="86400" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_laser_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_par_m_laser_02_mk1']/price">
+    <price min="74573" average="80145" max="86400" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_laser_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+
+<replace sel="//wares/ware[@id='turret_tel_m_laser_01_mk1']/price">
+    <price min="74573" average="80145" max="86400" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_laser_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_tel_m_laser_02_mk1']/price">
+    <price min="74573" average="80145" max="86400" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_laser_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="26" />
+        <ware ware="turretcomponents" amount="13" />
+      </primary>
+</replace>
+<!---->
+<replace sel="//wares/ware[@id='turret_arg_m_plasma_01_mk1']/price">
+    <price min="86286" average="90864" max="94850" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_plasma_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_arg_m_plasma_02_mk1']/price">
+    <price min="86286" average="90864" max="94850" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_plasma_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+</replace>
+
+<replace sel="//wares/ware[@id='turret_par_m_plasma_01_mk1']/price">
+    <price min="86286" average="90864" max="94850" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_plasma_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_par_m_plasma_02_mk1']/price">
+    <price min="86286" average="90864" max="94850" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_plasma_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+</replace>
+
+<replace sel="//wares/ware[@id='turret_tel_m_plasma_01_mk1']/price">
+    <price min="86286" average="90864" max="94850" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_plasma_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/price">
+    <price min="86286" average="90864" max="94850" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+</replace>
+<!---->
+
+<replace sel="//wares/ware[@id='turret_arg_m_shotgun_01_mk1']/price">
+    <price min="60217" average="63433" max="67845" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_shotgun_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="turretcomponents" amount="20" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_arg_m_shotgun_02_mk1']/price">
+    <price min="60217" average="63433" max="67845" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_shotgun_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="turretcomponents" amount="20" />
+      </primary>
+</replace>
+
+<replace sel="//wares/ware[@id='turret_par_m_shotgun_01_mk1']/price">
+    <price min="60217" average="63433" max="67845" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_shotgun_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="turretcomponents" amount="20" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_par_m_shotgun_02_mk1']/price">
+    <price min="60217" average="63433" max="67845" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_par_m_shotgun_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="turretcomponents" amount="20" />
+      </primary>
+</replace>
+
+<replace sel="//wares/ware[@id='turret_tel_m_shotgun_01_mk1']/price">
+    <price min="60217" average="63433" max="67845" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_shotgun_01_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="turretcomponents" amount="20" />
+      </primary>
+</replace>
+<replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/price">
+    <price min="60217" average="63433" max="67845" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/production/primary">
+    <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="turretcomponents" amount="20" />
+      </primary>
+</replace>
+
+
 <!-- missile turrets prices -->
   <replace sel="//wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/price">
-      <price min="60200" average="63000" max="65300" />
+      <price min="41200" average="44000" max="46300" />
   </replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_dumbfire_02_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="20" />
+        <ware ware="turretcomponents" amount="8" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='turret_par_m_dumbfire_02_mk1']/price">
-      <price min="60200" average="63000" max="65300" />
+      <price min="41200" average="44000" max="46300" />
   </replace>
+    <replace sel="//wares/ware[@id='turret_par_m_dumbfire_02_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="20" />
+        <ware ware="turretcomponents" amount="8" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/price">
-      <price min="60200" average="63000" max="65300" />
+      <price min="41200" average="44000" max="46300" />
   </replace>
+    <replace sel="//wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="20" />
+        <ware ware="turretcomponents" amount="8" />
+  </primary>
+  </replace>
+
 
   <replace sel="//wares/ware[@id='turret_arg_m_guided_02_mk1']/price">
-    <price min="75000" average="77000" max="79000" />
+    <price min="58000" average="60000" max="64000" />
   </replace>
+      <replace sel="//wares/ware[@id='turret_tel_m_dumbfire_02_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="turretcomponents" amount="10" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='turret_par_m_guided_02_mk1']/price">
-    <price min="75000" average="77000" max="79000" />
+    <price min="58000" average="60000" max="64000" />
+  </replace>
+        <replace sel="//wares/ware[@id='turret_par_m_guided_02_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="turretcomponents" amount="10" />
+  </primary>
   </replace>
   <replace sel="//wares/ware[@id='turret_tel_m_guided_02_mk1']/price">
-    <price min="75000" average="77000" max="79000" />
+    <price min="58000" average="60000" max="64000" />
   </replace>
-<!-- medium turrets prices -->
-  <replace sel="//wares/ware[@id='turret_arg_m_gatling_02_mk1']/price">
-      <price min="62200" average="65000" max="67300" />
+        <replace sel="//wares/ware[@id='turret_tel_m_guided_02_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="turretcomponents" amount="10" />
+  </primary>
   </replace>
-  <replace sel="//wares/ware[@id='turret_par_m_gatling_02_mk1']/price">
-      <price min="62200" average="65000" max="67300" />
-  </replace>
-  <replace sel="//wares/ware[@id='turret_tel_m_gatling_02_mk1']/price">
-      <price min="62200" average="65000" max="67300" />
-  </replace>
-
-  <replace sel="//wares/ware[@id='turret_arg_m_laser_02_mk1']/price">
-    <price min="78000" average="81000" max="84000" />
-  </replace>
-  <replace sel="//wares/ware[@id='turret_par_m_laser_02_mk1']/price">
-    <price min="78000" average="81000" max="84000" />
-  </replace>
-  <replace sel="//wares/ware[@id='turret_tel_m_laser_02_mk1']/price">
-    <price min="78000" average="81000" max="84000" />
-  </replace>
-
-  <replace sel="//wares/ware[@id='turret_arg_m_beam_02_mk1']/price">
-    <price min="76000" average="79000" max="82000" />
-  </replace>
-  <replace sel="//wares/ware[@id='turret_par_m_beam_02_mk1']/price">
-    <price min="76000" average="79000" max="82000" />
-  </replace>
-  <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/price">
-    <price min="76000" average="79000" max="82000" />
-  </replace>
-
-  <replace sel="//wares/ware[@id='turret_arg_m_plasma_02_mk1']/price">
-    <price min="870000" average="89000" max="910000" />
-  </replace>
-  <replace sel="//wares/ware[@id='turret_par_m_plasma_02_mk1']/price">
-    <price min="870000" average="89000" max="910000" />
-  </replace>
-  <replace sel="//wares/ware[@id='turret_tel_m_plasma_02_mk1']/price">
-    <price min="870000" average="89000" max="910000" />
-  </replace>
-
-  <replace sel="//wares/ware[@id='turret_arg_m_shotgun_02_mk1']/price">
-      <price min="59200" average="62000" max="65300" />
-  </replace>
-  <replace sel="//wares/ware[@id='turret_par_m_shotgun_02_mk1']/price">
-      <price min="59200" average="62000" max="65300" />
-  </replace>
-  <replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/price">
-      <price min="59200" average="62000" max="65300" />
-  </replace>
-
 
 <!-- launchers -->
   <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/price">
-  <price min="106396" average="122269" max="138141" />
+  <price min="90396" average="102269" max="128141" />
   </replace>
+  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="10" />
+        <ware ware="energycells" amount="56" />
+        <ware ware="weaponcomponents" amount="28" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/price">
-  <price min="143964" average="164960" max="185955" />
+  <price min="131964" average="152960" max="173955" />
   </replace>
+    <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="10" />
+        <ware ware="energycells" amount="56" />
+        <ware ware="weaponcomponents" amount="28" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']/price">
-    <price min="22175" average="29290" max="26404" />
+    <price min="32175" average="39290" max="36404" />
   </replace>
+    <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="13" />
+        <ware ware="weaponcomponents" amount="10" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']/price">
-  <price min="30459" average="38704" max="40948" />
+  <price min="35459" average="43704" max="47948" />
   </replace>
+    <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="13" />
+        <ware ware="weaponcomponents" amount="10" />
+  </primary>
+  </replace>
+
 
   <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1']/price">
-  <price min="126396" average="142269" max="158141" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/price">
-  <price min="163964" average="184960" max="205955" />
-  </replace>
-   <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/price">
-    <price min="14175" average="21290" max="28404" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/price">
-  <price min="32459" average="40704" max="48948" />
-  </replace>
-
-  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/price">
   <price min="116396" average="132269" max="148141" />
   </replace>
+    <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="10" />
+        <ware ware="energycells" amount="56" />
+        <ware ware="weaponcomponents" amount="28" />
+  </primary>
+  </replace>
+
+  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/price">
+  <price min="133964" average="154960" max="180955" />
+  </replace>
+    <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="10" />
+        <ware ware="energycells" amount="56" />
+        <ware ware="weaponcomponents" amount="28" />
+  </primary>
+  </replace>
+
+   <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk1']/price">
+    <price min="34175" average="41290" max="48404" />
+  </replace>
+    <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="13" />
+        <ware ware="weaponcomponents" amount="10" />
+  </primary>
+  </replace>
+
+  <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/price">
+  <price min="48459" average="56704" max="62948" />
+  </replace>
+    <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="13" />
+        <ware ware="weaponcomponents" amount="10" />
+  </primary>
+  </replace>
+
+
   <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/price">
-  <price min="153964" average="174960" max="195955" />
+  <price min="136396" average="152269" max="168141" />
   </replace>
+    <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="10" />
+        <ware ware="energycells" amount="56" />
+        <ware ware="weaponcomponents" amount="30" />
+  </primary>
+  </replace>
+
+  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/price">
+  <price min="153964" average="174960" max="195113" />
+  </replace>
+    <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="10" />
+        <ware ware="energycells" amount="56" />
+        <ware ware="weaponcomponents" amount="30" />
+  </primary>
+  </replace>
+
    <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/price">
-    <price min="22175" average="29290" max="46404" />
+    <price min="72175" average="88290" max="95404" />
   </replace>
+    <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="15" />
+        <ware ware="weaponcomponents" amount="11" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk2']/price">
-  <price min="30459" average="38704" max="46948" />
+  <price min="85459" average="98704" max="103948" />
   </replace>
+    <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk2']/production/primary">
+  <primary>
+        <ware ware="advancedelectronics" amount="2" />
+        <ware ware="energycells" amount="15" />
+        <ware ware="weaponcomponents" amount="11" />
+  </primary>
+  </replace>
+
 
 <!-- Other vanilla weapons prices adn materials -->
 <replace sel="//wares/ware[@id='weapon_arg_s_ion_01_mk1']/price">
@@ -726,6 +1192,22 @@
 		<owner faction="teladi" />
 		<owner faction="ministry" />
     </ware>
+
+<!-- Centaur-->
+		<!-- <ware id="ship_arg_l_centaur_a" name="{855021,130}" description="{855021,131}" transport="ship" size="ship" volume="1" tags="ship">
+			<price min="5450225" average="7266966" max="9083708" />
+		<production time="150" amount="1" method="default" name="{20206,101}">
+		  <primary>
+		  <ware ware="energycells" amount="360" />
+		  <ware ware="hullparts" amount="1450" />
+		  </primary>
+    </production>
+		<component ref="ship_arg_l_centaur_a_macro" amount="1" />
+    <restriction licence="capitalship" />
+    <owner faction="antigone" />
+		<owner faction="argon" />
+		</ware> -->
+
 <!-- FLAK TURRETS -->
 	<ware id="turret_arg_l_flak" name="{6699,1011}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
     <price min="131000" average="141000" max="147000" />
@@ -790,7 +1272,7 @@
     </production>
     <component ref="turret_arg_l_ppc_macro" amount="1" />
     <restriction licence="capitalequipment" />
-    <use threshold="0.9" />
+    <use threshold="0.95" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
@@ -808,7 +1290,7 @@
     </production>
     <component ref="turret_par_l_tri_macro" amount="1" />
     <restriction licence="capitalequipment" />
-    <use threshold="0.9" />
+    <use threshold="0.91" />
     <owner faction="holyorder" />
     <owner faction="paranid" />
   </ware>
@@ -825,7 +1307,7 @@
     </production>
     <component ref="turret_tel_l_gauss_macro" amount="1" />
     <restriction licence="capitalequipment" />
-    <use threshold="0.7" />
+    <use threshold="0.85" />
 		<owner faction="teladi" />
 		<owner faction="ministry" />
   </ware>
@@ -1065,6 +1547,27 @@
     <owner faction="teladi" />
   </ware>
 
+  <ware id="weapon_gen_m_cig_centaur" name="{6699,1131}" description="{20105,1134}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="259750" average="269750" max="280750" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="19" />
+        <ware ware="energycells" amount="76" />
+        <ware ware="weaponcomponents" amount="38" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_m_cig_centaur_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.6" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="holyorder" />
+    <owner faction="ministry" />
+    <owner faction="paranid" />
+    <owner faction="teladi" />
+  </ware>
+
 <!-- ISR -->
   <ware id="weapon_gen_m_isr" name="{6699,1161}" description="{20105,1164}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="215000" average="228604" max="232000" />
@@ -1076,6 +1579,27 @@
       </primary>
     </production>
     <component ref="weapon_gen_m_isr_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.2" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="holyorder" />
+    <owner faction="ministry" />
+    <owner faction="paranid" />
+    <owner faction="teladi" />
+  </ware>
+
+  <ware id="weapon_gen_m_isr_centaur" name="{6699,1161}" description="{20105,1164}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="215000" average="228604" max="232000" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="16" />
+        <ware ware="energycells" amount="64" />
+        <ware ware="weaponcomponents" amount="32" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_m_isr_centaur_macro" amount="1" />
     <restriction licence="capitalequipment" />
     <use threshold="0.2" />
     <owner faction="alliance" />
@@ -1638,13 +2162,830 @@
     <owner faction="xenon" />
   </ware>
 
-<!-- TEST  -->
-  <ware id="ishield_arg_s_fighter_02_a" name="{6699,9999}" description="{6699,9999}" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+<!-- ishields  -->
+  <ware id="ishield_arg_s_fighter_01_a" name="Nova Vanguard Internal Generator" description="Nova Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_fighter_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_fighter_01_b" name="Nova Sentinel Internal Generator" description="Nova Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_fighter_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_fighter_02_a" name="Elite Vanguard Internal Generator" description="Elite Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
     <price min="1" average="1" max="1" />
     <component ref="ishield_arg_s_fighter_02_a_macro" amount="1" />
     <use threshold="0" />
-    <owner faction="argon" />
-  </ware>
+    </ware>
+
+ <ware id="ishield_arg_s_fighter_02_b" name="Elite Sentinel Internal Generator" description="Elite Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_fighter_02_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_fighter_03_a" name="Pulsar Internal Generator" description="Pulsar Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_fighter_03_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_fighter_04_a" name="Quasar Internal Generator" description="Quasar Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_fighter_04_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_heavyfighter_02_a" name="Eclipse Vanguard Internal Generator" description="Eclipse Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_heavyfighter_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_scout_01_a" name="Discoverer Vanguard Internal Generator" description="Discoverer Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_scout_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_scout_01_b" name="Discoverer Sentinel Internal Generator" description="Discoverer Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_scout_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_trans_container_01_a" name="Courier Vanguard Internal Generator" description="Courier Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_trans_container_01_b" name="Courier Sentinel Internal Generator" description="Courier Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_trans_container_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_trans_container_02_a" name="Callisto Vanguard Internal Generator" description="Callisto Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_trans_container_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_trans_container_02_b" name="Callisto Sentinel Internal Generator" description="Callisto Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_trans_container_02_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_s_miner_solid_01_a" name="Callisto Miner Internal Generator" description="Callisto Miner Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_s_miner_solid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_gen_s_fighter_01_a" name="Nodus Vanguard Internal Generator" description="Nodus Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_gen_s_fighter_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_gen_s_fighter_01_b" name="Nodus Sentinel Internal Generator" description="Nodus Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_gen_s_fighter_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_s_fighter_01_a" name="Perseus Vanguard Internal Generator" description="Perseus Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_s_fighter_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_s_fighter_01_b" name="Perseus Sentinel Internal Generator" description="Perseus Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_s_fighter_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_s_fighter_02_a" name="Theseus Vanguard Internal Generator" description="Theseus Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_s_fighter_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_s_fighter_02_b" name="Theseus Sentinel Internal Generator" description="Theseus Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_s_fighter_02_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_s_scout_01_a" name="Pegasus Vanguard Internal Generator" description="Pegasus Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_s_scout_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_s_scout_01_b" name="Pegasus Sentinel Internal Generator" description="Pegasus Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_s_scout_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_s_miner_solid_01_a" name="Tethys Miner Internal Generator" description="Tethys Miner Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_s_miner_solid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_s_trans_container_01_a" name="Tethys Vanguard Internal Generator" description="Tethys Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_s_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_s_trans_container_01_b" name="Tethys Sentinel Internal Generator" description="Tethys Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_s_trans_container_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_s_fighter_01_a" name="Falcon Vanguard Internal Generator" description="Falcon Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_s_fighter_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_s_fighter_01_b" name="Falcon Sentinel Internal Generator" description="Falcon Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_s_fighter_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_s_fighter_02_a" name="Buzzard Vanguard Internal Generator" description="Buzzard Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_s_fighter_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_s_fighter_02_b" name="Buzzard Sentinel Internal Generator" description="Buzzard Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_s_fighter_02_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_s_scout_01_a" name="Kestrel Vanguard Internal Generator" description="Kestrel Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_s_scout_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_s_scout_01_b" name="Kestrel Sentinel Internal Generator" description="Kestrel Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_s_scout_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_s_scout_02_a" name="Guillemont Vanguard Internal Generator" description="Guillemont Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_s_scout_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_s_scout_02_b" name="Guillemont Sentinel Internal Generator" description="Guillemont Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_s_scout_02_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_s_miner_solid_01_a" name="Magpie Miner Internal Generator" description="Magpie Miner Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_s_miner_solid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_s_trans_container_01_a" name="Magpie Vanguard Internal Generator" description="Magpie Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_s_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_s_trans_container_01_b" name="Magpie Sentinel Internal Generator" description="Magpie Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_s_trans_container_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_xen_s_fighter_01_a" name="N Internal Generator" description="N Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_xen_s_fighter_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_xen_s_fighter_02_a" name="M Internal Generator" description="M Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_xen_s_fighter_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_bomber_01_a" name="Minotaur Vanguard Internal Generator" description="Minotaur Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_bomber_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_bomber_01_b" name="Minotaur Sentinel Internal Generator" description="Minotaur Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_bomber_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_bomber_02_a" name="Minotayr Raider Internal Generator" description="Minotayr Raider Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_bomber_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_frigate_01_a" name="Cerberus Vanguard Internal Generator" description="Cerberus Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_frigate_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_frigate_01_b" name="Cerberus Sentinel Internal Generator" description="Cerberus Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_frigate_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_miner_liquid_01_a" name="Sunder Vanguard Internal Generator" description="Sunder Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_miner_liquid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_miner_liquid_01_b" name="Sunder Sentinel Internal Generator" description="Sunder Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_miner_liquid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_miner_solid_01_a" name="Drill Vanguard Internal Generator" description="Drill Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_miner_solid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_miner_solid_01_b" name="Drill Sentinel Internal Generator" description="Drill Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_miner_solid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_trans_container_01_a" name="Mercury Vanguard Internal Generator" description="Mercury Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_trans_container_01_b" name="Mercury Sentinel Internal Generator" description="Mercury Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_trans_container_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_trans_container_02_a" name="Ides Vanguard Internal Generator" description="Ides Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_trans_container_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_m_trans_container_02_b" name="Ides Sentinel Internal Generator" description="Ides Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_m_trans_container_02_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_corvette_01_a" name="Nemesis Vanguard Internal Generator" description="Nemesis Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_corvette_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_corvette_01_b" name="Nemesis Sentinel Internal Generator" description="Nemesis Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_corvette_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_frigate_01_a" name="Gorgona Vanguard Internal Generator" description="Gorgona Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_frigate_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_frigate_01_b" name="Gorgona Sentinel Internal Generator" description="Gorgona Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_frigate_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_miner_liquid_01_a" name="Plutus Gas Vanguard Internal Generator" description="Plutus Gas Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_miner_liquid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_miner_liquid_01_b" name="Plutus Gas Sentinel Internal Generator" description="Plutus Gas Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_miner_liquid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_miner_solid_01_a" name="Plutus Miner Vanguard Internal Generator" description="Plutus Miner Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_miner_solid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_miner_solid_01_b" name="Plutus Miner Sentinel Internal Generator" description="Plutus Miner Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_miner_solid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_trans_container_01_a" name="Demeter Vanguard Internal Generator" description="Demeter Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_trans_container_01_b" name="Demeter Sentinel Internal Generator" description="Demeter Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_trans_container_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_trans_container_02_a" name="Hermes Vanguard Internal Generator" description="Hermes Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_trans_container_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_m_trans_container_02_b" name="Hermes Sentinel Internal Generator" description="Hermes Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_m_trans_container_02_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_bomber_01_a" name="Peregrine Vanguard Internal Generator" description="Peregrine Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_bomber_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_bomber_01_b" name="Peregrine Sentinel Internal Generator" description="Peregrine Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_bomber_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_frigate_01_a" name="Osprey Vanguard Internal Generator" description="Osprey Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_frigate_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_frigate_01_b" name="Osprey Sentinel Internal Generator" description="Osprey Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_frigate_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_miner_liquid_01_a" name="Manorina Gas Vanguard Internal Generator" description="Manorina Gas Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_miner_liquid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_miner_liquid_01_b" name="Manorina Gas Sentinel Internal Generator" description="Manorina Gas Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_miner_liquid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_miner_solid_01_a" name="Manorina Miner Vanguard Internal Generator" description="Manorina Miner Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_miner_solid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_miner_solid_01_b" name="Manorina Miner Sentinel Internal Generator" description="Manorina Miner Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_miner_solid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_trans_container_01_a" name="Vulture Vanguard Internal Generator" description="Vulture Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_trans_container_01_b" name="Vulture Sentinel Internal Generator" description="Vulture Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_trans_container_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_trans_container_02_a" name="Tern Vanguard Internal Generator" description="Tern Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_trans_container_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_trans_container_02_b" name="Tern Sentinel Internal Generator" description="Tern Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_trans_container_02_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_m_trans_container_03_a" name="Cormorant Internal Generator" description="Cormorant Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_m_trans_container_03_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_xen_m_fighter_01_a" name="P Internal Generator" description="P Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_xen_m_fighter_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_xen_m_miner_01_a" name="S Internal Generator" description="S Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_xen_m_miner_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_destroyer_01_a" name="Behemoth Vanguard Internal Generator" description="Behemoth Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_destroyer_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_destroyer_01_b" name="Behemoth Sentinel Internal Generator" description="Behemoth Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_destroyer_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_miner_liquid_01_a" name="Magnetar Gas Vanguard Internal Generator" description="Magnetar Gas Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_miner_liquid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_miner_liquid_01_b" name="Magnetar Gas Sentinel Internal Generator" description="Magnetar Gas Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_miner_liquid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_miner_solid_01_a" name="Magnetar Miner Vanguard Internal Generator" description="Magnetar Miner Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_miner_solid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_miner_solid_01_b" name="Magnetar Miner Sentinel Internal Generator" description="Magnetar Miner Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_miner_solid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_trans_container_01_a" name="Veles Vanguard Internal Generator" description="Veles Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_trans_container_01_b" name="Veles Sentinel Internal Generator" description="Veles Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_trans_container_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_trans_container_02_a" name="Mokosi Vanguard Internal Generator" description="Mokosi Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_trans_container_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_trans_container_02_b" name="Mokosi Sentinel Internal Generator" description="Mokosi Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_trans_container_02_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_trans_container_03_a" name="Incarcatua Vanguard Internal Generator" description="Incarcatua Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_trans_container_03_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_trans_container_03_b" name="Incarcatua Sentinel Internal Generator" description="Incarcatua Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_trans_container_03_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_trans_container_04_a" name="Shuyaku Vanguard Internal Generator" description="Shuyaku Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_trans_container_04_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_trans_container_04_b" name="Shuyaku Sentinel Internal Generator" description="Shuyaku Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_trans_container_04_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_trans_container_05_a" name="Sonra Vanguard Internal Generator" description="Sonra Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_trans_container_05_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_l_trans_container_05_b" name="Sonra Sentinel Internal Generator" description="Sonra Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_trans_container_05_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_l_destroyer_01_a" name="Oddysyes Vanguard Internal Generator" description="Oddysyes Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_l_destroyer_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_l_destroyer_01_b" name="Oddysyes Sentinel Internal Generator" description="Oddysyes Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_l_destroyer_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_l_miner_liquid_01_a" name="Chthonios Gas Vanguard Internal Generator" description="Chthonios Gas Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_l_miner_liquid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_l_miner_liquid_01_b" name="Chthonios Gas Sentinel Internal Generator" description="Chthonios Gas Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_l_miner_liquid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_l_miner_solid_01_a" name="Chthonios Miner Vanguard Internal Generator" description="Chthonios Miner Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_l_miner_solid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_l_miner_solid_01_b" name="Chthonios Miner Sentinel Internal Generator" description="Chthonios Miner Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_l_miner_solid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_l_trans_container_01_a" name="Helios Vanguard Internal Generator" description="Helios Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_l_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_l_trans_container_01_b" name="Helios Sentinel Internal Generator" description="Helios Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_l_trans_container_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_l_trans_container_02_a" name="Selen Vanguard Internal Generator" description="Selen Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_l_trans_container_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_l_trans_container_02_b" name="Selen Sentinel Internal Generator" description="Selen Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_l_trans_container_02_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_l_destroyer_01_a" name="Phoenix Vanguard Internal Generator" description="Phoenix Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_l_destroyer_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_l_destroyer_01_b" name="Phoenix Sentinel Internal Generator" description="Phoenix Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_l_destroyer_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_l_miner_liquid_01_a" name="Crane Gas Vanguard Internal Generator" description="Crane Gas Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_l_miner_liquid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_l_miner_liquid_01_b" name="Crane Gas Sentinel Internal Generator" description="Crane Gas Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_l_miner_liquid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_l_miner_solid_01_a" name="Crane Vanguard Internal Generator" description="Crane Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_l_miner_solid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_l_miner_solid_01_b" name="Crane Sentinel Internal Generator" description="Crane Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_l_miner_solid_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_l_trans_container_01_a" name="Pelican Vanguard Internal Generator" description="Pelican Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_l_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_l_trans_container_01_b" name="Pelican Sentinel Internal Generator" description="Pelican Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_l_trans_container_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_l_trans_container_02_a" name="Heron Vanguard Internal Generator" description="Heron Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_l_trans_container_02_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_l_trans_container_02_b" name="Heron Sentinel Internal Generator" description="Heron Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_l_trans_container_02_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_xl_builder_01_a" name="Mammoth Vanguard Internal Generator" description="Mammoth Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_xl_builder_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_xl_builder_01_b" name="Mammoth Sentinel Internal Generator" description="Mammoth Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_xl_builder_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_xl_carrier_01_a" name="Colossus Vanguard Internal Generator" description="Colossus Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_xl_carrier_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_xl_carrier_01_b" name="Colossus Sentinel Internal Generator" description="Colossus Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_xl_carrier_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_xl_builder_01_a" name="Hercules Vanguard Internal Generator" description="Hercules Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_xl_builder_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_xl_builder_01_b" name="Hercules Sentinel Internal Generator" description="Hercules Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_xl_builder_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_xl_carrier_01_a" name="Zeus Vanguard Internal Generator" description="Zeus Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_xl_carrier_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_xl_carrier_01_b" name="Zeus Sentinel Internal Generator" description="Zeus Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_xl_carrier_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_xl_builder_01_a" name="Albatros Vanguard Internal Generator" description="Albatros Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_xl_builder_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_xl_builder_01_b" name="Albatros Sentinel Internal Generator" description="Albatros Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_xl_builder_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_xl_carrier_01_a" name="Condor Vanguard Internal Generator" description="Condor Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_xl_carrier_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_xl_carrier_01_b" name="Condor Sentinel Internal Generator" description="Condor Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_xl_carrier_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_xen_xl_carrier_01_a" name="I Internal Generator" description="I Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_xen_xl_carrier_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_xen_xl_destroyer_01_a" name="K Internal Generator" description="K Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_xen_xl_destroyer_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_xl_battleship_01" name="Cyclopus Internal Generator" description="Cyclopus Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_xl_battleship_01_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_xl_battleship_01" name="Deimos Internal Generator" description="Deimos Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_xl_battleship_01_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_xl_battleship_01" name="Fulmar Internal Generator" description="Fulmar Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_xl_battleship_01_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_xl_resupplier_01_a" name="Nomad Vanguard Internal Generator" description="Nomad Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_xl_resupplier_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_arg_xl_resupplier_01_b" name="Nomad Sentinel Internal Generator" description="Nomad Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_xl_resupplier_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_xl_resupplier_01_a" name="Atlas Vanguard Internal Generator" description="Atlas Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_xl_resupplier_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_par_xl_resupplier_01_b" name="Atlas Sentinel Internal Generator" description="Atlas Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_par_xl_resupplier_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_xl_resupplier_01_a" name="Stork Vanguard Internal Generator" description="Stork Vanguard Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_xl_resupplier_01_a_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ <ware id="ishield_tel_xl_resupplier_01_b" name="Stork Sentinel Internal Generator" description="Stork Sentinel Internal Generator" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_tel_xl_resupplier_01_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+ 
 
   </add>
 <!-- Vanilla removal -->

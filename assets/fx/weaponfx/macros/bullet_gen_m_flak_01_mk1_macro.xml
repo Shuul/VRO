@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Alexei (192.168.3.58) at 08.11.2019_12-31-47-->
+<diff>
+  <replace sel="//macros">
+<macros>
+  <macro name="bullet_gen_m_flak_01_mk1_macro" class="bullet">
+    <component ref="bullet_gen_m_flak_01_mk1" />
+    <properties>
+      <ammunition value="9" reload="3" />
+      <bullet speed="6500" lifetime="0.75" amount="1" barrelamount="1" timediff="0.1" angle="0.4" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" selfdestruct="1" />
+      <reload rate="3" />
+      <areadamage value="200" range="200" time="1" lifetime="1" />
+      <damage value="100" repair="0" />
+      <effects>
+        <impact ref="impact_gen_m_flak_01_mk1" />
+        <launch ref="muzzle_gen_m_flak_01_mk1" />
+      </effects>
+      <weapon system="turret_midrange" />
+    </properties>
+  </macro>
+</macros>
+</replace>
+  </diff>
+  
+  <!-- <macros>
+  <macro name="bullet_gen_m_flak_01_mk1_macro" class="bullet">
+    <component ref="bullet_gen_m_flak_01_mk1" />
+    <properties>
+      <ammunition value="9" reload="3" />
+      <bullet speed="1500" lifetime="1" amount="1" barrelamount="1" timediff="0.1" angle="0.2" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" selfdestruct="1" />
+      <reload rate="3" />
+      <areadamage value="100" time="1" lifetime="1" />
+      <damage value="100" repair="0" />
+      <effects>
+        <impact ref="impact_gen_m_flak_01_mk1" />
+        <launch ref="muzzle_gen_m_flak_01_mk1" />
+      </effects>
+      <weapon system="turret_midrange" />
+    </properties>
+  </macro>
+</macros> -->

@@ -1,0 +1,395 @@
+<?xml version="1.0"?>
+<components>
+	<component name="ship_arg_l_centaur" class="ship_l">
+		<source geometry="extensions\vro\assets\units\size_l\ship_arg_l_centaur_data"/>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="ship">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part">
+				<parts>
+					<part name="part_main" wreck="part_main_wreck" >
+						<size>
+							<max x="183.822" y="818.185" z="275.434" />
+							<center x="9.15527e-005" y="0" z="0" />
+						</size>
+						<lods>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="argon.metal_argon_smooth_plating" />
+									<material id="2" ref="argon.metal_argon_simple_plating_v2" />
+									<material id="3" ref="argon.metal_argon_base_metal_plating" />
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="argon.metal_argon_base_metal_plating" />
+									<material id="2" ref="argon.metal_argon_simple_plating_v2" />
+									<material id="3" ref="argon.metal_argon_simple_plating_v4" />
+									<material id="4" ref="argon.metal_argon_smooth_plating" />
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="argon.metal_argon_apartments_labs" />
+									<material id="2" ref="argon.metal_argon_base_metal_plating" />
+									<material id="3" ref="argon.metal_argon_base_metal_plating_v2" />
+									<material id="4" ref="argon.metal_argon_simple_plating_v2" />
+									<material id="5" ref="argon.metal_argon_simple_plating_v4" />
+									<material id="6" ref="argon.metal_argon_smooth_plating" />
+								</materials>
+							</lod>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="argon.metal_argon_smooth_plating" />
+									<material id="2" ref="argon.metal_argon_simple_plating_v4" />
+									<material id="3" ref="argon.metal_argon_simple_plating_v2" />
+									<material id="4" ref="argon.metal_argon_base_metal_plating_v2" />
+									<material id="5" ref="argon.metal_argon_base_metal_plating" />
+									<material id="6" ref="argon.metal_argon_apartments_labs" />
+								</materials>
+							</lod>
+						</lods>
+					</part>
+				</parts>
+				<offset>
+					<position x="-0.000008" y="0.000000" z="0.000000" />
+					<quaternion qx="0.7071066" qy="-0.7071066E-07" qz="-0.7071066E-07" qw="-0.7071066"/> 
+				</offset>
+			</connection>
+			<connection name="Connection02" tags="part">
+				<parts>
+					<part name="part_detail_l">
+						<size>
+							<max x="174.38" y="757.222" z="233.354" />
+							<center x="9.15527e-005" y="-18.2782" z="21.2892" />
+						</size>
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="argon.metal_argon_misc_tech" />
+									<material id="2" ref="argon.metal_argon_misc_tech_v2" />
+									<material id="3" ref="argon.metal_argon_pipes_tech" />
+									<material id="4" ref="argon.metal_argon_trims_07" />
+								</materials>
+							</lod>
+						</lods>
+					</part>
+				</parts>
+				<offset>
+					<position x="-0.000008" y="0.000000" z="0.000000" />
+					<quaternion qx="0.7071066" qy="-0.7071066E-07" qz="-0.7071066E-07" qw="-0.7071066"/> 
+				</offset>
+			</connection>
+			<connection name="Connection03" tags="part">
+				<parts>
+					<part name="part_detail_s">
+						<size>
+							<max x="117.508" y="484.218" z="149.871" />
+							<center x="-6.86646e-005" y="291.347" z="-16.286" />
+						</size>
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="argon.metal_argon_exhaust_source_01" />
+									<material id="2" ref="argon.metal_argon_exhaust_source_02" />
+									<material id="3" ref="argon.metal_argon_trims_01" />
+									<material id="4" ref="argon.metal_argon_trims_06" />
+									<material id="5" ref="argon.metal_argon_trims_08" />
+								</materials>
+							</lod>
+						</lods>
+					</part>
+				</parts>
+				<offset>
+					<position x="-0.000008" y="0.000000" z="0.000000" />
+					<quaternion qx="0.7071066" qy="-0.7071066E-07" qz="-0.7071066E-07" qw="-0.7071066"/> 
+				</offset>
+			</connection>
+			<connection name="Connection04" tags="part">
+				<offset>
+					<position x="25" y="-30" z="-200"/>
+				</offset>
+				<parts>
+					<part name="Object01">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="argon.ar_unique_01"/>
+									<material id="2" ref="argon.ar_unique_03"/>
+									<material id="3" ref="argon.ar_unique_04"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="60.95838" y="16.16217" z="46.14417"/>
+							<center x="1.075302" y="-3.814697E-06" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection05" tags="part">
+				<offset>
+					<position x="-25" y="-30" z="-200"/>
+				</offset>
+				<parts>
+					<part name="Object01">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="argon.ar_unique_01"/>
+									<material id="2" ref="argon.ar_unique_03"/>
+									<material id="3" ref="argon.ar_unique_04"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="60.95838" y="16.16217" z="46.14417"/>
+							<center x="1.075302" y="-3.814697E-06" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection06" tags="part  ">
+				<offset>
+					<position x="889.1747" y="0" z="-33.93591"/>
+				</offset>
+				<parts/>
+			</connection>
+			<connection name="connection_storage01" tags="storage ">
+				<offset/>
+			</connection>
+			<connection name="connection_radar_fallback01" tags="radar ">
+				<offset/>
+			</connection>
+			<connection name="connection_engine02" group="group04 " tags="engine ">
+				<offset>
+					<position x="0" y="105" z="-745"/>
+				</offset>
+			</connection>
+			<connection name="connection_engine01" group="group05 " tags="engine ">
+				<offset>
+					<position x="0" y="-90" z="-715"/>
+				</offset>
+			</connection>
+			<connection name="connection_engine03" group="group05 " tags="engine ">
+				<offset>
+					<position x="-75" y="-13" z="-701"/>
+				</offset>
+			</connection>
+			<connection name="connection_engine04" group="group04 " tags="engine ">
+				<offset>
+					<position x="75" y="-13" z="-701"/>
+				</offset>
+			</connection>
+			<connection name="connection_dock_s01" group="group01 " tags="dock_s ">
+				<offset>
+					<position x="0" y="-204.8" z="200"/>
+					<rotation yaw="0" pitch="270" roll="180"/>
+				</offset>
+			</connection>
+			<connection name="connection_jumpdrive01" group="group01 " tags="jumpdrive ">
+				<offset>
+					<position x="0" y="-205" z="130"/>
+					<rotation yaw="0" pitch="0" roll="180"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen01" group="group01 " tags="shieldgenerator ">
+				<offset>
+					<position x="0" y="-198" z="24"/>
+					<rotation yaw="0" pitch="355" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="connection_radar_external01" group="group01 " tags="radar external ">
+				<offset>
+					<position x="0" y="263" z="-277"/>
+				</offset>
+			</connection>
+			<connection name="connection_cockpit01" tags="cockpit cockpit_visible">
+				<offset>
+					<position x="0" y="-50" z="-350"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen02" group="group02 " tags="shieldgenerator ">
+				<offset>
+					<position x="-63" y="-58" z="385"/>
+					<rotation yaw="0" pitch="184" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg01" group="group02 " tags="turret_small_mg ">
+				<offset>
+					<position x="-133" y="-62" z="495"/>
+					<rotation yaw="270" pitch="164" roll="2"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg02" group="group02 " tags="turret_small_mg ">
+				<offset>
+					<position x="-133" y="-63" z="475"/>
+					<rotation yaw="270" pitch="164" roll="2"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg03" group="group02 " tags="turret_small_mg ">
+				<offset>
+					<position x="-133" y="-64.5" z="455"/>
+					<rotation yaw="270" pitch="164" roll="2"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_medium_pe01" group="group02 " tags="turret_medium_pe ">
+				<offset>
+					<position x="-52.5" y="57" z="558"/>
+					<rotation yaw="180" pitch="0" roll="248" />
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen03" group="group03 " tags="shieldgenerator ">
+				<offset>
+					<position x="63" y="-58" z="385"/>
+					<rotation yaw="0" pitch="184" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg04" group="group03 " tags="turret_small_mg ">
+				<offset>
+					<position x="133" y="-62" z="495"/>
+					<rotation yaw="90" pitch="164" roll="358"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg05" group="group03 " tags="turret_small_mg ">
+				<offset>
+					<position x="133" y="-63" z="475"/>
+					<rotation yaw="90" pitch="164" roll="358"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg06" group="group03 " tags="turret_small_mg ">
+				<offset>
+					<position x="133" y="-64.5" z="455"/>
+					<rotation yaw="90" pitch="164" roll="358"/>
+				</offset>
+			</connection>
+				<connection name="connection_turret_medium_pe02" group="group03 " tags="turret_medium_pe ">
+				<offset>
+					<position x="52.5" y="57" z="558"/>
+					<rotation yaw="180" pitch="0" roll="112" />
+				</offset>
+			</connection>
+			<connection name="connection_turret_medium_pe03" group="group04 " tags="turret_medium_pe ">
+				<offset>
+					<position x="74" y="140" z="-518"/>
+					<rotation yaw="0" pitch="0" roll="213" />
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg07" group="group04 " tags="turret_small_mg ">
+				<offset>
+					<position x="124.5" y="25" z="-508"/>
+					<rotation yaw="0" pitch="0" roll="269"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg08" group="group04 " tags="turret_small_mg ">
+				<offset>
+					<position x="125" y="25" z="-538"/>
+					<rotation yaw="0" pitch="0" roll="269"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg09" group="group04 " tags="turret_small_mg ">
+				<offset>
+					<position x="79" y="-77" z="-658"/>
+					<rotation yaw="0" pitch="0" roll="180"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen04" group="group04 " tags="shieldgenerator ">
+				<offset>
+					<position x="79" y="-77" z="-638"/>
+					<rotation yaw="90" pitch="0" roll="180"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_medium_pe04" group="group05 " tags="turret_medium_pe ">
+				<offset>
+					<position x="-74" y="140" z="-518"/>
+					<rotation yaw="0" pitch="0" roll="148" />
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg10" group="group05 " tags="turret_small_mg ">
+				<offset>
+					<position x="-124.5" y="25" z="-508"/>
+					<rotation yaw="0" pitch="0" roll="90"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg11" group="group05 " tags="turret_small_mg ">
+				<offset>
+					<position x="-125" y="25" z="-538"/>
+					<rotation yaw="0" pitch="0" roll="90"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_small_mg12" group="group05 " tags="turret_small_mg ">
+				<offset>
+					<position x="-79" y="-77" z="-658"/>
+					<rotation yaw="0" pitch="0" roll="180"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen05" group="group05 " tags="shieldgenerator ">
+				<offset>
+					<position x="-79" y="-77" z="-638"/>
+					<rotation yaw="90" pitch="0" roll="180"/>
+				</offset>
+			</connection>
+			<connection name="connection_dock_p01" tags="dock_p ">
+				<offset>
+					<position x="0" y="109" z="40"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen_external01" tags="shieldgenerator external ">
+				<offset>
+					<position x="0" y="-224" z="552"/>
+					<rotation yaw="0" pitch="354" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen_external02" tags="shieldgenerator external ">
+				<offset>
+					<position x="0" y="100" z="322"/>
+					<rotation yaw="0" pitch="180" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="connection_weapon_small01" tags="weapon_small secondary_slot ">
+				<offset>
+					<position x="-87" y="-61" z="790"/>
+				</offset>
+			</connection>
+			<connection name="connection_weapon_small02" tags="weapon_small secondary_slot ">
+				<offset>
+					<position x="87" y="-59" z="790"/>
+				</offset>
+			</connection>
+			<connection name="connection_weapon_small03" tags="weapon_small secondary_slot ">
+				<offset>
+					<position x="87" y="-87" z="790"/>
+				</offset>
+			</connection>
+			<connection name="connection_weapon_small04" tags="weapon_small secondary_slot ">
+				<offset>
+					<position x="-87" y="-87" z="790"/>
+				</offset>
+			</connection>
+			<connection name="connection_weapon_small05" tags="weapon_small secondary_slot ">
+				<offset>
+					<position x="87" y="-108" z="790"/>
+				</offset>
+			</connection>
+			<connection name="connection_weapon_small06" tags="weapon_small secondary_slot ">
+				<offset>
+					<position x="-87" y="-108" z="790"/>
+				</offset>
+			</connection>
+			<connection name="ConnectionFor_props_tradeoffer1" tags="tradeofferdock">
+				<offset>
+					<position x="0" y="-50.70372" z="-150"/>
+				</offset>
+			</connection>
+			<connection name="ConnectionFor_props_tradeoffer2" tags="tradeofferdock">
+				<offset>
+					<position x="0" y="-54.70372" z="-250"/>
+					<rotation yaw="180" pitch="0" roll="0" />
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>
