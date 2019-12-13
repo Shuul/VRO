@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Markus (192.168.3.127) at 17.07.2019_11-11-39-->
+<macros>
+  <macro name="weapon_par_s_railgun_01_mk2_macro" class="weapon">
+    <component ref="weapon_par_s_railgun_01_mk2" />
+    <properties>
+      <identification name="{20105,1234}" basename="{20105,1231}" shortname="{20105,1235}" description="{20105,1232}" mk="2" />
+      <bullet class="bullet_par_s_railgun_01_mk2_macro" />
+      <heat overheat="10000" cooldelay="3" coolrate="600" reenable="5000" />
+      <rotationspeed max="0" />
+      <rotationacceleration max="0" />
+      <reload />
+      <hull max="500" hittable="0" />
+      <sounds>
+        <firing ref="wpn_railgun_player_charging" />
+      </sounds>
+      <zoom factor="2" time="0.15" delay="0.25" />
+    </properties>
+  </macro>
+</macros>

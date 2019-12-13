@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Alexei (192.168.3.58) at 08.11.2019_12-34-59-->
+<diff>
+  <replace sel="//macros">
+<macros>
+  <macro name="bullet_tel_s_charge_01_mk2_macro" class="bullet">
+    <component ref="bullet_tel_s_charge_01_mk2" />
+    <properties>
+      <bullet speed="2604" lifetime="3" amount="3" barrelamount="1" icon="weapon_charge_mk2" timediff="0.16" angle="0.13" maxhits="3" ricochet="0.3" restitution="0.55" scale="0" attach="0" sticktime="1" chargetime="1" />
+      <heat value="382" />
+      <reload rate="3" />
+      <damage value="352" repair="0" />
+      <effects>
+        <impact ref="impact_tel_s_charge_01_mk1" inside="impact_tel_s_charge_01_mk1_inside" />
+        <bigobjectimpact ref="impact_tel_s_charge_01_mk1_bigobject" inside="impact_tel_s_charge_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_tel_s_charge_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+ </replace>
+  </diff>
