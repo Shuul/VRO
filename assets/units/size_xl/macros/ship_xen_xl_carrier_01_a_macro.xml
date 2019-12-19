@@ -7,7 +7,7 @@
   <macro name="ship_xen_xl_carrier_01_a_macro" class="ship_xl">
     <component ref="ship_xen_xl_carrier_01" />
     <properties>
-      <identification name="{20101,70601}" description="{20101,70611}" icon="ship_xl_fight_01" />
+      <identification name="{20101,70601}" description="{20101,70611}" icon="ship_xl_battleship" />
       <software>
         <software ware="software_dockmk2" compatible="1" />
         <software ware="software_flightassistmk1" default="1" />
@@ -18,7 +18,7 @@
         <software ware="software_targetmk1" default="1" />
         <software ware="software_trademk1" compatible="1" />
       </software>
-      <hull max="1350000" />
+      <hull max="1850000" />
       <secrecy level="2" />
       <purpose primary="fight" />
       <people capacity="0" />
@@ -56,23 +56,26 @@
             <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group15" exact="1" optional="1" />
             <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group16" exact="1" optional="1" />
             <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group17" exact="2" optional="1" />
-            <turrets macro="turret_xen_l_obliterator_macro" path=".." group="group01" exact="1" optional="1" />
-            <turrets macro="turret_xen_l_obliterator_macro" path=".." group="group02" exact="1" optional="1" />
-            <turrets macro="turret_xen_l_obliterator_macro" path=".." group="group03" exact="1" optional="1" />
-            <turrets macro="turret_xen_l_obliterator_macro" path=".." group="group04" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group18" exact="1" optional="1" />
+            <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group19" exact="1" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group01" exact="1" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group02" exact="1" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group03" exact="1" optional="1" />
+            <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group04" exact="1" optional="1" />
             <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group05" exact="1" optional="1" />
             <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group06" exact="1" optional="1" />
-            <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group07" exact="4" optional="1" />
+            <turrets macro="turret_xen_m_beam_02_mk1_macro" path=".." group="group07" exact="4" optional="1" />
             <turrets macro="turret_xen_l_xppc_macro" path=".." group="group08" exact="2" optional="1" />
             <turrets macro="turret_xen_l_xppc_macro" path=".." group="group09" exact="2" optional="1" />
-            <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group10" exact="3" optional="1" />
-            <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group11" exact="3" optional="1" />
             <turrets macro="turret_xen_l_obliterator_macro" path=".." group="group12" exact="2" optional="1" />
             <turrets macro="turret_xen_l_obliterator_macro" path=".." group="group13" exact="2" optional="1" />
             <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group14" exact="4" optional="1" />
             <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group15" exact="4" optional="1" />
             <turrets macro="turret_xen_m_laser_02_mk1_macro" path=".." group="group16" exact="4" optional="1" />
             <turrets macro="turret_xen_l_laser_01_mk1_macro" path=".." group="group17" exact="4" optional="1" />
+            <turrets macro="turret_xen_m_beam_02_mk1_macro" path=".." group="group18" exact="3" optional="1" />
+            <turrets macro="turret_xen_m_beam_02_mk1_macro" path=".." group="group19" exact="3" optional="1" />
+
           </groups>
           <ammunition>
             <ammunition macro="countermeasure_flares_01_macro" min="100" max="200" optional="1" />

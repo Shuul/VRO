@@ -885,13 +885,13 @@
  <effect name="turret_tri_impact" alignment="normal">
     <elements>
       <!-- Impact Geometry -->
-      <element id="1" ref="impact_gen_m_laser_01_mk1_macro" forkeffect="none" duration="1.5" minscale="5.0" maxscale="5.0" fadein="0.0" fadeout="0.15" forklod="largeeffect"></element>
+      <element id="1" ref="impact_gen_m_laser_01_mk1_macro" forkeffect="none" duration="1.5" minscale="10.0" maxscale="10.0" fadein="0.0" fadeout="0.2" forklod="largeeffect"></element>
       <!-- <element id="2" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="1.0" minscale="5.0" maxscale="5.0" forklod="largeeffect"></element> -->
-      <element id="3" ref="dummyemitter_macro" forkeffect="plasma_impact_smoke_01" alignment="normal" duration="2.0" minscale="3.0" maxscale="3.0" forklod="largeeffect"></element>
+      <element id="2" ref="dummyemitter_macro" forkeffect="plasma_impact_smoke_01" alignment="normal" duration="2.0" minscale="5.0" maxscale="5.0" forklod="largeeffect"></element>
       <!-- Geometry Light -->
-      <element id="4" ref="impact_light_blue_macro" forkeffect="none" duration="0.3" minscale="15.0" maxscale="20.0" fadeout="0.2" forklod="largeeffect"></element>
+      <element id="3" ref="impact_light_blue_macro" forkeffect="none" duration="0.3" minscale="15.0" maxscale="20.0" fadeout="0.2" forklod="largeeffect"></element>
       <!-- Sound -->
-      <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="2.0" forklod="none">
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="2.0" forklod="none">
         <sound ref="wpn_tri_impact"></sound>
       </element>
     </elements>
@@ -1031,12 +1031,12 @@
      <elements>
 
       <!-- 6 Lightsources to make sure at liest one is outsite of the mesh -->
-      <element id="1" ref="explosion_m_02_distortion01_macro" forkeffect="none" alignment="normal" duration="6.0"  minscale="3" maxscale="4" forklod="megaeffect"></element>
+      <element id="1" ref="missile_impact_01_heavy_macro" forkeffect="none" alignment="normal" duration="5.0" forklod="none"></element>
       <!-- Explosion Fork Particles-->
-      <element id="2" ref="dummyemitter_macro" forkeffect="missile_impact_01_light_macro" duration="15.0" minscale="9" maxscale="12" forklod="megaeffect"></element>
+      <element id="8" ref="dummyemitter_macro" forkeffect="missile_explosion_heavy_01" duration="13.0" minscale="5" maxscale="6" forklod="mediumeffect"></element>
       <!--element id="2" ref="dummyemitter_macro" forkeffect="punch_through_effect" alignment="object" duration="7.0" minscale="2.0" maxscale="4.0" forklod="mediumeffect"></element-->
-      <element id="3" ref="dummyemitter_macro" forkeffect="missile_explo_part1" alignment="random" duration="9.0" minscale="12.0" maxscale="18.0" forklod="megaeffect"></element>
-      <element id="4" ref="dummyemitter_macro" forkeffect="sparkcloud" alignment="random" duration="9.0" minscale="12.0" maxscale="15.0" forklod="megaeffect"></element>
+      <element id="6" ref="dummyemitter_macro" forkeffect="missile_explo_part1" alignment="random" duration="7.0" minscale="5.0" maxscale="8.0" forklod="mediumeffect"></element>
+      <element id="7" ref="dummyemitter_macro" forkeffect="sparkcloud" alignment="random" duration="7.0" minscale="6.0" maxscale="8.0" forklod="mediumeffect"></element>
 
      <!-- OLD -->
       <!-- Distortion Bubble -->

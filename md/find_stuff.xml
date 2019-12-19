@@ -2,9 +2,9 @@
 <mdscript name="WeaponFind" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/x4 extract/libraries/md.xsd">
     <cues>
         <cue name="WeaponFindStart">
-            <conditions>
+            <!-- <conditions>
                 <event_cue_signalled cue="md.Setup.GameStart" />
-            </conditions>
+            </conditions> -->
             <delay exact="15s" />
             <actions>
                 <set_value name="$MacroTable" exact="table[]" />

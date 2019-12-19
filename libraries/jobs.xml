@@ -6,9 +6,10 @@
   <!--        ARGON FEDERATION       -->
   <!-- ############################# -->
   
-	<add sel="//jobs">
+<add sel="//jobs">
+
 	  <job id="argon_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="false"/>
+		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
        		 <param name="range" value="class.sector"/>
@@ -16,7 +17,7 @@
 		</orders>
 		<category faction="argon" tags="[factionlogic, military, battleship]" size="ship_xl"/>
 		<quota galaxy="10" sector="1"/>
-   		 <location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact"/>
+     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
 			<select faction="argon" tags="[military, battleship]" size="ship_xl"/>
@@ -29,15 +30,13 @@
 			<subordinate job="argon_frigate_escort_m"/>
 		</subordinates>
 	  </job>
-	</add>
 	
   <!-- ############################# -->
   <!--       ANTIGONE REPUBLIC       -->
   <!-- ############################# -->
   
-	<add sel="//jobs">
 	  <job id="antigone_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="false"/>
+		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
 				<param name="range" value="class.sector"/>
@@ -45,7 +44,7 @@
 		</orders>
 		<category faction="antigone" tags="[factionlogic, military, battleship]" size="ship_xl"/>
 		<quota galaxy="10" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact"/>
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
 			<select faction="antigone" tags="[military, battleship]" size="ship_xl"/>
@@ -58,15 +57,12 @@
 			<subordinate job="antigone_frigate_escort_m"/>
 		</subordinates>
 	  </job>
-	</add>
-	
   <!-- ############################# -->
   <!--    GODREALM OF THE PARANID    -->
   <!-- ############################# -->
   
-	<add sel="//jobs">  
 	  <job id="paranid_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="false"/>
+		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
 				<param name="range" value="class.sector"/>
@@ -74,7 +70,7 @@
 		</orders>
 		<category faction="paranid" tags="[factionlogic, military, battleship]" size="ship_xl"/>
 		<quota galaxy="10" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact"/>
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
 			<select faction="paranid" tags="[military, battleship]" size="ship_xl"/>
@@ -87,15 +83,13 @@
 			<subordinate job="paranid_frigate_escort_m"/>
 		</subordinates>
 	  </job>
-	</add>
 	
   <!-- ############################# -->
   <!--   HOLY ORDER OF THE PONTIFEX  -->
   <!-- ############################# -->
   
-	<add sel="//jobs">  
 	  <job id="holyorder_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="false"/>
+		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
 				<param name="range" value="class.sector"/>
@@ -103,7 +97,7 @@
 		</orders>
 		<category faction="holyorder" tags="[factionlogic, military, battleship]" size="ship_xl"/>
 		<quota galaxy="10" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="holyorder" relation="self" comparison="exact"/>
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="holyorder" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
 			<select faction="holyorder" tags="[military, battleship]" size="ship_xl"/>
@@ -116,15 +110,13 @@
 			<subordinate job="holyorder_frigate_escort_m"/>
 		</subordinates>
 	  </job>
-	</add>
 	
   <!-- ############################# -->
   <!--        TELADI COMPANY         -->
   <!-- ############################# -->
   
-	<add sel="//jobs">  
 	  <job id="teladi_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="false"/>
+		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
 				<param name="range" value="class.sector"/>
@@ -132,7 +124,7 @@
 		</orders>
 		<category faction="teladi" tags="[factionlogic, military, battleship]" size="ship_xl"/>
 		<quota galaxy="10" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="self" comparison="exact"/>
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
 			<select faction="teladi" tags="[military, battleship]" size="ship_xl"/>
@@ -145,15 +137,13 @@
 			<subordinate job="teladi_frigate_escort_m"/>
 		</subordinates>
 	  </job>
-	</add>
 	
   <!-- ############################# -->
   <!--      MINISTRY OF FINANCE      -->
   <!-- ############################# -->
   
-	<add sel="//jobs">  
 	  <job id="ministry_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="false"/>
+		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
 				<param name="range" value="class.sector"/>
@@ -161,7 +151,7 @@
 		</orders>
 		<category faction="ministry" tags="[factionlogic, military, battleship]" size="ship_xl"/>
 		<quota galaxy="10" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="self" comparison="exact"/>
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
 			<select faction="ministry" tags="[military, battleship]" size="ship_xl"/>
@@ -174,7 +164,7 @@
 			<subordinate job="ministry_frigate_escort_m"/>
 		</subordinates>
 	  </job>
-	</add>
+</add>
   <!-- ############################# -->
   <!--      XENON				      -->
   <!-- ############################# -->
@@ -194,11 +184,11 @@
 			</loadout>  </replace>
   <replace sel="//jobs/job[@id='argon_destroyer_patrol_l_sector']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='argon_destroyer_escort_l']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='argon_resupplier_escort_xl']/ship/loadout">
 <loadout>
@@ -207,11 +197,11 @@
 			<!-- ant -->
 	<replace sel="//jobs/job[@id='antigone_destroyer_patrol_l_border_sector']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='antigone_destroyer_escort_l']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
 	<!-- par -->
 	<replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster']/ship/loadout">
@@ -220,11 +210,11 @@
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='paranid_destroyer_patrol_l_sector_exp']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='paranid_destroyer_escort_l']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='paranid_resupplier_escort_xl']/ship/loadout">
 <loadout>
@@ -233,11 +223,11 @@
 	<!-- hop -->
 	<replace sel="//jobs/job[@id='holyorder_destroyer_patrol_l_cluster_exp']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='holyorder_destroyer_escort_l']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='holyorder_resupplier_escort_xl']/ship/loadout">
 <loadout>
@@ -272,7 +262,7 @@
 <!-- sca -->
 	<replace sel="//jobs/job[@id='scaleplate_plunderer_l_cluster']/ship/loadout">
 <loadout>
-				<level min="0.6" max="0.89"/>
+				<level min="0.6" max="0.9"/>
 			</loadout>  </replace>
 
 <!-- carrier groups boost -->
