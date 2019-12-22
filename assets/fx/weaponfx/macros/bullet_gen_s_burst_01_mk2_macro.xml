@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Lino (192.168.3.143) at 05.12.2019_14-44-29-->
+<diff>
+  <replace sel="//macros">
+<macros>
+  <macro name="bullet_gen_s_burst_01_mk2_macro" class="bullet">
+    <component ref="bullet_gen_s_burst_01_mk2" />
+    <properties>
+      <ammunition value="9" reload="2.7" />
+      <bullet speed="96000" lifetime="0.15" range="3200" amount="1" barrelamount="1" icon="weapon_burst_mk2" maxhits="1" ricochet="0" restitution="1" scale="1" attach="0" />
+      <heat value="215" />
+      <reload rate="10" />
+      <damage value="135" hull="23" repair="0">
+        <multiplier surfaceelement="1.5" />
+      </damage>
+      <effects>
+        <impact ref="impact_gen_s_burst_01_mk1" />
+        <launch ref="muzzle_gen_s_burst_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+  </replace>
+  </diff>
