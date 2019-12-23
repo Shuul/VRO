@@ -37,39 +37,123 @@
   <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_a']/price">
   <price min="6295057" average="7458890" max="8522724" />
   </replace>
+  <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_a']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="1159" />
+        <ware ware="hullparts" amount="5098" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_b']/price">
     <price min="7559033" average="8892980" max="10226927" />
   </replace>
+    <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_b']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="1387" />
+        <ware ware="hullparts" amount="6102" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='ship_arg_xl_carrier_01_a']/price">
     <price min="13453215" average="15697900" max="17942585" />
   </replace>
+      <replace sel="//wares/ware[@id='ship_arg_xl_carrier_01_a']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="3088" />
+        <ware ware="hullparts" amount="10868" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='ship_arg_xl_carrier_01_b']/price">
     <price min="16038308" average="18650950" max="21263593" />
   </replace>
+      <replace sel="//wares/ware[@id='ship_arg_xl_carrier_01_b']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="3703" />
+        <ware ware="hullparts" amount="13035" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='ship_par_l_destroyer_01_a']/price">
     <price min="6725188" average="7947280" max="9169372" />
   </replace>
+        <replace sel="//wares/ware[@id='ship_par_l_destroyer_01_a']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="1236" />
+        <ware ware="hullparts" amount="5442" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='ship_par_l_destroyer_01_b']/price">
     <price min="8075338" average="9482750" max="10990163" />
   </replace>
+        <replace sel="//wares/ware[@id='ship_par_l_destroyer_01_b']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="1486" />
+        <ware ware="hullparts" amount="6535" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='ship_par_xl_carrier_01_a']/price">
     <price min="17300230" average="20200270" max="23000311" />
   </replace>
+        <replace sel="//wares/ware[@id='ship_par_xl_carrier_01_a']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="4017" />
+        <ware ware="hullparts" amount="14139" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='ship_par_xl_carrier_01_b']/price">
     <price min="20514739" average="23993810" max="27572882" />
   </replace>
+        <replace sel="//wares/ware[@id='ship_par_xl_carrier_01_b']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="4819" />
+        <ware ware="hullparts" amount="16961" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_a']/price">
     <price min="6776958" average="8043480" max="9210002" />
   </replace>
+        <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_a']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="1296" />
+        <ware ware="hullparts" amount="5704" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_b']/price">
     <price min="68151401" average="9607530" max="11063660" />
   </replace>
+        <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_b']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="1551" />
+        <ware ware="hullparts" amount="6823" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='ship_tel_xl_carrier_01_a']/price">
     <price min="14272631" average="16614860" max="18957089" />
   </replace>
+        <replace sel="//wares/ware[@id='ship_tel_xl_carrier_01_a']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="3418" />
+        <ware ware="hullparts" amount="12031" />
+  </primary>
+  </replace>
+
   <replace sel="//wares/ware[@id='ship_tel_xl_carrier_01_b']/price">
     <price min="16892256" average="19743830" max="22595405" />
   </replace>
+        <replace sel="//wares/ware[@id='ship_tel_xl_carrier_01_b']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="4103" />
+        <ware ware="hullparts" amount="14443" />
+  </primary>
+  </replace>
+
 
 <!-- L guns -->
 <replace sel="//wares/ware[@id='weapon_arg_l_destroyer_01_mk1']">
@@ -1295,8 +1379,8 @@
 		<price min="32000000" average="37000000" max="42000000" />
 		<production time="800" amount="1" method="default" name="{20206,101}">
 		  <primary>
-			<ware ware="energycells" amount="3000" />
-			<ware ware="hullparts" amount="15600" />
+			<ware ware="energycells" amount="3450" />
+			<ware ware="hullparts" amount="17940" />
 		  </primary>
 		</production>
 		<component ref="ship_par_xl_battleship_01_macro" amount="1" />
@@ -1310,8 +1394,8 @@
 		<price min="30000000" average="35000000" max="40000000" />
 		<production time="750" amount="1" method="default" name="{20206,101}">
 		  <primary>
-			<ware ware="energycells" amount="3600" />
-			<ware ware="hullparts" amount="14500" />
+			<ware ware="energycells" amount="4140" />
+			<ware ware="hullparts" amount="16675" />
 		  </primary>
 		</production>
 		<component ref="ship_arg_xl_battleship_01_macro" amount="1" />
@@ -1325,8 +1409,8 @@
 		<price min="29000000" average="33000000" max="39000000" />
 		<production time="700" amount="1" method="default" name="{20206,101}">
 		  <primary>
-			<ware ware="energycells" amount="6000" />
-			<ware ware="hullparts" amount="13300" />
+			<ware ware="energycells" amount="6900" />
+			<ware ware="hullparts" amount="15295" />
 		  </primary>
 		</production>
 		<component ref="ship_tel_xl_battleship_01_macro" amount="1" />
@@ -3129,21 +3213,42 @@
 
   </add>
 <!-- Vanilla removal -->
- <remove sel="//ware[@id='missile_cluster_heavy_mk1']"/>
- <remove sel="//ware[@id='missile_cluster_light_mk1']"/>
- <remove sel="//ware[@id='missile_dumbfire_heavy_mk1']"/>
- <remove sel="//ware[@id='missile_dumbfire_heavy_mk2']"/>
- <remove sel="//ware[@id='missile_dumbfire_light_mk1']"/>
- <remove sel="//ware[@id='missile_dumbfire_light_mk2']"/>
- <remove sel="//ware[@id='missile_emp_mk1']"/>
- <remove sel="//ware[@id='missile_guided_heavy_mk1']"/>
- <remove sel="//ware[@id='missile_guided_light_mk1']"/>
- <remove sel="//ware[@id='missile_heatseeker_heavy_mk1']"/>
- <remove sel="//ware[@id='missile_heatseeker_light_mk1']"/>
- <remove sel="//ware[@id='missile_smart_heavy_mk1']"/>
- <remove sel="//ware[@id='missile_smart_light_mk1']"/>
- <remove sel="//ware[@id='missile_swarm_heavy_mk1']"/>
- <remove sel="//ware[@id='missile_swarm_light_mk1']"/>
- <remove sel="//ware[@id='missile_torpedo_heavy_mk1']"/>
- <remove sel="//ware[@id='missile_torpedo_light_mk1']"/>
+
+  <add sel="//wares/ware[@id='missile_cluster_heavy_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_cluster_light_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_dumbfire_heavy_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_dumbfire_heavy_mk2']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_dumbfire_light_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_dumbfire_light_mk2']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_emp_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_guided_heavy_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_guided_light_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_heatseeker_heavy_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_heatseeker_light_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_smart_heavy_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_smart_light_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_swarm_heavy_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_swarm_light_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_torpedo_heavy_mk1']">
+  <owner faction="khaak" />  </add>
+  <add sel="//wares/ware[@id='missile_torpedo_light_mk1']">
+  <owner faction="khaak" />  </add>
+
+
+
 </diff>
