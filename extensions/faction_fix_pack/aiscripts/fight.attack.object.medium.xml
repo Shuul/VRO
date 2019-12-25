@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <replace sel="//attention[@min='unknown']/actions/do_while//get_attackstrength[@target='$target']">
+    <do_if value="(this.ship.dps.lasers.all + this.ship.dps.missiles.all) gt 0 and this.ship.dps.turrets.all gt 0">
+      <!-- warning: possible for target list to have been modified during the wait time at the start of the attack cycle! -->
+      <do_if value="if (@$primarytarget.exists and $targets.indexof.{$primarytarget} gt 0) then ($target == $primarytarget) else (not $ProcessedAnyTarget)">
+        <!-- primary target takes main guns; if it's the only target it also takes turrets -->
+        <do_for_each name="$OtherTarget" in="$targets">
+          <do_if value="$OtherTarget.exists and $OtherTarget.canbeattacked and $OtherTarget != $target and this.ship.distanceto.{$OtherTarget} lt ($FiringRange + $OtherTarget.size/2.0)">
+            <set_value name="$OtherTargetExists" exact="true"/>
+            <break/>
+          </do_if>
+        </do_for_each>
+        <do_if value="@$OtherTargetExists">
+          <set_value name="$DamagePct" exact="(this.ship.dps.all * 0.3 - this.ship.dps.turrets.all)f / (this.ship.dps.all)f"/>
+          <remove_value name="$OtherTargetExists"/>
+        </do_if>
+        <do_else>
+          <set_value name="$DamagePct" exact="1.0"/>
+        </do_else>
+      </do_if>
+      <do_else>
+        <!-- secondary targets can only take turret fire -->
+        <set_value name="$DamagePct" exact="(this.ship.dps.turrets.all)f / (this.ship.dps.all)f"/>
+      </do_else>
+      <do_if value="not @$DamagePct">
+        <debug_text text="'WARNING: failed to set proper OOS damage for ' + this.ship.knownname + ' ' + this.ship.idcode + ' against target ' + $target.knownname + ' ' + $target.idcode"/>
+        <set_value name="$DamagePct" exact="1.0"/>
+      </do_if>
+      <debug_text text="'OOS damage pct for ' + this.ship.knownname + ' ' + this.ship.idcode + ' against target ' + $target.knownname + ' ' + $target.idcode + ' --- ' + $DamagePct + ' with all dps ' + this.ship.dps.all + ' turret dps ' + this.ship.dps.turrets.all + ' main dps ' + (this.ship.dps.primary + this.ship.dps.secondary) + ' base DPS from get_attackstrength ' + ($result_hullshield + $result_hullonly + $result_shieldonly + $result_hullnoshield)" chance="$debugchance"/>
+      <set_value name="$result_hullshield" exact="$result_hullshield * $DamagePct"/>
+      <set_value name="$result_hullonly" exact="$result_hullonly * $DamagePct"/>
+      <set_value name="$result_shieldonly" exact="$result_shieldonly * $DamagePct"/>
+      <set_value name="$result_hullnoshield" exact="$result_hullnoshield * $DamagePct"/>
+      <remove_value name="$DamagePct"/>
+    </do_if>
+  </replace>
+</diff>
