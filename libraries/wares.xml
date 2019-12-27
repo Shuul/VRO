@@ -3212,7 +3212,7 @@
  
 
   </add>
-<!-- Vanilla removal -->
+<!-- Vanilla missiles reomoval from being buildable by factions -->
 
   <add sel="//wares/ware[@id='missile_cluster_heavy_mk1']">
   <owner faction="khaak" />  </add>
@@ -3249,6 +3249,69 @@
   <add sel="//wares/ware[@id='missile_torpedo_light_mk1']">
   <owner faction="khaak" />  </add>
 
+<!-- some wares cost increase -->
+ <!-- par shields -->
+  <replace sel="//wares/ware[@id='shield_par_s_standard_01_mk1']/price">
+    <price min="1418" average="1654" max="1889" />
+  </replace>
+  <replace sel="//wares/ware[@id='shield_par_s_standard_01_mk1']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="6" />
+        <ware ware="shieldcomponents" amount="2" />
+      </primary>
+</replace>
+
+  <replace sel="//wares/ware[@id='shield_par_s_standard_01_mk2']/price">
+    <price min="12186" average="14318" max="16449" />
+  </replace>
+  <replace sel="//wares/ware[@id='shield_par_s_standard_01_mk2']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="12" />
+        <ware ware="fieldcoils" amount="3" />
+        <ware ware="shieldcomponents" amount="6" />
+      </primary>
+</replace>
+
+  <replace sel="//wares/ware[@id='shield_par_s_standard_01_mk3']/price">
+    <price min="51892" average="58436" max="64979" />
+  </replace>
+  <replace sel="//wares/ware[@id='shield_par_s_standard_01_mk3']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="24" />
+        <ware ware="fieldcoils" amount="12" />
+        <ware ware="shieldcomponents" amount="28" />
+      </primary>
+</replace>
+ <!-- some heavy fighters -->
+  <replace sel="//wares/ware[@id='ship_arg_s_heavyfighter_02_a']/price">
+    <price min="209472" average="246444" max="283411" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_arg_s_heavyfighter_02_a']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="85" />
+        <ware ware="hullparts" amount="188" />
+      </primary>
+</replace>
+
+  <replace sel="//wares/ware[@id='ship_tel_s_fighter_02_a']/price">
+    <price min="194800" average="229176" max="263555" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_tel_s_fighter_02_a']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="79" />
+        <ware ware="hullparts" amount="175" />
+      </primary>
+</replace>
+
+  <replace sel="//wares/ware[@id='ship_tel_s_fighter_02_b']/price">
+    <price min="225060" average="264776" max="304492" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_tel_s_fighter_02_b']/production/primary">
+    <primary>
+        <ware ware="energycells" amount="92" />
+        <ware ware="hullparts" amount="202" />
+      </primary>
+</replace>
 
 
 </diff>

@@ -290,6 +290,39 @@
       </element>
     </elements>
   </effect>
+
+<!-- Rail cannon-->
+    <effect name="muzzle_railcannon" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="railgun_muzzle_smoke_01" alignment="object" duration="1.0" minscale="2.0" maxscale="2.0" forklod="none"></element>
+      <!-- Geometry -->
+      <element id="2" ref="muzzle_par_s_railgun_01_mk1_macro" forkeffect="none" duration="0.1" minscale="2.0" maxscale="2.0" forklod="none"></element>
+      <!-- Geometry Light -->
+      <element id="4" ref="impact_light_cyan_macro" forkeffect="none" duration="0.1" minscale="5.0" maxscale="5.0" fadeout="0.0" forklod="none"></element>
+      <!-- Sound -->
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_rcan_shoot"></sound>
+      </element>
+    </elements>
+  </effect>
+
+<!-- Rail repeater-->
+    <effect name="wpn_rrep_shoot" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="railgun_muzzle_smoke_01" alignment="object" duration="0.8" minscale="1.5" maxscale="1.5" forklod="none"></element>
+      <!-- Geometry -->
+      <element id="2" ref="muzzle_par_s_railgun_01_mk1_macro" forkeffect="none" duration="0.1" minscale="2.0" maxscale="2.0" forklod="none"></element>
+      <!-- Geometry Light -->
+      <element id="4" ref="impact_light_cyan_macro" forkeffect="none" duration="0.1" minscale="5.0" maxscale="5.0" fadeout="0.0" forklod="none"></element>
+      <!-- Sound -->
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_impulse_player_muzzle"></sound>
+      </element>
+    </elements>
+  </effect>
+
 <!-- ARC DISCHARGER-->
 	<effect name="muzzle_arg_s_arc_discharger" alignment="object">
     <elements>
