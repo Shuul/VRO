@@ -196,13 +196,13 @@
   <effect name="muzzle_gen_m_cig" alignment="object">
     <elements>
       <!-- Muzzle Smoke-->
-      <element id="1" ref="dummyemitter_up_macro" forkeffect="plasma_muzzle_smoke_01" alignment="object" duration="1.5" minscale="0.6" maxscale="0.6" forklod="mediumeffect"></element>
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="plasma_muzzle_smoke_01" alignment="object" duration="2.5" minscale="5.6" maxscale="5.6" forklod="largeeffect"></element>
       <!-- Geometry Light -->
-      <element id="2" ref="impact_light_green_macro" forkeffect="none" duration="0.1" minscale="1.0" maxscale="1.0" fadeout="0.0" forklod="mediumeffect"></element>
+      <element id="2" ref="impact_light_green_macro" forkeffect="none" duration="0.3" minscale="4.5" maxscale="4.5" fadeout="0.0" forklod="largeeffect"></element>
       <!-- Geometry -->
-      <element id="3" ref="muzzle_gen_s_plasma_01_mk1_macro" forkeffect="none" duration="0.3" minscale="1.5" maxscale="1.5" forklod="mediumeffect"></element>
+      <element id="3" ref="muzzle_gen_s_plasma_01_mk1_macro" forkeffect="none" duration="0.9" minscale="4.5" maxscale="4.5" forklod="largeeffect"></element>
       <!-- Sound -->
-      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="largeeffect">
         <sound ref="wpn_CIG_shoot"></sound>
       </element>
       <element id="5" ref="effect_dummy_macro" forkeffect="none" delay="0" duration="0.2" forklod="none">
@@ -228,11 +228,11 @@
   <effect name="impact_gen_m_cig" alignment="normal">
     <elements>
       <!-- Impact Geometry -->
-      <element id="1" ref="impact_gen_s_plasma_01_mk1_macro" forkeffect="none" duration="1.0" minscale="3.0" maxscale="3.0" fadein="0.0" fadeout="0.0" forklod="none"></element>
+      <element id="1" ref="impact_gen_s_plasma_01_mk1_macro" forkeffect="none" duration="1.0" minscale="3.0" maxscale="3.0" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element>
       <!-- Glow sphere, Light, Sparkles -->
       <!-- <element id="2" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" forklod="none"></element> -->
       <!-- Plasma Particles -->
-      <element id="3" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="1.0" forklod="mediumeffect"></element>
+      <element id="3" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="1.0" forklod="largeeffect"></element>
       <!-- Area Damage -->
       <!-- <element id="2" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
         <areadamage range="100" falloff="1.0" duration="1.0" />
