@@ -16,10 +16,32 @@
 		</ship>
 	</add>
 
+	<add sel="//ships">
+		<ship id="argon_centaur" group="arg_centaur_l">
+			<category tags="[military, frigate, mission]" faction="[argon, scaleplate, hatikvah, alliance]" size="ship_l"/>
+			<pilot>
+				<select faction="argon" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_large_military"/>
+			<people ref="argon_military_crew"/>
+		</ship>
+	</add>
+
   <!-- ############################# -->
   <!--    ANTIGONE REPUBLIC -->
   <!-- ############################# -->
 	
+	<add sel="//ships">
+		<ship id="antigone_centaur" group="ant_centaur_l">
+			<category tags="[military, frigate, mission]" faction="[antigone, scaleplate, hatikvah, alliance]" size="ship_l"/>
+			<pilot>
+				<select faction="argon" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_large_military"/>
+			<people ref="argon_military_crew"/>
+		</ship>
+	</add>
+
 	<add sel="//ships">
 		<ship id="antigone_battleship_xl" group="ant_battleship_xl">
 			<category tags="[military, battleship, mission]" faction="[antigone, scaleplate, hatikvah, alliance]" size="ship_xl"/>
@@ -89,5 +111,7 @@
     <drop ref="ship_large_xenon"/>
   </ship>
 </add>
+
+
 
 </diff>

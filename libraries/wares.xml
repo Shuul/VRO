@@ -4,8 +4,8 @@
 <!-- loadout thresholds -->
 	<replace sel="//wares/ware[@id='turret_arg_l_beam_01_mk1']/use/@threshold">0.92</replace>
   <replace sel="//wares/ware[@id='turret_arg_l_plasma_01_mk1']/use/@threshold">0.85</replace>
-  <replace sel="//wares/ware[@id='turret_arg_m_beam_01_mk1']/use/@threshold">0.8</replace>
-  <replace sel="//wares/ware[@id='turret_arg_m_beam_02_mk1']/use/@threshold">0.8</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_beam_01_mk1']/use/@threshold">0.6</replace>
+  <replace sel="//wares/ware[@id='turret_arg_m_beam_02_mk1']/use/@threshold">0.6</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_gatling_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_gatling_02_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_arg_m_plasma_01_mk1']/use/@threshold">0.9</replace>
@@ -14,8 +14,8 @@
   <replace sel="//wares/ware[@id='turret_arg_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_par_l_beam_01_mk1']/use/@threshold">0.92</replace>
   <replace sel="//wares/ware[@id='turret_par_l_plasma_01_mk1']/use/@threshold">0.85</replace>
-  <replace sel="//wares/ware[@id='turret_par_m_beam_01_mk1']/use/@threshold">0.8</replace>
-  <replace sel="//wares/ware[@id='turret_par_m_beam_02_mk1']/use/@threshold">0.8</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_beam_01_mk1']/use/@threshold">0.6</replace>
+  <replace sel="//wares/ware[@id='turret_par_m_beam_02_mk1']/use/@threshold">0.6</replace>
   <replace sel="//wares/ware[@id='turret_par_m_gatling_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_par_m_gatling_02_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_par_m_plasma_01_mk1']/use/@threshold">0.9</replace>
@@ -24,8 +24,8 @@
   <replace sel="//wares/ware[@id='turret_par_m_shotgun_02_mk1']/use/@threshold">0.0</replace>	
   <replace sel="//wares/ware[@id='turret_tel_l_beam_01_mk1']/use/@threshold">0.92</replace>
   <replace sel="//wares/ware[@id='turret_tel_l_plasma_01_mk1']/use/@threshold">0.85</replace>
-  <replace sel="//wares/ware[@id='turret_tel_m_beam_01_mk1']/use/@threshold">0.8</replace>
-  <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/use/@threshold">0.8</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_beam_01_mk1']/use/@threshold">0.6</replace>
+  <replace sel="//wares/ware[@id='turret_tel_m_beam_02_mk1']/use/@threshold">0.6</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_gatling_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_gatling_02_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_plasma_01_mk1']/use/@threshold">0.9</replace>
@@ -214,7 +214,7 @@
 </replace>
 
 <add sel="/wares">
-  <ware id="weapon_arg_l_fa_centaur" name="{6699,1181}" description="{6699,1184}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+  <ware id="weapon_arg_l_fa_centaur" name="{6699,11810}" description="{6699,1184}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="1036709" average="1240788" max="1344866" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
@@ -251,7 +251,7 @@
     <owner faction="argon" />
   </ware>
 
-  <ware id="weapon_arg_l_parray_centaur" name="{6699,1191}" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+  <ware id="weapon_arg_l_parray_centaur" name="{6699,11910}" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="1100201" average="1211335" max="1322468" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
@@ -1377,7 +1377,7 @@
   
 	<ware id="ship_par_xl_battleship_a" name="{20101,31701}" description="{20101,31701}" group="ships_paranid" transport="ship" volume="1" tags="ship">
 		<price min="32000000" average="37000000" max="42000000" />
-		<production time="800" amount="1" method="default" name="{20206,101}">
+		<production time="575" amount="1" method="default" name="{20206,101}">
 		  <primary>
 			<ware ware="energycells" amount="3450" />
 			<ware ware="hullparts" amount="17940" />
@@ -1392,7 +1392,7 @@
 	
 	<ware id="ship_arg_xl_battleship_a" name="{20101,13001}" description="{20101,13001}" group="ships_argon" transport="ship" volume="1" tags="ship">
 		<price min="30000000" average="35000000" max="40000000" />
-		<production time="750" amount="1" method="default" name="{20206,101}">
+		<production time="550" amount="1" method="default" name="{20206,101}">
 		  <primary>
 			<ware ware="energycells" amount="4140" />
 			<ware ware="hullparts" amount="16675" />
@@ -1407,7 +1407,7 @@
 	
 	<ware id="ship_tel_xl_battleship_a" name="{20101,22101}" description="{20101,22101}" group="ships_teladi" transport="ship" volume="1" tags="ship">
 		<price min="29000000" average="33000000" max="39000000" />
-		<production time="700" amount="1" method="default" name="{20206,101}">
+		<production time="550" amount="1" method="default" name="{20206,101}">
 		  <primary>
 			<ware ware="energycells" amount="6900" />
 			<ware ware="hullparts" amount="15295" />
@@ -1421,11 +1421,11 @@
 
 <!-- Centaur-->
 		<ware id="ship_arg_l_centaur_a" name="{855021,130}" description="{855021,131}" transport="ship" size="ship" volume="1" tags="ship">
-			<price min="5450225" average="7266966" max="9083708" />
-		<production time="150" amount="1" method="default" name="{20206,101}">
+    <price min="3495057" average="3958890" max="4322724" />
+		<production time="100" amount="1" method="default" name="{20206,101}">
 		  <primary>
-		  <ware ware="energycells" amount="360" />
-		  <ware ware="hullparts" amount="1450" />
+		  <ware ware="energycells" amount="780" />
+		  <ware ware="hullparts" amount="3050" />
 		  </primary>
     </production>
 		<component ref="ship_arg_l_centaur_a_macro" amount="1" />
@@ -1773,7 +1773,7 @@
     <owner faction="teladi" />
   </ware>
 
-  <ware id="weapon_gen_m_cig_centaur" name="{6699,1131}" description="{20105,1134}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+  <ware id="weapon_gen_m_cig_centaur" name="{6699,11310}" description="{20105,1134}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="259750" average="269750" max="280750" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
@@ -1816,7 +1816,7 @@
     <owner faction="teladi" />
   </ware>
 
-  <ware id="weapon_gen_m_isr_centaur" name="{6699,1161}" description="{20105,1164}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+  <ware id="weapon_gen_m_isr_centaur" name="{6699,11610}" description="{20105,1164}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="215000" average="228604" max="232000" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
