@@ -33,6 +33,13 @@
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_01_mk1']/use/@threshold">0.0</replace>
   <replace sel="//wares/ware[@id='turret_tel_m_shotgun_02_mk1']/use/@threshold">0.0</replace>
 
+  <replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk1']/use/@threshold">0.4</replace>
+  <replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk2']/use/@threshold">0.6</replace>
+
+  <replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk1']/use/@threshold">0.4</replace>
+  <replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk2']/use/@threshold">0.6</replace>
+
+
 <!-- L and XL ships prices -->
   <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_a']/price">
   <price min="6295057" average="7458890" max="8522724" />
@@ -1172,9 +1179,7 @@
         <ware ware="weaponcomponents" amount="12" />
       </primary>
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk1']/use">
-<use threshold="0.4" />
-</replace>
+
 
  <replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk2']/price">
   <price min="90915" average="102722" max="115528" />
@@ -1186,9 +1191,7 @@
         <ware ware="weaponcomponents" amount="11" />
       </primary>
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk2']/use">
-<use threshold="0.8" />
-</replace>
+
 
  <replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk1']/price">
   <price min="51985" average="59074" max="66162" />
@@ -1467,13 +1470,13 @@
   </replace>
 
   <replace sel="//wares/ware[@id='weapon_gen_s_burst_01_mk1']/price">
-  <price min="30972" average="33972" max="37372" />
+  <price min="35972" average="38972" max="42372" />
   </replace>
   <replace sel="//wares/ware[@id='weapon_gen_s_burst_01_mk1']/production/primary">
     <primary>
         <ware ware="advancedelectronics" amount="1" />
         <ware ware="energycells" amount="5" />
-        <ware ware="weaponcomponents" amount="5" />
+        <ware ware="weaponcomponents" amount="6" />
       </primary>
   </replace>
   <add sel="//wares/ware[@id='weapon_gen_s_burst_01_mk1']">
@@ -1483,13 +1486,13 @@
   <owner faction="holyorder" />  </add>
 
   <replace sel="//wares/ware[@id='weapon_gen_s_burst_01_mk2']/price">
-  <price min="90216" average="97516" max="108328" />
+  <price min="98216" average="105516" max="116328" />
   </replace>
   <replace sel="//wares/ware[@id='weapon_gen_s_burst_01_mk2']/production/primary">
     <primary>
         <ware ware="advancedelectronics" amount="3" />
         <ware ware="energycells" amount="16" />
-        <ware ware="weaponcomponents" amount="16" />
+        <ware ware="weaponcomponents" amount="18" />
       </primary>
   </replace>
 
@@ -1882,7 +1885,7 @@
     </production>
     <component ref="weapon_gen_s_pbe_macro" amount="1" />
     <restriction licence="militaryequipment" />
-    <use threshold="0.1" />
+    <use threshold="0.0" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
@@ -1903,7 +1906,7 @@
     </production>
     <component ref="weapon_gen_m_cig_macro" amount="1" />
     <restriction licence="capitalequipment" />
-    <use threshold="0.6" />
+    <use threshold="0.7" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
@@ -1924,7 +1927,7 @@
     </production>
     <component ref="weapon_gen_m_cig_centaur_macro" amount="1" />
     <restriction licence="capitalequipment" />
-    <use threshold="0.6" />
+    <use threshold="0.7" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
@@ -1946,7 +1949,7 @@
     </production>
     <component ref="weapon_gen_m_isr_macro" amount="1" />
     <restriction licence="capitalequipment" />
-    <use threshold="0.2" />
+    <use threshold="0.4" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
@@ -1967,7 +1970,7 @@
     </production>
     <component ref="weapon_gen_m_isr_centaur_macro" amount="1" />
     <restriction licence="capitalequipment" />
-    <use threshold="0.2" />
+    <use threshold="0.4" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
