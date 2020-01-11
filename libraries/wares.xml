@@ -39,6 +39,13 @@
   <replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk1']/use/@threshold">0.4</replace>
   <replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk2']/use/@threshold">0.6</replace>
 
+  <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk1']/use/@threshold">0.1</replace>
+  <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk2']/use/@threshold">0.4</replace>
+
+  <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk1']/use/@threshold">0.2</replace>
+  <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk2']/use/@threshold">0.5</replace>
+
+
 
 <!-- L and XL ships prices -->
   <replace sel="//wares/ware[@id='ship_arg_l_destroyer_01_a']/price">
@@ -1382,46 +1389,46 @@
 
 
  <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk1']/price">
-  <price min="148827" average="152304" max="165780" />
+  <price min="158827" average="162304" max="175780" />
   </replace>
   <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk1']/production/primary">
     <primary>
         <ware ware="advancedelectronics" amount="12" />
         <ware ware="energycells" amount="53" />
-        <ware ware="weaponcomponents" amount="25" />
+        <ware ware="weaponcomponents" amount="26" />
       </primary>
   </replace>
 
    <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk2']/price">
-  <price min="192953" average="223583" max="245212" />
+  <price min="202953" average="233583" max="255212" />
   </replace>
   <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk2']/production/primary">
     <primary>
         <ware ware="advancedelectronics" amount="14" />
         <ware ware="energycells" amount="58" />
-        <ware ware="weaponcomponents" amount="29" />
+        <ware ware="weaponcomponents" amount="30" />
       </primary>
   </replace>
   
    <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk1']/price">
-  <price min="68231" average="74231" max="81231" />
+  <price min="69231" average="75231" max="82231" />
   </replace>
   <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk1']/production/primary">
     <primary>
         <ware ware="advancedelectronics" amount="3" />
         <ware ware="energycells" amount="10" />
-        <ware ware="weaponcomponents" amount="7" />
+        <ware ware="weaponcomponents" amount="8" />
       </primary>
   </replace>
 
    <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk2']/price">
-  <price min="91915" average="101722" max="114528" />
+  <price min="93915" average="121722" max="144528" />
   </replace>
   <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk2']/production/primary">
     <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="15" />
-        <ware ware="weaponcomponents" amount="13" />
+        <ware ware="weaponcomponents" amount="14" />
       </primary>
   </replace>
 
@@ -1971,6 +1978,49 @@
     <component ref="weapon_gen_m_isr_centaur_macro" amount="1" />
     <restriction licence="capitalequipment" />
     <use threshold="0.4" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="holyorder" />
+    <owner faction="ministry" />
+    <owner faction="paranid" />
+    <owner faction="teladi" />
+  </ware>
+
+  <!-- MA -->
+  <ware id="weapon_gen_m_ma" name="{6699,11006}" description="{20105,11005}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="225000" average="238604" max="242000" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="17" />
+        <ware ware="energycells" amount="70" />
+        <ware ware="weaponcomponents" amount="33" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_m_ma_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.85" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="holyorder" />
+    <owner faction="ministry" />
+    <owner faction="paranid" />
+    <owner faction="teladi" />
+  </ware>
+
+  <ware id="weapon_gen_m_ma_centaur" name="{6699,110060}" description="{20105,11005}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="225000" average="238604" max="242000" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="17" />
+        <ware ware="energycells" amount="70" />
+        <ware ware="weaponcomponents" amount="33" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_m_ma_centaur_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.85" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />

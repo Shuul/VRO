@@ -1,0 +1,40 @@
+<!-- <mdscript name="WeaponFind" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/x4 extract/libraries/md.xsd"> -->
+<mdscript name="WeaponFind" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/x4 extract/libraries/md.xsd">
+    <cues>
+        <cue name="WeaponFindStart">
+            <!-- <conditions>
+                <event_cue_signalled cue="md.Setup.GameStart" />
+            </conditions> -->
+            <delay exact="15s" />
+            <actions>
+                <set_value name="$MacroTable" exact="table[]" />
+                <set_value name="$AllMacros" exact="lookup.macro.list" />
+                <!--  -->
+                <find_ship name="$Ships" space="player.galaxy" multiple="true" />
+                <do_for_each in="$Ships" name="$Ship">
+                    <find_object_component name="$Weapons" object="$Ship" multiple="true">
+                        <match_any>
+                            <match class="[class.turret, class.weapon]" negate="true" />
+                            <match integrated="true" />
+                            <match integrated="false" />
+                        </match_any>
+                    </find_object_component>
+                    <do_for_each in="$Weapons" name="$Weapon">
+                        <do_for_each in="$AllMacros" name="$Macro">
+                            <do_if value="$Weapon.macro == $Macro">
+                                <do_if value="not $MacroTable.{$Macro}.$Count?">
+                                    <set_value name="$MacroTable.{loop.element}" exact="table[$Count = 0]" />
+                                </do_if>
+                                <set_value name="$MacroTable.{$Macro}.$Count" exact="1" operation="add" />
+                            </do_if>
+                        </do_for_each>
+                    </do_for_each>
+                </do_for_each>
+                <do_for_each in="$MacroTable" valuename="$Amount">
+                    <debug_to_file text="'macro: %s count %s'.[loop.key.name, $Amount]" name="'macrotable.log'" directory="'macrotable'" />
+                </do_for_each>
+                <debug_to_file text="$MacroTable" name="'macrotable.log'" directory="'macrotable'" />
+            </actions>
+        </cue>
+    </cues>
+</mdscript> 
