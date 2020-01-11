@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<components>
+	<component name="bullet_hept_green" class="bullet">
+		<source geometry="extensions\vro\assets\fx\weaponFx\bullet_hept_green_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="100" g="254" b="100" range="20" shadowrange="20" lenseffect="hept" lighteffect="1" trigger="1" intensity="5" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="-4.04399"/>
+						</offset>
+					</omni>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="bullet">
+				<offset/>
+			</connection>
+			<connection name="Connection02" tags="part  ">
+				<offset/>
+				<parts>
+					<part name="shotgun_bullet">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="particles.explosion_master_01_geometry"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.748052" y="0.7366875" z="6.64359"/>
+							<center x="-4.172325E-07" y="0" z="-6.434974"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection01" tags="laser">
+				<offset/>
+			</connection>
+		</connections>
+	</component>
+</components>

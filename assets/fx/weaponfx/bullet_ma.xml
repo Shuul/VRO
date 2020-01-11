@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<components>
+	<component name="bullet_ma" class="bullet">
+		<source geometry="extensions\vro\assets\fx\weaponFx\bullet_ma_data"></source>
+		<layers>
+			<layer>
+				<waypoints></waypoints>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="89" g="161" b="255" range="100" shadowrange="100" lighteffect="1" trigger="1" intensity="0.8">
+						<lightanimations></lightanimations>
+						<offset></offset>
+					</omni>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"></connection>
+			<connection name="position" tags="position" value="1" optional="1"></connection>
+			<connection name="space" tags="bullet">
+				<offset></offset>
+			</connection>
+			<connection name="Connection01" tags="part animation textureanimation  ">
+				<offset>
+					<position x="0" y="0" z="-11.79277"></position>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="100"></animation>
+				</animations>
+				<parts>
+					<part name="anim_trail">
+						<size>
+							<max x="2.651767" y="3.061996" z="23.92244"></max>
+							<center x="0" y="0" z="-11.24745"></center>
+						</size>
+						<size_raw>
+							<max x="2.651767" y="3.061996" z="35.16989"></max>
+							<center x="1.192093E-07" y="0" z="-11.24745"></center>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="u_offset" controller="linear_float">
+									<key frame="0" value="0"></key>
+									<key frame="100" value="4"></key>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection02" tags="part animation  ">
+				<offset></offset>
+				<animations>
+					<animation name="loop" start="1" end="300"></animation>
+				</animations>
+				<parts>
+					<part name="anim_core">
+						<size>
+							<max x="38.16444" y="53.97259" z="53.97259"></max>
+							<center x="0" y="1.907349E-06" z="0"></center>
+						</size>
+						<size_raw>
+							<max x="38.16439" y="38.16439" z="38.16438"></max>
+							<center x="0" y="0" z="0"></center>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="connection_laser01" tags="laser ">
+				<offset>
+					<position x="2.459504E-08" y="1.937732E-08" z="-4.330513"></position>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

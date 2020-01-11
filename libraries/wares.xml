@@ -154,6 +154,110 @@
   </primary>
   </replace>
 
+<!-- MA turrets -->
+<add sel="/wares">
+  <ware id="turret_arg_m_ma_01" name="{6699,11001}" description="{6699,11005}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="85286" average="89864" max="93850" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+    </production>
+    <component ref="turret_arg_m_ma_01_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0.85" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+  </ware>
+
+    <ware id="turret_arg_m_ma_02" name="{6699,11001}" description="{6699,11005}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="85286" average="89864" max="93850" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+    </production>
+    <component ref="turret_arg_m_ma_02_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0.85" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+  </ware>
+
+  <ware id="turret_par_m_ma_01" name="{6699,11001}" description="{6699,11005}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="85286" average="89864" max="93850" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+    </production>
+    <component ref="turret_par_m_ma_01_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0.85" />
+    <owner faction="alliance" />
+    <owner faction="holyorder" />
+    <owner faction="paranid" />
+  </ware>
+
+  <ware id="turret_par_m_ma_02" name="{6699,11001}" description="{6699,11005}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="85286" average="89864" max="93850" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+    </production>
+    <component ref="turret_par_m_ma_02_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0.85" />
+    <owner faction="alliance" />
+    <owner faction="holyorder" />
+    <owner faction="paranid" />
+  </ware>
+
+    <ware id="turret_tel_m_ma_01" name="{6699,11001}" description="{6699,11005}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="85286" average="89864" max="93850" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+    </production>
+    <component ref="turret_tel_m_ma_01_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0.85" />
+    <owner faction="alliance" />
+    <owner faction="ministry" />
+    <owner faction="teladi" />
+  </ware>
+
+  <ware id="turret_tel_m_ma_02" name="{6699,11001}" description="{6699,11005}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="85286" average="89864" max="93850" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="energycells" amount="36" />
+        <ware ware="turretcomponents" amount="15" />
+      </primary>
+    </production>
+    <component ref="turret_tel_m_ma_02_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0.85" />
+    <owner faction="alliance" />
+    <owner faction="ministry" />
+    <owner faction="teladi" />
+  </ware>
+</add>
 
 <!-- L guns -->
 <replace sel="//wares/ware[@id='weapon_arg_l_destroyer_01_mk1']">
@@ -1068,6 +1172,9 @@
         <ware ware="weaponcomponents" amount="12" />
       </primary>
 </replace>
+<replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk1']/use">
+<use threshold="0.4" />
+</replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk2']/price">
   <price min="90915" average="102722" max="115528" />
@@ -1078,6 +1185,9 @@
         <ware ware="energycells" amount="15" />
         <ware ware="weaponcomponents" amount="11" />
       </primary>
+</replace>
+<replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk2']/use">
+<use threshold="0.8" />
 </replace>
 
  <replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk1']/price">
@@ -1248,6 +1358,9 @@
         <ware ware="weaponcomponents" amount="6" />
       </primary>
   </replace>
+  <add sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk1']">
+  <owner faction="teladi" />
+  <owner faction="ministry" />  </add>
 
 
  <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk2']/price">
@@ -1260,6 +1373,9 @@
         <ware ware="weaponcomponents" amount="14" />
       </primary>
   </replace>
+  <add sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk2']">
+  <owner faction="teladi" />
+  <owner faction="ministry" />  </add>
 
 
  <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk1']/price">
@@ -1360,6 +1476,11 @@
         <ware ware="weaponcomponents" amount="5" />
       </primary>
   </replace>
+  <add sel="//wares/ware[@id='weapon_gen_s_burst_01_mk1']">
+  <owner faction="teladi" />
+  <owner faction="ministry" />
+  <owner faction="paranid" />
+  <owner faction="holyorder" />  </add>
 
   <replace sel="//wares/ware[@id='weapon_gen_s_burst_01_mk2']/price">
   <price min="90216" average="97516" max="108328" />
@@ -1371,6 +1492,13 @@
         <ware ware="weaponcomponents" amount="16" />
       </primary>
   </replace>
+
+    <add sel="//wares/ware[@id='weapon_gen_s_burst_01_mk2']">
+  <owner faction="teladi" />
+  <owner faction="ministry" />
+  <owner faction="paranid" />
+  <owner faction="holyorder" />  </add>
+
 
 <!-- Faction Battleships -->
 <add sel="/wares">  
@@ -1712,7 +1840,7 @@
     </production>
     <component ref="weapon_gen_s_hept_macro" amount="1" />
     <restriction licence="militaryequipment" />
-    <use threshold="0.4" />
+    <use threshold="0.3" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
@@ -1733,7 +1861,7 @@
     </production>
     <component ref="weapon_gen_s_ebc_macro" amount="1" />
     <restriction licence="militaryequipment" />
-    <use threshold="0.5" />
+    <use threshold="0.2" />
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />

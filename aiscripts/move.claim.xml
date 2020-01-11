@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- removing shield destruction on ship capture to prevent the loss of internal generators -->
+<diff>
+	<replace sel="/aiscript/attention[@min='visible']/actions/do_if[5]/do_if[1]/find_object_component">
+      <find_object_component name="$subcomponents" object="$target" class="[class.weapon, class.turret]" multiple="true"/>
+	</replace>
+
+	<replace sel="/aiscript/attention[@min='unknown']/actions/do_if[4]/do_if[1]/find_object_component">
+	  <find_object_component name="$subcomponents" object="$target" class="[class.weapon, class.turret]" multiple="true"/>
+	</replace>
+</diff>
