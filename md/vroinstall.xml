@@ -23,7 +23,7 @@
       <cues>
         <!-- we can place our cue here without conditions, it'll just be run as a subcue after the delay. When the parent cue is being reset, this will be called again. -->
         <cue name="VRO_ishields_encyclopedia" instantiate="false">
-          <delay exact="5s"/>
+          <delay exact="10s"/>
           <actions>
             <create_list name="$vro_ishield_ware_list"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_fighter_01_a"/>

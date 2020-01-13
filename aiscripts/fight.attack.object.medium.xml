@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<replace sel="//aiscript/params">
+<!-- <replace sel="//aiscript/params">
 
 <params>
     <param name="debugchance" default="1"/>
 </params>
-</replace>
+</replace> -->
 
 
   <replace sel="//attention[@min='unknown']/actions/do_while//do_if[@value='(this.ship.dps.lasers.all + this.ship.dps.missiles.all) gt 0 and this.ship.dps.turrets.all gt 0']/do_if[@value='if (@$primarytarget.exists and $targets.indexof.{$primarytarget} gt 0) then ($targets.{$i} == $primarytarget) else (not $ProcessedAnyTarget)']/do_if[@value='@$OtherTargetExists']">
