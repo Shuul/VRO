@@ -13,7 +13,7 @@
       </conditions>
       <actions>
          <show_help duration="10s" custom="'VRO 2.0 installed.'"/>
-         <show_help duration="10s" custom="'Please fisit Egosoft forum thread for mod description and latest patchnotes.'"/>
+         <show_help duration="10s" custom="'Please visit Egosoft forum mod thread for mod description and latest patchnotes.'"/>
       </actions>
       <!-- if a cue is running that has a version like sinceversion or older then the patch will be applied -->
       <patch sinceversion="1">
@@ -165,6 +165,7 @@
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_xl_resupplier_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_xl_resupplier_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_xl_resupplier_01_b"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_gen_s_fightingdrone_01_a"/>
 
             <do_all exact="$vro_ishield_ware_list.count" counter="$i">
               <set_value name="$Warescontainer" exact="$vro_ishield_ware_list.{$i}.objectmacro" />
