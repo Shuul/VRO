@@ -166,6 +166,7 @@
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_xl_resupplier_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_xl_resupplier_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_gen_s_fightingdrone_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_03_p_macro"/>
 
             <do_all exact="$vro_ishield_ware_list.count" counter="$i">
               <set_value name="$Warescontainer" exact="$vro_ishield_ware_list.{$i}.objectmacro" />

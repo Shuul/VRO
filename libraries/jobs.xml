@@ -16,7 +16,7 @@
 			</order>
 		</orders>
 		<category faction="argon" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="10" sector="1"/>
+		<quota galaxy="8" sector="1"/>
      	<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -39,7 +39,7 @@
 			</order>
 		</orders>
 		<category faction="argon" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="20" sector="2"/>
+		<quota galaxy="15" sector="1"/>
      	<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -68,7 +68,7 @@
 			</order>
 		</orders>
 		<category faction="antigone" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="10" sector="1"/>
+		<quota galaxy="8" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -91,7 +91,7 @@
 			</order>
 		</orders>
 		<category faction="antigone" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="20" sector="2"/>
+		<quota galaxy="12" sector="1"/>
      	<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -118,7 +118,7 @@
 			</order>
 		</orders>
 		<category faction="paranid" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="10" sector="1"/>
+		<quota galaxy="12" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -199,7 +199,7 @@
 			</order>
 		</orders>
 		<category faction="ministry" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="10" sector="1"/>
+		<quota galaxy="6" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -213,7 +213,37 @@
 			<subordinate job="ministry_frigate_escort_m"/>
 		</subordinates>
 	  </job>
+
+
+  <!-- ############################# -->
+  <!--      PIRATE SHIPS		      -->
+  <!-- ############################# -->
+  
+  <job id="scaleplate_plunderer_l_inca" name="{20204,4501}" disabled="false">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Plunder" default="true">
+        <param name="range_internal" value="'cluster'"/>
+        <param name="plundermode" value="1"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[plunderer]" size="ship_l"/>
+    <quota galaxy="10" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
+    <environment buildatshipyard="false" gate="true"/>
+    <basket basket="pirate_container"/>
+    <ship>
+      <select faction="scaleplate" tags="[plundererinca]" size="ship_l"/>
+      <loadout>
+        <level min="0.2" max="0.5"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+	  <paint ware="paintmod_0002"/>
+    </ship>
+  </job>
+
 </add>
+
   <!-- ############################# -->
   <!--      XENON				      -->
   <!-- ############################# -->

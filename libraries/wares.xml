@@ -1557,8 +1557,9 @@
 		<owner faction="ministry" />
     </ware>
 
+<!-- NEW SHIPS-->
 <!-- Centaur-->
-		<ware id="ship_arg_l_centaur_a" name="{20101,12802}" description="{6699,1901}" transport="ship" size="ship" volume="1" tags="ship">
+		<ware id="ship_arg_l_centaur_a" name="{20101,12802}" description="{6699,1901}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
     <price min="4595057" average="5058890" max="5522724" />
 		<production time="100" amount="1" method="default" name="{20206,101}">
 		  <primary>
@@ -1571,7 +1572,7 @@
 		<owner faction="argon" />
 		</ware>
 
-    <ware id="ship_arg_l_centaur_b" name="{20101,12803}" description="{6699,1901}" transport="ship" size="ship" volume="1" tags="ship">
+    <ware id="ship_arg_l_centaur_b" name="{20101,12803}" description="{6699,1901}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
     <price min="5195057" average="5658890" max="6222724" />
 		<production time="100" amount="1" method="default" name="{20206,101}">
 		  <primary>
@@ -1583,6 +1584,22 @@
     <restriction licence="capitalship" />
     <owner faction="antigone" />
 		</ware>
+
+<!-- Incarcatua reinforced-->
+    <ware id="ship_arg_l_trans_container_03_p" name="{6699,1902}" description="{6699,19021}" transport="ship" volume="1" tags="ship">
+    <price min="7457503" average="8167650" max="9077798" />
+    <production time="319" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="1001" />
+        <ware ware="hullparts" amount="4890" />
+      </primary>
+    </production>
+    <component ref="ship_arg_l_trans_container_03_p_macro" amount="1" />
+    <restriction licence="capitalship" />
+    <owner faction="scaleplate" />
+    <owner faction="hatikvah" />
+  </ware>
+
 
 <!-- FLAK TURRETS -->
 	<ware id="turret_arg_l_flak" name="{6699,1011}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
@@ -3129,6 +3146,12 @@
  <ware id="ishield_arg_l_trans_container_03_b" name="{6699,13092}" description="{6699,13092}" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
     <price min="1" average="1" max="1" />
     <component ref="ishield_arg_l_trans_container_03_b_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+  
+  <ware id="ishield_arg_l_trans_container_03_p" name="{6699,13141}" description="{6699,13141}" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_trans_container_03_p_macro" amount="1" />
     <use threshold="0" />
     </ware>
 
