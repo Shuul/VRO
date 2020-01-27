@@ -1093,7 +1093,21 @@
       </element>
     </elements>
   </effect>
-
+<!-- Positron beam -->
+  <effect name="muzzle_gen_l_positron" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="4.6" minscale="4.5"  maxscale="4.5" fadeout="0.2" forklod="none"/>
+      <!-- Geometry -->
+      <element id="2" ref="muzzle_gen_m_beam_01_mk1_macro" forkeffect="none" duration="4.6" minscale="3.0" maxscale="3.0" forklod="largeeffect"/>
+      <!-- Geometry Light -->
+      <element id="3" ref="impact_light_green_macro" forkeffect="none" duration="4.6" minscale="20.0" maxscale="20.0" fadeout="0.2" forklod="largeeffect"/>
+      <!-- Sound -->
+      <!-- <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none"> -->
+      <!-- <sound ref="wpn_impulse_player_muzzle"/> -->
+      <!-- </element> -->
+    </elements>
+  </effect>
 
 <!-- bomber weapons-->
   <effect name="muzzle_gen_m_plasmabomb" alignment="object">

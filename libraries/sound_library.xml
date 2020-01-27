@@ -442,12 +442,23 @@
     </sound>
 
   <!-- bomber weapon -->
-    <sound id="wpn_gen_bomb_launch" description="x" repeat="1" is3d="1" preload="1" >
+    <sound id="wpn_gen_bomb_launch" description="wpn_gen_bomb_launch" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
           <select start="extensions\VRO\sfx\weapons\bomb_launch"/>
         </sample>
         <volume start="3" distance="10"/>
     </sound>
+
+  <!-- positron beam -->
+    <sound id="wpn_gen_posbeam_charge" description="wpn_gen_posbeam_charge" repeat="-1" is3d="1" preload="1" >
+        <sample start="extensions\VRO\sfx\weapons\pos_beam_charge"/>
+        <volume start="2" distance="20"/>
+    </sound>
+    <sound id="wpn_gen_posbeam_shoot" description="wpn_gen_posbeam_shoot" repeat="1" is3d="1" preload="1" >
+        <sample start="extensions\VRO\sfx\weapons\pos_beam_loop"/>
+        <volume start="2" distance="20"/>
+    </sound>
+
 
 
 

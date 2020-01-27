@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Markus (192.168.3.123) at 04.02.2019_11-27-54-->
+
+<macros>
+  <macro name="bullet_gen_l_posbeam_macro" class="bullet">
+    <component ref="bullet_tel_l_beam_01_mk1" />
+    <properties>
+      <bullet speed="40000" lifetime="4.7" range="17000" amount="1" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1"  />
+      <reload rate ="0.05" />
+      <heat value="1000" />
+      <damage value="5000" shield="500" />
+      <effects>
+        <impact ref="impact_gen_m_beam_01_mk1" inside="impact_gen_m_beam_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_m_beam_01_mk1_bigobject" inside="impact_gen_m_beam_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_gen_l_positron" />
+      </effects>
+      <sounds>
+        <ambient ref="wpn_gen_posbeam_shoot" />
+      </sounds>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+ 
