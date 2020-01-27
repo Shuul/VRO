@@ -403,25 +403,6 @@
     <owner faction="paranid" />
   </ware>
 
-  <ware id="weapon_tel_l_posbeam" name="{6699,11008}" description="{6699,11009}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-    <price min="1073462" average="1170149" max="1267000" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="50" />
-        <ware ware="energycells" amount="190" />
-        <ware ware="weaponcomponents" amount="85" />
-      </primary>
-    </production>
-    <component ref="weapon_tel_l_posbeam_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
-    <owner faction="alliance" />
-    <owner faction="ministry" />
-    <owner faction="teladi" />
-  </ware>
-
-<!-- Positron Beam -->
-
   <ware id="weapon_tel_l_parray" name="{6699,1191}" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="973217" average="1070241" max="1167265" />
     <production time="10" amount="1" method="default" name="{20206,101}">
@@ -438,6 +419,45 @@
     <owner faction="ministry" />
     <owner faction="teladi" />
   </ware>
+
+
+<!-- Positron Beam -->
+    <ware id="weapon_tel_l_posbeam" name="{6699,11008}" description="{6699,11009}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1073462" average="1170149" max="1267000" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="50" />
+        <ware ware="energycells" amount="190" />
+        <ware ware="weaponcomponents" amount="85" />
+      </primary>
+    </production>
+    <component ref="weapon_tel_l_posbeam_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.9" />
+    <owner faction="alliance" />
+    <owner faction="ministry" />
+    <owner faction="teladi" />
+  </ware>
+
+<!-- Ion Projector -->
+  <ware id="weapon_arg_l_ionproj" name="{6699,11010}" description="{6699,11011}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1200201" average="1311335" max="1422468" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="43" />
+        <ware ware="energycells" amount="173" />
+        <ware ware="weaponcomponents" amount="86" />
+      </primary>
+    </production>
+    <component ref="weapon_arg_l_ionproj_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.9" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+  </ware>
+
+<!-- Tri-Beam -->
 
 </add>
 <!-- L turrets prices and materials-->
