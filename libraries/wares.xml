@@ -428,7 +428,7 @@
       <primary>
         <ware ware="advancedelectronics" amount="50" />
         <ware ware="energycells" amount="190" />
-        <ware ware="weaponcomponents" amount="85" />
+        <ware ware="weaponcomponents" amount="105" />
       </primary>
     </production>
     <component ref="weapon_tel_l_posbeam_macro" amount="1" />
@@ -444,9 +444,9 @@
     <price min="1200201" average="1311335" max="1422468" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
-        <ware ware="advancedelectronics" amount="43" />
-        <ware ware="energycells" amount="173" />
-        <ware ware="weaponcomponents" amount="86" />
+        <ware ware="advancedelectronics" amount="60" />
+        <ware ware="energycells" amount="200" />
+        <ware ware="weaponcomponents" amount="91" />
       </primary>
     </production>
     <component ref="weapon_arg_l_ionproj_macro" amount="1" />
@@ -458,7 +458,22 @@
   </ware>
 
 <!-- Tri-Beam -->
-
+  <ware id="weapon_par_l_tribeam" name="{6699,11012}" description="{6699,11013}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <price min="1030201" average="1151335" max="1232468" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="47" />
+        <ware ware="energycells" amount="230" />
+        <ware ware="weaponcomponents" amount="100" />
+      </primary>
+    </production>
+    <component ref="weapon_par_l_tribeam_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.9" />
+    <owner faction="alliance" />
+    <owner faction="holyorder" />
+    <owner faction="paranid" />
+  </ware>
 </add>
 <!-- L turrets prices and materials-->
 <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/price">

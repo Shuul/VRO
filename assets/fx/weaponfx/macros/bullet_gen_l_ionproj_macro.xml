@@ -5,14 +5,14 @@
   <macro name="bullet_gen_l_ionproj_macro" class="bullet">
     <component ref="bullet_arg_l_beam_01_mk1" />
     <properties>
-      <bullet speed="60000" lifetime="2.65" range="18500" amount="1" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
+      <bullet speed="60000" lifetime="2.65" range="18000" amount="1" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
       <reload rate ="0.14" />
-      <heat value="1250" />
-      <damage value="2000" shield="4500" />
+      <heat value="1050" />
+      <damage value="1900" shield="4200" />
       <effects>
         <impact ref="impact_gen_m_beam_01_mk1" inside="impact_gen_m_beam_01_mk1_inside" />
         <bigobjectimpact ref="impact_gen_m_beam_01_mk1_bigobject" inside="impact_gen_m_beam_01_mk1_bigobject_inside" />
-        <launch ref="muzzle_gen_l_positron" />
+        <launch ref="muzzle_gen_l_ionproj" />
       </effects>
       <sounds>
         <ambient ref="wpn_gen_ionproj_shoot" />
