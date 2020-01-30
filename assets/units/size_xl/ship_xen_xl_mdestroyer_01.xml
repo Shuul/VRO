@@ -176,7 +176,41 @@
 					</part>
 				</parts>
 			</connection>
-			<connection name="connection_turret_large_xe01" group="group02 " tags="turret large standard xcruise ">
+					<!--misisle-->
+			<connection name="connection_launcher_xe01" group="group11" tags="turret medium missile hittable">
+				<offset>
+					<position x="-60.2988" y="220" z="420"/>
+					<rotation yaw="0" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="connection_launcher_xe02" group="group11" tags="turret medium missile hittable">
+				<offset>
+					<position x="60.2988" y="220" z="420"/>
+					<rotation yaw="0" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="connection_launcher_xe03" group="group11" tags="turret medium missile hittable">
+				<offset>
+					<position x="-60.2988" y="200" z="450"/>
+					<rotation yaw="0" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="connection_launcher_xe04" group="group11" tags="turret medium missile hittable">
+				<offset>
+					<position x="60.2988" y="200" z="450"/>
+					<rotation yaw="0" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<!--misisle-->
+			<!--internal shield-->
+			<connection name="con_ishield_01" tags="ishield">
+ 			 <offset>
+   				<position x="0" y="0" z="0"/>
+    			 <quaternion qx="0" qy="0" qz="0" qw="0"/>
+  			</offset>
+		</connection>
+
+			<connection name="connection_turret_large_xe01" group="group02 " tags="turret large standard ">
 				<offset>
 					<position x="111.5328" y="-301.0975" z="631.3145"/>
 					<quaternion qx="-0.5053" qy="-0.4204242" qz="-0.7051093" qw="0.2659628"/>
@@ -199,8 +233,8 @@
 			</connection>
 			<connection name="connection_shieldgen01" group="group01 " tags="medium shield hittable ">
 				<offset>
-					<position x="0" y="-0.6028414" z="631.2357"/>
-					<quaternion qx="-0.7071068" qy="-3.090862E-08" qz="-0.7071068" qw="1.99496E-07"/>
+					<position x="1.009996" y="-0.6745749" z="631.2357"/>
+					<quaternion qx="-3.554965E-03" qy="0.7070979" qz="-3.554797E-03" qw="-0.7070978"/>
 				</offset>
 			</connection>
 			<connection name="connection_radar_fallback01" tags="radar ">
@@ -236,8 +270,8 @@
 			</connection>
 			<connection name="connection_shieldgen02" group="group02 " tags="medium shield hittable ">
 				<offset>
-					<position x="0" y="-376.5625" z="419.3069"/>
-					<quaternion qx="-1" qy="-4.37114E-08" qz="-4.371138E-08" qw="2.384186E-07"/>
+					<position x="20.15492" y="-376.9084" z="582.5533"/>
+					<quaternion qx="0.7071067" qy="-1.376788E-07" qz="-0.7071068" qw="-1.99496E-07"/>
 				</offset>
 			</connection>
 			<connection name="connection_turret_large_xe02" group="group02 " tags="turret large standard xcruise">
@@ -246,13 +280,13 @@
 					<quaternion qx="0.4630568" qy="-0.4046517" qz="-0.733543" qw="-0.2893958"/>
 				</offset>
 			</connection>
-			<connection name="connection_turret_large_xe03" group="group03 " tags="turret large standard xcruise">
+			<connection name="connection_turret_large_xe03" group="group09 " tags="turret large standard xcruise">
 				<offset>
 					<position x="-31.98379" y="-41.55704" z="9.102592"/>
 					<quaternion qx="-1" qy="2.279973E-14" qz="3.019916E-07" qw="7.54979E-08"/>
 				</offset>
 			</connection>
-			<connection name="connection_turret_large_xe04" group="group03 " tags="turret large standard xcruise">
+			<connection name="connection_turret_large_xe04" group="group09 " tags="turret large standard xcruise">
 				<offset>
 					<position x="29.59143" y="-41.63035" z="9.102592"/>
 					<quaternion qx="-1" qy="2.279973E-14" qz="3.019916E-07" qw="7.54979E-08"/>
@@ -294,48 +328,15 @@
 					<quaternion qx="0.6687521" qy="-0.7221637" qz="-0.1221243" qw="0.1278122"/>
 				</offset>
 			</connection>
-		<!--misisle-->
-			<connection name="connection_launcher_xe01" group="group10" tags="turret medium missile hittable">
-				<offset>
-					<position x="-60.2988" y="220" z="420"/>
-					<rotation yaw="0" pitch="0" roll="0"/>
-				</offset>
-			</connection>
-			<connection name="connection_launcher_xe02" group="group10" tags="turret medium missile hittable">
-				<offset>
-					<position x="60.2988" y="220" z="420"/>
-					<rotation yaw="0" pitch="0" roll="0"/>
-				</offset>
-			</connection>
-			<connection name="connection_launcher_xe03" group="group10" tags="turret medium missile hittable">
-				<offset>
-					<position x="-60.2988" y="200" z="450"/>
-					<rotation yaw="0" pitch="0" roll="0"/>
-				</offset>
-			</connection>
-			<connection name="connection_launcher_xe04" group="group10" tags="turret medium missile hittable">
-				<offset>
-					<position x="60.2988" y="200" z="450"/>
-					<rotation yaw="0" pitch="0" roll="0"/>
-				</offset>
-			</connection>
-			<!--misisle-->
-			<!--internal shield-->
-			<connection name="con_ishield_01" tags="ishield">
- 			 <offset>
-   				<position x="0" y="0" z="0"/>
-    			 <quaternion qx="0" qy="0" qz="0" qw="0"/>
-  			</offset>
- 			</connection>
 			<connection name="connection_shieldgen06" group="group05 " tags="medium shield hittable ">
 				<offset>
-					<position x="-232.6418" y="63.2319" z="245.58"/>
+					<position x="-227.5337" y="63.2319" z="245.58"/>
 					<quaternion qx="1.192093E-07" qy="-1" qz="1.942166E-14" qw="-1.629207E-07"/>
 				</offset>
 			</connection>
 			<connection name="connection_shieldgen07" group="group06 " tags="medium shield hittable ">
 				<offset>
-					<position x="232.7996" y="63.23201" z="245.58"/>
+					<position x="226.9357" y="63.23201" z="245.58"/>
 					<quaternion qx="1.192093E-07" qy="-1" qz="1.942166E-14" qw="-1.629207E-07"/>
 				</offset>
 			</connection>
@@ -367,30 +368,6 @@
 				<offset>
 					<position x="122.1898" y="39.79211" z="-392.0824"/>
 					<quaternion qx="1.236345E-07" qy="-1.236345E-07" qz="0.7071065" qw="-0.707107"/>
-				</offset>
-			</connection>
-			<connection name="connection_turret_medium_xe08" group="group09 " tags="turret medium standard hittable ">
-				<offset>
-					<position x="10.0048" y="400.227" z="-246.758"/>
-					<rotation yaw="0" pitch="5.13871" roll="-0.160101"/>
-				</offset>
-			</connection>
-			<connection name="connection_turret_medium_xe09" group="group09 " tags="turret medium standard hittable ">
-				<offset>
-					<position x="-10.0048" y="400.227" z="-246.758"/>
-					<rotation yaw="0" pitch="5.13871" roll="0.160101"/>
-				</offset>
-			</connection>
-			<connection name="connection_turret_medium_xe10" group="group09 " tags="turret medium standard hittable ">
-				<offset>
-					<position x="10.0048" y="400.2627" z="-220.758"/>
-					<rotation yaw="0" pitch="0" roll="-0.160101"/>
-				</offset>
-			</connection>
-			<connection name="connection_turret_medium_xe11" group="group09 " tags="turret medium standard hittable ">
-				<offset>
-					<position x="-10.0048" y="400.627" z="-220.758"/>
-					<rotation yaw="0" pitch="0" roll="0.160101"/>
 				</offset>
 			</connection>
 			<connection name="connection_shieldgen_external01" tags="extralarge shield ">
@@ -456,6 +433,85 @@
 				<offset>
 					<position x="286.4511" y="21.30472" z="112.3053"/>
 					<quaternion qx="-0.5" qy="0.5" qz="-0.4999999" qw="0.5"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen010" group="group09 " tags="medium shield hittable ">
+				<offset>
+					<position x="41.05213" y="-58.78038" z="83.44427"/>
+					<quaternion qx="-1" qy="-4.37114E-08" qz="-4.371138E-08" qw="2.384186E-07"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen011" group="group02 " tags="medium shield hittable ">
+				<offset>
+					<position x="20.15492" y="-376.9084" z="595.6978"/>
+					<quaternion qx="0.7071067" qy="-1.376788E-07" qz="-0.7071068" qw="-1.99496E-07"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen012" group="group02 " tags="medium shield hittable ">
+				<offset>
+					<position x="-20.68822" y="-376.9084" z="582.5533"/>
+					<quaternion qx="-0.7071066" qy="-1.99496E-07" qz="-0.7071069" qw="1.376787E-07"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen013" group="group02 " tags="medium shield hittable ">
+				<offset>
+					<position x="-20.68823" y="-376.9084" z="595.6978"/>
+					<quaternion qx="-0.7071066" qy="-1.99496E-07" qz="-0.7071069" qw="1.376787E-07"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen014" group="group09 " tags="medium shield hittable ">
+				<offset>
+					<position x="27.10046" y="-58.78038" z="83.44427"/>
+					<quaternion qx="-1" qy="-4.37114E-08" qz="-4.371138E-08" qw="2.384186E-07"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen015" group="group09 " tags="medium shield hittable ">
+				<offset>
+					<position x="-41.6162" y="-58.78038" z="83.44427"/>
+					<quaternion qx="-1" qy="-4.37114E-08" qz="-4.371138E-08" qw="2.384186E-07"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen016" group="group09 " tags="medium shield hittable ">
+				<offset>
+					<position x="-27.66453" y="-58.78038" z="83.44427"/>
+					<quaternion qx="-1" qy="-4.37114E-08" qz="-4.371138E-08" qw="2.384186E-07"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen017" group="group06 " tags="medium shield hittable ">
+				<offset>
+					<position x="238.8788" y="63.23201" z="245.58"/>
+					<quaternion qx="1.192093E-07" qy="-1" qz="1.942166E-14" qw="-1.629207E-07"/>
+				</offset>
+			</connection>
+			<connection name="connection_shieldgen018" group="group05 " tags="medium shield hittable ">
+				<offset>
+					<position x="-239.4599" y="63.2319" z="245.58"/>
+					<quaternion qx="1.192093E-07" qy="-1" qz="1.942166E-14" qw="-1.629207E-07"/>
+				</offset>
+			</connection>
+
+			<connection name="connection_turret_medium_xe08" group="group10 " tags="turret medium standard hittable ">
+				<offset>
+					<position x="10.0048" y="400.227" z="-246.758"/>
+					<rotation yaw="0" pitch="5.13871" roll="-0.160101"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_medium_xe09" group="group10 " tags="turret medium standard hittable ">
+				<offset>
+					<position x="-10.0048" y="400.227" z="-246.758"/>
+					<rotation yaw="0" pitch="5.13871" roll="0.160101"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_medium_xe10" group="group10 " tags="turret medium standard hittable ">
+				<offset>
+					<position x="10.0048" y="400.2627" z="-220.758"/>
+					<rotation yaw="0" pitch="0" roll="-0.160101"/>
+				</offset>
+			</connection>
+			<connection name="connection_turret_medium_xe11" group="group10 " tags="turret medium standard hittable ">
+				<offset>
+					<position x="-10.0048" y="400.627" z="-220.758"/>
+					<rotation yaw="0" pitch="0" roll="0.160101"/>
 				</offset>
 			</connection>
 
