@@ -175,8 +175,8 @@
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="36" />
-        <ware ware="turretcomponents" amount="15" />
+        <ware ware="energycells" amount="44" />
+        <ware ware="turretcomponents" amount="22" />
       </primary>
     </production>
     <component ref="turret_arg_m_ma_01_macro" amount="1" />
@@ -192,8 +192,8 @@
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="36" />
-        <ware ware="turretcomponents" amount="15" />
+        <ware ware="energycells" amount="44" />
+        <ware ware="turretcomponents" amount="22" />
       </primary>
     </production>
     <component ref="turret_arg_m_ma_02_macro" amount="1" />
@@ -209,8 +209,8 @@
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="36" />
-        <ware ware="turretcomponents" amount="15" />
+        <ware ware="energycells" amount="44" />
+        <ware ware="turretcomponents" amount="22" />
       </primary>
     </production>
     <component ref="turret_par_m_ma_01_macro" amount="1" />
@@ -226,8 +226,8 @@
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="advancedelectronics" amount="4" />
-        <ware ware="energycells" amount="36" />
-        <ware ware="turretcomponents" amount="15" />
+        <ware ware="energycells" amount="44" />
+        <ware ware="turretcomponents" amount="22" />
       </primary>
     </production>
     <component ref="turret_par_m_ma_02_macro" amount="1" />
@@ -238,7 +238,7 @@
     <owner faction="paranid" />
   </ware>
 
-    <ware id="turret_tel_m_ma_01" name="{6699,11003}" description="{6699,11005}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <!-- <ware id="turret_tel_m_ma_01" name="{6699,11003}" description="{6699,11005}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
     <price min="85286" average="89864" max="93850" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
@@ -268,6 +268,40 @@
     <restriction licence="militaryequipment" />
     <use threshold="0.85" />
     <owner faction="alliance" />
+    <owner faction="ministry" />
+    <owner faction="teladi" />
+  </ware>
+ -->
+
+<!-- flechette turret -->
+    <ware id="turret_tel_m_flechette_01" name="{6699, 11014}" description="{6699, 11016}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="76573" average="82145" max="88400" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="30" />
+        <ware ware="turretcomponents" amount="14" />
+      </primary>
+    </production>
+    <component ref="turret_tel_m_flechette_01_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.7" />
+    <owner faction="ministry" />
+    <owner faction="teladi" />
+  </ware>
+
+      <ware id="turret_tel_m_flechette_02" name="{6699, 11014}" description="{6699, 11016}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="76573" average="82145" max="88400" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="3" />
+        <ware ware="energycells" amount="30" />
+        <ware ware="turretcomponents" amount="14" />
+      </primary>
+    </production>
+    <component ref="turret_tel_m_flechette_02_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.7" />
     <owner faction="ministry" />
     <owner faction="teladi" />
   </ware>

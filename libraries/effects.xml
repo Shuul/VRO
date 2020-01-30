@@ -674,6 +674,22 @@
       </element>
     </elements>
   </effect>
+  <!-- flechette turret-->
+	<effect name="muzzle_gen_m_flechette_cannon" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <element id="1" ref="dummyemitter_macro" forkeffect="shotgun_muzzle_smoke_01" alignment="object" duration="2.0" minscale="2.0" maxscale="2.0" forklod="none"/>
+      <!-- Geometry -->
+      <element id="2" ref="muzzle_gen_s_shotgun_01_mk1_macro" forkeffect="none" duration="0.1" minscale="2.0" maxscale="2.0" forklod="none"/>
+      <!-- Geometry Light -->
+      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.1" minscale="3.0" maxscale="3.0" fadeout="0.1" forklod="none"/>
+      <!-- Sound -->
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_flechette_turret_shoot"></sound>
+      </element>
+    </elements>
+  </effect>
+
 <!-- KINETIC ARTILLERY-->
 	<effect name="muzzle_gen_l_kinetic_artillery" alignment="object">
     <elements>

@@ -399,6 +399,16 @@
         </sample>
         <volume start="1.3" distance="10"/>
     </sound>
+
+    <!-- flechette Turret-->
+    <sound id="wpn_flechette_turret_shoot" description="flechette shooting" repeat="1" is3d="1" preload="1" >
+        <sample selection="random">
+          <select start="extensions\VRO\sfx\weapons\flechette_1"/>
+          <select start="extensions\VRO\sfx\weapons\flechette_2"/> 
+        </sample>
+        <volume start="1.5" distance="10"/>
+    </sound>
+    
 <!-- TRI-->
     <sound id="wpn_tri_shoot" description="TRI shooting" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
@@ -450,19 +460,19 @@
     </sound>
 
   <!-- positron beam -->
-    <sound id="wpn_gen_posbeam_charge" description="wpn_gen_posbeam_charge" repeat="-1" is3d="1" preload="1" >
+    <!-- <sound id="wpn_gen_posbeam_charge" description="wpn_gen_posbeam_charge" repeat="-1" is3d="1" preload="1" >
         <sample start="extensions\VRO\sfx\weapons\pos_beam_charge"/>
-        <volume start="2" distance="20"/>
-    </sound>
+        <volume start="2" distance="18"/>
+    </sound> -->
     <sound id="wpn_gen_posbeam_shoot" description="wpn_gen_posbeam_shoot" repeat="1" is3d="1" preload="1" >
         <sample start="extensions\VRO\sfx\weapons\pos_beam_loop"/>
-        <volume start="2" distance="20"/>
+        <volume start="1.5" distance="18"/>
     </sound>
 
   <!-- Ion Projector -->
     <sound id="wpn_gen_ionproj_shoot" description="wpn_gen_ionproj_shoot" repeat="-1" is3d="1" preload="1" >
         <sample start="extensions\VRO\sfx\weapons\ion_projector"/>
-        <volume start="2" distance="20"/>
+        <volume start="1.7" distance="18"/>
     </sound>
 
 <!-- Tri Beam -->
@@ -471,7 +481,7 @@
           <select start="extensions\VRO\sfx\weapons\tribeam_1"/>
           <select start="extensions\VRO\sfx\weapons\tribeam_2"/>
         </sample>
-        <volume start="2" distance="20"/>
+        <volume start="1.5" distance="18"/>
     </sound>
 
 
