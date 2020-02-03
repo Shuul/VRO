@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Lorrainer (192.168.3.133) at 22.06.2018_11-03-46-->
+<diff>
+  <replace sel="//macros">
+<macros>
+  <macro name="countermeasure_flares_01_macro" class="countermeasure">
+    <component ref="countermeasure_flares_01" />
+    <properties>
+      <identification name="{20201,1001}" description="{20201,1002}" unique="0" />
+      <effects>
+        <launch ref="wpn_flare_launcher" />
+      </effects>
+      <countermeasure lifetime="4" interval="0.5" counter="5" />
+    </properties>
+  </macro>
+</macros>
+</replace>
+  </diff>

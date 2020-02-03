@@ -238,40 +238,40 @@
     <owner faction="paranid" />
   </ware>
 
-    <!-- <ware id="turret_tel_m_ma_01" name="{6699,11003}" description="{6699,11005}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="85286" average="89864" max="93850" />
+    <ware id="turret_tel_m_ma_01" name="{6699,11003}" description="{6699,11005}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="88286" average="91864" max="95850" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
-        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="advancedelectronics" amount="5" />
         <ware ware="energycells" amount="36" />
         <ware ware="turretcomponents" amount="15" />
       </primary>
     </production>
     <component ref="turret_tel_m_ma_01_macro" amount="1" />
     <restriction licence="militaryequipment" />
-    <use threshold="0.85" />
+    <use threshold="1.0" />
     <owner faction="alliance" />
     <owner faction="ministry" />
     <owner faction="teladi" />
   </ware>
 
   <ware id="turret_tel_m_ma_02" name="{6699,11003}" description="{6699,11005}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-    <price min="85286" average="89864" max="93850" />
+    <price min="88286" average="91864" max="95850" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
-        <ware ware="advancedelectronics" amount="4" />
+        <ware ware="advancedelectronics" amount="5" />
         <ware ware="energycells" amount="36" />
         <ware ware="turretcomponents" amount="15" />
       </primary>
     </production>
     <component ref="turret_tel_m_ma_02_macro" amount="1" />
     <restriction licence="militaryequipment" />
-    <use threshold="0.85" />
+    <use threshold="1.0" />
     <owner faction="alliance" />
     <owner faction="ministry" />
     <owner faction="teladi" />
   </ware>
- -->
+
 
 <!-- flechette turret -->
     <ware id="turret_tel_m_flechette_01" name="{6699, 11014}" description="{6699, 11016}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
@@ -285,7 +285,7 @@
     </production>
     <component ref="turret_tel_m_flechette_01_macro" amount="1" />
     <restriction licence="generaluseequipment" />
-    <use threshold="0.7" />
+    <use threshold="0.6" />
     <owner faction="ministry" />
     <owner faction="teladi" />
   </ware>
@@ -301,7 +301,7 @@
     </production>
     <component ref="turret_tel_m_flechette_02_macro" amount="1" />
     <restriction licence="generaluseequipment" />
-    <use threshold="0.7" />
+    <use threshold="0.6" />
     <owner faction="ministry" />
     <owner faction="teladi" />
   </ware>
@@ -3638,5 +3638,38 @@
       </primary>
 </replace>
 
+<!-- XENON weapon names -->
+  <replace sel="//wares/ware[@id='weapon_xen_s_laser_01_mk1']">
+  <ware id="weapon_xen_s_laser_01_mk1" name="{6699,1050}" description="{6699,1050}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint weapon">
+    <price min="778" average="864" max="950" />
+    <production time="4" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="5" />
+        <ware ware="ore" amount="2" />
+      </primary>
+    </production>
+    <component ref="weapon_xen_s_laser_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" factions="xenon" />
+    <owner faction="xenon" />
+  </ware>
+</replace>
+
+  <replace sel="//wares/ware[@id='weapon_xen_m_laser_01_mk1']">
+  <ware id="weapon_xen_m_laser_01_mk1" name="{6699,1030}" description="{6699,1030}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint weapon">
+    <price min="24019" average="26688" max="29357" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="10" />
+        <ware ware="ore" amount="30" />
+        <ware ware="silicon" amount="30" />
+      </primary>
+    </production>
+    <component ref="weapon_xen_m_laser_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" factions="xenon" />
+    <owner faction="xenon" />
+  </ware>
+</replace>
 
 </diff>

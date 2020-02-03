@@ -1471,15 +1471,15 @@
     <effect name="impact_xen_mauler_turret" alignment="object">
     <elements>
       <!-- Distortion Bubble Particle -->
-      <element id="1" ref="dummyemitter_macro" forkeffect="turret_l_impact01_distortion01" duration="1.0" emitterspace="zone" alignment="impact" forklod="largeeffect"></element>
+      <element id="1" ref="dummyemitter_macro" forkeffect="turret_l_impact01_distortion01" duration="1.0" emitterspace="zone" alignment="impact" forklod="megaeffect"></element>
       <!-- Blue impact explosion. -->
-      <element id="2" ref="dummyemitter_macro" forkeffect="turret_medium_bb_xe_impact01_explosion01" duration="3.5" emitterspace="zone" alignment="impact" forklod="largeeffect"></element>
+      <element id="2" ref="dummyemitter_macro" forkeffect="turret_medium_bb_xe_impact01_explosion01" duration="3.5" emitterspace="zone" alignment="impact" forklod="megaeffect"></element>
          
       <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
         <areadamage range="250" falloff="1" duration="1" />
       </element>
          <!-- Sound -->
-      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="smalleffect">
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="mediumeffect">
         <sound ref="wpn_xen_mauler_impact"></sound>
       </element>
     </elements>
@@ -1499,11 +1499,11 @@
     <effect name="impact_xen_phase_turret" alignment="object">
     <elements>
       <!-- Distortion Bubble Particle -->
-      <element id="1" ref="dummyemitter_macro" forkeffect="turret_l_impact01_distortion01" duration="0.6" minscale="0.3" maxscale="0.3" emitterspace="zone" alignment="impact" forklod="largeeffect"></element>
+      <element id="1" ref="dummyemitter_macro" forkeffect="turret_l_impact01_distortion01" duration="0.6" minscale="0.3" maxscale="0.3" emitterspace="zone" alignment="impact" forklod="megaeffect"></element>
       <!-- Blue impact explosion. -->
-      <element id="2" ref="dummyemitter_macro" forkeffect="turret_medium_bb_xe_impact01_explosion01" duration="1.2" minscale="0.25" maxscale="0.25" emitterspace="zone" alignment="impact" forklod="largeeffect"></element>
+      <element id="2" ref="dummyemitter_macro" forkeffect="turret_medium_bb_xe_impact01_explosion01" duration="1.2" minscale="0.25" maxscale="0.25" emitterspace="zone" alignment="impact" forklod="megaeffect"></element>
          <!-- Sound -->
-      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="smalleffect">
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="largeeffect">
         <sound ref="wpn_xen_phase_impact"></sound>
       </element>
     </elements>
