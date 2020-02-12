@@ -53,6 +53,30 @@
 			<subordinate job="argon_fighter_escort_s_frigate"/>
 		</subordinates>
 	  </job>
+
+	  <job id="argon_battleship_titan" name="{20204,6201}" comment="each sector, expansion">
+		<modifiers commandeerable="true"/>
+		<orders>
+			<order order="Patrol" default="true">
+       		 <param name="range" value="class.sector"/>
+			</order>
+		</orders>
+		<category faction="argon" tags="[factionlogic, military, battleship]" size="ship_xl"/>
+		<quota galaxy="1" />
+     	<location class="zone" macro="Zone002_Cluster_14_Sector001_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
+		<environment buildatshipyard="true"/>
+		<ship>
+			<select faction="argon" tags="[titan]" size="ship_xl"/>
+			<loadout>
+				<level exact ="1.0"/>
+				<variation exact ="0"/>
+			</loadout>
+			<owner exact="argon" overridenpc="true"/>
+		</ship>
+		<subordinates>
+			<subordinate job="argon_destroyer_escort_l"/>
+		</subordinates>
+	  </job>
 	
 
 	

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 27.11.2018_14-45-25-->
+<macros>
+  <macro name="ship_arg_xl_titan_macro" class="ship_xl">
+    <component ref="ship_arg_xl_titan" />
+    <properties>
+      <identification name="{20004,1050011}" basename="{20004,1050011}" description="{6699,1903}" variation="" shortvariation="" icon="ship_xl_battleship" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk2" default="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="15000" />
+      <storage missile="450" unit="30" />
+      <hull max="1090555" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="237" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_xl_01" />
+      </sounds>
+      <physics mass="1200">
+        <inertia pitch="1160.604" yaw="1160.604" roll="950.883" />
+        <drag forward="840" reverse="1200" horizontal="400" vertical="400" pitch="1350.326" yaw="1350.326" roll="1350.326" />
+      </physics>
+      <thruster tags="extralarge" />
+      <ship type="battleship" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_arg_xl_01_macro" connection="con_cockpit" />
+      </connection>
+
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_launchtube_arg_s_01_a">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+      </connection>
+      <connection ref="con_launchtube_arg_s_01_b">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+      </connection>
+      <connection ref="con_launchtube_arg_s_01_c">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+      </connection>
+      <connection ref="con_launchtube_arg_s_01_d">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+      </connection>
+      <connection ref="con_launchtube_arg_s_01_e">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+      </connection>
+      <connection ref="con_launchtube_arg_s_01_f">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+      </connection>
+      <connection ref="con_launchtube_arg_s_01_g">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+      </connection>
+      <connection ref="con_launchtube_arg_s_01_h">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+      </connection>
+      <connection ref="con_launchtube_arg_s_01_i">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+      </connection>
+      <connection ref="con_launchtube_arg_s_01_j">
+        <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+      </connection>
+      <connection ref="con_shipstorage01">
+        <macro ref="shipstorage_gen_m_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage02">
+        <macro ref="shipstorage_gen_s_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_arg_xl_carrier_01_a_macro" connection="ShipConnection" />
+      </connection>
+	  
+	  <connection ref="con_dockarea_arg_s_ship_single_1">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+	  <connection ref="con_dockarea_arg_s_ship_single_2">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+	  <connection ref="con_dockarea_arg_s_ship_single_3">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+	  <connection ref="con_dockarea_arg_s_ship_single_4">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+	  <connection ref="con_dockarea_arg_s_ship_single_5">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+	  <connection ref="con_dockarea_arg_s_ship_single_6">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+	  
+	  <connection ref="con_dockarea_arg_s_ship_single_7">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+	  <connection ref="con_dockarea_arg_s_ship_single_8">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+	  <connection ref="con_dockarea_arg_s_ship_single_9">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+	  <connection ref="con_dockarea_arg_s_ship_single_10">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+	  <connection ref="con_dockarea_arg_s_ship_single_11">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+	  <connection ref="con_dockarea_arg_s_ship_single_12">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_ishield_01">
+        <macro ref="ishield_arg_xl_titan_macro" connection="ParentConnection" />
+      </connection>
+
+    </connections>
+  </macro>
+</macros>

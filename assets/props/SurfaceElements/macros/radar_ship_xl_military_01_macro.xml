@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Benedikt (192.168.3.115) at 22.05.2013_16-47-07-->
+<macros>
+  <macro name="radar_ship_xl_military_01_macro" class="radar">
+    <component ref="props_surf_ar_radar_01" />
+    <properties>
+      <identification name="{20104,1601}" description="{20104,1602}" unique="0" />
+      <radar range="36000" />
+ <!--     <hull max="20000" threshold="0.25" /> -->
+		<hull integrated="1" />
+      <effects>
+        <explosion ref="explosion_turret_m_wall_pulse" />
+        <sefx_damage_low ref="sefx_damage_m_low" />
+        <sefx_damage_medium ref="sefx_damage_m_medium" />
+        <sefx_damage_high ref="sefx_damage_m_high" />
+        <sefx_shield ref="sefx_shield_m_01" />
+      </effects>
+      <efficiency>
+        <threshold threshold="0.75" value="1" />
+        <threshold threshold="0.25" value="0.25" /> 
+      </efficiency>
+    </properties>
+  </macro>
+</macros>

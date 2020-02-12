@@ -1602,7 +1602,7 @@
   <owner faction="argon" />
   <owner faction="antigone" />  </add>
 
-
+<!-- NEW SHIPS-->
 <!-- Faction Battleships -->
 <add sel="/wares">  
   
@@ -1650,7 +1650,21 @@
 		<owner faction="ministry" />
     </ware>
 
-<!-- NEW SHIPS-->
+<!-- Titan -->
+      <ware id="ship_arg_xl_titan" name="{20004,1050011}" description="{6699,1903}" group="ships_argon" transport="ship" volume="1" tags="ship">
+        <price min="50000000" average="65000000" max="70000000" />
+        <production time="750" amount="1" method="default" name="{20206,101}">
+          <primary>
+            <ware ware="energycells" amount="5640" />
+            <ware ware="hullparts" amount="22622" />
+          </primary>
+        </production>
+        <component ref="ship_arg_xl_titan_macro" amount="1" />
+        <restriction licence="capitalship" />
+        <owner faction="argon" />
+      </ware>
+      
+
 <!-- Centaur-->
 		<ware id="ship_arg_l_centaur_a" name="{20101,12802}" description="{6699,1901}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
     <price min="4595057" average="5058890" max="5522724" />
@@ -3558,6 +3572,12 @@
     <component ref="ishield_gen_s_fightingdrone_01_a_macro" amount="1" />
     <use threshold="0" />
     </ware>
+
+  <ware id="ishield_arg_xl_titan" name="{6699,13142}" description="{6699,13142}" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+      <price min="1" average="1" max="1" />
+      <component ref="ishield_arg_xl_titan_macro" amount="1" />
+      <use threshold="0" />
+      </ware>
 
   </add>
 <!-- Vanilla missiles reomoval from being buildable by factions -->
