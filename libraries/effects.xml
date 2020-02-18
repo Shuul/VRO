@@ -483,18 +483,18 @@
   <effect name="muzzle_gen_s_pulse_beamer" alignment="object">
     <elements>
       <!-- Muzzle Smoke-->
-      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="10.0" minscale="0.4" maxscale="0.4" fadeout="1.0" forklod="none"></element>
-      <!-- Reaper CANNON-->
-      <element id="2" ref="muzzle_gen_s_beam_01_mk1_macro" forkeffect="none" duration="10.0" minscale="1.0" maxscale="1.0" fadeout="0.0" forklod="none"></element>
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="2.0" minscale="0.4" maxscale="0.4" fadeout="1.0" forklod="none"></element>
+      <!-- Geometry -->
+      <element id="2" ref="muzzle_gen_s_beam_01_mk1_macro" forkeffect="none" duration="2.0" minscale="1.0" maxscale="1.0" fadeout="0.0" forklod="none"></element>
       <!-- Geometry Light -->
-      <element id="3" ref="impact_light_red_macro" forkeffect="none" duration="10.0" minscale="1.0" maxscale="1.0" fadeout="0.8" forklod="none"></element>
+      <element id="3" ref="impact_light_red_macro" forkeffect="none" duration="2.0" minscale="1.0" maxscale="1.0" fadeout="0.8" forklod="none"></element>
 	  <!-- Sound -->
       <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
         <sound ref="wpn_pulse_beamer_shoot"></sound>
       </element>
     </elements>
   </effect>
-  	<!-- Avanger Autocannon-->
+<!-- Avanger Autocannon-->
 	<effect name="muzzle_gen_m_avanger_autocannon" alignment="object">
     <elements>
       <!-- Muzzle Smoke-->
@@ -648,11 +648,11 @@
 	<effect name="muzzle_gen_m_scatter_storm_cannon" alignment="object">
     <elements>
       <!-- Muzzle Smoke-->
-      <element id="1" ref="dummyemitter_macro" forkeffect="shotgun_muzzle_smoke_01" alignment="object" duration="2.0" minscale="3.0" maxscale="3.0" forklod="none"></element>
+      <element id="1" ref="dummyemitter_macro" forkeffect="shotgun_muzzle_smoke_01" alignment="object" duration="2.0" minscale="3.0" maxscale="3.0" forklod="none"/>
       <!-- Geometry -->
-      <element id="2" ref="muzzle_gen_s_shotgun_01_mk1_macro" forkeffect="none" duration="0.1" minscale="3.0" maxscale="3.0" forklod="none"></element>
+      <element id="2" ref="muzzle_gen_s_shotgun_01_mk1_macro" forkeffect="none" duration="0.1" minscale="3.0" maxscale="3.0" forklod="none"/>
       <!-- Geometry Light -->
-      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.1" minscale="5.0" maxscale="5.0" fadeout="0.1" forklod="none"></element>
+      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.1" minscale="5.0" maxscale="5.0" fadeout="0.1" forklod="none"/>
       <!-- Sound -->
       <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
         <sound ref="wpn_shotgun_muzzle"></sound>
@@ -1509,43 +1509,6 @@
     </elements>
   </effect>
 </add>
-<replace sel="/effects/effect[@id='plasmaemitter_impact_02']">
-
-<effect name="plasmaemitter_impact_02" alignment="object">
-  <!-- if you change this please also change: impact_plasmaemitter_inside (all except visuals) -->
-  <elements>
-    <!-- Glow sphere, Light, Sparkles -->
-    <!-- <element id="1" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" forklod="none"></element> -->
-    <!-- Plasma Particles -->
-    <element id="2" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="1.0" forklod="mediumeffect"></element>
-    <!-- Area Damage -->
-    <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
-      <areadamage range="50" falloff="1.0" duration="1.0" />
-    </element>
-    <!-- Sound -->
-    <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="2.6" forklod="mediumeffect">
-      <sound ref="general_impact_medium"></sound>
-    </element>
-    <!-- Rumble -->
-    <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
-      <force range="200" falloff="1">
-        <rumble>
-          <camera>
-            <component frequency="5" attackduration="0.1" sustainduration="0.5" releaseduration="0.4">
-              <amplitude randomize="true">
-                <position x="0" y="0.003" z="0"></position>
-              </amplitude>
-            </component>
-          </camera>
-          <controller>
-            <high amplitude="0.4" attackduration="0.0" sustainduration="0.2" releaseduration="0.0" />
-          </controller>
-        </rumble>
-      </force>
-    </element>
-  </elements>
-</effect>
-</replace>
 
 </diff>
 
