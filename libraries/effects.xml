@@ -231,7 +231,6 @@
       <element id="1" ref="impact_light_green_macro" forkeffect="none" duration="1.0" minscale="3.0" maxscale="3.0" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element>
       <element id="2" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="2.0" minscale="2.0" maxscale="2.0" forkmaterial="none" forklod="megaeffect"></element>
       <!-- Glow sphere, Light, Sparkles -->
-      <!-- <element id="2" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" forklod="none"></element> -->
       <!-- Plasma Particles -->
       <!-- Area Damage -->
       <!-- <element id="2" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
@@ -296,7 +295,6 @@
     <!-- if you change this please also change: impact_plasmaemitter_inside (all except visuals) -->
     <elements>
       <!-- Glow sphere, Light, Sparkles -->
-      <!-- <element id="1" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" forklod="largeeffect"></element> -->
       <!-- Plasma Particles -->
       <element id="2" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="1.0" forklod="largeeffect"></element>
       <!-- Area Damage -->
@@ -483,11 +481,11 @@
   <effect name="muzzle_gen_s_pulse_beamer" alignment="object">
     <elements>
       <!-- Muzzle Smoke-->
-      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="2.0" minscale="0.4" maxscale="0.4" fadeout="1.0" forklod="none"></element>
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="0.2" minscale="0.4" maxscale="0.4" fadeout="1.0" forklod="none"></element>
       <!-- Geometry -->
-      <element id="2" ref="muzzle_gen_s_beam_01_mk1_macro" forkeffect="none" duration="2.0" minscale="1.0" maxscale="1.0" fadeout="0.0" forklod="none"></element>
+      <element id="2" ref="muzzle_gen_s_beam_01_mk1_macro" forkeffect="none" duration="0.2" minscale="1.0" maxscale="1.0" fadeout="0.0" forklod="none"></element>
       <!-- Geometry Light -->
-      <element id="3" ref="impact_light_red_macro" forkeffect="none" duration="2.0" minscale="1.0" maxscale="1.0" fadeout="0.8" forklod="none"></element>
+      <element id="3" ref="impact_light_red_macro" forkeffect="none" duration="0.2" minscale="1.0" maxscale="1.0" fadeout="0.8" forklod="none"></element>
 	  <!-- Sound -->
       <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
         <sound ref="wpn_pulse_beamer_shoot"></sound>
@@ -952,7 +950,6 @@
  <effect name="turret_annihilator_impact" alignment="normal">
     <elements>
       <!-- Impact Geometry -->
-      <!-- <element id="1" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" minscale="1.7" maxscale="1.7" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element> -->
       <element id="1" ref="turret_annihilator_impact_macro" forkeffect="none" duration="2.0" minscale="1.5" maxscale="1.5" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element>
       <!-- Impact Smoke Particles-->
       <element id="2" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="1.0" minscale="5.0" maxscale="5.0" forklod="largeeffect"></element>
@@ -1048,7 +1045,6 @@
  <effect name="turret_fa_impact" alignment="normal">
     <elements>
       <!-- Impact Geometry -->
-      <!-- <element id="1" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" minscale="1.7" maxscale="1.7" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element> -->
       <element id="1" ref="turret_annihilator_impact_macro" forkeffect="none" duration="1.0" minscale="1.0" maxscale="1.0" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element>
       <!-- Impact Smoke Particles-->
       <element id="2" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="1.0" minscale="1.0" maxscale="1.0" forklod="largeeffect"></element>
@@ -1175,7 +1171,6 @@
   <effect name="impact_gen_m_plasmabomb" alignment="normal">
     <elements>
       <!-- Impact Geometry -->
-      <!-- <element id="1" ref="plasmaemitter_impact_02_macro" forkeffect="none" alignment="normal" duration="1.0" minscale="1" maxscale="1" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element> -->
       <element id="1" ref="turret_annihilator_impact_macro" forkeffect="none" duration="2.0" minscale="0.8" maxscale="0.8" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element>
       <!-- Impact Smoke Particles-->
       <element id="2" ref="dummyemitter_macro" forkeffect="plasmaemitter_impact_02_explosion01" alignment="normal" duration="1.0" minscale="5.0" maxscale="5.0" forklod="largeeffect"></element>
