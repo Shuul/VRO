@@ -2,6 +2,52 @@
 <diff>
 	<replace sel="/mdscript/cues/cue[1]/cues/cue[1]/actions/set_spacesuit_oxygen">
   <set_spacesuit_oxygen object="player.ship" percent="50"/>
+  </replace>
 
-</replace>
+  <replace sel="/mdscript/cues/cue[1]/cues/cue[1]/actions/create_loadout">
+    <create_loadout result="$JaguarLoadout">
+      <macros>
+        <engine macro="engine_spl_s_combat_01_mk1_macro" path="../con_engine_01"/>
+        <weapon macro="weapon_spl_s_gatling_01_mk1_macro" path="../con_weapon_01"/>
+        <shield macro="shield_spl_s_standard_01_mk1_macro" path="../con_shield_01"/>
+      </macros>
+      <ammunition>
+        <ammunition macro="env_deco_nav_beacon_t1_macro" exact="3"/>
+        <ammunition macro="eq_arg_satellite_01_macro" exact="3"/>
+      </ammunition>
+      <software>
+        <software ware="software_flightassistmk1"/>
+        <software ware="software_scannerlongrangemk2"/>
+        <software ware="software_scannerobjectmk1"/>
+      </software>
+      <virtualmacros>
+        <thruster macro="thruster_gen_s_allround_01_mk2_macro"/>
+      </virtualmacros>
+    </create_loadout>
+
+  </replace>
+
+  <replace sel="/mdscript/cues/cue[1]/cues/cue[1]/actions/create_ship[@name='$PickupShip']">
+    <create_ship name="$PickupShip" macro="ship_spl_s_scout_01_a_macro" sector="$FiresOfSector">
+      <owner exact="faction.freesplit" overridenpc="true"/>
+      <pilot macro="character_rescue_split_gamestart1_macro">
+        <select faction="faction.freesplit"/>
+        <page exact="10406"/>
+        <skills>
+          <skill type="piloting" exact="12"/>
+          <skill type="morale" exact="12"/>
+          <skill type="engineering" exact="6"/>
+          <skill type="management" exact="3"/>
+          <skill type="boarding" exact="4"/>
+        </skills>
+      </pilot>
+      <loadout loadout="$JaguarLoadout"/>
+      <!-- Original absolute position
+      <position x="272763.563" z="157692.406"/>-->
+      <position x="$Battlefield.x - 10237" y="$Battlefield.y + 5000" z="$Battlefield.z - 25308"/>
+      <rotation yaw="0.deg" pitch="0deg" roll="0deg"/>
+    </create_ship>
+  
+  </replace>
+
 </diff>
