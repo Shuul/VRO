@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="ship_spl_m_trans_container_01_a_macro" class="ship_m">
+        <component ref="ship_spl_m_trans_container_01" />
+        <properties>
+          <identification name="{20101,41601}" basename="{20101,41601}" makerrace="split" description="{20101,41611}" icon="ship_m_trade_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" compatible="1" />
+            <software ware="software_trademk1" default="1" />
+          </software>
+          <explosiondamage value="1000" />
+          <storage missile="8" />
+          <hull max="22000" />
+          <secrecy level="1" />
+          <purpose primary="trade" />
+          <people capacity="20" />
+          <physics mass="56.286">
+            <inertia pitch="20.3" yaw="20.3" roll="16.2" />
+            <drag forward="9.0" reverse="30.2" horizontal="26.2" vertical="26.2" pitch="18.2" yaw="18.2" roll="18.2" />
+          </physics>
+          <thruster tags="medium" />
+          <ship type="transporter" />
+          <sound_occlusion inside="0.4" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_spl_m_trans_container_01_a_macro" connection="ShipConnection" />
+          </connection>
+          <connection ref="con_ishield_01">
+            <macro ref="ishield_spl_m_trans_container_01_a_macro" connection="ParentConnection" />
+          </connection>
+    
+        </connections>
+      </macro>
+    </macros>
+  </replace>
+</diff>

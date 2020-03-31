@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="bullet_spl_m_railgun_01_mk1_macro" class="bullet">
+        <component ref="bullet_spl_m_railgun_01_mk2" />
+        <properties>
+          <bullet speed="25000" range="11000" lifetime="1" amount="1" barrelamount="1" icon="weapon_railgun_mk1" maxhits="3" ricochet="0" scale="1" attach="0" chargetime="0.1" />
+          <heat initial="300" rate="1000"/>
+          <reload rate="0.5" />
+          <ammunition value="2" reload="2" />
+          <damage value="1800" hull="200" repair="0" />
+          <effects>
+            <impact ref="impact_par_m_railgun_01_mk1" inside="impact_par_m_railgun_01_mk1_inside" />
+            <bigobjectimpact ref="impact_par_m_railgun_01_mk1_bigobject" inside="impact_par_m_railgun_01_mk1_bigobject_inside" />
+            <launch ref="muzzle_par_m_railgun_01_mk1" />
+          </effects>
+          <weapon system="weapon_standard" />
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>
+

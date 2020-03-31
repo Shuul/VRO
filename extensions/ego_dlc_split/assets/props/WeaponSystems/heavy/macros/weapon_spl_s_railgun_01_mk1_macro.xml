@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="weapon_spl_s_railgun_01_mk1_macro" class="weapon">
+        <component ref="weapon_spl_s_railgun_01_mk1" />
+        <properties>
+          <identification name="{6699,12017}" basename="{6699,12018}" shortname="{6699,12019}" description="{6699,12020}" />
+          <bullet class="bullet_spl_s_railgun_01_mk1_macro" />
+          <heat overheat="10000" cooldelay="4" coolrate="500" reenable="3000" />
+          <rotationspeed max="0" />
+          <rotationacceleration max="0" />
+          <reload />
+          <hull max="500" hittable="0" />
+          <sounds>
+            <firing ref="wpn_railgun_player_charging" />
+          </sounds>
+        </properties>
+      </macro>
+    </macros>   
+  </replace>
+</diff>
+

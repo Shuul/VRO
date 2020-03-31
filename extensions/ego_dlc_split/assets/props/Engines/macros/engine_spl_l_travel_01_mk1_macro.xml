@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+    <macro name="engine_spl_l_travel_01_mk1_macro" class="engine">
+      <component ref="engine_spl_l_travel_01_mk1" />
+      <properties>
+        <identification name="{20107,3094}" basename="{20107,3091}" shortname="{20107,3095}" makerrace="split" description="{20107,3092}" mk="1" />
+        <boost duration="60" thrust="4" attack="15" release="2" />
+        <travel charge="8" thrust="30.5" attack="27" release="27" />
+        <thrust forward="4850" reverse="4488" />
+        <angular />
+        <hull max="16180" threshold="0.3" />
+        <effects>
+          <boosting ref="arg_boost_fx_l" />
+        </effects>
+        <sounds>
+          <enginedetail ref="enginedetail_ship_l_01" />
+        </sounds>
+      </properties>
+    </macro>
+  </macros>
+  </replace>
+</diff>
+

@@ -39,7 +39,7 @@
 			</order>
 		</orders>
 		<category faction="argon" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="15" sector="1"/>
+		<quota galaxy="12" sector="1"/>
      	<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -115,7 +115,7 @@
 			</order>
 		</orders>
 		<category faction="antigone" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="12" sector="1"/>
+		<quota galaxy="10" sector="1"/>
      	<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -210,6 +210,52 @@
 			<subordinate job="teladi_frigate_escort_m"/>
 		</subordinates>
 	  </job>
+
+	  <job id="shrike_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
+		<modifiers commandeerable="true"/>
+		<orders>
+			<order order="Patrol" default="true">
+       		 <param name="range" value="class.sector"/>
+			</order>
+		</orders>
+		<category faction="teladi" tags="[factionlogic, military, frigate]" size="ship_l"/>
+		<quota galaxy="10" sector="1"/>
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="member" comparison="ge" matchextension="false"/>
+		<environment buildatshipyard="true"/>
+		<ship>
+			<select faction="teladi" tags="[military, frigate]" size="ship_l"/>
+			<loadout>
+				<level min="0" max="0.8"/>
+			</loadout>
+			<owner exact="teladi" overridenpc="true"/>
+		</ship>
+		<subordinates>
+			<subordinate job="teladi_fighter_escort_s_shrike"/>
+		</subordinates>
+	  </job>
+
+	  <job id="teladi_fighter_escort_s_shrike" name="{20204,2901}" startactive="false">
+		<orders>
+		  <order order="Escort" default="true">
+			<param name="formation" value="formationshape.pointguard"/>
+			<param name="overrideformationskill" value="true"/>
+		  </order>
+		</orders>
+		<category faction="teladi" tags="[military, fighter]" size="ship_s"/>
+		<quota wing="12" variation="2"/>
+		<location class="galaxy" macro="xu_ep2_universe_macro"/>
+		<environment buildatshipyard="true"/>
+		<modifiers subordinate="true"/>
+		<ship>
+		  <select faction="[teladi, ministry]" tags="[military, fighter, selection]" size="ship_s"/>
+		  <loadout>
+			<level min="0" max="0.7"/>
+		  </loadout>
+		  <owner exact="teladi" overridenpc="true"/>
+		</ship>
+	  </job>
+	
+
 	
   <!-- ############################# -->
   <!--      MINISTRY OF FINANCE      -->
@@ -287,80 +333,80 @@
 			</loadout>  </replace>
   <replace sel="//jobs/job[@id='argon_destroyer_patrol_l_sector']/ship/loadout">
 <loadout>
-				<level min="0.8" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='argon_destroyer_escort_l']/ship/loadout">
 <loadout>
-				<level min="0.8" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='argon_resupplier_escort_xl']/ship/loadout">
 <loadout>
 				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
-			<!-- ant -->
+<!-- ant -->
 	<replace sel="//jobs/job[@id='antigone_destroyer_patrol_l_border_sector']/ship/loadout">
 <loadout>
-				<level min="0.8" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='antigone_destroyer_escort_l']/ship/loadout">
 <loadout>
-				<level min="0.8" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
-	<!-- par -->
+<!-- par -->
 	<replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster']/ship/loadout">
 <loadout>
 				<level min="0.9" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='paranid_destroyer_patrol_l_sector_exp']/ship/loadout">
 <loadout>
-				<level min="0.8" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='paranid_destroyer_escort_l']/ship/loadout">
 <loadout>
-				<level min="0.8" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='paranid_resupplier_escort_xl']/ship/loadout">
 <loadout>
 				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
-	<!-- hop -->
+<!-- hop -->
 	<replace sel="//jobs/job[@id='holyorder_destroyer_patrol_l_cluster_exp']/ship/loadout">
 <loadout>
-				<level min="0.8" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='holyorder_destroyer_escort_l']/ship/loadout">
 <loadout>
-				<level min="0.8" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='holyorder_resupplier_escort_xl']/ship/loadout">
 <loadout>
 				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
-	<!-- tel -->
+<!-- tel -->
 	<replace sel="//jobs/job[@id='teladi_carrier_patrol_xl_cluster']/ship/loadout">
 <loadout>
 				<level min="0.9" max="1.0"/>
 			</loadout>  </replace>
   <replace sel="//jobs/job[@id='teladi_destroyer_patrol_l_border_cluster']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='teladi_destroyer_escort_l']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='teladi_resupplier_escort_xl']/ship/loadout">
 <loadout>
 				<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
-	<!-- min -->
+<!-- min -->
 	<replace sel="//jobs/job[@id='ministry_destroyer_patrol_l_comp']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
 	<replace sel="//jobs/job[@id='ministry_destroyer_escort_l']/ship/loadout">
 <loadout>
-				<level min="0.7" max="1.0"/>
+				<level min="0.65" max="1.0"/>
 			</loadout>  </replace>
 <!-- sca -->
 	<replace sel="//jobs/job[@id='scaleplate_plunderer_l_cluster']/ship/loadout">
@@ -368,6 +414,21 @@
 				<level min="0.6" max="0.9"/>
 			</loadout>  </replace>
 
+<!-- spl -->
+	<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_center']/ship/loadout">
+	<loadout>
+					<level min="0.8" max="1.0"/>
+	</loadout>  </replace>
+	  <replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/ship/loadout">
+	<loadout>
+					<level min="0.4" max="1.0"/>
+	</loadout>  </replace>
+
+<!-- court -->
+<replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/ship/loadout">
+	<loadout>
+			<level min="0.7" max="1.0"/>
+	</loadout>  </replace>
 <!-- carrier groups boost -->
 <replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/quota">
 <quota galaxy="5" sector="1"/>
@@ -385,6 +446,18 @@
 <quota galaxy="5" sector="1"/>
 </replace>
 
+<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_center']/quota">
+	<quota galaxy="3" sector="1"/>
+	</replace>
+
+<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/quota">
+<quota galaxy="3" sector="1"/>
+</replace>
+
+<replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/quota">
+	<quota galaxy="2" sector="1"/>
+	</replace>
+
 <replace sel="//jobs/job[@id='argon_fighter_escort_s_carrier']/quota">
 <quota wing="30" variation="5"/>
 </replace>
@@ -396,5 +469,30 @@
 <replace sel="//jobs/job[@id='teladi_fighter_escort_s_carrier']/quota">
 <quota wing="30" variation="5"/>
 </replace>
+
+<replace sel="//jobs/job[@id='zyarth_escort_s_carrier']/quota">
+	<quota wing="35" variation="5"/>
+	</replace>
+
+<replace sel="//jobs/job[@id='court_escort_s_carrier']/quota">
+		<quota wing="25" variation="5"/>
+		</replace>
+
+<!-- SPLIT DLC jobs loadouts -->
+<replace sel="//jobs/job[@id='argon_destroyer_patrol_l_sector_spl']/ship/loadout">
+	<loadout>
+					<level min="0.65" max="1.0"/>
+				</loadout>  </replace>
+	  <replace sel="//jobs/job[@id='ministry_destroyer_patrol_l_spl']/ship/loadout">
+	<loadout>
+					<level min="0.65" max="1.0"/>
+				</loadout>  </replace>
+
+	<replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster_spl']/ship/loadout">
+	<loadout>
+					<level min="0.9" max="1.0"/>
+				</loadout>  </replace>
+
+
 
 </diff>

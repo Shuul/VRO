@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="turret_spl_l_guided_01_mk1_macro" class="missileturret">
+        <component ref="turret_spl_l_guided_01_mk1" />
+        <properties>
+          <identification name="{20105,5284}" basename="{20105,5281}" shortname="{20105,5285}" makerrace="split" description="{20105,5282}" />
+          <ammunition tags="mguided hguided" />
+          <bullet class="missile_hornet_macro" />
+          <rotationspeed max="30" />
+          <reload />
+          <storage capacity="100" />
+          <hull max="21250" threshold="0.2" />
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>
+

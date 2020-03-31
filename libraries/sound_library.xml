@@ -37,7 +37,7 @@
         <sample selection="random">
           <select start="extensions\vro\sfx\weapons\cyclic_1"/>
         </sample>
-        <volume start="1.0" distance="6"/>
+        <volume start="0.75" distance="6"/>
     </sound>
     <!-- beamer-->
     <sound id="wpn_beamer_shoot" description="Beam sound" repeat="-1" is3d="1" preload="1">
@@ -87,6 +87,14 @@
           <fade out="0.1"/>
         </effects>
     </sound>
+    <!-- Neutron HEavy-->
+    <sound id="wpn_neutheavy_shoot" description="wpn_neutheavy_shoot" repeat="-1" is3d="1" preload="1" amount="1" >
+      <sample loop="extensions\vro\sfx\weapons\hev_neutron_loop" />
+      <volume start="0.8" distance="12"/>
+      <effects>
+        <fade out="0.1"/>
+      </effects>
+    </sound>    
     <!-- Reaper Cannon-->
     <sound id="wpn_reaper_cannon_shoot" description="reaper_cannon shooting" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
@@ -241,7 +249,7 @@
           <select start="extensions\vro\sfx\weapons\ma_1"/>
           <select start="extensions\vro\sfx\weapons\ma_2"/>
         </sample>
-        <volume start="0.8" distance="12"/>
+        <volume start="0.65" distance="12"/>
     </sound>
 
     <!-- Rail cannon M -->
@@ -470,19 +478,86 @@
     </sound>
 
   <!-- Ion Projector -->
-    <sound id="wpn_gen_ionproj_shoot" description="wpn_gen_ionproj_shoot" repeat="-1" is3d="1" preload="1" >
+    <sound id="wpn_gen_ionproj_shoot" description="wpn_gen_ionproj_shoot" repeat="1" is3d="1" preload="1" >
         <sample start="extensions\vro\sfx\weapons\ion_projector"/>
         <volume start="1.7" distance="18"/>
     </sound>
 
 <!-- Tri Beam -->
-    <sound id="wpn_gen_tribeam_shoot" description="wpn_gen_tribeam_shoot" repeat="-1" is3d="1" preload="1" >
+    <sound id="wpn_gen_tribeam_shoot" description="wpn_gen_tribeam_shoot" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
           <select start="extensions\vro\sfx\weapons\tribeam_1"/>
           <select start="extensions\vro\sfx\weapons\tribeam_2"/>
         </sample>
         <volume start="1.5" distance="18"/>
     </sound>
+
+<!-- Ion pulse gun -->
+    <sound id="wpn_gen_ionpulse_shoot" description="wpn_gen_ionpulse_shoot" repeat="1" is3d="1" preload="1" >
+      <sample selection="random">
+        <select start="extensions\vro\sfx\weapons\ion_pulse_gun_1"/>
+      </sample>
+      <volume start="0.8" distance="12"/>
+  </sound>
+
+<!-- Ion pulse generator -->
+  <sound id="wpn_gen_iongenerator_shoot" description="wpn_gen_iongenerator_shoot" repeat="1" is3d="1" preload="1" >
+    <sample selection="random">
+      <select start="extensions\vro\sfx\weapons\ion_pulse_gun_1"/>
+    </sample>
+    <volume start="1.0" distance="18"/>
+  </sound>
+
+<!-- PRG -->
+    <sound id="wpn_gen_prg_shoot" description="wpn_gen_prg_shoot" repeat="1" is3d="1" preload="1" >
+      <sample selection="random">
+        <select start="extensions\vro\sfx\weapons\prg_1"/>
+      </sample>
+      <volume start="0.85" distance="12"/>
+  </sound>
+
+<!-- Mass driver gun -->
+  <sound id="wpn_gen_mdriverg_shoot" description="wpn_gen_mdriver_shoot" repeat="1" is3d="1" preload="1" >
+    <sample selection="random">
+      <select start="extensions\vro\sfx\weapons\mass_driver_1"/>
+      <select start="extensions\vro\sfx\weapons\mass_driver_2"/>
+      <select start="extensions\vro\sfx\weapons\mass_driver_3"/>
+    </sample>
+    <volume start="0.8" distance="14"/>
+  </sound>
+
+<!-- Mass driver turret -->
+  <sound id="wpn_gen_mdrivert_shoot" description="wpn_gen_mdriver_shoot" repeat="1" is3d="1" preload="1" >
+    <sample selection="random">
+      <select start="extensions\vro\sfx\weapons\madr_1"/>
+      <select start="extensions\vro\sfx\weapons\madr_2"/>
+      <select start="extensions\vro\sfx\weapons\madr_3"/>
+      <select start="extensions\vro\sfx\weapons\madr_4"/>
+    </sample>
+    <volume start="1.1" distance="22"/>
+  </sound>
+
+<!-- Heavy Shell Cannon -->
+  <sound id="wpn_gen_shellcan_shoot" description="wpn_gen_shellcan_shoot" repeat="1" is3d="1" preload="1" >
+    <sample selection="random">
+      <select start="extensions\vro\sfx\weapons\shell_1"/>
+      <select start="extensions\vro\sfx\weapons\shell_2"/>
+      <select start="extensions\vro\sfx\weapons\shell_3"/>
+    </sample>
+    <volume start="0.85" distance="25"/>
+  </sound>
+
+<!-- L pulse updated -->
+  <sound id="wpn_impulse_l_upd" description="L ship laser" repeat="1" is3d="1" preload="0">
+    <sample selection="random">
+      <select start="sfx\weapons\laser_l\wpn_impulse_l_01"/>
+      <select start="sfx\weapons\laser_l\wpn_impulse_l_02"/>
+      <select start="sfx\weapons\laser_l\wpn_impulse_l_03"/>
+      <select start="sfx\weapons\laser_l\wpn_impulse_l_04"/>
+      <select start="sfx\weapons\laser_l\wpn_impulse_l_05"/>	  
+    </sample>
+    <volume start="1.2" distance="22"/>
+  </sound>
 
 
 

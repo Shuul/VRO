@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="bullet_spl_turret_l_plasma_01_mk1_macro" class="bullet">
+        <component ref="bullet_spl_l_plasma_01_mk1" />
+        <properties>
+          <bullet speed="440" lifetime="15.579" amount="1" barrelamount="2" icon="weapon_plasma_mk1" timediff="0" angle="0.02" maxhits="1" ricochet="0" scale="0" attach="0" />
+          <reload time="3.6" />
+          <damage value="1985" repair="0" />
+          <effects>
+            <impact ref="impact_gen_m_plasma_01_mk1" inside="impact_gen_m_plasma_01_mk1_inside" />
+            <bigobjectimpact ref="impact_gen_m_plasma_01_mk1_bigobject" inside="impact_gen_m_plasma_01_mk1_bigobject_inside" />
+            <launch ref="muzzle_gen_m_plasma_01_mk1" />
+          </effects>
+          <weapon system="turret_longrange" />
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<components>
+	<component name="bullet_gen_shell" class="bullet">
+		<source geometry="extensions\vro\assets\fx\weaponFx\bullet_gen_shell_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="255" g="144" b="101" range="44.7" lenseffect="turret_medium_bb_xe_bullet" shadowrange="44.7" lighteffect="1" trigger="1" intensity="2" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="23.72916"/>
+						</offset>
+					</omni>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="bullet">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part animation  ">
+				<offset>
+					<position x="0" y="2.015167E-08" z="27.86686"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="15"/>
+				</animations>
+				<parts>
+					<part name="part_bullet">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.bullets_fx_master"/>
+									<material id="2" ref="p1xenon.xen_engine_trim"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="5.294893" y="5.294893" z="106.1584"/>
+							<center x="0" y="-2.015167E-08" z="-57.96151"/>
+						</size>
+						<size_raw>
+							<max x="5.292519" y="5.292519" z="106.1584"/>
+							<center x="-2.131462E-03" y="1.226405E-03" z="-57.96151"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection_Laser01" tags="laser">
+				<offset/>
+			</connection>
+		</connections>
+	</component>
+</components>

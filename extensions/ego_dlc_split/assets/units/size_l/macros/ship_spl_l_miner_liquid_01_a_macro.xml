@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="ship_spl_l_miner_liquid_01_a_macro" class="ship_l">
+        <component ref="ship_spl_l_miner_liquid_01" />
+        <properties>
+          <identification name="{20101,41907}" basename="{20101,41901}" makerrace="split" description="{20101,41917}" variation="{20111,3201}" shortvariation="{20111,3201}" icon="ship_l_mine_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" compatible="1" />
+            <software ware="software_trademk1" default="1" />
+          </software>
+          <explosiondamage value="8000" />
+          <storage missile="50" unit="14" />
+          <hull max="55000" />
+          <secrecy level="1" />
+          <gatherrate gas="8" />
+          <purpose primary="mine" />
+          <people capacity="29" />
+          <sounds>
+            <shipdetail ref="shipdetail_ship_l_01" />
+          </sounds>
+          <physics mass="159.275">
+            <inertia pitch="146" yaw="146" roll="117" />
+            <drag forward="43" reverse="210" horizontal="86" vertical="86" pitch="109" yaw="109" roll="109" />
+          </physics>
+          <thruster tags="large" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="bridge_spl_l_01_macro" connection="con_cockpit" />
+          </connection>
+          <connection ref="con_dockarea_arg_s_ship_02">
+            <macro ref="dockarea_arg_s_ship_02_macro" connection="Connection01" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_s_01">
+            <macro ref="shipstorage_gen_s_cap6_macro" connection="object" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_spl_l_miner_liquid_01_a_macro" connection="ShipConnection" />
+          </connection>
+          <connection ref="con_ishield_01">
+            <macro ref="ishield_spl_l_miner_liquid_01_a_macro" connection="ParentConnection" />
+          </connection>
+    
+        </connections>
+      </macro>
+    </macros>
+  </replace>
+</diff>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="ship_spl_m_corvette_01_b_macro" class="ship_m">
+        <component ref="ship_spl_m_corvette_01" />
+        <properties>
+          <identification name="{20101,40604}" basename="{20101,40601}" makerrace="split" description="{20101,40614}" variation="{20111,1001}" shortvariation="{20111,1003}" icon="ship_m_fight_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" compatible="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <explosiondamage value="5000" />
+          <storage missile="20" />
+          <hull max="30000" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="5" />
+          <physics mass="17.607">
+            <inertia pitch="7.4" yaw="7.4" roll="5.9" />
+            <drag forward="4.1" reverse="9.87" horizontal="16.8" vertical="16.8" pitch="18.6" yaw="18.6" roll="18.6" />
+          </physics>
+          <thruster tags="medium" />
+          <ship type="corvette" />
+          <sound_occlusion inside="0.4" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_spl_m_corvette_01_b_macro" connection="ShipConnection" />
+          </connection>
+          <connection ref="con_ishield_01">
+            <macro ref="ishield_spl_m_corvette_01_b_macro" connection="ParentConnection" />
+          </connection>
+    
+        </connections>
+      </macro>
+    </macros>
+  </replace>
+</diff>

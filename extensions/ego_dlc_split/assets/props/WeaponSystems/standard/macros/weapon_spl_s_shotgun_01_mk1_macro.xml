@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="weapon_spl_s_shotgun_01_mk1_macro" class="weapon">
+        <component ref="weapon_spl_s_shotgun_01_mk1" />
+        <properties>
+          <identification name="{6699,12021}" basename="{6699,12022}" shortname="{6699,12023}" description="{6699,12024}" />
+          <bullet class="bullet_spl_s_shotgun_01_mk1_macro" />
+          <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+          <rotationspeed max="107" />
+          <rotationacceleration max="53.5" />
+          <reload />
+          <hull max="500" hittable="0" />
+          <effects>
+            <firing start="startshooting_gen_s_shotgun_01_mk1" stop="stopshooting_gen_s_shotgun_01_mk1" />
+          </effects>
+        </properties>
+      </macro>
+    </macros>  
+  </replace>
+</diff>
+

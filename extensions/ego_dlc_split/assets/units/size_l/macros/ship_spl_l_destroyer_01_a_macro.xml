@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="ship_spl_l_destroyer_01_a_macro" class="ship_l">
+        <component ref="ship_spl_l_destroyer_01" />
+        <properties>
+          <identification name="{20101,42801}" basename="{20101,42801}" makerrace="split" description="{20101,42811}" icon="ship_l_fight_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" default="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <explosiondamage value="10000" />
+          <storage missile="160" unit="18" />
+          <hull max="261000" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="92" />
+          <sounds>
+            <shipdetail ref="shipdetail_ship_l_01" />
+          </sounds>
+          <physics mass="248.855">
+            <inertia pitch="413" yaw="413" roll="331" />
+            <drag forward="74" reverse="277" horizontal="91" vertical="91" pitch="234" yaw="234" roll="234" />
+          </physics>
+          <thruster tags="large" />
+          <ship type="destroyer" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="bridge_spl_l_01_macro" connection="con_cockpit" />
+          </connection>
+          <connection ref="con_dockarea_arg_s_ship_01">
+            <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_s_01">
+            <macro ref="shipstorage_gen_s_cap4_macro" connection="object" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_spl_l_destroyer_01_a_macro" connection="ShipConnection" />
+          </connection>
+          <connection ref="con_ishield_01">
+            <macro ref="ishield_spl_l_destroyer_01_a_macro" connection="ParentConnection" />
+          </connection>
+    
+        </connections>
+      </macro>
+    </macros>
+  </replace>
+</diff>

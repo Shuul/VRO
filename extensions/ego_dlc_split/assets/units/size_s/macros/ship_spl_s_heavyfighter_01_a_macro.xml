@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="ship_spl_s_heavyfighter_01_a_macro" class="ship_s">
+        <component ref="ship_spl_s_heavyfighter_01" />
+        <properties>
+          <identification name="{20101,41001}" basename="{20101,41001}" makerrace="split" description="{20101,41011}" icon="ship_s_heavyfighter" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" default="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <storage missile="16" />
+          <hull max="8600" />
+          <secrecy level="2" />
+          <purpose primary="fight" />
+          <people capacity="2" />
+          <sounds>
+            <shipdetail ref="shipdetail_ship_03" />
+          </sounds>
+          <physics mass="9.056">
+            <inertia pitch="5.57" yaw="5.57" roll="4.45" />
+            <drag forward="6.1" reverse="31.63" horizontal="4.18" vertical="4.18" pitch="4.92" yaw="4.92" roll="4.92" />
+          </physics>
+          <thruster tags="small" />
+          <ship type="heavyfighter" />
+          <sound_occlusion inside="0.5" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_spl_s_heavyfighter_01_a_macro" connection="ShipConnection" />
+          </connection>
+          <connection ref="con_ishield_01">
+            <macro ref="ishield_spl_s_heavyfighter_01_a_macro" connection="ParentConnection" />
+          </connection>
+    
+        </connections>
+      </macro>
+    </macros>
+  </replace>
+</diff>

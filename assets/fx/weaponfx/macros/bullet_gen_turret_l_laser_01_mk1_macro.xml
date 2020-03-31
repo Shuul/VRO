@@ -12,9 +12,10 @@
       <damage value="900" shield="200" repair="0" />
       <effects>
         <impact ref="impact_gen_turret_fusion_ray" />
+        <bigobjectimpact ref="impact_gen_turret_fusion_ray" inside="impact_gen_l_laser_01_mk1_bigobject_inside" />
         <launch ref="muzzle_gen_turret_fusion_ray" />
       </effects>
-      <weapon system="turret_longrange" />
+      <weapon system="turret_mediumrange" />
     </properties>
   </macro>
 </macros>

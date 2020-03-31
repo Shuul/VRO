@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="turret_spl_m_gatling_02_mk1_macro" class="turret">
+        <component ref="turret_spl_m_gatling_02_mk1" />
+        <properties>
+          <identification name="{20105,4344}" basename="{20105,4341}" shortname="{20105,4345}" makerrace="split" description="{20105,4342}" />
+          <bullet class="bullet_gen_turret_m_gatling_01_mk1_macro" />
+          <rotationspeed max="190" />
+          <reload rate="1" time="1" />
+          <hull max="4000" threshold="0.2" integrated="0" />
+          <sounds>
+            <firing ref="wpn_CIWS_shoot" />
+          </sounds>
+        </properties>
+      </macro>
+    </macros>   
+  </replace>
+</diff>
+

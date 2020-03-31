@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="bullet_spl_l_laser_01_mk1_macro" class="bullet">
+        <component ref="bullet_spl_l_laser_01_mk1" />
+        <properties>
+          <ammunition value="5" reload="1" />
+          <bullet speed="1327" lifetime="5.04" amount="1" barrelamount="1" timediff="0.002" angle="0.15" maxhits="1" ricochet="0" scale="0" attach="0" />
+          <heat value="464" />
+          <reload rate="2.04" />
+          <damage value="1608" repair="0" />
+          <effects>
+            <impact ref="impact_gen_turret_fusion_ray" />
+            <bigobjectimpact ref="impact_gen_turret_fusion_ray" inside="impact_gen_l_laser_01_mk1_bigobject_inside" />
+            <launch ref="muzzle_gen_turret_fusion_ray_spl" />
+          </effects>
+          <weapon system="weapon_standard" />
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>
+
+

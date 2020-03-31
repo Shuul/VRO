@@ -11,6 +11,27 @@
     </influences>
   </influencelist>
 
+  <influencelist name="ion_pulse_effect">
+    <influences>
+      <influence type="disableboost">
+        <profile type="continuous" duration="8" />
+      </influence>
+      <influence type="disabletravel">
+        <profile type="continuous" duration="10" />
+      </influence>
+      <!-- disallow movement for a longer time -->
+      <influence type="maxforwardspeed">
+        <profile type="envelope" startvalue="0.1" sustainvalue="0.3" endvalue="0.6" attackduration="2" sustainduration="2" releaseduration="8" />
+      </influence>
+      <influence type="maxreversespeed">
+        <profile type="envelope" startvalue="0.2" sustainvalue="0.3" endvalue="0.6" attackduration="2" sustainduration="2" releaseduration="8" />
+      </influence>
+      <influence type="steeringacceleration">
+        <profile type="envelope" startvalue="0" sustainvalue="0.2" endvalue="0.4" attackduration="4" sustainduration="2" releaseduration="8" />
+      </influence>
+    </influences>
+  </influencelist>
+
 </add>
 </diff>
 <!--Other influences-->

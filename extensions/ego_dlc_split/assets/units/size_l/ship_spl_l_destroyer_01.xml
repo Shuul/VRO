@@ -1,0 +1,47 @@
+<diff>
+	<add sel="//components/component/connections">
+	 <connection name="con_ishield_01" tags="ishield">
+	  <offset>
+	   <position x="0" y="0" z="0"/>
+		 <quaternion qx="0" qy="0" qz="0" qw="0"/>
+	  </offset>
+	 </connection>
+	</add>
+
+
+
+		<replace sel="//components/component/connections/connection[@name='con_turret_laser_l_06']">
+			<connection name="con_turret_laser_m_bottom_1" group="group_down_back_mid" tags="turret medium standard hittable ">
+				<offset>
+					<position x="9.25" y="-60.14512" z="-109.4115"/>
+					<quaternion qx="-0.9990482" qy="4.176312E-08" qz="-4.557646E-08" qw="4.361954E-02"/>
+				</offset>
+			</connection>
+		</replace>
+
+		<add sel="//components/component/connections">
+			<connection name="con_turret_laser_m_bottom_2" group="group_down_back_mid" tags="turret medium standard hittable ">
+				<offset>
+					<position x="-9.25" y="-60.14512" z="-109.4115"/>
+					<quaternion qx="-0.9990482" qy="4.176312E-08" qz="-4.557646E-08" qw="4.361954E-02"/>
+				</offset>
+			</connection>
+		   </add>
+
+		<replace sel="//components/component/connections/connection[@name='con_turret_laser_l_03']">
+			<connection name="con_shieldgenerator_l_02" tags="large shield ">
+				<offset>
+					<position x="-6.054954E-16" y="46.29222" z="-114.6027"/>
+					<quaternion qx="4.361942E-02" qy="4.176312E-08" qz="4.557645E-08" qw="-0.9990482"/>
+				</offset>
+			</connection>
+		</replace>
+
+		
+		<remove sel="//components/component/connections/connection[@name='con_shieldgen_02']"/>
+
+
+
+
+
+	</diff>

@@ -6,11 +6,15 @@
   <entry name="impact_gen_l_beam_01_mk1_macro" value="extensions\vro\assets\fx\weaponFx\macros\impact_gen_l_beam_01_mk1_macro"/>
   <entry name="muzzle_gen_l_beam_01_mk1_macro" value="extensions\vro\assets\fx\weaponFx\macros\muzzle_gen_l_beam_01_mk1_macro"/>
   <entry name="impact_gen_l_beam_01_mk1_light_macro" value="extensions\vro\assets\fx\weaponFx\macros\impact_gen_l_beam_01_mk1_light_macro"/>
+  <entry name="bullet_gen_turret_l_beam_spl_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_turret_l_beam_spl_macro"/>
+
 <!-- flak turret -->
   <entry name="bullet_gen_turret_l_flak_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_turret_l_flak_macro"/>
   <entry name="turret_arg_l_flak_macro" value="extensions\vro\assets\props\WeaponSystems\standard\macros\turret_arg_l_flak_macro"/>
   <entry name="turret_par_l_flak_macro" value="extensions\vro\assets\props\WeaponSystems\standard\macros\turret_par_l_flak_macro"/>
   <entry name="turret_tel_l_flak_macro" value="extensions\vro\assets\props\WeaponSystems\standard\macros\turret_tel_l_flak_macro"/>
+  <entry name="turret_spl_l_flak_macro" value="extensions\vro\assets\props\WeaponSystems\standard\macros\turret_spl_l_flak_macro"/>
+
   <!-- <entry name="missile_flak_macro" value="extensions\vro\assets\props\WeaponSystems\missile\macros\missile_flak_macro"/> -->
 <!-- MA -->
   <entry name="bullet_gen_turret_m_ma_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_turret_m_ma_macro"/>
@@ -55,6 +59,12 @@
 <!-- TRI cannon -->
   <entry name="bullet_gen_turret_l_tri_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_turret_l_tri_macro"/>
   <entry name="turret_par_l_tri_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\turret_par_l_tri_macro"/>
+<!-- MADR -->
+  <entry name="bullet_spl_l_madr_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_spl_l_madr_macro"/>
+  <entry name="turret_spl_l_madr_macro" value="extensions\vro\assets\props\WeaponSystems\standard\macros\turret_spl_l_madr_macro"/>
+<!-- Shell cannon -->
+  <entry name="bullet_gen_l_shell_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_l_shell_macro"/>
+  <entry name="weapon_spl_l_shell_macro" value="extensions\vro\assets\props\WeaponSystems\capital\macros\weapon_spl_l_shell_macro"/>
 <!-- Heavy Plasma Array -->
   <entry name="bullet_gen_l_parray_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_l_parray_macro"/>
   <entry name="weapon_arg_l_parray_macro" value="extensions\vro\assets\props\WeaponSystems\capital\macros\weapon_arg_l_parray_macro"/>
@@ -136,6 +146,9 @@
   <entry name="missile_shadow_macro" value="extensions\vro\assets\props\WeaponSystems\missile\macros\missile_shadow_macro"/>
   <entry name="missile_wraith_macro" value="extensions\vro\assets\props\WeaponSystems\missile\macros\missile_wraith_macro"/>
   <entry name="missile_disruptor_macro" value="extensions\vro\assets\props\WeaponSystems\missile\macros\missile_disruptor_macro"/>
+  <entry name="missile_scatter_macro" value="extensions\vro\assets\props\WeaponSystems\missile\macros\missile_scatter_macro"/>
+  <entry name="missile_starburst_macro" value="extensions\vro\assets\props\WeaponSystems\missile\macros\missile_starburst_macro"/>
+  <entry name="missile_interceptor_macro" value="extensions\vro\assets\props\WeaponSystems\missile\macros\missile_interceptor_macro"/>
   <!-- docking bays -->
   <entry name="shipstorage_gen_s_cap2_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_gen_s_cap2_macro"/>
   <entry name="shipstorage_gen_s_cap4_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_gen_s_cap4_macro"/>
@@ -147,6 +160,7 @@
   <entry name="shipstorage_gen_s_cap14_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_gen_s_cap14_macro"/>
   <entry name="shipstorage_gen_s_cap15_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_gen_s_cap15_macro"/>
   <entry name="shipstorage_gen_s_cap20_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_gen_s_cap20_macro"/>
+  <entry name="shipstorage_gen_s_cap23_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_gen_s_cap23_macro"/>
   <entry name="shipstorage_gen_s_cap26_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_gen_s_cap26_macro"/>
   <entry name="shipstorage_gen_s_cap30_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_gen_s_cap30_macro"/>
   <entry name="shipstorage_gen_s_cap58_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_gen_s_cap58_macro"/>
@@ -179,8 +193,8 @@
   <entry name="weapon_arg_l_fa_centaur_macro" value="extensions\vro\assets\props\WeaponSystems\capital\macros\weapon_arg_l_fa_centaur_macro"/>
   <entry name="weapon_arg_l_parray_centaur_macro" value="extensions\vro\assets\props\WeaponSystems\capital\macros\weapon_arg_l_parray_centaur_macro"/>
 <!-- Shrike -->
-  <entry name="ship_tel_l_shrike_a_macro" value="extensions\vro\assets\units\size_l\macros\ship_tel_l_shrike_a_macro"/>
-
+  <entry name="ship_tel_l_shrike_a_macro" value="extensions\vro\assets\units\size_l\macros\ship_tel_l_shrike_a_macro"/> 
+  <entry name="storage_tel_l_shrike_a_macro" value="extensions\vro\assets\units\size_l\macros\storage_tel_l_shrike_a_macro"/>
 <!-- Titan -->
   <entry name="ship_arg_xl_titan_macro" value="extensions\vro\assets\units\size_xl\macros\ship_arg_xl_titan_macro" />	
   <entry name="radar_ship_xl_military_01_macro" value="extensions\vro\assets\props\surfaceelements\macros\radar_ship_xl_military_01_macro"/>
@@ -189,8 +203,6 @@
   <entry name="ship_arg_l_trans_container_03_p_macro" value="extensions\vro\assets\units\size_l\macros\ship_arg_l_trans_container_03_p_macro"/>
 
 <!-- internal shields --> 
-  <entry name="ishield_arg_xl_titan_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_xl_titan_macro"/>
-  <entry name="ishield_gen_s_fightingdrone_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_gen_s_fightingdrone_01_a_macro"/>
   <entry name="ishield_arg_s_fighter_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_s_fighter_01_a_macro"/>
   <entry name="ishield_arg_s_fighter_01_b_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_s_fighter_01_b_macro"/>
   <entry name="ishield_arg_s_fighter_02_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_s_fighter_02_a_macro"/>
@@ -283,7 +295,6 @@
   <entry name="ishield_arg_l_trans_container_02_b_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_l_trans_container_02_b_macro"/>
   <entry name="ishield_arg_l_trans_container_03_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_l_trans_container_03_a_macro"/>
   <entry name="ishield_arg_l_trans_container_03_b_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_l_trans_container_03_b_macro"/>
-  <entry name="ishield_arg_l_trans_container_03_p_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_l_trans_container_03_p_macro"/>
   <entry name="ishield_arg_l_trans_container_04_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_l_trans_container_04_a_macro"/>
   <entry name="ishield_arg_l_trans_container_04_b_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_l_trans_container_04_b_macro"/>
   <entry name="ishield_arg_l_trans_container_05_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_l_trans_container_05_a_macro"/>
@@ -331,9 +342,36 @@
   <entry name="ishield_par_xl_resupplier_01_b_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_par_xl_resupplier_01_b_macro"/>
   <entry name="ishield_tel_xl_resupplier_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_tel_xl_resupplier_01_a_macro"/>
   <entry name="ishield_tel_xl_resupplier_01_b_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_tel_xl_resupplier_01_b_macro"/>
-  <entry name="ishield_par_s_heavyfighter_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_par_s_heavyfighter_01_a_macro"/>
+  <entry name="ishield_gen_s_fightingdrone_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_gen_s_fightingdrone_01_a_macro"/>
+  <entry name="ishield_arg_l_trans_container_03_p_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_l_trans_container_03_p_macro"/>
+  <entry name="ishield_arg_xl_titan_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_xl_titan_macro"/>
   <entry name="ishield_xen_s_scout_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_xen_s_scout_01_a_macro"/>
-
+  <entry name="ishield_par_s_heavyfighter_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_par_s_heavyfighter_01_a_macro"/>
+  <entry name="ishield_spl_s_fighter_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_s_fighter_01_a_macro"/>
+  <entry name="ishield_spl_s_fighter_02_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_s_fighter_02_a_macro"/>
+  <entry name="ishield_spl_s_fighter_02_b_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_s_fighter_02_b_macro"/>
+  <entry name="ishield_spl_s_heavyfighter_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_s_heavyfighter_01_a_macro"/>
+  <entry name="ishield_spl_s_heavyfighter_02_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_s_heavyfighter_02_a_macro"/>
+  <entry name="ishield_spl_s_miner_solid_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_s_miner_solid_01_a_macro"/>
+  <entry name="ishield_spl_s_scout_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_s_scout_01_a_macro"/>
+  <entry name="ishield_spl_s_trans_container_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_s_trans_container_01_a_macro"/>
+  <entry name="ishield_spl_m_bomber_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_m_bomber_01_a_macro"/>
+  <entry name="ishield_spl_m_corvette_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_m_corvette_01_a_macro"/>
+  <entry name="ishield_spl_m_corvette_01_b_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_m_corvette_01_b_macro"/>
+  <entry name="ishield_spl_m_frigate_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_m_frigate_01_a_macro"/>
+  <entry name="ishield_spl_m_miner_liquid_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_m_miner_liquid_01_a_macro"/>
+  <entry name="ishield_spl_m_miner_solid_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_m_miner_solid_01_a_macro"/>
+  <entry name="ishield_spl_m_trans_container_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_m_trans_container_01_a_macro"/>
+  <entry name="ishield_spl_l_destroyer_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_l_destroyer_01_a_macro"/>
+  <entry name="ishield_spl_l_miner_liquid_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_l_miner_liquid_01_a_macro"/>
+  <entry name="ishield_spl_l_miner_solid_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_l_miner_solid_01_a_macro"/>
+  <entry name="ishield_spl_l_trans_container_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_l_trans_container_01_a_macro"/>
+  <entry name="ishield_spl_xl_builder_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_xl_builder_01_a_macro"/>
+  <entry name="ishield_spl_xl_carrier_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_xl_carrier_01_a_macro"/>
+  <entry name="ishield_spl_xl_resupplier_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_xl_resupplier_01_a_macro"/>
+  <entry name="ishield_spl_xl_battleship_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_xl_battleship_01_a_macro"/>
+  <entry name="ishield_tel_l_shrike_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_tel_l_shrike_a_macro"/>
+  
   </add>
 <!-- Vanilla removal -->
  <!-- <remove sel="//entry[@name='missile_cluster_heavy_mk1_macro']"/>

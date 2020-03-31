@@ -420,6 +420,23 @@
       </element>
     </elements>
   </effect>
+
+<!-- Ion pulse-->
+<effect name="muzzle_spl_s_ionpulse" alignment="object">
+  <elements>
+    <!-- Muzzle Smoke-->
+    <element id="1" ref="dummyemitter_up_macro" forkeffect="ion_muzzle_smoke_01" alignment="object" duration="0.7" minscale="0.7" maxscale="0.7" forklod="none"></element>
+    <!-- Geometry Light -->
+    <element id="2" ref="impact_light_blue_macro" forkeffect="none" duration="0.1" minscale="0.7" maxscale="0.7" fadeout="0.0" forklod="none"></element>
+    <!-- Geometry -->
+    <element id="3" ref="muzzle_arg_s_ion_01_mk1_macro" forkeffect="none" duration="0.1" minscale="0.7" maxscale="0.7" forklod="none"></element>
+    <!-- Sound -->
+    <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+      <sound ref="wpn_gen_ionpulse_shoot"></sound>
+    </element>
+  </elements>
+</effect>
+
 <!-- Autocannon-->
 	<effect name="muzzle_gen_s_autocannon" alignment="object">
     <elements>
@@ -449,6 +466,22 @@
       </element>
     </elements>
   </effect>
+
+<!-- PRG-->
+<effect name="muzzle_gen_s_prg" alignment="object">
+  <elements>
+    <!-- Muzzle Smoke-->
+    <element id="1" ref="dummyemitter_macro" forkeffect="shotgun_muzzle_smoke_01" alignment="object" duration="0.4" minscale="0.4" maxscale="0.4" forklod="none"></element>
+    <!-- Geometry Light -->
+    <element id="2" ref="impact_light_orange_macro" forkeffect="none" duration="0.1" minscale="0.4" maxscale="0.4" fadeout="0.1" forklod="largeffect"></element>
+    <!-- Geometry -->
+    <element id="3" ref="muzzle_gen_s_flak_01_mk1_macro" forkeffect="none" duration="0.12" minscale="0.4" maxscale="0.4" forklod="none" fadeout="0.02"></element>
+    <!-- Sound -->
+    <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="0.8" forklod="none">
+      <sound ref="wpn_gen_prg_shoot"></sound>
+    </element>
+  </elements>
+</effect>
 
 <!-- CHAINGUN-->
 	<effect name="muzzle_gen_s_chaingun" alignment="object">
@@ -522,6 +555,43 @@
       </element>
     </elements>
   </effect>
+
+<!-- MA drive CANNON-->	
+ <effect name="muzzle_gen_m_massdriverg" alignment="object">
+  <elements>
+    <!-- Muzzle Smoke-->
+    <element id="1" ref="dummyemitter_up_macro" forkeffect="gatling_muzzle_smoke_01" alignment="object" duration="1.0" minscale="2.0" maxscale="2.0"  forklod="none"></element>
+    <!-- Geometry -->
+    <!-- <element id="3" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="1.5" forklod="none"></element> -->
+    <element id="2" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="2.0" forklod="largeeffect"></element>
+    <!-- Geometry Light -->
+    <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.2" minscale="5.0" maxscale="5.0" fadeout="0.2" forklod="none"></element>
+    <!-- <element id="5" ref="muzzle_gen_s_gatling_03_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="1.5" forklod="none"></element> -->
+    <!-- Sound -->
+    <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+      <sound ref="wpn_gen_mdriverg_shoot"></sound>
+    </element>
+  </elements>
+</effect>
+
+<!-- MA drive turret-->	
+<effect name="muzzle_gen_m_massdrivert" alignment="object">
+  <elements>
+    <!-- Muzzle Smoke-->
+    <element id="1" ref="dummyemitter_up_macro" forkeffect="gatling_muzzle_smoke_01" alignment="object" duration="1.0" minscale="2.0" maxscale="2.0"  forklod="none"></element>
+    <!-- Geometry -->
+    <!-- <element id="3" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="1.5" forklod="none"></element> -->
+    <element id="2" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="2.0" forklod="largeeffect"></element>
+    <!-- Geometry Light -->
+    <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.2" minscale="5.0" maxscale="5.0" fadeout="0.2" forklod="none"></element>
+    <!-- <element id="5" ref="muzzle_gen_s_gatling_03_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="1.5" forklod="none"></element> -->
+    <!-- Sound -->
+    <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+      <sound ref="wpn_gen_mdrivert_shoot"></sound>
+    </element>
+  </elements>
+</effect>
+
 <!-- HEAVY ION CANNON-->
   <effect name="muzzle_arg_m_heavy_ion_cannon" alignment="object">
     <elements>
@@ -704,6 +774,39 @@
       </element>
     </elements>
   </effect>
+  <!-- Mass Driver Turret-->
+	<effect name="muzzle_gen_l_madr" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="gatling_muzzle_smoke_01" alignment="object" duration="2.0" minscale="9.0" maxscale="9.0" forklod="largeeffect"></element>
+      <!-- Geometry -->
+      <!-- <element id="3" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="1.5" forklod="none"></element> -->
+      <element id="2" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.1" minscale="9.0" maxscale="9.0" forklod="largeeffect"></element>
+      <!-- Geometry Light -->
+      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.15" minscale="9.0" maxscale="9.0" fadeout="0.2" forklod="largeeffect"></element>
+      <!-- Sound -->
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_gen_mdrivert_shoot"></sound>
+      </element>
+    </elements>
+  </effect>
+  <!-- Shell cannon -->
+	<effect name="muzzle_gen_l_shell" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="gatling_muzzle_smoke_01" alignment="object" duration="2.0" minscale="12.0" maxscale="12.0" forklod="largeeffect"></element>
+      <!-- Geometry -->
+      <!-- <element id="3" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="1.5" forklod="none"></element> -->
+      <element id="2" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.1" minscale="12.0" maxscale="12.0" forklod="largeeffect"></element>
+      <!-- Geometry Light -->
+      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.15" minscale="12.0" maxscale="12.0" fadeout="0.2" forklod="largeeffect"></element>
+      <!-- Sound -->
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_gen_shellcan_shoot"></sound>
+      </element>
+    </elements>
+  </effect>
+
   <effect name="impact_gen_l_kinetic_artillery" alignment="normal">
     <elements>
       <!-- Muzzle Smoke-->
@@ -846,10 +949,6 @@
       <element id="2" ref="dummyemitter_macro" forkeffect="explosion_m_01_explosion01" minscale="0.4" maxscale="0.4" duration="1.5" forklod="megaeffect"></element>
       <!-- Smoke particles (star-shaped) -->
       <element id="3" ref="dummyemitter_macro" forkeffect="explosion_m_01_smoke01" minscale="0.3" maxscale="0.3" duration="1.5" delay="0.2" forklod="megaeffect"></element>
-      <!-- Explosion (with small explosion in it) -->
-      <!-- <element id="4" ref="dummyemitter_macro" forkeffect="explosion_m_01_explosion02" duration="1.8" delay="0.5" forklod="megaeffect"></element> -->
-      <!-- Large Smoke -->
-      <!-- <element id="5" ref="dummyemitter_macro" forkeffect="explosion_m_01_smoke02" duration="2.0" delay="1.0" fadeout="0.5" forklod="megaeffect"></element> -->
       <!-- Rumble -->
       <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="0.6" forklod="none">
         <force range="1000" falloff="1.0">
@@ -867,28 +966,23 @@
           </rumble>
         </force>
       </element>
-
-
       <!-- OLD -->
       <!-- Light -->
       <element id="5" ref="explosion_m_02_explosion01" forkeffect="none" duration="1.0" fadein="0.02" fadeout="0.5" alignment="normal" forklod="largeeffect"></element>
       <!-- Explosion -->
       <element id="6" ref="dummyemitter_up_macro" forkeffect="explosion_props_wps_mine_01_explosion_01" duration="1.5" delay="0.1" fadeout="1.0" alignment="normal" forklod="largeeffect"></element>
       <!-- OLD -->
-    
      <!-- area damage -->
       <element id="7" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
         <areadamage range="300" falloff="1" duration="1" />
       </element>
-
-
-
       <!-- Sound -->
       <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="3.0" forklod="none">
         <sound ref="wpn_flak_turret_impact"></sound>
       </element>
     </elements>
   </effect>
+
 <!-- FUSION RAY TURRET-->
   <effect name="muzzle_gen_turret_fusion_ray" alignment="object">
     <elements>
@@ -904,6 +998,23 @@
       </element>
     </elements>
   </effect>
+
+  <effect name="muzzle_gen_turret_fusion_ray_spl" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <!--<element id="1" ref="dummyemitter_macro" forkeffect="laser_muzzle_smoke_01" alignment="object" duration="1.0" minscale="2.0" maxscale="2.0" forklod="none"></element> -->
+      <!-- Geometry -->
+      <element id="2" ref="muzzle_gen_m_laser_01_mk1_macro" forkeffect="none" duration="0.3" minscale="1.5" maxscale="1.5" forklod="none"></element>
+      <!-- Geometry Light -->
+      <element id="4" ref="impact_light_blue_macro" forkeffect="none" duration="0.1" minscale="5.0" maxscale="5.0" fadeout="0.1" forklod="none"></element>
+      <!-- Sound -->
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_impulse_l_upd"></sound>
+      </element>
+    </elements>
+  </effect>
+
+
     <effect name="impact_gen_turret_fusion_ray" alignment="normal">
     <elements>
       <!-- Impact Geometry -->

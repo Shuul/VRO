@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="turret_spl_m_flak_02_mk1_macro" class="turret">
+        <component ref="turret_spl_m_flak_02_mk1" />
+        <properties>
+          <identification name="{6699,12047}" basename="{6699,12048}" shortname="{6699,12049}" makerrace="split" description="{6699,12050}" />
+          <bullet class="bullet_spl_m_flak_01_mk1_macro" />
+          <rotationspeed max="250" />
+          <reload rate="1" time="1" />
+          <hull max="4000" threshold="0.2" integrated="0" />
+        </properties>
+      </macro>
+    </macros>   
+  </replace>
+</diff>
+

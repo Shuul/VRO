@@ -1,0 +1,15 @@
+<diff>
+	<add sel="//components/component/connections">
+	 <connection name="con_ishield_01" tags="ishield">
+	  <offset>
+	   <position x="0" y="0" z="0"/>
+		 <quaternion qx="0" qy="0" qz="0" qw="0"/>
+	  </offset>
+	 </connection>
+	</add>
+	
+	<replace  sel="/components/component/connections/connection[@name='con_weapon_03']/@tags"> weapon small platformcollision standard missile hgun </replace>
+	<replace  sel="/components/component/connections/connection[@name='con_weapon_02']/@tags"> weapon small platformcollision standard missile symmetry symmetry_right symmetry_2 lgun </replace>
+	<replace  sel="/components/component/connections/connection[@name='con_weapon_04']/@tags"> weapon small platformcollision standard missile symmetry symmetry_left symmetry_2 lgun</replace>
+	
+	</diff>

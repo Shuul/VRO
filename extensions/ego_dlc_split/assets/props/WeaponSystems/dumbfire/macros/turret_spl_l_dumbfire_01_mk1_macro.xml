@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="turret_spl_l_dumbfire_01_mk1_macro" class="missileturret">
+        <component ref="turret_spl_l_dumbfire_01_mk1" />
+        <properties>
+          <identification name="{20105,5274}" basename="{20105,5271}" shortname="{20105,5275}" makerrace="split" description="{20105,5272}"/>
+          <ammunition tags="mdumbfire hdumbfire" />
+          <bullet class="missile_tornado_macro" />
+          <rotationspeed max="30" />
+          <reload />
+          <storage capacity="300" />
+          <hull max="21250" threshold="0.2" />
+        </properties>
+      </macro>
+    </macros>   
+  </replace>
+</diff>
+
