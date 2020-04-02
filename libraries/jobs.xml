@@ -39,7 +39,7 @@
 			</order>
 		</orders>
 		<category faction="argon" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="12" sector="1"/>
+		<quota galaxy="10" sector="1"/>
      	<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -92,7 +92,7 @@
 			</order>
 		</orders>
 		<category faction="antigone" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="8" sector="1"/>
+		<quota galaxy="6" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -115,7 +115,7 @@
 			</order>
 		</orders>
 		<category faction="antigone" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="10" sector="1"/>
+		<quota galaxy="8" sector="1"/>
      	<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -142,7 +142,7 @@
 			</order>
 		</orders>
 		<category faction="paranid" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="12" sector="1"/>
+		<quota galaxy="8" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -169,7 +169,7 @@
 			</order>
 		</orders>
 		<category faction="holyorder" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="10" sector="1"/>
+		<quota galaxy="6" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="holyorder" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -219,7 +219,7 @@
 			</order>
 		</orders>
 		<category faction="teladi" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="10" sector="1"/>
+		<quota galaxy="6" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="member" comparison="ge" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -269,7 +269,7 @@
 			</order>
 		</orders>
 		<category faction="ministry" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="6" sector="1"/>
+		<quota galaxy="5" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -298,7 +298,7 @@
       </order>
     </orders>
     <category faction="scaleplate" tags="[plunderer]" size="ship_l"/>
-    <quota galaxy="10" sector="1"/>
+    <quota galaxy="7" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
     <environment buildatshipyard="false" gate="true"/>
     <basket basket="pirate_container"/>
@@ -443,15 +443,15 @@
 </replace>
 
 <replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster']/quota">
-<quota galaxy="5" sector="1"/>
+<quota galaxy="4" sector="1"/>
 </replace>
 
 <replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_center']/quota">
-	<quota galaxy="3" sector="1"/>
+	<quota galaxy="4" sector="1"/>
 	</replace>
 
 <replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/quota">
-<quota galaxy="3" sector="1"/>
+<quota galaxy="4" sector="1"/>
 </replace>
 
 <replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/quota">
