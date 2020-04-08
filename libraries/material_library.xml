@@ -23,7 +23,6 @@
     </properties>
   </replace>
 
-
   -->
 
   <!-- Code from mik, note the correct <diff code above , please try with \assets\textures\generic\generic_rz2awing_hulltexture_01_smooth addresses as well to see if that helps :)-->
@@ -504,4 +503,146 @@
       </properties>
     </material>
   </add>
+
+	<add sel="/materiallibrary">
+		<collection name="split"> 
+			<material name="metal_split_platesa_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesa_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesa_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesa_01_low_bump"/>
+				</properties>
+			</material>
+			<material name="metal_split_platesa2_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesa2_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesa2_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesa2_01_low_bump"/>
+				</properties>
+			</material>
+			<material name="metal_split_platesa3_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesa3_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesa3_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesa3_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesa3_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_split_platesb_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesb_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesb_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesb_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesb_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_split_platesb2_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesb2_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesb2_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesb2_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesb2_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_split_platesc_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesc_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesc_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesc_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesc_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_split_platesf_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesf_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesf_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesf_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesf_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_split_platesg_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesg_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesg_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesg_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesg_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_split_lattice_01" shader="P1_complex_surface.fx" blendmode="ALPHA1" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_lattice_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_lattice_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_lattice_01_low_bump"/>
+				</properties>
+			</material>
+			<material name="metal_split_trim_platesh_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_trim_platesh_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesh_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_trim_platesh_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_trim_platesh_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_split_trim_platesi_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_trim_platesi_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesi_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_trim_platesi_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_trim_platesi_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_split_trim_platesj_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_trim_platesj_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesj_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_trim_platesj_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_trim_platesj_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_split_trim_platesk_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_trim_platesk_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesk_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_trim_platesk_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_trim_platesk_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_split_trim_platesm_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_trim_platesm_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesm_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_trim_platesm_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_trim_platesm_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_gastanksa_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_gastanksa_01_diff"/>
+					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_gastanksa_01_spec"/>
+					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_gastanksa_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_gastanksa_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.1"/>
+				</properties>
+			</material>
+			<material name="metal_split_exl_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_exl_01_light"/>
+					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_exl_01_light"/>
+					<property type="Float"  name="color_glowStr"  value="0.5"/>
+				</properties>
+      </material>
+    </collection> 
+	</add>
+
 </diff>

@@ -2163,6 +2163,21 @@
   <owner faction="scaleplate" />
 </ware> 
 
+<!-- Panther-->
+<ware id="ship_spl_l_panther_a" name="{20101,41301}" description="{6699,1905}" group="ships_split" transport="ship" size="ship" volume="1" tags="ship">
+  <price min="6195057" average="6858890" max="7522724" />
+  <production time="90" amount="1" method="default" name="{20206,101}">
+    <primary>
+		  <ware ware="energycells" amount="1000" />
+		  <ware ware="hullparts" amount="4850" />
+    </primary>
+  </production>
+  <component ref="ship_spl_l_panther_a_macro" amount="1" />
+  <restriction licence="militaryequipment" />
+  <owner faction="freesplit" />
+  <owner faction="split" />
+</ware> 
+
 <!-- Centaur-->
 		<ware id="ship_arg_l_centaur_a" name="{20101,12802}" description="{6699,1901}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
     <price min="4595057" average="5058890" max="5522724" />
@@ -4348,6 +4363,12 @@
       <use threshold="0" />
       </ware>
 
+  <ware id="ishield_spl_l_panther_a" name="{6699,13169}" description="{6699,13169}" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+        <price min="1" average="1" max="1" />
+        <component ref="ishield_spl_l_panther_a_macro" amount="1" />
+        <use threshold="0" />
+        </ware>
+  
   </add>
 <!-- Vanilla missiles reomoval from being buildable by factions -->
 

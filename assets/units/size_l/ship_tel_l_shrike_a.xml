@@ -399,10 +399,47 @@
 						</offset>
 				</connection>
 		
-				<connection name="con_weapon_01" tags="weapon large standard tel_destroyer_01 ">
+				<!-- <connection name="con_weapon_01" tags="weapon large standard tel_destroyer_01 ">
 					<offset>
 						<position x="-0.0025" y="-42" z="297"/>
 						<quaternion qx="-0" qy="-0" qz="0" qw="0"/>
+					</offset>
+				</connection> -->
+
+				<connection group="lob" name="con_shieldgen_m_lob_2" tags="medium shield hittable">
+					<offset>
+						<position x="0.0704" y="69.5272" z="292.9771"/>
+						<quaternion qw="-0.8258186464313383" qx="-0.5639357793280297" qy="0.0" qz="-0.0"/>
+					</offset>
+				</connection>
+				<connection group="lob" name="con_shieldgen_m_lob_3" tags="medium shield hittable">
+					<offset>
+						<position x="-64.2217" y="-41.3692" z="293.16909999999996"/>
+						<quaternion qw="-0.4165624816303873" qx="-0.2873260200218131" qy="-0.4852713592385569" qz="-0.7130435926499314"/>
+					</offset>
+				</connection>
+				<connection group="lob" name="con_shieldgen_m_lob_1" tags="medium shield hittable">
+					<offset>
+						<position x="64.5447" y="-42.084500000000006" z="292.9201"/>
+						<quaternion qw="-0.4147397957833558" qx="-0.28465013031467185" qy="0.4868296773895893" qz="0.7141162862714789"/>
+					</offset>
+				</connection>
+				<connection group="lob" name="con_m_turret_lob_3" tags="turret medium standard hittable">
+					<offset>
+						<position x="86.3929" y="-54.8076" z="281.37780000000004"/>
+						<quaternion qw="-0.4290527411212524" qx="-0.2533679374262071" qy="0.44157152522496074" qz="0.7461454427464065"/>
+					</offset>
+				</connection>
+				<connection group="lob" name="con_m_turret_lob_2" tags="turret medium standard hittable">
+					<offset>
+						<position x="-86.4126" y="-54.831700000000005" z="281.3617"/>
+						<quaternion qw="-0.4249406556835097" qx="-0.24644014080930404" qy="-0.4455299700019529" qz="-0.7484622515365877"/>
+					</offset>
+				</connection>
+				<connection group="lob" name="con_m_turret_lob_1" tags="turret medium standard hittable">
+					<offset>
+						<position x="0.16149999999999998" y="94.93549999999999" z="281.3887"/>
+						<quaternion qw="-0.8607271377395245" qx="-0.5090665912812641" qy="0.0" qz="-0.0"/>
 					</offset>
 				</connection>
 

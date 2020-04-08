@@ -120,6 +120,20 @@
 		</ship>
 	</add>
 
+  <!-- ############################# -->
+  <!--    SPLIT-->
+  <!-- ############################# -->
+  
+<add sel="//ships">
+	<ship id="split_panther" group="spl_panther_l">
+		<category tags="[military, frigate, mission, plunder]" faction="[split, freesplit, fallensplit]" size="ship_l"/>
+		<pilot>
+			<select faction="split" tags="fighterpilot"/>
+		</pilot>
+		<drop ref="ship_large_military"/>
+		<people ref="split_military_crew"/>
+	</ship>
+</add>
 
 <!-- ############################# -->
 <!--    Xenons-->

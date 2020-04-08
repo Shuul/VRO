@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+	<macro name="ship_spl_l_panther_a_macro" class="ship_l">
+		<component ref="ship_spl_l_panther" />
+		<properties>
+			<identification name="{20101,41301}" basename="{20101,41301}" description="{6699,1904}" icon="ship_l_frigate" />
+			<software>
+			  <software ware="software_dockmk2" compatible="1" />
+			  <software ware="software_flightassistmk1" default="1" />
+			  <software ware="software_scannerlongrangemk1" default="1" />
+			  <software ware="software_scannerlongrangemk2" compatible="1" />
+			  <software ware="software_scannerobjectmk1" default="1" />
+			  <software ware="software_scannerobjectmk2" compatible="1" />
+			  <software ware="software_targetmk1" compatible="1" />
+			  <software ware="software_trademk1" compatible="1" />
+			</software>
+			<explosiondamage value="8000" />
+			<storage missile="40" unit="18" />
+			<hull max="156860" />
+			<secrecy level="2" />
+			<purpose primary="fight" />
+			<people capacity="42" />
+			<physics mass="194.0">
+				<inertia pitch="180.749" yaw="190.749" roll="180.999" />
+				<drag forward="29.2" reverse="130.22" horizontal="60" vertical="60" pitch="160" yaw="160" roll="150" />
+			</physics>
+			<thruster tags="large" />
+			<ship type="frigate" />
+		</properties>
+		<connections>
+			<connection ref="con_cockpit">
+			  <macro ref="bridge_spl_l_01_macro" connection="con_cockpit" />
+			</connection>
+			<connection ref="con_dock_xs">
+			  <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+			</connection>
+			<connection ref="con_shipstorage_s_01">
+			  <macro ref="shipstorage_gen_s_cap18_macro" connection="object" />
+			</connection>
+			<connection ref="con_shipstorage_xs_01">
+			  <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+			</connection>
+			<connection ref="con_storage01">
+			  <macro ref="storage_spl_l_panther_a_macro" connection="ShipConnection" />
+			</connection>
+			<connection ref="con_ishield_01">
+			  <macro ref="ishield_spl_l_panther_a_macro" connection="ParentConnection" />
+			</connection> 
+			<connection ref="con_buildmodule">
+			  <macro ref="buildmodule_gen_carrier_macro" connection="object" />
+			</connection>
+			<connection ref="con_dockingarea_1">
+				<macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+			</connection>
+			<connection ref="con_dockingarea_2">
+				<macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+			</connection>
+			<connection ref="con_dockingarea_3">
+				<macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+			</connection>
+			<connection ref="con_dockingarea_4">
+				<macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+			</connection>
+
+		</connections>
+	</macro>
+</macros>
