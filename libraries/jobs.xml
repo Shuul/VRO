@@ -266,7 +266,7 @@
 			</order>
 		</orders>
 		<category faction="split" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="4" sector="1"/>
+		<quota galaxy="6" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="split" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -278,6 +278,7 @@
 		</ship>
 		<subordinates>
 			<subordinate job="split_fighter_escort_s_panther"/>
+			<subordinate job="zyarth_corvette_escort_m"/>
 		</subordinates>
 	  	</job>
 
@@ -289,7 +290,7 @@
 			</order>
 		</orders>
 		<category faction="split" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="2" sector="1"/>
+		<quota galaxy="3" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="freesplit" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -301,10 +302,11 @@
 		</ship>
 		<subordinates>
 			<subordinate job="split_fighter_escort_s_panther"/>
+			<subordinate job="zyarth_corvette_escort_m"/>
 		</subordinates>
 	  </job>
 
-	  <job id="split_fighter_escort_s_panther" name="{20204,2901}" startactive="false">
+	  <job id="split_fighter_escort_s_panther" name="{20204,2901}" >
 		<orders>
 		  <order order="Escort" default="true">
 			<param name="formation" value="formationshape.pointguard"/>
@@ -312,7 +314,7 @@
 		  </order>
 		</orders>
 		<category faction="split" tags="[military, fighter]" size="ship_s"/>
-		<quota wing="8" variation="2"/>
+		<quota wing="10" variation="2"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro"/>
 		<environment buildatshipyard="true"/>
 		<modifiers subordinate="true"/>
@@ -324,6 +326,51 @@
 		  <owner exact="split" overridenpc="true"/>
 		</ship>
 	  </job>
+
+	  <job id="panther_l_sector_court" name="{20204,5201}" startactive="false" comment="panther">
+		<modifiers commandeerable="true"/>
+		<orders>
+			<order order="Patrol" default="true">
+       		 <param name="range" value="class.sector"/>
+			</order>
+		</orders>
+		<category faction="court" tags="[factionlogic, military, frigate]" size="ship_l"/>
+		<quota galaxy="8" sector="1"/>
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[court, freesplit]" relation="self" comparison="exact" matchextension="false"/>
+		<environment buildatshipyard="true"/>
+		<ship>
+			<select faction="court" tags="[military, frigate]" size="ship_l"/>
+			<loadout>
+				<level min="0.6" max="1"/>
+			</loadout>
+			<owner exact="court" overridenpc="true"/>
+		</ship>
+		<subordinates>
+			<subordinate job="court_fighter_escort_s_panther"/>
+			<subordinate job="court_corvette_escort_m"/>
+		</subordinates>
+		  </job>
+		  
+		  <job id="court_fighter_escort_s_panther" name="{20204,2901}" startactive="false">
+			<orders>
+			  <order order="Escort" default="true">
+				<param name="formation" value="formationshape.pointguard"/>
+				<param name="overrideformationskill" value="true"/>
+			  </order>
+			</orders>
+			<category faction="court" tags="[military, fighter]" size="ship_s"/>
+			<quota wing="10" variation="2"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro"/>
+			<environment buildatshipyard="true"/>
+			<modifiers subordinate="true"/>
+			<ship>
+				<select faction="court" tags="[military, fighter, light]" size="ship_s"/>
+			<loadout>
+				<level min="0" max="0.7"/>
+			  </loadout>
+			  <owner exact="court" overridenpc="true"/>
+			</ship>
+		  </job>
   <!-- ############################# -->
   <!--        FALLEN SPLIT         -->
   <!-- ############################# -->
@@ -552,7 +599,7 @@
 </replace>
 
 <replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/quota">
-	<quota galaxy="2" sector="1"/>
+	<quota galaxy="4" sector="1"/>
 	</replace>
 
 <replace sel="//jobs/job[@id='argon_fighter_escort_s_carrier']/quota">
@@ -572,7 +619,7 @@
 	</replace>
 
 <replace sel="//jobs/job[@id='court_escort_s_carrier']/quota">
-		<quota wing="25" variation="5"/>
+		<quota wing="35" variation="5"/>
 		</replace>
 
 <!-- SPLIT DLC jobs loadouts -->

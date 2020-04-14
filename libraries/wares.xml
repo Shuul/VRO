@@ -39,6 +39,16 @@
 
 
 <!-- L and XL ships prices -->
+<replace sel="//wares/ware[@id='ship_xen_xl_carrier_01_a']/production">
+  <production time="2500" amount="1" method="default" name="{20206,601}">
+    <primary>
+      <ware ware="energycells" amount="12049" />
+      <ware ware="ore" amount="10070" />
+      <ware ware="silicon" amount="10090" />
+    </primary>
+  </production>
+</replace>
+
   <replace sel="//wares/ware[@id='weapon_spl_l_destroyer_01_mk1']/price">
     <price min="13271465" average="15613487" max="17955511" />
   </replace>
@@ -2176,6 +2186,7 @@
   <restriction licence="militaryequipment" />
   <owner faction="freesplit" />
   <owner faction="split" />
+  <owner faction="court" />
 </ware> 
 
 <!-- Centaur-->
