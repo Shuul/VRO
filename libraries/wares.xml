@@ -37,25 +37,46 @@
     <owner faction="split" />
   </add> -->
 
+  <!-- Xenon ships -->
+  <replace sel="//wares/ware[@id='ship_xen_xl_carrier_01_a']/production">
+    <production time="2500" amount="1" method="default" name="{20206,601}">
+      <primary>
+        <ware ware="energycells" amount="12049" />
+        <ware ware="ore" amount="10070" />
+        <ware ware="silicon" amount="10090" />
+      </primary>
+    </production>
+  </replace>
 
+  <replace sel="//wares/ware[@id='ship_xen_xl_destroyer_01_a']/production">
+    <production time="750" amount="1" method="default" name="{20206,601}">
+      <primary>
+        <ware ware="energycells" amount="4008" />
+        <ware ware="ore" amount="3037" />
+        <ware ware="silicon" amount="3047" />
+      </primary>
+    </production>
+  </replace>
+
+  <replace sel="//wares/ware[@id='ship_xen_m_fighter_01_a']/production">
+    <production time="50" amount="1" method="default" name="{20206,601}">
+      <primary>
+        <ware ware="energycells" amount="200" />
+        <ware ware="ore" amount="150" />
+        <ware ware="silicon" amount="150" />
+      </primary>
+    </production>
+  </replace>
 <!-- L and XL ships prices -->
-<replace sel="//wares/ware[@id='ship_xen_xl_carrier_01_a']/production">
-  <production time="2500" amount="1" method="default" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="12049" />
-      <ware ware="ore" amount="10070" />
-      <ware ware="silicon" amount="10090" />
-    </primary>
-  </production>
-</replace>
 
-  <replace sel="//wares/ware[@id='weapon_spl_l_destroyer_01_mk1']/price">
+
+  <replace sel="//wares/ware[@id='ship_spl_l_destroyer_01_a']/price">
     <price min="13271465" average="15613487" max="17955511" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_spl_l_destroyer_01_mk1']/production/primary">
+    <replace sel="//wares/ware[@id='ship_spl_l_destroyer_01_a']/production/primary">
       <primary>
         <ware ware="energycells" amount="2137" />
-        <ware ware="hullparts" amount="14777" />
+        <ware ware="hullparts" amount="13777" />
   </primary>
     </replace>
 
@@ -64,8 +85,8 @@
     </replace>
         <replace sel="//wares/ware[@id='ship_spl_xl_carrier_01_a']/production/primary">
       <primary>
-        <ware ware="energycells" amount="8956" />
-        <ware ware="hullparts" amount="36930" />
+        <ware ware="energycells" amount="8056" />
+        <ware ware="hullparts" amount="34930" />
   </primary>
     </replace>
 <!-- new guns -->
@@ -3352,11 +3373,11 @@
 
 <ware id="ship_xen_xl_mdestroyer_01_a" name="{20101,71501}" description="{20101,71501}" group="ships_xenon" transport="ship" volume="1" tags="noplayerblueprint ship">
     <price min="1033787" average="1216220" max="1398653" />
-    <production time="526" amount="1" method="default" name="{20206,101}">
+    <production time="750" amount="1" method="default" name="{20206,101}">
       <primary>
-        <ware ware="energycells" amount="2908" />
-        <ware ware="ore" amount="2437" />
-        <ware ware="silicon" amount="2447" />
+        <ware ware="energycells" amount="4008" />
+        <ware ware="ore" amount="2537" />
+        <ware ware="silicon" amount="2547" />
       </primary>
     </production>
     <component ref="ship_xen_xl_mdestroyer_01_a_macro" />
