@@ -39,19 +39,19 @@
 
   <!-- Xenon ships -->
   <replace sel="//wares/ware[@id='ship_xen_xl_carrier_01_a']/production">
-    <production time="2500" amount="1" method="default" name="{20206,601}">
+    <production time="2000" amount="1" method="default" name="{20206,601}">
       <primary>
-        <ware ware="energycells" amount="12049" />
-        <ware ware="ore" amount="10070" />
-        <ware ware="silicon" amount="10090" />
+        <ware ware="energycells" amount="9049" />
+        <ware ware="ore" amount="8070" />
+        <ware ware="silicon" amount="8090" />
       </primary>
     </production>
   </replace>
 
   <replace sel="//wares/ware[@id='ship_xen_xl_destroyer_01_a']/production">
-    <production time="750" amount="1" method="default" name="{20206,601}">
+    <production time="700" amount="1" method="default" name="{20206,601}">
       <primary>
-        <ware ware="energycells" amount="4008" />
+        <ware ware="energycells" amount="3508" />
         <ware ware="ore" amount="3037" />
         <ware ware="silicon" amount="3047" />
       </primary>
@@ -59,11 +59,11 @@
   </replace>
 
   <replace sel="//wares/ware[@id='ship_xen_m_fighter_01_a']/production">
-    <production time="50" amount="1" method="default" name="{20206,601}">
+    <production time="35" amount="1" method="default" name="{20206,601}">
       <primary>
-        <ware ware="energycells" amount="200" />
-        <ware ware="ore" amount="150" />
-        <ware ware="silicon" amount="150" />
+        <ware ware="energycells" amount="180" />
+        <ware ware="ore" amount="130" />
+        <ware ware="silicon" amount="130" />
       </primary>
     </production>
   </replace>
@@ -75,8 +75,8 @@
   </replace>
     <replace sel="//wares/ware[@id='ship_spl_l_destroyer_01_a']/production/primary">
       <primary>
-        <ware ware="energycells" amount="2137" />
-        <ware ware="hullparts" amount="13777" />
+        <ware ware="energycells" amount="10137" />
+        <ware ware="hullparts" amount="12777" />
   </primary>
     </replace>
 
@@ -85,8 +85,8 @@
     </replace>
         <replace sel="//wares/ware[@id='ship_spl_xl_carrier_01_a']/production/primary">
       <primary>
-        <ware ware="energycells" amount="8056" />
-        <ware ware="hullparts" amount="34930" />
+        <ware ware="energycells" amount="60056" />
+        <ware ware="hullparts" amount="28930" />
   </primary>
     </replace>
 <!-- new guns -->
@@ -182,7 +182,7 @@
 
   <!-- M TURRET PRICES -->
   <replace sel="//wares/ware[@id='turret_spl_m_beam_01_mk1']/price">
-    <price min="76000" average="81000" max="85000" />
+    <price min="66000" average="71000" max="75000" />
   </replace>
   <replace sel="//wares/ware[@id='turret_spl_m_beam_01_mk1']/production/primary">
     <primary>
@@ -192,7 +192,7 @@
       </primary>
 </replace>
 <replace sel="//wares/ware[@id='turret_spl_m_beam_02_mk1']/price">
-    <price min="76000" average="81000" max="85000" />
+    <price min="66000" average="71000" max="75000" />
   </replace>
   <replace sel="//wares/ware[@id='turret_spl_m_beam_02_mk1']/production/primary">
     <primary>
