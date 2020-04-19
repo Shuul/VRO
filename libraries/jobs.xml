@@ -306,7 +306,7 @@
 		</subordinates>
 	  </job>
 
-	  <job id="split_fighter_escort_s_panther" name="{20204,2901}" >
+	  <job id="split_fighter_escort_s_panther" name="{20204,2901}" startactive="false" >
 		<orders>
 		  <order order="Escort" default="true">
 			<param name="formation" value="formationshape.pointguard"/>
@@ -314,7 +314,7 @@
 		  </order>
 		</orders>
 		<category faction="split" tags="[military, fighter]" size="ship_s"/>
-		<quota wing="10" variation="2"/>
+		<quota wing="16" variation="2"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro"/>
 		<environment buildatshipyard="true"/>
 		<modifiers subordinate="true"/>
@@ -359,7 +359,7 @@
 			  </order>
 			</orders>
 			<category faction="court" tags="[military, fighter]" size="ship_s"/>
-			<quota wing="10" variation="2"/>
+			<quota wing="16" variation="2"/>
 			<location class="galaxy" macro="xu_ep2_universe_macro"/>
 			<environment buildatshipyard="true"/>
 			<modifiers subordinate="true"/>
