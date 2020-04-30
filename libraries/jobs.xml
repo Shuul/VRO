@@ -16,7 +16,7 @@
 			</order>
 		</orders>
 		<category faction="argon" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="8" sector="1"/>
+		<quota galaxy="5" sector="1"/>
      	<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -92,7 +92,7 @@
 			</order>
 		</orders>
 		<category faction="antigone" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="6" sector="1"/>
+		<quota galaxy="4" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -142,7 +142,7 @@
 			</order>
 		</orders>
 		<category faction="paranid" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="8" sector="1"/>
+		<quota galaxy="5" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -169,7 +169,7 @@
 			</order>
 		</orders>
 		<category faction="holyorder" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="6" sector="1"/>
+		<quota galaxy="2" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="holyorder" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -196,7 +196,7 @@
 			</order>
 		</orders>
 		<category faction="teladi" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="10" sector="1"/>
+		<quota galaxy="6" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -574,7 +574,7 @@
 			<level min="0.7" max="1.0"/>
 	</loadout>  </replace>
 <!-- carrier groups boost -->
-<replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/quota">
+<replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/quota[@galaxy='1']">
 <quota galaxy="5" sector="1"/>
 </replace>
 
@@ -582,43 +582,43 @@
 <location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact"/>
 </replace>
 
-<replace sel="//jobs/job[@id='teladi_carrier_patrol_xl_cluster']/quota">
+<replace sel="//jobs/job[@id='teladi_carrier_patrol_xl_cluster']/quota[@galaxy='1']">
 <quota galaxy="5" sector="1"/>
 </replace>
 
-<replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster']/quota">
+<replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster']/quota[@galaxy='1']">
 <quota galaxy="4" sector="1"/>
 </replace>
 
-<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_center']/quota">
+<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_center']/quota[@galaxy='1']">
 	<quota galaxy="4" sector="1"/>
 	</replace>
 
-<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/quota">
+<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/quota[@galaxy='1']">
 <quota galaxy="4" sector="1"/>
 </replace>
 
-<replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/quota">
+<replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/quota[@galaxy='1']">
 	<quota galaxy="4" sector="1"/>
 	</replace>
 
-<replace sel="//jobs/job[@id='argon_fighter_escort_s_carrier']/quota">
+<replace sel="//jobs/job[@id='argon_fighter_escort_s_carrier']/quota[@wing='10']">
 <quota wing="30" variation="5"/>
 </replace>
 
-<replace sel="//jobs/job[@id='paranid_fighter_escort_s_carrier']/quota">
+<replace sel="//jobs/job[@id='paranid_fighter_escort_s_carrier']/quota[@wing='10']">
 <quota wing="35" variation="5"/>
 </replace>
 
-<replace sel="//jobs/job[@id='teladi_fighter_escort_s_carrier']/quota">
+<replace sel="//jobs/job[@id='teladi_fighter_escort_s_carrier']/quota[@wing='6']">
 <quota wing="30" variation="5"/>
 </replace>
 
-<replace sel="//jobs/job[@id='zyarth_escort_s_carrier']/quota">
+<replace sel="//jobs/job[@id='zyarth_escort_s_carrier']/quota[@wing='5']">
 	<quota wing="9" variation="1"/>
 	</replace>
 
-<replace sel="//jobs/job[@id='court_escort_s_carrier']/quota">
+<replace sel="//jobs/job[@id='court_escort_s_carrier']/quota[@wing='5']">
 	<quota wing="9" variation="1"/>
 		</replace>
 
