@@ -639,4 +639,11 @@
 
 
 
+<!-- Xenon combat and economy FE fix -->
+  <replace sel="//jobs/job[@id='xenon_free_miner_m_mineral']/quota/@cluster">8</replace>
+  <replace sel="//jobs/job[@id='xenon_free_trader_m_energy']/quota/@cluster">6</replace>
+  <replace sel="//jobs/job[@id='xenon_carrier_patrol_xl_border_cluster']/quota[@galaxy='1']">
+	<quota galaxy="3" maxgalaxy="5"/>
+  </replace>
+	
 </diff>
