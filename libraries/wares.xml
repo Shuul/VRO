@@ -46,21 +46,21 @@
 
 
   <replace sel="//wares/ware[@id='ship_spl_l_destroyer_01_a']/price">
-    <price min="13271465" average="15613487" max="17955511" />
+    <price min="15271465" average="17913487" max="20955511" />
   </replace>
     <replace sel="//wares/ware[@id='ship_spl_l_destroyer_01_a']/production/primary">
       <primary>
-        <ware ware="energycells" amount="10137" />
-        <ware ware="hullparts" amount="12777" />
+        <ware ware="energycells" amount="13137" />
+        <ware ware="hullparts" amount="13777" />
   </primary>
     </replace>
 
   <replace sel="//wares/ware[@id='ship_spl_xl_carrier_01_a']/price">
-    <price min="33257176" average="39126090" max="44995003" />
+    <price min="36257176" average="42126090" max="46995003" />
     </replace>
         <replace sel="//wares/ware[@id='ship_spl_xl_carrier_01_a']/production/primary">
       <primary>
-        <ware ware="energycells" amount="60056" />
+        <ware ware="energycells" amount="70056" />
         <ware ware="hullparts" amount="28930" />
   </primary>
     </replace>
@@ -607,22 +607,22 @@
     </replace>
 
     <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_a']/price">
-      <price min="6776958" average="8043480" max="9210002" />
+      <price min="6476958" average="7743480" max="8910002" />
     </replace>
           <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_a']/production/primary">
       <primary>
           <ware ware="energycells" amount="1296" />
-          <ware ware="hullparts" amount="5704" />
+          <ware ware="hullparts" amount="5204" />
     </primary>
     </replace>
 
     <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_b']/price">
-      <price min="68151401" average="9607530" max="11063660" />
+      <price min="64151401" average="9207530" max="10663660" />
     </replace>
           <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_b']/production/primary">
       <primary>
           <ware ware="energycells" amount="1551" />
-          <ware ware="hullparts" amount="6823" />
+          <ware ware="hullparts" amount="6223" />
     </primary>
     </replace>
 
@@ -1950,7 +1950,10 @@
   <owner faction="teladi" />
   <owner faction="ministry" /> 
   <owner faction="argon" />
-  <owner faction="antigone" />  </add>
+  <owner faction="antigone" /> 
+  <owner faction="scaleplate" />
+  <owner faction="hatikvah" />
+</add>
 
 
  <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk2']/price">
@@ -1967,7 +1970,10 @@
   <owner faction="teladi" />
   <owner faction="ministry" /> 
   <owner faction="argon" />
-  <owner faction="antigone" /> </add>
+  <owner faction="antigone" />
+  <owner faction="scaleplate" />
+  <owner faction="hatikvah" />
+</add>
 
 
  <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk1']/price">
@@ -2140,6 +2146,20 @@
 		<owner faction="ministry" />
     </ware>
 
+  <!-- <ware id="ship_spl_xl_gharial" name="{20101,42501}" description="{20101,42501}" group="ships_split" transport="ship" volume="1" tags="ship">
+      <price min="32000000" average="37000000" max="42000000" />
+      <production time="575" amount="1" method="default" name="{20206,101}">
+        <primary>
+        <ware ware="energycells" amount="3450" />
+        <ware ware="hullparts" amount="17940" />
+        </primary>
+      </production>
+      <component ref="ship_spl_xl_gharial_macro" amount="1" />
+      <restriction licence="capitalship" />
+      <owner faction="freesplit" />
+      <owner faction="split" />
+      <owner faction="court" />
+  </ware> -->
 <!-- Titan -->
       <ware id="ship_arg_xl_titan" name="{20004,1050011}" description="{6699,1903}" group="ships_argon" transport="ship" volume="1" tags="ship noplayerblueprint">
         <price min="60000000" average="75000000" max="80000000" />
@@ -2227,6 +2247,19 @@
     <owner faction="hatikvah" />
   </ware>
 
+<!-- Hound-->
+<!-- <ware id="ship_sca_l_hound" name="{20101,1907}" description="{6699,19071}" group="ships_teladi" transport="ship" size="ship" volume="1" tags="ship">
+  <price min="7457503" average="8167650" max="9077798" />
+  <production time="90" amount="1" method="default" name="{20206,101}">
+    <primary>
+      <ware ware="energycells" amount="1001" />
+      <ware ware="hullparts" amount="4790" />
+  </primary>
+  </production>
+  <component ref="ship_sca_l_hound_macro" amount="1" />
+  <restriction licence="capitalship" />
+  <owner faction="scaleplate" />
+</ware>  -->
 
 <!-- FLAK TURRETS -->
 	<ware id="turret_arg_l_flak" name="{6699,1011}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
@@ -2771,20 +2804,20 @@
   </ware>
 <!-- NEW MISSILES  -->
 <ware id="missile_rapier" name="{6699, 1201}" description="{6699, 1203}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="247" average="281" max="314" />
+  <price min="176" average="200" max="224" />
   <production time="1" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="5" />
-  <ware ware="missilecomponents" amount="2" />]
+  <ware ware="missilecomponents" amount="2" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_rapier_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -2793,20 +2826,20 @@
   </ware>
   
   <ware id="missile_firefly" name="{6699, 1204}" description="{6699, 1206}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="581" average="661" max="740" />
+  <price min="388" average="441" max="493" />
   <production time="1" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="8" />
-  <ware ware="missilecomponents" amount="3" />]
+  <ware ware="missilecomponents" amount="3" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_firefly_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -2815,20 +2848,20 @@
   </ware>
   
   <ware id="missile_firelance" name="{6699, 1207}" description="{6699, 1209}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="1760" average="2000" max="2240" />
+  <price min="1173" average="1333" max="1492" />
   <production time="2" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="13" />
-  <ware ware="missilecomponents" amount="6" />]
+  <ware ware="missilecomponents" amount="6" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_firelance_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -2839,20 +2872,20 @@
   </ware>
   
   <ware id="missile_beluga" name="{6699, 1210}" description="{6699, 1212}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="2481" average="2820" max="3158" />
+  <price min="1654" average="1880" max="2105" />
   <production time="3" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="16" />
-  <ware ware="missilecomponents" amount="7" />]
+  <ware ware="missilecomponents" amount="7" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_beluga_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -2861,20 +2894,20 @@
   </ware>
   
   <ware id="missile_blizzard" name="{6699, 1213}" description="{6699, 1215}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="4887" average="5554" max="6220" />
+  <price min="3258" average="3703" max="4147" />
   <production time="4" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="22" />
-  <ware ware="missilecomponents" amount="10" />]
+  <ware ware="missilecomponents" amount="10" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_blizzard_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -2885,20 +2918,20 @@
   </ware>
   
   <ware id="missile_dragonfly" name="{6699, 1216}" description="{6699, 1218}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="2750" average="3125" max="3500" />
+  <price min="1833" average="2083" max="2332" />
   <production time="4" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="17" />
-  <ware ware="missilecomponents" amount="8" />]
+  <ware ware="missilecomponents" amount="8" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_dragonfly_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -2907,20 +2940,20 @@
   </ware>
   
   <ware id="missile_aurora" name="{6699, 1219}" description="{6699, 1221}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="10137" average="11520" max="12902" />
+  <price min="6758" average="7680" max="8601" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="32" />
-  <ware ware="missilecomponents" amount="14" />]
+  <ware ware="missilecomponents" amount="14" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_aurora_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -2929,20 +2962,20 @@
   </ware>
   
   <ware id="missile_tornado" name="{6699, 1222}" description="{6699, 1224}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="13798" average="15680" max="17561" />
+  <price min="9198" average="10453" max="11707" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="37" />
-  <ware ware="missilecomponents" amount="17" />]
+  <ware ware="missilecomponents" amount="17" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_tornado_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -2951,20 +2984,20 @@
   </ware>
   
   <ware id="missile_flycatcher" name="{6699, 1225}" description="{6699, 1227}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="12127" average="13781" max="15434" />
+  <price min="8085" average="9188" max="10290" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="35" />
-  <ware ware="missilecomponents" amount="16" />]
+  <ware ware="missilecomponents" amount="16" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_flycatcher_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -2975,20 +3008,20 @@
   </ware>
   
   <ware id="missile_mosquito" name="{6699, 1228}" description="{6699, 1230}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="158" average="180" max="201" />
+  <price min="105" average="120" max="134" />
   <production time="1" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="4" />
-  <ware ware="missilecomponents" amount="2" />]
+  <ware ware="missilecomponents" amount="2" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_mosquito_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -2997,20 +3030,20 @@
   </ware>
   
   <ware id="missile_wasp" name="{6699, 1231}" description="{6699, 1233}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="1126" average="1280" max="1433" />
+  <price min="750" average="853" max="955" />
   <production time="3" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="11" />
-  <ware ware="missilecomponents" amount="5" />]
+  <ware ware="missilecomponents" amount="5" />
   <ware ware="smartchips" amount="4" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_wasp_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -3019,20 +3052,20 @@
   </ware>
   
   <ware id="missile_wildfire" name="{6699, 1234}" description="{6699, 1236}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="687" average="781" max="874" />
+  <price min="1580" average="1210" max="1830" />
   <production time="2" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="8" />
-  <ware ware="missilecomponents" amount="4" />]
+  <ware ware="missilecomponents" amount="4" />
   <ware ware="smartchips" amount="5" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_wildfire_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -3041,20 +3074,20 @@
   </ware>
   
   <ware id="missile_cyclone" name="{6699, 1237}" description="{6699, 1239}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="2033" average="2311" max="2588" />
+  <price min="1356" average="1541" max="1725" />
   <production time="2" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="14" />
-  <ware ware="missilecomponents" amount="6" />]
+  <ware ware="missilecomponents" amount="6" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_cyclone_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -3065,20 +3098,20 @@
   </ware>
   
   <ware id="missile_silkworm" name="{6699, 1240}" description="{6699, 1242}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="8135" average="9245" max="10354" />
+  <price min="5423" average="6163" max="6902" />
   <production time="4" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="29" />
-  <ware ware="missilecomponents" amount="13" />]
+  <ware ware="missilecomponents" amount="13" />
   <ware ware="smartchips" amount="10" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_silkworm_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -3089,20 +3122,20 @@
   </ware>
   
   <ware id="missile_hurricane" name="{6699, 1243}" description="{6699, 1245}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="3207" average="3645" max="4082" />
+  <price min="2138" average="2430" max="2721" />
   <production time="4" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="18" />
-  <ware ware="missilecomponents" amount="8" />]
+  <ware ware="missilecomponents" amount="8" />
   <ware ware="smartchips" amount="6" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_hurricane_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -3111,20 +3144,20 @@
   </ware>
   
   <ware id="missile_windstalker" name="{6699, 1246}" description="{6699, 1248}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="6353" average="7220" max="8086" />
+  <price min="4235" average="4813" max="5390" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="25" />
-  <ware ware="missilecomponents" amount="11" />]
+  <ware ware="missilecomponents" amount="11" />
   <ware ware="smartchips" amount="9" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_windstalker_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -3133,20 +3166,20 @@
   </ware>
   
   <ware id="missile_tempest" name="{6699, 1249}" description="{6699, 1251}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="11000" average="12500" max="14000" />
+  <price min="7333" average="8333" max="9332" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="33" />
-  <ware ware="missilecomponents" amount="15" />]
+  <ware ware="missilecomponents" amount="15" />
   <ware ware="smartchips" amount="12" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_tempest_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -3155,20 +3188,20 @@
   </ware>
   
   <ware id="missile_thunderbolt" name="{6699, 1252}" description="{6699, 1254}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="15840" average="18000" max="20160" />
+  <price min="10560" average="12000" max="13440" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="40" />
-  <ware ware="missilecomponents" amount="18" />]
+  <ware ware="missilecomponents" amount="18" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_thunderbolt_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -3177,20 +3210,20 @@
   </ware>
   
   <ware id="missile_hornet" name="{6699, 1255}" description="{6699, 1257}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="24750" average="28125" max="31500" />
+  <price min="16500" average="18750" max="21000" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="50" />
-  <ware ware="missilecomponents" amount="23" />]
+  <ware ware="missilecomponents" amount="23" />
   <ware ware="smartchips" amount="18" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_hornet_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -3199,20 +3232,20 @@
   </ware>
   
   <ware id="missile_hammerhead" name="{6699, 1258}" description="{6699, 1260}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="44000" average="50000" max="56000" />
+  <price min="29333" average="33333" max="37332" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="67" />
-  <ware ware="missilecomponents" amount="30" />]
+  <ware ware="missilecomponents" amount="30" />
   <ware ware="smartchips" amount="24" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_hammerhead_macro" amount="1" />
   <restriction licence="capitalequipment" />
@@ -3223,20 +3256,20 @@
   </ware>
   
   <ware id="missile_rgw" name="{6699, 1261}" description="{6699, 1263}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="86240" average="98000" max="109760" />
+  <price min="57493" average="65333" max="73172" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="35" />
-  <ware ware="missilecomponents" amount="20" />]
+  <ware ware="missilecomponents" amount="20" />
   <ware ware="smartchips" amount="14" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_rgw_macro" amount="1" />
   <restriction licence="capitalequipment" />
@@ -3245,20 +3278,20 @@
   </ware>
   
   <ware id="missile_banshee" name="{6699, 1264}" description="{6699, 1266}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="15840" average="18000" max="20160" />
+  <price min="10560" average="12000" max="13440" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="40" />
-  <ware ware="missilecomponents" amount="18" />]
+  <ware ware="missilecomponents" amount="18" />
   <ware ware="smartchips" amount="14" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_banshee_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -3269,20 +3302,20 @@
   </ware>
   
   <ware id="missile_typhoon" name="{6699, 1267}" description="{6699, 1269}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="35640" average="40500" max="45360" />
+  <price min="23760" average="27000" max="30240" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="60" />
-  <ware ware="missilecomponents" amount="27" />]
+  <ware ware="missilecomponents" amount="27" />
   <ware ware="smartchips" amount="22" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_typhoon_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -3291,20 +3324,20 @@
   </ware>
   
   <ware id="missile_phantom" name="{6699, 1270}" description="{6699, 1272}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="68750" average="78125" max="87500" />
+  <price min="45833" average="52083" max="58332" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="83" />
-  <ware ware="missilecomponents" amount="38" />]
+  <ware ware="missilecomponents" amount="38" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_phantom_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -3313,20 +3346,20 @@
   </ware>
   
   <ware id="missile_ibis" name="{6699, 1273}" description="{6699, 1275}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="44000" average="50000" max="56000" />
+  <price min="29333" average="33333" max="37332" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="67" />
-  <ware ware="missilecomponents" amount="30" />]
+  <ware ware="missilecomponents" amount="30" />
   <ware ware="smartchips" amount="24" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_ibis_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -3337,20 +3370,20 @@
   </ware>
   
   <ware id="missile_tomahawk" name="{6699, 1276}" description="{6699, 1278}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="150590" average="171125" max="191660" />
+  <price min="100393" average="114083" max="127772" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="93" />
-  <ware ware="missilecomponents" amount="56" />]
+  <ware ware="missilecomponents" amount="56" />
   <ware ware="smartchips" amount="44" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_tomahawk_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -3359,20 +3392,20 @@
   </ware>
   
   <ware id="missile_firestorm" name="{6699, 1279}" description="{6699, 1281}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="253440" average="288000" max="322560" />
+  <price min="168960" average="192000" max="215040" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="160" />
-  <ware ware="missilecomponents" amount="72" />]
+  <ware ware="missilecomponents" amount="72" />
   <ware ware="smartchips" amount="58" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_firestorm_macro" amount="1" />
   <restriction licence="capitalequipment" />
@@ -3381,20 +3414,20 @@
   </ware>
   
   <ware id="missile_spectre" name="{6699, 1282}" description="{6699, 1284}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="175991" average="199990" max="223988" />
+  <price min="117327" average="133327" max="149326" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="133" />
-  <ware ware="missilecomponents" amount="60" />]
+  <ware ware="missilecomponents" amount="60" />
   <ware ware="smartchips" amount="48" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_spectre_macro" amount="1" />
   <restriction licence="capitalequipment" />
@@ -3405,20 +3438,20 @@
   </ware>
   
   <ware id="missile_flail" name="{6699, 1285}" description="{6699, 1287}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="45329" average="51511" max="57692" />
+  <price min="30220" average="34341" max="38461" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="68" />
-  <ware ware="missilecomponents" amount="30" />]
+  <ware ware="missilecomponents" amount="30" />
   <ware ware="smartchips" amount="24" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_flail_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -3427,20 +3460,20 @@
   </ware>
   
   <ware id="missile_shadow" name="{6699, 1288}" description="{6699, 1290}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="99000" average="112500" max="126000" />
+  <price min="66000" average="75000" max="84000" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="100" />
-  <ware ware="missilecomponents" amount="45" />]
+  <ware ware="missilecomponents" amount="45" />
   <ware ware="smartchips" amount="36" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_shadow_macro" amount="1" />
   <restriction licence="capitalequipment" />
@@ -3449,20 +3482,20 @@
   </ware>
   
   <ware id="missile_wraith" name="{6699, 1291}" description="{6699, 1293}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="134750" average="153125" max="171500" />
+  <price min="89833" average="102083" max="114332" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="117" />
-  <ware ware="missilecomponents" amount="53" />]
+  <ware ware="missilecomponents" amount="53" />
   <ware ware="smartchips" amount="42" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_wraith_macro" amount="1" />
   <restriction licence="capitalequipment" />
@@ -3471,20 +3504,20 @@
   </ware>
   
   <ware id="missile_disruptor" name="{6699, 1294}" description="{6699, 1296}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="158" average="180" max="201" />
+  <price min="2050" average="2200" max="2340" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="25" />
-  <ware ware="missilecomponents" amount="5" />]
+  <ware ware="missilecomponents" amount="5" />
   <ware ware="smartchips" amount="1" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_disruptor_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -3493,20 +3526,20 @@
   </ware>
   
   <ware id="missile_scatter" name="{6699, 1297}" description="{6699, 1299}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="12830" average="14580" max="16329" />
+  <price min="8553" average="9720" max="10886" />
   <production time="4" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="36" />
-  <ware ware="missilecomponents" amount="16" />]
+  <ware ware="missilecomponents" amount="16" />
   <ware ware="smartchips" amount="0" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_scatter_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -3518,20 +3551,20 @@
   </ware>
   
   <ware id="missile_starburst" name="{6699, 1300}" description="{6699, 1302}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="21560" average="24500" max="27440" />
+  <price min="14373" average="16333" max="18292" />
   <production time="1" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="47" />
-  <ware ware="missilecomponents" amount="21" />]
+  <ware ware="missilecomponents" amount="21" />
   <ware ware="smartchips" amount="17" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_starburst_macro" amount="1" />
   <restriction licence="militaryequipment" />
@@ -3543,20 +3576,20 @@
   </ware>
   
   <ware id="missile_interceptor" name="{6699, 1303}" description="{6699, 1305}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="317" average="361" max="404" />
+  <price min="2120" average="2410" max="2690" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="25" />
-  <ware ware="missilecomponents" amount="5" />]
+  <ware ware="missilecomponents" amount="5" />
   <ware ware="smartchips" amount="1" />
   </primary>
   </production>
   <production time="3" amount="1" method="xenon" name="{20206,601}">
-    <primary>
-      <ware ware="energycells" amount="2" />
-      <ware ware="ore" amount="2" />
-      <ware ware="silicon" amount="2" />
-    </primary>
+  <primary>
+  <ware ware="energycells" amount="2" />
+  <ware ware="ore" amount="2" />
+  <ware ware="silicon" amount="2" />
+  </primary>
   </production>
   <component ref="missile_interceptor_macro" amount="1" />
   <restriction licence="generaluseequipment" />
@@ -3567,8 +3600,7 @@
   <owner faction="court"/>
   </ware>
   
-  
-  
+    
 <!-- XENON xppc  -->
 <ware id="turret_xen_l_xppc" name="{6699,1022}" description="{6699,1022}" group="turrets" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
     <price min="13092" average="14580" max="16068" />
