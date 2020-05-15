@@ -568,6 +568,16 @@
 					<level min="0.4" max="1.0"/>
 	</loadout>  </replace>
 
+	<replace sel="//jobs/job[@id='zyarth_destroyer_escort_l_noescort']/ship/loadout">
+		<loadout>
+						<level min="0.6" max="0.8"/>
+		</loadout>  </replace>
+
+		<replace sel="//jobs/job[@id='zyarth_destroyer_patrol_l_border_sector']/ship/loadout">
+			<loadout>
+							<level min="0.8" max="1.0"/>
+			</loadout>  </replace>
+
 <!-- court -->
 <replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/ship/loadout">
 	<loadout>
@@ -640,16 +650,16 @@
 
 
 <!-- Xenon combat and economy FE fix -->
-  <replace sel="//jobs/job[@id='xenon_free_miner_m_mineral']/quota/@cluster">8</replace>
-  <replace sel="//jobs/job[@id='xenon_free_trader_m_energy']/quota/@cluster">7</replace>
+  <replace sel="//jobs/job[@id='xenon_free_miner_m_mineral']/quota/@cluster">7</replace>
+  <replace sel="//jobs/job[@id='xenon_free_trader_m_energy']/quota/@cluster">6</replace>
   <replace sel="//jobs/job[@id='xenon_carrier_patrol_xl_border_cluster']/quota[@galaxy='1']">
-	<quota galaxy="3" maxgalaxy="5"/>
+	<quota galaxy="1" maxgalaxy="2"/>
   </replace>
   <replace sel="//jobs/job[@id='xenon_destroyer_patrol_xl_cluster']/quota[@galaxy='12']">
-    <quota galaxy="20" cluster="4"/>
+    <quota galaxy="24" cluster="4"/>
   </replace>
   <replace sel="//jobs/job[@id='xenon_destroyer_patrol_xl_defence']/quota[@galaxy='6']">
-    <quota galaxy="10" cluster="4"/>
+    <quota galaxy="12" cluster="4"/>
   </replace>
 
 	
