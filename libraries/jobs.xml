@@ -461,12 +461,11 @@
   <!-- ############################# -->
   <!--      XENON				      -->
   <!-- ############################# -->
-
-  	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_frigate']/quota">
-	<quota wing="7" variation="1"/>
+  	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_frigate']/quota[@wing='4']">
+	<quota wing="5" variation="1"/>
 	</replace>
-	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_patrol']/quota">
-	<quota wing="6" variation="1"/>
+	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_patrol']/quota[@wing='2']">
+	<quota wing="4" variation="1"/>
 	</replace>
 
 <!-- Changes to loadout levels -->

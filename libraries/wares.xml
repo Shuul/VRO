@@ -85,7 +85,7 @@
     </replace>
 <!-- MADR  -->
   <add sel="/wares">
-    <ware id="turret_spl_l_madr" name="MADR" description="MADR" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <ware id="turret_spl_l_madr" name="{6699,12043}" description="{6699,12046}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
       <price min="545000" average="605000" max="685000" />
       <production time="20" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -102,7 +102,7 @@
       <owner faction="split" />
   </ware>
 <!-- Shell cannon  -->
-  <ware id="weapon_spl_l_shell" name="Shell cannon" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+  <ware id="weapon_spl_l_shell" name="{6699,12041}" description="{6699,12042}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="2035536" average="2635536" max="2835536" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
@@ -2261,6 +2261,19 @@
   <restriction licence="capitalship" />
   <owner faction="scaleplate" />
 </ware>  -->
+<!-- Cormorant Vanguard-->
+<ware id="ship_tel_m_trans_container_03_b" name="{20101,21802}" description="{20101,21812}" group="ships_teladi" transport="ship" volume="1" tags="ship">
+  <price min="326006" average="388830" max="451655" />
+  <production time="26" amount="1" method="default" name="{20206,101}">
+    <primary>
+      <ware ware="energycells" amount="121" />
+      <ware ware="hullparts" amount="370" />
+    </primary>
+  </production>
+  <component ref="ship_tel_m_trans_container_03_b_macro" amount="1" />
+  <restriction licence="militaryship" />
+  <owner faction="teladi" />
+</ware>
 
 <!-- FLAK TURRETS -->
 	<ware id="turret_arg_l_flak" name="{6699,1011}" description="{6699,1015}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
