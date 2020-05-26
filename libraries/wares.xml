@@ -29,13 +29,31 @@
   <remove sel="//wares/ware[@id='weapon_spl_m_shotgun_01_mk2']"/>
   <remove sel="//wares/ware[@id='weapon_spl_m_sticky_01_mk2']"/>
 
-<!-- vanilla weapons owners -->
+<!-- SCA wares updates  -->
 
-  <!-- <add sel="//wares/ware[@id='weapon_gen_m_laser_01_mk1']">
-    <owner faction="court" />
-    <owner faction="freesplit" />
-    <owner faction="split" />
-  </add> -->
+  <add sel="//wares/ware[@id='weapon_gen_s_laser_01_mk2']">
+    <owner faction="scaleplate" />
+  </add>
+
+  <add sel="//wares/ware[@id='weapon_gen_s_guided_01_mk1']">
+    <owner faction="scaleplate" />
+  </add>
+
+  <add sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk1']">
+    <owner faction="scaleplate" />
+  </add>
+
+  <add sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk2']">
+    <owner faction="scaleplate" />
+  </add>
+
+  <add sel="//wares/ware[@id='shield_tel_xl_standard_01_mk1']">
+    <owner faction="scaleplate" />
+  </add>
+
+  <add sel="//wares/ware[@id='engine_tel_xl_allround_01_mk1']">
+    <owner faction="scaleplate" />
+  </add>
 
   <!-- Xenon ships -->
   <!-- <replace sel="//wares/ware[@id='ship_xen_xl_carrier_01_a']/production/@time">1330</replace>
@@ -850,7 +868,7 @@
   </ware>
 </replace>
 
-<add sel="/wares">
+<!-- <add sel="/wares">
   <ware id="weapon_arg_l_fa_centaur" name="{6699,11810}" description="{6699,1184}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="1036709" average="1240788" max="1344866" />
     <production time="10" amount="1" method="default" name="{20206,101}">
@@ -867,7 +885,7 @@
     <owner faction="antigone" />
     <owner faction="argon" />
   </ware>
-</add>
+</add> -->
 <!-- Heavy Plasma Array -->
 
 <add sel="/wares">
@@ -888,7 +906,7 @@
     <owner faction="argon" />
   </ware>
 
-  <ware id="weapon_arg_l_parray_centaur" name="{6699,11910}" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+  <!-- <ware id="weapon_arg_l_parray_centaur" name="{6699,11910}" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="1100201" average="1211335" max="1322468" />
     <production time="10" amount="1" method="default" name="{20206,101}">
       <primary>
@@ -904,7 +922,7 @@
     <owner faction="antigone" />
     <owner faction="argon" />
     <owner faction="trinity" />
-  </ware>
+  </ware> -->
 
   <!-- <ware id="weapon_par_l_parray" name="{6699,1191}" description="{6699,1194}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="1000201" average="1111335" max="1222468" />
@@ -940,6 +958,7 @@
     <owner faction="ministry" />
     <owner faction="teladi" />
     <owner faction="trinity" />
+    <owner faction="scaleplate" />
   </ware>
 
 
@@ -961,6 +980,22 @@
     <owner faction="teladi" />
   </ware>
 
+	<ware id="turret_tel_l_posbeam" name="{6699,110081}" description="{6699,11009}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="1106113" average="1246113" max="1386113" />
+    <production time="20" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="80" />
+        <ware ware="energycells" amount="300" />
+        <ware ware="turretcomponents" amount="220" />
+      </primary>
+    </production>
+    <component ref="turret_tel_l_posbeam_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.9" />
+		<owner faction="teladi" />
+		<owner faction="ministry" />
+  </ware>
+
 <!-- Ion Projector -->
   <ware id="weapon_arg_l_ionproj" name="{6699,11010}" description="{6699,11011}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
     <price min="1200201" average="1311335" max="1422468" />
@@ -972,6 +1007,23 @@
       </primary>
     </production>
     <component ref="weapon_arg_l_ionproj_macro" amount="1" />
+    <restriction licence="capitalequipment" />
+    <use threshold="0.9" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+  </ware>
+
+	<ware id="turret_arg_l_ionprojector" name="{6699,110101}" description="{6699,11011}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+    <price min="1207200" average="1357200" max="1447200" />
+    <production time="20" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="90" />
+        <ware ware="energycells" amount="350" />
+        <ware ware="turretcomponents" amount="280" />
+      </primary>
+    </production>
+    <component ref="turret_arg_l_ionprojector_macro" amount="1" />
     <restriction licence="capitalequipment" />
     <use threshold="0.9" />
     <owner faction="alliance" />
@@ -997,6 +1049,24 @@
     <owner faction="paranid" />
     <owner faction="trinity" />
   </ware>
+
+
+<ware id="turret_par_l_tribeam" name="{6699,110121}" description="{6699,11013}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+  <price min="1033333" average="1193333" max="1263333" />
+  <production time="20" amount="1" method="default" name="{20206,101}">
+    <primary>
+      <ware ware="advancedelectronics" amount="100" />
+      <ware ware="energycells" amount="333" />
+      <ware ware="turretcomponents" amount="250" />
+    </primary>
+  </production>
+  <component ref="turret_par_l_tribeam_macro" amount="1" />
+  <restriction licence="capitalequipment" />
+  <use threshold="0.9" />
+  <owner faction="holyorder" />
+  <owner faction="paranid" />
+  <owner faction="trinity" />
+</ware>
 </add>
 <!-- L turrets prices and materials-->
 <replace sel="//wares/ware[@id='turret_arg_l_laser_01_mk1']/price">
@@ -2233,7 +2303,7 @@
     <owner faction="antigone" />
 		</ware>
 
-<!-- Incarcatua raider-->
+<!-- Incarcatura raider-->
     <ware id="ship_arg_l_trans_container_03_p" name="{6699,1902}" description="{6699,19021}" transport="ship" volume="1" tags="ship">
     <price min="7457503" average="8167650" max="9077798" />
     <production time="319" amount="1" method="default" name="{20206,101}">
@@ -2621,7 +2691,6 @@
     <owner faction="court" />
     <owner faction="freesplit" />
     <owner faction="split" />
-
   </ware>
 <!-- CIG -->
   <ware id="weapon_gen_m_cig" name="{6699,1131}" description="{20105,1134}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
