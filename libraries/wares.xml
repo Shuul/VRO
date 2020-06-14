@@ -2216,20 +2216,21 @@
 		<owner faction="ministry" />
     </ware>
 
-  <!-- <ware id="ship_spl_xl_gharial" name="{20101,42501}" description="{20101,42501}" group="ships_split" transport="ship" volume="1" tags="ship">
-      <price min="32000000" average="37000000" max="42000000" />
+  <ware id="ship_spl_xl_gharial" name="{20101,42501}" description="{20101,42501}" group="ships_split" transport="ship" volume="1" tags="ship">
+      <price min="40000000" average="44000000" max="48000000" />
       <production time="575" amount="1" method="default" name="{20206,101}">
         <primary>
-        <ware ware="energycells" amount="3450" />
-        <ware ware="hullparts" amount="17940" />
-        </primary>
+          <ware ware="energycells" amount="85000" />
+          <ware ware="hullparts" amount="27500" />
+          </primary>
       </production>
       <component ref="ship_spl_xl_gharial_macro" amount="1" />
       <restriction licence="capitalship" />
       <owner faction="freesplit" />
       <owner faction="split" />
       <owner faction="court" />
-  </ware> -->
+      <owner faction="fallensplit" /> 
+      </ware>
 <!-- Titan -->
       <ware id="ship_arg_xl_titan" name="{20004,1050011}" description="{6699,1903}" group="ships_argon" transport="ship" volume="1" tags="ship noplayerblueprint">
         <price min="60000000" average="75000000" max="80000000" />

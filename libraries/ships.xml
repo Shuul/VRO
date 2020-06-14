@@ -144,6 +144,30 @@
 		<people ref="split_veteran_military_crew"/>
 	</ship>
 </add>
+
+<add sel="//ships">
+	<ship id="split_battleship_xl" group="spl_battleship_xl">
+		<category tags="[military, battleship, mission]" faction="[split, freesplit, fallensplit]" size="ship_xl"/>
+		<pilot>
+			<select faction="split" tags="fighterpilot"/>
+		</pilot>
+		<drop ref="ship_large_military"/>
+		<people ref="split_elite_military_crew"/>
+	</ship>
+</add>
+
+<add sel="//ships">
+	<ship id="court_battleship_xl" group="spl_battleship_xl">
+		<category tags="[military, battleship, mission]" faction="court" size="ship_xl"/>
+		<pilot>
+			<select faction="court" tags="fighterpilot"/>
+		</pilot>
+		<drop ref="ship_large_military"/>
+		<people ref="split_elite_military_crew"/>
+	</ship>
+</add>
+
+
 <!-- ############################# -->
 <!--    Xenons-->
 <!-- ############################# -->

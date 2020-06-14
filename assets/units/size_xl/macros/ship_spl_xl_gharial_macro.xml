@@ -14,23 +14,20 @@
             <software ware="software_targetmk1" compatible="1" />
             <software ware="software_trademk1" default="1" />
           </software>
-          <storage missile="100" unit="100" />
-          <hull max="480000" />
+          <storage missile="300" unit="16" />
+          <hull max="1342000" />
           <secrecy level="2" />
           <purpose primary="fight" />
-          <people capacity="128" />
-          <physics mass="1245.388">
+          <people capacity="165" />
+          <physics mass="1306.388">
             <inertia pitch="2242" yaw="2242" roll="2242" />
-            <drag forward="213.9" reverse="855.602" horizontal="480" vertical="480" pitch="1044" yaw="1044" roll="1044" />
+            <drag forward="213.9" reverse="855.602" horizontal="480" vertical="480" pitch="1144" yaw="1144" roll="1144" />
           </physics>
           <thruster tags="extralarge" />
           <ship type="battleship" />
           <radar range="50000" />
         </properties>
         <connections>
-          <connection ref="con_buildmodule">
-            <macro ref="buildmodule_gen_resupplier_macro" connection="object" />
-          </connection>
           <connection ref="con_cockpit">
             <macro ref="bridge_spl_xl_01_macro" connection="con_cockpit" />
           </connection>
@@ -62,10 +59,10 @@
             <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
           </connection>
           <connection ref="con_shipstorage_01">
-            <macro ref="shipstorage_gen_s_cap30_macro" connection="object" />
+            <macro ref="shipstorage_gen_s_cap12_macro" connection="object" />
           </connection>
           <connection ref="con_shipstorage_02">
-            <macro ref="shipstorage_gen_m_cap10_macro" connection="object" />
+            <macro ref="shipstorage_gen_m_cap2_macro" connection="object" />
           </connection>
           <connection ref="con_shipstorage_03">
             <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
@@ -77,7 +74,7 @@
             <macro ref="dockarea_spl_xl_resupplier_01_macro" connection="Connection001" />
           </connection>
           <connection ref="con_ishield_01">
-            <macro ref="ishield_spl_xl_gharial_macro" connection="ParentConnection" />
+            <macro ref="ishield_spl_xl_battleship_01_a_macro" connection="ParentConnection" />
           </connection>
         </connections>
       </macro>

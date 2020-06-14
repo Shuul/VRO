@@ -327,6 +327,31 @@
 		</ship>
 	  </job>
 
+	  <job id="split_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+		<modifiers commandeerable="true"/>
+		<orders>
+			<order order="Patrol" default="true">
+       		 <param name="range" value="class.sector"/>
+			</order>
+		</orders>
+		<category faction="split" tags="[factionlogic, military, battleship]" size="ship_xl"/>
+		<quota galaxy="1" maxgalaxy="3" sector="1"/>
+     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="split" relation="self" comparison="exact" matchextension="false"/>
+		<environment buildatshipyard="true"/>
+		<ship>
+			<select faction="split" tags="[military, battleship]" size="ship_xl"/>
+			<loadout>
+				<level min="0.85" max="1.0"/>
+			</loadout>
+			<owner exact="split" overridenpc="true"/>
+		</ship>
+		<subordinates>
+			<subordinate job="zyarth_corvette_escort_m"/>
+			<subordinate job="zyarth_fighter_escort_s_patrol"/>
+		</subordinates>
+	  </job>
+
+
 	  <job id="panther_l_sector_court" name="{20204,5201}" startactive="false" comment="panther">
 		<modifiers commandeerable="true"/>
 		<orders>
@@ -371,6 +396,31 @@
 			  <owner exact="court" overridenpc="true"/>
 			</ship>
 		  </job>
+
+		  <job id="court_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+			<modifiers commandeerable="true"/>
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector"/>
+				</order>
+			</orders>
+			<category faction="court" tags="[factionlogic, military, battleship]" size="ship_xl"/>
+			<quota galaxy="1" maxgalaxy="4" sector="1"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="[court, freesplit]" relation="self" comparison="exact" matchextension="false"/>
+			<environment buildatshipyard="true"/>
+			<ship>
+				<select faction="court" tags="[military, battleship]" size="ship_xl"/>
+				<loadout>
+					<level min="0.85" max="1.0"/>
+				</loadout>
+				<owner exact="court" overridenpc="true"/>
+			</ship>
+			<subordinates>
+				<subordinate job="court_corvette_escort_m"/>
+				<subordinate job="court_fighter_escort_s_patrol"/>
+			</subordinates>
+		  </job>
+	
   <!-- ############################# -->
   <!--        FALLEN SPLIT         -->
   <!-- ############################# -->
