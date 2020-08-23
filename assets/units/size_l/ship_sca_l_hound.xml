@@ -933,16 +933,29 @@
 					<quaternion qw="-1.0" qx="-0.0" qy="-0.0" qz="0.0"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_l_2" tags="engine large">
+			<connection name="con_engine_l_2" group="enginegroup" tags="engine large">
 				<offset>
 					<position x="-140.264" y="-9.523299999999999" z="-146.3665"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_l_1" tags="engine large">
+			<connection name="con_engine_l_1" group="enginegroup" tags="engine large">
 				<offset>
 					<position x="140.2639" y="-9.523299999999999" z="-146.3665"/>
 				</offset>
 			</connection>
+			<connection group="enginegroup" name="con_shieldgen_m_enginegroup_1" tags="medium shield hittable">
+				<offset>
+					<position x="-192.844" y="-40.076299999999996" z="-118.085"/>
+					<quaternion qw="-0.7071068967259818" qx="0.7071066656470943" qy="0.0" qz="-0.0"/>
+				</offset>
+			</connection>
+			<connection group="enginegroup" name="con_shieldgen_m_enginegroup_2" tags="medium shield hittable">
+				<offset>
+					<position x="192.8439" y="-40.076299999999996" z="-118.085"/>
+					<quaternion qw="-0.7071068967259818" qx="0.7071066656470943" qy="0.0" qz="-0.0"/>
+				</offset>
+			</connection>
+		
 			<connection name="con_ishield_01" tags="ishield">
 				<offset>
 				 <position x="0" y="0" z="0"/>
