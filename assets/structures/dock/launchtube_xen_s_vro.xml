@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<components>
+	<component name="launchtube_xen_s_vro" class="dockingbay">
+		<source geometry="assets\structures\dock\launchtube_xen_s_01_data"/>
+		<layers>
+			<layer>
+				<waypoints>
+					<waypoint name="XU_Waypoint01_mt" tags="dockpath start " x="0" y="0" z="-500" qx="0" qy="0" qz="0" qw="0">
+						<links>
+							<link ref="XU_Waypoint02_mt"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint02_mt" tags="dockpath "  x="0" y="0" z="-100" qx="0" qy="0" qz="0" qw="0">
+						<links>
+							<link ref="XU_Waypoint003_mt"/>
+						</links>
+					</waypoint>
+					<!-- <waypoint name="XU_Waypoint004_mt" tags="dockpath "  x="0" y="0" z="0" qx="0" qy="0" qz="0" qw="0">
+						<links>
+							<link ref="XU_Waypoint003_mt"/>
+						</links>
+					</waypoint> -->
+					<waypoint name="XU_Waypoint003_mt" tags="end dockpath "  x="0" y="0" z="-200" qx="0" qy="0" qz="0" qw="0">
+						<links/>
+					</waypoint>
+				</waypoints>
+				<lights/>
+				<sounds>
+					<sound name="XU SoundEmitter_ship_deploy" ref="anim_platform_deploy_S_01">
+						<offset>
+							<position x="-0.1842117" y="1.975998" z="4.304906"/>
+						</offset>
+					</sound>
+				</sounds>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="dockingbay">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part animation textureanimation nocollision detail_l  ">
+				<offset>
+					<position x="0" y="0" z="-20"/>
+				</offset>
+				<animations>
+					<animation name="dockingbay_closed" start="0" end="0"/>
+					<animation name="dockingbay_opening" start="0" end="20"/>
+					<animation name="dockingbay_open" start="20" end="20"/>
+					<animation name="dockingbay_closing" start="20" end="40"/>
+				</animations>
+				<parts>
+					<part name="anim_lights">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1effects.p1_gradient_colour"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="18.63447" y="14.35221" z="0.1185763"/>
+							<center x="-5.749702E-03" y="0.1382565" z="-0.0227356"/>
+						</size>
+						<size_raw>
+							<max x="18.63447" y="14.35221" z="0.1185744"/>
+							<center x="-5.750656E-03" y="0.1382561" z="-0.0227356"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="1" value="-0.9562069"/>
+									<key frame="19" value="-0.9562069"/>
+									<key frame="20" value="-0.7"/>
+									<key frame="21" value="-0.9562069"/>
+									<key frame="39" value="-0.9562069"/>
+									<key frame="40" value="-0"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+						<lights>
+							<omni name="XU Omni006" shadow="0" r="255" g="0" b="0" range="10" shadowrange="10" lighteffect="1" trigger="1" intensity="0.6999999" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="color" controller="bezier_color">
+										<key frame="0" r="255" g="0" b="0"/>
+										<key frame="1" r="255" g="141" b="0"/>
+										<key frame="19" r="255" g="141" b="0"/>
+										<key frame="20" r="60" g="255" b="0"/>
+										<key frame="21" r="255" g="141" b="0"/>
+										<key frame="39" r="255" g="141" b="0"/>
+										<key frame="40" r="255" g="0" b="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="16.10146" y="14.21301" z="-2.354343"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni01" shadow="0" r="255" g="0" b="0" range="10" shadowrange="10" lighteffect="1" trigger="1" intensity="0.6999999" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="color" controller="bezier_color">
+										<key frame="0" r="255" g="0" b="0"/>
+										<key frame="1" r="255" g="141" b="0"/>
+										<key frame="19" r="255" g="141" b="0"/>
+										<key frame="20" r="60" g="255" b="0"/>
+										<key frame="21" r="255" g="141" b="0"/>
+										<key frame="39" r="255" g="141" b="0"/>
+										<key frame="40" r="255" g="0" b="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-1.448363E-06" y="14.21301" z="-2.354342"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni002" shadow="0" r="255" g="0" b="0" range="10" shadowrange="10" lighteffect="1" trigger="1" intensity="0.6999999" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="color" controller="bezier_color">
+										<key frame="0" r="255" g="0" b="0"/>
+										<key frame="1" r="255" g="141" b="0"/>
+										<key frame="19" r="255" g="141" b="0"/>
+										<key frame="20" r="60" g="255" b="0"/>
+										<key frame="21" r="255" g="141" b="0"/>
+										<key frame="39" r="255" g="141" b="0"/>
+										<key frame="40" r="255" g="0" b="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="1.00465E-06" y="-13.8462" z="-2.35433"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni003" shadow="0" r="255" g="0" b="0" range="10" shadowrange="10" lighteffect="1" trigger="1" intensity="0.6999999" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="color" controller="bezier_color">
+										<key frame="0" r="255" g="0" b="0"/>
+										<key frame="1" r="255" g="141" b="0"/>
+										<key frame="19" r="255" g="141" b="0"/>
+										<key frame="20" r="60" g="255" b="0"/>
+										<key frame="21" r="255" g="141" b="0"/>
+										<key frame="39" r="255" g="141" b="0"/>
+										<key frame="40" r="255" g="0" b="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-15.92085" y="-13.8462" z="-2.354328"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni004" shadow="0" r="255" g="0" b="0" range="10" shadowrange="10" lighteffect="1" trigger="1" intensity="0.6999999" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="color" controller="bezier_color">
+										<key frame="0" r="255" g="0" b="0"/>
+										<key frame="1" r="255" g="141" b="0"/>
+										<key frame="19" r="255" g="141" b="0"/>
+										<key frame="20" r="60" g="255" b="0"/>
+										<key frame="21" r="255" g="141" b="0"/>
+										<key frame="39" r="255" g="141" b="0"/>
+										<key frame="40" r="255" g="0" b="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-15.92086" y="14.21301" z="-2.354338"/>
+								</offset>
+							</omni>
+							<omni name="XU Omni005" shadow="0" r="255" g="0" b="0" range="10" shadowrange="10" lighteffect="1" trigger="1" intensity="0.6999999" specularintensity="1">
+								<lightanimations>
+									<lightanimation name="color" controller="bezier_color">
+										<key frame="0" r="255" g="0" b="0"/>
+										<key frame="1" r="255" g="141" b="0"/>
+										<key frame="19" r="255" g="141" b="0"/>
+										<key frame="20" r="60" g="255" b="0"/>
+										<key frame="21" r="255" g="141" b="0"/>
+										<key frame="39" r="255" g="141" b="0"/>
+										<key frame="40" r="255" g="0" b="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="16.10146" y="-13.8462" z="-2.354334"/>
+								</offset>
+							</omni>
+						</lights>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection02" tags="part dockingbay component  ">
+				<offset/>
+				<parts>
+					<part name="anim_launchtube" wreck="anim_launchtube_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="19.99999" y="15" z="40.00001"/>
+							<center x="-3.814697E-06" y="0" z="20.00001"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part animation  ">
+				<offset>
+					<position x="-9.536743E-07" y="-13" z="-19.49999"/>
+				</offset>
+				<animations>
+					<animation name="dockingbay_closed" start="0" end="0"/>
+					<animation name="dockingbay_opening" start="0" end="20"/>
+					<animation name="dockingbay_open" start="20" end="20"/>
+					<animation name="dockingbay_closing" start="20" end="40"/>
+				</animations>
+				<parts>
+					<part name="anim_door_down" wreck="anim_door_down_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="17.99999" y="7.463762" z="6.760063"/>
+							<center x="2.861023E-06" y="5.536241" z="6.239941"/>
+						</size>
+						<size_raw>
+							<max x="17.99999" y="6.5" z="1.223822"/>
+							<center x="2.861023E-06" y="6.500002" z="0.7036991"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection04" tags="part animation  ">
+				<offset>
+					<position x="-1.049042E-05" y="13" z="-19.49999"/>
+				</offset>
+				<animations>
+					<animation name="dockingbay_closed" start="0" end="0"/>
+					<animation name="dockingbay_opening" start="0" end="20"/>
+					<animation name="dockingbay_open" start="20" end="20"/>
+					<animation name="dockingbay_closing" start="20" end="40"/>
+				</animations>
+				<parts>
+					<part name="anim_door_up" wreck="anim_door_up_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="17.99999" y="7.463762" z="6.760064"/>
+							<center x="-9.536734E-07" y="-5.536243" z="6.239943"/>
+						</size>
+						<size_raw>
+							<max x="17.99999" y="6.500004" z="1.22382"/>
+							<center x="-9.536734E-07" y="-6.500002" z="0.7036991"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="con_todock" tags="todock ">
+				<offset>
+					<position x="0" y="0" z="-300.29744"/>
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+				</offset>
+			</connection>
+			<connection name="con_dockpos" group="dock1 " tags="dockpos">
+				<offset>
+					<position x="5.071444E-06" y="-0.0120097" z="45.56351"/>
+					<quaternion qx="-0" qy="-1" qz="-0" qw="-1.192488E-08"/>
+				</offset>
+			</connection>
+			<connection name="con_launchpos" tags="launchpos ">
+				<offset>
+					<position x="0" y="0" z="-91.27313"/>
+					<quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

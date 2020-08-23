@@ -2187,7 +2187,7 @@
     </ware>
 	
 	
-	<ware id="ship_arg_xl_battleship_a" name="{20101,13001}" description="{20101,13001}" group="ships_argon" transport="ship" volume="1" tags="ship">
+	<ware id="ship_arg_xl_battleship_a" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship">
 		<price min="30000000" average="35000000" max="40000000" />
 		<production time="550" amount="1" method="default" name="{20206,101}">
 		  <primary>
@@ -2302,7 +2302,38 @@
 		<component ref="ship_arg_l_centaur_b_macro" amount="1" />
     <restriction licence="militaryequipment" />
     <owner faction="antigone" />
-		</ware>
+    </ware>
+    
+<!-- Cyclops-->
+
+<ware id="ship_arg_l_cyclops" name="{20101,13001}" description="{6699,19081}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
+  <price min="5495057" average="5858890" max="6522724" />
+  <production time="100" amount="1" method="default" name="{20206,101}">
+    <primary>
+    <ware ware="energycells" amount="1000" />
+    <ware ware="hullparts" amount="4050" />
+    </primary>
+  </production>
+  <component ref="ship_arg_l_cyclops_macro" amount="1" />
+  <restriction licence="militaryequipment" />
+  <owner faction="argon" />
+  </ware>
+
+<!-- Hyperion-->
+
+<ware id="ship_par_l_hyperion" name="{6699,1909}" description="{6699,19091}" group="ships_paranid" transport="ship" size="ship" volume="1" tags="ship">
+  <price min="5595057" average="5958890" max="6622724" />
+  <production time="100" amount="1" method="default" name="{20206,101}">
+    <primary>
+    <ware ware="energycells" amount="1600" />
+    <ware ware="hullparts" amount="4333" />
+    </primary>
+  </production>
+  <component ref="ship_par_l_hyperion_macro" amount="1" />
+  <restriction licence="militaryequipment" />
+  <owner faction="paranid" />
+  <owner faction="holyorder" />
+  </ware>
 
 <!-- Incarcatura raider-->
     <ware id="ship_arg_l_trans_container_03_p" name="{6699,1902}" description="{6699,19021}" transport="ship" volume="1" tags="ship">
@@ -2320,18 +2351,18 @@
   </ware>
 
 <!-- Hound-->
-<!-- <ware id="ship_sca_l_hound" name="{20101,1907}" description="{6699,19071}" group="ships_teladi" transport="ship" size="ship" volume="1" tags="ship">
-  <price min="7457503" average="8167650" max="9077798" />
+<ware id="ship_sca_l_hound" name="{20101,1907}" description="{6699,19071}" group="ships_teladi" transport="ship" size="ship" volume="1" tags="ship">
+  <price min="8457503" average="9167650" max="10077798" />
   <production time="90" amount="1" method="default" name="{20206,101}">
     <primary>
-      <ware ware="energycells" amount="1001" />
-      <ware ware="hullparts" amount="4790" />
-  </primary>
+      <ware ware="energycells" amount="1287" />
+      <ware ware="hullparts" amount="5402" />
+</primary>
   </production>
   <component ref="ship_sca_l_hound_macro" amount="1" />
   <restriction licence="capitalship" />
   <owner faction="scaleplate" />
-</ware>  -->
+</ware>  
 <!-- Cormorant Vanguard-->
 <ware id="ship_tel_m_trans_container_03_b" name="{20101,21802}" description="{20101,21812}" group="ships_teladi" transport="ship" volume="1" tags="ship">
   <price min="326006" average="388830" max="451655" />
@@ -2469,6 +2500,21 @@
 		<owner faction="ministry" />
   </ware>
 
+<!-- ROTOR  -->
+<ware id="turret_sca_l_rotor" name="{6699,12055}" description="{6699,12058}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+  <price min="617200" average="637200" max="657200" />
+  <production time="20" amount="1" method="default" name="{20206,101}">
+    <primary>
+      <ware ware="advancedelectronics" amount="30" />
+      <ware ware="energycells" amount="350" />
+      <ware ware="turretcomponents" amount="200" />
+    </primary>
+  </production>
+  <component ref="turret_sca_l_rotor_macro" amount="1" />
+  <restriction licence="generaluseequipment" />
+  <use threshold="0.5" />
+  <owner faction="scaleplate" />
+</ware>
 <!-- Xenon missiles  -->
 
   <ware id="weapon_xen_light_launcher" name="{6699,1077}" description="{6699,1077}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint weapon">
@@ -2730,9 +2776,7 @@
     <owner faction="alliance" />
     <owner faction="antigone" />
     <owner faction="argon" />
-    <owner faction="holyorder" />
     <owner faction="ministry" />
-    <owner faction="paranid" />
     <owner faction="teladi" />
   </ware>
 
@@ -2781,9 +2825,7 @@
     <owner faction="antigone" />
     <owner faction="argon" />
     <owner faction="holyorder" />
-    <owner faction="ministry" />
     <owner faction="paranid" />
-    <owner faction="teladi" />
     <owner faction="trinity" />
     <owner faction="court" />
     <owner faction="freesplit" />
@@ -2807,9 +2849,7 @@
     <owner faction="antigone" />
     <owner faction="argon" />
     <owner faction="holyorder" />
-    <owner faction="ministry" />
     <owner faction="paranid" />
-    <owner faction="teladi" />
     <owner faction="trinity" />
     <owner faction="court" />
     <owner faction="freesplit" />
@@ -2853,12 +2893,8 @@
     <restriction licence="capitalequipment" />
     <use threshold="0.85" />
     <owner faction="alliance" />
-    <owner faction="antigone" />
-    <owner faction="argon" />
     <owner faction="holyorder" />
-    <owner faction="ministry" />
     <owner faction="paranid" />
-    <owner faction="teladi" />
     <owner faction="trinity" />
   </ware>
 
@@ -3092,7 +3128,7 @@
   </ware>
   
   <ware id="missile_mosquito" name="{6699, 1228}" description="{6699, 1230}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="105" average="120" max="134" />
+  <price min="176" average="200" max="224" />
   <production time="1" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="4" />
@@ -3136,7 +3172,7 @@
   </ware>
   
   <ware id="missile_wildfire" name="{6699, 1234}" description="{6699, 1236}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="1580" average="1210" max="1830" />
+  <price min="880" average="1000" max="1120" />
   <production time="2" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="8" />
@@ -3454,7 +3490,7 @@
   </ware>
   
   <ware id="missile_tomahawk" name="{6699, 1276}" description="{6699, 1278}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="100393" average="114083" max="127772" />
+  <price min="80314" average="91267" max="102219" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="93" />
@@ -3476,7 +3512,7 @@
   </ware>
   
   <ware id="missile_firestorm" name="{6699, 1279}" description="{6699, 1281}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="168960" average="192000" max="215040" />
+  <price min="135168" average="153600" max="172032" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="160" />
@@ -3498,7 +3534,7 @@
   </ware>
   
   <ware id="missile_spectre" name="{6699, 1282}" description="{6699, 1284}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="117327" average="133327" max="149326" />
+  <price min="93861" average="106661" max="119460" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="133" />
@@ -3566,7 +3602,7 @@
   </ware>
   
   <ware id="missile_wraith" name="{6699, 1291}" description="{6699, 1293}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="89833" average="102083" max="114332" />
+  <price min="80850" average="91875" max="102900" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="117" />
@@ -3588,7 +3624,7 @@
   </ware>
   
   <ware id="missile_disruptor" name="{6699, 1294}" description="{6699, 1296}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="2050" average="2200" max="2340" />
+  <price min="2200" average="2500" max="2800" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="25" />
@@ -3660,7 +3696,7 @@
   </ware>
   
   <ware id="missile_interceptor" name="{6699, 1303}" description="{6699, 1305}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-  <price min="2120" average="2410" max="2690" />
+  <price min="2640" average="3000" max="3360" />
   <production time="5" amount="1" method="default" name="{20206,101}">
   <primary>
   <ware ware="energycells" amount="25" />
@@ -3684,11 +3720,10 @@
   <owner faction="court"/>
   </ware>
   
-    
 <!-- XENON xppc  -->
 <ware id="turret_xen_l_xppc" name="{6699,1022}" description="{6699,1022}" group="turrets" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
     <price min="13092" average="14580" max="16068" />
-    <production time="15" amount="1" method="default" name="{20206,101}">
+    <production time="5" amount="1" method="default" name="{20206,101}">
       <primary>
         <ware ware="energycells" amount="20" />
         <ware ware="ore" amount="10" />
@@ -3700,7 +3735,23 @@
     <use threshold="0" factions="xenon" />
     <owner faction="xenon" />
   </ware>
-  
+
+<!-- XENON WAVE CANNON -->
+  <ware id="weapon_gen_l_waver" name="{6699,11019}" description="{20105,11020}" group="weapons" transport="equipment" volume="1" tags="equipment weapon noplayerblueprint">
+    <price min="130920" average="145800" max="160680" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="20" />
+        <ware ware="ore" amount="10" />
+        <ware ware="silicon" amount="10" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_l_waver_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" factions="xenon" />
+    <owner faction="xenon" />
+  </ware>
+
 <!-- XENON OBLITERATOR  -->
 <ware id="turret_xen_l_obliterator" name="{6699,1020}" description="{6699,1020}" group="turrets" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
     <price min="13092" average="14580" max="16068" />
@@ -3716,7 +3767,23 @@
     <use threshold="0" factions="xenon" />
     <owner faction="xenon" />
   </ware>
-  
+
+<ware id="turret_xen_l_obliterator_inv" name="{6699,10211}" description="{6699,10211}" group="turrets" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
+  <price min="13092" average="14580" max="16068" />
+  <production time="15" amount="1" method="default" name="{20206,101}">
+    <primary>
+      <ware ware="energycells" amount="20" />
+      <ware ware="ore" amount="10" />
+      <ware ware="silicon" amount="10" />
+    </primary>
+  </production>
+  <component ref="turret_xen_l_obliterator_inv_macro" amount="1" />
+  <restriction licence="generaluseequipment" />
+  <use threshold="0" factions="xenon" />
+  <owner faction="xenon" />
+</ware>
+
+
 <!-- XENON PLASMA  -->
 <ware id="weapon_xen_s_plasma" name="{6699,11018}" description="{6699,11018}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint weapon">
     <price min="778" average="864" max="950" />
@@ -3747,6 +3814,38 @@
     <restriction licence="capitalship" />
     <owner faction="xenon" />
   </ware>
+
+<!-- XENON U  -->
+
+<ware id="ship_xen_xl_u" name="{20101,71401}" description="{20101,71411}" group="ships_xenon" transport="ship" volume="1" tags="noplayerblueprint ship">
+  <price min="1033787" average="1216220" max="1398653" />
+  <production time="1750" amount="1" method="default" name="{20206,101}">
+    <primary>
+      <ware ware="energycells" amount="4008" />
+      <ware ware="ore" amount="2000" />
+      <ware ware="silicon" amount="2547" />
+    </primary>
+  </production>
+  <component ref="ship_xen_xl_u_macro" />
+  <restriction licence="capitalship" />
+  <owner faction="xenon" />
+</ware>
+
+<!-- XENON U ENGINE   -->
+<ware id="engine_xen_xl_u" name="{20107,4034}" description="{20107,4032}" group="engines" transport="equipment" volume="1" tags="engine equipment noplayerblueprint">
+  <price min="424138" average="471264" max="518390" />
+  <production time="16" amount="1" method="default" name="{20206,101}">
+    <primary>
+      <ware ware="energycells" amount="50" />
+      <ware ware="ore" amount="541" />
+      <ware ware="silicon" amount="541" />
+    </primary>
+  </production>
+  <component ref="engine_xen_xl_u_macro" amount="1" />
+  <restriction licence="generaluseequipment" />
+  <use threshold="0" factions="xenon" />
+  <owner faction="xenon" />
+</ware>
 
 <!-- ishields  -->
 <ware id="ishield_arg_s_fighter_01_a" name="{6699,13001}" description="{6699,13001}" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
@@ -4763,7 +4862,25 @@
         <component ref="ishield_spl_l_panther_a_macro" amount="1" />
         <use threshold="0" />
         </ware>
-  
+
+  <ware id="ishield_sca_l_hound" name="{6699,13170}" description="{6699,13170}" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+        <price min="1" average="1" max="1" />
+        <component ref="ishield_sca_l_hound_macro" amount="1" />
+        <use threshold="0" />
+        </ware>
+
+   <ware id="ishield_arg_l_cyclops" name="{6699,13171}" description="{6699,13171}" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+    <price min="1" average="1" max="1" />
+    <component ref="ishield_arg_l_cyclops_macro" amount="1" />
+    <use threshold="0" />
+    </ware>
+
+    <ware id="ishield_par_l_hyperion" name="{6699,13172}" description="{6699,13172}" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+      <price min="1" average="1" max="1" />
+      <component ref="ishield_par_l_hyperion_macro" amount="1" />
+      <use threshold="0" />
+    </ware>
+
   </add>
 <!-- Vanilla missiles reomoval from being buildable by factions -->
 

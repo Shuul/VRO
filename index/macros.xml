@@ -65,6 +65,9 @@
 <!-- Shell cannon -->
   <entry name="bullet_gen_l_shell_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_l_shell_macro"/>
   <entry name="weapon_spl_l_shell_macro" value="extensions\vro\assets\props\WeaponSystems\capital\macros\weapon_spl_l_shell_macro"/>
+<!-- SCA ROTOR TURRET -->
+  <entry name="bullet_gen_turret_l_rotor" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_turret_l_rotor"/>
+  <entry name="turret_sca_l_rotor_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\turret_sca_l_rotor_macro"/>
 <!-- Heavy Plasma Array -->
   <entry name="bullet_gen_l_parray_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_l_parray_macro"/>
   <entry name="weapon_arg_l_parray_macro" value="extensions\vro\assets\props\WeaponSystems\capital\macros\weapon_arg_l_parray_macro"/>
@@ -109,7 +112,14 @@
   <entry name="obliterator_impact_macro" value="extensions\vro\assets\fx\weaponFx\macros\obliterator_impact_macro"/>
   <entry name="obliterator_muzzle_macro" value="extensions\vro\assets\fx\weaponFx\macros\obliterator_muzzle_macro"/>
   <entry name="bullet_xen_turret_l_obliterator_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_xen_turret_l_obliterator_macro"/>
+  <entry name="bullet_xen_turret_l_obliterator_one_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_xen_turret_l_obliterator_one_macro"/>
   <entry name="turret_xen_l_obliterator_macro" value="extensions\vro\assets\props\WeaponSystems\standard\macros\turret_xen_l_obliterator_macro"/>
+  <entry name="turret_xen_l_obliterator_inv_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\turret_xen_l_obliterator_inv_macro"/>
+
+  <!-- xenon waver -->
+  <entry name="bullet_xen_l_waver_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_xen_l_waver_macro"/>
+  <entry name="weapon_gen_l_waver_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\weapon_gen_l_waver_macro"/>
+
    <!-- xenon mauler turret -->
   <entry name="bullet_xen_turret_l_xppc_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_xen_turret_l_xppc_macro"/>
   <entry name="turret_xen_l_xppc_macro" value="extensions\vro\assets\props\WeaponSystems\standard\macros\turret_xen_l_xppc_macro"/>
@@ -206,7 +216,11 @@
   <entry name="storage_tel_l_shrike_a_macro" value="extensions\vro\assets\units\size_l\macros\storage_tel_l_shrike_a_macro"/>
 <!-- Panther -->
   <entry name="ship_spl_l_panther_a_macro" value="extensions\vro\assets\units\size_l\macros\ship_spl_l_panther_a_macro"/> 
-  <entry name="storage_spl_l_panther_a_macro" value="extensions\vro\assets\units\size_l\macros\storage_spl_l_panther_a_macro"/> -->
+  <entry name="storage_spl_l_panther_a_macro" value="extensions\vro\assets\units\size_l\macros\storage_spl_l_panther_a_macro"/>
+
+<!-- U -->
+<entry name="ship_xen_xl_u_macro" value="extensions\vro\assets\units\size_xl\macros\ship_xen_xl_u_macro"/> 
+<entry name="engine_xen_xl_u_macro" value="extensions\vro\assets\props\Engines\macros\engine_xen_xl_u_macro"/> 
 
 <!-- Titan -->
   <entry name="ship_arg_xl_titan_macro" value="extensions\vro\assets\units\size_xl\macros\ship_arg_xl_titan_macro" />	
@@ -217,6 +231,10 @@
 <!-- Hound -->
 <entry name="ship_sca_l_hound_macro" value="extensions\vro\assets\units\size_l\macros\ship_sca_l_hound_macro"/> 
 <entry name="storage_sca_l_hound_macro" value="extensions\vro\assets\units\size_l\macros\storage_sca_l_hound_macro"/>
+<!-- Cyclops -->
+<entry name="ship_arg_l_cyclops_macro" value="extensions\vro\assets\units\size_l\macros\ship_arg_l_cyclops_macro"/> 
+<!-- Hyperion -->
+<entry name="ship_par_l_hyperion_macro" value="extensions\vro\assets\units\size_l\macros\ship_par_l_hyperion_macro"/> 
 <!-- cormorant vanguard -->
 <entry name="ship_tel_m_trans_container_03_b_macro" value="extensions\vro\assets\units\size_m\macros\ship_tel_m_trans_container_03_b_macro"/> 
 <entry name="storage_tel_m_trans_container_03_b_macro" value="extensions\vro\assets\units\size_m\macros\storage_tel_m_trans_container_03_b_macro"/>
@@ -392,6 +410,16 @@
   <entry name="ishield_tel_l_shrike_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_tel_l_shrike_a_macro"/>
   <entry name="ishield_spl_l_panther_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_spl_l_panther_a_macro"/>
   <entry name="ishield_sca_l_hound_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_sca_l_hound_macro"/>
+  <entry name="ishield_arg_l_cyclops_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_arg_l_cyclops_macro"/>
+  <entry name="ishield_par_l_hyperion_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_par_l_hyperion_macro"/>
+
+
+  <entry name="inv_xs_dock_macro" value="extensions\vro\assets\props\SurfaceElements\macros\inv_xs_dock_macro"/>
+
+  <!-- Docks -->
+  <entry name="dockarea_vroinv_s_macro" value="extensions\vro\assets\structures\dock\macros\dockarea_vroinv_s_macro"/> 
+  <entry name="dockingbay_vroinv_s_macro" value="extensions\vro\assets\structures\dock\macros\dockingbay_vroinv_s_macro"/> 
+  <entry name="launchtube_xen_s_vro_macro" value="extensions\vro\assets\structures\dock\macros\launchtube_xen_s_vro_macro"/> 
 
   </add>
 <!-- Vanilla removal -->

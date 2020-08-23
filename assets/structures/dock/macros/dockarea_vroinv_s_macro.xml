@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.81) at 13.11.2018_17-49-32-->
+<macros>
+  <macro name="dockarea_vroinv_s_macro" class="dockarea">
+    <component ref="dockarea_vroinv_s" />
+    <properties>
+      <identification name="{20104, 70001}" description="{20104, 70002}" />
+      <hull integrated="1" />
+    </properties>
+    <connections>
+      <connection ref="ConnectionFor_dockingbay_arg_s_01_macro">
+        <macro ref="dockingbay_vroinv_s_macro" connection="position" />
+      </connection>
+    </connections>
+  </macro>
+</macros>

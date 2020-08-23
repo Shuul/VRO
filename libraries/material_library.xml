@@ -643,6 +643,17 @@
 				</properties>
       </material>
     </collection> 
+  </add>
+  
+	<add sel="/materiallibrary">
+		<collection name="paranid"> 
+			<material name="par_unique_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+				<properties>
+					<property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\paranid\par_unique_01_diff"/>
+					<property type="BitMap" name="specular_map" value="extensions\vro\assets\textures\paranid\par_unique_01_spec"/>
+					<property type="BitMap" name="normal_map" value="extensions\vro\assets\textures\paranid\par_unique_01_bump"/>
+				</properties>
+			</material>
+		</collection>	
 	</add>
-
 </diff>

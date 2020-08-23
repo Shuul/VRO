@@ -156,7 +156,31 @@
 			<subordinate job="paranid_frigate_escort_m"/>
 		</subordinates>
 	  </job>
-	
+
+	  <job id="paranid_hyperion_l" name="{20204,5201}" comment="each sector, expansion">
+		<modifiers commandeerable="true"/>
+		<orders>
+			<order order="Patrol" default="true">
+       		 <param name="range" value="class.sector"/>
+			</order>
+		</orders>
+		<category faction="paranid" tags="[factionlogic, military, frigate]" size="ship_l"/>
+		<quota galaxy="5" sector="2"/>
+     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact" matchextension="false"/>
+		<environment buildatshipyard="true"/>
+		<ship>
+			<select faction="paranid" tags="[military, frigate, hyperion]" size="ship_l"/>
+			<loadout>
+				<level exact="1"/>
+			</loadout>
+			<owner exact="paranid" overridenpc="true"/>
+		</ship>
+		<subordinates>
+			<subordinate job="paranid_fighter_escort_s_frigate"/>
+		</subordinates>
+	  </job>
+
+
   <!-- ############################# -->
   <!--   HOLY ORDER OF THE PONTIFEX  -->
   <!-- ############################# -->
@@ -183,7 +207,30 @@
 			<subordinate job="holyorder_frigate_escort_m"/>
 		</subordinates>
 	  </job>
-	
+
+	  <job id="holyorder_hyperion_l" name="{20204,5201}" comment="each sector, expansion">
+		<modifiers commandeerable="true"/>
+		<orders>
+			<order order="Patrol" default="true">
+       		 <param name="range" value="class.sector"/>
+			</order>
+		</orders>
+		<category faction="holyorder" tags="[factionlogic, military, frigate]" size="ship_l"/>
+		<quota galaxy="4" sector="2"/>
+     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="holyorder" relation="self" comparison="exact" matchextension="false"/>
+		<environment buildatshipyard="true"/>
+		<ship>
+			<select faction="holyorder" tags="[military, frigate, hyperion]" size="ship_l"/>
+			<loadout>
+				<level exact="1"/>
+			</loadout>
+			<owner exact="holyorder" overridenpc="true"/>
+		</ship>
+		<subordinates>
+			<subordinate job="holyorder_fighter_escort_s_frigate"/>
+		</subordinates>
+	  </job>
+
   <!-- ############################# -->
   <!--        TELADI COMPANY         -->
   <!-- ############################# -->
@@ -506,16 +553,76 @@
     </ship>
   </job>
 
-</add>
+  <job id="scaleplate_hound" name="{20204,5201}" disabled="false">
+    <modifiers commandeerable="true"/>
+    <orders>
+		<order order="VROProtectRandomStationSCA" default="true"/>
+	</orders>
+    <category faction="scaleplate" tags="[military, hound]" size="ship_l"/>
+    <quota galaxy="5" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="neutral" comparison="ge" matchextension="false"/>
+    <environment buildatshipyard="false" gate="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, hound]" size="ship_l"/>
+      <loadout>
+        <level exact="1"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+	  <subordinates>
+		<subordinate job="scaleplate_fighter_escort_s"/>
+	</subordinates>
+    </ship>
+  </job>
+  
+
 
   <!-- ############################# -->
   <!--      XENON				      -->
   <!-- ############################# -->
+
+  <job id="xenon_patrol_xl_u" name="{20204,3201}" comment="one border cluster">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="xenon" tags="[factionlogic, military, carrier]" size="ship_xl"/>
+    <quota galaxy="0" maxgalaxy="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="xenon" tags="[military, xenu]" size="ship_xl"/>
+      <owner exact="xenon" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="xenon_fighter_escort_s_xenu"/>
+    </subordinates>
+  </job>
+
+  <job id="xenon_fighter_escort_s_xenu" name="{20204,3401}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="xenon" tags="[military, fighter]" size="ship_s"/>
+    <quota wing="40" variation="10"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="xenon" tags="[military, fighter, selection]" size="ship_s"/>
+      <owner exact="xenon" overridenpc="true"/>
+    </ship>
+  </job>
+</add>
+
   	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_frigate']/quota[@wing='4']">
-	<quota wing="5" variation="1"/>
+	<quota wing="4" variation="1"/>
 	</replace>
 	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_patrol']/quota[@wing='2']">
-	<quota wing="4" variation="1"/>
+	<quota wing="3" variation="1"/>
 	</replace>
 
 <!-- Changes to loadout levels -->

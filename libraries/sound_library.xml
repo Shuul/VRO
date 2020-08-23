@@ -321,7 +321,15 @@
           <fade out="0.1"/>
         </effects>
     </sound>
-    <!-- hunter turret-->
+<!-- ROTOR turret-->
+<sound id="wpn_rotor_shoot" description="rotor" repeat="-1" is3d="1" preload="1" amount="1" >
+  <sample loop="extensions\vro\sfx\weapons\avanger_cannon" />
+  <volume start="1.1" distance="18"/>
+  <effects>
+    <fade out="0.1"/>
+  </effects>
+</sound>
+<!-- hunter turret-->
     <sound id="wpn_hunter_turret_shoot" description="hunter_turret shooting" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
           <select start="extensions\vro\sfx\weapons\hunter_turret_1"/>
@@ -589,6 +597,15 @@
         </sample>
         <volume start="0.8" distance="7"/>
     </sound>
+
+    <!-- Xenon Waver-->
+    <sound id="wpn_xen_waver_shoot" description="x" repeat="1" is3d="1" preload="1" >
+      <sample selection="random">
+        <select start="extensions\vro\sfx\weapons\xen_waver_01"/>
+      </sample>
+      <volume start="5" distance="40"/>
+  </sound>
+
     <!-- Xenon Obliterator Turret-->
     <sound id="wpn_xen_obliterator_shoot" description="x" repeat="1" is3d="1" preload="1" >
         <sample selection="random">

@@ -3,7 +3,7 @@
 <mdscript name="Vroinstall">
   <cues>
     <!-- define the current version of the cue -->
-    <cue name="VRO_main" version="7">
+    <cue name="VRO_main" version="8">
       <conditions>
         <check_any>
           <event_cue_signalled cue="md.Setup.GameStart" />
@@ -12,11 +12,11 @@
         </check_any>
       </conditions>
       <actions>
-         <show_help duration="10s" custom="'VRO 2.1.95 installed.'"/>
+         <show_help duration="10s" custom="'VRO 2.3 installed.'"/>
          <show_help duration="10s" custom="'Please visit Egosoft forum mod thread for mod description and latest VRO patchnotes.'"/>
       </actions>
       <!-- if a cue is running that has a version like sinceversion or older then the patch will be applied -->
-      <patch sinceversion="7">
+      <patch sinceversion="8">
         <!-- simple reset so the sub cue is called again. -->
         <reset_cue cue="this"/>
       </patch>
@@ -195,6 +195,10 @@
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_l_panther_a"/> 
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_l_shrike_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_xl_battleship_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_sca_l_hound"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_cyclops"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_hyperion"/>
+
             <do_all exact="$vro_ishield_ware_list.count" counter="$i">
               <set_value name="$Warescontainer" exact="$vro_ishield_ware_list.{$i}.objectmacro" />
               <add_encyclopedia_entry type="shieldgentypes" item="$Warescontainer.id" />

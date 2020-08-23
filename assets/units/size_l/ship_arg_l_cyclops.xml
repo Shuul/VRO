@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<components>
+	<component name="ship_arg_l_cyclops" class="ship_l">
+		<source geometry="extensions\vro\assets\units\size_l\ship_arg_l_cyclops_data"/>
+		<layers>
+			<layer>
+				
+
+			
+				<waypoints>
+<!-- God knows -->
+					<waypoint name="XU_Waypoint08" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="15.18201" y="-112.6043" z="333.1422" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links/>
+					</waypoint>
+					<waypoint name="XU_Waypoint06" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="-11.81799" y="-112.6043" z="333.1422" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links/>
+					</waypoint>
+<!-- trade IN? -->	<waypoint name="XU_Waypoint05" tags="sizeLevel1 typedock start dynamicmasstraffic " x="6.989807" y="-10" z="123.6566" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+						<links>
+							<link ref="XU_Waypoint010"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint03" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="15.18201" y="-78.35432" z="333.1422" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint012"/>
+						</links>
+					</waypoint>
+<!-- trade OUT? -->	<waypoint name="XU_Waypoint02" tags="sizeLevel1 typedock end dynamicmasstraffic " x="-5.731506" y="-10" z="123.6567" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+						<links/>
+					</waypoint>
+					<waypoint name="XU_Waypoint01" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="-11.81799" y="-78.35432" z="333.1422" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint013"/>
+						</links>
+					</waypoint>
+<!--startloopOUT?--><waypoint name="XU_Waypoint009" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-5.731506" y="-10" z="239.0914" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+						<links>
+							<link ref="XU_Waypoint02"/>
+						</links>
+					</waypoint>
+<!--startloopIN? --><waypoint name="XU_Waypoint010" tags="typenormal sizeLevel1 dynamicmasstraffic " x="6.989807" y="-10" z="239.0913" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+						<links>
+							<link ref="XU_Waypoint014"/>
+							<link ref="XU_Waypoint011"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint011" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-11.81799" y="-112.6043" z="286.0041" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint06"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint012" tags="typenormal sizeLevel1 dynamicmasstraffic " x="15.18201" y="-78.35432" z="286.0041" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint009"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint013" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-11.81799" y="-78.35432" z="286.0041" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint009"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint014" tags="typenormal sizeLevel1 dynamicmasstraffic " x="15.18201" y="-112.6043" z="286.0041" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint08"/>
+						</links>
+					</waypoint>
+				</waypoints>
+
+
+<!-- Arealights - areax/areay is 'size' of base box of light, attenuation changes how fast the light fades off. Trigger? Default orientation is rolled 90 degrees of the right? -->
+				<lights>
+					<arealight name="XU AreaLight001" areax="0.1" areay="0.1" radius="55" r="247" g="237" b="200" lighteffect="1" range="60" spotattenuation="0.72" specularintensity="0" trigger="1" intensity="0.3">
+						<lightanimations/>
+						<offset>
+							<position x="27" y="42.5" z="33.9"/>
+							<rotation pitch="0" yaw="0" roll="120"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight002" areax="0.1" areay="0.1" radius="55" r="247" g="237" b="200" lighteffect="1" range="60" spotattenuation="0.72" specularintensity="0" trigger="1" intensity="0.3">
+						<lightanimations/>
+						<offset>
+							<position x="-27" y="42.5" z="33.9"/>
+							<rotation pitch="0" yaw="0" roll="-120"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight003" areax="0.1" areay="0.1" radius="48" r="247" g="237" b="200" lighteffect="1" range="60" spotattenuation="0.7" specularintensity="0" trigger="1" intensity="0.3">
+						<lightanimations/>
+						<offset>
+							<position x="-31" y="-33.1" z="147.9"/>
+							<rotation pitch="0" yaw="0" roll="290"/>
+						</offset>
+					</arealight>
+					<arealight name="XU AreaLight004" areax="0.1" areay="0.1" radius="48" r="247" g="237" b="200" lighteffect="1" range="60" spotattenuation="0.7" specularintensity="0" trigger="1" intensity="0.3">
+						<lightanimations/>
+						<offset>
+							<position x="31" y="-33.1" z="147.9"/>
+							<rotation pitch="0" yaw="0" roll="-290"/>
+						</offset>
+					</arealight>
+					
+					
+<!-- range on omni = range you can see it, NOT radius of light. How to increase radius?? -->		
+
+					<omni name="XU Omni001" shadow="0" r="200" g="210" b="255" range="60" shadowrange="0" lighteffect="1" trigger="1" intensity="3" specularintensity="0.1">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="47" z="-48.9"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni002" shadow="0" r="200" g="1" b="1" range="6" shadowrange="0" lighteffect="1" trigger="1" intensity="2" specularintensity="0.4">
+						<lightanimations/>
+						<offset>
+							<position x="47" y="2.5" z="129.5"/>
+						</offset>
+					</omni>
+					
+<!-- omnis look bad	<omni name="XU Omni002" shadow="0" r="200" g="210" b="255" range="40" shadowrange="0" lighteffect="1" trigger="1" intensity="8" specularintensity="0.2">
+						<lightanimations/>
+						<offset>
+							<position x="-25" y="2.2" z="181"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni003" shadow="0" r="200" g="210" b="255" range="40" shadowrange="0" lighteffect="1" trigger="1" intensity="2" specularintensity="0.2">
+						<lightanimations/>
+						<offset>
+							<position x="25" y="2.2" z="181"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni004" shadow="0" r="200" g="210" b="255" range="40" shadowrange="0" lighteffect="1" trigger="1" intensity="0" specularintensity="0.2">
+						<lightanimations/>
+						<offset>
+							<position x="20" y="35" z="80"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni005" shadow="0" r="200" g="210" b="255" range="40" shadowrange="0" lighteffect="1" trigger="1" intensity="2" specularintensity="0.2">
+						<lightanimations/>
+						<offset>
+							<position x="-20" y="35" z="80"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni006" shadow="0" r="200" g="210" b="255" range="40" shadowrange="0" lighteffect="1" trigger="1" intensity="0" specularintensity="0.2">
+						<lightanimations/>
+						<offset>
+							<position x="20" y="35" z="106"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni007" shadow="0" r="200" g="210" b="255" range="40" shadowrange="0" lighteffect="1" trigger="1" intensity="2" specularintensity="0.2">
+						<lightanimations/>
+						<offset>
+							<position x="-20" y="35" z="106"/>
+						</offset>
+					</omni>	-->
+					
+					
+			
+					<box name="XU BoxLight002" shadow="0" r="169" g="231" b="255" lighteffect="1" trigger="1" intensity="1.2" specularintensity="0">
+						<size x="53" y="33" z="33"/>
+						<lightanimations/>
+						<offset>
+							<position x="23" y="39.5" z="93.6"/>
+							<rotation pitch="0" yaw="-90" roll="0"/>
+						</offset>
+					</box>
+					<box name="XU BoxLight003" shadow="0" r="169" g="231" b="255" lighteffect="1" trigger="1" intensity="1.2" specularintensity="0">
+						<size x="53" y="33" z="33"/>
+						<lightanimations/>
+						<offset>
+							<position x="-23" y="39.5" z="93.6"/>
+							<rotation pitch="0" yaw="-90" roll="0"/>
+						</offset>
+					</box>
+				</lights>
+
+
+				
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="ship ship_l">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part  ">
+				<offset>
+					<position x="0" y="0" z="0"/>
+					<rotation pitch="90" yaw="0" roll="0"/>
+				</offset>
+				<parts>
+					<part name="part_main" wreck="part_main_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+									<material id="3" ref="generic.generic_p1_hullpattern"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+									<material id="3" ref="generic.generic_p1_hullpattern"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+									<material id="3" ref="generic.generic_p1_hullpattern"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+									<material id="3" ref="generic.generic_p1_hullpattern"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="180" y="180" z="180" />
+							<center x="0" y="0" z="0" />
+						</size>
+					</part>
+				</parts>
+			</connection>
+			
+			
+			
+			<connection name="Connection02" tags="part nocollision forceoutline detail_l fx  ">
+				<parts>
+					<part name="fx_licence01">
+						<size>
+							<max x="121.3916" y="48.37067" z="239.1502"/>
+							<center x="-8.773804E-05" y="3.814697E-06" z="-3.401489"/>
+						</size>
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1paint.paint_logo" />
+									<material id="2" ref="p1paint.paint_idcode" />
+								</materials>
+							</lod>
+						</lods>
+					</part>
+				</parts>
+				<offset>
+					<position x="0" y="0" z="0"/>
+					<rotation pitch="90" yaw="0" roll="0"/>
+				</offset>
+			</connection>
+	
+			
+			
+  <!--      ||| COCKPIT/DOCKS ETC |||       -->
+
+			<connection name="con_weapon_01" tags="weapon large standard arg_destroyer_01 ">
+				<offset>
+					<position x="0" y="-23.8" z="143.7"/>
+				</offset>
+			</connection>
+
+
+			<connection name="con_shipstorage_s_01" tags="dockingbay ">
+				<offset>
+					<position x="0" y="0" z="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shipstorage_s_02" tags="dockingbay ">
+				<offset>
+					<position x="0" y="0" z="0"/>
+				</offset>
+			</connection>			
+			
+			
+			<connection name="con_shipstorage_xs_01" tags="dockingbay ">
+				<offset>
+					<position x="0" y="0" z="0"/>
+				</offset>
+			</connection>
+
+			
+			<connection name="con_storage01" tags="storage ">
+				<offset>
+					<position x="0" y="0" z="0"/>
+				</offset>
+			</connection>
+
+		
+			<connection name="con_dock_xs" tags="dock_xs ">
+				<offset>
+					<position x="45.3674" y="0.3063" z="129.475"/>
+					<rotation pitch="0" yaw="90" roll="0"/>
+				</offset>
+			</connection>
+
+			
+			<connection name="con_dockarea_arg_s_ship_01" tags="dockarea ">
+				<offset>
+					<position x="0.05" y="31.476" z="-30.834"/> 
+					<rotation pitch="0" yaw="0" roll="0"/>
+				</offset>
+			</connection>
+
+
+			<connection name="con_playercontrol" tags="playercontrol">
+				<offset>
+					<position x="0" y="0" z="0"/>
+				</offset>
+			</connection>
+			
+			
+			<connection name="con_cockpit" tags="cockpit cockpit_visible"> 
+				<offset>
+					<position x="0" y="9.78" z="200.72"/>
+				</offset>
+			</connection>
+			
+			
+			
+  <!--      ||| COUNTERMEASURES |||       -->	
+  <!--  default orientation shoots forward  -->	
+			<connection name="con_countermeasures_1" tags="countermeasures">
+				<offset>
+					<position x="0" y="-26" z="-199"/>
+					<rotation pitch="0" yaw="180" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_countermeasures_2" tags="countermeasures">
+				<offset>
+					<position x="-33.3654" y="20.0147" z="33.3517"/>
+					<rotation pitch="0" yaw="-90" roll="-55"/>
+				</offset>
+			</connection>
+			<connection name="con_countermeasures_3" tags="countermeasures">
+				<offset>
+					<position x="33.3654" y="20.0147" z="33.3517"/>
+					<rotation pitch="0" yaw="90" roll="55"/>
+				</offset>
+			</connection>
+			<connection name="con_countermeasures_4" tags="countermeasures">
+				<offset>
+					<position x="0" y="-40" z="199"/>
+					<rotation pitch="0" yaw="0" roll="0"/>
+				</offset>
+			</connection>
+
+
+
+  <!--      ||| TURRETS |||       -->
+ 			
+			<connection group="left-bottom-back" name="con_m_turret_left-bottom-back_2" tags="turret medium standard hittable">
+				<offset>
+					<position x="-59" y="-26" z="-138"/>
+					<rotation pitch="0" yaw="0" roll="233"/>
+				</offset>
+			</connection>
+			<connection group="right-bottom-back" name="con_m_turret_right-bottom-back_2" tags="turret medium standard hittable">
+				<offset>
+					<position x="59" y="-26" z="-138"/>
+					<rotation pitch="0" yaw="0" roll="127"/>
+				</offset>
+			</connection>
+			<connection group="left-bottom-back" name="con_m_turret_left-bottom-back_1" tags="turret medium standard hittable">
+				<offset>
+					<position x="-59" y="-26" z="-108"/>
+					<rotation pitch="0" yaw="0" roll="233"/>
+				</offset>
+			</connection>
+			<connection group="right-bottom-back" name="con_m_turret_right-bottom-back_1" tags="turret medium standard hittable">
+				<offset>
+					<position x="59" y="-26" z="-108"/>
+					<rotation pitch="0" yaw="0" roll="127"/>
+				</offset>
+			</connection>
+			<connection group="left-bottom-back" name="con_shieldgen_m_left-bottom-back_1" tags="medium shield hittable">
+				<offset>
+					<position x="-59" y="-26" z="-123"/>
+					<rotation pitch="0" yaw="0" roll="233"/>
+				</offset>
+			</connection>
+			<connection group="right-bottom-back" name="con_shieldgen_m_right-bottom-back_1" tags="medium shield hittable">
+				<offset>
+					<position x="59" y="-26" z="-123"/>
+					<rotation pitch="0" yaw="0" roll="127"/>
+				</offset>
+			</connection>
+
+			
+			
+			<connection group="left-top-back" name="con_shieldgen_m_left-top-back_1" tags="medium shield hittable">
+				<offset>
+					<position x="-59" y="26" z="-123"/>
+					<rotation pitch="0" yaw="0" roll="307"/>
+				</offset>
+			</connection>
+			<connection group="right-top-back" name="con_shieldgen_m_right-top-back_1" tags="medium shield hittable">
+				<offset>
+					<position x="59" y="26" z="-123"/>
+					<rotation pitch="0" yaw="0" roll="53"/>
+				</offset>
+			</connection>
+			<connection group="left-top-back" name="con_m_turret_left-top-back_1" tags="turret medium standard hittable">
+				<offset>
+					<position x="-59" y="26" z="-108"/>
+					<rotation pitch="0" yaw="0" roll="307"/>
+				</offset>
+			</connection>
+			<connection group="right-top-back" name="con_m_turret_right-top-back_1" tags="turret medium standard hittable">
+				<offset>
+					<position x="59" y="26" z="-108"/>
+					<rotation pitch="0" yaw="0" roll="53"/>
+				</offset>
+			</connection>
+			<connection group="left-top-back" name="con_m_turret_left-top-back_2" tags="turret medium standard hittable">
+				<offset>
+					<position x="-59" y="26" z="-138"/>
+					<rotation pitch="0" yaw="0" roll="307"/>
+				</offset>
+			</connection>
+			<connection group="right-top-back" name="con_m_turret_right-top-back_2" tags="turret medium standard hittable">
+				<offset>
+					<position x="59" y="26" z="-138"/>
+					<rotation pitch="0" yaw="0" roll="53"/>
+				</offset>
+			</connection>	
+
+			
+			
+			<connection group="left-mid" name="con_shieldgen_m_left-mid_1" tags="medium shield hittable">
+				<offset>
+					<position x="-40.745" y="22" z="107.5"/>
+					<rotation pitch="0" yaw="0" roll="305"/>
+				</offset>
+			</connection>
+			<connection group="left-mid" name="con_m_turret_left-mid_1" tags="turret medium standard hittable">
+				<offset>
+					<position x="-44.333" y="8" z="100"/>
+					<rotation pitch="0" yaw="0" roll="-90"/>
+				</offset>
+			</connection>
+			<connection group="left-mid" name="con_m_turret_left-mid_2" tags="turret medium standard hittable">
+				<offset>
+					<position x="-44.333" y="8" z="115"/>
+					<rotation pitch="0" yaw="0" roll="-90"/>
+				</offset>
+			</connection>
+			
+			
+			
+			<connection group="left-mid2" name="con_shieldgen_m_left-mid2_1" tags="medium shield hittable">
+				<offset>
+					<position x="-40.745" y="-22" z="107.5"/>
+					<rotation pitch="0" yaw="0" roll="235"/>
+				</offset>
+			</connection>
+			<connection group="left-mid2" name="con_m_turret_left-mid2_1" tags="turret medium standard hittable">
+				<offset>
+					<position x="-44.333" y="-6" z="100"/>
+					<rotation pitch="0" yaw="0" roll="-90"/>
+				</offset>
+			</connection>
+			<connection group="left-mid2" name="con_m_turret_left-mid2_2" tags="turret medium standard hittable">
+				<offset>
+					<position x="-44.333" y="-6" z="115"/>
+					<rotation pitch="0" yaw="0" roll="-90"/>
+				</offset>
+			</connection>			
+			
+			
+			
+			
+			
+			<connection group="right-mid" name="con_shieldgen_m_right-mid_1" tags="medium shield hittable">
+				<offset>
+					<position x="40.745" y="22" z="107.5"/>
+					<rotation pitch="0" yaw="0" roll="55"/>
+				</offset>
+			</connection>
+			<connection group="right-mid" name="con_m_turret_right-mid_1" tags="turret medium standard hittable">
+				<offset>
+					<position x="44.333" y="8" z="100"/>
+					<rotation pitch="0" yaw="0" roll="90"/>
+				</offset>
+			</connection>
+			<connection group="right-mid" name="con_m_turret_right-mid_2" tags="turret medium standard hittable">
+				<offset>
+					<position x="44.333" y="8" z="115"/>
+					<rotation pitch="0" yaw="0" roll="90"/>
+				</offset>
+			</connection>
+			
+			
+			<connection group="right-mid2" name="con_shieldgen_m_right-mid2_1" tags="medium shield hittable">
+				<offset>
+					<position x="40.745" y="-22" z="107.5"/>
+					<rotation pitch="0" yaw="0" roll="125"/>
+				</offset>
+			</connection>
+			<connection group="right-mid2" name="con_m_turret_right-mid2_1" tags="turret medium standard hittable">
+				<offset>
+					<position x="44.333" y="-6" z="100"/>
+					<rotation pitch="0" yaw="0" roll="90"/>
+				</offset>
+			</connection>
+			<connection group="right-mid2" name="con_m_turret_right-mid2_2" tags="turret medium standard hittable">
+				<offset>
+					<position x="44.333" y="-6" z="115"/>
+					<rotation pitch="0" yaw="0" roll="90"/>
+				</offset>
+			</connection>
+			
+			
+			
+  <!--      ||| SHIELDS |||       -->		
+  
+			<connection name="con_shieldgen_l_1" tags="large shield hittable">
+				<offset>
+					<position x="0" y="-26" z="7"/>
+					<rotation pitch="0" yaw="0" roll="180"/>
+				</offset>
+			</connection>
+
+
+
+  <!--      ||| ENGINES |||       -->
+  
+			<connection name="con_engine_l_1" group="group_back_up_mid " tags="engine large">
+							<offset>
+					<position x="0" y="0.3" z="-199.5"/>
+					<quaternion qw="0.0" qx="0.0" qy="0.0" qz="0.0"/>
+				</offset>
+			</connection>
+			<connection group="group_back_up_mid " name="con_shieldgen_m_group_back_up_mid_1 " tags="medium shield hittable">
+				<offset>
+					<position x="-31.3" y="0.3" z="-209.1"/>
+					<rotation pitch="0" yaw="0" roll="90"/>
+				</offset>
+			</connection>
+			<connection group="group_back_up_mid " name="con_shieldgen_m_group_back_up_mid_2 " tags="medium shield hittable">
+				<offset>
+					<position x="31.3" y="0.3" z="-209.1"/>
+					<rotation pitch="0" yaw="0" roll="-90"/>
+				</offset>
+			</connection>
+
+			<connection name="con_ishield_01" tags="ishield">
+				<offset>
+						<position x="0" y="0" z="0"/>
+						<quaternion qx="0" qy="0" qz="0" qw="0"/>
+					</offset>
+				</connection>
+	
+			
+		</connections>
+	</component>
+</components>

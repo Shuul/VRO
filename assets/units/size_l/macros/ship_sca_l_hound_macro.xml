@@ -33,12 +33,14 @@
       <connection ref="con_cockpit">
         <macro ref="bridge_tel_l_01_macro" connection="con_cockpit" />
       </connection>
-      <connection ref="con_dockarea_tel_l_transporter_01">
+      
+      <connection ref="con_dockarea_split">
+        <macro ref="dockarea_arg_s_ship_02_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dockarea_tel">
         <macro ref="dockarea_tel_l_transporter_01_macro" connection="Connection01" />
       </connection>
-      <connection ref="con_dockarea_tel_l_transporter_02">
-        <macro ref="dockarea_tel_l_transporter_01_macro" connection="Connection01" />
-      </connection>
+
       <connection ref="con_dock_xs">
         <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
       </connection>

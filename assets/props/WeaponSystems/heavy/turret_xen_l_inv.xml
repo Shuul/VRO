@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<components>
+	<component name="turret_xen_l_inv" class="turret">
+		<source geometry="extensions\vro\assets\props\WeaponSystems\standard\turret_xen_l_inv_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="Connection01" tags="part ">
+				<offset/>
+				<parts>
+					<part name="part_socket" >
+						<size>
+							<max x="31.55988" y="6.00093" z="31.65256"/>
+							<center x="0" y="5.9964" z="0"/>
+						</size>
+						<size_raw>
+							<max x="31.55988" y="6.00093" z="31.65256"/>
+							<center x="0" y="5.9964" z="0"/>
+						</size_raw>
+						<lights/>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection02" tags="part iklink nocollision forceoutline " parent="part_socket">
+				<restrictions>
+					<restriction type="rotation_y"/>
+				</restrictions>
+				<offset>
+					<position x="-0.0244168" y="17.52643" z="-0.1001702"/>
+				</offset>
+				<parts>
+					<part name="part_rotator">
+						<size>
+							<max x="20.54302" y="9.625903" z="24.45399"/>
+							<center x="8.34465E-07" y="-5.872603" z="5.960464E-08"/>
+						</size>
+						<size_raw>
+							<max x="20.54302" y="15.49851" z="24.45399"/>
+							<center x="8.34465E-07" y="-5.872603" z="5.960464E-08"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part iklink nocollision forceoutline  " parent="part_rotator">
+				<offset>
+					<position x="19" y="-4.509056" z="-3.129244E-06"/>
+				</offset>
+				<parts>
+					<part name="part_hull_R">
+						<size>
+							<max x="13.46444" y="4.089264" z="23.43267"/>
+							<center x="-4.499999" y="1.041735" z="1.2815E-06"/>
+						</size>
+						<size_raw>
+							<max x="8.964437" y="3.047534" z="23.43267"/>
+							<center x="0" y="1.907349E-06" z="1.2815E-06"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection04" tags="part iklink nocollision forceoutline  " parent="part_rotator">
+				<offset>
+					<position x="-19" y="-4.509056" z="-2.831221E-07"/>
+				</offset>
+				<parts>
+					<part name="part_hull_L">
+						<size>
+							<max x="13.46444" y="4.089255" z="23.43267"/>
+							<center x="4.500001" y="1.041732" z="3.427267E-07"/>
+						</size>
+						<size_raw>
+							<max x="8.964437" y="3.047523" z="23.43267"/>
+							<center x="0" y="-9.536743E-07" z="3.427267E-07"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection05" tags="part iklink nocollision forceoutline  " parent="part_rotator">
+				<restrictions>
+					<restriction type="rotation_x">
+						<limits>
+							<min value="-15.0 "/>
+							<max value="90 "/>
+						</limits>
+					</restriction>
+				</restrictions>
+				<offset>
+					<position x="2.980232E-08" y="-2.269363E-02" z="-5.565336"/>
+				</offset>
+				<parts>
+					<part name="part_gun">
+						<size>
+							<max x="7.932316" y="8.53145" z="8.332063"/>
+							<center x="2.441677E-02" y="-5.310123" z="-6.13107"/>
+						</size>
+						<size_raw>
+							<max x="7.907899" y="6.781639" z="14.46313"/>
+							<center x="2.441677E-02" y="-1.780156" z="-6.13107"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection06" tags="part iklink  " parent="part_gun">
+				<offset>
+					<position x="-4.023314E-06" y="0.1448975" z="11.62085"/>
+				</offset>
+				<parts>
+					<part name="part_barrel">
+						<size>
+							<max x="7.828617" y="6.374335" z="22.76696"/>
+							<center x="5.960464E-08" y="-3.529968" z="-5.739307E-02"/>
+						</size>
+						<size_raw>
+							<max x="7.828617" y="2.844367" z="14.04183"/>
+							<center x="5.960464E-08" y="0" z="4.333867"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="con_laser_01" tags="laser " parent="part_barrel">
+				<offset>
+					<position x="0" y="0" z="0"/>
+				</offset>
+			</connection>
+		
+			<connection name="con_inv_turet" tags="turret large invisible component">
+				<offset/>
+			</connection>
+		</connections>
+	</component>
+</components>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<components>
+	<component name="inv_xs_dock" class="dockingbay">
+		<source geometry="extensions\vro\assets\props\SurfaceElements\inv_xs_dock_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="Connection01" tags="part nocollision detail_xl  ">
+				<offset/>
+				<parts>
+					<part name="part_main" wreck="part_main_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="1.579192" y="1.579192" z="1.5"/>
+							<center x="0" y="0" z="5.960464E-08"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection_component" tags="component dock_xs ">
+				<offset/>
+			</connection>
+			<connection name="Con_dockpos" tags="dockpos">
+				<offset>
+					<position x="9.411871E-04" y="-2.649278E-02" z="1.761127E-02"/>
+				</offset>
+			</connection>
+			<connection name="Con_todock" tags="todock ">
+				<offset>
+					<position x="3.038025E-02" y="2.48057E-03" z="9.187513"/>
+				</offset>
+			</connection>
+			<connection name="Con_launchpos" tags="launchpos ">
+				<offset>
+					<position x="9.411871E-04" y="-2.649278E-02" z="-7.554531E-03"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<aiscript name="order.vro.protect.randomstationsca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="E:\x4 extract\libraries\aiscripts.xsd">
+  <order id="VROProtectRandomStationSCA" name="{1041, 361}" description="{1041, 362}" category="internal">
+    <params>
+      <param name="timeout" type="time" default="0s" infinitevalue="0s" text="{1041, 10034}" advanced="true" comment="Duration">
+        <input_param name="max" value="1h" />
+        <input_param name="step" value="30s" />
+      </param>
+	  <param name="debugchance" type="bool" default="0" advanced="true" text="{1041, 10086}" comment="Print debug output">
+        <input_param name="truevalue" value="100"/>
+      </param>
+    </params>
+    <requires>
+      <match shiptype="shiptype.lasertower" negate="true"/>
+    </requires>
+  </order>
+  <init>
+	<!-- find stations -->
+	<find_station name="$stations" space="player.galaxy" multiple="true" owner="this.assignedcontrolled.trueowner" >
+  </find_station>
+  	<!-- sort by distance -->
+	<!-- <sort_list list="$stations" sortbyvalue="this.assignedcontrolled.gatedistance.{loop.element}" sortdescending="false" /> -->
+	<!-- choose random station -->
+  <set_value name="$station"  exact="$stations.random" />
+  <set_value name="$timeout"  exact="2400s" />
+  <set_value name="$debugchance"  exact="0" />
+  
+	<debug_text text="'MOD: VRO -- %1 -- Ship: %2 -- Ship.macro %3 -- Ship.class %4 -- Ship.sector %5 -- Ship.trueowner %6 -- Ship.idcode %7 -- Ship.defaultorder %8 -- Ship.fleet.iscommander %9'.[player.age,
+		this.ship.knownname,this.ship.macro,this.ship.class,this.ship.sector.knownname,this.ship.trueowner,this.ship.idcode,this.ship.defaultorder.id,this.ship.fleet.iscommander]" 
+		context="false" filter="scripts" chance="$debugchance"/>
+	<debug_text text="'MOD: VRO -- %1 -- Ship: %2 -- Ship.job %3 -- Ship.jobmainzone %4 -- Ship.isrequestedjobship %5 '.[player.age,
+		this.ship.knownname,this.ship.job,this.ship.jobmainzone.sector.knownname,this.ship.isrequestedjobship]" 
+		context="false" filter="scripts" chance="$debugchance"/>
+  </init>
+  <attention min="unknown">
+    <actions>
+      <run_script name="'order.fight.protect.station'">
+        <param name="station" value="$station"/>
+        <param name="timeout" value="$timeout"/>
+        <param name="debugchance" value="$debugchance"/>
+      </run_script>
+    </actions>
+  </attention>
+</aiscript>

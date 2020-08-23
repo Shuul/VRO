@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Markus (192.168.3.123) at 15.02.2019_10-28-04-->
+
+<macros>
+  <macro name="bullet_xen_turret_l_obliterator_one_macro" class="bullet">
+    <component ref="obliterator_bullet" />
+    <properties>
+      <!-- <ammunition value="2" reload="10" /> -->
+      <bullet speed="60000" lifetime="1.5" amount="1" range="15000" barrelamount="1" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
+      <reload rate ="0.045" />
+      <damage value="25000" repair="0" />
+      <effects>
+        <impact ref="impact_xen_obliterator_turret" />
+        <launch ref="muzzle_xen_obliterator_turret" />
+      </effects>
+      <weapon system="turret_midrange" />
+    </properties>
+  </macro>
+</macros>
+
+
+  <!-- <macros>
+  <macro name="bullet_xen_turret_l_laser_01_mk1_macro" class="bullet">
+    <component ref="bullet_xen_m_laser_01_mk1" />
+    <properties>
+      <bullet speed="1958" lifetime="2.647" amount="1" barrelamount="2" icon="weapon_laser_mk1" timediff="0.025" angle="0.25" maxhits="1" ricochet="0" scale="0" attach="0" />
+      <reload rate="7" />
+      <damage value="135" repair="0" />
+      <effects>
+        <impact ref="impact_xen_m_laser_01_mk1" />
+        <launch ref="muzzle_xen_m_laser_01_mk1" />
+      </effects>
+      <weapon system="turret_longrange" />
+    </properties>
+  </macro>
+</macros> -->

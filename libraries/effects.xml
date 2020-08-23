@@ -870,6 +870,34 @@
       </element> -->
     </elements>
   </effect>
+<!-- ROTOR SCA CANNON-->
+<effect name="muzzle_gen_turret_rotor" alignment="object">
+  <elements>
+    <!-- Muzzle Smoke-->
+    <element id="1" ref="dummyemitter_up_macro" forkeffect="gatling_muzzle_smoke_01" alignment="object" duration="1.0" minscale="6.0" maxscale="6.0"  forklod="none"></element>
+    <!-- Geometry -->
+    <!-- <element id="3" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="1.5" forklod="none"></element> -->
+    <element id="2" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="4.5" maxscale="7.0" forklod="none"></element>
+    <!-- Geometry Light -->
+    <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="0.1" minscale="20.0" maxscale="20.0" fadeout="0.05" forklod="none"></element>
+    <!-- <element id="5" ref="muzzle_gen_s_gatling_03_mk1_macro" forkeffect="none" duration="0.05" minscale="1.5" maxscale="1.5" forklod="none"></element> -->
+    <!-- Sound--> 
+    <!-- <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+      <sound ref="wpn_mg_muzzle"></sound>
+    </element> -->
+  </elements>
+</effect>
+<effect name="impact_turret_rotor" minscale="3" maxscale="3" forcezonespace="true">
+  <elements>
+    <element id="1" ref="dummyemitter_macro" emitterspace="zone" forkeffect="explosion_fiery_new" alignment="random" delay="0" duration="3.0" minscale="0.75" maxscale="1.20" forklod="largeeffect"></element>
+    <element id="2" ref="dummyemitter_macro" emitterspace="zone" forkeffect="explosion_smoke_new" alignment="random" delay="0" duration="12.0" minscale="1.0" maxscale="1.30" forklod="largeeffect"></element>
+    <element id="3" ref="explosion_light_s_01_macro" emitterspace="object" alignment="random" delay="0" duration="3.5" minscale="1.0" maxscale="1.20" fadein="0.1" fadeout="3.0" />
+    <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="mediumeffect" delay="0">
+      <sound ref="explosion_small"></sound>
+    </element>
+  </elements>
+</effect>
+
 <!-- HUNTER CANNON TURRET-->
   <effect name="muzzle_gen_turret_hunter" alignment="object">
     <elements>
@@ -1526,6 +1554,22 @@
     </elements>
   </effect>
 
+	<!-- XENON WAVER-->
+  <effect name="muzzle_xen_waver" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <element id="1" ref="dummyemitter_up_macro" forkeffect="beam_muzzle_smoke_01" alignment="object" duration="1.5" minscale="1.0"  maxscale="1.0" fadeout="1.0" forklod="none"></element>
+      <!-- Geometry -->
+      <element id="2" ref="obliterator_muzzle_macro" forkeffect="none" duration="5" minscale="5.0" maxscale="5.0" forklod="megaeffect"></element>
+      <!-- Geometry Light -->
+      <element id="3" ref="impact_light_orange_macro" forkeffect="none" duration="6" minscale="50.0" maxscale="50.0" fadeout="1.0" forklod="megaeffect"></element>
+      <!-- Sound -->
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="5" forklod="none"> 
+      <sound ref="wpn_xen_waver_shoot"></sound> 
+      </element>
+    </elements>
+  </effect>
+
 
 	<!-- XENON OBLITERATOR TURRET-->
   <effect name="muzzle_xen_obliterator_turret" alignment="object">
@@ -1613,4 +1657,3 @@
 </add>
 
 </diff>
-

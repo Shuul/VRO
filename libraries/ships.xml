@@ -78,7 +78,18 @@
 			<people ref="paranid_military_crew"/>
 		</ship>
 	</add>
-	
+
+	<add sel="//ships">
+		<ship id="paranid_hyperion" group="par_hyperion_l">
+			<category tags="[military, frigate, mission, hyperion]" faction="[paranid]" size="ship_l"/>
+			<pilot>
+				<select faction="paranid" tags="elitepilot"/>
+			</pilot>
+			<drop ref="ship_large_military"/>
+			<people ref="paranid_elite_military_crew"/>
+		</ship>
+	</add>
+
   <!-- ############################# -->
   <!--    HOLY ORDER OF THE PONTIFEX -->
   <!-- ############################# -->
@@ -93,7 +104,18 @@
 			<people ref="paranid_military_crew"/>
 		</ship>
 	</add>
-	
+
+	<add sel="//ships">
+		<ship id="holyorder_hyperion" group="hol_hyperion_l">
+			<category tags="[military, frigate, mission, hyperion]" faction="[holyorder]" size="ship_l"/>
+			<pilot>
+				<select faction="paranid" tags="elitepilot"/>
+			</pilot>
+			<drop ref="ship_large_military"/>
+			<people ref="paranid_elite_military_crew"/>
+		</ship>
+	</add>
+
   <!-- ############################# -->
   <!--    TELADI COMPANY & MINISTRY OF FINANCE-->
   <!-- ############################# -->
@@ -173,7 +195,7 @@
 <!-- ############################# -->
 
 <add sel="//ships">
-		<ship id="xen_xl_mdestroyer_01_a_macro" group="xen_mdestroyer_xl" capturable="false">
+	<ship id="xen_xl_mdestroyer_01_a_macro" group="xen_mdestroyer_xl" capturable="false">
     <category tags="[military, destroyer, mission]" faction="[xenon]" size="ship_xl"/>
     <pilot>
       <select faction="xenon" tags="fighterpilot"/>
@@ -182,6 +204,15 @@
   </ship>
 </add>
 
+<add sel="//ships">
+	<ship id="xenon_xl_u" group="xen_xl_u" capturable="false">
+    <category tags="[military, xenu, carrier, mission]" faction="[xenon]" size="ship_xl"/>
+    <pilot>
+      <select faction="xenon" tags="fighterpilot"/>
+    </pilot>
+    <drop ref="ship_large_xenon"/>
+  </ship>
+</add>
 <!-- ############################# -->
 <!--    Pirate ships-->
 <!-- ############################# -->
@@ -189,6 +220,19 @@
   <add sel="//ships">
     <ship id="sca_refit_inca" group="sca_pirate_refit_inca">
       <category tags="[military, plundererinca]" faction="[scaleplate]" size="ship_l"/>
+      <owner exact="scaleplate" overridenpc="true"/>
+    <pilot>
+      <select faction="scaleplate" tags="commander"/>
+    </pilot>
+    <basket basket="pirate_container"/>
+    <drop ref="ship_large_military"/>
+    <people ref="scaleplate_pirate_crew"/>
+    </ship>
+  </add>
+  
+  <add sel="//ships">
+    <ship id="sca_hound" group="sca_pirate_hound">
+      <category tags="[military, hound]" faction="[scaleplate]" size="ship_l"/>
       <owner exact="scaleplate" overridenpc="true"/>
     <pilot>
       <select faction="scaleplate" tags="commander"/>

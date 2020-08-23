@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.81) at 09.08.2018_12-46-04-->
+
+<macros>
+  <macro name="turret_sca_l_rotor_macro" class="turret">
+    <component ref="turret_tel_l_laser_01_mk1" />
+    <properties>
+      <identification name="{6699,12055}" basename="{6699,12056}" shortname="{6699,12057}" makerrace="scaleplate" description="{6699,12058}" />
+      <bullet class="bullet_gen_turret_l_rotor" />
+      <rotationspeed max="25" />
+      <reload rate="0.5" time="1" />
+      <hull max="20000" threshold="0.2" />
+      <sounds>
+        <firing ref="wpn_rotor_shoot" />
+      </sounds>
+
+    </properties>
+  </macro>
+</macros>
