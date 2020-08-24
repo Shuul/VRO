@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <!-- 
+    Since there is 0 recharge delay on all shields in VRO the mods for it are useless.
+  -->
+  <!-- remove the basic mod that only affects rechargedelay -->
+  <remove sel="//equipmentmods/shield/rechargedelay[@ware='mod_shield_rechargedelay_01_mk1']" />
+
+  <!-- 
+    The medium tiers have a 50% chance of getting either delay or rate mod.
+    Just removing the delay makes it so you get a guaranteed useful bonus, 
+    maybe this bonus should then be nerfed?
+  -->
+  <replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_01_mk2']/bonus">
+    <bonus chance="1.0" max="1">
+      <rechargerate min="1.1" max="1.2" />
+    </bonus>
+  </replace>
+
+  <replace sel="//equipmentmods/shield/rechargerate[@ware='mod_shield_rechargerate_01_mk2']/bonus">
+    <bonus chance="1.0" max="1">
+      <capacity min="1.1" max="1.2" />
+    </bonus>
+  </replace>
+
+  <!--
+    The vanilla "fast-cycling" high tier has a guaranteed delay bonus and nothing else.
+    As a counterbalance to removing the bonus, the rate is buffed by 5%.
+  -->
+  <replace sel="//equipmentmods/shield/rechargerate[@ware='mod_shield_rechargerate_01_mk3']">
+    <rechargerate ware="mod_shield_rechargerate_01_mk3" quality="3" min="1.35" max="1.75" />
+  </replace>
+
+  <!--
+    The vanilla "generalist" high tier has both delay and rate bonus. 
+    To compensate the removed delay buff, we buff both capacity and rate by 5% more minimum, but not maximum.
+  -->
+  <replace sel="//equipmentmods/shield/capacity[@ware='mod_shield_capacity_02_mk3']">
+    <capacity ware="mod_shield_capacity_02_mk3" quality="3" min="1.15" max="1.3">
+      <bonus chance="1.0" max="1">
+        <rechargerate min="1.15" max="1.3" />
+      </bonus>
+    </capacity>
+  </replace>
+</diff>
