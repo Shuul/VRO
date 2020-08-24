@@ -587,12 +587,12 @@
         <param name="range" value="class.zone"/>
       </order>
     </orders>
-    <category faction="xenon" tags="[factionlogic, military, carrier]" size="ship_xl"/>
+    <category faction="xenon" tags="[factionlogic, military, xenu]" size="ship_xl"/>
     <quota galaxy="0" maxgalaxy="1"/>
-    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="exact"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="exact" matchextension="false"/>
     <environment buildatshipyard="true"/>
     <ship>
-      <select faction="xenon" tags="[xenu]" size="ship_xl"/>
+      <select faction="xenon" tags="[military, xenu]" size="ship_xl"/>
       <owner exact="xenon" overridenpc="true"/>
     </ship>
     <subordinates>
