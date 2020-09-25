@@ -1455,7 +1455,7 @@
 
       <!-- Area DMG -->
       <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="4.0" forklod="none">
-        <areadamage range="300" falloff="1.0" duration="1.0"/>
+        <areadamage range="200" falloff="1.0" duration="1.0"/>
       </element>
       <!-- Sound -->
       <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="smalleffect">
@@ -1463,6 +1463,30 @@
       </element>
       <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="3.0" forklod="mediumeffect">
         <sound ref="explosion_medium_lp"></sound>
+      </element>
+    </elements>
+  </effect>
+
+  <effect name="explosion_missile_aoe_small_hm" alignment="object">
+    <elements>
+      <!-- 6 Lightsources to make sure at liest one is outsite of the mesh -->
+      <element id="1" ref="missile_impact_01_heavy_macro" forkeffect="none" alignment="normal" duration="5.0" forklod="none"></element>
+      <!-- Explosion Fork Particles-->
+      <element id="8" ref="dummyemitter_macro" forkeffect="missile_explosion_heavy_01" duration="13.0" minscale="5" maxscale="6" forklod="mediumeffect"></element>
+      <!--element id="2" ref="dummyemitter_macro" forkeffect="punch_through_effect" alignment="object" duration="7.0" minscale="2.0" maxscale="4.0" forklod="mediumeffect"></element-->
+      <element id="6" ref="dummyemitter_macro" forkeffect="missile_explo_part1" alignment="random" duration="7.0" minscale="5.0" maxscale="8.0" forklod="mediumeffect"></element>
+      <element id="7" ref="dummyemitter_macro" forkeffect="sparkcloud" alignment="random" duration="7.0" minscale="6.0" maxscale="8.0" forklod="mediumeffect"></element>
+
+      <!-- Area DMG -->
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="4.0" forklod="none">
+        <areadamage range="200" falloff="1.0" duration="1.0" />
+      </element>
+      <!-- Sound -->
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="smalleffect">
+        <sound ref="explosion_large"></sound>
+      </element>
+      <element id="5" ref="effect_dummy_macro" forkeffect="none" duration="3.0" forklod="mediumeffect">
+        <sound ref="explosion_large_lp"></sound>
       </element>
     </elements>
   </effect>
@@ -1490,8 +1514,6 @@
       </element>
     </elements>
   </effect>
-
-
 
 <!-- Xenon Laser-->
   <effect name="muzzle_xen_s_laser_gun" alignment="object">

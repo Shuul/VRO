@@ -18,7 +18,7 @@
 	<!-- find stations -->
 	<find_station name="$stations" space="player.galaxy" multiple="true" owner="this.assignedcontrolled.trueowner" >
   </find_station>
-  	<!-- sort by distance -->
+  <!-- sort by distance -->
 	<!-- <sort_list list="$stations" sortbyvalue="this.assignedcontrolled.gatedistance.{loop.element}" sortdescending="false" /> -->
 	<!-- choose random station -->
   <set_value name="$station"  exact="$stations.random" />
