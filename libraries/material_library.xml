@@ -29,629 +29,623 @@
   <add sel="/materiallibrary/collection[@name='argon']">
 	<material name="metal_argon_misc_tech" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_spec" />
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_metal" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_spec"/>        
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_diff" />
-         <property type="BitMap" name="color_glow_map" value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_light" />
-
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_normal"/>
+        <property type="BitMap" name="color_glow_map" value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_light" />
+				<property type="Float"  name="color_glowStr"  value="1.0"/>        
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
     </material>
-	
+
+
 	<material name="metal_argon_misc_tech_v2" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_v2_spec" />
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_metal" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_spec"/>        
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_v2_diff" />
-
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_misc_tech_v2_normal"/>
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
     </material>
 	
 	<material name="metal_argon_pipes_tech" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_pipes_tech_spec" />
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_pipes_tech_metal" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_pipes_tech_spec"/>        
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_pipes_tech_diff" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_pipes_tech_normal"/>
         <property type="BitMap" name="color_glow_map" value="extensions\vro\assets\textures\argon\metal_argon_pipes_tech_light" />
-
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+				<property type="Float"  name="color_glowStr"  value="1.0"/>
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
     </material>
 	
 	<material name="metal_argon_trims_07" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_07_spec" />
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_07_metal" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_07_spec"/>        
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_07_diff" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_trims_07_normal"/>
         <property type="BitMap" name="color_glow_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_07_light" />
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+				<property type="Float"  name="color_glowStr"  value="1.0"/>
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
     </material>
-	
 	
 	
 	<material name="metal_argon_exhaust_source_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\genericmetal_argon_exhaust_source_01_spec" />
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_exhaust_source_01_diff" />
-
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+        <property type="BitMap" name="color_glow_map" value="extensions\vro\assets\textures\argon\metal_argon_exhaust_source_01_light" /> 
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_exhaust_source_01_spec" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_exhaust_source_01_spec"/>        
+ 				<property type="Float"  name="color_glowStr"  value="1.0"/>
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
     </material>
 	
+
 	<material name="metal_argon_exhaust_source_02" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_exhaust_source_02_spec" />
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_exhaust_source_02_diff" />
-
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+        <property type="BitMap" name="color_glow_map" value="extensions\vro\assets\textures\argon\metal_argon_exhaust_source_02_light" />
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_exhaust_source_02_spec" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_exhaust_source_02_spec"/>      
+ 				<property type="Float"  name="color_glowStr"  value="1.00"/>
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
     </material>
 	
+
 	<material name="metal_argon_trims_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_01_spec" />
-        <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_01_diff" />
+        <property type="BitMap" name="metal_map"      value="extensions\vro\assets\textures\argon\metal_argon_trims_01_metal" />
+        <property type="BitMap" name="smooth_map"     value="extensions\vro\assets\textures\argon\metal_argon_trims_01_spec"/>        
+        <property type="BitMap" name="diffuse_map"    value="extensions\vro\assets\textures\argon\metal_argon_trims_01_diff" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_trims_01_normal"/>
         <property type="BitMap" name="color_glow_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_01_light" />
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+ 				<property type="Float"  name="color_glowStr"  value="1.0"/>
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
-    </material>
+    
 	
+	</material>
 	<material name="metal_argon_trims_06" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_06_spec" />
-        <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_06_diff" />
+        <property type="BitMap" name="metal_map"      value="extensions\vro\assets\textures\argon\metal_argon_trims_06_metal" />
+        <property type="BitMap" name="smooth_map"     value="extensions\vro\assets\textures\argon\metal_argon_trims_06_spec"/>        
+        <property type="BitMap" name="diffuse_map"    value="extensions\vro\assets\textures\argon\metal_argon_trims_06_diff" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_trims_06_normal"/>
         <property type="BitMap" name="color_glow_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_06_light" />
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+ 				<property type="Float"  name="color_glowStr"  value="1.0"/>
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
+   
+   
     </material>
-	
 	<material name="metal_argon_trims_08" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_08_spec" />
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_08_metal" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_08_spec"/>        
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_08_diff" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_trims_08_normal"/>
         <property type="BitMap" name="color_glow_map" value="extensions\vro\assets\textures\argon\metal_argon_trims_08_light" />
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+ 				<property type="Float"  name="color_glowStr"  value="1.0"/>
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
     </material>
-	
-	
 	
 	
 <material name="metal_argon_apartments_labs" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-          <property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_apartments_labs_spec" />
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_apartments_labs_metal" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_apartments_labs_spec"/>        
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_apartments_labs_diff" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_apartments_labs_normal"/>
         <property type="BitMap" name="color_glow_map" value="extensions\vro\assets\textures\argon\metal_argon_apartments_labs_v2_light" />
-
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+ 				<property type="Float"  name="color_glowStr"  value="1.0"/>
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
     </material>
+
 
 		<material name="metal_argon_base_metal_plating" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_spec" />
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_metal" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_spec"/>        
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_diff" />
-
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_normal"/>
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
-    </material>
-	
+    
+	</material>
 		<material name="metal_argon_base_metal_plating_v2" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_v2_spec" />
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_metal" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_spec"/>
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_v2_diff" />
-
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_v2_normal"/>  
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
+
+
     </material>
-	
 		<material name="metal_argon_simple_plating_v2" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
-      <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_v2_spec" />
+      	<properties>
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_metal" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_spec"/>
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_v2_diff" />
-
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_v2_normal"/>
+    
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
+   
+   
     </material>
-	
-		<material name="metal_argon_simple_plating_v4" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
-      <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_v4_spec" />
+			<material name="metal_argon_simple_plating_v4" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+     	 <properties>
+        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_metal" />
+        <property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_spec"/>
         <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_v4_diff" />
-
-
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_simple_plating_v2_normal"/>
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
     </material>
-	
+
+
 		<material name="metal_argon_smooth_plating" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
       <properties>
-      	<property type="Float" name="AnisoX" value="0.5" />
-        <property type="Float" name="AnisoY" value="0.5" />
-
-
-
-        <property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\argon\metal_argon_smooth_plating_spec" />
-        <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\argon\metal_argon_smooth_plating_diff" />
-
-        <property type="BitMap" name="diffuse_paint_map" value="assets\textures\generic\generic_p1_dirt_03_diff" />
-        <property type="BitMap" name="color_dirt_map" value="assets\textures\generic\generic_p1_dirt_02_diff" />
-        <property type="BitMap" name="diffuse_detail_map" value="assets\textures\generic\generic_p1_detail_02_diff" />
-        <property type="BitMap" name="normal_detail_map" value="assets\textures\generic\generic_p1_detail_01_normal" />
-
-        <property type="Float" name="diffuseStr" value="1.0" />
-        <property type="Float" name="diffuse_detail_tiling" value="10.0" />
-        <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
-        <property type="Float" name="diffuse_detailStr" value="1.0" />
-        <property type="Float" name="diffuse_paintStr" value="1.0" />
-        <property type="Float" name="normalStr" value="1.0" />
-        <property type="Float" name="normal_detail_tiling" value="10.0" />
-        <property type="Float" name="normal_detail_tiling_v" value="5.0" />
-        <property type="Float" name="normal_detailStr" value="0.05" />
-        <property type="Float" name="color_glowStr" value="1.0" />
-        <property type="Float" name="color_dirt_tiling" value="5.0" />
-        <property type="Float" name="color_dirt_tiling_v" value="10.0" />
-        <property type="Float" name="color_dirtStr" value="1.0" />
-        <property type="Float" name="environmentStr" value="1.0" />
-        <property type="Float" name="Smoothness" value="1.0" />
-        <property type="Float" name="Metallness" value="1.0" />
+        <property type="BitMap" name="metal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_metal" />
+        <property type="BitMap" name="smooth_map" 		value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_spec"/>
+        <property type="BitMap" name="diffuse_map" 		value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_diff" />
+ 		<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\argon\metal_argon_base_metal_plating_normal"/>     
+		<property type="BitMap" name="color_glow_map" 	value="extensions\vro\assets\textures\argon\metal_argon_smooth_plating_light" />
+				<property type="Float"  name="color_glowStr"  value="1.0"/>   
+				<property type="Float" name="mat_smoothness" value="1.0" />
+				<property type="Float" name="mat_metallness" value="1.0" />
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="0.3" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" />
       </properties>
     </material>
   </add>
 
-	<add sel="/materiallibrary">
+
+
+
+
+<!-- Split ships -->
+
+<add sel="/materiallibrary">
 		<collection name="split"> 
 			<material name="metal_split_platesa_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesa_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesa_01_spec"/>
-					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesa_01_low_bump"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_platesa_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_platesa_01_metal" />
+					<property type="BitMap" name="normal_map" 	  	value="extensions\vro\assets\textures\split\metal_split_platesa_01_low_bump"/>
+ 					<property type="BitMap" name="color_glow_map"	  value="extensions\vro\assets\textures\split\metal_split_platesC_01_light"/>
+ 					<property type="Float"  name="color_glowStr"    value="0.8"/>          
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />        
 				</properties>
+
+
 			</material>
 			<material name="metal_split_platesa2_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+       		 	<property type="Float" name="AnisoY" value="0.5" />
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesa2_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesa2_01_spec"/>
-					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesa2_01_low_bump"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_platesa2_01_spec"/>
+         			 <property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_platesa2_01_metal" />
+					<property type="BitMap" name="normal_map" 		  value="extensions\vro\assets\textures\split\metal_split_platesa2_01_low_bump"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.2" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+
+
 			</material>
 			<material name="metal_split_platesa3_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
-					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesa3_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesa3_01_spec"/>
-					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesa3_01_low_bump"/>
-					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesa3_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesA_01_diff"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_platesA_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_platesA_01_metal" />
+					<property type="BitMap" name="normal_map" 		  value="extensions\vro\assets\textures\split\metal_split_platesA_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	  value="extensions\vro\assets\textures\split\metal_split_platesA_01_light"/>
+					<property type="Float"  name="color_glowStr"    value="2.5"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+			
+			
 			</material>
 			<material name="metal_split_platesb_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesb_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesb_01_spec"/>
-					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesb_01_low_bump"/>
-					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesb_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_platesb_01_spec"/>
+         			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_platesb_01_metal" />      
+					<property type="BitMap" name="normal_map" 		  value="extensions\vro\assets\textures\split\metal_split_platesb_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	  value="extensions\vro\assets\textures\split\metal_split_platesb_01_light"/>
+					<property type="Float"  name="color_glowStr"    value="1.0"/>          
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+
+
 			</material>
 			<material name="metal_split_platesb2_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesb2_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesb2_01_spec"/>
-					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesb2_01_low_bump"/>
-					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesb2_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_platesb2_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_platesb2_01_metal" />
+					<property type="BitMap" name="normal_map" 		  value="extensions\vro\assets\textures\split\metal_split_platesb2_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	  value="extensions\vro\assets\textures\split\metal_split_platesb2_01_light"/>
+					<property type="Float"  name="color_glowStr"    value="1.0"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+
+
 			</material>
 			<material name="metal_split_platesc_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesc_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesc_01_spec"/>
-					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesc_01_low_bump"/>
-					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesc_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_platesc_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_platesc_01_metal" />
+					<property type="BitMap" name="normal_map" 		  value="extensions\vro\assets\textures\split\metal_split_platesc_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	  value="extensions\vro\assets\textures\split\metal_split_platesc_01_light"/>
+					<property type="Float"  name="color_glowStr"    value="2.0"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />          
 				</properties>
+
+
 			</material>
 			<material name="metal_split_platesf_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
-					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesf_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesf_01_spec"/>
-					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesf_01_low_bump"/>
-					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesf_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesA_01_diff"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_platesA_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_platesA_01_metal" />
+					<property type="BitMap" name="normal_map" 		  value="extensions\vro\assets\textures\split\metal_split_platesA_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	  value="extensions\vro\assets\textures\split\metal_split_platesA_01_light"/>
+					<property type="Float"  name="color_glowStr"    value="2.5"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+			
+			
+			
 			</material>
 			<material name="metal_split_platesg_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
-					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesg_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_platesg_01_spec"/>
-					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_platesg_01_low_bump"/>
-					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_platesg_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
+					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_platesA_01_diff"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_platesA_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_platesA_01_metal" />
+					<property type="BitMap" name="normal_map" 		  value="extensions\vro\assets\textures\split\metal_split_platesA_01_low_bump"/>
+					<property type="BitMap" name="color_glow_map"	  value="extensions\vro\assets\textures\split\metal_split_platesA_01_light"/>
+					<property type="Float"  name="color_glowStr"    value="2.5"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+
+
 			</material>
 			<material name="metal_split_lattice_01" shader="P1_complex_surface.fx" blendmode="ALPHA1" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_lattice_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_lattice_01_spec"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_lattice_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_lattice_01_metal" />
 					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_lattice_01_low_bump"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+
+
 			</material>
 			<material name="metal_split_trim_platesh_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_trim_platesh_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesh_01_spec"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesh_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_trim_platesh_01_metal" />
 					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_trim_platesh_01_low_bump"/>
 					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_trim_platesh_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
+					<property type="Float"  name="color_glowStr"  value="0.05"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+
+
 			</material>
 			<material name="metal_split_trim_platesi_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
+                
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_trim_platesi_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesi_01_spec"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesi_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_trim_platesi_01_metal" />
 					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_trim_platesi_01_low_bump"/>
 					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_trim_platesi_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
+					<property type="Float"  name="color_glowStr"    value="1.5"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+
+
 			</material>
 			<material name="metal_split_trim_platesj_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_trim_platesj_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesj_01_spec"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesj_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_trim_platesj_01_metal" />
 					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_trim_platesj_01_low_bump"/>
 					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_trim_platesj_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
+					<property type="Float"  name="color_glowStr"  value="0.05"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+
+
 			</material>
 			<material name="metal_split_trim_platesk_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+       			<property type="Float" name="AnisoY" value="0.5" />
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_trim_platesk_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesk_01_spec"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesk_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_trim_platesk_01_metal" />
 					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_trim_platesk_01_low_bump"/>
 					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_trim_platesk_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
+					<property type="Float"  name="color_glowStr"  value="0.05"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+
+
 			</material>
 			<material name="metal_split_trim_platesm_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_trim_platesm_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesm_01_spec"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_split_trim_platesm_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_split_trim_platesm_01_metal" />
 					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_split_trim_platesm_01_low_bump"/>
 					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_trim_platesm_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
-				</properties>
+					<property type="Float"  name="color_glowStr"    value="1.0"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
+          </properties>
+
+
 			</material>
 			<material name="metal_gastanksa_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
+      			<property type="Float" name="AnisoX" value="0.5" />
+        		<property type="Float" name="AnisoY" value="0.5" />
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_gastanksa_01_diff"/>
-					<property type="BitMap" name="specular_map"   	value="extensions\vro\assets\textures\split\metal_gastanksa_01_spec"/>
+					<property type="BitMap" name="smooth_map"   	value="extensions\vro\assets\textures\split\metal_gastanksa_01_spec"/>
+          			<property type="BitMap" name="metal_map"        value="extensions\vro\assets\textures\split\metal_gastanksa_01_smetal" />
 					<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\split\metal_gastanksa_01_low_bump"/>
 					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_gastanksa_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.1"/>
+					<property type="Float"  name="color_glowStr"    value="1.75"/>
+          <property type="Float" name="diffuseStr" value="1.0" />
+          <property type="Float" name="normalStr" value="1.0" />
+          <property type="Float" name="environmentStr" value="1.0" />
+          <property type="Float" name="Smoothness" value="1.0" />
+          <property type="Float" name="Metallness" value="0.8" />
 				</properties>
+
+
 			</material>
 			<material name="metal_split_exl_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
 					<property type="BitMap" name="diffuse_map"    	value="extensions\vro\assets\textures\split\metal_split_exl_01_light"/>
 					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_exl_01_light"/>
-					<property type="Float"  name="color_glowStr"  value="0.5"/>
+					<property type="Float"  name="color_glowStr"  value="0.6"/>
 				</properties>
       </material>
     </collection> 
   </add>
-  
+
+<!-- Paranid ships -->
+
 	<add sel="/materiallibrary">
 		<collection name="paranid"> 
 			<material name="par_unique_01" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
 				<properties>
-					<property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\paranid\par_unique_01_diff"/>
-					<property type="BitMap" name="specular_map" value="extensions\vro\assets\textures\paranid\par_unique_01_spec"/>
-					<property type="BitMap" name="normal_map" value="extensions\vro\assets\textures\paranid\par_unique_01_bump"/>
+			<property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\paranid\par_unique_01_diff"/>
+          	<property type="BitMap" name="smooth_map" value="extensions\vro\assets\textures\paranid\par_unique_01_spec"/>
+          	<property type="BitMap" name="metal_map" value="extensions\vro\assets\textures\paranid\par_unique_01_metal"/>
+			<property type="BitMap" name="normal_map" 		value="extensions\vro\assets\textures\paranid\par_unique_01_bump"/>
+				<property type="Float" name="diffuseStr" value="1.0" />
+				<property type="Float" name="diffuse_paintStr" value="1.0" />
+				<property type="Float" name="normalStr" value="1.2" />
+				<property type="Float" name="AnisoX" value="0.5" />
+				<property type="Float" name="AnisoY" value="0.5" />
+				<property type="Float" name="Smoothness" value="1.0" />
+				<property type="Float" name="Metallness" value="1.0" /> 
 				</properties>
 			</material>
 		</collection>	
