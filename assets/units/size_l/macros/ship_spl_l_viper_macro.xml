@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+	<macro name="ship_spl_l_viper_macro" class="ship_l">
+		<component ref="ship_spl_l_viper" />
+		<properties>
+			<identification name="{20101,41501}" basename="{20101,41501}" description="{6699,1910}" icon="ship_l_frigate" />
+			<software>
+			  <software ware="software_dockmk2" compatible="1" />
+			  <software ware="software_flightassistmk1" default="1" />
+			  <software ware="software_scannerlongrangemk1" default="1" />
+			  <software ware="software_scannerlongrangemk2" compatible="1" />
+			  <software ware="software_scannerobjectmk1" default="1" />
+			  <software ware="software_scannerobjectmk2" compatible="1" />
+			  <software ware="software_targetmk1" compatible="1" />
+			  <software ware="software_trademk1" compatible="1" />
+			</software>
+			<explosiondamage value="5000" />
+			<storage missile="60" unit="14" />
+			<hull max="183000" />
+			<secrecy level="2" />
+			<purpose primary="fight" />
+			<people capacity="30" />
+			<physics mass="180.0">
+				<inertia pitch="180.749" yaw="190.749" roll="180.999" />
+				<drag forward="108" reverse="200.22" horizontal="60" vertical="60" pitch="150" yaw="170" roll="150" />
+			</physics>
+			<thruster tags="large" />
+			<ship type="frigate" />
+			<!-- <radar range="40000" /> -->
+		</properties>
+		<connections>
+			<connection ref="con_cockpit">
+			  <macro ref="bridge_spl_l_01_macro" connection="con_cockpit" />
+			</connection>
+			<connection ref="con_dock_xs">
+			  <macro ref="inv_xs_dock_macro" connection="Connection_component" />
+			</connection>
+			<connection ref="con_shipstorage_s_01">
+			  <macro ref="shipstorage_gen_s_cap2_macro" connection="object" />
+			</connection>
+			<connection ref="con_shipstorage_xs_01">
+			  <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+			</connection>
+			<connection ref="con_storage01">
+			  <macro ref="storage_par_l_destroyer_01_a_macro" connection="ShipConnection" />
+			</connection>
+			<connection ref="con_ishield_01">
+			  <macro ref="ishield_spl_l_viper_a_macro" connection="ParentConnection" />
+			</connection> 
+
+			<connection ref="con_dockarea_1">
+				<macro ref="dockarea_vroinv_s_macro" connection="Connection01" />
+			</connection>
+
+		</connections>
+	</macro>
+</macros>

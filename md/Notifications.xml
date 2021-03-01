@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- do not destroy shields when bail! -->
 <diff>
-	<replace sel="/mdscript/cues/cue[1]/cues/cue[24]/actions/do_if[2]/do_if/do_if[4]/do_if[1]/do_if[2]/find_object_component">
-	<find_object_component name="$subcomponents" object="$target" class="[class.weapon, class.turret]" multiple="true"/>
-</replace>
-</diff>
+	<replace sel="//find_object_component[@name='$subcomponents'][@object='$target']">
+	  <find_object_component name="$subcomponents" object="$target" class="[class.weapon, class.turret]" multiple="true"/>
+	</replace>
+	</diff>

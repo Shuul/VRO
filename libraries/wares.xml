@@ -68,8 +68,8 @@
   </replace>
     <replace sel="//wares/ware[@id='ship_spl_l_destroyer_01_a']/production/primary">
       <primary>
-        <ware ware="energycells" amount="13137" />
-        <ware ware="hullparts" amount="13777" />
+        <ware ware="energycells" amount="13537" />
+        <ware ware="hullparts" amount="12077" />
   </primary>
     </replace>
 
@@ -807,65 +807,46 @@
 </add>
 
 <!-- L guns -->
-<replace sel="//wares/ware[@id='weapon_arg_l_destroyer_01_mk1']">
-  <ware id="weapon_arg_l_destroyer_01_mk1" name="{6699,1181}" description="{6699,1184}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-    <price min="1036709" average="1240788" max="1344866" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="43" />
-        <ware ware="energycells" amount="173" />
-        <ware ware="weaponcomponents" amount="86" />
-      </primary>
-    </production>
-    <component ref="weapon_arg_l_destroyer_01_mk1_macro" amount="1" />
-    <restriction licence="capitalequipment" />
-    <use threshold="0" />
-    <owner faction="alliance" />
-    <owner faction="antigone" />
-    <owner faction="argon" />
-    <owner faction="trinity" />
-  </ware>
+<!-- removed destructive replace -->
+<replace sel="//wares/ware[@id='weapon_arg_l_destroyer_01_mk1']/@name">{6699,1181}</replace>
+<replace sel="//wares/ware[@id='weapon_arg_l_destroyer_01_mk1']/@description">{6699,1184}</replace>
+<replace sel="//wares/ware[@id='weapon_arg_l_destroyer_01_mk1']/price">
+  <price min="1036709" average="1240788" max="1344866"/>
+</replace>
+<replace sel="//wares/ware[@id='weapon_arg_l_destroyer_01_mk1']/production/primary">
+  <primary>
+    <ware ware="advancedelectronics" amount="43"/>
+    <ware ware="energycells" amount="173"/>
+    <ware ware="weaponcomponents" amount="86"/>
+  </primary>
 </replace>
 
-  <replace sel="//wares/ware[@id='weapon_par_l_destroyer_01_mk1']">
-  <ware id="weapon_par_l_destroyer_01_mk1" name="{6699,1181}" description="{6699,1184}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-    <price min="1100201" average="1211335" max="1322468" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="43" />
-        <ware ware="energycells" amount="173" />
-        <ware ware="weaponcomponents" amount="86" />
-      </primary>
-    </production>
-    <component ref="weapon_par_l_destroyer_01_mk1_macro" amount="1" />
-    <restriction licence="capitalequipment" />
-    <use threshold="0" />
-    <owner faction="alliance" />
-    <owner faction="holyorder" />
-    <owner faction="paranid" />
-    <owner faction="trinity" />
-    <owner faction="trinity" />
-  </ware>
+<!-- removed destructive replace -->
+<replace sel="//wares/ware[@id='weapon_par_l_destroyer_01_mk1']/@name">{6699,1181}</replace>
+<replace sel="//wares/ware[@id='weapon_par_l_destroyer_01_mk1']/@description">{6699,1184}</replace>
+<replace sel="//wares/ware[@id='weapon_par_l_destroyer_01_mk1']/price">
+  <price min="1100201" average="1211335" max="1322468"/>
+</replace>
+<replace sel="//wares/ware[@id='weapon_par_l_destroyer_01_mk1']/production/primary">
+  <primary>
+    <ware ware="advancedelectronics" amount="43"/>
+    <ware ware="energycells" amount="173"/>
+    <ware ware="weaponcomponents" amount="86"/>
+  </primary>
 </replace>
 
-  <replace sel="//wares/ware[@id='weapon_tel_l_destroyer_01_mk1']">
-  <ware id="weapon_tel_l_destroyer_01_mk1" name="{6699,1181}" description="{6699,1184}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-    <price min="973217" average="1070241" max="1167265" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="advancedelectronics" amount="43" />
-        <ware ware="energycells" amount="173" />
-        <ware ware="weaponcomponents" amount="86" />
-      </primary>
-    </production>
-    <component ref="weapon_tel_l_destroyer_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" />
-    <owner faction="alliance" />
-    <owner faction="ministry" />
-    <owner faction="teladi" />
-    <owner faction="trinity" />
-  </ware>
+<!-- removed destructive replace -->
+<replace sel="//wares/ware[@id='weapon_tel_l_destroyer_01_mk1']/@name">{6699,1181}</replace>
+<replace sel="//wares/ware[@id='weapon_tel_l_destroyer_01_mk1']/@description">{6699,1184}</replace>
+<replace sel="//wares/ware[@id='weapon_tel_l_destroyer_01_mk1']/price">
+  <price min="973217" average="1070241" max="1167265"/>
+</replace>
+<replace sel="//wares/ware[@id='weapon_tel_l_destroyer_01_mk1']/production/primary">
+  <primary>
+    <ware ware="advancedelectronics" amount="43"/>
+    <ware ware="energycells" amount="173"/>
+    <ware ware="weaponcomponents" amount="86"/>
+  </primary>
 </replace>
 
 <!-- <add sel="/wares">
@@ -2277,6 +2258,23 @@
   <owner faction="fallensplit" /> 
 </ware> 
 
+<!-- Viper-->
+<ware id="ship_spl_l_viper" name="{20101,41501}" description="{6699,1910}" group="ships_split" transport="ship" size="ship" volume="1" tags="ship">
+  <price min="7195057" average="7858890" max="8522724" />
+  <production time="90" amount="1" method="default" name="{20206,101}">
+    <primary>
+		  <ware ware="energycells" amount="3000" />
+		  <ware ware="hullparts" amount="4900" />
+    </primary>
+  </production>
+  <component ref="ship_spl_l_viper_macro" amount="1" />
+  <restriction licence="capitalship" />
+  <owner faction="freesplit" />
+  <owner faction="split" />
+  <owner faction="court" />
+  <owner faction="fallensplit" /> 
+</ware> 
+
 <!-- Centaur-->
 		<ware id="ship_arg_l_centaur_a" name="{20101,12802}" description="{6699,1901}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
     <price min="4595057" average="5058890" max="5522724" />
@@ -2515,6 +2513,26 @@
   <use threshold="0.5" />
   <owner faction="scaleplate" />
 </ware>
+
+<!-- multi-tube laucnher -->
+<ware id="weapon_spl_multilauncher" name="{6699,10212}" description="{6699,102121}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+  <price min="291883" average="327883" max="490883" />
+  <production time="10" amount="1" method="default" name="{6699,1103}">
+    <primary>
+      <ware ware="advancedelectronics" amount="20" />
+      <ware ware="energycells" amount="51" />
+      <ware ware="weaponcomponents" amount="50" />
+  </primary>
+  </production>
+<component ref="weapon_spl_multilauncher_macro" amount="1" />
+  <restriction licence="generaluseequipment" />
+  <use threshold="0"/>
+  <owner faction="freesplit" />
+  <owner faction="split" />
+  <owner faction="court" />
+  <owner faction="fallensplit" /> 
+</ware> 
+
 <!-- Xenon missiles  -->
 
   <ware id="weapon_xen_light_launcher" name="{6699,1077}" description="{6699,1077}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint weapon">
@@ -3720,6 +3738,31 @@
   <owner faction="court"/>
   </ware>
   
+  <ware id="missile_serpentnest" name="{6699, 1306}" description="{6699, 1308}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+    <price min="85681" average="95681" max="105681" />
+    <production time="5" amount="1" method="default" name="{20206,101}">
+    <primary>
+    <ware ware="energycells" amount="135" />
+    <ware ware="missilecomponents" amount="61" />
+    <ware ware="smartchips" amount="40" />
+    </primary>
+    </production>
+    <production time="3" amount="1" method="xenon" name="{20206,601}">
+    <primary>
+    <ware ware="energycells" amount="2" />
+    <ware ware="ore" amount="2" />
+    <ware ware="silicon" amount="2" />
+    </primary>
+    </production>
+    <component ref="missile_serpentnest_macro" amount="1" />
+    <restriction licence="militaryequipment" />
+    <container ref="sm_gen_pickup_equipment_01_macro" />
+    <use threshold="0"/>
+    <owner faction="split"/>
+    <owner faction="freesplit"/>
+    <owner faction="court"/>
+    </ware>
+  
 <!-- XENON xppc  -->
 <ware id="turret_xen_l_xppc" name="{6699,1022}" description="{6699,1022}" group="turrets" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
     <price min="13092" average="14580" max="16068" />
@@ -3845,6 +3888,24 @@
   <restriction licence="generaluseequipment" />
   <use threshold="0" factions="xenon" />
   <owner faction="xenon" />
+</ware>
+
+<!-- split medium large engine   -->
+<ware id="engine_spl_m_large" name="{20107,3084}" description="{20107,3082}" group="engines" transport="equipment" volume="1" tags="engine equipment">
+  <price min="258153" average="368448" max="480054" />
+  <production time="20" amount="1" method="default" name="{20206,101}">
+    <primary>
+      <ware ware="antimatterconverters" amount="129" />
+      <ware ware="energycells" amount="37" />
+      <ware ware="engineparts" amount="101" />
+    </primary>
+  </production>
+  <component ref="engine_spl_m_large_macro" amount="1" />
+  <restriction licence="generaluseequipment" />
+  <use threshold="0" />
+  <owner faction="court" />
+  <owner faction="freesplit" />
+  <owner faction="split" />
 </ware>
 
 <!-- ishields  -->
@@ -4881,6 +4942,12 @@
       <use threshold="0" />
     </ware>
 
+    <ware id="ishield_spl_l_viper" name="{6699,13173}" description="{6699,13173}" group="shields" transport="equipment" volume="1" tags="equipment noblueprint noplayerblueprint shield">
+      <price min="1" average="1" max="1" />
+      <component ref="ishield_spl_l_viper_a_macro" amount="1" />
+      <use threshold="0" />
+    </ware>
+
   </add>
 <!-- Vanilla missiles reomoval from being buildable by factions -->
 
@@ -5001,37 +5068,11 @@
 </replace>
 
 <!-- XENON weapon names -->
-  <replace sel="//wares/ware[@id='weapon_xen_s_laser_01_mk1']">
-  <ware id="weapon_xen_s_laser_01_mk1" name="{6699,1050}" description="{6699,1050}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint weapon">
-    <price min="778" average="864" max="950" />
-    <production time="4" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="energycells" amount="5" />
-        <ware ware="ore" amount="2" />
-      </primary>
-    </production>
-    <component ref="weapon_xen_s_laser_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" factions="xenon" />
-    <owner faction="xenon" />
-  </ware>
-</replace>
+<!-- removed destructive replace -->
+<replace sel="//wares/ware[@id='weapon_xen_s_laser_01_mk1']/@name">{6699,1050}</replace>
+<replace sel="//wares/ware[@id='weapon_xen_s_laser_01_mk1']/@description">{6699,1050}</replace>
 
-  <replace sel="//wares/ware[@id='weapon_xen_m_laser_01_mk1']">
-  <ware id="weapon_xen_m_laser_01_mk1" name="{6699,1030}" description="{6699,1030}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint weapon">
-    <price min="24019" average="26688" max="29357" />
-    <production time="10" amount="1" method="default" name="{20206,101}">
-      <primary>
-        <ware ware="energycells" amount="10" />
-        <ware ware="ore" amount="30" />
-        <ware ware="silicon" amount="30" />
-      </primary>
-    </production>
-    <component ref="weapon_xen_m_laser_01_mk1_macro" amount="1" />
-    <restriction licence="generaluseequipment" />
-    <use threshold="0" factions="xenon" />
-    <owner faction="xenon" />
-  </ware>
-</replace>
-
+<!-- removed destructive replace -->
+<replace sel="//wares/ware[@id='weapon_xen_m_laser_01_mk1']/@name">{6699,1030}</replace>
+<replace sel="//wares/ware[@id='weapon_xen_m_laser_01_mk1']/@description">{6699,1030}</replace>
 </diff>

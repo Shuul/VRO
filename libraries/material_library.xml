@@ -625,9 +625,46 @@
 					<property type="BitMap" name="color_glow_map"	value="extensions\vro\assets\textures\split\metal_split_exl_01_light"/>
 					<property type="Float"  name="color_glowStr"  value="0.6"/>
 				</properties>
-      </material>
+	  </material>
+	  
+	  <material name="split_viper" shader="P1_complex_surface.fx" blendmode="NONE" preview="none">
+		<properties>
+		<property type="Float" name="AnisoX" value="0.5" />
+		<property type="Float" name="AnisoY" value="0.5" />
+		  <property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\split\sp_hullpattern_01_diff" />
+		  <property type="BitMap" name="specular_map" value="extensions\vro\assets\textures\split\sp_hullpattern_01_spec" />
+		  <property type="BitMap" name="normal_map" value="extensions\vro\assets\textures\split\sp_hullpattern_01_bump" />
+		  <property type="BitMap" name="color_age_map" value="assets\fx\textures\dirt_diff" />
+		  <property type="Float" name="color_glowStr" value="0.75" />
+		  <property type="Float" name="Metallness" value="0.5" />
+		  <property type="Float" name="normalStr" value="1.0" />
+		  <property type="Float" name="environmentStr" value="1.0" />
+		   <property type="Float" name="diffuseStr" value="1.0" />
+		  <property type="Float" name="diffuse_detail_tiling" value="8.0" />
+		  <property type="Float" name="diffuse_detail_tiling_v" value="5.0" />
+		  <property type="Float" name="diffuse_detailStr" value="1.0" />
+		  <property type="Float" name="diffuse_paintStr" value="1.0" />
+		  <property type="Float" name="normal_detail_tiling" value="10.0" />
+		  <property type="Float" name="normal_detail_tiling_v" value="5.0" />
+		  <property type="Float" name="normal_detailStr" value="0.05" />
+		  <property type="Float" name="color_dirt_tiling" value="5.0" />
+		  <property type="Float" name="color_dirt_tiling_v" value="10.0" />
+		  <property type="Float" name="color_dirtStr" value="1.0" />
+		  <property type="Float" name="Smoothness" value="1.0" />
+		</properties>
+	  </material>
     </collection> 
   </add>
+  <!-- <properties>
+	<property type="BitMap" name="diffuse_map" value="extensions\vro\assets\textures\split\sp_hullpattern_01_diff" />
+	<property type="BitMap" name="specular_map" value="extensions\vro\assets\textures\split\sp_hullpattern_01_spec" />
+	<property type="BitMap" name="normal_map" value="extensions\vro\assets\textures\split\sp_hullpattern_01_bump" />
+	<property type="BitMap" name="color_age_map" value="assets\fx\textures\dirt_diff" />
+	<property type="Float" name="color_glowStr" value="0.75" />
+	<property type="Float" name="Metallness" value="0.5" />
+	<property type="Float" name="normalStr" value="1.0" />
+	<property type="Float" name="environmentStr" value="1.0" />
+  </properties> -->
 
 <!-- Paranid ships -->
 
@@ -650,4 +687,6 @@
 			</material>
 		</collection>	
 	</add>
+
+
 </diff>

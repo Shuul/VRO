@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<components>
+	<component name="engine_spl_m_large" class="engine">
+		<source geometry="extensions\ego_dlc_split\assets\props\Engines\engine_spl_m_allround_01_mk1_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<box name="XU BoxLight01" shadow="0" r="255" g="125" b="125" lighteffect="1" trigger="1" intensity="20" specularintensity="1">
+						<size x="10" y="5.5" z="5.5"/>
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="-8.228981"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</box>
+					<omni name="XU Omni01" shadow="0" r="255" g="118" b="118" range="5.4" shadowrange="5.4" lighteffect="1" trigger="1" intensity="10" specularintensity="1">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="-11.66887"/>
+						</offset>
+					</omni>
+				</lights>
+				<effectemitters>
+					<emitter name="trail_engine_m_distortion" type="trail_engine_m_distortion">
+						<offset>
+							<position x="0" y="0" z="-12.43101"/>
+							<quaternion qx="0.7071068" qy="-0" qz="-0" qw="-0.7071068"/>
+						</offset>
+					</emitter>
+				</effectemitters>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="lookat" hidden="true" tags="part animation nocollision detail_xs ">
+				<offset>
+					<position x="1.42702E-07" y="0.0797262" z="-15.24335"/>
+				</offset>
+				<animations>
+					<animation name="flaps_minmax" start="0" end="30"/>
+					<animation name="flaps_up_minmax" start="30" end="60"/>
+					<animation name="flaps_right_minmax" start="60" end="90"/>
+				</animations>
+				<parts>
+					<part name="detail_xs_lookat_target">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hullpattern"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="2.900127" y="2.924532" z="3.311253"/>
+							<center x="2.800127" y="2.824533" z="-3.211253"/>
+						</size>
+						<size_raw>
+							<max x="0.1" y="0.1" z="0.1"/>
+							<center x="-1.140947E-09" y="0" z="0"/>
+						</size_raw>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection01" tags="part platformcollision forceoutline  ">
+				<offset/>
+				<parts>
+					<part ref="engine_spl_m_allround_01_body.part_main" name="part_main"/>
+				</parts>
+			</connection>
+			<connection name="Connection02" tags="part detail_l nocollision forceoutline  ">
+				<offset>
+					<position x="0" y="0" z="-5.277557"/>
+				</offset>
+				<parts>
+					<part ref="engine_spl_m_allround_01_body.detail_l_decals" name="detail_l_decals"/>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="fx nocollision part detail_l animation textureanimation speedscale_forward useobjectrotation ">
+				<offset>
+					<position x="0" y="0" z="-9.490229"/>
+				</offset>
+				<restrictions>
+					<restriction type="rotation_x">
+						<limits>
+							<min value="-15.0 "/>
+							<max value="15.0 "/>
+						</limits>
+					</restriction>
+				</restrictions>
+				<animations>
+					<animation name="loop" start="1" end="10"/>
+				</animations>
+				<parts>
+					<part name="anim_flame01">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="enginefxp1.engine_fx_arg_gas"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="4.31608" y="4.31608" z="22.52422"/>
+							<center x="0" y="0" z="-22.41642"/>
+						</size>
+						<size_raw>
+							<max x="4.31608" y="4.31608" z="22.52422"/>
+							<center x="0" y="0" z="-22.41642"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="u_offset" controller="linear_float">
+									<key frame="0" value="0"/>
+									<key frame="10" value="3"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="EngineConnection01" tags="engine mediumlarge component ">
+				<offset/>
+			</connection>
+			<connection name="enginealign" tags="enginealign ">
+				<offset>
+					<position x="-0.1267365" y="-5.887565E-02" z="-16.89856"/>
+					<quaternion qx="-1" qy="7.54979E-08" qz="-7.54979E-08" qw="5.699933E-15"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>
