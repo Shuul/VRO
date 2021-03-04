@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<components>
+	<component name="bullet_xrblue_plasma" class="bullet">
+		<source geometry="extensions\vro\assets\fx\weaponFx\bullet_xrblue_plasma_data"></source>
+		<layers>
+			<layer>
+				<waypoints></waypoints>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="107" g="201" b="255" range="200" shadowrange="200" lighteffect="1" lenseffect="turret_l_bullet" trigger="1" intensity="0.9">
+						<lightanimations></lightanimations>
+						<offset>
+							<position x="0" y="0" z="0"></position>
+						</offset>
+					</omni>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"></connection>
+			<connection name="position" tags="position" value="1" optional="1"></connection>
+			<connection name="space" tags="bullet">
+				<offset></offset>
+			</connection>
+			<connection name="Connection01" tags="part  ">
+				<offset></offset>
+				<parts>
+					<part name="part_plasmaemitter_bullet">
+						<size>
+							<max x="6.344055" y="6.344055" z="17.70073"></max>
+							<center x="0" y="0" z="7.75756"></center>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="component_component_component_Connection01" tags="laser ">
+				<offset>
+					<position x="2.459503E-08" y="1.937733E-08" z="-2.109496E-08"></position>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

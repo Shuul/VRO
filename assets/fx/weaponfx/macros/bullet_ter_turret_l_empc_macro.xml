@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Markus (192.168.3.63) at 26.11.2020_13-59-22-->
+<macros>
+  <macro name="bullet_ter_turret_l_empc_macro" class="bullet">
+    <component ref="bullet_gen_cig" />
+    <properties>
+      <ammunition value="15" reload="5" />
+      <bullet speed="4000" lifetime="4" amount="1" barrelamount="1" influencelist="ion_light_effect" icon="weapon_gatling_mk1" timediff="0.002" angle="0.1" maxhits="1" ricochet="0" scale="0" attach="0" />
+      <reload rate="1.15" />
+      <damage value="1715" shield="250" repair="0" />
+      <effects>
+        <impact ref="impact_ter_l_gatling_01_mk1" inside="impact_ter_l_gatling_01_mk1_inside" />
+        <bigobjectimpact ref="impact_ter_l_gatling_01_mk1_bigobject" inside="impact_ter_l_gatling_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_large_empc" />
+      </effects>
+      <weapon system="turret_midrange" />
+    </properties>
+  </macro>
+</macros>

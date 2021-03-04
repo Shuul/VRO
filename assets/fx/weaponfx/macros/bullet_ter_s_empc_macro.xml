@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Markus (192.168.3.73) at 25.11.2020_15-36-54-->
+<macros>
+  <macro name="bullet_ter_s_empc_macro" class="bullet">
+    <component ref="bullet_xrblue_plasma" />
+    <properties>
+      <bullet speed="3500" lifetime="1.7" amount="1" barrelamount="1" influencelist="ion_light_effect" icon="weapon_laser_mk2" timediff="0.006" angle="0.1" maxhits="1" ricochet="0" scale="0" attach="0" />
+      <heat value="400" />
+      <reload rate="0.75" />
+      <multiplier surfaceelement="2" />
+      <damage value="575" shield="100" />
+      <effects>
+        <impact ref="impact_gen_s_laser_01_mk1" inside="impact_gen_s_laser_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_s_laser_01_mk1_bigobject" inside="impact_gen_s_laser_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_small_empc" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>

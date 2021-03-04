@@ -334,7 +334,11 @@
   </primary>
   </replace>
 
-<!-- Split weapons prices -->
+
+
+<!-- SplitDLC________________
+  ________________________
+   weapons prices -->
 
   <replace sel="//wares/ware[@id='weapon_spl_m_gatling_01_mk1']/@name">{6699,12029}</replace>
   <replace sel="//wares/ware[@id='weapon_spl_m_gatling_01_mk1']/@description">{6699,12032}</replace>
@@ -2515,7 +2519,7 @@
 </ware>
 
 <!-- multi-tube laucnher -->
-<ware id="weapon_spl_multilauncher" name="{6699,10212}" description="{6699,102121}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+<!-- <ware id="weapon_spl_multilauncher" name="{6699,10212}" description="{6699,102121}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
   <price min="291883" average="327883" max="490883" />
   <production time="10" amount="1" method="default" name="{6699,1103}">
     <primary>
@@ -2525,6 +2529,23 @@
   </primary>
   </production>
 <component ref="weapon_spl_multilauncher_macro" amount="1" />
+  <restriction licence="generaluseequipment" />
+  <use threshold="0"/>
+  <owner faction="freesplit" />
+  <owner faction="split" />
+  <owner faction="court" />
+  <owner faction="fallensplit" /> 
+</ware>  -->
+<ware id="turret_spl_multilauncher" name="{6699,10212}" description="{6699,102121}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
+  <price min="291883" average="327883" max="490883" />
+  <production time="10" amount="1" method="default" name="{6699,1103}">
+    <primary>
+      <ware ware="advancedelectronics" amount="20" />
+      <ware ware="energycells" amount="51" />
+      <ware ware="turretcomponents" amount="50" />
+  </primary>
+  </production>
+<component ref="turret_spl_multilauncher_macro" amount="1" />
   <restriction licence="generaluseequipment" />
   <use threshold="0"/>
   <owner faction="freesplit" />

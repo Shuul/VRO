@@ -138,7 +138,7 @@
 					<position x="-0.777039" y="-103.833405" z="-273.364471" />
 				</offset>
 			</connection>
-			<connection name="Connection04" tags="part">
+			<connection name="Connection04" tags="part forceoutline">
 				<parts>
 					<part name="part_main" wreck="part_main_wreck">
 						<size>
@@ -247,14 +247,16 @@
 	
 		<!-- main launchers -->
 
-		<connection group="main_gun" name="con_l_weapon_1" tags="weapon large multilauncher">
+		<connection group="main_gun" name="con_l_weapon_1" tags="turret large multilauncher">
 			<offset>
-				<position x="-80.6146" y="-9.3775" z="-114.6889"/>
+				<position x="-80.6146" y="-9.3775" z="-100.6889"/>
+				<rotation yaw="0" pitch="-90" roll="0"/>
 			</offset>
 		</connection>
-		<connection group="main_gun" name="con_l_weapon_2" tags="weapon large multilauncher">
+		<connection group="main_gun" name="con_l_weapon_2" tags="turret large multilauncher">
 			<offset>
-				<position x="80.6146" y="-9.3775" z="-114.6889"/>
+				<position x="80.6146" y="-9.3775" z="-100.6889"/>
+				<rotation yaw="0" pitch="-90" roll="0"/>
 			</offset>
 		</connection>
 	

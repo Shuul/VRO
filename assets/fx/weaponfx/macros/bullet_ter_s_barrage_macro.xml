@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Markus (192.168.3.73) at 25.11.2020_17-01-47-->
+<macros>
+  <macro name="bullet_ter_s_barrage_macro" class="bullet">
+    <component ref="bullet_ter_s_gatling_01_mk2" />
+    <properties>
+      <ammunition value="10" reload="2.5" />
+      <bullet speed="4500" lifetime="1" amount="1" barrelamount="1" icon="weapon_gatling_mk2" timediff="0.008" angle="0.14" maxhits="1" ricochet="0" scale="0" attach="0" />
+      <heat value="130" />
+      <reload rate="3.5" />
+      <damage value="210" repair="0" />
+      <effects>
+        <impact ref="impact_ter_s_gatling_01_mk1" inside="impact_ter_s_gatling_01_mk1_inside" />
+        <bigobjectimpact ref="impact_ter_s_gatling_01_mk1_bigobject" inside="impact_ter_s_gatling_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_ter_s_gatling_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>

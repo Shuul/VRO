@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Markus (192.168.3.51) at 03.02.2021_14-47-26-->
+<macros>
+  <macro name="bullet_ter_s_meson_macro" class="bullet">
+    <component ref="bullet_ter_s_beam_01_mk2" />
+    <properties>
+      <bullet speed="12000" lifetime="1.5" range="4000" amount="1" barrelamount="1" icon="weapon_beam_mk2" maxhits="3" ricochet="0" scale="1" attach="1">
+        <damagecurves>
+          <distance>
+            <point position="0" value="1" />
+            <point position="0.8" value="1" />
+            <point position="1" value="0.1" />
+          </distance>
+        </damagecurves>
+      </bullet>
+      <heat value="4000" />
+      <reload time="3" />
+      <damage value="7000" shield="-2000" repair="0" />
+      <effects>
+        <impact ref="impact_gen_s_beam_01_mk1" inside="impact_gen_s_beam_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_s_beam_01_mk1_bigobject" inside="impact_gen_s_beam_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_ter_s_beam_01_mk1" />
+      </effects>
+      <sounds>
+        <ambient ref="weapon_ter_s_beam_loop" />
+      </sounds>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
