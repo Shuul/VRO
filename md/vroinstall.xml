@@ -22,7 +22,7 @@
       </patch>
       <cues>
         <!-- we can place our cue here without conditions, it'll just be run as a subcue after the delay. When the parent cue is being reset, this will be called again. -->
-        <cue name="VRO_ishields_encyclopedia" instantiate="false">
+        <!-- <cue name="VRO_ishields_encyclopedia" instantiate="false">
           <delay exact="10s"/>
           <actions>
             <create_list name="$vro_ishield_ware_list"/>
@@ -178,7 +178,7 @@
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_s_miner_solid_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_s_scout_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_s_trans_container_01_a"/>
-            <!-- <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_m_bomber_01_a"/> -->
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_m_bomber_01_a"/> 
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_m_corvette_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_m_corvette_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_m_frigate_01_a"/>
@@ -205,7 +205,7 @@
             </do_all>
             <show_help duration="10s" custom="'VRO - internal shield generators info added/updated in encyclopedia.'"/>
           </actions>
-        </cue>
+        </cue> -->
 
       </cues>
     </cue>

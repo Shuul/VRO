@@ -448,8 +448,8 @@
 				</offset>
 			</connection>
 			<!-- internal shield -->
-			<connection name="con_ishield_01" tags="ishield">
- 			 <offset>
+			<connection name="con_ishield_01" tags="ishield shield mandatory ishield_tel_xl_battleship_01">
+				<offset>
    				<position x="0" y="0" z="0"/>
     			 <quaternion qx="0" qy="0" qz="0" qw="0"/>
   			</offset>
@@ -534,13 +534,13 @@
 				</offset>
 			</connection>
 <!--Turrets LARGE down_turret_large-->
-			<connection name="con_turret_dtL01" group="group_down_turret_large " tags="turret large highpower standard ">
+			<connection name="con_turret_dtL01" group="group_down_turret_large " tags="turret large highpower telonly standard ">
 				<offset>
 					<position x="0" y="-105" z="-115"/>
 					<quaternion qx="-0.7071068" qy="-2.219725E-07" qz="0.7071068" qw="-8.432165E-09"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_dtL02" group="group_down_turret_large " tags="turret large highpower standard ">
+			<connection name="con_turret_dtL02" group="group_down_turret_large " tags="turret large highpower telonly standard ">
 				<offset>
 					<position x="0" y="-100" z="-744"/>
 					<quaternion qx="-0.7071068" qy="-2.219725E-07" qz="0.7071068" qw="-8.432165E-09"/>

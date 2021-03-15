@@ -25,7 +25,7 @@
       <people capacity="2" />
       <physics mass="10.437">
         <inertia pitch="4.6" yaw="4.6" roll="5" />
-        <drag forward="4.15" reverse="22.9" horizontal="5.2" vertical="5.2" pitch="4.2" yaw="4.2" roll="4.2" />
+        <drag forward="4.05" reverse="22.9" horizontal="5.2" vertical="5.2" pitch="4.2" yaw="4.2" roll="4.2" />
       </physics>
       <thruster tags="small" />
       <ship type="heavyfighter" />
@@ -44,9 +44,6 @@
       <connection ref="con_storage01">
         <macro ref="storage_tel_s_fighter_02_b_macro" connection="ShipConnection" />
       </connection>
-      <connection ref="con_ishield_01">
-        <macro ref="ishield_tel_s_fighter_02_b_macro" connection="ParentConnection" />
-      </connection>   
     </connections>
   </macro>
 </macros>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="turret_ter_m_beam_01_mk1_macro" class="turret" alias="turret_ter_m_beam_02_mk1_macro">
+        <component ref="turret_ter_m_beam_01_mk1" />
+        <properties>
+          <identification name="{6699,15141}" basename="{6699,15142}" shortname="{6699,15143}" makerrace="terran" description="{6699,15144}"  />
+          <bullet class="bullet_ter_turret_m_meson_macro" />
+          <rotationspeed max="60" />
+          <reload />
+          <hull integrated="1" />
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>

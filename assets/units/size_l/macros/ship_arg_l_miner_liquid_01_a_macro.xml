@@ -22,7 +22,6 @@
       <storage missile="30" unit="15" />
       <hull max="67000" />
       <secrecy level="1" />
-      <gatherrate gas="8" />
       <purpose primary="mine" />
       <people capacity="46" />
       <sounds>
@@ -53,9 +52,6 @@
       </connection>
       <connection ref="con_storage01">
         <macro ref="storage_arg_l_miner_liquid_01_a_macro" connection="ShipConnection" />
-      </connection>
-      <connection ref="con_ishield_01">
-        <macro ref="ishield_arg_l_miner_liquid_01_a_macro" connection="ParentConnection" />
       </connection>
     </connections>
   </macro>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.60) at 15.12.2020_20-02-23-->
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="engine_ter_xl_travel_01_mk1_macro" class="engine">
+        <component ref="engine_ter_xl_travel_01_mk1" />
+        <properties>
+          <identification name="{20107,4114}" basename="{20107,4111}" shortname="{20107,4115}" makerrace="terran" description="{20107,4112}" mk="1" />
+          <boost duration="50" thrust="2.5" attack="15" release="3" />
+          <travel charge="12" thrust="40" attack="20" release="15" />
+          <thrust forward="13000" reverse="12490" />
+          <angular />
+          <hull max="50000" threshold="0.3" />
+          <effects>
+            <boosting ref="arg_boost_fx_xl" />
+          </effects>
+          <sounds>
+            <enginedetail ref="enginedetail_ship_terran_l_xl_02" />
+          </sounds>
+        </properties>
+      </macro>
+    </macros>
+    
+  </replace>
+</diff>

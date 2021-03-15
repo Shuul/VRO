@@ -2,6 +2,72 @@
 <diff>
   <add sel="//soundlibrary">
 
+<!-- TERRAN DLC _______
+___________________
+__________________-->
+<sound id="wpn_empc_shoot" description="shooting" repeat="1" is3d="1" preload="1" >
+  <sample selection="random">
+    <select start="extensions\vro\sfx\weapons\em_plasma_1"/>
+  </sample>
+  <volume start="0.9" distance="7"/>
+</sound> 
+
+<sound id="wpn_graviton_shoot" description="shooting" repeat="1" is3d="1" preload="1" >
+  <sample selection="random">
+    <select start="extensions\vro\sfx\weapons\graviton_muzzle_1"/>
+    <select start="extensions\vro\sfx\weapons\graviton_muzzle_2"/>
+  </sample>
+  <volume start="0.7" distance="12"/>
+</sound> 
+
+<sound id="wpn_graviton_impact" description=" impact" repeat="1" is3d="1" preload="1" >
+  <sample selection="random">
+    <select start="extensions\vro\sfx\weapons\graviton_hit_1"/>
+    <select start="extensions\vro\sfx\weapons\graviton_hit_2"/>
+  </sample>
+  <volume start="1.0" distance="6"/>
+</sound>
+
+<sound id="wpn_psc_shoot" description="shooting" repeat="1" is3d="1" preload="1" >
+  <sample selection="random">
+    <select start="extensions\vro\sfx\weapons\psc_muzzle_1"/>
+    <select start="extensions\vro\sfx\weapons\psc_muzzle_2"/>
+  </sample>
+  <volume start="1.2" distance="25"/>
+</sound> 
+
+<sound id="wpn_psc_impact" description=" impact" repeat="1" is3d="1" preload="1" >
+  <sample selection="random">
+    <select start="extensions\vro\sfx\weapons\psc_hit_1"/>
+    <select start="extensions\vro\sfx\weapons\psc_hit_2"/>
+    <select start="extensions\vro\sfx\weapons\psc_hit_3"/>
+  </sample>
+  <volume start="1.5" distance="25"/>
+</sound>
+
+<sound id="wpn_starburst_shoot" description="shooting" repeat="1" is3d="1" preload="1" >
+  <sample selection="random">
+    <select start="extensions\vro\sfx\weapons\starburst_1"/>
+  </sample>
+  <volume start="0.6" distance="15"/>
+</sound> 
+
+<sound id="wpn_starburst_impact" description=" impact" repeat="1" is3d="1" preload="1" >
+  <sample selection="random">
+    <select start="extensions\vro\sfx\weapons\starburst_impact_1"/>
+    <select start="extensions\vro\sfx\weapons\starburst_impact_2"/>
+    <select start="extensions\vro\sfx\weapons\starburst_impact_3"/>
+  </sample>
+  <volume start="1.0" distance="15"/>
+</sound>
+
+<sound id="wpn_ter_rotory_shoot" description="rotory" repeat="-1" is3d="1" preload="1" amount="1" >
+  <sample loop="extensions\vro\sfx\weapons\rotory_ter_loop_1" />
+  <volume start="0.6" distance="8"/>
+  <effects>
+    <fade out="0.15"/>
+  </effects>
+</sound>
 
 <!-- VANILLA and SPLIT  -->
     <!-- PLASMA GUN-->
@@ -239,7 +305,7 @@
         </sample>
         <volume start="1.2" distance="15"/>
     </sound>
-    <sound id="wpn_ist_impact" description="ISR impact" repeat="1" is3d="1" preload="1" >
+    <sound id="wpn_isr_impact" description="ISR impact" repeat="1" is3d="1" preload="1" >
         <sample selection="random">
           <select start="extensions\vro\sfx\weapons\isr_hit_1"/>
         </sample>

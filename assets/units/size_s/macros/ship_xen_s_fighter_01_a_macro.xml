@@ -34,6 +34,7 @@
             <engine macro="engine_xen_s_combat_01_mk1_macro" path="../con_engine_01" />
             <engine macro="engine_xen_s_combat_01_mk1_macro" path="../con_engine_02" />
             <shield macro="shield_xen_s_standard_01_mk2_macro" path="../con_shield_01" optional="1" />
+            <shield macro="ishield_xen_s_fighter_01_a_macro" path="../con_ishield_01" optional="1" />
             <weapon macro="weapon_xen_s_laser_01_mk1_macro" path="../con_primaryweapon_01" optional="1" />
             <weapon macro="weapon_xen_s_laser_01_mk1_macro" path="../con_primaryweapon_02" optional="1" />
           </macros>
@@ -52,10 +53,6 @@
       <connection ref="con_cockpit">
         <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
       </connection>
-      <connection ref="con_ishield_01">
-        <macro ref="ishield_xen_s_fighter_01_a_macro" connection="ParentConnection" />
-      </connection>   
-
     </connections>
   </macro>
 

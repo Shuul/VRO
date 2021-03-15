@@ -4,10 +4,11 @@
   <macro name="bullet_ter_turret_l_starburst_macro" class="bullet">
     <component ref="bullet_ter_l_laser_01_mk1" />
     <properties>
+      <ammunition value="4" reload="8" />
       <bullet speed="20000" lifetime="0.7" amount="1" barrelamount="2" icon="weapon_laser_mk1" angle="0.1" maxhits="1" ricochet="0" scale="0" attach="0" selfdestruct="1"/>
       <reload rate="0.5" />
-      <damage value="2000" repair="0" />
-      <areadamage value="300" range="500" falloff="1" lifetime="1" />
+      <damage value="1900" repair="0" />
+      <areadamage value="300" range="1000" falloff="1" lifetime="1" />
       <effects>
         <impact ref="impact_l_starburst" />
         <launch ref="muzzle_l_starburst" />

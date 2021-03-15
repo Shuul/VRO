@@ -4,7 +4,7 @@
 	<remove sel="//components/component/connections/connection[@name='con_shieldgen_m_016']"/>
 
 	<add sel="//components/component/connections">
-		<connection name="con_turret_laser_l_02" group="group_front_top" tags="turret large standard highpower missile ">
+		<connection name="con_turret_laser_l_02" group="group_front_top" tags="turret large standard highpower telonly missile ">
 			<offset>
 				<position x="-0.0" y="432.5445" z="514.3288"/>
 				<quaternion qw="-0.9382452058177569" qx="-0.3459710013281385" qy="0.0" qz="-0.0"/>
@@ -62,7 +62,7 @@
 	</add>
 
 <add sel="//components/component/connections">
- <connection name="con_ishield_01" tags="ishield">
+  <connection name="con_ishield_01" tags="ishield shield mandatory ishield_tel_xl_carrier_01_a">
   <offset>
    <position x="0" y="0" z="0"/>
      <quaternion qx="0" qy="0" qz="0" qw="0"/>

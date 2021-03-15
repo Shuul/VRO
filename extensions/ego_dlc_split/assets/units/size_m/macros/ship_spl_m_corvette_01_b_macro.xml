@@ -24,7 +24,7 @@
           <people capacity="5" />
           <physics mass="17.607">
             <inertia pitch="7.4" yaw="7.4" roll="5.9" />
-            <drag forward="4" reverse="9.87" horizontal="16.8" vertical="16.8" pitch="17" yaw="17" roll="17" />
+            <drag forward="4.15" reverse="9.87" horizontal="16.8" vertical="16.8" pitch="17" yaw="17" roll="17" />
           </physics>
           <thruster tags="medium" />
           <ship type="corvette" />
@@ -42,9 +42,6 @@
           </connection>
           <connection ref="con_storage01">
             <macro ref="storage_spl_m_corvette_01_b_macro" connection="ShipConnection" />
-          </connection>
-          <connection ref="con_ishield_01">
-            <macro ref="ishield_spl_m_corvette_01_b_macro" connection="ParentConnection" />
           </connection>
     
         </connections>

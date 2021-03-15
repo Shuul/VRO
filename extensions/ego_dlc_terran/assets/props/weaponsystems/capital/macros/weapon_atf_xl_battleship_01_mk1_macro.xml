@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="weapon_atf_xl_battleship_01_mk1_macro" class="weapon">
+        <component ref="weapon_atf_xl_battleship_01_mk1" />
+        <properties>
+          <identification name="{6699,15151}" basename="{6699,15152}" shortname="{6699,15153}" makerrace="terran" description="{6699,15154}"  />
+          <bullet class="bullet_atf_xl_mjolnir_macro" />
+          <heat overheat="10000" cooldelay="0.13" coolrate="500" reenable="2000" />
+          <reload />
+          <hull max="50000" integrated="0" />
+          <effects>
+            <firing start="startshooting_atf_xl_beam_01_mk1" stop="stopshooting_atf_xl_beam_01_mk1" />
+          </effects>
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>

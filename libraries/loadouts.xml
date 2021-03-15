@@ -22,6 +22,7 @@
       <shields macro="shield_arg_m_standard_02_mk2_macro" path=".." group="group_front_down_right"/>
       <shields macro="shield_arg_m_standard_02_mk2_macro" path=".." group="group_front_up_back_right_tur"/>
       <shields macro="shield_arg_m_standard_02_mk2_macro" path=".." group="group_front_up_back_left_tur"/>
+      <shields macro="shield_arg_m_standard_02_mk2_macro" path=".." />
       <turrets macro="turret_arg_l_flak_macro" path=".." group="group_up_mid_mid"/>
       <turrets macro="turret_arg_m_gatling_02_mk1_macro" path=".." group="group_front_up_left" exact="2"/>
       <turrets macro="turret_arg_m_guided_02_mk1_macro" path=".." group="group_mid_down_left" exact="2"/>
@@ -57,6 +58,7 @@
       <weapon macro="weapon_gen_s_plasma_01_mk1_macro" path="../con_primaryweapon_01"/>
       <shield macro="shield_arg_s_standard_01_mk3_macro" path="../con_shield_01"/>
       <shield macro="shield_arg_s_standard_01_mk3_macro" path="../con_shield_002"/>
+      <shield macro="ishield_arg_s_heavyfighter_02_a_macro" path="../con_ishield_01" optional="true" />
     </macros>
   </replace>
     <replace sel="//loadouts/loadout[@id='scenario_combat_arg_fighter']/macros">
@@ -81,6 +83,8 @@
       <turret macro="turret_arg_m_gatling_01_mk1_macro" path="../con_turret_l02"/>
       <turret macro="turret_arg_m_gatling_01_mk1_macro" path="../con_turret_r02"/>
       <turret macro="turret_arg_m_gatling_01_mk1_macro" path="../con_turret_r01"/>
+      <shield macro="ishield_arg_m_bomber_01_a_macro" path="../con_ishield_01" optional="true" />
+
     </macros>
   </replace>
   <replace sel="//loadouts/loadout[@id='scenario_combat_arg_bomber']/ammunition">
@@ -104,6 +108,7 @@
     <macros>
       <engine macro="engine_arg_s_combat_01_mk3_macro" path="../con_engine_01" />
       <engine macro="engine_arg_s_combat_01_mk3_macro" path="../con_engine_02" />
+      <shield macro="ishield_arg_s_fighter_02_a_macro" path="../con_ishield_01" optional="true" />
       <shield macro="shield_arg_s_standard_01_mk2_macro" path="../con_shield_01" optional="1" />
       <weapon macro="weapon_gen_s_burst_01_mk1_macro" path="../con_primaryweapon_01" optional="1" />
       <weapon macro="weapon_gen_s_burst_01_mk1_macro" path="../con_primaryweapon_02" optional="1" />
@@ -119,6 +124,7 @@
       <weapon macro="weapon_gen_s_plasma_01_mk2_macro" path="../con_primaryweapon_02" optional="1" />
       <weapon macro="weapon_gen_s_shotgun_01_mk2_macro" path="../con_primaryweapon_03" optional="1" />
       <weapon macro="weapon_gen_s_shotgun_01_mk2_macro" path="../con_primaryweapon_04" optional="1" />
+      <shield macro="ishield_arg_s_heavyfighter_02_a_macro" path="../con_ishield_01" optional="true" />
     </macros>
   </replace>
 
@@ -137,5 +143,61 @@
       <unit macro="ship_gen_s_fightingdrone_01_a_macro" exact="5"/>
     </ammunition>
   </replace>
+
+
+  <add sel="//loadouts/loadout[@id='scenario_combat_spl_destroyer']/macros">
+    <shield macro="ishield_spl_l_destroyer_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='scenario_combat_spl_heavyfighter']/macros">
+    <shield macro="ishield_spl_s_heavyfighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='scenario_combat_spl_fighter']/macros">
+    <shield macro="ishield_spl_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='scenario_combat_spl_frigate']/macros">
+    <shield macro="ishield_spl_m_frigate_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='scenario_combat_tel_fighter']/macros">
+    <shield macro="ishield_tel_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='scenario_combat_tel_destroyer']/macros">
+    <shield macro="ishield_tel_l_destroyer_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_split_slavetrader']/macros">
+    <shield macro="ishield_spl_l_trans_container_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_split_getaway']/macros">
+    <shield macro="ishield_spl_s_heavyfighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_split_policesquad']/macros">
+    <shield macro="ishield_spl_s_heavyfighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+
+  <add sel="//loadouts/loadout[@id='story_xenon_gateship']/macros">
+    <shield macro="ishield_xen_xl_destroyer_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_teladi_gateship']/macros">
+    <shield macro="ishield_tel_xl_resupplier_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_terran_corvette']/macros">
+    <shield macro="ishield_ter_m_corvette_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_terran_destroyer']/macros">
+    <shield macro="ishield_ter_l_destroyer_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_terran_heavyfighter']/macros">
+    <shield macro="ishield_ter_s_heavyfighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='scenario_combat_ter_destroyer']/macros">
+    <shield macro="ishield_ter_l_destroyer_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='scenario_combat_ter_heavyfighter']/macros">
+    <shield macro="ishield_ter_s_heavyfighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='scenario_combat_ter_frigate']/macros">
+    <shield macro="ishield_ter_m_frigate_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
 
 </diff>

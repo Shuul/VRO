@@ -33,6 +33,8 @@
             <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../con_shieldgen_xl_4" optional="1" />
             <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../con_shieldgen_xl_5" optional="1" />
             <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../con_shieldgen_xl_6" optional="1" />
+            <shield macro="ishield_xen_xl_carrier_01_a_macro" path="../con_ishield_01" optional="1" />
+
             <weapon macro="weapon_gen_l_waver_macro" path="../con_l_weapon_1" optional="1" />
           </macros>
           <groups>
@@ -56,9 +58,6 @@
         <macro ref="cockpit_gen_invisible_01_macro" connection="ship" />
       </connection> 
 
-      <connection ref="con_ishield_01">
-        <macro ref="ishield_xen_xl_carrier_01_a_macro" connection="ParentConnection" />
-      </connection>
       <connection ref="con_shipstorage_01">
         <macro ref="shipstorage_gen_s_cap58_macro" connection="object" />
       </connection>

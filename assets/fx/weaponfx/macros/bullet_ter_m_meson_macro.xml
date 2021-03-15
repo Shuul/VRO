@@ -4,18 +4,18 @@
   <macro name="bullet_ter_m_meson_macro" class="bullet">
     <component ref="bullet_ter_m_beam_01_mk2" />
     <properties>
-      <bullet speed="15000" lifetime="2.5" range="5500" amount="1" barrelamount="1" icon="weapon_beam_mk2" maxhits="3" ricochet="0" scale="1" attach="1">
+      <bullet speed="15000" lifetime="2.5" range="6000" amount="1" barrelamount="1" icon="weapon_beam_mk2" maxhits="3" ricochet="0" scale="1" attach="1">
         <damagecurves>
           <distance>
             <point position="0" value="1" />
             <point position="0.7" value="1" />
-            <point position="1" value="0.1" />
+            <point position="1" value="0.3" />
           </distance>
         </damagecurves>
       </bullet>
-      <heat value="5000" />
+      <heat value="2000" />
       <reload time="4.5" />
-      <damage value="11000" shield="-4000" repair="0" />
+      <damage value="8000" shield="-2500" repair="0" />
       <effects>
         <impact ref="impact_gen_m_beam_01_mk1" inside="impact_gen_m_beam_01_mk1_inside" />
         <bigobjectimpact ref="impact_gen_m_beam_01_mk1_bigobject" inside="impact_gen_m_beam_01_mk1_bigobject_inside" />

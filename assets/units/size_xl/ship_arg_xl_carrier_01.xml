@@ -1,6 +1,6 @@
 <diff>
 <add sel="//components/component/connections">
- <connection name="con_ishield_01" tags="ishield">
+  <connection name="con_ishield_01" tags="ishield shield mandatory ishield_arg_xl_carrier_01_a">
   <offset>
    <position x="0" y="0" z="0"/>
      <quaternion qx="0" qy="0" qz="0" qw="0"/>
@@ -8,7 +8,7 @@
  </connection>
 </add>
 <replace sel="//components/component/connections/connection[@name='con_turret_l_001']">
-  <connection name="con_turret_l_001" group="group_up_mid_mid " tags="turret large standard highpower missile ">
+  <connection name="con_turret_l_001" group="group_up_mid_mid " tags="turret large standard highpower argonly missile ">
     <offset>
       <position x="0" y="159.3311" z="-242.3653"/>
     </offset>

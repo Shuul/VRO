@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <macros>
+      <macro name="turret_ter_l_rotorypulse_macro" class="turret">
+        <component ref="turret_ter_l_gatling_01_mk1" />
+        <properties>
+          <identification name="{6699,15171}" basename="{6699,15172}" shortname="{6699,15173}" makerrace="terran" description="{6699,15174}" />
+          <bullet class="bullet_ter_turret_l_rotorypulse_macro" />
+          <rotationspeed max="30" />
+          <reload />
+          <hull max="26000" threshold="0.2" />
+          <sounds>
+            <firing ref="wpn_ter_rotory_shoot" />
+          </sounds>
+        </properties>
+      </macro>
+    </macros>

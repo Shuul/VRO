@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="turret_ter_l_gatling_01_mk1_macro" class="turret">
+        <component ref="turret_ter_l_gatling_01_mk1" />
+        <properties>
+          <identification name="{6699,15111}" basename="{6699,15112}" shortname="{6699,15113}" makerrace="terran" description="{6699,15114}" />
+          <bullet class="bullet_ter_turret_l_empc_macro" />
+          <rotationspeed max="20" />
+          <reload />
+          <hull max="26000" threshold="0.2" />
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>
+<!-- <macros>
+  <macro name="turret_ter_l_gatling_01_mk1_macro" class="turret">
+    <component ref="turret_ter_l_gatling_01_mk1" />
+    <properties>
+      <identification name="{20105,5344}" basename="{20105,5341}" shortname="{20105,5345}" makerrace="terran" description="{20105,5342}" mk="1" />
+      <bullet class="bullet_ter_turret_l_gatling_01_mk1_macro" />
+      <rotationspeed max="20" />
+      <reload />
+      <hull max="3600" threshold="0.2" />
+    </properties>
+  </macro>
+</macros> -->

@@ -37,6 +37,8 @@
             <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../connection_shieldgen_external03" optional="1" />
             <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../connection_shieldgen_external04" optional="1" />
             <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../connection_shieldgen_external05" optional="1" />
+            <shield macro="ishield_xen_xl_carrier_01_a_macro" path="../con_ishield_01" optional="1" />
+
           </macros>
           <groups>
             <shields macro="shield_xen_m_standard_02_mk2_macro" path=".." group="group01" exact="1" optional="1" />
@@ -90,9 +92,6 @@
     <connections>
       <connection ref="connection_cockpit">
         <macro ref="cockpit_gen_invisible_01_macro" connection="ship" />
-      </connection>
-      <connection ref="con_ishield_01">
-        <macro ref="ishield_xen_xl_carrier_01_a_macro" connection="ParentConnection" />
       </connection>
     </connections>
   </macro>

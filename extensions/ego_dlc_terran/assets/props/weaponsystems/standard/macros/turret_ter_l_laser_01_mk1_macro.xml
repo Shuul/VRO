@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="turret_ter_l_laser_01_mk1_macro" class="turret">
+        <component ref="turret_ter_l_laser_01_mk1" />
+        <properties>
+          <identification name="{6699,15091}" basename="{6699,15092}" shortname="{6699,15093}" makerrace="terran" description="{6699,15094}"  />
+          <bullet class="bullet_ter_turret_l_psc_macro" />
+          <rotationspeed max="12" />
+          <reload />
+          <hull max="26000" threshold="0.2" />
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>
+<!-- <macros>
+  <macro name="turret_ter_l_laser_01_mk1_macro" class="turret">
+    <component ref="turret_ter_l_laser_01_mk1" />
+    <properties>
+      <identification name="{20105,5334}" basename="{20105,5331}" shortname="{20105,5335}" makerrace="terran" description="{20105,5332}" mk="1" />
+      <bullet class="bullet_ter_turret_l_laser_01_mk1_macro" />
+      <rotationspeed max="20" />
+      <reload />
+      <hull max="3600" threshold="0.2" />
+    </properties>
+  </macro>
+</macros> -->

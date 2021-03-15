@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="turret_ter_m_guided_01_mk1_macro" class="missileturret" alias="turret_ter_m_guided_02_mk1_macro">
+        <component ref="turret_ter_m_guided_01_mk1" />
+        <properties>
+          <identification name="{20105,4914}" basename="{20105,4911}" shortname="{20105,4915}" makerrace="terran" description="{20105,4912}"  />
+          <ammunition tags="lguided mguided" />
+          <bullet class="missile_poltergeist_macro" />
+          <rotationspeed max="70" />
+          <reload />
+          <storage capacity="10" />
+          <hull integrated="1" />
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>

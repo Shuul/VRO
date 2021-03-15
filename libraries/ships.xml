@@ -189,6 +189,20 @@
 	</ship>
 </add>
 
+<!-- ############################# -->
+<!--    TERRANS-->
+<!-- ############################# -->
+
+<add sel="//ships">
+	<ship id="terran_lightcarrier_l" group="ter_lightcarrier_l">
+		<category tags="[military, carrier, mission]" faction="[terran, pioneers]" size="ship_l"/>
+		<pilot>
+		  <select faction="terran" tags="fighterpilot"/>
+		</pilot>
+		<drop ref="ship_large_military"/>
+		<people ref="terran_military_crew"/>
+	  </ship>
+	</add>
 
 <!-- ############################# -->
 <!--    Xenons-->

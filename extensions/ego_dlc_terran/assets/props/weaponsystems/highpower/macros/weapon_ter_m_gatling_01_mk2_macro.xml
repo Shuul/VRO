@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="weapon_ter_m_gatling_01_mk2_macro" class="weapon">
+        <component ref="weapon_ter_m_gatling_01_mk2" />
+        <properties>
+          <identification name="{6699,15051}" basename="{6699,15052}" shortname="{6699,15053}" makerrace="terran" description="{6699,15054}" />
+          <bullet class="bullet_ter_m_barrage_macro" />
+          <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+          <rotationspeed max="70" />
+          <rotationacceleration max="35" />
+          <reload />
+          <hull max="1000" hittable="0" />
+          <effects>
+            <firing start="startshooting_ter_m_gatling_01_mk1" stop="stopshooting_ter_m_gatling_01_mk1" />
+          </effects>
+        </properties>
+      </macro>
+    </macros>
+    
+  </replace>
+</diff>
+
+<!-- <macros>
+  <macro name="weapon_ter_m_gatling_01_mk2_macro" class="weapon">
+    <component ref="weapon_ter_m_gatling_01_mk2" />
+    <properties>
+      <identification name="{20105,2394}" basename="{20105,2391}" shortname="{20105,2395}" makerrace="terran" description="{20105,2392}" mk="2" />
+      <bullet class="bullet_ter_m_gatling_01_mk2_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+      <rotationspeed max="70" />
+      <rotationacceleration max="35" />
+      <reload />
+      <hull max="1000" hittable="0" />
+      <effects>
+        <firing start="startshooting_ter_m_gatling_01_mk1" stop="stopshooting_ter_m_gatling_01_mk1" />
+      </effects>
+    </properties>
+  </macro>
+</macros> -->

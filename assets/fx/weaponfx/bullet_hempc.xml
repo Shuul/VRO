@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<components>
+	<component name="bullet_hempc" class="bullet">
+		<source geometry="assets\fx\weaponFx\bullet_arg_l_laser_01_mk1_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<box name="XU BoxLight24" shadow="0" r="165" g="238" b="254" lighteffect="1" lenseffect="fa" trigger="1" intensity="3" specularintensity="1">
+						<size x="200" y="100" z="100"/>
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="-41.5267"/>
+							<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
+						</offset>
+					</box>
+				</lights>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="bullet">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part animation  ">
+				<offset>
+					<position x="0" y="1.700214E-02" z="-0.4778519"/>
+				</offset>
+				<animations>
+					<animation name="loop" start="1" end="100"/>
+				</animations>
+				<parts>
+					<part name="part_bullet">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.bullets_fx_master_noscaling"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="50.31646" y="50.31646" z="115.2381"/>
+							<center x="0" y="3.784895E-06" z="-112.1623"/>
+						</size>
+						<size_raw>
+							<max x="50.28078" y="50.28078" z="115.2381"/>
+							<center x="2.432442E-02" y="-2.612689E-02" z="-112.1623"/>
+						</size_raw>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection02" tags="part iklink animation textureanimation  " parent="part_bullet">
+				<animations>
+					<animation name="loop" start="1" end="50"/>
+				</animations>
+				<parts>
+					<part name="part_shockwave">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="effects.bullets_fx_master_multilayer_noscaling"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="19.99118" y="19.99118" z="53.20654"/>
+							<center x="0" y="-2.980232E-08" z="-50.83426"/>
+						</size>
+						<size_raw>
+							<max x="19.93478" y="19.92711" z="104.0408"/>
+							<center x="2.111244E-02" y="2.878663E-02" z="-50.83426"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="3">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="50" value="-2"/>
+								</uv_property>
+							</uv_animation>
+							<uv_animation mapchannel="2">
+								<uv_property name="v_offset" controller="linear_float">
+									<key frame="0" value="-0"/>
+									<key frame="50" value="4"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part nocollision  ">
+				<offset>
+					<position x="0" y="0" z="-0.383873"/>
+				</offset>
+				<parts>
+					<part name="fx_distortion">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1effects.p1_bullet_distortion_01"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="50" y="50" z="1.938324E-02"/>
+							<center x="0" y="0" z="-1.938105E-02"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection_Laser01" tags="laser">
+				<offset>
+					<position x="0" y="0" z="-84"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

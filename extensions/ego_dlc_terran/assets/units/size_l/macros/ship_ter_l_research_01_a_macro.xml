@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="ship_ter_l_research_01_a_macro" class="ship_l">
+        <component ref="ship_ter_l_research_01" />
+        <properties>
+          <identification name="{20101,63602}" basename="{20101,63601}" makerrace="terran" description="{20101,63612}" variation="{20111,1301}" shortvariation="{20111,1303}" icon="ship_l_trade_01" />
+          <explosiondamage value="8000" />
+          <storage missile="30" unit="10" />
+          <hull max="60000" />
+          <effects>
+            <longrangescan ref="scfx_result_special_01" />
+          </effects>
+          <secrecy level="1" />
+          <purpose primary="trade" />
+          <people capacity="57" />
+          <physics mass="290">
+            <inertia pitch="114" yaw="114" roll="105" />
+            <drag forward="70" reverse="290" horizontal="140" vertical="140" pitch="135" yaw="135" roll="135" />
+          </physics>
+          <thruster tags="large" />
+          <ship type="freighter" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="bridge_ter_l_01_macro" connection="con_cockpit" />
+          </connection>
+          <connection ref="con_dockarea_arg_s_ship_01">
+            <macro ref="dockarea_arg_s_ship_01_hightech_macro" connection="Connection01" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_shipstorage02">
+            <macro ref="shipstorage_gen_s_cap8_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_ter_l_trans_container_01_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    </macros>
+  </replace>
+</diff>

@@ -525,6 +525,82 @@
 		</subordinates>
 	  </job>
 
+  <!-- ############################# -->
+  <!--      TERRANS				      -->
+  <!-- ############################# -->
+
+  <job id="terran_lightcarrier_patrol_l" name="{20204,3201}">
+	<modifiers commandeerable="true"/>
+	<orders>
+	  <order order="Patrol" default="true">
+		<param name="range" value="class.zone"/>
+	  </order>
+	</orders>
+	<category faction="terran" tags="[factionlogic, military, carrier]" size="ship_l"/>
+	<quota galaxy="6" sector="1"/>
+	<location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="exact" matchextension="false"/>
+	<environment buildatshipyard="true"/>
+	<ship>
+	  <select faction="terran" tags="[military, carrier]" size="ship_l"/>
+	  <loadout>
+		<level exact="1.0"/>
+	  </loadout>
+	  <owner exact="terran" overridenpc="true"/>
+	</ship>
+	<subordinates>
+		<subordinate job="terran_escort_s_lightcarrier"/>
+		<subordinate job="terran_corvette_escort_m"/>
+	</subordinates>
+  </job>
+
+  <job id="terran_escort_s_lightcarrier" name="{20204,2901}" startactive="false">
+	<orders>
+	  <order order="Escort" default="true">
+		<param name="formation" value="formationshape.pointguard"/>
+		<param name="overrideformationskill" value="true"/>
+	  </order>
+	</orders>
+	<category faction="terran" tags="[military, fighter]" size="ship_s"/>
+	<quota wing="3"/>
+	<location class="galaxy" macro="xu_ep2_universe_macro"/>
+	<environment buildatshipyard="true"/>
+	<modifiers subordinate="true"/>
+	<ship>
+	  <select faction="terran" tags="[military, fighter, heavy]" size="ship_s"/>
+	  <loadout>
+		<level exact="0.7"/>
+	  </loadout>
+	  <owner exact="terran" overridenpc="true"/>
+	</ship>
+	<subordinates>
+	  <subordinate job="terran_fighter_escort_s_carrier_wing"/>
+	</subordinates>
+  </job>
+<!-- PIONEERS -->
+  <job id="pioneers_lightcarrier_patrol_l" name="{20204,3201}">
+	<modifiers commandeerable="true"/>
+	<orders>
+	  <order order="Patrol" default="true">
+		<param name="range" value="class.zone"/>
+	  </order>
+	</orders>
+	<category faction="pioneers" tags="[factionlogic, military, carrier]" size="ship_l"/>
+	<quota galaxy="6" sector="1"/>
+	<location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="exact" matchextension="false"/>
+	<environment buildatshipyard="true"/>
+	<ship>
+	  <select faction="pioneers" tags="[military, carrier]" size="ship_l"/>
+	  <loadout>
+		<level exact="1.0"/>
+	  </loadout>
+	  <owner exact="pioneers" overridenpc="true"/>
+	</ship>
+	<subordinates>
+		<subordinate job="pioneers_fighter_escort_s"/>
+		<subordinate job="pioneers_fighter_escort_s"/>
+		<subordinate job="pioneers_corvette_escort_m"/>
+	</subordinates>
+  </job>
 
   <!-- ############################# -->
   <!--      PIRATE SHIPS		      -->
@@ -733,6 +809,32 @@
 			<loadout>
 							<level min="0.8" max="1.0"/>
 			</loadout>  </replace>
+<!-- terran -->
+<replace sel="//jobs/job[@id='terran_destroyer_patrol_l_mobile_pack']/ship/loadout">
+	<loadout>
+	<level min="0.8" max="1.0"/>
+	</loadout>  
+</replace>
+<replace sel="//jobs/job[@id='terran_destroyer_patrol_l_comp']/ship/loadout">
+	<loadout>
+	<level min="0.4" max="1.0"/>
+	</loadout>  
+</replace>
+<replace sel="//jobs/job[@id='terran_destroyer_escort_l']/ship/loadout">
+	<loadout>
+	<level min="0.4" max="1.0"/>
+	</loadout>  
+</replace>
+<replace sel="//jobs/job[@id='terran_destroyer_escort_l_noescort']/ship/loadout">
+	<loadout>
+	<level min="0.4" max="1.0"/>
+	</loadout>  
+</replace>
+<replace sel="//jobs/job[@id='pioneers_destroyer_patrol_l_comp']/ship/loadout">
+	<loadout>
+	<level min="0" max="1.0"/>
+	</loadout>  
+</replace>
 
 <!-- court -->
 <replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/ship/loadout">
@@ -815,5 +917,54 @@
     <quota galaxy="10" cluster="4"/>
   </replace>
 
-	
+  <!-- reserve XENON JOBS, cannot be commandeered, 1 per xenon sector -->
+<add sel="//jobs">
+  <job id="xenon_free_miner_m_mineral_reserve" name="{20204,1901}">
+    <modifiers rebuild="true" commandeerable="false"/>
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="2"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="2"/>
+      </order>
+    </orders>
+    <basket basket="minerals_xenon"/>
+    <category faction="xenon" tags="[miner]" size="ship_m"/>
+    <quota galaxy="16" maxgalaxy="16" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="member" comparison="ge" regionbasket="minerals_xenon" matchextension="false"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="xenon" tags="[miner, solid]" size="class.ship_m"/>
+      <owner exact="xenon" overridenpc="true"/>
+      <cargo>
+        <wares>
+          <fillpercent min="0" max="100" profile="inversebell"/>
+        </wares>
+      </cargo>
+    </ship>
+  </job>
+
+  <job id="xenon_free_trader_m_energy_reserve" name="{20204,4801}">
+    <modifiers rebuild="true" commandeerable="false"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="2"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="2"/>
+      </order>
+    </orders>
+    <basket basket="energycells"/>
+    <category faction="xenon" tags="[freighter, trader]" size="ship_m"/>
+    <quota galaxy="16" maxgalaxy="16" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="member" comparison="ge" matchextension="false"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <!-- use miner ship for energy transport -->
+      <select faction="xenon" tags="[miner, solid]" size="class.ship_m"/>
+      <owner exact="xenon" overridenpc="true"/>
+    </ship>
+  </job>
+</add>
 </diff>

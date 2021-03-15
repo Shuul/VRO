@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<diff>
+	<!-- <replace sel="//components/component/connections/connection[@name='WeaponCon_01']">
+	<connection name="WeaponCon_01" tags="component weapon medium standard ">
+					<offset/>
+	</connection>
+	</replace> -->
+	</diff>
+
+<!-- <?xml version="1.0"?>
+<components>
+	<component name="weapon_atf_xl_battleship_01_mk1" class="weapon">
+		<source geometry="extensions\ego_dlc_terran\assets\props\weaponsystems\capital\weapon_atf_xl_battleship_01_mk1_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="Connection01" tags="part animation nocollision forceoutline ">
+				<offset>
+					<position x="1.193923E-04" y="0.1447613" z="682.8444"/>
+				</offset>
+				<animations>
+					<animation name="gun_firing" start="0" end="100"/>
+				</animations>
+				<parts>
+					<part name="anim_heat">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1effects.p1_gradient_colour"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="12.99807" y="2.81453" z="217.8018"/>
+							<center x="-1.193923E-04" y="-0.1461816" z="0"/>
+						</size>
+						<size_raw>
+							<max x="12.99807" y="2.81453" z="217.8018"/>
+							<center x="-1.193923E-04" y="-0.1461816" z="0"/>
+						</size_raw>
+						<uv_animations>
+							<uv_animation mapchannel="1">
+								<uv_property name="u_offset" controller="linear_float">
+									<key frame="0" value="0"/>
+									<key frame="95" value="-0.35"/>
+									<key frame="100" value="-1"/>
+								</uv_property>
+								<uv_property name="v_offset" controller="bezier_float">
+									<key frame="0" value="-0" in_tangent_type="auto" out_tangent_type="auto"/>
+									<key frame="15" value="-0.12" in_tangent_type="auto" out_tangent_type="auto"/>
+									<key frame="95" value="-0.16" in_tangent_type="auto" out_tangent_type="auto"/>
+								</uv_property>
+							</uv_animation>
+						</uv_animations>
+						<lights>
+							<box name="XU BoxLight01" shadow="0" r="255" g="255" b="0" lighteffect="1" trigger="1" intensity="0" specularintensity="1">
+								<size x="600" y="100" z="100"/>
+								<lightanimations>
+									<lightanimation name="intensity" controller="linear_float">
+										<key frame="0" value="0"/>
+										<key frame="100" value="0"/>
+									</lightanimation>
+									<lightanimation name="color" controller="bezier_color">
+										<key frame="0" r="255" g="255" b="0"/>
+										<key frame="10" r="255" g="255" b="0"/>
+										<key frame="100" r="255" g="0" b="0"/>
+									</lightanimation>
+								</lightanimations>
+								<offset>
+									<position x="-6.397895E-07" y="0" z="18.97559"/>
+									<quaternion qx="-0" qy="0.7071069" qz="-0" qw="-0.7071066"/>
+								</offset>
+							</box>
+						</lights>
+					</part>
+				</parts>
+				<waypoints/>
+			</connection>
+			<connection name="Connection02" tags="part detail_s nocollision forcoutline  ">
+				<offset>
+					<position x="-1.907349E-06" y="14.32639" z="383.0051"/>
+				</offset>
+				<parts>
+					<part name="detail_s_gun">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="p1terran.ter_p1_fx_01"/>
+									<material id="3" ref="generic.generic_p1_fx"/>
+									<material id="4" ref="generic.generic_p1_alphatexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="33.46441" y="16.05454" z="375.2201"/>
+							<center x="1.907349E-06" y="0" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection03" tags="part detail_xs nocollision forceoutine  ">
+				<offset>
+					<position x="0" y="7.629395E-06" z="459.8223"/>
+				</offset>
+				<parts>
+					<part name="detail_xs_gun">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_fx"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+									<material id="3" ref="generic.generic_p1_alphatexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="62.57116" y="32.08437" z="450.7917"/>
+							<center x="0" y="0" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection04" tags="part  ">
+				<offset>
+					<position x="0" y="9.536743E-06" z="442.1818"/>
+				</offset>
+				<parts>
+					<part name="part_main">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="p1terran.ter_p1_fx_01"/>
+									<material id="3" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="p1terran.ter_p1_fx_01"/>
+									<material id="3" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="p1terran.ter_p1_fx_01"/>
+									<material id="3" ref="generic.generic_p1_fx"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="82.90949" y="49.32593" z="471.287"/>
+							<center x="0" y="-1.907349E-06" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="con_weapon_01" tags="component weapon mandatory extralarge standard atf_battleship_01 ">
+				<offset/>
+			</connection>
+			<connection name="Con_laser01" tags="laser ">
+				<offset>
+					<position x="0" y="0" z="508.567"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components> -->

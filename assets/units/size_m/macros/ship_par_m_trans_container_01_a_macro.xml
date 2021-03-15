@@ -26,7 +26,7 @@
       <people capacity="19" />
       <physics mass="44.808">
         <inertia pitch="8.7" yaw="8.7" roll="8.7" />
-        <drag forward="5.1" reverse="19.2" horizontal="29.2" vertical="29.2" pitch="15.1" yaw="15.1" roll="15.1" />
+        <drag forward="5.3" reverse="19.2" horizontal="29.2" vertical="29.2" pitch="15.1" yaw="15.1" roll="15.1" />
       </physics>
       <thruster tags="medium" />
       <ship type="transporter" />
@@ -44,9 +44,6 @@
       </connection>
       <connection ref="con_storage01">
         <macro ref="storage_par_m_trans_container_01_a_macro" connection="ShipConnection" />
-      </connection>
-      <connection ref="con_ishield_01">
-        <macro ref="ishield_par_m_trans_container_01_a_macro" connection="ParentConnection" />
       </connection>
     </connections>
   </macro>

@@ -3,11 +3,32 @@
 <replace sel="//parameters/lowattentioncombat"> 
   <!-- VRO approach -->
   <lowattentioncombat>
-    <attack hitchance="0.7" missmultiplier="0.5" firingarea="36000000" laserweaponfactor="0.55" missileweaponfactor="0.8" turretfactor="0.55" dronebulletfactor="0.1" dronemissilefactor="0.1" minspeed="40" surfaceelementchance="0.15" surfaceelementfactor="0.5" shieldgeneratorchance="0.2" missilehitfactor="0.4" guidedmissilehitfactor="0.8" bullethitfactor="0.5" beamhitfactor="0.9" />
-    <defence maneouverfactor="0.6" minspeed="160" maxsize="400.0" sizefactor="0.7" capshipfactor="1.5" countermeasurefactor="0.7" dronedistractionfactor="0.002" dronedamageamount="20000"/>
+    <attack hitchance="0.75" missmultiplier="0.4" firingarea="36000000" laserweaponfactor="0.65" missileweaponfactor="0.8" turretfactor="0.6" dronebulletfactor="0.1" dronemissilefactor="0.1" minspeed="40" surfaceelementchance="0.15" surfaceelementfactor="0.5" shieldgeneratorchance="0.2" missilehitfactor="0.4" guidedmissilehitfactor="0.8" bullethitfactor="0.5" beamhitfactor="0.9" />
+    <defence maneouverfactor="0.63" minspeed="200" maxsize="400.0" sizefactor="0.65" capshipfactor="2.0" countermeasurefactor="0.7" dronedistractionfactor="0.002" dronedamageamount="20000"/>
   </lowattentioncombat>
 </replace>
+
+  <replace sel="//parameters/shipyardupgraderesources">
+    <shipyardupgraderesources>
+      <!-- large ships tend to have more turret and drone capacity, but relatively few front-mounted weapons -->
+      <factor countermeasure="200" drone="120" engine="40" missile="300" mine="200" satellite="200" navbeacon="50" resourceprobe="50" lasertower="200" scanner="20" shield="80" thruster="15" turret="101" weapon="12" />
+    </shipyardupgraderesources>
+  </replace>
+  <replace sel="//parameters/wharfupgraderesources">
+    <wharfupgraderesources>
+      <!-- fewer turrets and drone/missile capacity but a bit more weapons -->
+      <factor countermeasure="100" drone="20" engine="40" missile="100" mine="200" satellite="200" navbeacon="100" resourceprobe="100" lasertower="200" scanner="20" shield="55" thruster="15" turret="20" weapon="35" />
+    </wharfupgraderesources>
+  </replace>
+  
+  <replace sel="//parameters/shipupgraderesources">
+  <shipupgraderesources>
+    <!-- all ships use countermeasures,
+          some ships use drones,
+          not all ships use missiles, but those that do need lots of them.
+          deployables are very situational. don't stock up on a lot of them for general use. -->
+          <factor countermeasure="400" drone="120" missile="150" mine="5" satellite="4" navbeacon="5" resourceprobe="4" lasertower="4" scanner="0" engine="0" shield="0" thruster="0" turret="0" weapon="0"/>
+  </shipupgraderesources>
+</replace>
+
 </diff> 
-<!-- vanilla-like approach -->
-<!-- <attack firingarea="40000000" laserweaponfactor="1.05" missileweaponfactor="1.1" turretfactor="1.0" dronebulletfactor="0.3" dronemissilefactor="0.20" minspeed="170" surfaceelementchance="0.15" surfaceelementfactor="0.7" shieldgeneratorchance="0.35"/>
-<defence maneouverfactor="0.42" minspeed="60" maxsize="180.0" sizefactor="0.4" capshipfactor="1.05" countermeasurefactor="0.7" dronedistractionfactor="0.004" dronedamageamount="18000"/> -->

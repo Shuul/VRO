@@ -5,10 +5,10 @@
   <macro name="bullet_gen_m_isr_macro" class="bullet">
     <component ref="bullet_gen_isr" />
     <properties>
-      <bullet speed="6000" lifetime="1.2" amount="1" barrelamount="1" icon="weapon_plasma_mk2" timediff="0.02" angle="0.1" maxhits="1" ricochet="0" scale="0" attach="0" selfdestruct="0" />
+      <bullet speed="6000" lifetime="1.2" amount="1" barrelamount="1" influencelist="ion_pulse_effect" icon="weapon_plasma_mk2" timediff="0.02" angle="0.1" maxhits="1" ricochet="0" scale="0" attach="0" selfdestruct="0" />
       <heat value="1200" />
       <reload rate="0.45" />
-      <damage value="1375" shield="1705" repair="0" />
+      <damage value="1375" shield="2000" repair="0" />
       <effects>
         <bigobjectimpact ref="impact_gen_m_isr" inside="impact_gen_s_plasma_01_mk1_bigobject_inside" />
         <impact ref="impact_gen_m_isr" inside="impact_gen_s_plasma_01_mk1_inside" />
@@ -18,7 +18,3 @@
     </properties>
   </macro>
 </macros>
-
-  
-  
-  

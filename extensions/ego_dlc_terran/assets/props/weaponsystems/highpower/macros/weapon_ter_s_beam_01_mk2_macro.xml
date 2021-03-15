@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="weapon_ter_s_beam_01_mk2_macro" class="weapon">
+        <component ref="weapon_ter_s_beam_01_mk2" />
+        <properties>
+          <identification name="{6699,15031}" basename="{6699,15032}" shortname="{6699,15033}" makerrace="terran" description="{6699,15034}" />
+          <bullet class="bullet_ter_s_meson_macro" />
+          <heat overheat="10000" cooldelay="0.13" coolrate="500" reenable="2000" />
+          <rotationspeed max="0" />
+          <rotationacceleration max="0" />
+          <reload />
+          <hull max="500" hittable="0" />
+          <effects>
+            <firing start="startshooting_ter_s_beam_01_mk1" stop="stopshooting_ter_s_beam_01_mk1" />
+          </effects>
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>
+<!-- <macros>
+  <macro name="weapon_ter_s_beam_01_mk2_macro" class="weapon">
+    <component ref="weapon_ter_s_beam_01_mk2" />
+    <properties>
+      <identification name="{20105,1374}" basename="{20105,1371}" shortname="{20105,1375}" makerrace="terran" description="{20105,1372}" mk="2" />
+      <bullet class="bullet_ter_s_beam_01_mk2_macro" />
+      <heat overheat="10000" cooldelay="0.13" coolrate="500" reenable="2000" />
+      <rotationspeed max="0" />
+      <rotationacceleration max="0" />
+      <reload />
+      <hull max="500" hittable="0" />
+      <effects>
+        <firing start="startshooting_ter_s_beam_01_mk1" stop="stopshooting_ter_s_beam_01_mk1" />
+      </effects>
+    </properties>
+  </macro>
+</macros> -->

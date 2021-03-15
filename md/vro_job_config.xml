@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <mdscript name="Vro_job_config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" > 
 <cues>
-	<cue name="VROJobDelayedStart100h" version="1">
+	<cue name="VROJobDelayedStart48h" version="1">
 		<conditions>
 			<check_any>
 				<event_game_loaded />
 				<event_cue_signalled cue="md.Setup.Start" />
 			</check_any>
 		</conditions>
-		<delay exact="if (player.age lt 360000) then (360000 - player.age) else 0s"/>
+		<delay exact="if (player.age lt 172800) then (172800 - player.age) else 0s"/>
 		<actions>
-			<debug_text text="'Advanced jobs I started...'" />
+			<debug_text text="'Advanced Xenon jobs started...'" />
 			<set_job_active activate="true" job="'xenon_patrol_xl_u'" />
 		</actions>
     </cue>

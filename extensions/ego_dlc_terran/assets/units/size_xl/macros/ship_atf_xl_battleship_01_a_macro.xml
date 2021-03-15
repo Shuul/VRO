@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="ship_atf_xl_battleship_01_a_macro" class="ship_xl">
+        <component ref="ship_atf_xl_battleship_01" />
+        <properties>
+          <identification name="{20101,66601}" basename="{20101,66601}" makerrace="terran" description="{20101,66611}" icon="ship_xl_battleship" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk2" default="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" compatible="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <explosiondamage value="15000" />
+          <storage missile="1160" unit="20" />
+          <hull max="1055000" />
+          <secrecy level="3" />
+          <purpose primary="fight" />
+          <people capacity="360" />
+          <physics mass="587.388">
+            <inertia pitch="776.311" yaw="776.311" roll="650.249" />
+            <drag forward="133.108" reverse="532.433" horizontal="259.232" vertical="259.232" pitch="790.73" yaw="790.73" roll="790.73" />
+          </physics>
+          <thruster tags="extralarge" />
+          <ship type="battleship" />
+          <radar range="55000" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="bridge_ter_xl_01_macro" connection="con_cockpit" />
+          </connection>
+          <connection ref="con_dockarea_atf_xl_battleship_01">
+            <macro ref="dockarea_atf_xl_battleship_01_macro" connection="Connection01" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_shipstorage_02">
+            <macro ref="shipstorage_gen_s_cap10_macro" connection="object" />
+          </connection>
+          <connection ref="con_shipstorage_03">
+            <macro ref="shipstorage_gen_m_cap4_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage_01">
+            <macro ref="storage_atf_xl_battleship_01_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    </macros>
+  </replace>
+</diff>

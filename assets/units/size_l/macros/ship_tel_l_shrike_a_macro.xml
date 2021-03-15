@@ -23,7 +23,7 @@
       <people capacity="34" />
       <physics mass="235.019">
         <inertia pitch="164.773" yaw="164.773" roll="131.818" />
-        <drag forward="125.741" reverse="578.521" horizontal="104.731" vertical="104.731" pitch="182" yaw="182" roll="175" />
+        <drag forward="130" reverse="578.521" horizontal="104.731" vertical="104.731" pitch="182" yaw="182" roll="175" />
       </physics>
       <thruster tags="large" />
       <ship type="carrier" />
@@ -50,9 +50,6 @@
       </connection>
       <connection ref="con_storage01">
         <macro ref="storage_tel_l_shrike_a_macro" connection="ShipConnection" />
-      </connection>
-      <connection ref="con_ishield_01">
-        <macro ref="ishield_tel_l_shrike_a_macro" connection="ParentConnection" />
       </connection>
       <connection ref="con_buildmodule">
         <macro ref="buildmodule_gen_carrier_macro" connection="object" />
