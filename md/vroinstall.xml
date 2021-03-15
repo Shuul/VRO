@@ -3,7 +3,7 @@
 <mdscript name="Vroinstall">
   <cues>
     <!-- define the current version of the cue -->
-    <cue name="VRO_main" version="8">
+    <cue name="VRO_main" version="9">
       <conditions>
         <check_any>
           <event_cue_signalled cue="md.Setup.GameStart" />
@@ -12,11 +12,11 @@
         </check_any>
       </conditions>
       <actions>
-         <show_help duration="10s" custom="'VRO 2.3 installed.'"/>
+         <show_help duration="10s" custom="'VRO 3.0 installed.'"/>
          <show_help duration="10s" custom="'Please visit Egosoft forum mod thread for mod description and latest VRO patchnotes.'"/>
       </actions>
       <!-- if a cue is running that has a version like sinceversion or older then the patch will be applied -->
-      <patch sinceversion="8">
+      <patch sinceversion="9">
         <!-- simple reset so the sub cue is called again. -->
         <reset_cue cue="this"/>
       </patch>

@@ -8,7 +8,7 @@
 				<event_cue_signalled cue="md.Setup.Start" />
 			</check_any>
 		</conditions>
-		<delay exact="if (player.age lt 172800) then (172800 - player.age) else 0s"/>
+		<delay exact="if (player.age lt 216000) then (216000 - player.age) else 0s"/>
 		<actions>
 			<debug_text text="'Advanced Xenon jobs started...'" />
 			<set_job_active activate="true" job="'xenon_patrol_xl_u'" />

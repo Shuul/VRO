@@ -10,6 +10,10 @@
     </ammunition>
   </replace>
 
+  <add sel="//loadouts/loadout[@id='x4ep1_gamestart_scientist_nodan']/macros">
+      <shield macro="ishield_gen_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
   <replace sel="//loadouts/loadout[@id='scenario_combat_arg_destroyer']/groups">
     <groups>
       <shields macro="shield_arg_m_standard_02_mk2_macro" path=".." group="group_up_mid_mid"/>

@@ -360,19 +360,15 @@
 <!-- TERRAN CHANGES__________
 _________________
 __________________ -->
-
-<replace sel="//wares/ware[@id='ship_atf_l_destroyer_01_a']/@tags">ship</replace>
-<replace sel="//wares/ware[@id='ship_atf_xl_battleship_01_a']/@tags">ship</replace>
-
 <remove sel="//wares/ware[@id='weapon_ter_s_gatling_01_mk1']"/> 
 <remove sel="//wares/ware[@id='weapon_ter_s_beam_01_mk1']"/> 
 <remove sel="//wares/ware[@id='weapon_ter_m_gatling_01_mk1']"/> 
 <remove sel="//wares/ware[@id='weapon_ter_m_beam_01_mk1']"/> 
 
 <!-- shields licenses -->
-<replace sel="//wares/ware[@id='shield_ter_l_standard_01_mk2']/@restriction"><restriction licence="militaryequipment" /></replace>
-<replace sel="//wares/ware[@id='shield_ter_l_standard_01_mk3']/@restriction"><restriction licence="capitalequipment" /></replace>
-<replace sel="//wares/ware[@id='shield_ter_xl_standard_01_mk2']/@restriction"><restriction licence="capitalequipment" /></replace>
+<replace sel="//wares/ware[@id='shield_ter_l_standard_01_mk2']/restriction"><restriction licence="militaryequipment" /></replace>
+<replace sel="//wares/ware[@id='shield_ter_l_standard_01_mk3']/restriction"><restriction licence="capitalequipment" /></replace>
+<replace sel="//wares/ware[@id='shield_ter_xl_standard_01_mk2']/restriction"><restriction licence="capitalequipment" /></replace>
 
 
 <!-- small weapons -->
@@ -2060,18 +2056,17 @@ __________________ -->
   <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/price">
   <price min="50396" average="60269" max="88141" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="10" />
         <ware ware="energycells" amount="56" />
         <ware ware="weaponcomponents" amount="28" />
   </primary>
   </replace>
-
   <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/price">
   <price min="70964" average="81960" max="91955" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/production/primary">
+    <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="11" />
         <ware ware="energycells" amount="58" />
@@ -2082,7 +2077,7 @@ __________________ -->
   <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']/price">
     <price min="22175" average="29290" max="26404" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']/production/primary">
+    <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="2" />
         <ware ware="energycells" amount="13" />
@@ -2093,7 +2088,7 @@ __________________ -->
   <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']/price">
   <price min="35459" average="40704" max="47948" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']/production/primary">
+    <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="3" />
         <ware ware="energycells" amount="20" />
@@ -2105,7 +2100,7 @@ __________________ -->
   <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1']/price">
   <price min="116396" average="132269" max="148141" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1']/production/primary">
+    <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="8" />
         <ware ware="energycells" amount="50" />
@@ -2116,7 +2111,7 @@ __________________ -->
   <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/price">
   <price min="143964" average="164960" max="190955" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/production/primary">
+    <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="11" />
         <ware ware="energycells" amount="60" />
@@ -2127,7 +2122,7 @@ __________________ -->
    <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk1']/price">
     <price min="44175" average="51290" max="58404" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk1']/production/primary">
+    <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk1']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="3" />
         <ware ware="energycells" amount="13" />
@@ -2138,7 +2133,7 @@ __________________ -->
   <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/price">
   <price min="58459" average="66704" max="72948" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/production/primary">
+    <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="15" />
@@ -2150,7 +2145,7 @@ __________________ -->
   <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/price">
   <price min="136396" average="152269" max="168141" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/production/primary">
+    <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="8" />
         <ware ware="energycells" amount="50" />
@@ -2161,7 +2156,7 @@ __________________ -->
   <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/price">
   <price min="153964" average="174960" max="195113" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/production/primary">
+    <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="11" />
         <ware ware="energycells" amount="60" />
@@ -2172,7 +2167,7 @@ __________________ -->
    <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/price">
     <price min="72175" average="88290" max="95404" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/production/primary">
+    <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="2" />
         <ware ware="energycells" amount="15" />
@@ -2186,7 +2181,7 @@ __________________ -->
   <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk2']/price">
   <price min="98459" average="105704" max="118948" />
   </replace>
-    <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk2']/production/primary">
+    <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk2']/production[@method='default']/primary">
   <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="18" />
@@ -2221,7 +2216,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk1']/price">
   <price min="37277" average="42361" max="47444" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk1']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="1" />
         <ware ware="energycells" amount="6" />
@@ -2236,7 +2231,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk2']/price">
   <price min="48655" average="55290" max="61924" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk2']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_s_beam_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="2" />
         <ware ware="energycells" amount="8" />
@@ -2247,7 +2242,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk1']/price">
   <price min="39037" average="44361" max="49684" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk1']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="1" />
         <ware ware="energycells" amount="6" />
@@ -2262,7 +2257,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk2']/price">
   <price min="52175" average="59290" max="66404" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk2']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="2" />
         <ware ware="energycells" amount="8" />
@@ -2273,7 +2268,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_laser_01_mk1']/price">
   <price min="25660" average="29160" max="32659" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_laser_01_mk1']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_s_laser_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="1" />
         <ware ware="energycells" amount="4" />
@@ -2284,7 +2279,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_laser_01_mk2']/price">
   <price min="32927" average="37418" max="41908" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_laser_01_mk2']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_s_laser_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="1" />
         <ware ware="energycells" amount="5" />
@@ -2295,7 +2290,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk1']/price">
   <price min="86739" average="98568" max="110396" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk1']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="16" />
@@ -2307,7 +2302,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk2']/price">
   <price min="90915" average="102722" max="115528" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk2']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_s_plasma_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="15" />
@@ -2319,7 +2314,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk1']/price">
   <price min="51985" average="59074" max="66162" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk1']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="3" />
         <ware ware="energycells" amount="13" />
@@ -2330,7 +2325,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk2']/price">
   <price min="83635" average="95040" max="106444" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk2']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_s_shotgun_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="5" />
         <ware ware="energycells" amount="18" />
@@ -2366,7 +2361,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk1']/price">
   <price min="97095" average="110336" max="123576" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk1']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="8" />
         <ware ware="energycells" amount="33" />
@@ -2377,7 +2372,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk2']/price">
   <price min="126502" average="143753" max="161003" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk2']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_m_beam_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="11" />
         <ware ware="energycells" amount="43" />
@@ -2388,7 +2383,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_m_gatling_01_mk1']/price">
   <price min="104135" average="118336" max="132536" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_m_gatling_01_mk1']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_m_gatling_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="8" />
         <ware ware="energycells" amount="33" />
@@ -2399,7 +2394,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_m_gatling_01_mk2']/price">
   <price min="135302" average="153753" max="172203" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_m_gatling_01_mk2']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_m_gatling_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="11" />
         <ware ware="energycells" amount="43" />
@@ -2410,7 +2405,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_m_laser_01_mk1']/price">
   <price min="98827" average="112304" max="125780" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_m_laser_01_mk1']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_m_laser_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="8" />
         <ware ware="energycells" amount="31" />
@@ -2421,7 +2416,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_m_laser_01_mk2']/price">
   <price min="117361" average="133365" max="149368" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_m_laser_01_mk2']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_m_laser_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="9" />
         <ware ware="energycells" amount="37" />
@@ -2432,7 +2427,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk1']/price">
   <price min="174653" average="198470" max="222286" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk1']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="14" />
         <ware ware="energycells" amount="56" />
@@ -2443,7 +2438,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk2']/price">
   <price min="187953" average="213583" max="239212" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk2']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_m_plasma_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="15" />
         <ware ware="energycells" amount="60" />
@@ -2454,7 +2449,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/price">
   <price min="130990" average="148853" max="166715" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="14" />
         <ware ware="energycells" amount="56" />
@@ -2465,7 +2460,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/price">
   <price min="153964" average="174960" max="195955" />
 </replace>
-<replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/production/primary">
+<replace sel="//wares/ware[@id='weapon_gen_m_shotgun_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="20" />
         <ware ware="energycells" amount="82" />
@@ -2477,7 +2472,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk1']/price">
   <price min="56300" average="60645" max="65700" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk1']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="2" />
         <ware ware="energycells" amount="8" />
@@ -2497,7 +2492,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk2']/price">
   <price min="103499" average="117613" max="131726" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk2']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_gen_s_cannon_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="5" />
         <ware ware="energycells" amount="19" />
@@ -2517,7 +2512,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk1']/price">
   <price min="158827" average="162304" max="175780" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk1']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="12" />
         <ware ware="energycells" amount="53" />
@@ -2528,7 +2523,7 @@ __________________ -->
    <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk2']/price">
   <price min="202953" average="233583" max="255212" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk2']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_par_m_railgun_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="14" />
         <ware ware="energycells" amount="58" />
@@ -2539,7 +2534,7 @@ __________________ -->
    <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk1']/price">
   <price min="69231" average="75231" max="82231" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk1']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="3" />
         <ware ware="energycells" amount="10" />
@@ -2550,7 +2545,7 @@ __________________ -->
    <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk2']/price">
   <price min="93915" average="121722" max="144528" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk2']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_par_s_railgun_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="4" />
         <ware ware="energycells" amount="15" />
@@ -2561,7 +2556,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_tel_m_charge_01_mk1']/price">
   <price min="107827" average="117304" max="127780" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_tel_m_charge_01_mk1']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_tel_m_charge_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="10" />
         <ware ware="energycells" amount="41" />
@@ -2572,7 +2567,7 @@ __________________ -->
  <replace sel="//wares/ware[@id='weapon_tel_m_charge_01_mk2']/price">
   <price min="175827" average="180304" max="185780" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_tel_m_charge_01_mk2']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_tel_m_charge_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="13" />
         <ware ware="energycells" amount="51" />
@@ -2583,7 +2578,7 @@ __________________ -->
    <replace sel="//wares/ware[@id='weapon_tel_s_charge_01_mk1']/price">
   <price min="50445" average="55445" max="62445" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_tel_s_charge_01_mk1']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_tel_s_charge_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="2" />
         <ware ware="energycells" amount="9" />
@@ -2594,7 +2589,7 @@ __________________ -->
    <replace sel="//wares/ware[@id='weapon_tel_s_charge_01_mk2']/price">
   <price min="75000" average="81000" max="88000" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_tel_s_charge_01_mk2']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_tel_s_charge_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="3" />
         <ware ware="energycells" amount="10" />
@@ -2605,7 +2600,7 @@ __________________ -->
   <replace sel="//wares/ware[@id='weapon_gen_s_burst_01_mk1']/price">
   <price min="35972" average="38972" max="42372" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_burst_01_mk1']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_gen_s_burst_01_mk1']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="1" />
         <ware ware="energycells" amount="5" />
@@ -2621,7 +2616,7 @@ __________________ -->
   <replace sel="//wares/ware[@id='weapon_gen_s_burst_01_mk2']/price">
   <price min="92216" average="100516" max="106328" />
   </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_burst_01_mk2']/production/primary">
+  <replace sel="//wares/ware[@id='weapon_gen_s_burst_01_mk2']/production[@method='default']/primary">
     <primary>
         <ware ware="advancedelectronics" amount="3" />
         <ware ware="energycells" amount="12" />
@@ -4868,6 +4863,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_s_fighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -4878,6 +4874,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_s_fighter_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -4888,6 +4885,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_s_fighter_03_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -4898,6 +4896,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_s_fighter_04_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -4908,6 +4907,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_s_heavyfighter_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -4918,6 +4918,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_s_scout_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -4928,6 +4929,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_s_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -4938,6 +4940,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_s_trans_container_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -4948,6 +4951,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_s_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -4958,6 +4962,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_gen_s_fighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -4969,6 +4974,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_s_fighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -4980,6 +4986,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_s_fighter_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -4991,6 +4998,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_s_scout_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5002,6 +5010,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_s_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5013,6 +5022,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_s_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5024,6 +5034,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_s_fighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5033,6 +5044,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_s_fighter_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5042,6 +5054,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_s_scout_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5051,6 +5064,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_s_scout_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5060,6 +5074,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_s_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5069,6 +5084,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_s_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5078,6 +5094,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_xen_s_fighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="xenon"/>
 </ware>
 
@@ -5085,6 +5102,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_xen_s_fighter_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="xenon"/>
 </ware>
 
@@ -5092,6 +5110,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_m_bomber_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5102,6 +5121,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_m_bomber_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5112,6 +5132,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_m_frigate_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5122,6 +5143,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_m_miner_liquid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5132,6 +5154,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_m_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5142,6 +5165,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_m_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5152,6 +5176,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_m_trans_container_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5162,6 +5187,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_m_corvette_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5173,6 +5199,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_m_frigate_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5184,6 +5211,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_m_miner_liquid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5195,6 +5223,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_m_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5206,6 +5235,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_m_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5217,6 +5247,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_m_trans_container_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5228,6 +5259,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_m_bomber_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5237,6 +5269,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_m_frigate_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5246,6 +5279,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_m_miner_liquid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5255,6 +5289,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_m_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5264,6 +5299,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_m_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5273,6 +5309,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_m_trans_container_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5282,6 +5319,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_m_trans_container_03_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5291,6 +5329,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_xen_m_fighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="xenon"/>
 </ware>
 
@@ -5298,6 +5337,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_xen_m_miner_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="xenon"/>
 </ware>
 
@@ -5305,6 +5345,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_l_centaur_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5315,6 +5356,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_l_destroyer_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5325,6 +5367,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_l_miner_liquid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5335,6 +5378,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_l_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5345,6 +5389,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_l_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5355,6 +5400,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_l_trans_container_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5365,6 +5411,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_l_trans_container_03_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5375,6 +5422,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_l_trans_container_04_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5385,6 +5433,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_l_trans_container_05_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5395,6 +5444,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_l_destroyer_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5406,6 +5456,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_l_miner_liquid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5417,6 +5468,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_l_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5428,6 +5480,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_l_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5439,6 +5492,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_l_trans_container_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5450,6 +5504,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_l_destroyer_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5459,6 +5514,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_l_miner_liquid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5468,6 +5524,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_l_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5477,6 +5534,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_l_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5486,6 +5544,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_l_trans_container_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5495,29 +5554,18 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_xl_builder_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
 <owner faction="buccaneers"/>
-<owner faction="holyorder"/>
-<owner faction="paranid"/>
-<owner faction="trinity"/>
-<owner faction="alliance"/>
-<owner faction="teladi"/>
-<owner faction="ministry"/>
-<owner faction="scaleplate"/>
-<owner faction="split"/>
-<owner faction="freesplit"/>
-<owner faction="court"/>
-<owner faction="fallensplit"/>
-<owner faction="terran"/>
-<owner faction="pioneers"/>
 </ware>
 
 <ware id="ishield_arg_xl_carrier_01_a" name="{6699,13066}" description="{6699,13066}" group="shields" transport="equipment" volume="1" tags="equipment shield">
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_xl_carrier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5528,6 +5576,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_xl_builder_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5539,6 +5588,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_xl_carrier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5550,6 +5600,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_xl_builder_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5559,6 +5610,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_xl_carrier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5568,6 +5620,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_xen_xl_carrier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="xenon"/>
 </ware>
 
@@ -5575,6 +5628,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_xen_xl_destroyer_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="xenon"/>
 </ware>
 
@@ -5582,6 +5636,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_xl_battleship_01_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5592,6 +5647,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_xl_battleship_01_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5603,6 +5659,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_xl_battleship_01_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5612,6 +5669,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_xl_resupplier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5622,6 +5680,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_xl_resupplier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5633,6 +5692,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_xl_resupplier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5642,6 +5702,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_gen_s_fightingdrone_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="scaleplate"/>
 </ware>
 
@@ -5649,6 +5710,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_l_trans_container_03_p_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5659,6 +5721,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_xl_titan_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5669,6 +5732,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_xen_s_scout_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="xenon"/>
 </ware>
 
@@ -5676,6 +5740,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_s_heavyfighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5687,6 +5752,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_s_fighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5697,6 +5763,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_s_fighter_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5707,6 +5774,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_s_fighter_02_b_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5717,6 +5785,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_s_heavyfighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5727,6 +5796,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_s_heavyfighter_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5737,6 +5807,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_s_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5747,6 +5818,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_s_scout_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5757,6 +5829,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_s_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5767,6 +5840,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_m_corvette_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5777,6 +5851,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_m_corvette_01_b_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5787,6 +5862,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_m_frigate_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5797,6 +5873,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_m_miner_liquid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5807,6 +5884,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_m_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5817,6 +5895,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_m_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5827,6 +5906,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_l_destroyer_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5837,6 +5917,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_l_miner_liquid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5847,6 +5928,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_l_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5857,6 +5939,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_l_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5867,6 +5950,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_xl_builder_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5877,6 +5961,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_xl_carrier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5887,6 +5972,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_xl_resupplier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5897,6 +5983,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_xl_battleship_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5907,6 +5994,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_tel_l_shrike_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="teladi"/>
 <owner faction="ministry"/>
 <owner faction="scaleplate"/>
@@ -5916,6 +6004,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_l_panther_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5926,6 +6015,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_sca_l_hound_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="scaleplate"/>
 </ware>
 
@@ -5933,6 +6023,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_arg_l_cyclops_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="antigone"/>
 <owner faction="argon"/>
 <owner faction="hatikvah"/>
@@ -5943,6 +6034,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_par_l_hyperion_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="holyorder"/>
 <owner faction="paranid"/>
 <owner faction="trinity"/>
@@ -5954,6 +6046,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_spl_l_viper_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="split"/>
 <owner faction="freesplit"/>
 <owner faction="court"/>
@@ -5964,6 +6057,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_s_fighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -5972,6 +6066,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_s_fighter_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -5980,6 +6075,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_s_fighter_03_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -5988,6 +6084,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_s_heavyfighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -5996,6 +6093,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_s_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6004,6 +6102,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_s_scout_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6012,6 +6111,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_s_scout_02_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6020,6 +6120,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_s_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6028,6 +6129,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_yak_s_fighter_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="yaki"/>
 </ware>
 
@@ -6035,6 +6137,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_m_corvette_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6043,6 +6146,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_m_frigate_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6051,6 +6155,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_m_gunboat_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6059,6 +6164,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_m_miner_liquid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6067,6 +6173,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_m_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6075,6 +6182,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_m_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6083,6 +6191,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_yak_m_corvette_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="yaki"/>
 </ware>
 
@@ -6090,6 +6199,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_atf_l_destroyer_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6098,6 +6208,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_l_destroyer_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6106,6 +6217,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_l_miner_liquid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6114,6 +6226,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_l_miner_solid_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6122,6 +6235,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_l_trans_container_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6130,6 +6244,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_atf_xl_battleship_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6138,6 +6253,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_xl_builder_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6146,6 +6262,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_xl_carrier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6154,6 +6271,7 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_xl_resupplier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
@@ -6162,11 +6280,10 @@ __________________ -->
   <price min="1" average="1" max="1" />
   <component ref="ishield_ter_l_carrier_01_a_macro" amount="1" />
   <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 <owner faction="terran"/>
 <owner faction="pioneers"/>
 </ware>
-
-
   </add>
 <!-- Vanilla missiles reomoval from being buildable by factions -->
 
