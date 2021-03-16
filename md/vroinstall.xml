@@ -3,7 +3,7 @@
 <mdscript name="Vroinstall">
   <cues>
     <!-- define the current version of the cue -->
-    <cue name="VRO_main" version="9">
+    <cue name="VRO_main" version="10">
       <conditions>
         <check_any>
           <event_cue_signalled cue="md.Setup.GameStart" />
@@ -16,155 +16,94 @@
          <show_help duration="10s" custom="'Please visit Egosoft forum mod thread for mod description and latest VRO patchnotes.'"/>
       </actions>
       <!-- if a cue is running that has a version like sinceversion or older then the patch will be applied -->
-      <patch sinceversion="9">
+      <patch sinceversion="10">
         <!-- simple reset so the sub cue is called again. -->
         <reset_cue cue="this"/>
       </patch>
       <cues>
         <!-- we can place our cue here without conditions, it'll just be run as a subcue after the delay. When the parent cue is being reset, this will be called again. -->
-        <!-- <cue name="VRO_ishields_encyclopedia" instantiate="false">
+        <cue name="VRO_ishields_encyclopedia" instantiate="false">
           <delay exact="10s"/>
           <actions>
             <create_list name="$vro_ishield_ware_list"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_fighter_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_fighter_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_fighter_02_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_fighter_02_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_fighter_03_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_fighter_04_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_heavyfighter_02_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_scout_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_scout_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_trans_container_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_trans_container_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_trans_container_02_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_trans_container_02_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_s_miner_solid_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_gen_s_fighter_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_gen_s_fighter_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_s_fighter_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_s_fighter_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_s_fighter_02_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_s_fighter_02_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_s_scout_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_s_scout_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_s_miner_solid_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_s_trans_container_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_s_trans_container_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_s_fighter_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_s_fighter_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_s_fighter_02_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_s_fighter_02_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_s_scout_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_s_scout_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_s_scout_02_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_s_scout_02_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_s_miner_solid_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_s_trans_container_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_s_trans_container_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_xen_s_fighter_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_xen_s_fighter_02_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_bomber_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_bomber_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_bomber_02_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_frigate_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_frigate_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_miner_liquid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_miner_liquid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_miner_solid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_miner_solid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_trans_container_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_trans_container_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_trans_container_02_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_m_trans_container_02_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_corvette_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_corvette_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_frigate_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_frigate_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_miner_liquid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_miner_liquid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_miner_solid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_miner_solid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_trans_container_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_trans_container_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_trans_container_02_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_m_trans_container_02_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_bomber_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_bomber_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_frigate_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_frigate_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_miner_liquid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_miner_liquid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_miner_solid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_miner_solid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_trans_container_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_trans_container_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_trans_container_02_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_trans_container_02_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_m_trans_container_03_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_xen_m_fighter_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_xen_m_miner_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_centaur_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_centaur_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_destroyer_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_destroyer_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_miner_liquid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_miner_liquid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_miner_solid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_miner_solid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_02_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_02_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_03_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_03_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_04_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_04_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_05_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_05_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_destroyer_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_destroyer_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_miner_liquid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_miner_liquid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_miner_solid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_miner_solid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_trans_container_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_trans_container_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_trans_container_02_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_trans_container_02_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_l_destroyer_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_l_destroyer_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_l_miner_liquid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_l_miner_liquid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_l_miner_solid_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_l_miner_solid_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_l_trans_container_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_l_trans_container_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_l_trans_container_02_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_l_trans_container_02_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_xl_builder_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_xl_builder_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_xl_carrier_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_xl_carrier_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_xl_builder_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_xl_builder_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_xl_carrier_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_xl_carrier_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_xl_builder_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_xl_builder_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_xl_carrier_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_xl_carrier_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_xen_xl_carrier_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_xen_xl_destroyer_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_xl_battleship_01"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_xl_battleship_01"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_xl_battleship_01"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_xl_resupplier_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_xl_resupplier_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_xl_resupplier_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_xl_resupplier_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_xl_resupplier_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_tel_xl_resupplier_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_gen_s_fightingdrone_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_trans_container_03_p"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_xl_titan"/>
@@ -178,7 +117,6 @@
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_s_miner_solid_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_s_scout_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_s_trans_container_01_a"/>
-            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_m_bomber_01_a"/> 
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_m_corvette_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_m_corvette_01_b"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_m_frigate_01_a"/>
@@ -199,13 +137,41 @@
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_l_cyclops"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_par_l_hyperion"/>
 
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_spl_l_viper_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_s_fighter_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_s_fighter_02_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_s_fighter_03_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_s_heavyfighter_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_s_miner_solid_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_s_scout_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_s_scout_02_a"/> 
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_s_trans_container_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_yak_s_fighter_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_m_corvette_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_m_frigate_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_m_gunboat_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_m_miner_liquid_01_a"/> 
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_m_miner_solid_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_m_trans_container_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_yak_m_corvette_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_atf_l_destroyer_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_l_destroyer_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_l_miner_liquid_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_l_miner_solid_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_l_trans_container_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_atf_xl_battleship_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_xl_carrier_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_xl_resupplier_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_l_carrier_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_xl_builder_01_a"/>
+
             <do_all exact="$vro_ishield_ware_list.count" counter="$i">
               <set_value name="$Warescontainer" exact="$vro_ishield_ware_list.{$i}.objectmacro" />
               <add_encyclopedia_entry type="shieldgentypes" item="$Warescontainer.id" />
             </do_all>
             <show_help duration="10s" custom="'VRO - internal shield generators info added/updated in encyclopedia.'"/>
           </actions>
-        </cue> -->
+        </cue> 
 
       </cues>
     </cue>
