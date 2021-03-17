@@ -18,13 +18,16 @@
           </software>
           <explosiondamage value="5000" />
           <storage missile="30" />
-          <hull max="35000" />
+          <hull max="45000" />
           <secrecy level="2" />
           <purpose primary="fight" />
           <people capacity="6" />
+          <sounds>
+            <shipdetail ref="enginedetail_ship_terran_m_03" />
+          </sounds>
           <physics mass="29.28">
             <inertia pitch="9.4" yaw="9.4" roll="9.01" />
-            <drag forward="11.5" reverse="16.203" horizontal="15.622" vertical="15.622" pitch="20.311" yaw="20.311" roll="20.311" />
+            <drag forward="11.5" reverse="16.203" horizontal="15.622" vertical="15.622" pitch="18" yaw="18" roll="18" />
           </physics>
           <thruster tags="medium" />
           <ship type="corvette" />
