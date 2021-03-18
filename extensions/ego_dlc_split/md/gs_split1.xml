@@ -4,29 +4,9 @@
   <set_spacesuit_oxygen object="player.ship" percent="50"/>
   </replace>
 
-  <replace sel="/mdscript/cues/cue[1]/cues/cue[1]/actions/create_loadout">
-    <create_loadout result="$JaguarLoadout">
-      <macros>
-        <engine macro="engine_spl_s_combat_01_mk1_macro" path="../con_engine_01"/>
-        <weapon macro="weapon_spl_s_gatling_01_mk1_macro" path="../con_weapon_01"/>
-        <shield macro="shield_spl_s_standard_01_mk1_macro" path="../con_shield_01"/>
-        <shield macro="ishield_spl_s_scout_01_a" path="../con_ishield_01" optional="true" />
-      </macros>
-      <ammunition>
-        <ammunition macro="env_deco_nav_beacon_t1_macro" exact="3"/>
-        <ammunition macro="eq_arg_satellite_01_macro" exact="3"/>
-      </ammunition>
-      <software>
-        <software ware="software_flightassistmk1"/>
-        <software ware="software_scannerlongrangemk2"/>
-        <software ware="software_scannerobjectmk1"/>
-      </software>
-      <virtualmacros>
-        <thruster macro="thruster_gen_s_allround_01_mk2_macro"/>
-      </virtualmacros>
-    </create_loadout>
-
-  </replace>
+  <add sel="//create_loadout[@result='$JaguarLoadout']/macros"> 
+    <shield macro="ishield_spl_s_scout_01_a_macro" path="../con_ishield_01" />
+  </add>
 
   <replace sel="/mdscript/cues/cue[1]/cues/cue[1]/actions/create_ship[@name='$PickupShip']">
     <create_ship name="$PickupShip" macro="ship_spl_s_scout_01_a_macro" sector="$FiresOfSector">
