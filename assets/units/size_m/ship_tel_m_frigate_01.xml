@@ -6,7 +6,22 @@
      <quaternion qx="0" qy="0" qz="0" qw="0"/>
   </offset>
  </connection>
+ <connection name="con_shield_inside" tags="medium shield unhittable platformcollision">
+  <offset>
+    <position x="0" y="0" z="-20"/>
+  </offset>
+</connection>
+
 </add>
+
+
+<connection name="con_shield_back_r" tags="medium shield unhittable platformcollision">
+  <offset>
+    <position x="34.69106" y="5.3825" z="1.042069"/>
+    <quaternion qx="3.793076E-08" qy="-4.636293E-08" qz="0.7071068" qw="-0.7071068"/>
+  </offset>
+</connection>
+
 <replace  sel="/components/component/connections/connection[@name='con_primaryweapon_01']/@tags">weapon medium standard missile platformcollision highpower </replace>
 <replace  sel="/components/component/connections/connection[@name='con_primaryweapon_02']/@tags">weapon medium standard missile platformcollision highpower </replace>
 </diff>
