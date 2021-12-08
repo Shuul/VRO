@@ -776,6 +776,80 @@ __________________ -->
   </replace>
 
   <add sel="/wares">
+
+    <!-- SIMON TERRAN SHIPS -->
+    <ware id="ship_ter_l_shikoku" name="{20101,63801}" description="{6699,1911}" group="ships_terran" transport="ship" volume="1" tags="ship">
+      <price min="11573488" average="13792338" max="16011189" />
+      <production time="270" amount="1" method="default" name="{20206,901}">
+        <primary>
+          <ware ware="computronicsubstrate" amount="352" />
+          <ware ware="energycells" amount="1620" />
+          <ware ware="metallicmicrolattice" amount="589" />
+        </primary>
+      </production>
+      <component ref="ship_ter_l_shikoku_macro" amount="1" />
+      <restriction licence="capitalship" />
+      <owner faction="terran" />
+    </ware>
+
+    <ware id="ship_ter_l_makhaira" name="{20101,62001}" description="{6699,1912}" group="ships_terran" transport="ship" volume="1" tags="ship">
+      <price min="15750479" average="18529975" max="24309471" />
+      <production time="320" amount="1" method="default" name="{20206,901}">
+        <primary>
+          <ware ware="computronicsubstrate" amount="420" />
+          <ware ware="energycells" amount="3620" />
+          <ware ware="metallicmicrolattice" amount="788" />
+        </primary>
+      </production>
+      <component ref="ship_ter_l_makhaira_macro" amount="1" />
+      <restriction licence="capitalship" />
+      <owner faction="terran" />
+    </ware>
+
+    <ware id="ship_ter_l_akita" name="{20101,64601}" description="{6699,1913}" group="ships_terran" transport="ship" volume="1" tags="ship">
+      <price min="30099943" average="35413426" max="40309471" />
+      <production time="360" amount="1" method="default" name="{20206,901}">
+        <primary>
+          <ware ware="computronicsubstrate" amount="495" />
+          <ware ware="energycells" amount="2380" />
+          <ware ware="metallicmicrolattice" amount="823" />
+        </primary>
+      </production>
+      <component ref="ship_ter_l_akita_macro" amount="1" />
+      <restriction licence="capitalship" />
+      <owner faction="terran" />
+    </ware>
+
+    <ware id="ship_ter_xl_sapporo" name="{20101,62701}" description="{6699,1914}" group="ships_terran" transport="ship" volume="1" tags="ship">
+      <price min="27816165" average="31724900" max="36633635" />
+      <production time="360" amount="1" method="default" name="{20206,901}">
+        <primary>
+          <ware ware="computronicsubstrate" amount="700" />
+          <ware ware="energycells" amount="25568" />
+          <ware ware="metallicmicrolattice" amount="1525" />
+        </primary>
+      </production>
+      <component ref="ship_ter_xl_sapporo_macro" amount="1" />
+      <restriction licence="capitalship" />
+      <owner faction="terran" />
+    </ware>
+    
+  <!-- PIO triton -->
+
+  <ware id="ship_sdp_frigate_triton" name="{6699,1920}" description="{6699,1921}" group="ships_terran" transport="ship" volume="1" tags="ship">
+    <price min="5558790" average="7033870" max="8008951" />
+    <production time="140" amount="1" method="default" name="{20206,901}">
+      <primary>
+        <ware ware="computronicsubstrate" amount="190" />
+        <ware ware="energycells" amount="800" />
+        <ware ware="metallicmicrolattice" amount="240" />
+      </primary>
+  </production>
+    <component ref="ship_sdp_frigate_triton_macro" amount="1" />
+    <restriction licence="militaryship" />
+    <owner faction="pioneers" />
+  </ware>
+
     <!-- Chiba -->
     <ware id="ship_ter_l_carrier_01" name="{20101,62901}" description="{6699,19111}" group="ships_terran" transport="ship" volume="1" tags="ship">
       <price min="6058790" average="7833870" max="8608951" />
@@ -2831,7 +2905,7 @@ __________________ -->
         </primary>
       </production>
       <component ref="ship_arg_l_trans_container_03_p_macro" amount="1" />
-      <restriction licence="capitalship" />
+      <restriction licence="generaluseship" />
       <owner faction="scaleplate" />
       <owner faction="hatikvah" />
     </ware>
@@ -2846,7 +2920,7 @@ __________________ -->
         </primary>
       </production>
       <component ref="ship_sca_l_hound_macro" amount="1" />
-      <restriction licence="capitalship" />
+      <restriction licence="generaluseship" />
       <owner faction="scaleplate" />
     </ware>
     <!-- Cormorant Vanguard-->
@@ -6643,8 +6717,68 @@ __________________ -->
       <component ref="ishield_ter_l_carrier_01_a_macro" amount="1" />
       <use threshold="0" />
       <restriction licence="generaluseequipment" />
-
     </ware>
+
+    <ware id="ishield_ter_l_shikoku" name="{6699,13138}" description="{6699,13138}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_ter_l_shikoku_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_ter_l_makhaira" name="{6699,13139}" description="{6699,13139}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_ter_l_makhaira_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_ter_l_akita" name="{6699,13140}" description="{6699,13140}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_ter_l_akita_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_ter_xl_sapporo" name="{6699,13141}" description="{6699,13141}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_ter_xl_sapporo_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_sdp_frigate_triton" name="{6699,13142}" description="{6699,13142}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_sdp_frigate_triton_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
   </add>
   <!-- Vanilla missiles reomoval from being buildable by factions -->
 

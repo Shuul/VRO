@@ -2,152 +2,173 @@
 
 <diff>
 
-  <!-- ############################# -->
-  <!--    ARGON FEDERATION -->
-  <!-- ############################# -->
-  
+	<!-- ############################# -->
+	<!--    ARGON FEDERATION -->
+	<!-- ############################# -->
+
 	<add sel="//groups">
 		<group name="arg_battleship_xl">
-			<select macro="ship_arg_xl_battleship_01_macro" weight="100"/>
+			<select macro="ship_arg_xl_battleship_01_macro" weight="100" />
 		</group>
 	</add>
 
 	<add sel="//groups">
 		<group name="arg_centaur_l">
-			<select macro="ship_arg_l_centaur_a_macro" weight="25"/>
-			<select macro="ship_arg_l_cyclops_macro" weight="75"/>
+			<select macro="ship_arg_l_centaur_a_macro" weight="25" />
+			<select macro="ship_arg_l_cyclops_macro" weight="75" />
 		</group>
 	</add>
 
 	<add sel="//groups">
 		<group name="arg_titan_xl">
-			<select macro="ship_arg_xl_titan_macro" weight="100"/>
+			<select macro="ship_arg_xl_titan_macro" weight="100" />
 		</group>
 	</add>
 
-	
-  <!-- ############################# -->
-  <!--    ANTIGONE REPUBLIC -->
-  <!-- ############################# -->
-  
+
+	<!-- ############################# -->
+	<!--    ANTIGONE REPUBLIC -->
+	<!-- ############################# -->
+
 	<add sel="//groups">
 		<group name="ant_battleship_xl">
-			<select macro="ship_arg_xl_battleship_01_macro" weight="100"/>
+			<select macro="ship_arg_xl_battleship_01_macro" weight="100" />
 		</group>
 	</add>
 
 	<add sel="//groups">
 		<group name="ant_centaur_l">
-			<select macro="ship_arg_l_centaur_b_macro" weight="100"/>
+			<select macro="ship_arg_l_centaur_b_macro" weight="100" />
 		</group>
 	</add>
-	
-  <!-- ############################# -->
-  <!--    GODREALM OF THE PARANID -->
-  <!-- ############################# -->
-  
+
+	<!-- ############################# -->
+	<!--    GODREALM OF THE PARANID -->
+	<!-- ############################# -->
+
 	<add sel="//groups">
 		<group name="par_battleship_xl">
-			<select macro="ship_par_xl_battleship_01_macro" weight="100"/>
+			<select macro="ship_par_xl_battleship_01_macro" weight="100" />
 		</group>
 	</add>
 
 	<add sel="//groups">
 		<group name="par_hyperion_l">
-			<select macro="ship_par_l_hyperion_macro" weight="100"/>
+			<select macro="ship_par_l_hyperion_macro" weight="100" />
 		</group>
 	</add>
 
-  <!-- ############################# -->
-  <!--    HOLY ORDER OF THE PONTIFEX -->
-  <!-- ############################# -->
-  
+	<!-- ############################# -->
+	<!--    HOLY ORDER OF THE PONTIFEX -->
+	<!-- ############################# -->
+
 	<add sel="//groups">
 		<group name="hol_battleship_xl">
-			<select macro="ship_par_xl_battleship_01_macro" weight="100"/>
+			<select macro="ship_par_xl_battleship_01_macro" weight="100" />
 		</group>
 	</add>
 
 	<add sel="//groups">
 		<group name="hol_hyperion_l">
-			<select macro="ship_par_l_hyperion_macro" weight="100"/>
+			<select macro="ship_par_l_hyperion_macro" weight="100" />
 		</group>
 	</add>
 
-  <!-- ############################# -->
-  <!--    TELADI COMPANY & MINISTRY OF FINANCE-->
-  <!-- ############################# -->
-  
+	<!-- ############################# -->
+	<!--    TELADI COMPANY & MINISTRY OF FINANCE-->
+	<!-- ############################# -->
+
 	<add sel="//groups">
 		<group name="tel_battleship_xl">
-			<select macro="ship_tel_xl_battleship_01_macro" weight="100"/>
+			<select macro="ship_tel_xl_battleship_01_macro" weight="100" />
 		</group>
 	</add>
 
 	<add sel="//groups">
 		<group name="tel_shrike_l">
-			<select macro="ship_tel_l_shrike_a_macro" weight="100"/>
+			<select macro="ship_tel_l_shrike_a_macro" weight="100" />
 		</group>
 	</add>
- <!-- ############################# -->
-  <!--    SPLIT-->
-  <!-- ############################# -->
-  
-
-<add sel="//groups">
-	<group name="spl_panther_l">
-		<select macro="ship_spl_l_panther_a_macro" weight="100"/>
-		<select macro="ship_spl_l_viper_macro" weight="30"/>
-	</group>
-</add>
-
-<add sel="//groups">
-	<group name="spl_battleship_xl">
-		<select macro="ship_spl_xl_gharial_macro" weight="100"/>
-	</group>
-</add>
-
- <!-- ############################# -->
-  <!--    Terran-->
-  <!-- ############################# -->
-  
-
-  <add sel="//groups">
-	<group name="ter_lightcarrier_l">
-		<select macro="ship_ter_l_carrier_01_macro" weight="100"/>
-	</group>
-</add>
+	<!-- ############################# -->
+	<!--    SPLIT-->
+	<!-- ############################# -->
 
 
-<!-- ############################# -->
-<!--    xenons-->
-<!-- ############################# -->
-  
+	<add sel="//groups">
+		<group name="spl_panther_l">
+			<select macro="ship_spl_l_panther_a_macro" weight="100" />
+			<select macro="ship_spl_l_viper_macro" weight="30" />
+		</group>
+	</add>
+
+	<add sel="//groups">
+		<group name="spl_battleship_xl">
+			<select macro="ship_spl_xl_gharial_macro" weight="100" />
+		</group>
+	</add>
+
+	<!-- ############################# -->
+	<!--    Terran-->
+	<!-- ############################# -->
+
+
+	<add sel="/groups/group[@name='atf_battleship_xl']">
+		<select macro="ship_ter_xl_sapporo_macro" />
+	</add>
+
+	<add sel="//groups">
+		<group name="atf_battleship_xl">
+			<select macro="ship_ter_l_carrier_01_macro" />
+		</group>
+	</add>
+
+	<add sel="//groups">
+		<group name="ter_lightcarrier_l">
+			<select macro="ship_ter_l_carrier_01_macro" weight="100" />
+		</group>
+	</add>
+
+	<add sel="/groups/group[@name='atf_destroyer_l']">
+		<select macro="ship_ter_l_akita_macro" />
+	</add>
+
+	<add sel="/groups/group[@name='teratf_destroyer_l']">
+		<select macro="ship_ter_l_makhaira_macro" />
+	</add>
+
+	<add sel="/groups/group[@name='ter_destroyer_l']">
+		<select macro="ship_ter_l_shikoku_macro" />
+	</add>
+
+	<!-- ############################# -->
+	<!--    xenons-->
+	<!-- ############################# -->
+
 	<add sel="//groups">
 		<group name="xen_mdestroyer_xl">
-			<select macro="ship_xen_xl_mdestroyer_01_a_macro" weight="100"/>
+			<select macro="ship_xen_xl_mdestroyer_01_a_macro" weight="100" />
 		</group>
 	</add>
 
 	<add sel="//groups">
 		<group name="xen_xl_u">
-			<select macro="ship_xen_xl_u_macro" weight="100"/>
+			<select macro="ship_xen_xl_u_macro" weight="100" />
 		</group>
 	</add>
 
-<!-- ############################# -->
-<!--    Pirate ships-->
-<!-- ############################# -->
-  
+	<!-- ############################# -->
+	<!--    Pirate ships-->
+	<!-- ############################# -->
+
 	<add sel="//groups">
 		<group name="sca_pirate_refit_inca">
-			<select macro="ship_arg_l_trans_container_03_p_macro" weight="100"/>
+			<select macro="ship_arg_l_trans_container_03_p_macro" weight="100" />
 		</group>
 	</add>
 
 	<add sel="//groups">
 		<group name="sca_pirate_hound">
-			<select macro="ship_sca_l_hound_macro" weight="100"/>
+			<select macro="ship_sca_l_hound_macro" weight="100" />
 		</group>
 	</add>
 
