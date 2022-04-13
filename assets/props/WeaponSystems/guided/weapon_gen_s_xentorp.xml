@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<components>
+	<component name="weapon_gen_s_xentorp" class="missilelauncher">
+		<source geometry="assets\props\WeaponSystems\guided\weapon_gen_s_guided_01_mk1_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="Connection01" hidden="true" tags="part platformcollision forceoutline  ">
+				<offset>
+					<position x="0" y="5.960464E-08" z="1.249698"/>
+				</offset>
+				<parts>
+					<part name="part_main" wreck="part_main_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+							<lod index="3">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.9475849" y="0.8768823" z="1.249698"/>
+							<center x="0" y="0" z="-1.192093E-07"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="Connection02" hidden="true" tags="part nocollision forceoutline detail_m  ">
+				<offset>
+					<position x="-1.788139E-07" y="-5.960464E-08" z="1.271586"/>
+				</offset>
+				<parts>
+					<part name="fx_decals">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1paint.paint_p1_decal_01"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.9527123" y="0.8782955" z="1.129676"/>
+							<center x="0" y="0" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="WeaponCon_01" tags="component weapon small xentorp ">
+				<offset/>
+			</connection>
+			<connection name="con_rocket01" tags="rocket ">
+				<offset>
+					<position x="0.3379664" y="2.489146E-03" z="2.256516"/>
+				</offset>
+			</connection>
+			<connection name="con_rocket02" tags="rocket ">
+				<offset>
+					<position x="-0.343628" y="2.489146E-03" z="2.256516"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

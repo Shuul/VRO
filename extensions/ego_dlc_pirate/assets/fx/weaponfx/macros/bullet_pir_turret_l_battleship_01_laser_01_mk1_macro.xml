@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<replace sel="//macros">
+<macros>
+  <macro name="bullet_pir_turret_l_battleship_01_laser_01_mk1_macro" class="bullet">
+    <component ref="bullet_pir_l_laser_01_mk1" />
+    <properties>
+      <ammunition value="2" reload="1" />
+      <bullet speed="4500" lifetime="3.6" amount="1" barrelamount="2" icon="weapon_laser_mk1" timediff="0.001" angle="0.1" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0">
+        <damagecurves>
+          <time>
+            <point position="0.2" value="1" />
+            <point position="0.5" value="0.7" />
+            <point position="1" value="0.1" />
+          </time>
+          <distance>
+            <point position="0.2" value="1" />
+            <point position="0.5" value="0.7" />
+            <point position="1" value="0.1" />
+          </distance>
+        </damagecurves>
+      </bullet>
+      <reload time="1" />
+      <damage value="1500" shield="300" repair="0" />
+      <effects>
+        <impact ref="impact_pir_l_laser_01_mk1" inside="impact_pir_l_laser_01_mk1_inside" />
+        <bigobjectimpact ref="impact_pir_l_laser_01_mk1_bigobject" inside="impact_pir_l_laser_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_pir_l_laser_01_mk1" />
+      </effects>
+    </properties>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!--
+<macros>
+  <macro name="bullet_pir_turret_l_battleship_01_laser_01_mk1_macro" class="bullet">
+    <component ref="bullet_pir_l_laser_01_mk1" />
+    <properties>
+      <ammunition value="2" reload="0.5" />
+      <bullet speed="2040.9" lifetime="4.518" amount="1" barrelamount="2" icon="weapon_laser_mk1" timediff="0.001" angle="0.02" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0">
+        <damagecurves>
+          <time>
+            <point position="0.2" value="1" />
+            <point position="0.5" value="0.7" />
+            <point position="1" value="0.1" />
+          </time>
+          <distance>
+            <point position="0.2" value="1" />
+            <point position="0.5" value="0.7" />
+            <point position="1" value="0.1" />
+          </distance>
+        </damagecurves>
+      </bullet>
+      <reload time="2.3" />
+      <damage value="2652" repair="0" />
+      <effects>
+        <impact ref="impact_pir_l_laser_01_mk1" inside="impact_pir_l_laser_01_mk1_inside" />
+        <bigobjectimpact ref="impact_pir_l_laser_01_mk1_bigobject" inside="impact_pir_l_laser_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_pir_l_laser_01_mk1" />
+      </effects>
+    </properties>
+  </macro>
+</macros>-->

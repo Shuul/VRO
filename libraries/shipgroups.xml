@@ -8,14 +8,13 @@
 
 	<add sel="//groups">
 		<group name="arg_battleship_xl">
-			<select macro="ship_arg_xl_battleship_01_macro" weight="100" />
+			<select macro="ship_arg_xl_corona_macro" weight="100" />
 		</group>
 	</add>
 
 	<add sel="//groups">
 		<group name="arg_centaur_l">
-			<select macro="ship_arg_l_centaur_a_macro" weight="25" />
-			<select macro="ship_arg_l_cyclops_macro" weight="75" />
+			<select macro="ship_arg_l_cyclops_macro" />
 		</group>
 	</add>
 
@@ -32,7 +31,7 @@
 
 	<add sel="//groups">
 		<group name="ant_battleship_xl">
-			<select macro="ship_arg_xl_battleship_01_macro" weight="100" />
+			<select macro="ship_arg_xl_corona_macro" weight="100" />
 		</group>
 	</add>
 
@@ -154,6 +153,10 @@
 		<group name="xen_xl_u">
 			<select macro="ship_xen_xl_u_macro" weight="100" />
 		</group>
+	</add>
+
+	<add sel="/groups/group[@name='xen_fighter_heavy_s']">
+		<select macro="ship_xen_s_fighter_lx_macro" weight="60"/>
 	</add>
 
 	<!-- ############################# -->

@@ -59,8 +59,24 @@
   <!-- <replace sel="//wares/ware[@id='ship_xen_xl_carrier_01_a']/production/@time">1330</replace>
 
   <replace sel="//wares/ware[@id='ship_xen_xl_destroyer_01_a']/production/@time">610</replace> -->
+  <!-- <add sel="//wares">
 
+  <ware id="ship_xen_s_fighter_lx" name="{20403,12}" description="{20403,12}" group="ships_xenon" transport="ship" volume="1" tags="noplayerblueprint ship">
+    <price min="33864" average="39840" max="45816" />
+    <production time="30" amount="1" method="default" name="{20206,601}" tags="noplayerbuild">
+      <primary>
+        <ware ware="energycells" amount="100" />
+        <ware ware="ore" amount="50" />
+        <ware ware="silicon" amount="100" />
+      </primary>
+    </production>
+    <component ref="ship_xen_s_fighter_lx_macro" />
+    <restriction licence="militaryship" />
+    <owner faction="xenon" />
+  </ware>
+  </add> -->
   <!-- L and XL ships prices -->
+
 
 
   <replace sel="//wares/ware[@id='ship_spl_l_destroyer_01_a']/price">
@@ -833,22 +849,22 @@ __________________ -->
       <restriction licence="capitalship" />
       <owner faction="terran" />
     </ware>
-    
-  <!-- PIO triton -->
 
-  <ware id="ship_sdp_frigate_triton" name="{6699,1920}" description="{6699,1921}" group="ships_terran" transport="ship" volume="1" tags="ship">
-    <price min="5558790" average="7033870" max="8008951" />
-    <production time="140" amount="1" method="default" name="{20206,901}">
-      <primary>
-        <ware ware="computronicsubstrate" amount="190" />
-        <ware ware="energycells" amount="800" />
-        <ware ware="metallicmicrolattice" amount="240" />
-      </primary>
-  </production>
-    <component ref="ship_sdp_frigate_triton_macro" amount="1" />
-    <restriction licence="militaryship" />
-    <owner faction="pioneers" />
-  </ware>
+    <!-- PIO triton -->
+
+    <ware id="ship_sdp_frigate_triton" name="{6699,1920}" description="{6699,1921}" group="ships_terran" transport="ship" volume="1" tags="ship">
+      <price min="5558790" average="7033870" max="8008951" />
+      <production time="140" amount="1" method="default" name="{20206,901}">
+        <primary>
+          <ware ware="computronicsubstrate" amount="190" />
+          <ware ware="energycells" amount="800" />
+          <ware ware="metallicmicrolattice" amount="240" />
+        </primary>
+      </production>
+      <component ref="ship_sdp_frigate_triton_macro" amount="1" />
+      <restriction licence="militaryship" />
+      <owner faction="pioneers" />
+    </ware>
 
     <!-- Chiba -->
     <ware id="ship_ter_l_carrier_01" name="{20101,62901}" description="{6699,19111}" group="ships_terran" transport="ship" volume="1" tags="ship">
@@ -1154,6 +1170,7 @@ __________________ -->
       <ware ware="hullparts" amount="5442" />
     </primary>
   </replace>
+  <replace sel="//ware[@id='ship_par_l_destroyer_01_a']/@tags">ship noplayerbuild noblueprint</replace>
 
   <replace sel="//wares/ware[@id='ship_par_l_destroyer_01_b']/price">
     <price min="8075338" average="9482750" max="10990163" />
@@ -1164,6 +1181,7 @@ __________________ -->
       <ware ware="hullparts" amount="6535" />
     </primary>
   </replace>
+  <replace sel="//ware[@id='ship_par_l_destroyer_01_b']/@tags">ship noplayerbuild noblueprint</replace>
 
   <replace sel="//wares/ware[@id='ship_par_xl_carrier_01_a']/price">
     <price min="17300230" average="20200270" max="23000311" />
@@ -1174,6 +1192,7 @@ __________________ -->
       <ware ware="hullparts" amount="14139" />
     </primary>
   </replace>
+  <replace sel="//ware[@id='ship_par_xl_carrier_01_a']/@tags">ship noplayerbuild noblueprint</replace>
 
   <replace sel="//wares/ware[@id='ship_par_xl_carrier_01_b']/price">
     <price min="20514739" average="23993810" max="27572882" />
@@ -1184,6 +1203,41 @@ __________________ -->
       <ware ware="hullparts" amount="16961" />
     </primary>
   </replace>
+  <replace sel="//ware[@id='ship_par_xl_carrier_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+
+  <replace sel="//wares/ware[@id='ship_par_l_destroyer_02_a']/price">
+    <price min="9075338" average="10482750" max="11990163" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_par_l_destroyer_02_a']/production/primary">
+    <primary>
+      <ware ware="energycells" amount="6486" />
+      <ware ware="hullparts" amount="6835" />
+    </primary>
+  </replace>
+
+  <replace sel="//wares/ware[@id='ship_par_xl_carrier_02_a']/price">
+    <price min="20514739" average="23993810" max="27572882" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_par_xl_carrier_02_a']/production/primary">
+    <primary>
+      <ware ware="energycells" amount="4819" />
+      <ware ware="hullparts" amount="16961" />
+    </primary>
+  </replace>
+
+  <!-- paranid l ships removal -->
+  <replace sel="//ware[@id='ship_par_l_miner_liquid_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_l_miner_liquid_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_l_miner_solid_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_l_miner_solid_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_l_trans_container_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_l_trans_container_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_l_trans_container_02_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_l_trans_container_02_b']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_xl_carrier_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_xl_carrier_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_xl_resupplier_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_xl_resupplier_01_b']/@tags">ship noplayerbuild noblueprint</replace>
 
   <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_a']/price">
     <price min="6476958" average="7743480" max="8910002" />
@@ -2730,7 +2784,7 @@ __________________ -->
     </ware>
 
 
-    <ware id="ship_arg_xl_battleship_a" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship">
+    <ware id="ship_arg_xl_battleship_a" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship noplayerbuild noblueprint">
       <price min="30000000" average="35000000" max="40000000" />
       <production time="550" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -2744,13 +2798,26 @@ __________________ -->
       <owner faction="argon" />
     </ware>
 
-
-    <ware id="ship_tel_xl_battleship_a" name="{20101,22101}" description="{20101,22101}" group="ships_teladi" transport="ship" volume="1" tags="ship">
-      <price min="29000000" average="33000000" max="39000000" />
+    <ware id="ship_arg_xl_corona" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship">
+      <price min="40000000" average="45000000" max="50000000" />
       <production time="550" amount="1" method="default" name="{20206,101}">
         <primary>
-          <ware ware="energycells" amount="6900" />
-          <ware ware="hullparts" amount="15295" />
+          <ware ware="energycells" amount="6140" />
+          <ware ware="hullparts" amount="18675" />
+        </primary>
+      </production>
+      <component ref="ship_arg_xl_corona_macro" amount="1" />
+      <restriction licence="capitalship" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+    </ware>
+
+    <ware id="ship_tel_xl_battleship_a" name="{20101,22101}" description="{20101,22101}" group="ships_teladi" transport="ship" volume="1" tags="ship">
+      <price min="33000000" average="39000000" max="42000000" />
+      <production time="550" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="5900" />
+          <ware ware="hullparts" amount="15900" />
         </primary>
       </production>
       <component ref="ship_tel_xl_battleship_01_macro" amount="1" />
@@ -3139,6 +3206,21 @@ __________________ -->
         </primary>
       </production>
       <component ref="turret_xen_m_missile_macro" amount="1" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="0" factions="xenon" />
+      <owner faction="xenon" />
+    </ware>
+
+    <ware id="weapon_gen_s_xentorp" name="{20105,1144}" description="{20105,1142}" group="weapons" transport="equipment" volume="1" tags="equipment noplayerblueprint turret">
+      <price min="1039" average="1088" max="1136" />
+      <production time="5" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="5" />
+          <ware ware="ore" amount="5" />
+          <ware ware="silicon" amount="5" />
+        </primary>
+      </production>
+      <component ref="weapon_gen_s_xentorp_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <use threshold="0" factions="xenon" />
       <owner faction="xenon" />
@@ -3543,6 +3625,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="38" />
+        </primary>
+      </production>
       <component ref="missile_rapier_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -3572,7 +3659,12 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
-      <component ref="missile_firefly_macro" amount="1" />
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="42" />
+        </primary>
+      </production>    
+        <component ref="missile_firefly_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
       <use threshold="0" />
@@ -3601,7 +3693,12 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
-      <component ref="missile_firelance_macro" amount="1" />
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="50" />
+        </primary>
+      </production>   
+         <component ref="missile_firelance_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
       <use threshold="0" />
@@ -3632,7 +3729,12 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
-      <component ref="missile_beluga_macro" amount="1" />
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="99" />
+        </primary>
+      </production>  
+          <component ref="missile_beluga_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
       <use threshold="0" />
@@ -3661,7 +3763,12 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
-      <component ref="missile_blizzard_macro" amount="1" />
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="109" />
+        </primary>
+      </production>   
+         <component ref="missile_blizzard_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
       <use threshold="0" />
@@ -3696,7 +3803,12 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
-      <component ref="missile_dragonfly_macro" amount="1" />
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="100" />
+        </primary>
+      </production>  
+          <component ref="missile_dragonfly_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
       <use threshold="0" />
@@ -3740,7 +3852,12 @@ __________________ -->
           <ware ware="siliconcarbide" amount="1" />
         </primary>
       </production>
-      <component ref="missile_aurora_macro" amount="1" />
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="199" />
+        </primary>
+      </production>   
+         <component ref="missile_aurora_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
       <use threshold="0" />
@@ -3769,7 +3886,12 @@ __________________ -->
           <ware ware="siliconcarbide" amount="1" />
         </primary>
       </production>
-      <component ref="missile_tornado_macro" amount="1" />
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="207" />
+        </primary>
+      </production> 
+           <component ref="missile_tornado_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
       <use threshold="0" />
@@ -3813,7 +3935,12 @@ __________________ -->
           <ware ware="siliconcarbide" amount="1" />
         </primary>
       </production>
-      <component ref="missile_flycatcher_macro" amount="1" />
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="203" />
+        </primary>
+      </production>
+            <component ref="missile_flycatcher_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
       <use threshold="0" />
@@ -3846,6 +3973,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="35" />
+        </primary>
+      </production>
       <component ref="missile_mosquito_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -3875,6 +4007,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="73" />
+        </primary>
+      </production>
       <component ref="missile_wasp_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -3902,6 +4039,11 @@ __________________ -->
           <ware ware="energycells" amount="22" />
           <ware ware="metallicmicrolattice" amount="4" />
           <ware ware="siliconcarbide" amount="0" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="64" />
         </primary>
       </production>
       <component ref="missile_wildfire_macro" amount="1" />
@@ -3948,6 +4090,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="88" />
+        </primary>
+      </production>
       <component ref="missile_cyclone_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -3983,6 +4130,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="190" />
+        </primary>
+      </production>
       <component ref="missile_silkworm_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4014,6 +4166,11 @@ __________________ -->
           <ware ware="energycells" amount="51" />
           <ware ware="metallicmicrolattice" amount="10" />
           <ware ware="siliconcarbide" amount="0" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="147" />
         </primary>
       </production>
       <component ref="missile_hurricane_macro" amount="1" />
@@ -4060,6 +4217,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="177" />
+        </primary>
+      </production>
       <component ref="missile_windstalker_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4089,6 +4251,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="1" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="284" />
+        </primary>
+      </production>
       <component ref="missile_tempest_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4116,6 +4283,11 @@ __________________ -->
           <ware ware="energycells" amount="50" />
           <ware ware="metallicmicrolattice" amount="10" />
           <ware ware="siliconcarbide" amount="1" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="311" />
         </primary>
       </production>
       <component ref="missile_thunderbolt_macro" amount="1" />
@@ -4162,6 +4334,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="1" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="351" />
+        </primary>
+      </production>
       <component ref="missile_hornet_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4206,6 +4383,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="1" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="418" />
+        </primary>
+      </production>
       <component ref="missile_hammerhead_macro" amount="1" />
       <restriction licence="capitalequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4235,6 +4417,11 @@ __________________ -->
           <ware ware="energycells" amount="10" />
           <ware ware="metallicmicrolattice" amount="7" />
           <ware ware="siliconcarbide" amount="2" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="443" />
         </primary>
       </production>
       <component ref="missile_rgw_macro" amount="1" />
@@ -4281,6 +4468,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="1" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="311" />
+        </primary>
+      </production>
       <component ref="missile_banshee_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4312,6 +4504,11 @@ __________________ -->
           <ware ware="energycells" amount="75" />
           <ware ware="metallicmicrolattice" amount="14" />
           <ware ware="siliconcarbide" amount="1" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="391" />
         </primary>
       </production>
       <component ref="missile_typhoon_macro" amount="1" />
@@ -4358,6 +4555,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="2" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="560" />
+        </primary>
+      </production>
       <component ref="missile_phantom_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4385,6 +4587,11 @@ __________________ -->
           <ware ware="energycells" amount="70" />
           <ware ware="metallicmicrolattice" amount="8" />
           <ware ware="siliconcarbide" amount="2" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="493" />
         </primary>
       </production>
       <component ref="missile_ibis_macro" amount="1" />
@@ -4418,6 +4625,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="3" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="796" />
+        </primary>
+      </production>
       <component ref="missile_tomahawk_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4445,6 +4657,11 @@ __________________ -->
           <ware ware="energycells" amount="120" />
           <ware ware="metallicmicrolattice" amount="32" />
           <ware ware="siliconcarbide" amount="3" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="944" />
         </primary>
       </production>
       <component ref="missile_firestorm_macro" amount="1" />
@@ -4491,6 +4708,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="3" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="837" />
+        </primary>
+      </production>
       <component ref="missile_spectre_macro" amount="1" />
       <restriction licence="capitalequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4526,6 +4748,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="2" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="572" />
+        </primary>
+      </production>
       <component ref="missile_flail_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4555,6 +4782,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="3" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="702" />
+        </primary>
+      </production>
       <component ref="missile_shadow_macro" amount="1" />
       <restriction licence="capitalequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4582,6 +4814,11 @@ __________________ -->
           <ware ware="energycells" amount="100" />
           <ware ware="metallicmicrolattice" amount="14" />
           <ware ware="siliconcarbide" amount="3" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="770" />
         </primary>
       </production>
       <component ref="missile_wraith_macro" amount="1" />
@@ -4628,6 +4865,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="0" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="91" />
+        </primary>
+      </production>
       <component ref="missile_disruptor_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4655,6 +4897,11 @@ __________________ -->
           <ware ware="energycells" amount="50" />
           <ware ware="metallicmicrolattice" amount="20" />
           <ware ware="siliconcarbide" amount="0" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="220" />
         </primary>
       </production>
       <component ref="missile_scatter_macro" amount="1" />
@@ -4689,6 +4936,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="1" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="338" />
+        </primary>
+      </production>
       <component ref="missile_starburst_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4719,6 +4971,11 @@ __________________ -->
           <ware ware="energycells" amount="50" />
           <ware ware="metallicmicrolattice" amount="3" />
           <ware ware="siliconcarbide" amount="0" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="98" />
         </primary>
       </production>
       <component ref="missile_interceptor_macro" amount="1" />
@@ -4753,6 +5010,11 @@ __________________ -->
           <ware ware="siliconcarbide" amount="2" />
         </primary>
       </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="783" />
+        </primary>
+      </production>
       <component ref="missile_serpentnest_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -4783,6 +5045,11 @@ __________________ -->
           <ware ware="energycells" amount="51" />
           <ware ware="metallicmicrolattice" amount="12" />
           <ware ware="siliconcarbide" amount="0" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="182" />
         </primary>
       </production>
       <component ref="missile_poltergeist_macro" amount="1" />
@@ -4869,6 +5136,21 @@ __________________ -->
       <component ref="weapon_xen_s_plasma_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <use threshold="0" factions="xenon" />
+      <owner faction="xenon" />
+    </ware>
+
+    <!-- XENON LX  -->
+    <ware id="ship_xen_s_fighter_lx" name="{20403,12}{20403,24}" description="{20403,12}{20403,24}" group="ships_xenon" transport="ship" volume="1" tags="noplayerblueprint ship">
+      <price min="53864" average="69840" max="75816" />
+      <production time="9" amount="1" method="default" name="{20206,601}" tags="noplayerbuild">
+        <primary>
+          <ware ware="energycells" amount="100" />
+          <ware ware="ore" amount="60" />
+          <ware ware="silicon" amount="60" />
+        </primary>
+      </production>
+      <component ref="ship_xen_s_fighter_lx_macro" />
+      <restriction licence="militaryship" />
       <owner faction="xenon" />
     </ware>
 
@@ -6775,6 +7057,114 @@ __________________ -->
         </primary>
       </production>
       <component ref="ishield_sdp_frigate_triton_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_gen_m_yacht_01" name="{6699,13143}" description="{6699,13143}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_gen_m_yacht_01_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_pir_l_miner_solid_01_a" name="{6699,13144}" description="{6699,13144}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_pir_l_miner_solid_01_a_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_pir_l_scavenger_01_a" name="{6699,13145}" description="{6699,13145}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_pir_l_scavenger_01_a_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_pir_l_scrapper_01" name="{6699,13146}" description="{6699,13146}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_pir_l_scrapper_01_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_pir_s_fighter_01" name="{6699,13147}" description="{6699,13147}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_pir_s_fighter_01_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_pir_s_fighter_02" name="{6699,13148}" description="{6699,13148}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_pir_s_fighter_02_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_pir_s_heavyfighter_01" name="{6699,13149}" description="{6699,13149}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_pir_s_heavyfighter_01_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_pir_s_trans_container_01" name="{6699,13150}" description="{6699,13150}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_pir_s_trans_container_01_macro" amount="1" />
+      <use threshold="0" />
+      <restriction licence="generaluseequipment" />
+    </ware>
+
+    <ware id="ishield_pir_xl_battleship_01" name="{6699,13151}" description="{6699,13151}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+      <price min="12" average="16" max="21" />
+      <production time="1" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1" />
+        </primary>
+      </production>
+      <component ref="ishield_pir_xl_battleship_01_macro" amount="1" />
       <use threshold="0" />
       <restriction licence="generaluseequipment" />
     </ware>

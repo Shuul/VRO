@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<replace sel="//macros">
+<macros>
+  <macro name="bullet_pir_xl_laser_01_mk1_macro" class="bullet">
+    <component ref="bullet_pir_xl_laser_01_mk1" />
+    <properties>
+      <ammunition value="1" reload="0" />
+      <bullet speed="4500" lifetime="3.75" amount="1" barrelamount="1" icon="weapon_laser_mk1" timediff="0.001" angle="0.03" maxhits="1" ricochet="0" scale="0" attach="0" chargetime="1" />
+      <heat value="1500" />
+      <reload time="0.3" />
+      <damage value="25000" hull="6000" repair="0" />
+      <effects>
+        <impact ref="impact_pir_xl_laser_01_mk1" inside="impact_pir_xl_laser_01_mk1_inside" />
+        <bigobjectimpact ref="impact_pir_xl_laser_01_mk1_bigobject" inside="impact_pir_xl_laser_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_pir_xl_laser_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!--
+<macros>
+  <macro name="bullet_pir_xl_laser_01_mk1_macro" class="bullet">
+    <component ref="bullet_pir_xl_laser_01_mk1" />
+    <properties>
+      <ammunition value="1" reload="0" />
+      <bullet speed="2488.3" lifetime="3.706" amount="1" barrelamount="1" icon="weapon_laser_mk1" timediff="0.001" angle="0.03" maxhits="1" ricochet="0" scale="0" attach="0" chargetime="1" />
+      <heat value="915" />
+      <reload time="1.7" />
+      <damage value="12979" repair="0" />
+      <effects>
+        <impact ref="impact_pir_xl_laser_01_mk1" inside="impact_pir_xl_laser_01_mk1_inside" />
+        <bigobjectimpact ref="impact_pir_xl_laser_01_mk1_bigobject" inside="impact_pir_xl_laser_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_pir_xl_laser_01_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>-->

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<replace sel="//macros">
+<macros>
+  <macro name="ship_pir_l_scrapper_01_macro" class="ship_l">
+    <component ref="ship_pir_l_scrapper_01" />
+    <properties>
+      <identification name="{20101,81201}" makerrace="argon" description="{20101,81211}" icon="ship_l_compactor_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="800" shield="4000" />
+      <storage missile="35" unit="25" />
+      <hull max="90000" />
+      <purpose primary="dismantling" />
+      <people capacity="145" />
+      <physics mass="505.41">
+        <inertia pitch="318.251" yaw="318.251" roll="274.601" />
+        <drag forward="211.623" reverse="846.492" horizontal="202.697" vertical="202.697" pitch="268.082" yaw="268.082" roll="268.082" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="compactor" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_pir_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dismantleprocessor">
+        <macro ref="dismantleprocessor_gen_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_02">
+        <macro ref="dockarea_arg_s_ship_02_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_02">
+        <macro ref="shipstorage_gen_s_four_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage_01">
+        <macro ref="storage_pir_l_scrapper_01_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!--
+<macros>
+  <macro name="ship_pir_l_scrapper_01_macro" class="ship_l">
+    <component ref="ship_pir_l_scrapper_01" />
+    <properties>
+      <identification name="{20101,81201}" makerrace="argon" description="{20101,81211}" icon="ship_l_compactor_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="800" shield="4000" />
+      <storage missile="30" unit="40" />
+      <hull max="66000" />
+      <purpose primary="dismantling" />
+      <people capacity="145" />
+      <physics mass="505.41">
+        <inertia pitch="218.251" yaw="218.251" roll="174.601" />
+        <drag forward="211.623" reverse="846.492" horizontal="202.697" vertical="202.697" pitch="168.082" yaw="168.082" roll="168.082" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="compactor" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_pir_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dismantleprocessor">
+        <macro ref="dismantleprocessor_gen_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_02">
+        <macro ref="dockarea_arg_s_ship_02_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_02">
+        <macro ref="shipstorage_gen_s_four_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage_01">
+        <macro ref="storage_pir_l_scrapper_01_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>-->

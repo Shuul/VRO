@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<replace sel="//macros">
+<macros>
+  <macro name="weapon_pir_xl_battleship_01_mk1_macro" class="weapon">
+    <component ref="weapon_pir_xl_battleship_01_mk1" />
+    <properties>
+      <identification name="{20105,9034}" basename="{20105,9031}" shortname="{20105,9035}" makerrace="argon" description="{20105,9032}" mk="1" />
+      <bullet class="bullet_pir_xl_laser_01_mk1_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+      <rotationspeed max="93.3" />
+      <rotationacceleration max="186.6" />
+      <reload />
+      <hull max="60000" />
+      <sounds>
+        <firing ref="wpn_impulse_l" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!--
+<macros>
+  <macro name="weapon_pir_xl_battleship_01_mk1_macro" class="weapon">
+    <component ref="weapon_pir_xl_battleship_01_mk1" />
+    <properties>
+      <identification name="{20105,9034}" basename="{20105,9031}" shortname="{20105,9035}" makerrace="argon" description="{20105,9032}" mk="1" />
+      <bullet class="bullet_pir_xl_laser_01_mk1_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+      <rotationspeed max="93.3" />
+      <rotationacceleration max="186.6" />
+      <reload />
+      <hull max="12000" />
+      <sounds>
+        <firing ref="wpn_impulse_l" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>-->

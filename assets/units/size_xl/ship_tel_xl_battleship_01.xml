@@ -496,13 +496,13 @@
 				</offset>
 			</connection>
 <!--Turrets LARGE left_turret_large-->
-			<connection name="con_turret_ltL01" group="group_left_turret_large " tags="turret large standard ">
+			<connection name="con_turret_ltL01" group="group_left_turret_large " tags="turret large highpower telonly standard ">
 				<offset>
 					<position x="0" y="150" z="685"/>
 					<rotation yaw="0" pitch="-80" roll="0" />
 				</offset>
 			</connection>
-			<connection name="con_turret_ltL02" group="group_left_turret_large " tags="turret large standard ">
+			<connection name="con_turret_ltL02" group="group_left_turret_large " tags="turret large highpower telonly standard ">
 				<offset>
 					<position x="0" y="-150" z="685"/>
 					<rotation yaw="0" pitch="-100" roll="0" />
@@ -515,13 +515,13 @@
 				</offset>
 			</connection>
 <!--Turrets LARGE right_turret_large-->
-			<connection name="con_turret_rtL01" group="group_right_turret_large " tags="turret large standard ">
+			<connection name="con_turret_rtL01" group="group_right_turret_large " tags="turret large highpower telonly standard ">
 				<offset>
 					<position x="150" y="0" z="685"/>
 					<rotation yaw="0" pitch="-90" roll="20" />
 				</offset>
 			</connection>
-			<connection name="con_turret_rtL02" group="group_right_turret_large " tags="turret large standard ">
+			<connection name="con_turret_rtL02" group="group_right_turret_large " tags="turret large highpower telonly standard ">
 				<offset>
 					<position x="-150" y="0" z="685"/>
 					<rotation yaw="0" pitch="-90" roll="-20" />
@@ -534,19 +534,25 @@
 				</offset>
 			</connection>
 <!--Turrets LARGE down_turret_large-->
-			<connection name="con_turret_dtL01" group="group_down_turret_large " tags="turret large highpower telonly standard ">
-				<offset>
-					<position x="0" y="-105" z="-115"/>
-					<quaternion qx="-0.7071068" qy="-2.219725E-07" qz="0.7071068" qw="-8.432165E-09"/>
-				</offset>
-			</connection>
-			<connection name="con_turret_dtL02" group="group_down_turret_large " tags="turret large highpower telonly standard ">
+			<connection name="con_turret_dtL02" group="group_down_turret_large " tags="turret large standard ">
 				<offset>
 					<position x="0" y="-100" z="-744"/>
 					<quaternion qx="-0.7071068" qy="-2.219725E-07" qz="0.7071068" qw="-8.432165E-09"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_l_dtL01" group="group_down_turret_large " tags="large shield hittable ">
+			<connection group="group_down_turret_large" name="con_turret_dtL01" tags="turret large standard ">
+				<offset>
+					<position x="91.2603" y="44.9375" z="-744"/>
+					<quaternion qw="-0.866320890182167" qx="4.994878529381174e-07" qy="9.989757058762348e-07" qz="0.4994878529381174"/>
+				</offset>
+			</connection>
+			<connection group="group_down_turret_large" name="con_turret_dtL03" tags="turret large  standard ">
+				<offset>
+					<position x="-91.26100000000001" y="44.9375" z="-744"/>
+					<quaternion qw="-0.8663228881266481" qx="-9.989687752996233e-07" qy="9.989687752996233e-07" qz="-0.4994843876498116"/>
+				</offset>
+			</connection>
+					<connection name="con_shieldgen_l_dtL01" group="group_down_turret_large " tags="large shield hittable ">
 				<offset>
 					<position x="0" y="-109" z="-925"/>
 					<quaternion qx="-0.7071068" qy="-2.219725E-07" qz="0.7071068" qw="-8.432165E-09"/>

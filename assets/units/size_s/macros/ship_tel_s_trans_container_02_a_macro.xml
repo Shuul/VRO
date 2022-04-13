@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+  <macros>
+  <macro name="ship_tel_s_trans_container_02_a_macro" class="ship_s">
+    <component ref="ship_tel_s_trans_container_02" />
+    <properties>
+      <identification name="{20101,22501}" description="{20101,22511}" icon="ship_s_trade_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" default="1" />
+      </software>
+      <storage missile="15" />
+      <hull max="7700" />
+      <secrecy level="3" />
+      <purpose primary="trade" />
+      <people capacity="5" />
+      <physics mass="30.818">
+        <inertia pitch="6.097" yaw="6.097" roll="4.877" />
+        <drag forward="7" reverse="35.443" horizontal="8.843" vertical="8.843" pitch="9.511" yaw="9.511" roll="9.511" />
+      </physics>
+      <thruster tags="small" />
+      <ship type="courier" />
+      <sound_occlusion inside="0.5" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_tel_s_trans_container_02_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>

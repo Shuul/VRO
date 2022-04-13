@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<replace sel="//macros">
+<macros>
+  <macro name="ship_pir_xl_battleship_01_a_macro" class="ship_xl">
+    <component ref="ship_pir_xl_battleship_01" />
+    <properties>
+      <identification name="{20101,121101}" makerrace="argon" description="{20101,121111}" icon="ship_xl_battleship" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" compatible="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="1500" shield="7500" />
+      <storage missile="300" unit="30" />
+      <hull max="900000" />
+      <purpose primary="fight" />
+      <people capacity="328" />
+      <physics mass="950.441">
+            <inertia pitch="676.311" yaw="676.311" roll="600.249" />
+            <drag forward="180" reverse="432.433" horizontal="230.232" vertical="230.232" pitch="630.73" yaw="630.73" roll="630.73" />
+      </physics>
+      <thruster tags="extralarge" />
+      <regiondamage immune="1" />
+      <ship type="battleship" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_pir_xl_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_pir_xl_battleship_01">
+        <macro ref="dockarea_pir_xl_battleship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_02">
+        <macro ref="shipstorage_gen_s_four_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_03">
+        <macro ref="shipstorage_gen_m_two_macro" connection="object" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!--
+<macros>
+  <macro name="ship_pir_xl_battleship_01_a_macro" class="ship_xl">
+    <component ref="ship_pir_xl_battleship_01" />
+    <properties>
+      <identification name="{20101,121101}" makerrace="argon" description="{20101,121111}" icon="ship_xl_fight_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" compatible="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="1500" shield="7500" />
+      <storage missile="300" unit="20" />
+      <hull max="500000" />
+      <purpose primary="fight" />
+      <people capacity="328" />
+      <physics mass="295.441">
+        <inertia pitch="280.021" yaw="280.021" roll="224.017" />
+        <drag forward="173.86" reverse="695.441" horizontal="211.606" vertical="211.606" pitch="683.179" yaw="683.179" roll="683.179" />
+      </physics>
+      <thruster tags="extralarge" />
+      <regiondamage immune="1" />
+      <ship type="battleship" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_pir_xl_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_pir_xl_battleship_01">
+        <macro ref="dockarea_pir_xl_battleship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_02">
+        <macro ref="shipstorage_gen_s_four_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_03">
+        <macro ref="shipstorage_gen_m_two_macro" connection="object" />
+      </connection>
+    </connections>
+  </macro>
+</macros>-->

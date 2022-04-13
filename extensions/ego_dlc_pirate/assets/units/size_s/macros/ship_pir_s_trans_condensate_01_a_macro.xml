@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<replace sel="//macros">
+<macros>
+  <macro name="ship_pir_s_trans_condensate_01_a_macro" class="ship_s">
+    <component ref="ship_pir_s_trans_container_01" />
+    <properties>
+      <identification name="{20101,81903}" makerrace="argon" description="{20101,81913}" icon="ship_s_trade_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage missile="10" />
+      <hull max="4400" />
+      <secrecy level="1" />
+      <purpose primary="trade" />
+      <people capacity="4" />
+      <physics mass="21.407">
+        <inertia pitch="6.235" yaw="6.235" roll="6.188" />
+        <drag forward="5" reverse="22.82" horizontal="4.642" vertical="4.642" pitch="9.002" yaw="9.002" roll="9.002" />
+      </physics>
+      <thruster tags="small" />
+      <ship type="courier" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_pir_s_trans_condensate_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!--
+<macros>
+  <macro name="ship_pir_s_trans_condensate_01_a_macro" class="ship_s">
+    <component ref="ship_pir_s_trans_container_01" />
+    <properties>
+      <identification name="{20101,81903}" makerrace="argon" description="{20101,81913}" icon="ship_s_trade_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage missile="10" />
+      <hull max="2200" />
+      <secrecy level="1" />
+      <purpose primary="trade" />
+      <people capacity="4" />
+      <physics mass="19.407">
+        <inertia pitch="5.235" yaw="5.235" roll="4.188" />
+        <drag forward="5.679" reverse="22.82" horizontal="4.642" vertical="4.642" pitch="7.002" yaw="7.002" roll="7.002" />
+      </physics>
+      <thruster tags="small" />
+      <ship type="courier" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_pir_s_trans_condensate_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>-->

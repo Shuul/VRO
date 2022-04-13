@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<replace sel="//macros">
+<macros>
+  <macro name="ship_pir_l_scavenger_01_a_macro" class="ship_l">
+    <component ref="ship_pir_l_scavenger_01" />
+    <properties>
+      <identification name="{20101,81501}" makerrace="argon" description="{20101,81511}" icon="ship_l_fight_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="800" shield="4000" />
+      <storage missile="160" unit="10" />
+      <hull max="230000" />
+      <secrecy level="1" />
+      <purpose primary="fight" />
+      <people capacity="81" />
+      <physics mass="253.18">
+            <inertia pitch="221.346" yaw="221.346" roll="200.277" />
+        <drag forward="89" reverse="345.68" horizontal="126.805" vertical="126.805" pitch="235.406" yaw="235.406" roll="235.406" />
+      </physics>
+	  <radar range="45000" />
+      <thruster tags="large" />
+      <ship type="scavenger" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_pir_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_01">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_two_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage">
+        <macro ref="storage_pir_l_scavenger_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!--
+<macros>
+  <macro name="ship_pir_l_scavenger_01_a_macro" class="ship_l">
+    <component ref="ship_pir_l_scavenger_01" />
+    <properties>
+      <identification name="{20101,81501}" makerrace="argon" description="{20101,81511}" icon="ship_l_fight_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="800" shield="4000" />
+      <storage missile="160" unit="10" />
+      <hull max="114000" />
+      <secrecy level="1" />
+      <purpose primary="fight" />
+      <people capacity="126" />
+      <physics mass="243.18">
+        <inertia pitch="130.042" yaw="130.042" roll="104.034" />
+        <drag forward="86.42" reverse="345.68" horizontal="126.805" vertical="126.805" pitch="115.636" yaw="115.636" roll="115.636" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="scavenger" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="bridge_pir_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_arg_s_ship_01">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_two_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage">
+        <macro ref="storage_pir_l_scavenger_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>-->

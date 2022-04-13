@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="//macros">
+    <macros>
+      <macro name="ship_par_l_miner_liquid_02_a_macro" class="ship_l">
+        <component ref="ship_par_l_miner_liquid_02" />
+        <properties>
+          <identification name="{20101,30907}" description="{20101,30917}" icon="ship_l_mine_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" compatible="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <explosiondamage value="8000" />
+          <storage missile="50" unit="16" />
+          <hull max="53333" />
+          <secrecy level="2" />
+          <purpose primary="mine" />
+          <people capacity="33" />
+          <physics mass="217.132">
+            <inertia pitch="158" yaw="158" roll="126" />
+            <drag forward="49" reverse="281" horizontal="181" vertical="181" pitch="160" yaw="160" roll="160" />
+          </physics>
+          <thruster tags="large" />
+          <ship type="largeminer" />
+        </properties>
+        <connections>
+          <connection ref="con_cockpit">
+            <macro ref="bridge_par_l_01_macro" connection="con_cockpit" />
+          </connection>
+          <connection ref="con_dockarea_par_l_miner_solid_01">
+            <macro ref="dockarea_par_l_miner_solid_01_macro" connection="Connection01" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_launchtube_arg_s_01_a">
+            <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+          </connection>
+          <connection ref="con_launchtube_arg_s_01_b">
+            <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
+          </connection>
+          <connection ref="con_shipstorage_s_01">
+            <macro ref="shipstorage_gen_s_four_macro" connection="object" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage01">
+            <macro ref="storage_par_l_miner_liquid_02_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    </macros>
+  </replace>
+</diff>

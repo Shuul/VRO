@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+<replace sel="//macros">
+<macros>
+  <macro name="bullet_gen_m_yacht_laser_01_mk1_macro" class="bullet">
+    <component ref="bullet_gen_m_yacht_laser_01_mk1" />
+    <properties>
+      <ammunition value="15" reload="6" />
+      <bullet speed="4500" lifetime="1.6" amount="1" barrelamount="1" timediff="0.01" angle="0.3" maxhits="1" ricochet="0.8" restitution="0.5" scale="0" attach="0" />
+      <heat value="300" />
+      <reload rate="3" />
+      <damage value="1100" shield="-300" repair="0" />
+      <effects>
+        <impact ref="impact_gen_m_yacht_laser_01_mk1" inside="impact_gen_m_yacht_laser_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_m_yacht_laser_01_mk1_bigobject" inside="impact_gen_m_yacht_laser_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_gen_m_yacht_laser_01_mk1_base" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+</replace>
+</diff>
+<!--
+<macros>
+  <macro name="bullet_gen_m_yacht_laser_01_mk1_macro" class="bullet">
+    <component ref="bullet_gen_m_yacht_laser_01_mk1" />
+    <properties>
+      <ammunition value="1" reload="0.1" />
+      <bullet speed="4500" lifetime="1.1" amount="1" barrelamount="1" timediff="0.01" angle="0.3" maxhits="1" ricochet="0.8" restitution="0.5" scale="0" attach="0" />
+      <heat value="10" />
+      <reload rate="10" />
+      <damage value="10" repair="0" />
+      <effects>
+        <impact ref="impact_gen_m_yacht_laser_01_mk1" inside="impact_gen_m_yacht_laser_01_mk1_inside" />
+        <bigobjectimpact ref="impact_gen_m_yacht_laser_01_mk1_bigobject" inside="impact_gen_m_yacht_laser_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_gen_m_yacht_laser_01_mk1_base" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>-->

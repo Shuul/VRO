@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="ship_xen_s_fighter_lx_macro" class="ship_s">
+    <component ref="ship_xen_s_fighter_lx" />
+    <properties>
+      <identification name="{20403,12}{20403,24}" description="{20403,12}{20403,24}" icon="ship_s_heavyfighter" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage missile="4" />
+      <hull max="12000" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="0" />
+      <physics mass="16">
+        <inertia pitch="3.7" yaw="3.7" roll="3" />
+        <drag forward="9" reverse="28.4" horizontal="4" vertical="4.2" pitch="7" yaw="7" roll="7" />
+      </physics>
+      <thruster tags="small" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_xen_s_combat_01_mk1_macro" path="../con_engine_01" />
+            <engine macro="engine_xen_s_combat_01_mk1_macro" path="../con_engine_02" />
+            <engine macro="engine_xen_s_combat_01_mk1_macro" path="../con_engine_03" />
+            <engine macro="engine_xen_s_combat_01_mk1_macro" path="../con_engine_04" />
+            <shield macro="shield_xen_s_standard_01_mk2_macro" path="../con_shield_01" optional="1" />
+            <shield macro="shield_xen_s_standard_01_mk2_macro" path="../con_shield_02" optional="1" />
+            <shield macro="shield_xen_s_standard_01_mk2_macro" path="../con_shield_03" optional="1" />
+            <weapon macro="weapon_xen_s_laser_01_mk1_macro" path="../con_primaryweapon_01" optional="1" />
+            <weapon macro="weapon_xen_s_laser_01_mk1_macro" path="../con_primaryweapon_02" optional="1" />
+            <weapon macro="weapon_xen_s_laser_01_mk1_macro" path="../con_primaryweapon_03" optional="1" />
+            <weapon macro="weapon_xen_s_laser_01_mk1_macro" path="../con_primaryweapon_04" optional="1" />
+            <weapon macro="weapon_gen_s_xentorp_macro" path="../con_primaryweapon_05" optional="1" />
+          </macros>
+          <ammunition>
+            <ammunition macro="countermeasure_flares_01_macro" min="10" max="10" optional="1" />
+            <ammunition macro="missile_tomahawk_macro" min="4" max="4" optional="0" />
+          </ammunition>
+          <virtualmacros>
+            <thruster macro="thruster_gen_s_combat_01_mk3_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <capture allow="0" />
+      <ship type="bomber" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
