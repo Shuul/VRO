@@ -113,7 +113,7 @@
 							</lod>
 						</lods>
 						<size>
-							<max x="210.8678" y="89.84074" z="350.5326"/>
+							<max x="210.8678" y="89.84074" z="287.5326"/>
 							<center x="0" y="1.853943E-03" z="0"/>
 						</size>
 					</part>
@@ -228,6 +228,7 @@
 					<position x="1.788139E-06" y="113.867" z="-150.1"/>
 				</offset>
 			</connection>
+			<!-- L Shields -->
 			<connection name="con_shieldgenerator_l_01" tags="large shield ">
 				<offset>
 					<position x="77.7984" y="-41.5545" z="-307.934"/>
@@ -252,12 +253,56 @@
 					<rotation yaw="0" pitch="0" roll="153.27"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_laser_l_01" group="turret_missile" tags="turret large missile standard ">
+			<!-- L Battery 01 -->
+			<connection name="con_turret_laser_l_05" group="group_keel_battery " tags="turret large standard terronly">
 				<offset>
-					<position x="0" y="61.31" z="-121.998"/>
+					<position x="0" y="-70.2227" z="309.185"/>
+					<rotation yaw="0" pitch="0" roll="180"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_001" group="turret_missile " tags="medium shield hittable ">
+			<connection name="con_turret_laser_l_06" group="group_keel_battery " tags="turret large standardterronly">
+				<offset>
+					<position x="0" y="-59.8808" z="72.1042"/>
+					<rotation yaw="0" pitch="0" roll="180"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_laser_l_07" group="group_keel_battery " tags="turret large standard terronly">
+				<offset>
+					<position x="0" y="-57.8808" z="-4.0867"/>
+					<rotation yaw="180" pitch="0" roll="180"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_008" group="group_keel_battery " tags="medium shield hittable ">
+				<offset>
+					<position x="9.2801" y="-70.2227" z="271.028"/>
+					<rotation yaw="90" pitch="0" roll="180"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_009" group="group_keel_battery " tags="medium shield hittable ">
+				<offset>
+					<position x="-9.2801" y="-70.2227" z="271.028"/>
+					<rotation yaw="-90" pitch="0" roll="-180"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_010" group="group_keel_battery " tags="medium shield hittable ">
+				<offset>
+					<position x="9.2801" y="-59.8808" z="34.1948"/>
+					<rotation yaw="90" pitch="0" roll="180"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_011" group="group_keel_battery " tags="medium shield hittable ">
+				<offset>
+					<position x="-9.2801" y="-59.8808" z="34.1948"/>
+					<rotation yaw="-90" pitch="0" roll="-180"/>
+				</offset>
+			</connection>
+			<!-- L Battery 02 -->
+			<connection name="con_turret_laser_l_01" group="group_back_up_mid " tags="turret large standard ">
+				<offset>
+					<position x="0" y="60.31" z="-121.998"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_001" group="group_back_up_mid " tags="medium shield hittable ">
 				<offset>
 					<position x="-25.7264" y="38.4537" z="-297.807"/>
 				</offset>
@@ -267,32 +312,102 @@
 					<position x="25.7264" y="38.4537" z="-297.807"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_laser_l_02" group="group_front_up_mid " tags="turret large standard highpower terronly">
+			<connection name="con_shieldgen_018" group="group_back_up_mid " tags="medium shield hittable ">
+				<offset>
+					<position x="64.1347" y="30" z="-381.648"/>
+					<rotation yaw="90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_019" group="group_back_up_mid " tags="medium shield hittable ">
+				<offset>
+					<position x="-64.1347" y="30" z="-381.648"/>
+					<rotation yaw="-90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_020" group="group_back_up_mid " tags="medium shield hittable ">
+				<offset>
+					<position x="64.1347" y="30" z="-410.45"/>
+					<rotation yaw="90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_021" group="group_back_up_mid " tags="medium shield hittable ">
+				<offset>
+					<position x="-64.1347" y="30" z="-410.45"/>
+					<rotation yaw="-90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<!-- L Battery 03 -->
+			<connection name="con_turret_laser_l_02" group="group_front_up_mid " tags="turret large  standard  terronly">
 				<offset>
 					<position x="0" y="49.919" z="-4.2492"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_laser_l_03" group="group_front_up_mid " tags="turret large standard highpower terronly">
+			<connection name="con_turret_laser_l_03" group="group_front_up_mid " tags="turret large  standard  terronly">
 				<offset>
 					<position x="0" y="38.4523" z="96.7207"/>
 				</offset>
 			</connection>
 			<connection name="con_shieldgen_003" group="group_front_up_mid " tags="medium shield hittable ">
 				<offset>
-					<position x="0" y="38.4537" z="157.132"/>
+					<position x="12.5282 " y="49.879" z="35.7941"/>
+					<rotation yaw="90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_015" group="group_front_up_mid " tags="medium shield hittable ">
+				<offset>
+					<position x="-12.5282 " y="49.879" z="35.7941"/>
 					<rotation yaw="-90" pitch="0" roll="0"/>
 				</offset>
 			</connection>
+			<connection name="con_shieldgen_016" group="group_front_up_mid " tags="medium shield hittable ">
+				<offset>
+					<position x="12.5282 " y="49.879" z="-49"/>
+					<rotation yaw="90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_017" group="group_front_up_mid " tags="medium shield hittable ">
+				<offset>
+					<position x="-12.5282 " y="49.879" z="-49"/>
+					<rotation yaw="-90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<!-- L Battery 04 -->
 			<connection name="con_turret_laser_l_04" group="group_front_up_front " tags="turret large standard ">
 				<offset>
-					<position x="0" y="29.8476" z="302.526"/>
+					<position x="0" y="30" z="302.526"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_laser_l_08" group="group_front_up_front " tags="turret large standard ">
+				<offset>
+					<position x="0" y="23.0198" z="425.39 "/>
+					<rotation yaw="0" pitch="-6.02671" roll="0"/>
 				</offset>
 			</connection>
 			<connection name="con_shieldgen_004" group="group_front_up_front " tags="medium shield hittable ">
 				<offset>
-					<position x="47.9659" y="38.4537" z="-212.264"/>
+					<position x="12.8365" y="38.4796" z="252.306"/>
+					<rotation yaw="90" pitch="0" roll="0"/>
 				</offset>
 			</connection>
+			<connection name="con_shieldgen_012" group="group_front_up_front " tags="medium shield hittable ">
+				<offset>
+					<position x="-12.8365" y="38.4796" z="252.306"/>
+					<rotation yaw="-90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_013" group="group_front_up_front " tags="medium shield hittable ">
+				<offset>
+					<position x="12.8365" y="30" z="347.367"/>
+					<rotation yaw="90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_014" group="group_front_up_front " tags="medium shield hittable ">
+				<offset>
+					<position x="-12.8365" y="30" z="347.367"/>
+					<rotation yaw="-90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<!-- M Turret Defense 01 -->
 			<connection name="con_turret_001" group="group_point_defense " tags="turret medium standard hittable ">
 				<offset>
 					<position x="0" y="61.3142" z="-241.984"/>
@@ -301,8 +416,8 @@
 			</connection>
 			<connection name="con_turret_002" group="group_point_defense " tags="turret medium standard hittable ">
 				<offset>
-					<position x="0" y="-70.2156" z="299.791"/>
-					<rotation yaw="180" pitch="180" roll="0"/> 
+					<position x="0" y="-51.4738" z="499.175"/>
+					<rotation yaw="0" pitch="7.62378" roll="180"/> 
 				</offset>
 			</connection>
 			<connection name="con_turret_003" group="group_point_defense " tags="turret medium standard hittable ">
@@ -313,9 +428,15 @@
 			</connection>
 			<connection name="con_shieldgen_005" group="group_point_defense " tags="medium shield hittable ">
 				<offset>
-					<position x="-47.9659" y="38.4537" z="-212.264"/>
+					<position x="26.3438" y="49.9184" z="-227.435"/>
 				</offset>
 			</connection>
+			<connection name="con_shieldgen_034" group="group_point_defense " tags="medium shield hittable ">
+				<offset>
+					<position x="-26.3438" y="49.9184" z="-227.435"/>
+				</offset>
+			</connection>
+			<!-- M Turret Defense 02 -->
 			<connection name="con_turret_004" group="group_rear_defense " tags="turret medium standard hittable ">
 				<offset>
 					<position x="0" y="38.4537" z="-320.234"/>
@@ -328,30 +449,62 @@
 					<rotation yaw="0" pitch="180" roll="0"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_006" group="group_rear_defense " tags="medium shield hittable ">
+			<connection name="con_turret_010" group="group_rear_defense " tags="turret medium standard hittable ">
 				<offset>
-					<position x="-47.9659" y="38.4537" z="-235.18"/>
+					<position x="11.4312" y="-66.0206" z="-438.659"/>
+					<rotation yaw="90" pitch="0" roll="180"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_006" group="group_fighter_defense " tags="turret medium standard  hittable ">
+			<connection name="con_turret_011" group="group_rear_defense " tags="turret medium standard hittable ">
+				<offset>
+					<position x="-11.4312" y="-66.0206" z="-438.659"/>
+					<rotation yaw="-90" pitch="0" roll="-180"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_006" group="group_rear_defense " tags="medium shield hittable ">
+				<offset>
+					<position x="18.215 " y="38.4537" z="-317.139"/>
+					<rotation yaw="90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_022" group="group_rear_defense " tags="medium shield hittable ">
+				<offset>
+					<position x="-18.215 " y="38.4537" z="-317.139"/>
+					<rotation yaw="-90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_023" group="group_rear_defense " tags="medium shield hittable ">
+				<offset>
+					<position x="28.092" y="-66.0206" z="-438.714"/>
+					<rotation yaw="0" pitch="0" roll="180"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_024" group="group_rear_defense " tags="medium shield hittable ">
+				<offset>
+					<position x="-28.092" y="-66.0206" z="-438.714"/>
+					<rotation yaw="0" pitch="0" roll="180"/>
+				</offset>
+			</connection>
+			<!-- M Turret Defense 03 -->
+			<connection name="con_turret_006" group="group_fighter_defense " tags="turret medium standard missile hittable ">
 				<offset>
 					<position x="0" y="49.9184" z="-292.553"/>
 					<rotation yaw="180" pitch="0" roll="0"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_007" group="group_fighter_defense " tags="turret medium standard  hittable ">
+			<connection name="con_turret_007" group="group_fighter_defense " tags="turret medium standard missile hittable ">
 				<offset>
 					<position x="0" y="18.3111" z="558.581"/>
 					<rotation yaw="0" pitch="-3" roll="0"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_008" group="group_fighter_defense " tags="turret medium standard  hittable ">
+			<connection name="con_turret_008" group="group_fighter_defense " tags="turret medium standard missile hittable ">
 				<offset>
 					<position x="64.4864" y="38.4537" z="-177.727"/>
 					<rotation yaw="90" pitch="0" roll="0"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_009" group="group_fighter_defense " tags="turret medium standard  hittable ">
+			<connection name="con_turret_009" group="group_fighter_defense " tags="turret medium standard missile hittable ">
 				<offset>
 					<position x="-64.4864" y="38.4537" z="-177.727"/>
 					<rotation yaw="-90" pitch="0" roll="0"/>
@@ -359,9 +512,133 @@
 			</connection>
 			<connection name="con_shieldgen_007" group="group_fighter_defense " tags="medium shield hittable ">
 				<offset>
-					<position x="47.9659" y="38.4537" z="-235.18"/>
+					<position x="28.2584" y="50.2917" z="-179.891"/>
 				</offset>
-			</connection>			
+			</connection>
+			<connection name="con_shieldgen_025" group="group_fighter_defense " tags="medium shield hittable ">
+				<offset>
+					<position x="-28.2584" y="50.2917" z="-179.891"/>
+				</offset>
+			</connection>
+			<!-- M Turret Array Top -->
+			<connection name="con_turret_012" group="group_array_top " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="59.1854" y="29.666 " z="247.433"/>
+					<rotation yaw="90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_013" group="group_array_top " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="-59.1854" y="29.666 " z="247.433"/>
+					<rotation yaw="-90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_014" group="group_array_top " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="59.1854" y="29.666 " z="147.185"/>
+					<rotation yaw="90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_015" group="group_array_top " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="-59.1854" y="29.666 " z="147.185"/>
+					<rotation yaw="-90" pitch="0" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_026" group="group_array_top " tags="medium shield hittable ">
+				<offset>
+					<position x="47.7423" y="29.666 " z="247.433"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_027" group="group_array_top " tags="medium shield hittable ">
+				<offset>
+					<position x="-47.7423" y="29.666 " z="247.433"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_028" group="group_array_top " tags="medium shield hittable ">
+				<offset>
+					<position x="47.7423" y="29.666 " z="147.185"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_029" group="group_array_top " tags="medium shield hittable ">
+				<offset>
+					<position x="-47.7423" y="29.666 " z="147.185"/>
+				</offset>
+			</connection>
+			<!-- M Turret Array Sides -->
+			<connection name="con_turret_016" group="group_array_sides " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="79.7643" y="-25.2838" z="260.581"/>
+					<rotation yaw="0" pitch="0" roll="153.273"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_017" group="group_array_sides " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="-79.7643" y="-25.2838" z="260.581"/>
+					<rotation yaw="0" pitch="0" roll="-153.273"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_018" group="group_array_sides " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="79.7643" y="-25.2838" z="224.434"/>
+					<rotation yaw="180" pitch="0" roll="-153.273"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_019" group="group_array_sides " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="-79.7643" y="-25.2838" z="224.434"/>
+					<rotation yaw="-180" pitch="0" roll="153.273"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_020" group="group_array_sides " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="79.7643" y="-25.2838" z="67.6671"/>
+					<rotation yaw="0" pitch="0" roll="153.273"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_021" group="group_array_sides " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="-79.7643" y="-25.2838" z="67.6671"/>
+					<rotation yaw="0" pitch="0" roll="-153.273"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_022" group="group_array_sides " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="79.7643" y="-25.2838" z="31.5198"/>
+					<rotation yaw="180" pitch="0" roll="-153.273"/>
+				</offset>
+			</connection>
+			<connection name="con_turret_023" group="group_array_sides " tags="turret medium standard missile highpower terronly hittable ">
+				<offset>
+					<position x="-79.7643" y="-25.2838" z="31.5198"/>
+					<rotation yaw="-180" pitch="0" roll="153.273"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_030" group="group_array_sides " tags="medium shield hittable ">
+				<offset>
+					<position x="79.7643" y="-25.2838" z="242.058"/>
+					<rotation yaw="90" pitch="-153.273" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_031" group="group_array_sides " tags="medium shield hittable ">
+				<offset>
+					<position x="-79.7643" y="-25.2838" z="242.058"/>
+					<rotation yaw="-90" pitch="-153.273" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_032" group="group_array_sides " tags="medium shield hittable ">
+				<offset>
+					<position x="79.7643" y="-25.2838" z="49.1441"/>
+					<rotation yaw="90" pitch="-153.273" roll="0"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldgen_033" group="group_array_sides " tags="medium shield hittable ">
+				<offset>
+					<position x="-79.7643" y="-25.2838" z="49.1441"/>
+					<rotation yaw="-90" pitch="-153.273" roll="0"/>
+				</offset>
+			</connection>
+			<!-- Other -->
 			<connection name="con_shipstorage_s_01" tags="dockingbay ">
 				<offset>
 					<position x="-0.470993" y="124.8929" z="-36.36061"/>
@@ -391,6 +668,7 @@
 					<quaternion qx="-0.7071068" qy="-0" qz="-0" qw="-0.7071068"/>
 				</offset>
 			</connection>
+			<!-- Engines -->
 			<connection name="con_engine_01" group="group_back_up_mid " tags="engine large ">
 				<offset>
 					<position x="-94.6647" y="1.2934" z="-442.586"/>
@@ -416,6 +694,7 @@
 					<position x="94.6647" y="1.2934" z="-442.586"/>
 				</offset>
 			</connection>
+			<!-- Countermeasures -->
 			<connection name="con_countermeasures_007" tags="countermeasures ">
 				<offset>
 					<position x="34" y="37" z="210"/>
@@ -434,6 +713,7 @@
 					<quaternion qx="-0.7071068" qy="-0" qz="-0" qw="-0.7071068"/>
 				</offset>
 			</connection>
+			<!-- Other -->
 			<connection name="con_dock_xs" tags="dock_xs ">
 				<offset>
 					<position x="4.130688E-08" y="121.322" z="-186.446"/>
