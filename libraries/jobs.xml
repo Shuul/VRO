@@ -142,7 +142,7 @@
 			</order>
 		</orders>
 		<category faction="paranid" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="5" sector="1"/>
+		<quota galaxy="4" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
@@ -553,6 +553,29 @@
 	</subordinates>
   </job>
 
+  <job id="terran_frigate_patrol_l" name="{20204,5201}">
+	<modifiers commandeerable="true"/>
+	<orders>
+	  <order order="Patrol" default="true">
+		<param name="range" value="class.zone"/>
+	  </order>
+	</orders>
+	<category faction="terran" tags="[factionlogic, military, frigate]" size="ship_l"/>
+	<quota galaxy="10" sector="1"/>
+	<location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="member" comparison="exact" matchextension="false"/>
+	<environment buildatshipyard="true"/>
+	<ship>
+	  <select faction="terran" tags="[military, frigate]" size="ship_l"/>
+	  <loadout>
+		<level exact="1.0"/>
+	  </loadout>
+	  <owner exact="terran" overridenpc="true"/>
+	</ship>
+	<subordinates>
+		<subordinate job="terran_corvette_escort_m"/>
+	</subordinates>
+  </job>
+
   <job id="terran_escort_s_lightcarrier" name="{20204,2901}" startactive="false">
 	<orders>
 	  <order order="Escort" default="true">
@@ -601,6 +624,32 @@
 		<subordinate job="pioneers_corvette_escort_m"/>
 	</subordinates>
   </job>
+
+  <job id="pioneers_battleship_patrol_xl" name="{20221,5201}" comment="each sector, expansion">
+	<modifiers commandeerable="true"/>
+	<orders>
+		<order order="Patrol" default="true">
+			<param name="range" value="class.cluster"/>
+		</order>
+	</orders>
+	<category faction="pioneers" tags="[factionlogic, military, battleship]" size="ship_xl"/>
+	<quota galaxy="1" sector="1"/>
+	<location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="exact" matchextension="false"/>
+	<environment buildatshipyard="true"/>
+	<ship>
+		<select faction="pioneers" tags="[military, battleship]" size="ship_xl"/>
+		<loadout>
+		  <level exact="1.0"/>
+		</loadout>
+		<owner exact="pioneers" overridenpc="true"/>
+	  </ship>
+	  <subordinates>
+		<subordinate job="pioneers_fighter_escort_s"/>
+		<subordinate job="pioneers_corvette_escort_m"/>
+		<subordinate job="pioneers_corvette_escort_m"/>
+	</subordinates>
+  </job>
+
 
   <!-- ############################# -->
   <!--      PIRATE SHIPS		      -->

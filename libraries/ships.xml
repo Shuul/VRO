@@ -1,260 +1,283 @@
 <?xml version="1.0" encoding="utf-8"?>
-<diff> 
+<diff>
 
-  <!-- ############################# -->
-  <!--    ARGON FEDERATION -->
-  <!-- ############################# -->
+	<!-- ############################# -->
+	<!--    ARGON FEDERATION -->
+	<!-- ############################# -->
 
 	<add sel="//ships">
 		<ship id="argon_battleship_xl" group="arg_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[argon, scaleplate, hatikvah, alliance]" size="ship_xl"/>
+			<category tags="[military, battleship, mission]" faction="[argon, scaleplate, hatikvah, alliance]" size="ship_xl" />
 			<pilot>
-				<select faction="argon" tags="fighterpilot"/>
+				<select faction="argon" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="argon_military_crew"/>
+			<drop ref="ship_large_military" />
+			<people ref="argon_military_crew" />
 		</ship>
 	</add>
 
 	<add sel="//ships">
 		<ship id="argon_centaur" group="arg_centaur_l">
-			<category tags="[military, frigate, mission]" faction="[argon, scaleplate, hatikvah, alliance]" size="ship_l"/>
+			<category tags="[military, frigate, mission]" faction="[argon, scaleplate, hatikvah, alliance]" size="ship_l" />
 			<pilot>
-				<select faction="argon" tags="fighterpilot"/>
+				<select faction="argon" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="argon_military_crew"/>
+			<drop ref="ship_large_military" />
+			<people ref="argon_military_crew" />
 		</ship>
 	</add>
 
-	<add sel="//ships">
-		<ship id="argon_titan" group="arg_titan_xl">
-			<category tags="[titan]" faction="[argon]" size="ship_xl"/>
-			<pilot>
-				<select faction="argon" tags="fighterpilot"/>
-			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="argon_military_crew"/>
-		</ship>
-	</add>
 
-  <!-- ############################# -->
-  <!--    ANTIGONE REPUBLIC -->
-  <!-- ############################# -->
-	
+	<!-- ############################# -->
+	<!--    ANTIGONE REPUBLIC -->
+	<!-- ############################# -->
+
 	<add sel="//ships">
 		<ship id="antigone_centaur" group="ant_centaur_l">
-			<category tags="[military, frigate, mission]" faction="[antigone, scaleplate, hatikvah, alliance]" size="ship_l"/>
+			<category tags="[military, frigate, mission]" faction="[antigone, scaleplate, hatikvah, alliance]" size="ship_l" />
 			<pilot>
-				<select faction="argon" tags="fighterpilot"/>
+				<select faction="argon" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="argon_military_crew"/>
+			<drop ref="ship_large_military" />
+			<people ref="argon_military_crew" />
 		</ship>
 	</add>
 
 	<add sel="//ships">
 		<ship id="antigone_battleship_xl" group="ant_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[antigone, scaleplate, hatikvah, alliance]" size="ship_xl"/>
+			<category tags="[military, battleship, mission]" faction="[antigone, scaleplate, hatikvah, alliance]" size="ship_xl" />
 			<pilot>
-				<select faction="argon" tags="fighterpilot"/>
+				<select faction="argon" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="argon_military_crew"/>
+			<drop ref="ship_large_military" />
+			<people ref="argon_military_crew" />
 		</ship>
 	</add>
-	
-  <!-- ############################# -->
-  <!--    GODREALM OF THE PARANID -->
-  <!-- ############################# -->
-  
+
+	<!-- ############################# -->
+	<!--    GODREALM OF THE PARANID -->
+	<!-- ############################# -->
+
 	<add sel="//ships">
 		<ship id="paranid_battleship_xl" group="par_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[paranid, alliance]" size="ship_xl"/>
+			<category tags="[military, battleship, mission]" faction="[paranid, alliance]" size="ship_xl" />
 			<pilot>
-				<select faction="paranid" tags="fighterpilot"/>
+				<select faction="paranid" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="paranid_military_crew"/>
+			<drop ref="ship_large_military" />
+			<people ref="paranid_military_crew" />
 		</ship>
 	</add>
 
 	<add sel="//ships">
 		<ship id="paranid_hyperion" group="par_hyperion_l">
-			<category tags="[military, frigate, mission, hyperion]" faction="[paranid]" size="ship_l"/>
+			<category tags="[military, frigate, mission, hyperion]" faction="[paranid]" size="ship_l" />
 			<pilot>
-				<select faction="paranid" tags="elitepilot"/>
+				<select faction="paranid" tags="elitepilot" />
 			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="paranid_elite_military_crew"/>
+			<drop ref="ship_large_military" />
+			<people ref="paranid_elite_military_crew" />
 		</ship>
 	</add>
 
-  <!-- ############################# -->
-  <!--    HOLY ORDER OF THE PONTIFEX -->
-  <!-- ############################# -->
-  
+	<!-- ############################# -->
+	<!--    HOLY ORDER OF THE PONTIFEX -->
+	<!-- ############################# -->
+
 	<add sel="//ships">
 		<ship id="holyorder_battleship_xl" group="hol_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[holyorder, alliance]" size="ship_xl"/>
+			<category tags="[military, battleship, mission]" faction="[holyorder, alliance]" size="ship_xl" />
 			<pilot>
-				<select faction="paranid" tags="fighterpilot"/>
+				<select faction="paranid" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="paranid_military_crew"/>
+			<drop ref="ship_large_military" />
+			<people ref="paranid_military_crew" />
 		</ship>
 	</add>
 
 	<add sel="//ships">
 		<ship id="holyorder_hyperion" group="hol_hyperion_l">
-			<category tags="[military, frigate, mission, hyperion]" faction="[holyorder]" size="ship_l"/>
+			<category tags="[military, frigate, mission, hyperion]" faction="[holyorder]" size="ship_l" />
 			<pilot>
-				<select faction="paranid" tags="elitepilot"/>
+				<select faction="paranid" tags="elitepilot" />
 			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="paranid_elite_military_crew"/>
+			<drop ref="ship_large_military" />
+			<people ref="paranid_elite_military_crew" />
 		</ship>
 	</add>
 
-  <!-- ############################# -->
-  <!--    TELADI COMPANY & MINISTRY OF FINANCE-->
-  <!-- ############################# -->
-  
+	<!-- ############################# -->
+	<!--    TELADI COMPANY & MINISTRY OF FINANCE-->
+	<!-- ############################# -->
+
 	<add sel="//ships">
 		<ship id="teladi_battleship_xl" group="tel_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[teladi, ministry, scaleplate]" size="ship_xl"/>
+			<category tags="[military, battleship, mission]" faction="[teladi, ministry, scaleplate]" size="ship_xl" />
 			<pilot>
-				<select faction="teladi" tags="fighterpilot"/>
+				<select faction="teladi" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="teladi_military_crew"/>
+			<drop ref="ship_large_military" />
+			<people ref="teladi_military_crew" />
 		</ship>
 	</add>
 
 	<add sel="//ships">
 		<ship id="teladi_shrike" group="tel_shrike_l">
-			<category tags="[military, frigate, mission]" faction="[teladi, scaleplate]" size="ship_l"/>
+			<category tags="[military, frigate, mission]" faction="[teladi, scaleplate]" size="ship_l" />
 			<pilot>
-				<select faction="teladi" tags="fighterpilot"/>
+				<select faction="teladi" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="teladi_military_crew"/>
+			<drop ref="ship_large_military" />
+			<people ref="teladi_military_crew" />
 		</ship>
 	</add>
 
-  <!-- ############################# -->
-  <!--    SPLIT-->
-  <!-- ############################# -->
-  
-<add sel="//ships">
-	<ship id="split_panther" group="spl_panther_l">
-		<category tags="[military, frigate, mission, plunder]" faction="[split, freesplit, fallensplit]" size="ship_l"/>
-		<pilot>
-			<select faction="split" tags="fighterpilot"/>
-		</pilot>
-		<drop ref="ship_large_military"/>
-		<people ref="split_veteran_military_crew"/>
-	</ship>
-</add>
-<add sel="//ships">
-	<ship id="court_panther" group="spl_panther_l">
-		<category tags="[military, frigate, mission, plunder]" faction="court" size="ship_l"/>
-		<pilot>
-			<select faction="court" tags="fighterpilot"/>
-		</pilot>
-		<drop ref="ship_large_military"/>
-		<people ref="split_veteran_military_crew"/>
-	</ship>
-</add>
+	<!-- ############################# -->
+	<!--    SPLIT-->
+	<!-- ############################# -->
 
-<add sel="//ships">
-	<ship id="split_battleship_xl" group="spl_battleship_xl">
-		<category tags="[military, battleship, mission]" faction="[split, freesplit, fallensplit]" size="ship_xl"/>
-		<pilot>
-			<select faction="split" tags="fighterpilot"/>
-		</pilot>
-		<drop ref="ship_large_military"/>
-		<people ref="split_elite_military_crew"/>
-	</ship>
-</add>
-
-<add sel="//ships">
-	<ship id="court_battleship_xl" group="spl_battleship_xl">
-		<category tags="[military, battleship, mission]" faction="court" size="ship_xl"/>
-		<pilot>
-			<select faction="court" tags="fighterpilot"/>
-		</pilot>
-		<drop ref="ship_large_military"/>
-		<people ref="split_elite_military_crew"/>
-	</ship>
-</add>
-
-<!-- ############################# -->
-<!--    TERRANS-->
-<!-- ############################# -->
-
-<add sel="//ships">
-	<ship id="terran_lightcarrier_l" group="ter_lightcarrier_l">
-		<category tags="[military, carrier, mission]" faction="[terran, pioneers]" size="ship_l"/>
-		<pilot>
-		  <select faction="terran" tags="fighterpilot"/>
-		</pilot>
-		<drop ref="ship_large_military"/>
-		<people ref="terran_military_crew"/>
-	  </ship>
+	<add sel="//ships">
+		<ship id="split_panther" group="spl_panther_l">
+			<category tags="[military, frigate, mission, plunder]" faction="[split, freesplit, fallensplit]" size="ship_l" />
+			<pilot>
+				<select faction="split" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="split_veteran_military_crew" />
+		</ship>
+	</add>
+	<add sel="//ships">
+		<ship id="court_panther" group="spl_panther_l">
+			<category tags="[military, frigate, mission, plunder]" faction="court" size="ship_l" />
+			<pilot>
+				<select faction="court" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="split_veteran_military_crew" />
+		</ship>
 	</add>
 
-<!-- ############################# -->
-<!--    Xenons-->
-<!-- ############################# -->
+	<add sel="//ships">
+		<ship id="split_battleship_xl" group="spl_battleship_xl">
+			<category tags="[military, battleship, mission]" faction="[split, freesplit, fallensplit]" size="ship_xl" />
+			<pilot>
+				<select faction="split" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="split_elite_military_crew" />
+		</ship>
+	</add>
 
-<add sel="//ships">
-	<ship id="xen_xl_mdestroyer_01_a_macro" group="xen_mdestroyer_xl" capturable="false">
-    <category tags="[military, destroyer, mission]" faction="[xenon]" size="ship_xl"/>
-    <pilot>
-      <select faction="xenon" tags="fighterpilot"/>
-    </pilot>
-    <drop ref="ship_large_xenon"/>
-  </ship>
-</add>
+	<add sel="//ships">
+		<ship id="court_battleship_xl" group="spl_battleship_xl">
+			<category tags="[military, battleship, mission]" faction="court" size="ship_xl" />
+			<pilot>
+				<select faction="court" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="split_elite_military_crew" />
+		</ship>
+	</add>
 
-<add sel="//ships">
-	<ship id="xenon_xl_u" group="xen_xl_u" capturable="false">
-    <category tags="[military, xenu]" faction="[xenon]" size="ship_xl"/>
-    <pilot>
-      <select faction="xenon" tags="fighterpilot"/>
-    </pilot>
-    <drop ref="ship_large_xenon"/>
-  </ship>
-</add>
-<!-- ############################# -->
-<!--    Pirate ships-->
-<!-- ############################# -->
+	<!-- ############################# -->
+	<!--    TERRANS-->
+	<!-- ############################# -->
 
-  <add sel="//ships">
-    <ship id="sca_refit_inca" group="sca_pirate_refit_inca">
-      <category tags="[military, plundererinca]" faction="[scaleplate]" size="ship_l"/>
-      <owner exact="scaleplate" overridenpc="true"/>
-    <pilot>
-      <select faction="scaleplate" tags="commander"/>
-    </pilot>
-    <basket basket="pirate_container"/>
-    <drop ref="ship_large_military"/>
-    <people ref="scaleplate_pirate_crew"/>
-    </ship>
-  </add>
-  
-  <add sel="//ships">
-    <ship id="sca_hound" group="sca_pirate_hound">
-      <category tags="[military, hound]" faction="[scaleplate]" size="ship_l"/>
-      <owner exact="scaleplate" overridenpc="true"/>
-    <pilot>
-      <select faction="scaleplate" tags="commander"/>
-    </pilot>
-    <basket basket="pirate_container"/>
-    <drop ref="ship_large_military"/>
-    <people ref="scaleplate_pirate_crew"/>
-    </ship>
-  </add>
+	<add sel="//ships">
+		<ship id="terran_lightcarrier_l" group="ter_lightcarrier_l">
+			<category tags="[military, carrier, mission]" faction="[terran, pioneers]" size="ship_l" />
+			<pilot>
+				<select faction="terran" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="terran_military_crew" />
+		</ship>
+	</add>
+
+	<add sel="//ships">
+		<ship id="terran_frigate_l" group="ter_frigate_l">
+			<category tags="[military, frigate, mission]" faction="[terran, pioneers]" size="ship_l" />
+			<pilot>
+				<select faction="terran" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="terran_military_crew" />
+		</ship>
+	</add>
+
+	<add sel="//ships">
+		<ship id="pioneers_battleship_xl" group="pio_battleship_xl">
+			<category tags="[military, battleship, mission]" faction="[pioneers]" size="ship_xl" />
+			<pilot>
+				<select faction="pioneers" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="pioneers_military_crew" />
+		</ship>
+	</add>
+
+	<replace sel="//ships/ship[@id='pioneers_destroyer_l']">
+		<ship id="pioneers_destroyer_l" group="pio_destroyer_l">
+			<category tags="[military, destroyer, mission]" faction="pioneers" size="ship_l"/>
+			<pilot>
+			  <select faction="terran" tags="fighterpilot"/>
+			</pilot>
+			<drop ref="ship_large_military"/>
+			<people ref="pioneers_veteran_military_crew"/>
+		  </ship>
+			</replace>
+
+	<!-- ############################# -->
+	<!--    Xenons-->
+	<!-- ############################# -->
+
+	<add sel="//ships">
+		<ship id="xen_xl_mdestroyer_01_a_macro" group="xen_mdestroyer_xl" capturable="false">
+			<category tags="[military, destroyer, mission]" faction="[xenon]" size="ship_xl" />
+			<pilot>
+				<select faction="xenon" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_xenon" />
+		</ship>
+	</add>
+
+	<add sel="//ships">
+		<ship id="xenon_xl_u" group="xen_xl_u" capturable="false">
+			<category tags="[military, xenu]" faction="[xenon]" size="ship_xl" />
+			<pilot>
+				<select faction="xenon" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_xenon" />
+		</ship>
+	</add>
+	<!-- ############################# -->
+	<!--    Pirate ships-->
+	<!-- ############################# -->
+
+	<add sel="//ships">
+		<ship id="sca_refit_inca" group="sca_pirate_refit_inca">
+			<category tags="[military, plundererinca]" faction="[scaleplate]" size="ship_l" />
+			<owner exact="scaleplate" overridenpc="true" />
+			<pilot>
+				<select faction="scaleplate" tags="commander" />
+			</pilot>
+			<basket basket="pirate_container" />
+			<drop ref="ship_large_military" />
+			<people ref="scaleplate_pirate_crew" />
+		</ship>
+	</add>
+
+	<add sel="//ships">
+		<ship id="sca_hound" group="sca_pirate_hound">
+			<category tags="[military, hound]" faction="[scaleplate]" size="ship_l" />
+			<owner exact="scaleplate" overridenpc="true" />
+			<pilot>
+				<select faction="scaleplate" tags="commander" />
+			</pilot>
+			<basket basket="pirate_container" />
+			<drop ref="ship_large_military" />
+			<people ref="scaleplate_pirate_crew" />
+		</ship>
+	</add>
 
 </diff>

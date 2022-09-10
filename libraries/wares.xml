@@ -795,12 +795,12 @@ __________________ -->
 
     <!-- SIMON TERRAN SHIPS -->
     <ware id="ship_ter_l_shikoku" name="{20101,63801}" description="{6699,1911}" group="ships_terran" transport="ship" volume="1" tags="ship">
-      <price min="9573488" average="11792338" max="14011189" />
+      <price min="8473488" average="9792338" max="11011189" />
       <production time="270" amount="1" method="default" name="{20206,901}">
         <primary>
-          <ware ware="computronicsubstrate" amount="352" />
+          <ware ware="computronicsubstrate" amount="340" />
           <ware ware="energycells" amount="1620" />
-          <ware ware="metallicmicrolattice" amount="589" />
+          <ware ware="metallicmicrolattice" amount="489" />
         </primary>
       </production>
       <component ref="ship_ter_l_shikoku_macro" amount="1" />
@@ -809,26 +809,26 @@ __________________ -->
     </ware>
 
     <ware id="ship_ter_l_makhaira" name="{20101,62001}" description="{6699,1912}" group="ships_terran" transport="ship" volume="1" tags="ship">
-      <price min="15750479" average="18529975" max="24309471" />
+      <price min="13750479" average="16529975" max="22309471" />
       <production time="320" amount="1" method="default" name="{20206,901}">
         <primary>
-          <ware ware="computronicsubstrate" amount="420" />
+          <ware ware="computronicsubstrate" amount="400" />
           <ware ware="energycells" amount="3620" />
-          <ware ware="metallicmicrolattice" amount="788" />
+          <ware ware="metallicmicrolattice" amount="658" />
         </primary>
       </production>
       <component ref="ship_ter_l_makhaira_macro" amount="1" />
       <restriction licence="capitalship" />
-      <owner faction="terran" />
+      <owner faction="pioneers" />
     </ware>
 
     <ware id="ship_ter_l_akita" name="{20101,64601}" description="{6699,1913}" group="ships_terran" transport="ship" volume="1" tags="ship">
-      <price min="28099943" average="32413426" max="36309471" />
+      <price min="26099943" average="29413426" max="33309471" />
       <production time="360" amount="1" method="default" name="{20206,901}">
         <primary>
-          <ware ware="computronicsubstrate" amount="600" />
-          <ware ware="energycells" amount="10380" />
-          <ware ware="metallicmicrolattice" amount="1000" />
+          <ware ware="computronicsubstrate" amount="550" />
+          <ware ware="energycells" amount="9000" />
+          <ware ware="metallicmicrolattice" amount="800" />
         </primary>
       </production>
       <component ref="ship_ter_l_akita_macro" amount="1" />
@@ -837,17 +837,17 @@ __________________ -->
     </ware>
 
     <ware id="ship_ter_xl_sapporo" name="{20101,62701}" description="{6699,1914}" group="ships_terran" transport="ship" volume="1" tags="ship">
-      <price min="42816165" average="46724900" max="50633635" />
+      <price min="37816165" average="41724900" max="45633635" />
       <production time="360" amount="1" method="default" name="{20206,901}">
         <primary>
-          <ware ware="computronicsubstrate" amount="800" />
-          <ware ware="energycells" amount="28568" />
-          <ware ware="metallicmicrolattice" amount="2825" />
+          <ware ware="computronicsubstrate" amount="700" />
+          <ware ware="energycells" amount="26568" />
+          <ware ware="metallicmicrolattice" amount="2625" />
         </primary>
       </production>
       <component ref="ship_ter_xl_sapporo_macro" amount="1" />
       <restriction licence="capitalship" />
-      <owner faction="terran" />
+      <owner faction="pioneers" />
     </ware>
 
     <!-- PIO triton -->
@@ -2764,7 +2764,7 @@ __________________ -->
   <!-- Faction Battleships -->
   <add sel="/wares">
 
-    <ware id="ship_par_xl_battleship_a" name="{20101,31701}" description="{20101,31701}" group="ships_paranid" transport="ship" volume="1" tags="ship">
+    <ware id="ship_par_xl_battleship_a" name="{20101,31701}" description="{20101,31701}" group="ships_paranid" transport="ship" volume="1" tags="ship noblueprint noplayerblueprint noplayerbuild">
       <price min="32000000" average="37000000" max="42000000" />
       <production time="575" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -2779,6 +2779,20 @@ __________________ -->
       <owner faction="trinity" />
     </ware>
 
+    <ware id="ship_par_xl_battleship_02" name="{20101,31701}" description="{20101,31701}" group="ships_paranid" transport="ship" volume="1" tags="ship">
+      <price min="36000000" average="40000000" max="44000000" />
+      <production time="575" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="3450" />
+          <ware ware="hullparts" amount="17940" />
+        </primary>
+      </production>
+      <component ref="ship_par_xl_battleship_02_macro" amount="1" />
+      <restriction licence="capitalship" />
+      <owner faction="holyorder" />
+      <owner faction="paranid" />
+      <owner faction="trinity" />
+    </ware>
 
     <ware id="ship_arg_xl_battleship_a" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship noplayerbuild noblueprint noplayerblueprint">
       <price min="30000000" average="35000000" max="40000000" />
@@ -2836,19 +2850,6 @@ __________________ -->
       <owner faction="split" />
       <owner faction="court" />
       <owner faction="fallensplit" />
-    </ware>
-    <!-- Titan -->
-    <ware id="ship_arg_xl_titan" name="{20004,1050011}" description="{6699,1903}" group="ships_argon" transport="ship" volume="1" tags="ship noplayerbuild ">
-      <price min="60000000" average="75000000" max="80000000" />
-      <production time="750" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="energycells" amount="15640" />
-          <ware ware="hullparts" amount="30622" />
-        </primary>
-      </production>
-      <component ref="ship_arg_xl_titan_macro" amount="1" />
-      <restriction licence="capitalship" />
-      <owner faction="argon" />
     </ware>
 
     <!-- Shrike-->
