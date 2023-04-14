@@ -9,11 +9,11 @@
 	 </connection>
 	</add>
 
-<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_05']/@tags"> weapon medium standard highpower terronly platformcollision symmetry symmetry_left symmetry_1 </replace>
-<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_04']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_left symmetry_2 </replace>
-<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_03']/@tags"> weapon medium standard highpower terronly platformcollision </replace>
-<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_02']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_right symmetry_2 </replace>
-<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_01']/@tags"> weapon medium standard highpower terronly platformcollision symmetry symmetry_right symmetry_1 </replace>
+<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_05']/@tags"> weapon medium standard highpower terronly platformcollision symmetry symmetry_left symmetry_1 combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_04']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_left symmetry_2 combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_03']/@tags"> weapon medium standard highpower terronly platformcollision combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_02']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_right symmetry_2 combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_01']/@tags"> weapon medium standard highpower terronly platformcollision symmetry symmetry_right symmetry_1 combat</replace>
 
 	</diff>
 <!-- <components>
@@ -1079,13 +1079,13 @@
 					<position x="7.105427E-15" y="0.3361132" z="16.17508"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_L01" tags="turret medium standard missile platformcollision unhittable">
+			<connection name="con_turret_L01" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="-14.52599" y="-5.033207E-02" z="-21.14665"/>
 					<quaternion qx="1.083347E-08" qy="4.043106E-08" qz="-0.258819" qw="-0.9659259"/>
 				</offset>
 			</connection>
-			<connection name="con_primaryweapon_04" tags="weapon medium standard missile platformcollision symmetry symmetry_left symmetry_2">
+			<connection name="con_primaryweapon_04" tags="weapon medium standard missile platformcollision symmetry symmetry_left symmetry_2 combat">
 				<offset>
 					<position x="-11.94523" y="-7.00084" z="31.47911"/>
 				</offset>
@@ -1095,29 +1095,29 @@
 					<position x="0.1317902" y="14.78893" z="-1.686176"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_R01" tags="turret medium standard missile platformcollision unhittable">
+			<connection name="con_turret_R01" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="14.90803" y="-5.033207E-02" z="-21.14665"/>
 					<quaternion qx="-0" qy="-0" qz="0.2588191" qw="-0.9659258"/>
 				</offset>
 			</connection>
-			<connection name="con_primaryweapon_02" tags="weapon medium standard missile platformcollision symmetry symmetry_right symmetry_2">
+			<connection name="con_primaryweapon_02" tags="weapon medium standard missile platformcollision symmetry symmetry_right symmetry_2 combat">
 				<offset>
 					<position x="11.945" y="-7.00084" z="31.47911"/>
 				</offset>
 			</connection>
-			<connection name="con_shield_front_R" tags="medium shield unhittable platformcollision">
+			<connection name="con_shield_front_R" tags="medium shield unhittable platformcollision standard">
 				<offset>
 					<position x="7.395149" y="-6.359723" z="-18.9089"/>
 					<quaternion qx="-1.421557E-15" qy="1.192093E-07" qz="-1" qw="1.192488E-08"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_01" tags="engine medium ">
+			<connection name="con_engine_01" tags="engine medium standard">
 				<offset>
 					<position x="8.34465E-07" y="0.3275747" z="-29.86381"/>
 				</offset>
 			</connection>
-			<connection name="con_shield_front_L" tags="medium shield unhittable platformcollision">
+			<connection name="con_shield_front_L" tags="medium shield unhittable platformcollision standard">
 				<offset>
 					<position x="-7.442429" y="-6.359723" z="-18.9089"/>
 					<quaternion qx="-1.421557E-15" qy="1.192093E-07" qz="-1" qw="1.192488E-08"/>
@@ -1144,17 +1144,17 @@
 					<quaternion qx="-0.7071068" qy="-0" qz="-0" qw="-0.7071068"/>
 				</offset>
 			</connection>
-			<connection name="con_primaryweapon_03" tags="weapon medium standard missile platformcollision">
+			<connection name="con_primaryweapon_03" tags="weapon medium standard missile platformcollision combat">
 				<offset>
 					<position x="0" y="-7.10223" z="1.28791"/>
 				</offset>
 			</connection>
-			<connection name="con_primaryweapon_05" tags="weapon medium standard missile platformcollision symmetry symmetry_left symmetry_1">
+			<connection name="con_primaryweapon_05" tags="weapon medium standard missile platformcollision symmetry symmetry_left symmetry_1 combat">
 				<offset>
 					<position x="-24.43798" y="-6.506485" z="-11.75323"/>
 				</offset>
 			</connection>
-			<connection name="con_primaryweapon_01" tags="weapon medium standard missile platformcollision symmetry symmetry_right symmetry_1 ">
+			<connection name="con_primaryweapon_01" tags="weapon medium standard missile platformcollision symmetry symmetry_right symmetry_1 combat">
 				<offset>
 					<position x="24.67099" y="-6.506485" z="-11.75323"/>
 				</offset>

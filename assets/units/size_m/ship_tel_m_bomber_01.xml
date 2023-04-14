@@ -18,8 +18,8 @@
   </offset>
  </connection>
 </add>
-<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_01']/@tags"> weapon medium standard missile platformcollision highpower </replace>
-<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_002']/@tags"> weapon medium standard missile platformcollision highpower </replace>
+<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_01']/@tags"> weapon medium standard missile platformcollision highpower combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_002']/@tags"> weapon medium standard missile platformcollision highpower combat</replace>
 </diff>
 
 <!-- 
@@ -1813,7 +1813,7 @@
 					<quaternion qx="-0.7071068" qy="3.823782E-08" qz="-3.823782E-08" qw="-0.7071068"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_02" tags="engine medium platformcollision ">
+			<connection name="con_engine_02" tags="engine medium platformcollision standard">
 				<offset>
 					<position x="8.648455E-03" y="-2.337425" z="-44.7169"/>
 				</offset>
@@ -1833,13 +1833,13 @@
 					<position x="0.089653" y="8.740403" z="50.87145"/>
 				</offset>
 			</connection>
-			<connection name="con_shield_01" tags="medium shield unhittable platformcollision ">
+			<connection name="con_shield_01" tags="medium shield unhittable platformcollision standard">
 				<offset>
 					<position x="-9.146002" y="8.243243" z="-32.9408"/>
 					<quaternion qx="-2.095921E-07" qy="-1.136423E-07" qz="-0.4766503" qw="-0.879093"/>
 				</offset>
 			</connection>
-			<connection name="con_primaryweapon_01" tags="weapon medium standard missile platformcollision ">
+			<connection name="con_primaryweapon_01" tags="weapon medium standard missile platformcollision combat">
 				<offset>
 					<position x="-13.85948" y="-7.780499" z="13.57349"/>
 				</offset>
@@ -1849,13 +1849,13 @@
 					<position x="0" y="15.81977" z="-2.780109"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_L01" tags="turret medium standard missile platformcollision unhittable">
+			<connection name="con_turret_L01" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="-10.46507" y="5.854039" z="3.193537"/>
 					<quaternion qx="-0" qy="-0" qz="-0.4999999" qw="-0.8660254"/>
 				</offset>
 			</connection>
-			<connection name="con_shield_02" tags="medium shield unhittable platformcollision ">
+			<connection name="con_shield_02" tags="medium shield unhittable platformcollision standard">
 				<offset>
 					<position x="5.116427E-02" y="12.32381" z="-31.04067"/>
 				</offset>
@@ -1870,36 +1870,36 @@
 					<position x="0" y="-10.53959" z="12.48533"/>
 				</offset>
 			</connection>
-			<connection name="con_primaryweapon_002" tags="weapon medium standard missile platformcollision ">
+			<connection name="con_primaryweapon_002" tags="weapon medium standard missile platformcollision combat">
 				<offset>
 					<position x="14.1182" y="-7.780499" z="13.57349"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_L02" tags="turret medium standard missile platformcollision unhittable">
+			<connection name="con_turret_L02" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="-10.46507" y="5.854039" z="-15.20008"/>
 					<quaternion qx="-0" qy="-0" qz="-0.4999999" qw="-0.8660254"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_L03" tags="turret medium standard missile platformcollision unhittable">
+			<connection name="con_turret_L03" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="10.40647" y="5.854039" z="3.193537"/>
 					<quaternion qx="-0" qy="-0" qz="0.5000001" qw="-0.8660253"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_L04" tags="turret medium standard missile platformcollision unhittable">
+			<connection name="con_turret_L04" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="10.55575" y="5.854039" z="-15.20008"/>
 					<quaternion qx="-0" qy="-0" qz="0.5000001" qw="-0.8660253"/>
 				</offset>
 			</connection>
-			<connection name="con_shield_003" tags="medium shield unhittable platformcollision ">
+			<connection name="con_shield_003" tags="medium shield unhittable platformcollision standard">
 				<offset>
 					<position x="9.35384" y="7.912618" z="-32.9408"/>
 					<quaternion qx="-2.084587E-07" qy="1.157083E-07" qz="0.4853156" qw="-0.874339"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_01" tags="engine medium platformcollision ">
+			<connection name="con_engine_01" tags="engine medium platformcollision standard">
 				<offset>
 					<position x="8.648455E-03" y="6.710684" z="-44.7169"/>
 				</offset>

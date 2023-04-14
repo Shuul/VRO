@@ -8,10 +8,10 @@
 			</offset>
 		</connection>
 	</add>
-		<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags"> weapon small platformcollision highpower</replace>
-	<replace  sel="/components/component/connections/connection[@name='con_weapon_02']/@tags">weapon small platformcollision highpower</replace>
-	<replace  sel="/components/component/connections/connection[@name='con_weapon_03']/@tags">weapon small platformcollision standard highpower missile symmetry symmetry_right symmetry_1 </replace>
-	<replace  sel="/components/component/connections/connection[@name='con_weapon_04']/@tags"> weapon small platformcollision standard highpower missile symmetry symmetry_left symmetry_1 </replace>
+		<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags"> weapon small platformcollision highpower combat</replace>
+	<replace  sel="/components/component/connections/connection[@name='con_weapon_02']/@tags">weapon small platformcollision highpower combat</replace>
+	<replace  sel="/components/component/connections/connection[@name='con_weapon_03']/@tags">weapon small platformcollision standard highpower missile symmetry symmetry_right symmetry_1 combat</replace>
+	<replace  sel="/components/component/connections/connection[@name='con_weapon_04']/@tags"> weapon small platformcollision standard highpower missile symmetry symmetry_left symmetry_1 combat</replace>
 
 </diff>
 <!--
@@ -1005,12 +1005,12 @@
 					<quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067"/>
 				</offset>
 			</connection>
-			<connection name="con_shield_01" tags="small shield unhittable ">
+			<connection name="con_shield_01" tags="small shield unhittable standard">
 				<offset>
 					<position x="8.246889" y="5.477414" z="7.515118"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_01" tags="engine small platformcollision ">
+			<connection name="con_engine_01" tags="engine small platformcollision standard">
 				<offset>
 					<position x="-0.6933077" y="4.251648" z="-11.36585"/>
 					<quaternion qx="-0" qy="-0" qz="0.7071067" qw="-0.7071068"/>
@@ -1043,12 +1043,12 @@
 					<quaternion qx="-0.7071068" qy="-0" qz="-0" qw="-0.7071067"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_03" tags="weapon small platformcollision standard missile symmetry symmetry_right symmetry_1 ">
+			<connection name="con_weapon_03" tags="weapon small platformcollision standard missile symmetry symmetry_right symmetry_1 combat">
 				<offset>
 					<position x="2.936537" y="5.176659" z="-1.495646"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_02" tags="engine small platformcollision ">
+			<connection name="con_engine_02" tags="engine small platformcollision standard">
 				<offset>
 					<position x="7.114519" y="5.140356" z="-11.9814"/>
 					<quaternion qx="-0" qy="-0" qz="-1" qw="7.54979E-08"/>
@@ -1075,28 +1075,28 @@
 					<position x="0" y="14.16503" z="-1.229022"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_04" tags="weapon small platformcollision standard missile symmetry symmetry_left symmetry_1 ">
+			<connection name="con_weapon_04" tags="weapon small platformcollision standard missile symmetry symmetry_left symmetry_1 combat">
 				<offset>
 					<position x="-14.94187" y="1.762496" z="-4.404645"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_01" tags="weapon small platformcollision standard missile symmetry symmetry_right symmetry_2 ">
+			<connection name="con_weapon_01" tags="weapon small platformcollision standard missile symmetry symmetry_right symmetry_2 combat">
 				<offset>
 					<position x="11.15616" y="6.127755" z="-1.572553"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_02" tags="weapon small platformcollision standard missile symmetry symmetry_left symmetry_2 ">
+			<connection name="con_weapon_02" tags="weapon small platformcollision standard missile symmetry symmetry_left symmetry_2 combat">
 				<offset>
 					<position x="11.15616" y="4.128" z="-1.572553"/>
 				</offset>
 			</connection>
-			<connection name="con_shield_02" tags="small shield unhittable ">
+			<connection name="con_shield_02" tags="small shield unhittable standard">
 				<offset>
 					<position x="8.246889" y="4.875904" z="7.515118"/>
 					<quaternion qx="-7.549789E-08" qy="7.549789E-08" qz="-1" qw="-8.742278E-08"/>
 				</offset>
 			</connection>
-			<connection name="con_shield_03" tags="small shield unhittable ">
+			<connection name="con_shield_03" tags="small shield unhittable standard">
 				<offset>
 					<position x="-0.7184858" y="6.093848" z="-8.428978"/>
 				</offset>

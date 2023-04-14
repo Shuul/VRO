@@ -1012,13 +1012,13 @@
 					<quaternion qx="0.5" qy="-0.5" qz="0.5" qw="-0.5"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_12" group="group_front_top_right" tags="turret medium pir_battleship_01 hittable ">
+			<connection name="con_turret_12" group="group_front_top_right" tags="turret medium pir_battleship_01 hittable combat">
 				<offset>
 					<position x="117.4296" y="46.60235" z="166.8687"/>
 					<quaternion qx="6.234515E-07" qy="8.019894E-02" qz="3.770561E-07" qw="-0.9967789"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_09" group="group_back_up_mid" tags="medium shield hittable ">
+			<connection name="con_shieldgen_09" group="group_back_up_mid" tags="medium shield hittable standard ">
 				<offset>
 					<position x="86.00674" y="190.0024" z="-1208.147"/>
 					<quaternion qx="5.675795E-07" qy="0.7071066" qz="5.675793E-07" qw="-0.7071069"/>
@@ -1035,7 +1035,7 @@
 					<quaternion qx="0.7071066" qy="-1.067702E-07" qz="-1.067701E-07" qw="-0.7071069"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_11" group="group_back_up_mid" tags="turret medium standard missile pir_battleship_01 hittable ">
+			<connection name="con_turret_11" group="group_back_up_mid" tags="turret medium standard missile pir_battleship_01 hittable combat">
 				<offset>
 					<position x="85.90753" y="190.0524" z="-1263.446"/>
 				</offset>
@@ -1045,7 +1045,7 @@
 					<position x="-50" y="103" z="-690"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_08" group="group_back_mid_down" tags="medium shield hittable ">
+			<connection name="con_shieldgen_08" group="group_back_mid_down" tags="medium shield hittable standard ">
 				<offset>
 					<position x="35.72434" y="-137.0654" z="-777.4265"/>
 					<quaternion qx="3.060441E-07" qy="-6.522582E-07" qz="0.7933534" qw="-0.6087613"/>
@@ -1063,36 +1063,36 @@
 					<quaternion qx="0.5" qy="-0.5" qz="0.5" qw="-0.5"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_01" group="group_back_mid_down" tags="engine extralarge pir_battleship_01 ">
+			<connection name="con_engine_01" group="group_back_mid_down" tags="engine extralarge pir_battleship_01 standard">
 				<offset>
 					<position x="66.96774" y="87.38226" z="-1269.423"/>
 					<quaternion qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_10" group="group_back_up_mid" tags="turret medium standard missile pir_battleship_01 hittable ">
+			<connection name="con_turret_10" group="group_back_up_mid" tags="turret medium standard missile pir_battleship_01 hittable combat">
 				<offset>
 					<position x="85.90753" y="190.0525" z="-1225.446"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_07" group="group_back_mid_down" tags="medium shield hittable ">
+			<connection name="con_shieldgen_07" group="group_back_mid_down" tags="medium shield hittable standard ">
 				<offset>
 					<position x="143.1145" y="86.87064" z="-1257.321"/>
 					<quaternion qx="5.819815E-07" qy="-5.819813E-07" qz="0.7071066" qw="-0.7071069"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_xl_01" tags="extralarge shield pir_battleship_01 ">
+			<connection name="con_shieldgen_xl_01" tags="extralarge shield pir_battleship_01 standard">
 				<offset>
 					<position x="-140.7015" y="-1.192383" z="-686.0048"/>
 					<quaternion qx="-1.109862E-07" qy="1.109862E-07" qz="-0.7071068" qw="-0.7071068"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_06" group="group_back_down_right" tags="medium shield hittable ">
+			<connection name="con_shieldgen_06" group="group_back_down_right" tags="medium shield hittable standard ">
 				<offset>
 					<position x="62.91805" y="-176.7891" z="-635.4675"/>
 					<quaternion qx="9.395094E-08" qy="-1.178891E-06" qz="0.8433915" qw="-0.5372996"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_09" group="group_back_down_right" tags="turret medium pir_battleship_01 hittable ">
+			<connection name="con_turret_09" group="group_back_down_right" tags="turret medium pir_battleship_01 hittable combat">
 				<offset>
 					<position x="71.33883" y="-154.9208" z="-628.217"/>
 					<quaternion qx="-3.982377E-07" qy="-1.506489E-06" qz="0.8433914" qw="-0.5372997"/>
@@ -1103,7 +1103,7 @@
 					<position x="2.700806E-02" y="171.948" z="-81.40008"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_05" group="group_front_mid_left" tags="medium shield hittable ">
+			<connection name="con_shieldgen_05" group="group_front_mid_left" tags="medium shield hittable standard ">
 				<offset>
 					<position x="-116.4281" y="-9.248612" z="243.7885"/>
 					<quaternion qx="-0.1235334" qy="-0.6962309" qz="-0.6962339" qw="0.1235333"/>
@@ -1115,7 +1115,7 @@
 					<quaternion qx="-4.853875E-07" qy="4.853875E-07" qz="-0.7071063" qw="-0.7071072"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_04" group="group_back_down_left" tags="medium shield hittable ">
+			<connection name="con_shieldgen_04" group="group_back_down_left" tags="medium shield hittable standard ">
 				<offset>
 					<position x="-145.2508" y="-36.89505" z="-958.6716"/>
 					<quaternion qx="-0.4055791" qy="0.5792271" qz="0.405581" qw="-0.5792283"/>
@@ -1127,7 +1127,7 @@
 					<quaternion qx="-9.417496E-07" qy="4.887623E-07" qz="-1" qw="3.258409E-07"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_10" group="group_back_up_right" tags="medium shield hittable ">
+			<connection name="con_shieldgen_10" group="group_back_up_right" tags="medium shield hittable standard ">
 				<offset>
 					<position x="117.2429" y="132.044" z="-850.618"/>
 					<quaternion qx="-0.6963632" qy="0.122788" qz="-0.1227879" qw="-0.6963652"/>
@@ -1144,13 +1144,13 @@
 					<position x="34.48273" y="94.54566" z="-193.7445"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_11" group="group_front_top_mid" tags="medium shield hittable ">
+			<connection name="con_shieldgen_11" group="group_front_top_mid" tags="medium shield hittable standard ">
 				<offset>
 					<position x="67.11005" y="79.88438" z="-193.5064"/>
 					<quaternion qx="-0.819152" qy="-0.5735765" qz="-7.956812E-07" qw="-9.603079E-07"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_12" group="group_front_mid_right" tags="medium shield hittable ">
+			<connection name="con_shieldgen_12" group="group_front_mid_right" tags="medium shield hittable standard ">
 				<offset>
 					<position x="187.9662" y="-5.83664" z="40.94715"/>
 					<quaternion qx="-0.6963634" qy="0.1227883" qz="-0.1227874" qw="-0.6963651"/>
@@ -1162,118 +1162,118 @@
 					<quaternion qx="3.796458E-07" qy="-8.396952E-08" qz="0.7071069" qw="-0.7071066"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_large_01" tags="weapon extralarge standard pir_battleship_01 ">
+			<connection name="con_weapon_large_01" tags="weapon extralarge standard pir_battleship_01 combat">
 				<offset>
 					<position x="14.41779" y="-5.83666" z="300.5587"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_13" group="group_back_mid_down" tags="medium shield hittable ">
+			<connection name="con_shieldgen_13" group="group_back_mid_down" tags="medium shield hittable standard ">
 				<offset>
 					<position x="-99.8172" y="78.53969" z="-1186.681"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_02" group="group_back_mid_down" tags="engine extralarge pir_battleship_01 ">
+			<connection name="con_engine_02" group="group_back_mid_down" tags="engine extralarge pir_battleship_01 standard">
 				<offset>
 					<position x="-100.4189" y="4.428649" z="-1196.036"/>
 					<quaternion qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_03" group="group_back_mid_down" tags="engine extralarge pir_battleship_01 ">
+			<connection name="con_engine_03" group="group_back_mid_down" tags="engine extralarge pir_battleship_01 standard">
 				<offset>
 					<position x="-35.60481" y="-117.9177" z="-786.7797"/>
 					<quaternion qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_03" group="group_front_top_right" tags="medium shield hittable ">
+			<connection name="con_shieldgen_03" group="group_front_top_right" tags="medium shield hittable standard ">
 				<offset>
 					<position x="99.66416" y="46.60232" z="184.0455"/>
 					<quaternion qx="6.367408E-07" qy="0.0801989" qz="6.319435E-08" qw="-0.9967789"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_13" group="group_front_down_right" tags="turret medium pir_battleship_01 hittable ">
+			<connection name="con_turret_13" group="group_front_down_right" tags="turret medium pir_battleship_01 hittable combat">
 				<offset>
 					<position x="116.0405" y="-58.46732" z="174.5444"/>
 					<quaternion qx="-0.9967789" qy="2.028231E-07" qz="-8.019894E-02" qw="-1.430779E-06"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_02" group="group_front_down_right" tags="medium shield hittable ">
+			<connection name="con_shieldgen_02" group="group_front_down_right" tags="medium shield hittable standard ">
 				<offset>
 					<position x="101.6678" y="-58.4673" z="172.2172"/>
 					<quaternion qx="-0.9967789" qy="1.07491E-07" qz="-0.0801989" qw="-1.187297E-06"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_14" group="group_back_up_mid" tags="turret medium standard missile pir_battleship_01 hittable ">
+			<connection name="con_turret_14" group="group_back_up_mid" tags="turret medium standard missile pir_battleship_01 hittable combat">
 				<offset>
 					<position x="85.90753" y="190.0524" z="-1244.446"/>
 				</offset>
 			</connection>
-			<connection name="con_shieldgen_01" group="group_back_mid_left" tags="medium shield hittable ">
+			<connection name="con_shieldgen_01" group="group_back_mid_left" tags="medium shield hittable standard ">
 				<offset>
 					<position x="-212.2752" y="3.019415" z="-999.0178"/>
 					<quaternion qx="0.0800473" qy="8.004746E-02" qz="-0.7025613" qw="-0.7025614"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_15" group="group_back_mid_left" tags="turret medium standard missile pir_battleship_01 hittable ">
+			<connection name="con_turret_15" group="group_back_mid_left" tags="turret medium standard missile pir_battleship_01 hittable combat">
 				<offset>
 					<position x="-206.512" y="3.019416" z="-1019.832"/>
 					<quaternion qx="0.0800475" qy="0.0800475" qz="-0.7025613" qw="-0.7025613"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_16" group="group_back_mid_left" tags="turret medium standard missile pir_battleship_01 hittable ">
+			<connection name="con_turret_16" group="group_back_mid_left" tags="turret medium standard missile pir_battleship_01 hittable combat">
 				<offset>
 					<position x="-202.2379" y="3.019415" z="-1038.345"/>
 					<quaternion qx="0.0800475" qy="0.0800475" qz="-0.7025613" qw="-0.7025613"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_17" group="group_back_mid_left" tags="turret medium standard missile pir_battleship_01 hittable ">
+			<connection name="con_turret_17" group="group_back_mid_left" tags="turret medium standard missile pir_battleship_01 hittable combat">
 				<offset>
 					<position x="-197.9638" y="3.019415" z="-1056.858"/>
 					<quaternion qx="0.0800475" qy="0.0800475" qz="-0.7025613" qw="-0.7025613"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_08" group="group_back_down_right" tags="turret medium pir_battleship_01 hittable ">
+			<connection name="con_turret_08" group="group_back_down_right" tags="turret medium pir_battleship_01 hittable combat">
 				<offset>
 					<position x="71.33883" y="-154.9208" z="-608.217"/>
 					<quaternion qx="-3.982377E-07" qy="-1.506489E-06" qz="0.8433914" qw="-0.5372997"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_07" group="group_back_down_right" tags="turret medium pir_battleship_01 hittable ">
+			<connection name="con_turret_07" group="group_back_down_right" tags="turret medium pir_battleship_01 hittable combat">
 				<offset>
 					<position x="71.33883" y="-154.9208" z="-648.217"/>
 					<quaternion qx="-1.06326E-07" qy="-1.214577E-06" qz="0.8433914" qw="-0.5372997"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_06" group="group_front_down_right" tags="turret medium pir_battleship_01 hittable ">
+			<connection name="con_turret_06" group="group_front_down_right" tags="turret medium pir_battleship_01 hittable combat">
 				<offset>
 					<position x="119.2381" y="-58.46736" z="154.8017"/>
 					<quaternion qx="-0.9967789" qy="2.028231E-07" qz="-8.019894E-02" qw="-1.430779E-06"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_05" group="group_front_down_right" tags="turret medium pir_battleship_01 hittable ">
+			<connection name="con_turret_05" group="group_front_down_right" tags="turret medium pir_battleship_01 hittable combat">
 				<offset>
 					<position x="112.8428" y="-58.46727" z="194.2872"/>
 					<quaternion qx="-0.9967789" qy="2.028231E-07" qz="-8.019894E-02" qw="-1.430779E-06"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_04" group="group_front_top_right" tags="turret medium pir_battleship_01 hittable ">
+			<connection name="con_turret_04" group="group_front_top_right" tags="turret medium pir_battleship_01 hittable combat">
 				<offset>
 					<position x="120.9077" y="46.60231" z="147.1715"/>
 					<quaternion qx="6.234515E-07" qy="8.019894E-02" qz="3.770561E-07" qw="-0.9967789"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_03" group="group_front_top_right" tags="turret medium pir_battleship_01 hittable ">
+			<connection name="con_turret_03" group="group_front_top_right" tags="turret medium pir_battleship_01 hittable combat">
 				<offset>
 					<position x="113.9618" y="46.60237" z="186.5638"/>
 					<quaternion qx="6.234515E-07" qy="8.019894E-02" qz="3.770561E-07" qw="-0.9967789"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_02" group="group_front_top_right" tags="turret medium pir_battleship_01 hittable ">
+			<connection name="con_turret_02" group="group_front_top_right" tags="turret medium pir_battleship_01 hittable combat">
 				<offset>
 					<position x="110.9719" y="46.60241" z="206.3382"/>
 					<quaternion qx="6.234515E-07" qy="8.019894E-02" qz="3.770561E-07" qw="-0.9967789"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_01" group="group_front_top_right" tags="turret medium pir_battleship_01 hittable ">
+			<connection name="con_turret_01" group="group_front_top_right" tags="turret medium pir_battleship_01 hittable combat">
 				<offset>
 					<position x="107.4555" y="46.60243" z="226.0273"/>
 					<quaternion qx="6.234515E-07" qy="8.019894E-02" qz="3.770561E-07" qw="-0.9967789"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff>
 	<replace sel="//components/component/connections/connection[@name='con_turret_l_01']">
-		<connection group="group_front_bottom_right" name="con_turret_l_01" tags="turret large standard hittable">
+		<connection group="group_front_bottom_right" name="con_turret_l_01" tags="turret large standard hittable combat">
 			<offset>
 				<position x="214.017" y="-123.117" z="173.861"/>
 				<quaternion qw="-0.49502953787182186" qx="-0.08989568979687966" qy="0.15144428713833416" qz="0.8508402608501289"/>
@@ -10,7 +10,7 @@
 	</replace>
 
 	<replace sel="//components/component/connections/connection[@name='con_shield_m_007']">
-		<connection group="group_front_bottom_right" name="con_shield_m_007" tags="medium shield hittable">
+		<connection group="group_front_bottom_right" name="con_shield_m_007" tags="medium shield hittable standard">
 			<offset>
 				<position x="161.76839999999999" y="-93.02629999999999" z="264.7175"/>
 				<quaternion qw="-0.45652795774209465" qx="-0.22516657757013966" qy="0.3788557409382717" qz="0.7728845733376333"/>
@@ -19,7 +19,7 @@
 	</replace>
 
 	<replace sel="//components/component/connections/connection[@name='con_turret_l_02']">
-		<connection group="group_front_bottom_left" name="con_turret_l_02" tags="turret large standard hittable">
+		<connection group="group_front_bottom_left" name="con_turret_l_02" tags="turret large standard hittable combat">
 			<offset>
 				<position x="-214.017" y="-123.117" z="173.861"/>
 				<quaternion qw="-0.494371222228854" qx="-0.08448250460021964" qy="-0.14872971519294353" qz="-0.8522554035423001"/>
@@ -28,7 +28,7 @@
 	</replace>
 
 		<replace sel="//components/component/connections/connection[@name='con_shield_m_008']">
-        <connection group="group_front_bottom_left" name="con_shield_m_008" tags="medium shield hittable">
+        <connection group="group_front_bottom_left" name="con_shield_m_008" tags="medium shield hittable standard">
 			<offset>
 				<position x="-161.768" y="-93.02629999999999" z="264.7175"/>
 				<quaternion qw="-0.4582060249600056" qx="-0.22173146197573101" qy="-0.3768243800276085" qz="-0.773877111741434"/>
@@ -37,7 +37,7 @@
 	</replace>
 
 <add sel="//components/component/connections">
-			<connection name="con_shield_l_04" tags="large shield hittable ">
+			<connection name="con_shield_l_04" tags="large shield hittable standard ">
 				<offset>
 					<position x="0" y="-51" z="-100"/>
 					<quaternion qx="-0" qy="-0" qz="-1" qw="0"/>

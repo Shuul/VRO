@@ -11,7 +11,7 @@
 <remove sel="//components/component/connections/connection[@name='con_turret_laser_l_04']"/>
 <remove sel="//components/component/connections/connection[@name='con_shieldgen_015']"/>
 <replace sel="//components/component/connections/connection[@name='con_shieldgen_008']">
-      <connection name="con_shieldgen_008" group="group_rear_down_mid" tags="medium shield hittable ">
+      <connection name="con_shieldgen_008" group="group_rear_down_mid" tags="medium shield hittable standard ">
 				<offset>
 					<position x="0" y="-7.275229" z="-55.61757"/>
 					<quaternion qx="-0" qy="-0" qz="-1" qw="1.629207E-07"/>
@@ -19,7 +19,7 @@
 			</connection>
 </replace>
 <add sel="//components/component/connections">
-        <connection group="group_rear_down_mid" name="con_turret_013" tags="turret medium standard missile hittable">
+        <connection group="group_rear_down_mid" name="con_turret_013" tags="turret medium standard missile hittable combat">
             <offset>
                 <position x="20" y="-6.897476" z="-85.76994"/>
 					      <quaternion qx="-0" qy="-0" qz="-1" qw="4.371139E-08"/>
@@ -27,7 +27,7 @@
         </connection>
 </add>
 <add sel="//components/component/connections">
-        <connection group="group_rear_down_mid" name="con_turret_014" tags="turret medium standard missile hittable">
+        <connection group="group_rear_down_mid" name="con_turret_014" tags="turret medium standard missile hittable combat">
             <offset>
                 <position x="-20" y="-6.897476" z="-85.76994"/>
 					      <quaternion qx="-0" qy="-0" qz="-1" qw="4.371139E-08"/>
