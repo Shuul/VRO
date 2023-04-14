@@ -8,10 +8,10 @@
 	  </offset>
 	 </connection>
 	</add>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags">weapon medium standard missile platformcollision symmetry symmetry_left symmetry_2 </replace>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_03']/@tags"> weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_3 terronly </replace>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_02']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_right symmetry_2 </replace>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_04']/@tags"> weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_3 terronly </replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags">weapon medium standard missile platformcollision symmetry symmetry_left symmetry_2 combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_03']/@tags"> weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_3 terronly combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_02']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_right symmetry_2 combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_04']/@tags"> weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_3 terronly combat</replace>
 
 	</diff>
 <!-- <components>
@@ -1409,13 +1409,13 @@
 					<position x="0" y="23.75786" z="30.97534"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_l" tags="turret medium standard missile platformcollision unhittable ">
+			<connection name="con_turret_l" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="-23.40182" y="-6.120095" z="13.13328"/>
 					<quaternion qx="-7.384387E-02" qy="-4.984419E-02" qz="-0.8070452" qw="-0.5837299"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_r" tags="turret medium standard missile platformcollision unhittable ">
+			<connection name="con_turret_r" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="23.40182" y="-6.120095" z="13.13328"/>
 					<quaternion qx="-7.384329E-02" qy="4.984432E-02" qz="0.8070448" qw="-0.5837305"/>
@@ -1489,22 +1489,22 @@
 					<quaternion qx="-2.955989E-06" qy="-0.3007057" qz="9.320198E-07" qw="-0.9537169"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_01" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_2 ">
+			<connection name="con_weapon_01" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_2 combat">
 				<offset>
 					<position x="5.628656" y="-9.000001" z="35.16343"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_03" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_3 ">
+			<connection name="con_weapon_03" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_3 combat">
 				<offset>
 					<position x="4.448088" y="0" z="50.98108"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_02" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_2 ">
+			<connection name="con_weapon_02" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_2 combat">
 				<offset>
 					<position x="-5.628656" y="-9" z="35.16343"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_04" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_3 ">
+			<connection name="con_weapon_04" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_3 combat">
 				<offset>
 					<position x="-4.448088" y="0" z="50.98108"/>
 				</offset>

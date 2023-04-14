@@ -15,9 +15,9 @@
   </offset>
  </connection>
 </add>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags"> weapon small standard missile platformcollision symmetry </replace>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_02']/@tags"> weapon small standard missile platformcollision symmetry_1 symmetry_left highpower</replace>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_03']/@tags"> weapon small standard missile platformcollision symmetry_1 symmetry_right highpower</replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags"> weapon small standard missile platformcollision symmetry combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_02']/@tags"> weapon small standard missile platformcollision symmetry_1 symmetry_left highpower combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_03']/@tags"> weapon small standard missile platformcollision symmetry_1 symmetry_right highpower combat</replace>
 
 
 </diff>
@@ -1246,7 +1246,7 @@
 					<position x="0.2251749" y="5.037749" z="-7.740235"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_02" tags="weapon small standard missile platformcollision symmetry_1 symmetry_left">
+			<connection name="con_weapon_02" tags="weapon small standard missile platformcollision symmetry_1 symmetry_left combat">
 				<offset>
 					<position x="-7.025583" y="-0.5493716" z="13.38157"/>
 				</offset>
@@ -1257,7 +1257,7 @@
 					<quaternion qx="-2.527779E-04" qy="-9.653279E-06" qz="-3.816116E-02" qw="-0.9992716"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_03" tags="weapon small standard missile platformcollision symmetry_1 symmetry_right ">
+			<connection name="con_weapon_03" tags="weapon small standard missile platformcollision symmetry_1 symmetry_right combat">
 				<offset>
 					<position x="7.026" y="-0.5493716" z="13.38157"/>
 				</offset>
@@ -1319,7 +1319,7 @@
 					<position x="6.184999" y="-0.4903351" z="-4.137647"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_01" tags="weapon small standard missile platformcollision symmetry ">
+			<connection name="con_weapon_01" tags="weapon small standard missile platformcollision symmetry combat">
 				<offset>
 					<position x="4.43089E-03" y="-1.441262" z="7.660055"/>
 				</offset>

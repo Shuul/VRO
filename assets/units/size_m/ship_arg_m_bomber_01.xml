@@ -18,8 +18,8 @@
   </offset>
  </connection>
 </add>
-<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_01']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_left highpower </replace>
-<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_02']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_right highpower </replace>
+<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_01']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_left highpower combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_primaryweapon_02']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_right highpower combat</replace>
 
 </diff>
 <!-- <components>
@@ -1666,13 +1666,13 @@
 					<position x="6.000042E-03" y="8.450531" z="34.65281"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_L02" tags="turret medium standard missile platformcollision unhittable ">
+			<connection name="con_turret_L02" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="-10.79143" y="0" z="-13.40924"/>
 					<quaternion qx="-0" qy="-0" qz="-0.7071066" qw="-0.7071069"/>
 				</offset>
 			</connection>
-			<connection name="con_primaryweapon_01" tags="weapon medium standard missile platformcollision symmetry symmetry_left">
+			<connection name="con_primaryweapon_01" tags="weapon medium standard missile platformcollision symmetry symmetry_left combat">
 				<offset>
 					<position x="-10" y="0" z="36.0381"/>
 				</offset>
@@ -1682,25 +1682,25 @@
 					<position x="0" y="14.9281" z="-3.668688"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_L01" tags="turret medium standard missile platformcollision unhittable ">
+			<connection name="con_turret_L01" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="-10.79143" y="0" z="12.58174"/>
 					<quaternion qx="-0" qy="-0" qz="-0.7071066" qw="-0.7071069"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_R01" tags="turret medium standard missile platformcollision unhittable ">
+			<connection name="con_turret_R01" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="10.79019" y="-9.536743E-07" z="12.58174"/>
 					<quaternion qx="-0" qy="-0" qz="0.7071067" qw="-0.7071068"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_R02" tags="turret medium standard missile platformcollision unhittable ">
+			<connection name="con_turret_R02" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="10.79019" y="-9.536743E-07" z="-13.40924"/>
 					<quaternion qx="-0" qy="-0" qz="0.7071067" qw="-0.7071068"/>
 				</offset>
 			</connection>
-			<connection name="con_primaryweapon_02" tags="weapon medium standard missile platformcollision symmetry symmetry_right">
+			<connection name="con_primaryweapon_02" tags="weapon medium standard missile platformcollision symmetry symmetry_right combat">
 				<offset>
 					<position x="10" y="0" z="36.0381"/>
 				</offset>
