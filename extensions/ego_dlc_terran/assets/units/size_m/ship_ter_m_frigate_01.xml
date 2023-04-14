@@ -8,10 +8,10 @@
 	  </offset>
 	 </connection>
 	</add>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags">weapon medium standard missile platformcollision symmetry symmetry_left symmetry_2 </replace>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_03']/@tags"> weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_3 terronly </replace>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_02']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_right symmetry_2 </replace>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_04']/@tags"> weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_3 terronly </replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags">weapon medium standard missile platformcollision symmetry symmetry_left symmetry_2 combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_03']/@tags"> weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_3 terronly combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_02']/@tags"> weapon medium standard missile platformcollision symmetry symmetry_right symmetry_2 combat</replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_04']/@tags"> weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_3 terronly combat</replace>
 
 	</diff>
 <!-- <components>
@@ -1377,7 +1377,7 @@
 					<quaternion qx="0.6427875" qy="5.387734E-09" qz="6.1582E-08" qw="-0.7660446"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_01" tags="engine medium platformcollision ">
+			<connection name="con_engine_01" tags="engine medium platformcollision standard">
 				<offset>
 					<position x="-29.91887" y="6.854845" z="-36.88498"/>
 					<quaternion qx="-0" qy="-0" qz="-0.9762961" qw="-0.2164392"/>
@@ -1393,7 +1393,7 @@
 					<position x="0" y="23.85275" z="36.06744"/>
 				</offset>
 			</connection>
-			<connection name="con_shield_01" tags="medium shield unhittable platformcollision ">
+			<connection name="con_shield_01" tags="medium shield unhittable platformcollision standard">
 				<offset>
 					<position x="-10.9035" y="-17.6915" z="-27.258"/>
 					<quaternion qx="-1" qy="4.371131E-08" qz="4.371147E-08" qw="-1.732503E-06"/>
@@ -1409,13 +1409,13 @@
 					<position x="0" y="23.75786" z="30.97534"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_l" tags="turret medium standard missile platformcollision unhittable ">
+			<connection name="con_turret_l" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="-23.40182" y="-6.120095" z="13.13328"/>
 					<quaternion qx="-7.384387E-02" qy="-4.984419E-02" qz="-0.8070452" qw="-0.5837299"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_r" tags="turret medium standard missile platformcollision unhittable ">
+			<connection name="con_turret_r" tags="turret medium standard missile platformcollision unhittable combat">
 				<offset>
 					<position x="23.40182" y="-6.120095" z="13.13328"/>
 					<quaternion qx="-7.384329E-02" qy="4.984432E-02" qz="0.8070448" qw="-0.5837305"/>
@@ -1489,57 +1489,57 @@
 					<quaternion qx="-2.955989E-06" qy="-0.3007057" qz="9.320198E-07" qw="-0.9537169"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_01" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_2 ">
+			<connection name="con_weapon_01" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_2 combat">
 				<offset>
 					<position x="5.628656" y="-9.000001" z="35.16343"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_03" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_3 ">
+			<connection name="con_weapon_03" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_left symmetry_3 combat">
 				<offset>
 					<position x="4.448088" y="0" z="50.98108"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_02" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_2 ">
+			<connection name="con_weapon_02" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_2 combat">
 				<offset>
 					<position x="-5.628656" y="-9" z="35.16343"/>
 				</offset>
 			</connection>
-			<connection name="con_weapon_04" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_3 ">
+			<connection name="con_weapon_04" tags="weapon medium standard highpower missile platformcollision symmetry symmetry_right symmetry_3 combat">
 				<offset>
 					<position x="-4.448088" y="0" z="50.98108"/>
 				</offset>
 			</connection>
-			<connection name="con_shield_02" tags="medium shield unhittable platformcollision ">
+			<connection name="con_shield_02" tags="medium shield unhittable platformcollision standard">
 				<offset>
 					<position x="10.9035" y="-17.6915" z="-27.258"/>
 					<quaternion qx="-1" qy="4.371131E-08" qz="4.371147E-08" qw="-1.732503E-06"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_002" tags="engine medium platformcollision ">
+			<connection name="con_engine_002" tags="engine medium platformcollision standard">
 				<offset>
 					<position x="-18.93528" y="1.733114" z="-43.09187"/>
 					<quaternion qx="-1.811641E-07" qy="1.811641E-07" qz="-0.9762961" qw="-0.2164389"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_003" tags="engine medium platformcollision ">
+			<connection name="con_engine_003" tags="engine medium platformcollision standard">
 				<offset>
 					<position x="-7.985907" y="-3.37266" z="-50.09187"/>
 					<quaternion qx="-1.811641E-07" qy="1.811641E-07" qz="-0.9762961" qw="-0.2164389"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_004" tags="engine medium platformcollision ">
+			<connection name="con_engine_004" tags="engine medium platformcollision standard">
 				<offset>
 					<position x="7.985909" y="-3.372661" z="-50.09185"/>
 					<quaternion qx="2.628181E-18" qy="1.185496E-17" qz="-0.2164396" qw="-0.976296"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_005" tags="engine medium platformcollision ">
+			<connection name="con_engine_005" tags="engine medium platformcollision standard">
 				<offset>
 					<position x="18.93528" y="1.733109" z="-43.09185"/>
 					<quaternion qx="2.628181E-18" qy="1.185496E-17" qz="-0.2164396" qw="-0.976296"/>
 				</offset>
 			</connection>
-			<connection name="con_engine_006" tags="engine medium platformcollision ">
+			<connection name="con_engine_006" tags="engine medium platformcollision standard">
 				<offset>
 					<position x="29.91887" y="6.854847" z="-36.88497"/>
 					<quaternion qx="2.628181E-18" qy="1.185496E-17" qz="-0.2164396" qw="-0.976296"/>

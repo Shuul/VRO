@@ -255,7 +255,7 @@
 			
   <!--      ||| COCKPIT/DOCKS ETC |||       -->
 
-			<connection name="con_weapon_01" tags="weapon large standard arg_destroyer_01 ">
+			<connection name="con_weapon_01" tags="weapon large standard arg_destroyer_01 combat">
 				<offset>
 					<position x="0" y="-23.8" z="143.7"/>
 				</offset>
@@ -350,37 +350,37 @@
 
   <!--      ||| TURRETS |||       -->
  			
-			<connection group="left-bottom-back" name="con_m_turret_left-bottom-back_2" tags="turret medium standard hittable">
+			<connection group="left-bottom-back" name="con_m_turret_left-bottom-back_2" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-59" y="-26" z="-138"/>
 					<rotation pitch="0" yaw="0" roll="233"/>
 				</offset>
 			</connection>
-			<connection group="right-bottom-back" name="con_m_turret_right-bottom-back_2" tags="turret medium standard hittable">
+			<connection group="right-bottom-back" name="con_m_turret_right-bottom-back_2" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="59" y="-26" z="-138"/>
 					<rotation pitch="0" yaw="0" roll="127"/>
 				</offset>
 			</connection>
-			<connection group="left-bottom-back" name="con_m_turret_left-bottom-back_1" tags="turret medium standard hittable">
+			<connection group="left-bottom-back" name="con_m_turret_left-bottom-back_1" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-59" y="-26" z="-108"/>
 					<rotation pitch="0" yaw="0" roll="233"/>
 				</offset>
 			</connection>
-			<connection group="right-bottom-back" name="con_m_turret_right-bottom-back_1" tags="turret medium standard hittable">
+			<connection group="right-bottom-back" name="con_m_turret_right-bottom-back_1" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="59" y="-26" z="-108"/>
 					<rotation pitch="0" yaw="0" roll="127"/>
 				</offset>
 			</connection>
-			<connection group="left-bottom-back" name="con_shieldgen_m_left-bottom-back_1" tags="medium shield hittable">
+			<connection group="left-bottom-back" name="con_shieldgen_m_left-bottom-back_1" tags="medium shield hittable standard">
 				<offset>
 					<position x="-59" y="-26" z="-123"/>
 					<rotation pitch="0" yaw="0" roll="233"/>
 				</offset>
 			</connection>
-			<connection group="right-bottom-back" name="con_shieldgen_m_right-bottom-back_1" tags="medium shield hittable">
+			<connection group="right-bottom-back" name="con_shieldgen_m_right-bottom-back_1" tags="medium shield hittable standard">
 				<offset>
 					<position x="59" y="-26" z="-123"/>
 					<rotation pitch="0" yaw="0" roll="127"/>
@@ -389,37 +389,37 @@
 
 			
 			
-			<connection group="left-top-back" name="con_shieldgen_m_left-top-back_1" tags="medium shield hittable">
+			<connection group="left-top-back" name="con_shieldgen_m_left-top-back_1" tags="medium shield hittable standard">
 				<offset>
 					<position x="-59" y="26" z="-123"/>
 					<rotation pitch="0" yaw="0" roll="307"/>
 				</offset>
 			</connection>
-			<connection group="right-top-back" name="con_shieldgen_m_right-top-back_1" tags="medium shield hittable">
+			<connection group="right-top-back" name="con_shieldgen_m_right-top-back_1" tags="medium shield hittable standard">
 				<offset>
 					<position x="59" y="26" z="-123"/>
 					<rotation pitch="0" yaw="0" roll="53"/>
 				</offset>
 			</connection>
-			<connection group="left-top-back" name="con_m_turret_left-top-back_1" tags="turret medium standard hittable">
+			<connection group="left-top-back" name="con_m_turret_left-top-back_1" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-59" y="26" z="-108"/>
 					<rotation pitch="0" yaw="0" roll="307"/>
 				</offset>
 			</connection>
-			<connection group="right-top-back" name="con_m_turret_right-top-back_1" tags="turret medium standard hittable">
+			<connection group="right-top-back" name="con_m_turret_right-top-back_1" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="59" y="26" z="-108"/>
 					<rotation pitch="0" yaw="0" roll="53"/>
 				</offset>
 			</connection>
-			<connection group="left-top-back" name="con_m_turret_left-top-back_2" tags="turret medium standard hittable">
+			<connection group="left-top-back" name="con_m_turret_left-top-back_2" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-59" y="26" z="-138"/>
 					<rotation pitch="0" yaw="0" roll="307"/>
 				</offset>
 			</connection>
-			<connection group="right-top-back" name="con_m_turret_right-top-back_2" tags="turret medium standard hittable">
+			<connection group="right-top-back" name="con_m_turret_right-top-back_2" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="59" y="26" z="-138"/>
 					<rotation pitch="0" yaw="0" roll="53"/>
@@ -428,19 +428,19 @@
 
 			
 			
-			<connection group="left-mid" name="con_shieldgen_m_left-mid_1" tags="medium shield hittable">
+			<connection group="left-mid" name="con_shieldgen_m_left-mid_1" tags="medium shield hittable standard">
 				<offset>
 					<position x="-40.745" y="22" z="107.5"/>
 					<rotation pitch="0" yaw="0" roll="305"/>
 				</offset>
 			</connection>
-			<connection group="left-mid" name="con_m_turret_left-mid_1" tags="turret medium standard hittable">
+			<connection group="left-mid" name="con_m_turret_left-mid_1" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-44.333" y="8" z="100"/>
 					<rotation pitch="0" yaw="0" roll="-90"/>
 				</offset>
 			</connection>
-			<connection group="left-mid" name="con_m_turret_left-mid_2" tags="turret medium standard hittable">
+			<connection group="left-mid" name="con_m_turret_left-mid_2" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-44.333" y="8" z="115"/>
 					<rotation pitch="0" yaw="0" roll="-90"/>
@@ -449,19 +449,19 @@
 			
 			
 			
-			<connection group="left-mid2" name="con_shieldgen_m_left-mid2_1" tags="medium shield hittable">
+			<connection group="left-mid2" name="con_shieldgen_m_left-mid2_1" tags="medium shield hittable standard">
 				<offset>
 					<position x="-40.745" y="-22" z="107.5"/>
 					<rotation pitch="0" yaw="0" roll="235"/>
 				</offset>
 			</connection>
-			<connection group="left-mid2" name="con_m_turret_left-mid2_1" tags="turret medium standard hittable">
+			<connection group="left-mid2" name="con_m_turret_left-mid2_1" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-44.333" y="-6" z="100"/>
 					<rotation pitch="0" yaw="0" roll="-90"/>
 				</offset>
 			</connection>
-			<connection group="left-mid2" name="con_m_turret_left-mid2_2" tags="turret medium standard hittable">
+			<connection group="left-mid2" name="con_m_turret_left-mid2_2" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-44.333" y="-6" z="115"/>
 					<rotation pitch="0" yaw="0" roll="-90"/>
@@ -472,19 +472,19 @@
 			
 			
 			
-			<connection group="right-mid" name="con_shieldgen_m_right-mid_1" tags="medium shield hittable">
+			<connection group="right-mid" name="con_shieldgen_m_right-mid_1" tags="medium shield hittable standard">
 				<offset>
 					<position x="40.745" y="22" z="107.5"/>
 					<rotation pitch="0" yaw="0" roll="55"/>
 				</offset>
 			</connection>
-			<connection group="right-mid" name="con_m_turret_right-mid_1" tags="turret medium standard hittable">
+			<connection group="right-mid" name="con_m_turret_right-mid_1" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="44.333" y="8" z="100"/>
 					<rotation pitch="0" yaw="0" roll="90"/>
 				</offset>
 			</connection>
-			<connection group="right-mid" name="con_m_turret_right-mid_2" tags="turret medium standard hittable">
+			<connection group="right-mid" name="con_m_turret_right-mid_2" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="44.333" y="8" z="115"/>
 					<rotation pitch="0" yaw="0" roll="90"/>
@@ -492,19 +492,19 @@
 			</connection>
 			
 			
-			<connection group="right-mid2" name="con_shieldgen_m_right-mid2_1" tags="medium shield hittable">
+			<connection group="right-mid2" name="con_shieldgen_m_right-mid2_1" tags="medium shield hittable standard">
 				<offset>
 					<position x="40.745" y="-22" z="107.5"/>
 					<rotation pitch="0" yaw="0" roll="125"/>
 				</offset>
 			</connection>
-			<connection group="right-mid2" name="con_m_turret_right-mid2_1" tags="turret medium standard hittable">
+			<connection group="right-mid2" name="con_m_turret_right-mid2_1" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="44.333" y="-6" z="100"/>
 					<rotation pitch="0" yaw="0" roll="90"/>
 				</offset>
 			</connection>
-			<connection group="right-mid2" name="con_m_turret_right-mid2_2" tags="turret medium standard hittable">
+			<connection group="right-mid2" name="con_m_turret_right-mid2_2" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="44.333" y="-6" z="115"/>
 					<rotation pitch="0" yaw="0" roll="90"/>
@@ -515,7 +515,7 @@
 			
   <!--      ||| SHIELDS |||       -->		
   
-			<connection name="con_shieldgen_l_1" tags="large shield hittable">
+			<connection name="con_shieldgen_l_1" tags="large shield hittable standard">
 				<offset>
 					<position x="0" y="-26" z="7"/>
 					<rotation pitch="0" yaw="0" roll="180"/>
@@ -526,19 +526,19 @@
 
   <!--      ||| ENGINES |||       -->
   
-			<connection name="con_engine_l_1" group="group_back_up_mid " tags="engine large">
+			<connection name="con_engine_l_1" group="group_back_up_mid " tags="engine large standard">
 							<offset>
 					<position x="0" y="0.3" z="-199.5"/>
 					<quaternion qw="0.0" qx="0.0" qy="0.0" qz="0.0"/>
 				</offset>
 			</connection>
-			<connection group="group_back_up_mid " name="con_shieldgen_m_group_back_up_mid_1 " tags="medium shield hittable">
+			<connection group="group_back_up_mid " name="con_shieldgen_m_group_back_up_mid_1 " tags="medium shield hittable standard">
 				<offset>
 					<position x="-31.3" y="0.3" z="-209.1"/>
 					<rotation pitch="0" yaw="0" roll="90"/>
 				</offset>
 			</connection>
-			<connection group="group_back_up_mid " name="con_shieldgen_m_group_back_up_mid_2 " tags="medium shield hittable">
+			<connection group="group_back_up_mid " name="con_shieldgen_m_group_back_up_mid_2 " tags="medium shield hittable standard">
 				<offset>
 					<position x="31.3" y="0.3" z="-209.1"/>
 					<rotation pitch="0" yaw="0" roll="-90"/>

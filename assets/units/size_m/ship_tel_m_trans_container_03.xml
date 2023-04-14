@@ -7,7 +7,7 @@
   </offset>
  </connection>
 <!-- turrets -->
-      <connection name="con_turret_L04" tags="turret medium standard missile platformcollision unhittable">
+      <connection name="con_turret_L04" tags="turret medium standard missile platformcollision unhittable combat">
         <offset>
           <position x="0" y="-5" z="-70.29195"/>
           <rotation yaw="180" pitch="0" roll="180"/>
@@ -16,6 +16,6 @@
 
 </add>
 
-<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags"> weapon medium standard missile platformcollision highpower </replace>
+<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags"> weapon medium standard missile platformcollision highpower combat</replace>
 
 </diff>
