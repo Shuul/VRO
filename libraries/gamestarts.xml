@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
   <diff> 
+  <!-- Boron DLC -->
+<add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_boron1']/player/ship/loadout/macros">
+  <shield macro="ishield_arg_s_scout_01_a_macro" path="../con_ishield_01" optional="true" />
+</add>
+
   <replace sel="//gamestarts/gamestart[@id='x4ep1_gamestart_fight']/player/ship/loadout/ammunition">
           <ammunition>
             <ammunition macro="missile_windstalker_macro" exact="5" optional="true" />

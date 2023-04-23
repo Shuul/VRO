@@ -2,7 +2,7 @@
 <!--Last exported: 13.02.2019 14:43:03-->
 <diff>
  <!-- BORON DLC wares -->
-<add>
+<add sel="/wares">
 		<ware id="ship_bor_xl_battleship_01" name="{20101,51601}" description="{6699,1931}" group="ships_boron" transport="ship" volume="1" tags="ship">
       <price min="39000000" average="43000000" max="47000000" />
       <production time="550" amount="1" method="default" name="{20206,101}">
@@ -2990,7 +2990,7 @@ __________________ -->
       <owner faction="trinity" />
     </ware> -->
 
-    <ware id="ship_par_xl_battleship_02" name="{20101,31701}" description="{20101,31701}" group="ships_paranid" transport="ship" volume="1" tags="ship">
+    <!-- <ware id="ship_par_xl_battleship_02" name="{20101,31701}" description="{20101,31701}" group="ships_paranid" transport="ship" volume="1" tags="ship">
       <price min="36000000" average="40000000" max="44000000" />
       <production time="575" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -3003,7 +3003,7 @@ __________________ -->
       <owner faction="holyorder" />
       <owner faction="paranid" />
       <owner faction="trinity" />
-    </ware>
+    </ware> -->
 
     <!-- <ware id="ship_arg_xl_battleship_a" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship noplayerbuild noblueprint noplayerblueprint">
       <price min="30000000" average="35000000" max="40000000" />
@@ -7659,6 +7659,18 @@ __________________ -->
     <owner faction="boron" />
 </ware>
 
+<ware id="ishield_bor_xl_battleship_01_a" name="{6699,13168}" description="{6699,13168}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_xl_battleship_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
 
   </add>
   <!-- Vanilla missiles reomoval from being buildable by factions -->

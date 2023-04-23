@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <diff>
+  <add sel="/jobs/job[@id='boron_carrier_patrol_l_sector']" pos="after">
   <!-- ############################# -->
   <!--    Borons, closed ones    -->
   <!-- ############################# -->
-      <job id="boron_battleship_patrol_xl" name="{20204,3201}" >
+      <!-- <job id="boron_battleship_patrol_xl" name="{20204,3201}" >
       <modifiers commandeerable="true" />
       <orders>
         <order order="Patrol" default="true">
@@ -12,8 +13,8 @@
         </order>
       </orders>
       <category faction="boron" tags="[factionlogic, military, battleship]" size="ship_xl" />
-      <quota galaxy="1" cluster="1" />
-      <location class="galaxy" macro="xu_ep2_universe_macro" faction="boron" relation="self" comparison="exact" excludedtags="boronborder" matchextension="false"/>
+      <quota galaxy="2" maxgalaxy="6" cluster="1" />
+     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="boron" relation="self" comparison="exact" excludedtags="boronborder" matchextension="false"/>
       <environment buildatshipyard="true" />
       <ship>
         <select faction="boron" tags="[military, battleship]" size="ship_xl" />
@@ -23,26 +24,22 @@
         <owner exact="boron" overridenpc="true" />
       </ship>
       <subordinates>
-        <subordinate job="boron_carrier_escort_l_flagship" assignment="attack" group="1" />
-        <subordinate job="boron_carrier_escort_l_flagship" assignment="attack" group="2" />
-        <subordinate job="boron_destroyer_escort_l" assignment="defence" group="3"/>
+        <subordinate job="boron_carrier_escort_l_flagship" />
+        <subordinate job="boron_carrier_escort_l_flagship" />
+        <subordinate job="boron_destroyer_escort_l" />
       </subordinates>
     </job>
 
-<!-- Additoonal carrier -->
-    <job id="boron_carrier_patrol_xl_exp" name="{20204,3201}" comment="Kingdoms End">
-      <modifiers commandeerable="false" />
+    <job id="boron_carrier_patrol_xl_exp" name="{20204,3201}" >
+      <modifiers commandeerable="true" />
       <orders>
         <order order="Patrol" default="true">
-          <param name="range" value="class.zone" />
-          <param name="organizesubordinates" value="true" />
-          <param name="defences_maxgatedistance" value="6" />
-          <param name="defences_includedassignments" value="[assignment.attack]" />
+          <param name="range" value="class.sector" />
         </order>
       </orders>
-      <category faction="boron" tags="[military, carrier]" size="ship_xl" />
-      <quota galaxy="1" cluster="1" />
-      <location class="galaxy" macro="xu_ep2_universe_macro" faction="boron" relation="self" comparison="exact" excludedtags="boronborder" matchextension="false"/>
+      <category faction="boron" tags="[factionlogic, military, carrier]" size="ship_xl" />
+      <quota galaxy="1" maxgalaxy="4" cluster="1" />
+    	<location class="galaxy" macro="xu_ep2_universe_macro" faction="boron" relation="self" comparison="exact" excludedtags="boronborder" matchextension="false"/>
       <environment buildatshipyard="true" />
       <ship>
         <select faction="boron" tags="[military, carrier]" size="ship_xl" />
@@ -52,17 +49,17 @@
         <owner exact="boron" overridenpc="true" />
       </ship>
       <subordinates>
-        <subordinate job="boron_carrier_escort_l_flagship" assignment="attack" group="1" />
-		<subordinate job="boron_destroyer_escort_l" assignment="defence" group="2"/>
-        <subordinate job="boron_fighter_escort_s_carrier_flagship" assignment="defence" group="3"/>
+        <subordinate job="boron_carrier_escort_l_flagship" />
+		<subordinate job="boron_destroyer_escort_l"/>
+        <subordinate job="boron_fighter_escort_s_carrier_flagship" />
       </subordinates>
-    </job>
-
+    </job> -->
+</add>
   <!-- ############################# -->
   <!--        ARGON FEDERATION       -->
   <!-- ############################# -->
   
-<add sel="//jobs">
+  <add sel="/jobs">
 
 	  <job id="argon_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
@@ -190,7 +187,7 @@
   <!--    GODREALM OF THE PARANID    -->
   <!-- ############################# -->
   
-	  <job id="paranid_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+	  <!-- <job id="paranid_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -212,7 +209,7 @@
 			<subordinate job="paranid_frigate_escort_m"/>
 		</subordinates>
 	  </job>
-
+ -->
 	  <job id="paranid_hyperion_l" name="{20204,5201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
@@ -500,7 +497,7 @@
 			</ship>
 		  </job>
 
-		  <job id="court_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+		  <job id="court_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion" startactive="false">
 			<modifiers commandeerable="true"/>
 			<orders>
 				<order order="Patrol" default="true">
@@ -744,13 +741,6 @@
 		<subordinates/>
 	</job>
 
-  <!-- Adding escort job to existing terran job -->
-  <add sel="//jobs/job[@id='terran_carrier_intervention_xl']/subordinates">
-    <subordinate job="terran_frigate_escort_akita"/>
-	</add>
-  <add sel="//jobs/job[@id='terran_battleship_intervention_xl']/subordinates">
-    <subordinate job="terran_frigate_escort_akita"/>
-  </add>
 
 <!-- PIONEERS -->
   <job id="pioneers_lightcarrier_patrol_l" name="{20204,3201}">
@@ -897,11 +887,19 @@
   </job>
 </add>
 
+  <!-- Adding escort job to existing terran job -->
+  <add sel="//jobs/job[@id='terran_carrier_intervention_xl']/subordinates">
+    <subordinate job="terran_frigate_escort_akita"/>
+	</add>
+  <add sel="//jobs/job[@id='terran_battleship_intervention_xl']/subordinates">
+    <subordinate job="terran_frigate_escort_akita"/>
+  </add>
+
   	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_frigate']/quota[@wing='4']">
 	<quota wing="4" variation="1"/>
 	</replace>
 	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_patrol']/quota[@wing='2']">
-	<quota wing="3" variation="1"/>
+	<quota wing="2" variation="1"/>
 	</replace>
 
 <!-- Changes to loadout levels -->
@@ -994,14 +992,14 @@
 			</loadout>  </replace>
 
 <!-- spl -->
-	<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_center']/ship/loadout">
+	<!-- <replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_center']/ship/loadout">
 	<loadout>
 					<level min="0.8" max="1.0"/>
 	</loadout>  </replace>
 	  <replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/ship/loadout">
 	<loadout>
 					<level min="0.4" max="1.0"/>
-	</loadout>  </replace>
+	</loadout>  </replace> -->
 
 	<replace sel="//jobs/job[@id='zyarth_destroyer_escort_l_noescort']/ship/loadout">
 		<loadout>
@@ -1073,15 +1071,15 @@
 	<quota galaxy="4" sector="1"/>
 	</replace>
 
-<replace sel="//jobs/job[@id='argon_fighter_escort_s_carrier']/quota[@wing='10']">
+<replace sel="//jobs/job[@id='argon_fighter_escort_s_carrier']/quota[@wing='25']">
 <quota wing="30" variation="5"/>
 </replace>
 
-<replace sel="//jobs/job[@id='paranid_fighter_escort_s_carrier']/quota[@wing='10']">
+<replace sel="//jobs/job[@id='paranid_fighter_escort_s_carrier']/quota[@wing='24']">
 <quota wing="35" variation="5"/>
 </replace>
 
-<replace sel="//jobs/job[@id='teladi_fighter_escort_s_carrier']/quota[@wing='6']">
+<replace sel="//jobs/job[@id='teladi_fighter_escort_s_carrier']/quota[@wing='25']">
 <quota wing="30" variation="5"/>
 </replace>
 
@@ -1113,12 +1111,12 @@
 <!-- Xenon combat and economy FE fix -->
   <replace sel="//jobs/job[@id='xenon_free_miner_m_mineral']/quota/@cluster">7</replace>
   <replace sel="//jobs/job[@id='xenon_free_trader_m_energy']/quota/@cluster">6</replace>
-  <replace sel="//jobs/job[@id='xenon_carrier_patrol_xl_border_cluster']/quota[@galaxy='1']">
+  <!-- <replace sel="//jobs/job[@id='xenon_carrier_patrol_xl_border_cluster']/quota[@galaxy='1']">
 	<quota galaxy="1" maxgalaxy="2"/>
   </replace>
   <replace sel="//jobs/job[@id='xenon_destroyer_patrol_xl_defence']/quota[@galaxy='6']">
     <quota galaxy="10" cluster="4"/>
-  </replace>
+  </replace> -->
 
   <!-- reserve XENON JOBS, cannot be commandeered, 1 per xenon sector -->
 <add sel="//jobs">

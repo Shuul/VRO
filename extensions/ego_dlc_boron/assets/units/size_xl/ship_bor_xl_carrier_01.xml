@@ -4,6 +4,9 @@
 	<remove  sel="/components/component/connections/connection[@name='con_shield_m_13']"/>
 	<remove  sel="/components/component/connections/connection[@name='con_turret_m_15']"/>
 	<remove  sel="/components/component/connections/connection[@name='con_turret_m_16']"/>
+	<remove  sel="/components/component/connections/connection[@name='con_shield_m_03']"/>
+	<remove  sel="/components/component/connections/connection[@name='con_turret_m_03']"/>
+	<remove  sel="/components/component/connections/connection[@name='con_turret_m_05']"/>
 
 	<add sel="//components/component/connections">
 	  <connection name="con_ishield_01" tags="ishield shield  ishield_bor_xl_carrier_01_a">
@@ -13,7 +16,7 @@
 	  </offset>
 	 </connection>
 
-	 	<connection name="con_turret_l_22" group=" group_mid_down_mid_01 " tags="boron combat large highpower turret ">
+	 	<connection name="con_turret_l_22" group=" group_mid_down_mid_01 " tags="boron combat large turret ">
         <offset>
           <position x="-0.09075813" y="-200.0851" z="-249.1272" />
           <quaternion qx="-0.9982217" qy="0.0218052" qz="-0.0006748551" qw="-0.0554757" />
@@ -32,6 +35,23 @@
         </offset>
       </connection>
 
+      <connection name="con_turret_l_33" group="group_front_down_mid  " tags="boron combat large turret highpower ">
+        <offset>
+          <position x="8.51506e-05" y="35.74944" z="1597.301" />
+          <quaternion qx="1.62e-08" qy="-0.01257724" qz="-0.9999209" qw="-3.141e-07" />
+        </offset>
+      </connection>
+      <connection name="con_shield_m_331" group="group_front_down_mid  " tags="boron hittable medium shield ">
+        <offset>
+          <position x="8.52294e-05" y="35.50819" z="1587.713" />
+          <quaternion qx="1.62e-08" qy="-0.01257724" qz="-0.9999209" qw="-3.141e-07" />
+        </offset>
+      </connection>
+      <connection name="con_shield_m_332" group="group_front_down_mid  " tags="boron hittable medium shield ">
+        <offset>
+          <position x="8.50477e-05" y="35.98899" z="1606.823" />
+          <quaternion qx="1.62e-08" qy="-0.01257724" qz="-0.9999209" qw="-3.141e-07" />
+        </offset>
+      </connection>
 	</add>
-
 	</diff>

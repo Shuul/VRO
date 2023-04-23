@@ -1,5 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff> 
+<!-- boron changes -->
+
+  <add sel="//loadouts/loadout[@id='story_alliancehubship']/macros">
+      <shield macro="ishield_par_l_trans_container_02_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_alliancehubship_escort']/macros">
+      <shield macro="ishield_arg_m_bomber_02_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_alliancehubship_missionspecialist']/macros">
+      <shield macro="ishield_arg_m_bomber_02_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_gate_arg_carrier']/macros">
+      <shield macro="ishield_arg_xl_carrier_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_gate_arg_subortinates']/macros">
+      <shield macro="ishield_arg_s_heavyfighter_02_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_nila_ship']/macros">
+      <shield macro="ishield_bor_s_scout_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_boronadministrationship']/macros">
+      <shield macro="ishield_bor_l_carrier_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='gs_boron1_playership']/macros">
+      <shield macro="ishield_bor_s_scout_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='gs_boron2_playership']/macros">
+      <shield macro="ishield_bor_m_gunboat_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_boron_playerreward_s_fighter_low']/macros">
+      <shield macro="ishield_bor_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_boron_playerreward_s_fighter_medium']/macros">
+      <shield macro="ishield_bor_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_boron_playerreward_s_fighter_high']/macros">
+      <shield macro="ishield_bor_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_boron_playerreward_m']/macros">
+      <shield macro="ishield_bor_m_corvette_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_boron_hof_pegasus']/macros">
+      <shield macro="ishield_par_s_scout_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_boron_hof_perseus']/macros">
+      <shield macro="ishield_par_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_boron_hof_ares']/macros">
+      <shield macro="ishield_par_s_fighter_02_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='story_boron_hof_nemesis']/macros">
+      <shield macro="ishield_par_m_corvette_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='scenario_combat_bor_destroyer']/macros">
+      <shield macro="ishield_bor_l_destroyer_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='scenario_combat_bor_fighter']/macros">
+      <shield macro="ishield_bor_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='scenario_combat_bor_heavyfighter']/macros">
+      <shield macro="ishield_bor_s_heavyfighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='scenario_combat_bor_corvette']/macros">
+      <shield macro="ishield_bor_m_corvette_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <add sel="//loadouts/loadout[@id='scenario_combat_bor_carrier']/macros">
+      <shield macro="ishield_bor_xl_carrier_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+<!-- other changes -->
+
+  <add sel="//loadouts/loadout[@id='build_split_raptor']/macros">
+      <shield macro="ishield_spl_xl_carrier_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+
   <replace sel="//loadouts/loadout[@id='flightschool_m_bomber']/ammunition">
     <ammunition>
       <ammunition macro="missile_phantom_macro" exact="10" optional="1" />
