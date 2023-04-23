@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<components>
+	<component name="missile_lint_kitsune_01" class="missile">
+		<source geometry="extensions\vro\assets\props\WeaponSystems\missile\missile_lint_kitsune_data" />
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights>
+					<omni name="XU Omni01" shadow="0" r="181" g="255" b="255" range="25" shadowrange="25" lighteffect="1" trigger="1" intensity="0.5" lenseffect="missile_cruise">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="-0.1"/>
+						</offset>
+					</omni>
+					<omni name="XU Omni002" shadow="0" r="181" g="255" b="255" range="0.1999999" shadowrange="0.1999999" lighteffect="1" trigger="1" intensity="10">
+						<lightanimations/>
+						<offset>
+							<position x="0" y="0" z="0.1"/>
+						</offset>
+					</omni>
+				</lights>
+				<trailemitters>
+					<emitter name="trail_cruise_missile" type="trail_cruise_missile">
+						<offset>
+							<position x="0" y="0" z="-1.18546"/>
+						</offset>
+					</emitter>
+				</trailemitters>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="missile">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part">
+				<parts>
+					<part name="part_main">
+						<size>
+							<max x="1.29904" y="1.125" z="5.6937" />
+							<center x="0" y="0.375" z="5.6937" />
+						</size>
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture" />
+								</materials>
+							</lod>
+						</lods>
+					</part>
+				</parts>
+				<offset>
+					<position x="-0.000000" y="0.000000" z="0.000000" />
+				</offset>
+			</connection>
+			<connection name="con_engine01" tags="engine ">
+				<offset>
+					<position x="0" y="0" z="0"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

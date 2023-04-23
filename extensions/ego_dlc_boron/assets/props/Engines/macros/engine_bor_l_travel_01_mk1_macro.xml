@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="engine_bor_l_travel_01_mk1_macro" class="engine">
+    <component ref="engine_bor_l_travel_01_mk1" />
+    <properties>
+      <identification name="{20107,3124}" basename="{20107,3121}" shortname="{20107,3125}" makerrace="boron" description="{20107,3122}" mk="1" />
+      <boost duration="34" thrust="2" attack="14" release="0.04" />
+      <travel charge="0" thrust="45" attack="178.5" release="1.25" />
+      <thrust forward="3004" reverse="2704" />
+      <angular />
+      <hull max="28000" threshold="0.3" />
+      <sounds>
+        <enginedetail ref="enginedetail_ship_boron_l_xl_01" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>
+      </replace>
+</diff>

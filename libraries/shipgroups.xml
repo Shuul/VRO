@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <diff>
+	<!-- ############################# -->
+	<!--    Boron -->
+	<!-- ############################# -->
+
+	<add sel="//groups">
+		<group name="bor_battleship_xl">
+			<select macro="ship_bor_xl_battleship_01_macro" weight="100" />
+		</group>
+	</add>
 
 	<!-- ############################# -->
 	<!--    ARGON FEDERATION -->
@@ -8,17 +17,15 @@
 
 	<add sel="//groups">
 		<group name="arg_battleship_xl">
-			<select macro="ship_arg_xl_corona_macro" weight="100" />
+			<select macro="ship_arg_xl_battleship_lc4_01_macro" weight="100" />
 		</group>
 	</add>
 
 	<add sel="//groups">
-		<group name="arg_centaur_l">
-			<select macro="ship_arg_l_cyclops_macro" />
+		<group name="arg_cyclops_l">
+			<select macro="ship_arg_l_cyclops_2_macro" weight="100" />
 		</group>
 	</add>
-
-
 
 	<!-- ############################# -->
 	<!--    ANTIGONE REPUBLIC -->
@@ -26,13 +33,13 @@
 
 	<add sel="//groups">
 		<group name="ant_battleship_xl">
-			<select macro="ship_arg_xl_corona_macro" weight="100" />
+			<select macro="ship_arg_xl_battleship_lc4_01_macro" weight="100" />
 		</group>
 	</add>
 
 	<add sel="//groups">
-		<group name="ant_centaur_l">
-			<select macro="ship_arg_l_centaur_b_macro" weight="100" />
+		<group name="ant_cyclops_l">
+			<select macro="ship_arg_l_cyclops_macro" weight="100" />
 		</group>
 	</add>
 
@@ -58,7 +65,7 @@
 
 	<add sel="//groups">
 		<group name="hol_battleship_xl">
-			<select macro="ship_par_xl_battleship_01_macro" weight="100" />
+			<select macro="ship_par_xl_battleship_02_macro" weight="100" />
 		</group>
 	</add>
 
@@ -74,7 +81,7 @@
 
 	<add sel="//groups">
 		<group name="tel_battleship_xl">
-			<select macro="ship_tel_xl_battleship_01_macro" weight="100" />
+			<select macro="ship_tel_xl_battleship_lc4_01_macro" weight="100" />
 		</group>
 	</add>
 
@@ -105,12 +112,6 @@
 	<!--    Terran-->
 	<!-- ############################# -->
 
-	<add sel="//groups">
-		<group name="pio_battleship_xl">
-			<select macro="ship_ter_xl_sapporo_macro" weight="100" />
-		</group>
-	</add>
-
 
 	<add sel="//groups">
 		<group name="ter_lightcarrier_l">
@@ -119,21 +120,12 @@
 	</add>
 
 	<add sel="//groups">
-		<group name="ter_frigate_l">
-			<select macro="ship_ter_l_shikoku_macro" weight="100" />
+		<group name="group_ter_lint_akita">
+			<select macro="ship_lint_frigate_akita_macro" weight="40"/>
+			<select macro="ship_lint_frigate_kitsune_macro" weight="100"/>
 		</group>
-	</add>
-
-	<add sel="/groups/group[@name='atf_destroyer_l']">
-		<select macro="ship_ter_l_akita_macro" />
-	</add>
-
-
-	<add sel="//groups">
-		<group name="pio_destroyer_l">
-			<select macro="ship_ter_l_makhaira_macro" weight="80" />
-			<select macro="ship_ter_l_destroyer_01_a_macro" weight="20" />
-
+		<group name="group_pio_lint_kitsune">
+			<select macro="ship_lint_frigate_akita_macro"  weight="100"/>
 		</group>
 	</add>
 
@@ -155,6 +147,16 @@
 
 	<add sel="/groups/group[@name='xen_fighter_heavy_s']">
 		<select macro="ship_xen_s_fighter_lx_macro" weight="60" />
+	</add>
+
+	<!-- ############################# -->
+	<!--    Loanshark ships-->
+	<!-- ############################# -->
+
+	<add sel="//groups">
+		<group name="pir_centaur_l">
+			<select macro="ship_arg_l_centaur_b_macro" weight="100" />
+		</group>
 	</add>
 
 	<!-- ############################# -->

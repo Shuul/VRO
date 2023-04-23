@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+  <macros>
+  <macro name="ship_bor_s_scout_02_a_macro" class="ship_s">
+    <component ref="ship_bor_s_scout_02" />
+    <properties>
+      <identification name="{20101,53001}" basename="{20101,53001}" makerrace="boron" description="{20101,53011}" icon="ship_s_fight_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk2" default="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage missile="15" />
+      <hull max="2600" />
+      <glow engine="1" />
+      <secrecy level="1" />
+      <purpose primary="fight" />
+      <people capacity="1" />
+      <physics mass="5.582">
+        <inertia pitch="0.73" yaw="0.73" roll="0.56" />
+        <drag forward="1.35" reverse="8.08" horizontal="3.823" vertical="3.823" pitch="1.94" yaw="1.94" roll="1.94" />
+      </physics>
+      <thruster tags="small" />
+      <ship type="interceptor" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit_01">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage_01">
+        <macro ref="storage_bor_s_scout_02_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+  </replace>
+</diff>

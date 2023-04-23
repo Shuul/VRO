@@ -1,6 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Last exported: 13.02.2019 14:43:03-->
 <diff>
+ <!-- BORON DLC wares -->
+<add>
+		<ware id="ship_bor_xl_battleship_01" name="{20101,51601}" description="{6699,1931}" group="ships_boron" transport="ship" volume="1" tags="ship">
+      <price min="39000000" average="43000000" max="47000000" />
+      <production time="550" amount="1" method="default" name="{20206,101}">
+        <primary>
+        <ware ware="energycells" amount="40000" />
+        <ware ware="hullparts" amount="25800" />
+        <ware ware="water" amount="16000" />
+        </primary>
+      </production>
+			<component ref="ship_bor_xl_battleship_01_macro" amount="1" />
+			<restriction licence="capitalship" />
+      <owner faction="boron" />
+		</ware>
+
+    <ware id="turret_bor_l_projector" name="{6699,15201}" description="{6699,15204}" group="weapons" transport="equipment" volume="1" tags="equipment turret">
+      <price min="616113" average="746113" max="886113" />
+      <production time="20" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="76" />
+          <ware ware="energycells" amount="159" />
+          <ware ware="turretcomponents" amount="160" />
+        </primary>
+      </production>
+      <component ref="turret_bor_l_projector_macro" />
+      <restriction licence="generaluseequipment" />
+      <use threshold="1" />
+      <owner faction="boron" />
+    </ware>
+
+    <ware id="weapon_bor_m_proton" name="{6699,15181}" description="{6699,15182}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="369116" average="482155" max="555558" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="50" />
+          <ware ware="energycells" amount="60" />
+          <ware ware="weaponcomponents" amount="140" />
+        </primary>
+      </production>
+      <component ref="weapon_bor_m_proton_macro" />
+      <restriction licence="militaryequipment" />
+      <use threshold="0.6" />
+      <owner faction="boron" />
+    </ware>
+
+    <ware id="weapon_bor_s_proton_macro" name="{6699,15191}" description="{6699,15191}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="177955" average="237273" max="253710" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="26" />
+          <ware ware="energycells" amount="55" />
+          <ware ware="weaponcomponents" amount="30" />
+        </primary>
+      </production>
+      <component ref="weapon_bor_s_proton_macro" />
+      <restriction licence="militaryequipment" />
+      <use threshold="0.6" />
+      <owner faction="boron" />
+    </ware>
+</add>
+<!-- boron replacements -->
+  <replace sel="//wares/ware[@id='turret_bor_l_laser_01_mk1']/price">
+    <price min="437000" average="447000" max="457000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_bor_l_laser_01_mk1']/production[@method='default']/primary">
+    <primary>
+      <ware ware="advancedelectronics" amount="50" />
+      <ware ware="energycells" amount="56" />
+      <ware ware="turretcomponents" amount="100" />
+    </primary>
+  </replace>
+
+  <replace sel="//wares/ware[@id='turret_bor_l_disruptor_01_mk1']/price">
+    <price min="397000" average="417000" max="427000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_bor_l_disruptor_01_mk1']/production[@method='default']/primary">
+    <primary>
+      <ware ware="advancedelectronics" amount="48" />
+      <ware ware="energycells" amount="60" />
+      <ware ware="turretcomponents" amount="50" />
+    </primary>
+  </replace>
+
+  <replace sel="//wares/ware[@id='turret_bor_l_flak_01_mk1']/price">
+    <price min="407000" average="427000" max="437000" />
+  </replace>
+  <replace sel="//wares/ware[@id='turret_bor_l_flak_01_mk1']/production[@method='default']/primary">
+    <primary>
+      <ware ware="advancedelectronics" amount="30" />
+      <ware ware="energycells" amount="100" />
+      <ware ware="turretcomponents" amount="60" />
+    </primary>
+  </replace>
+
+  <replace sel="//wares/ware[@id='ship_bor_l_destroyer_01_a']/price">
+      <price min="8435998" average="10549396" max="12662793" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_bor_l_destroyer_01_a']/production[@method='default']/primary">
+    <primary>
+          <ware ware="energycells" amount="2540" />
+          <ware ware="hullparts" amount="6570" />
+          <ware ware="water" amount="3385" />
+    </primary>
+  </replace>
+
+  <replace sel="//wares/ware[@id='ship_bor_l_carrier_01_a']/price">
+      <price min="7435998" average="9549396" max="11662793" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_bor_l_carrier_01_a']/production[@method='default']/primary">
+    <primary>
+          <ware ware="energycells" amount="2400" />
+          <ware ware="hullparts" amount="6000" />
+          <ware ware="water" amount="4020" />
+    </primary>
+  </replace>
+
+  <replace sel="//wares/ware[@id='ship_bor_xl_carrier_01_a']/price">
+    <price min="20257176" average="25126090" max="30995003" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_bor_xl_carrier_01_a']/production[@method='default']/primary">
+    <primary>
+        <ware ware="energycells" amount="45425" />
+        <ware ware="hullparts" amount="21800" />
+        <ware ware="water" amount="15880" />
+    </primary>
+  </replace>
+
   <!-- SPLIT DLC wares -->
   <replace sel="//wares/ware[@id='turret_spl_l_beam_01_mk1']/use/@threshold">0.9</replace>
   <replace sel="//wares/ware[@id='turret_spl_l_plasma_01_mk1']/use/@threshold">1</replace>
@@ -793,8 +921,91 @@ __________________ -->
 
   <add sel="/wares">
 
+<!-- Lint5 frigates -->
+		<ware id="ship_lint_frigate_akita_ware" name="{20101,64601}" description="{20101,64601}" group="ships_terran" transport="ship" volume="1" tags="ship">
+			<price min="4884200" average="5200000" max="5889930" />
+			<production time="73" amount="1" method="default" name="{20206,901}">
+				<primary>
+					<ware ware="computronicsubstrate" amount="140" />
+					<ware ware="energycells" amount="860" />
+					<ware ware="metallicmicrolattice" amount="205" />
+				</primary>
+			</production>
+			<component ref="ship_lint_frigate_akita_macro" amount="1" />
+			<restriction licence="militaryship" />
+			<owner faction="pioneers" />
+      <owner faction="terran" />
+		</ware>
+
+		<ware id="ship_lint_frigate_kitsune_ware" name="{20101,13201}" description="{20101,13201}" group="ships_terran" transport="ship" volume="1" tags="ship">
+			<price min="5084200" average="5400000" max="6089930" />
+			<production time="73" amount="1" method="default" name="{20206,901}">
+				<primary>
+					<ware ware="computronicsubstrate" amount="142" />
+					<ware ware="energycells" amount="860" />
+					<ware ware="metallicmicrolattice" amount="210" />
+				</primary>
+			</production>
+			<component ref="ship_lint_frigate_kitsune_macro" amount="1" />
+			<restriction licence="capitalship" />
+      <owner faction="terran" />
+		</ware>
+
+		<ware id="weapon_missile_lint_kitsune_ware" name="{654612,10}" description="{654612,10}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+			<price min="2423602" average="2851296" max="3278990" />
+			<production time="10" amount="1" method="terran" name="{20206,901}">
+				<primary>
+					<ware ware="computronicsubstrate" amount="123" />
+					<ware ware="energycells" amount="200" />
+					<ware ware="metallicmicrolattice" amount="500" />
+					<ware ware="siliconcarbide" amount="100" />
+				</primary>
+			</production>
+			<component ref="weapon_missile_lint_kitsune_macro" amount="1" />
+			<restriction licence="capitalequipment" />
+			<use threshold="0" />
+			<owner faction="pioneers" />
+      <owner faction="terran" />
+		</ware>
+
+		<ware id="missile_lint_kitsune_01_ware" name="{654612,301}" description="{654612,301}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+			<price min="2530" average="2800" max="3070" />
+			<production time="3" amount="1" method="terran" name="{20206,901}">
+				<primary>
+					<ware ware="computronicsubstrate" amount="4" />
+					<ware ware="energycells" amount="120" />
+					<ware ware="metallicmicrolattice" amount="31" />
+					<ware ware="siliconcarbide" amount="6" />
+				</primary>
+			</production>
+			<component ref="missile_lint_kitsune_01_macro" amount="1" />
+			<container ref="sm_gen_pickup_equipment_01_macro" />
+      <restriction licence="capitalequipment" />
+			<use threshold="0.0" />
+			<owner faction="pioneers" />
+      <owner faction="terran" />
+		</ware>
+    
+		<ware id="missile_lint_kitsune_02_ware" name="{654612,310}" description="{654612,310}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
+			<price min="3030" average="3300" max="3570" />
+			<production time="3" amount="1" method="terran" name="{20206,901}">
+				<primary>
+					<ware ware="computronicsubstrate" amount="6" />
+					<ware ware="energycells" amount="200" />
+					<ware ware="metallicmicrolattice" amount="31" />
+					<ware ware="siliconcarbide" amount="8" />
+				</primary>
+			</production>
+			<component ref="missile_lint_kitsune_02_macro" amount="1" />
+			<container ref="sm_gen_pickup_equipment_01_macro" />
+      <restriction licence="capitalequipment" />
+			<use threshold="1.0" />
+			<owner faction="pioneers" />
+      <owner faction="terran" />
+		</ware>
+
     <!-- SIMON TERRAN SHIPS -->
-    <ware id="ship_ter_l_shikoku" name="{20101,63801}" description="{6699,1911}" group="ships_terran" transport="ship" volume="1" tags="ship">
+    <!-- <ware id="ship_ter_l_shikoku" name="{20101,63801}" description="{6699,1911}" group="ships_terran" transport="ship" volume="1" tags="ship">
       <price min="8473488" average="9792338" max="11011189" />
       <production time="270" amount="1" method="default" name="{20206,901}">
         <primary>
@@ -849,10 +1060,10 @@ __________________ -->
       <restriction licence="capitalship" />
       <owner faction="pioneers" />
     </ware>
-
+ -->
     <!-- PIO triton -->
 
-    <ware id="ship_sdp_frigate_triton" name="{6699,1920}" description="{6699,1921}" group="ships_terran" transport="ship" volume="1" tags="ship">
+     <ware id="ship_sdp_frigate_triton" name="{6699,1920}" description="{6699,1921}" group="ships_terran" transport="ship" volume="1" tags="ship">
       <price min="5558790" average="7033870" max="8008951" />
       <production time="140" amount="1" method="default" name="{20206,901}">
         <primary>
@@ -1589,7 +1800,7 @@ __________________ -->
     </ware>
 
     <!-- Ion Projector -->
-    <ware id="weapon_arg_l_ionproj" name="{6699,11010}" description="{6699,11011}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <!-- <ware id="weapon_arg_l_ionproj" name="{6699,11010}" description="{6699,11011}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
       <price min="1200201" average="1311335" max="1422468" />
       <production time="10" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -1621,7 +1832,7 @@ __________________ -->
       <owner faction="alliance" />
       <owner faction="antigone" />
       <owner faction="argon" />
-    </ware>
+    </ware> -->
 
     <!-- Tri-Beam -->
     <ware id="weapon_par_l_tribeam" name="{6699,11012}" description="{6699,11013}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
@@ -2794,7 +3005,7 @@ __________________ -->
       <owner faction="trinity" />
     </ware>
 
-    <ware id="ship_arg_xl_battleship_a" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship noplayerbuild noblueprint noplayerblueprint">
+    <!-- <ware id="ship_arg_xl_battleship_a" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship noplayerbuild noblueprint noplayerblueprint">
       <price min="30000000" average="35000000" max="40000000" />
       <production time="550" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -2820,9 +3031,22 @@ __________________ -->
       <restriction licence="capitalship" />
       <owner faction="antigone" />
       <owner faction="argon" />
-    </ware>
+    </ware> -->
+		<ware id="ship_arg_xl_battleship_lc4_01_ware" name="{20005,7016}" description="{20005,7016}" group="ships_argon" transport="ship" volume="1" tags="ship">
+      <price min="35000000" average="40000000" max="45000000" />
+      <production time="550" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="6140" />
+          <ware ware="hullparts" amount="17000" />
+        </primary>
+      </production>
+			<component ref="ship_arg_xl_battleship_lc4_01_macro" amount="1" />
+			<restriction licence="capitalship" />
+			<owner faction="argon" />
+			<owner faction="antigone" />
+		</ware>
 
-    <ware id="ship_tel_xl_battleship_a" name="{20101,22101}" description="{20101,22101}" group="ships_teladi" transport="ship" volume="1" tags="ship">
+    <!-- <ware id="ship_tel_xl_battleship_a" name="{20101,22101}" description="{20101,22101}" group="ships_teladi" transport="ship" volume="1" tags="ship">
       <price min="33000000" average="39000000" max="42000000" />
       <production time="550" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -2834,10 +3058,25 @@ __________________ -->
       <restriction licence="capitalship" />
       <owner faction="teladi" />
       <owner faction="ministry" />
-    </ware>
+    </ware> -->
+
+		<ware id="ship_tel_xl_battleship_lc4_01_ware" name="{20101,22101}" description="{20101,22101}" group="ships_teladi" transport="ship" volume="1" tags="ship">
+      <price min="33000000" average="38000000" max="43000000" />
+      <production time="550" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="5900" />
+          <ware ware="hullparts" amount="15900" />
+        </primary>
+      </production>
+			<component ref="ship_tel_xl_battleship_lc4_01_macro" amount="1" />
+			<restriction licence="capitalship" />
+      <owner faction="teladi" />
+      <owner faction="ministry" />
+<!-- AI-variants not being usable for the player -->			
+		</ware>
 
     <ware id="ship_spl_xl_gharial" name="{20101,42501}" description="{20101,42501}" group="ships_split" transport="ship" volume="1" tags="ship">
-      <price min="40000000" average="44000000" max="48000000" />
+      <price min="42000000" average="46000000" max="50000000" />
       <production time="575" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="energycells" amount="85000" />
@@ -2902,7 +3141,7 @@ __________________ -->
     </ware>
 
     <!-- Centaur-->
-    <ware id="ship_arg_l_centaur_a" name="{20101,12802}" description="{6699,1901}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
+    <!-- <ware id="ship_arg_l_centaur_a" name="{20101,12802}" description="{6699,1901}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
       <price min="4595057" average="5058890" max="5522724" />
       <production time="100" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -2913,7 +3152,7 @@ __________________ -->
       <component ref="ship_arg_l_centaur_a_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <owner faction="argon" />
-    </ware>
+    </ware> -->
 
     <ware id="ship_arg_l_centaur_b" name="{20101,12803}" description="{6699,1901}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
       <price min="5195057" average="5658890" max="6222724" />
@@ -2925,7 +3164,7 @@ __________________ -->
       </production>
       <component ref="ship_arg_l_centaur_b_macro" amount="1" />
       <restriction licence="militaryequipment" />
-      <owner faction="antigone" />
+      <owner faction="loanshark" />
     </ware>
 
     <!-- Cyclops-->
@@ -2939,7 +3178,35 @@ __________________ -->
         </primary>
       </production>
       <component ref="ship_arg_l_cyclops_macro" amount="1" />
+      <restriction licence="militaryship" />
+      <owner faction="antigone" />
+    </ware>
+
+    <ware id="ship_arg_l_cyclops_2" name="{20111,5461} {20101,13001}" description="{6699,19082}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
+      <price min="5695057" average="6058890" max="6722724" />
+      <production time="100" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="energycells" amount="1500" />
+          <ware ware="hullparts" amount="4150" />
+        </primary>
+      </production>
+      <component ref="ship_arg_l_cyclops_2_macro" amount="1" />
+      <restriction licence="militaryship" />
+      <owner faction="argon" />
+    </ware>
+
+	<ware id="weapon_axe_autocannon" name="{998843,13323}" description="{998843,13324}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="420020" average="531133" max="642246" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="90" />
+          <ware ware="energycells" amount="20" />
+          <ware ware="weaponcomponents" amount="120" />
+        </primary>
+      </production>
+      <component ref="weapon_axe_autocannon_macro" amount="1" />
       <restriction licence="militaryequipment" />
+      <use threshold="0" />
       <owner faction="argon" />
     </ware>
 
@@ -3073,15 +3340,32 @@ __________________ -->
 
     <!-- PPC  -->
     <ware id="turret_arg_l_ppc" name="{6699,1111}" description="{6699,1114}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="607200" average="627200" max="647200" />
-      <production time="20" amount="1" method="default" name="{20206,101}">
+      <price min="1200201" average="1311335" max="1422468" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
         <primary>
-          <ware ware="advancedelectronics" amount="90" />
-          <ware ware="energycells" amount="226" />
-          <ware ware="turretcomponents" amount="151" />
+          <ware ware="advancedelectronics" amount="60" />
+          <ware ware="energycells" amount="200" />
+          <ware ware="weaponcomponents" amount="91" />
         </primary>
       </production>
       <component ref="turret_arg_l_ppc_macro" amount="1" />
+      <restriction licence="capitalequipment" />
+      <use threshold="0.9" />
+      <owner faction="alliance" />
+      <owner faction="antigone" />
+      <owner faction="argon" />
+    </ware>
+
+<ware id="weapon_arg_l_ppc" name="{6699,11121}" description="{6699,1114}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+      <price min="1200201" average="1311335" max="1422468" />
+      <production time="10" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="60" />
+          <ware ware="energycells" amount="200" />
+          <ware ware="weaponcomponents" amount="91" />
+        </primary>
+      </production>
+      <component ref="weapon_arg_l_ppc_macro" amount="1" />
       <restriction licence="capitalequipment" />
       <use threshold="0.9" />
       <owner faction="alliance" />
@@ -3156,7 +3440,7 @@ __________________ -->
   <owner faction="freesplit" />
   <owner faction="split" />
   <owner faction="court" />
-  <owner faction="fallensplit" /> 
+  <owner faction="fallensplit" />
 </ware>  -->
     <ware id="turret_spl_multilauncher" name="{6699,10212}" description="{6699,102121}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
       <price min="291883" average="327883" max="490883" />
@@ -3481,6 +3765,7 @@ __________________ -->
       <owner faction="court" />
       <owner faction="freesplit" />
       <owner faction="split" />
+      <owner faction="loanshark" />
 
     </ware>
 
@@ -3530,7 +3815,7 @@ __________________ -->
       <owner faction="court" />
       <owner faction="freesplit" />
       <owner faction="split" />
-
+      <owner faction="loanshark" />
     </ware>
 
     <!-- MA -->
@@ -3660,7 +3945,7 @@ __________________ -->
         <primary>
           <ware ware="energycells" amount="42" />
         </primary>
-      </production>    
+      </production>
         <component ref="missile_firefly_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -3694,7 +3979,7 @@ __________________ -->
         <primary>
           <ware ware="energycells" amount="50" />
         </primary>
-      </production>   
+      </production>
          <component ref="missile_firelance_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -3730,7 +4015,7 @@ __________________ -->
         <primary>
           <ware ware="energycells" amount="99" />
         </primary>
-      </production>  
+      </production>
           <component ref="missile_beluga_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -3764,7 +4049,7 @@ __________________ -->
         <primary>
           <ware ware="energycells" amount="109" />
         </primary>
-      </production>   
+      </production>
          <component ref="missile_blizzard_macro" amount="1" />
       <restriction licence="generaluseequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -3804,7 +4089,7 @@ __________________ -->
         <primary>
           <ware ware="energycells" amount="100" />
         </primary>
-      </production>  
+      </production>
           <component ref="missile_dragonfly_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -3853,7 +4138,7 @@ __________________ -->
         <primary>
           <ware ware="energycells" amount="199" />
         </primary>
-      </production>   
+      </production>
          <component ref="missile_aurora_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -3887,7 +4172,7 @@ __________________ -->
         <primary>
           <ware ware="energycells" amount="207" />
         </primary>
-      </production> 
+      </production>
            <component ref="missile_tornado_macro" amount="1" />
       <restriction licence="militaryequipment" />
       <container ref="sm_gen_pickup_equipment_01_macro" />
@@ -7165,6 +7450,215 @@ __________________ -->
       <use threshold="0" />
       <restriction licence="generaluseequipment" />
     </ware>
+
+<ware id="ishield_bor_s_fighter_01_a" name="{6699,13152}" description="{6699,13152}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_s_fighter_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_s_heavyfighter_01_a" name="{6699,13153}" description="{6699,13153}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_s_heavyfighter_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_s_miner_solid_01_a" name="{6699,13154}" description="{6699,13154}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_s_miner_solid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_s_scout_01_a" name="{6699,13155}" description="{6699,13155}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_s_scout_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_s_scout_02_a" name="{6699,13156}" description="{6699,13156}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_s_scout_02_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_s_trans_container_01_a" name="{6699,13157}" description="{6699,13157}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_s_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_m_corvette_01_a" name="{6699,13158}" description="{6699,13158}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_m_corvette_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_m_gunboat_01_a" name="{6699,13159}" description="{6699,13159}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_m_gunboat_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_m_miner_liquid_01_a" name="{6699,13160}" description="{6699,13160}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_m_miner_liquid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_m_trans_container_01_a" name="{6699,13161}" description="{6699,13161}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_m_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_l_carrier_01_a" name="{6699,13162}" description="{6699,13162}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_l_carrier_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_l_destroyer_01_a" name="{6699,13163}" description="{6699,13163}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_l_destroyer_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_l_miner_liquid_01_a" name="{6699,13164}" description="{6699,13164}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_l_miner_liquid_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_l_trans_container_01_a" name="{6699,13165}" description="{6699,13165}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_l_trans_container_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_xl_carrier_01_a" name="{6699,13166}" description="{6699,13166}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_xl_carrier_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
+<ware id="ishield_bor_xl_resupplier_01_a" name="{6699,13167}" description="{6699,13167}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+    <price min="1" average="1" max="1" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+     <primary>
+    <ware ware="energycells" amount="1" />
+    </primary>
+    </production>
+    <component ref="ishield_bor_xl_resupplier_01_a_macro" amount="1" />
+    <use threshold="0" />
+    <restriction licence="generaluseequipment" />
+    <owner faction="boron" />
+</ware>
+
 
   </add>
   <!-- Vanilla missiles reomoval from being buildable by factions -->

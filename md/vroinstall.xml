@@ -3,7 +3,7 @@
 <mdscript name="Vroinstall">
   <cues>
     <!-- define the current version of the cue -->
-    <cue name="VRO_main" version="11">
+    <cue name="VRO_main" version="12">
       <conditions>
         <check_any>
           <event_cue_signalled cue="md.Setup.GameStart" />
@@ -12,11 +12,11 @@
         </check_any>
       </conditions>
       <actions>
-         <show_help duration="10s" custom="'VRO v3.x installed.'"/>
+         <show_help duration="10s" custom="'VRO v4.x installed.'"/>
          <show_help duration="10s" custom="'Please visit Egosoft forum mod thread for mod description and latest VRO patchnotes.'"/>
       </actions>
       <!-- if a cue is running that has a version like sinceversion or older then the patch will be applied -->
-      <patch sinceversion="11">
+      <patch sinceversion="12">
         <!-- simple reset so the sub cue is called again. -->
         <reset_cue cue="this"/>
       </patch>
@@ -165,13 +165,13 @@
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_l_carrier_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_arg_xl_builder_01_a"/>
 			
-			<append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_sdp_frigate_triton"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_sdp_frigate_triton"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_xl_sapporo"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_l_akita"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_l_makhaira"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_l_shikoku"/>
 			
-			<append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_gen_m_yacht_01"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_gen_m_yacht_01"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_pir_l_miner_solid_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_pir_l_scavenger_01_a"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_pir_l_scrapper_01"/>
@@ -181,6 +181,22 @@
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_pir_s_trans_container_01"/>
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_pir_xl_battleship_01"/>
 
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_s_fighter_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_s_heavyfighter_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_s_miner_solid_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_s_scout_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_s_scout_02_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_s_trans_container_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_m_corvette_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_m_gunboat_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_m_miner_liquid_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_m_trans_container_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_l_carrier_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_l_destroyer_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_l_miner_liquid_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_l_trans_container_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_xl_carrier_01_a"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_bor_xl_resupplier_01_a"/>
 
             <do_all exact="$vro_ishield_ware_list.count" counter="$i">
               <set_value name="$Warescontainer" exact="$vro_ishield_ware_list.{$i}.objectmacro" />

@@ -2,12 +2,28 @@
 <diff>
 
 	<!-- ############################# -->
+	<!--    Boron -->
+	<!-- ############################# -->
+
+	<add sel="//ships">
+		<ship id="boron_battleship_xl" group="bor_battleship_xl">
+			<category tags="[military, battleship, mission]" faction="boron" size="ship_xl" />
+			<pilot>
+			<select faction="boron" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="boron_military_crew" />
+		</ship>
+	</add>
+
+	<!-- ############################# -->
 	<!--    ARGON FEDERATION -->
 	<!-- ############################# -->
 
 	<add sel="//ships">
 		<ship id="argon_battleship_xl" group="arg_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[argon, scaleplate, hatikvah, alliance]" size="ship_xl" />
+			<category tags="[military, battleship, mission]"
+				faction="[argon, scaleplate, hatikvah, alliance]" size="ship_xl" />
 			<pilot>
 				<select faction="argon" tags="fighterpilot" />
 			</pilot>
@@ -17,8 +33,8 @@
 	</add>
 
 	<add sel="//ships">
-		<ship id="argon_centaur" group="arg_centaur_l">
-			<category tags="[military, frigate, mission]" faction="[argon, scaleplate, hatikvah, alliance]" size="ship_l" />
+		<ship id="argon_cyclops" group="arg_cyclops_l">
+			<category tags="[military, frigate, mission]" faction="[argon]" size="ship_l" />
 			<pilot>
 				<select faction="argon" tags="fighterpilot" />
 			</pilot>
@@ -33,8 +49,8 @@
 	<!-- ############################# -->
 
 	<add sel="//ships">
-		<ship id="antigone_centaur" group="ant_centaur_l">
-			<category tags="[military, frigate, mission]" faction="[antigone, scaleplate, hatikvah, alliance]" size="ship_l" />
+		<ship id="antigone_cyclops" group="ant_cyclops_l">
+			<category tags="[military, frigate, mission]" faction="[antigone]" size="ship_l" />
 			<pilot>
 				<select faction="argon" tags="fighterpilot" />
 			</pilot>
@@ -45,7 +61,8 @@
 
 	<add sel="//ships">
 		<ship id="antigone_battleship_xl" group="ant_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[antigone, scaleplate, hatikvah, alliance]" size="ship_xl" />
+			<category tags="[military, battleship, mission]"
+				faction="[antigone, scaleplate, hatikvah, alliance]" size="ship_xl" />
 			<pilot>
 				<select faction="argon" tags="fighterpilot" />
 			</pilot>
@@ -60,7 +77,8 @@
 
 	<add sel="//ships">
 		<ship id="paranid_battleship_xl" group="par_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[paranid, alliance]" size="ship_xl" />
+			<category tags="[military, battleship, mission]" faction="[paranid, alliance]"
+				size="ship_xl" />
 			<pilot>
 				<select faction="paranid" tags="fighterpilot" />
 			</pilot>
@@ -71,7 +89,8 @@
 
 	<add sel="//ships">
 		<ship id="paranid_hyperion" group="par_hyperion_l">
-			<category tags="[military, frigate, mission, hyperion]" faction="[paranid]" size="ship_l" />
+			<category tags="[military, frigate, mission, hyperion]" faction="[paranid]"
+				size="ship_l" />
 			<pilot>
 				<select faction="paranid" tags="elitepilot" />
 			</pilot>
@@ -86,7 +105,8 @@
 
 	<add sel="//ships">
 		<ship id="holyorder_battleship_xl" group="hol_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[holyorder, alliance]" size="ship_xl" />
+			<category tags="[military, battleship, mission]" faction="[holyorder, alliance]"
+				size="ship_xl" />
 			<pilot>
 				<select faction="paranid" tags="fighterpilot" />
 			</pilot>
@@ -97,7 +117,8 @@
 
 	<add sel="//ships">
 		<ship id="holyorder_hyperion" group="hol_hyperion_l">
-			<category tags="[military, frigate, mission, hyperion]" faction="[holyorder]" size="ship_l" />
+			<category tags="[military, frigate, mission, hyperion]" faction="[holyorder]"
+				size="ship_l" />
 			<pilot>
 				<select faction="paranid" tags="elitepilot" />
 			</pilot>
@@ -112,7 +133,8 @@
 
 	<add sel="//ships">
 		<ship id="teladi_battleship_xl" group="tel_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[teladi, ministry, scaleplate]" size="ship_xl" />
+			<category tags="[military, battleship, mission]"
+				faction="[teladi, ministry, scaleplate]" size="ship_xl" />
 			<pilot>
 				<select faction="teladi" tags="fighterpilot" />
 			</pilot>
@@ -123,7 +145,8 @@
 
 	<add sel="//ships">
 		<ship id="teladi_shrike" group="tel_shrike_l">
-			<category tags="[military, frigate, mission]" faction="[teladi, scaleplate]" size="ship_l" />
+			<category tags="[military, frigate, mission]" faction="[teladi, scaleplate]"
+				size="ship_l" />
 			<pilot>
 				<select faction="teladi" tags="fighterpilot" />
 			</pilot>
@@ -138,7 +161,8 @@
 
 	<add sel="//ships">
 		<ship id="split_panther" group="spl_panther_l">
-			<category tags="[military, frigate, mission, plunder]" faction="[split, freesplit, fallensplit]" size="ship_l" />
+			<category tags="[military, frigate, mission, plunder]"
+				faction="[split, freesplit, fallensplit]" size="ship_l" />
 			<pilot>
 				<select faction="split" tags="fighterpilot" />
 			</pilot>
@@ -159,7 +183,8 @@
 
 	<add sel="//ships">
 		<ship id="split_battleship_xl" group="spl_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[split, freesplit, fallensplit]" size="ship_xl" />
+			<category tags="[military, battleship, mission]"
+				faction="[split, freesplit, fallensplit]" size="ship_xl" />
 			<pilot>
 				<select faction="split" tags="fighterpilot" />
 			</pilot>
@@ -195,19 +220,25 @@
 	</add>
 
 	<add sel="//ships">
-		<ship id="terran_frigate_l" group="ter_frigate_l">
-			<category tags="[military, frigate, mission]" faction="[terran, pioneers]" size="ship_l" />
+		<ship id="ter_lint_akita" group="group_ter_lint_akita">
+			<category tags="[military, akita]" faction="terran" size="ship_l" />
 			<pilot>
 				<select faction="terran" tags="fighterpilot" />
 			</pilot>
 			<drop ref="ship_large_military" />
 			<people ref="terran_military_crew" />
 		</ship>
-	</add>
+		<ship id="pio_lint_akita" group="group_ter_lint_akita">
+			<category tags="[military, akita]" faction="pioneers" size="ship_l" />
+			<pilot>
+				<select faction="pioneers" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="pioneers_military_crew" />
+		</ship>
 
-	<add sel="//ships">
-		<ship id="pioneers_battleship_xl" group="pio_battleship_xl">
-			<category tags="[military, battleship, mission]" faction="[pioneers]" size="ship_xl" />
+		<ship id="pio_lint_kitsune" group="group_pio_lint_kitsune">
+			<category tags="[military, kitsune]" faction="pioneers" size="ship_l" />
 			<pilot>
 				<select faction="pioneers" tags="fighterpilot" />
 			</pilot>
@@ -216,16 +247,6 @@
 		</ship>
 	</add>
 
-	<replace sel="//ships/ship[@id='pioneers_destroyer_l']">
-		<ship id="pioneers_destroyer_l" group="pio_destroyer_l">
-			<category tags="[military, destroyer, mission]" faction="pioneers" size="ship_l"/>
-			<pilot>
-			  <select faction="terran" tags="fighterpilot"/>
-			</pilot>
-			<drop ref="ship_large_military"/>
-			<people ref="pioneers_veteran_military_crew"/>
-		  </ship>
-			</replace>
 
 	<!-- ############################# -->
 	<!--    Xenons-->
@@ -250,6 +271,23 @@
 			<drop ref="ship_large_xenon" />
 		</ship>
 	</add>
+
+	<!-- ############################# -->
+	<!--    loanshark ships-->
+	<!-- ############################# -->
+
+
+	<add sel="//ships">
+		<ship id="loanshark_centaur" group="pir_centaur_l">
+			<category tags="[military, frigate, mission]" faction="[loanshark]" size="ship_l" />
+			<pilot>
+				<select faction="loanshark" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="loanshark_military_crew" />
+		</ship>
+	</add>
+
 	<!-- ############################# -->
 	<!--    Pirate ships-->
 	<!-- ############################# -->

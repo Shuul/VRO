@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="turret_bor_m_arc_02_mk1_macro" class="turret">
+    <component ref="turret_bor_m_arc_02_mk1" />
+    <properties>
+      <identification name="{20105,4964}" basename="{20105,4961}" shortname="{20105,4965}" makerrace="boron" description="{20105,4962}" mk="1" />
+      <bullet class="bullet_bor_turret_m_arc_01_mk1_macro" />
+      <rotationspeed max="200" />
+      <rotationacceleration max="240" />
+      <reload rate="1" time="1" />
+      <hull max="5400" threshold="0.2" integrated="0" />
+    </properties>
+  </macro>
+</macros>
+      </replace>
+</diff>

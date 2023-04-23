@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<components>
+	<component name="dockarea_akita_s" class="dockarea">
+		<source geometry="assets\structures\dock\\dockarea_arg_s_01_data"/>
+		<layers>
+			<layer>
+				<waypoints>
+
+					<waypoint name="XU_Waypoint02_mt001" tags="dockpath " group="group_01" x="0" y="80" z="-125" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint004_mt001"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint01_mt001" tags="dockpath start " group="group_01" x="0" y="100" z="-950" qx="-0" qy="-0" qz="-0" qw="-1">
+						<links>
+							<link ref="XU_Waypoint02_mt001"/>
+						</links>
+					</waypoint>
+					<waypoint name="XU_Waypoint003_mt001" tags="end dockpath " group="group_01" x="0" y="40" z="400" qx="-0" qy="-1" qz="-0" qw="7.54979E-08">
+						<links/>
+					</waypoint>
+					<waypoint name="XU_Waypoint004_mt001" tags="dockpath " group="group_01" x="0" y="40" z="125" qx="-0" qy="-1" qz="-0" qw="7.54979E-08">
+						<links>
+							<link ref="XU_Waypoint003_mt001"/>
+						</links>
+					</waypoint>
+
+				</waypoints>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="dockarea">
+				<offset/>
+			</connection>
+			<connection name="Connection01" hidden="true" tags="part nocollision  ">
+				<offset/>
+				<parts>
+					<part name="part_main">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hullpattern"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.8157368" y="0.6352959" z="0.9177036"/>
+							<center x="0" y="-0.6352959" z="0"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="con_entrypos" tags="entrypos  ">
+				<offset>
+					<position x="0" y="100" z="-1000"/>
+				</offset>
+			</connection>
+			<connection name="ConnectionFor_dockingbay_arg_s_01_macro" tags="dockingbay">
+				<offset/>
+			</connection>
+		</connections>
+	</component>
+</components>

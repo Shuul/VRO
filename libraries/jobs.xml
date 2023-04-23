@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <diff>
+  <!-- ############################# -->
+  <!--    Borons, closed ones    -->
+  <!-- ############################# -->
+      <job id="boron_battleship_patrol_xl" name="{20204,3201}" >
+      <modifiers commandeerable="true" />
+      <orders>
+        <order order="Patrol" default="true">
+          <param name="range" value="class.sector" />
+        </order>
+      </orders>
+      <category faction="boron" tags="[factionlogic, military, battleship]" size="ship_xl" />
+      <quota galaxy="1" cluster="1" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="boron" relation="self" comparison="exact" excludedtags="boronborder" matchextension="false"/>
+      <environment buildatshipyard="true" />
+      <ship>
+        <select faction="boron" tags="[military, battleship]" size="ship_xl" />
+        <loadout>
+          <level exact="1.0" />
+        </loadout>
+        <owner exact="boron" overridenpc="true" />
+      </ship>
+      <subordinates>
+        <subordinate job="boron_carrier_escort_l_flagship" assignment="attack" group="1" />
+        <subordinate job="boron_carrier_escort_l_flagship" assignment="attack" group="2" />
+        <subordinate job="boron_destroyer_escort_l" assignment="defence" group="3"/>
+      </subordinates>
+    </job>
+
+<!-- Additoonal carrier -->
+    <job id="boron_carrier_patrol_xl_exp" name="{20204,3201}" comment="Kingdoms End">
+      <modifiers commandeerable="false" />
+      <orders>
+        <order order="Patrol" default="true">
+          <param name="range" value="class.zone" />
+          <param name="organizesubordinates" value="true" />
+          <param name="defences_maxgatedistance" value="6" />
+          <param name="defences_includedassignments" value="[assignment.attack]" />
+        </order>
+      </orders>
+      <category faction="boron" tags="[military, carrier]" size="ship_xl" />
+      <quota galaxy="1" cluster="1" />
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="boron" relation="self" comparison="exact" excludedtags="boronborder" matchextension="false"/>
+      <environment buildatshipyard="true" />
+      <ship>
+        <select faction="boron" tags="[military, carrier]" size="ship_xl" />
+        <loadout>
+          <level exact="1.0" />
+        </loadout>
+        <owner exact="boron" overridenpc="true" />
+      </ship>
+      <subordinates>
+        <subordinate job="boron_carrier_escort_l_flagship" assignment="attack" group="1" />
+		<subordinate job="boron_destroyer_escort_l" assignment="defence" group="2"/>
+        <subordinate job="boron_fighter_escort_s_carrier_flagship" assignment="defence" group="3"/>
+      </subordinates>
+    </job>
 
   <!-- ############################# -->
   <!--        ARGON FEDERATION       -->
@@ -31,7 +87,7 @@
 		</subordinates>
 	  </job>
 
-	  	<job id="argon_centaur_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
+	  	<job id="argon_cyclops_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -107,7 +163,7 @@
 		</subordinates>
 	  </job>
 
-		<job id="antigone_centaur_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
+		<job id="antigone_cyclops_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -272,7 +328,7 @@
 		<ship>
 			<select faction="teladi" tags="[military, frigate]" size="ship_l"/>
 			<loadout>
-				<level min="0" max="0.8"/>
+				<level min="0.4" max="0.8"/>
 			</loadout>
 			<owner exact="teladi" overridenpc="true"/>
 		</ship>
@@ -296,7 +352,7 @@
 		<ship>
 		  <select faction="[teladi, ministry]" tags="[military, fighter, selection]" size="ship_s"/>
 		  <loadout>
-			<level min="0" max="0.7"/>
+			<level min="0.4" max="0.7"/>
 		  </loadout>
 		  <owner exact="teladi" overridenpc="true"/>
 		</ship>
@@ -343,7 +399,7 @@
 		<ship>
 			<select faction="split" tags="[military, frigate]" size="ship_l"/>
 			<loadout>
-				<level min="0" max="0.8"/>
+				<level min="0.4" max="0.8"/>
 			</loadout>
 			<owner exact="split" overridenpc="true"/>
 		</ship>
@@ -368,7 +424,7 @@
 		<ship>
 			<select faction="split" tags="[military, fighter, light]" size="ship_s"/>
 		<loadout>
-			<level min="0" max="0.7"/>
+			<level min="0.4" max="0.7"/>
 		  </loadout>
 		  <owner exact="split" overridenpc="true"/>
 		</ship>
@@ -438,7 +494,7 @@
 			<ship>
 				<select faction="court" tags="[military, fighter, light]" size="ship_s"/>
 			<loadout>
-				<level min="0" max="0.7"/>
+				<level min="0.4" max="0.7"/>
 			  </loadout>
 			  <owner exact="court" overridenpc="true"/>
 			</ship>
@@ -488,7 +544,7 @@
 		<ship>
 		  <select faction="fallensplit" tags="[military, plunder, frigate]" size="ship_l"/>
 		  <loadout>
-			<level min="0" max="0.8"/>
+			<level min="0.4" max="0.8"/>
 		  </loadout>
 		  <owner exact="fallensplit" overridenpc="true"/>
 		</ship>
@@ -553,7 +609,7 @@
 	</subordinates>
   </job>
 
-  <job id="terran_frigate_patrol_l" name="{20204,5201}">
+  <!-- <job id="terran_frigate_patrol_l" name="{20204,5201}">
 	<modifiers commandeerable="true"/>
 	<orders>
 	  <order order="Patrol" default="true">
@@ -574,7 +630,7 @@
 	<subordinates>
 		<subordinate job="terran_corvette_escort_m"/>
 	</subordinates>
-  </job>
+  </job> -->
 
   <job id="terran_escort_s_lightcarrier" name="{20204,2901}" startactive="false">
 	<orders>
@@ -599,6 +655,103 @@
 	  <subordinate job="terran_fighter_escort_s_carrier_wing"/>
 	</subordinates>
   </job>
+
+      <!-- Akita escort job -->
+    <job id="terran_frigate_escort_akita" name="{20204,5201}" startactive="false">
+      <orders>
+        <order order="Escort" default="true">
+          <param name="formation" value="formationshape.xshapeforward"/>
+          <param name="overrideformationskill" value="true"/>
+        </order>
+      </orders>
+      <category faction="terran" tags="[military, frigate]" size="ship_l"/>
+      <quota wing="1"/>
+      <location class="galaxy" macro="xu_ep2_universe_macro"/>
+      <environment buildatshipyard="true"/>
+      <modifiers subordinate="true"/>
+      <ship>
+        <select faction="terran" tags="[military, akita]" size="ship_l"/>
+        <loadout>
+          <level exact="1.0"/>
+        </loadout>
+        <owner exact="terran" overridenpc="true"/>
+      </ship>
+    </job>
+
+    <!-- Akita patrol job -->
+    <job id="terran_frigate_patrol_akita" name="{20204,5201}">
+      <modifiers commandeerable="true"/>
+      <orders>
+        <order order="Patrol" default="true">
+          <param name="range" value="class.cluster"/>
+        </order>
+      </orders>
+      <category faction="terran" tags="[military, frigate]" size="ship_l"/>
+      <quota galaxy="8"/>
+	<location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="exact" matchextension="false"/>
+      <environment buildatshipyard="true"/>
+      <ship>
+        <select faction="terran" tags="[military, akita]" size="ship_l"/>
+        <loadout>
+          <level exact="1.0"/>
+        </loadout>
+        <owner exact="terran" overridenpc="true"/>
+      </ship>
+      <subordinates>
+        <subordinate job="terran_frigate_escort_akita"/>
+      </subordinates>
+    </job>
+
+    <!-- <job id="pioneers_frigate_patrol_akita" name="{20204, 5201}">
+      <modifiers commandeerable="true"/>
+      <orders>
+        <order order="Patrol" default="true">
+          <param name="range" value="class.zone"/>
+        </order>
+      </orders>
+      <category faction="pioneers" tags="[military, frigate]" size="ship_l"/>
+      <quota galaxy="8" sector="1"/>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="exact" matchextension="false"/>
+      <environment buildatshipyard="true"/>
+      <ship>
+        <select faction="pioneers" tags="[military, akita]" size="ship_l"/>
+        <loadout>
+          <level exact="1.0"/>
+        </loadout>
+        <owner exact="pioneers" overridenpc="true"/>
+      </ship>
+      <subordinates/>
+    </job> -->
+
+	<job id="pioneers_frigate_patrol_kitsune" name="{20204,5201}">
+		<modifiers commandeerable="true"/>
+		<orders>
+			<order order="Patrol" default="true">
+				<param name="range" value="class.zone"/>
+			</order>
+		</orders>
+		<category faction="pioneers" tags="[military, frigate]" size="ship_l"/>
+		<quota galaxy="3" sector="1"/>
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="exact" matchextension="false"/>
+		<environment buildatshipyard="true"/>
+		<ship>
+			<select faction="pioneers" tags="[military, kitsune]" size="ship_l"/>
+			<loadout>
+				<level exact="1.0"/>
+			</loadout>
+			<owner exact="pioneers" overridenpc="true"/>
+		</ship>
+		<subordinates/>
+	</job>
+
+  <!-- Adding escort job to existing terran job -->
+  <add sel="//jobs/job[@id='terran_carrier_intervention_xl']/subordinates">
+    <subordinate job="terran_frigate_escort_akita"/>
+	</add>
+  <add sel="//jobs/job[@id='terran_battleship_intervention_xl']/subordinates">
+    <subordinate job="terran_frigate_escort_akita"/>
+  </add>
+
 <!-- PIONEERS -->
   <job id="pioneers_lightcarrier_patrol_l" name="{20204,3201}">
 	<modifiers commandeerable="true"/>
@@ -625,31 +778,32 @@
 	</subordinates>
   </job>
 
-  <job id="pioneers_battleship_patrol_xl" name="{20221,5201}" comment="each sector, expansion">
+  <!-- ############################# -->
+  <!--      LOANSHARK		      -->
+  <!-- ############################# -->
+
+  <job id="loanshark_centaur_l_sector" name="{20204,5201}" comment="each sector">
 	<modifiers commandeerable="true"/>
 	<orders>
 		<order order="Patrol" default="true">
-			<param name="range" value="class.cluster"/>
+			<param name="range" value="class.sector"/>
 		</order>
 	</orders>
-	<category faction="pioneers" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-	<quota galaxy="1" sector="1"/>
-	<location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="exact" matchextension="false"/>
+	<category faction="loanshark" tags="[factionlogic, military, frigate]" size="ship_l"/>
+	<quota galaxy="3" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="loanshark" relation="self" comparison="exact" matchextension="false"/>
 	<environment buildatshipyard="true"/>
 	<ship>
-		<select faction="pioneers" tags="[military, battleship]" size="ship_xl"/>
+		<select faction="loanshark" tags="[military, frigate]" size="ship_l"/>
 		<loadout>
-		  <level exact="1.0"/>
+			<level min="0.7" max="1.0"/>
 		</loadout>
-		<owner exact="pioneers" overridenpc="true"/>
-	  </ship>
-	  <subordinates>
-		<subordinate job="pioneers_fighter_escort_s"/>
-		<subordinate job="pioneers_corvette_escort_m"/>
-		<subordinate job="pioneers_corvette_escort_m"/>
+		<owner exact="loanshark" overridenpc="true"/>
+	</ship>
+	<subordinates>
+		<subordinate job="loanshark_escort_scrapyard"/>
 	</subordinates>
   </job>
-
 
   <!-- ############################# -->
   <!--      PIRATE SHIPS		      -->
@@ -881,7 +1035,7 @@
 </replace>
 <replace sel="//jobs/job[@id='pioneers_destroyer_patrol_l_comp']/ship/loadout">
 	<loadout>
-	<level min="0" max="1.0"/>
+	<level min="0.5" max="1.0"/>
 	</loadout>  
 </replace>
 

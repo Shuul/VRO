@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported on 2023-03-06 14:14:47-->
+<components>
+  <component name="turret_bor_l_projector" class="turret">
+    <source geometry="extensions\ego_dlc_boron\assets\props\weaponsystems\boron\turret_bor_l_disruptor_01_mk1_data" />
+    <layers>
+      <layer />
+    </layers>
+    <connections>
+      <connection name="container" tags="contents" value="0" />
+      <connection name="space" tags="station" value="0" />
+      <connection name="position" tags="position" value="1" />
+      <connection name="con_turret_01" tags="boron combat component large turret highpower" />
+      <connection name="ConnectionForfx_socket_decals" tags="detail_m forceoutline fx nocollision part ">
+        <offset>
+          <position x="0.05428725" y="0.9644833" z="0.8642654" />
+        </offset>
+        <parts>
+          <part name="fx_socket_decals">
+            <size>
+              <max x="8.437172" y="1.426047" z="14.015" />
+              <center x="-0.05428886" y="0.9490883" z="0.132998" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpart_socket" tags="animation part ">
+        <offset>
+          <position x="-2.357e-07" y="1.689345" z="0.4997516" />
+        </offset>
+        <animations>
+          <animation name="turret_inactive" start="1" end="2" />
+          <animation name="turret_activating" start="2" end="45" />
+          <animation name="turret_active" start="45" end="53" />
+          <animation name="turret_deactivating" start="53" end="98" />
+        </animations>
+        <parts>
+          <part name="part_socket" wreck="part_socket_wreck">
+            <size>
+              <max x="8.643824" y="1.689345" z="15.18666" />
+              <center x="2.357e-07" y="0" z="4.768e-07" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpar_rotator" tags="animation forceoutline iklink nocollision part " parent="part_socket">
+        <offset>
+          <position x="2.357e-07" y="0.5682666" z="-3.257292" />
+        </offset>
+        <restrictions>
+          <restriction type="rotation_y" />
+        </restrictions>
+        <parts>
+          <part name="par_rotator">
+            <size>
+              <max x="6.408541" y="3.702504" z="10.27368" />
+              <center x="0" y="1.865356" z="0.6461918" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpart_gun" tags="forceoutline iklink nocollision part " parent="par_rotator">
+        <offset>
+          <position x="7.1e-09" y="2.118392" z="-2.187765" />
+        </offset>
+        <restrictions>
+          <restriction type="rotation_x">
+            <limits>
+              <min value="-5" />
+              <max value="89" />
+            </limits>
+          </restriction>
+        </restrictions>
+        <parts>
+          <part name="part_gun">
+            <size>
+              <max x="1.328349" y="2.188528" z="7.899005" />
+              <center x="-7.1e-09" y="0.5939703" z="6.800126" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="con_laser_01" tags="laser " parent="part_gun">
+        <offset>
+          <position x="-2.2e-08" y="0.3799152" z="20.8648" />
+        </offset>
+      </connection>
+      <connection name="con_laser_02" tags="laser " parent="part_gun">
+        <offset>
+          <position x="-0.336928" y="-0.203661" z="20.8648" />
+        </offset>
+      </connection>
+      <connection name="con_laser_03" tags="laser " parent="part_gun">
+        <offset>
+          <position x="0.336928" y="-0.203661" z="20.8648" />
+        </offset>
+      </connection>
+      <connection name="ConnectionForpart_barrel" tags="animation forceoutline iklink nocollision part " parent="part_gun">
+        <offset>
+          <position x="-1.46e-07" y="0.08882427" z="11.70963" />
+        </offset>
+        <parts>
+          <part name="part_barrel">
+            <size>
+              <max x="0.4793535" y="1.034911" z="6.155162" />
+              <center x="-1.01e-08" y="0.5999999" z="3" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpart_gun_decals" tags="detail_l forceoutline fx iklink nocollision part " parent="part_gun">
+        <offset>
+          <position x="-0.4623977" y="1.371606" z="2.83049" />
+        </offset>
+        <parts>
+          <part name="part_gun_decals">
+            <size>
+              <max x="0.9702799" y="2.128414" z="5.911" />
+              <center x="0.4623977" y="-0.784256" z="3.743324" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForfx_rotator_details" tags="detail_l forceoutline fx iklink nocollision part " parent="par_rotator">
+        <offset>
+          <position x="7.15327e-05" y="2.594407" z="-4.201735" />
+        </offset>
+        <parts>
+          <part name="fx_rotator_details">
+            <size>
+              <max x="5.736123" y="2.042601" z="6.097807" />
+              <center x="-7.20095e-05" y="0.7728748" z="1.781312" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForanim_glow" tags="animation detail_l forceoutline iklink nocollision part textureanimation " parent="part_socket">
+        <offset>
+          <position x="3.835e-07" y="0.0377667" z="-0.08159637" />
+        </offset>
+        <parts>
+          <part name="anim_glow">
+            <size>
+              <max x="8.082323" y="1.210288" z="13.37682" />
+              <center x="-1.478e-07" y="0" z="4.768e-07" />
+            </size>
+            <uv_animations>
+              <uv_animation rotaroundcenter="1" mapchannel="1">
+                <uv_property name="u_offset" controller="linear_float">
+                  <key frame="1" value="0" />
+                  <key frame="2" value="0" />
+                  <key frame="10" value="0.3" />
+                  <key frame="45" value="0.3" />
+                  <key frame="56" value="0.3" />
+                  <key frame="93" value="0.3" />
+                  <key frame="101" value="0" />
+                </uv_property>
+                <uv_property name="v_offset" controller="linear_float">
+                  <key frame="1" value="0" />
+                  <key frame="2" value="0" />
+                  <key frame="10" value="0" />
+                  <key frame="45" value="0" />
+                  <key frame="56" value="0" />
+                  <key frame="93" value="0" />
+                  <key frame="101" value="0" />
+                </uv_property>
+              </uv_animation>
+            </uv_animations>
+          </part>
+        </parts>
+      </connection>
+    </connections>
+  </component>
+</components>

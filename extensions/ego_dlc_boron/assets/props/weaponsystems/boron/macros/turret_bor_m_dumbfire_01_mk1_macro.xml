@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="turret_bor_m_dumbfire_01_mk1_macro" class="missileturret">
+    <component ref="turret_bor_m_dumbfire_01_mk1" />
+    <properties>
+      <identification name="{20105,7004}" basename="{20105,7001}" shortname="{20105,7005}" makerrace="boron" description="{20105,7002}" mk="1" />
+      <ammunition tags="dumbfire" />
+      <bullet class="missile_dumbfire_light_mk1_macro" />
+      <rotationspeed max="120" />
+      <reload />
+      <storage capacity="30" />
+      <hull max="5400" threshold="0.2" integrated="0" />
+    </properties>
+  </macro>
+</macros>
+      </replace>
+</diff>

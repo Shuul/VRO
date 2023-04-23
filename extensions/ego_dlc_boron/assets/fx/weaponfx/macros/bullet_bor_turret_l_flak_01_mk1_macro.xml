@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="bullet_bor_turret_l_flak_01_mk1_macro" class="bullet">
+    <component ref="bullet_bor_l_flak_01_mk1" />
+    <properties>
+      <ammunition value="3" reload="1.5" />
+      <bullet speed="10000" lifetime="1.5" barrelamount="1" icon="weapon_bor_flak_mk1" timediff="0.001" angle="2.1" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" selfdestruct="1" plannedselfdestruct="1" selfdestructtimediff="0.06" selfdestructmintime="0.15" influencelist="light_drive_disrupt_flak" />
+      <reload rate="0.4" />
+      <areadamage value="550" shield="1800" />
+      <damage value="800" repair="0" />
+      <effects>
+        <impact ref="impact_bor_l_flak_01_mk1" inside="impact_bor_l_flak_01_mk1_inside" />
+        <bigobjectimpact ref="impact_bor_l_flak_01_mk1_bigobject" inside="impact_bor_l_flak_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_bor_l_flak_01_mk1" />
+      </effects>
+      <weapon system="turret_midrange" />
+    </properties>
+  </macro>
+</macros>
+    </replace>
+</diff>

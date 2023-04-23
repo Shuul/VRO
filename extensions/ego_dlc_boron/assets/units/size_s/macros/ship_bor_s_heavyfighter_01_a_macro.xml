@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+  <macros>
+  <macro name="ship_bor_s_heavyfighter_01_a_macro" class="ship_s">
+    <component ref="ship_bor_s_heavyfighter_01" />
+    <properties>
+      <identification name="{20101,50601}" basename="{20101,50601}" makerrace="boron" description="{20101,50611}" icon="ship_s_heavyfighter" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage missile="24" />
+      <hull max="7100" />
+      <glow engine="1" />
+      <secrecy level="1" />
+      <purpose primary="fight" />
+      <people capacity="2" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_boron_s_01" />
+      </sounds>
+      <physics mass="7.791">
+        <inertia pitch="1.70" yaw="1.70" roll="1.36" />
+        <drag forward="1.70" reverse="8.63" horizontal="4.048" vertical="4.048" pitch="3.83" yaw="3.83" roll="3.83" />
+      </physics>
+      <thruster tags="small" />
+      <ship type="heavyfighter" />
+      <sound_occlusion inside="0.5" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit_01">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage_01">
+        <macro ref="storage_bor_s_heavyfighter_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+  </replace>
+</diff>

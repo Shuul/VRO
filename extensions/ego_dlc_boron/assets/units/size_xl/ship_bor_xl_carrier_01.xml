@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<diff>
+
+	<remove  sel="/components/component/connections/connection[@name='con_shield_m_13']"/>
+	<remove  sel="/components/component/connections/connection[@name='con_turret_m_15']"/>
+	<remove  sel="/components/component/connections/connection[@name='con_turret_m_16']"/>
+
+	<add sel="//components/component/connections">
+	  <connection name="con_ishield_01" tags="ishield shield  ishield_bor_xl_carrier_01_a">
+	  <offset>
+	   <position x="0" y="0" z="0"/>
+		 <quaternion qx="0" qy="0" qz="0" qw="0"/>
+	  </offset>
+	 </connection>
+
+	 	<connection name="con_turret_l_22" group=" group_mid_down_mid_01 " tags="boron combat large highpower turret ">
+        <offset>
+          <position x="-0.09075813" y="-200.0851" z="-249.1272" />
+          <quaternion qx="-0.9982217" qy="0.0218052" qz="-0.0006748551" qw="-0.0554757" />
+        </offset>
+      </connection>
+      <connection name="con_shield_m_221" group=" group_mid_down_mid_01 " tags="boron hittable medium shield ">
+        <offset>
+          <position x="-0.0003011737" y="-201.3459" z="-260.5003" />
+          <quaternion qx="-8.25782e-05" qy="-0.0552601" qz="-0.9984721" qw="-2.7882e-06" />
+        </offset>
+      </connection>
+      <connection name="con_shield_m_222" group=" group_mid_down_mid_01 " tags="boron hittable medium shield ">
+        <offset>
+          <position x="0.000420621" y="-198.222" z="-237.6422" />
+          <quaternion qx="-8.24266e-05" qy="-0.04507627" qz="-0.9989836" qw="-3.6355e-06" />
+        </offset>
+      </connection>
+
+	</add>
+
+	</diff>

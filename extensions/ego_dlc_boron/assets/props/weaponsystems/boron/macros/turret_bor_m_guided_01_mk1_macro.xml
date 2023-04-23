@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="turret_bor_m_guided_01_mk1_macro" class="missileturret">
+    <component ref="turret_bor_m_guided_01_mk1" />
+    <properties>
+      <identification name="{20105,4994}" basename="{20105,4991}" shortname="{20105,4995}" makerrace="boron" description="{20105,4992}" mk="1" />
+      <ammunition tags="guided" />
+      <bullet class="missile_guided_light_mk1_macro" />
+      <rotationacceleration max="120" />
+      <reload />
+      <storage capacity="15" />
+      <hull max="5400" threshold="0.2" integrated="0" />
+    </properties>
+  </macro>
+</macros>
+      </replace>
+</diff>

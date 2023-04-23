@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<diff>
+	<add sel="//components/component/connections">
+	  <connection name="con_ishield_01" tags="ishield shield  ishield_bor_s_heavyfighter_01_a">
+	  <offset>
+	   <position x="0" y="0" z="0"/>
+		 <quaternion qx="0" qy="0" qz="0" qw="0"/>
+	  </offset>
+	 </connection>
+	</add>
+
+	<replace  sel="/components/component/connections/connection[@name='con_weapon_02']/@tags"> boron combat missile platformcollision small weapon symmetry symmetry_left symmetry_1 highpower</replace>
+	<replace  sel="/components/component/connections/connection[@name='con_weapon_03']/@tags">boron combat missile platformcollision small weapon symmetry symmetry_right symmetry_1 highpower</replace>
+
+	</diff>

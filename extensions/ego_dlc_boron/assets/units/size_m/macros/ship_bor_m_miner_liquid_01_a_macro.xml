@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+  <macros>
+  <macro name="ship_bor_m_miner_liquid_01_a_macro" class="ship_m">
+    <component ref="ship_bor_m_miner_liquid_01" />
+    <properties>
+      <identification name="{20101,52203}" basename="{20101,52201}" makerrace="boron" description="{20101,52213}" variation="{20111,3201}" shortvariation="{20111,3201}" icon="ship_m_mine_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="100" shield="500" />
+      <storage missile="0" />
+      <hull max="21000" />
+      <glow engine="1" />
+      <secrecy level="1" />
+      <gatherrate gas="9" />
+      <purpose primary="mine" />
+      <people capacity="7" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_boron_m_01" />
+      </sounds>
+      <physics mass="31.939">
+        <inertia pitch="12.2" yaw="12.2" roll="9.7" />
+        <drag forward="6.9" reverse="39.2" horizontal="12.966" vertical="12.966" pitch="11.5" yaw="11.5" roll="11.5" />
+      </physics>
+      <thruster tags="medium" />
+      <ship type="miner" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit_01">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage_01">
+        <macro ref="storage_bor_m_miner_liquid_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+  </replace>
+</diff>

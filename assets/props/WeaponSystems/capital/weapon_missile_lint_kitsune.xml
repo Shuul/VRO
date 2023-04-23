@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<components>
+	<component name="weapon_missile_lint_kitsune" class="missilelauncher">
+		<source geometry="extensions\vro\assets\props\WeaponSystems\capital\weapon_missile_lint_kitsune_data" />
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="WeaponCon_01" tags="component weapon large lint_kitsune missile ">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part">
+				<parts>
+					<part name="part_main">
+						<size>
+							<max x="8.12305" y="17.758" z="8.72765" />
+							<center x="0" y="0" z="8.72765" />
+						</size>
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture" />
+								</materials>
+							</lod>
+							<lod index="1">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture" />
+								</materials>
+							</lod>
+							<lod index="2">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture" />
+								</materials>
+							</lod>
+						</lods>
+					</part>
+				</parts>
+				<offset>
+					<position x="-0.000000" y="0.000000" z="0.000000" />
+				</offset>
+			</connection>
+
+			<connection name="con_rocket01" tags="rocket ">
+				<offset>
+					<position x="0" y="13.0153" z="13.1441"/>
+					<quaternion qx="0.707107" qy="0" qz="0" qw="0.707107"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

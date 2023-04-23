@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported on 2022-11-10 15:48:01-->
+<components>
+  <component name="weapon_bor_m_proton" class="weapon">
+    <source geometry="extensions\ego_dlc_boron\assets\props\weaponsystems\boron\weapon_bor_m_flak_01_mk1_data" />
+    <layers>
+      <layer />
+    </layers>
+    <connections>
+      <connection name="position" tags="position" value="1" />
+      <connection name="con_weapon_01" tags="boron component medium weapon highpower" />
+      <connection name="ConnectionForfx_main_decals" tags="detail_xl forceoutline nocollision part ">
+        <offset>
+          <position x="0" y="-0.0150277" z="-0.00507474" />
+        </offset>
+        <parts>
+          <part name="fx_main_decals">
+            <size>
+              <max x="1.029508" y="1.061832" z="0.1655793" />
+              <center x="0" y="0.1905384" z="0.3340803" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpart_main" tags="forceoutline part platformcollision ">
+        <offset>
+          <position x="0" y="-0.0150277" z="-0.00507474" />
+        </offset>
+        <parts>
+          <part name="part_main" wreck="part_main_wreck">
+            <size>
+              <max x="1.155496" y="1.164867" z="3.884009" />
+              <center x="0" y="0.1796764" z="3.884007" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpart_rotator" tags="forceoutline nocollision part ">
+        <offset>
+          <position x="-0.005233765" y="1.19442" z="2.903996" />
+        </offset>
+        <restrictions>
+          <restriction type="rotation_y">
+            <limits>
+              <min value="-10" />
+              <max value="10" />
+            </limits>
+          </restriction>
+        </restrictions>
+        <parts>
+          <part name="part_rotator">
+            <size>
+              <max x="0.9193566" y="0.8183949" z="0.7368633" />
+              <center x="-0.0001831204" y="-0.8183949" z="0.1018442" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpart_gun" tags="forceoutline iklink nocollision part " parent="part_rotator">
+        <offset>
+          <position x="0.005233765" y="-1.201197" z="0.2975585" />
+        </offset>
+        <restrictions>
+          <restriction type="rotation_x">
+            <limits>
+              <min value="-10" />
+              <max value="10" />
+            </limits>
+          </restriction>
+        </restrictions>
+        <parts>
+          <part name="part_gun">
+            <size>
+              <max x="0.90213" y="0.8892449" z="3.710309" />
+              <center x="1.49e-08" y="-0.191854" z="1.839331" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="con_laser_01" tags="laser " parent="part_gun">
+        <offset>
+          <position x="0" y="7.5e-09" z="5.132061" />
+        </offset>
+      </connection>
+      <connection name="ConnectionForfx_gun_decals" tags="detail_xl forceoutline iklink nocollision part " parent="part_gun">
+        <offset>
+          <position x="-0.07044917" y="0.2922372" z="2.59499" />
+        </offset>
+        <parts>
+          <part name="fx_gun_decals">
+            <size>
+              <max x="0.5944682" y="0.7679595" z="3.212309" />
+              <center x="0.07044917" y="-0.4769951" z="-0.8189294" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForfx_laser" tags="detail_xl forceoutline fx iklink nocollision part " parent="part_gun">
+        <offset>
+          <position x="6e-10" y="-0.3739594" z="8.222824" />
+          <quaternion qx="0.7071068" qy="-3.09e-08" qz="3.09e-08" qw="-0.7071067" />
+        </offset>
+        <parts>
+          <part name="fx_laser">
+            <size>
+              <max x="0.009872869" y="2.999548" z="0.009872912" />
+              <center x="1e-10" y="-5.96e-08" z="0" />
+            </size>
+            <offset>
+              <position x="0" y="0" z="-1.38e-08" />
+            </offset>
+          </part>
+        </parts>
+      </connection>
+    </connections>
+    <properties>
+      <reload />
+    </properties>
+  </component>
+</components>

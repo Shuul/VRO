@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Volodymyr (192.168.3.54) on 2023-01-23 16:34:25-->
+<macros>
+  <macro name="weapon_bor_m_proton_macro" class="weapon">
+    <component ref="weapon_bor_m_proton" />
+    <properties>
+      <identification name="{6699,15181}" basename="{6699,15184}" shortname="{6699,15183}" makerrace="boron" description="{6699,15182}"  />
+      <bullet class="bullet_bor_m_proton_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="2000" reenable="9500" />
+      <rotationspeed max="106" />
+      <rotationacceleration max="212" />
+      <reload />
+      <hull max="1001" hittable="0" />
+      <effects>
+        <firing start="startshooting_gen_m_plasma_01_mk1" stop="stopshooting_gen_m_plasma_01_mk1" />
+      </effects>
+    </properties>
+  </macro>
+</macros>

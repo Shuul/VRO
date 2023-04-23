@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<components>
+	<component name="dockarea_arg_xl_battleship_lc4_01" class="dockarea">
+		<source geometry="extensions\vro\assets\structures\dock\dockarea_arg_xl_battleship_lc4_01_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="dockarea">
+				<offset/>
+			</connection>
+			<connection name="Connection01" tags="part noshadowcaster dockarea component platformcollision">
+				<offset/>
+				<parts>
+					<part name="part_main" wreck="part_main_wreck">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="generic.generic_p1_hulltexture_01_aged"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="57.35451" y="1.013307E-08" z="274.9011"/>
+							<center x="8.276939E-02" y="0" z="2.309738"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+			<connection name="ConnectionFor_dockingbay_arg_s_01_macro1" tags="dockingbay">
+				<offset>
+					<position x="-40" y="0.0" z="-0.0"/>
+				</offset>
+			</connection>
+			<connection name="ConnectionFor_dockingbay_arg_s_01_macro2" tags="dockingbay">
+				<offset>
+					<position x="0" y="0" z="0"/>
+				</offset>
+			</connection>
+			<connection name="ConnectionFor_dockingbay_arg_s_01_macro3" tags="dockingbay">
+				<offset>
+					<position x="40" y="0.0" z="-0.0"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

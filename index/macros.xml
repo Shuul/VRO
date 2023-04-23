@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff>
 	<add sel="/index">
-		<!-- Simon terran ships -->
-		<entry name="ship_ter_l_shikoku_macro" value="extensions\vro\assets\units\size_l\macros\ship_ter_l_shikoku_macro"/>
+
+		<entry name="bullet_axe_autocannon_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_axe_autocannon_macro" />
+		<entry name="weapon_axe_autocannon_macro" value="extensions\vro\assets\props\WeaponSystems\capital\macros\weapon_axe_autocannon_macro" />
+
+		<entry name="bullet_bor_turret_l_projector_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_bor_turret_l_projector_macro" />
+		<entry name="bullet_bor_m_proton_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_bor_m_proton_macro" />
+		<entry name="bullet_bor_s_proton_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_bor_s_proton_macro" />
+
+		<entry name="turret_bor_l_projector_macro" value="extensions\vro\assets\props\WeaponSystems\boron\macros\turret_bor_l_projector_macro" />
+		<entry name="weapon_bor_m_proton_macro" value="extensions\vro\assets\props\WeaponSystems\boron\macros\weapon_bor_m_proton_macro" />
+		<entry name="weapon_bor_s_proton_macro" value="extensions\vro\assets\props\WeaponSystems\boron\macros\weapon_bor_s_proton_macro" />
+
+		<!--Lint5 Frigates-->
+		<entry name="ship_lint_frigate_akita_macro" value="extensions\vro\assets\units\size_l\macros\ship_lint_frigate_akita_macro" />
+		<entry name="ship_lint_frigate_kitsune_macro" value="extensions\vro\assets\units\size_l\macros\ship_lint_frigate_kitsune_macro" />
+		<entry name="bridge_akita_macro" value="extensions\vro\assets\interiors\bridges\macros\bridge_akita_macro" />
+		<entry name="dockarea_akita_s_macro" value="extensions\vro\assets\structures\dock\macros\dockarea_akita_s_macro" />
+		<entry name="storage_lint_frigate_akita_marco" value="extensions\vro\assets\units\size_l\macros\storage_lint_frigate_akita_marco" />
+		<entry name="storage_lint_frigate_kitsune_marco" value="extensions\vro\assets\units\size_l\macros\storage_lint_frigate_kitsune_marco" />
+		<entry name="missile_lint_kitsune_01_macro" value="extensions\vro\assets\props\WeaponSystems\missile\macros\missile_lint_kitsune_01_macro" />
+		<entry name="missile_lint_kitsune_02_macro" value="extensions\vro\assets\props\WeaponSystems\missile\macros\missile_lint_kitsune_02_macro" />
+		<entry name="weapon_missile_lint_kitsune_macro" value="extensions\vro\assets\props\WeaponSystems\capital\macros\weapon_missile_lint_kitsune_macro" />
+		<entry name="engine_missile_lint_kitsune_macro" value="extensions\vro\assets\props\Engines\marcos\engine_missile_lint_kitsune_macro" />
+
+		<!--  terran ships -->
+		<!-- <entry name="ship_ter_l_shikoku_macro" value="extensions\vro\assets\units\size_l\macros\ship_ter_l_shikoku_macro"/>
 		<entry name="ship_ter_l_makhaira_macro" value="extensions\vro\assets\units\size_l\macros\ship_ter_l_makhaira_macro"/>
 		<entry name="ship_ter_l_akita_macro" value="extensions\vro\assets\units\size_l\macros\ship_ter_l_akita_macro"/>
-		<entry name="ship_ter_xl_sapporo_macro" value="extensions\vro\assets\units\size_xl\macros\ship_ter_xl_sapporo_macro"/>
-		<entry name="ship_sdp_frigate_triton_macro" value="extensions\vro\assets\units\size_l\macros\ship_sdp_frigate_triton_macro"/>
+		<entry name="ship_ter_xl_sapporo_macro" value="extensions\vro\assets\units\size_xl\macros\ship_ter_xl_sapporo_macro"/>-->
+		<entry name="ship_sdp_frigate_triton_macro" value="extensions\vro\assets\units\size_l\macros\ship_sdp_frigate_triton_macro"/> 
 		<!-- heavy lance turret -->
 		<entry name="impact_gen_l_beam_01_mk1_macro" value="extensions\vro\assets\fx\weaponFx\macros\impact_gen_l_beam_01_mk1_macro"/>
 		<entry name="muzzle_gen_l_beam_01_mk1_macro" value="extensions\vro\assets\fx\weaponFx\macros\muzzle_gen_l_beam_01_mk1_macro"/>
@@ -54,7 +78,11 @@
 		<entry name="weapon_gen_m_isr_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\weapon_gen_m_isr_macro"/>
 		<!-- PPC -->
 		<entry name="bullet_gen_turret_l_ppc_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_turret_l_ppc_macro"/>
+		<entry name="bullet_gen_l_ppc_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_l_ppc_macro"/>
+
 		<entry name="turret_arg_l_ppc_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\turret_arg_l_ppc_macro"/>
+		<entry name="weapon_arg_l_ppc_macro" value="extensions\vro\assets\props\WeaponSystems\capital\macros\weapon_arg_l_ppc_macro"/>
+
 		<!-- TRI cannon -->
 		<entry name="bullet_gen_turret_l_tri_macro" value="extensions\vro\assets\fx\weaponFx\macros\bullet_gen_turret_l_tri_macro"/>
 		<entry name="turret_par_l_tri_macro" value="extensions\vro\assets\props\WeaponSystems\heavy\macros\turret_par_l_tri_macro"/>
@@ -226,11 +254,21 @@
 		<entry name="shipstorage_gen_m_cap3_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_gen_m_cap3_macro"/>
 		<entry name="shipstorage_gen_m_cap5_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_gen_m_cap5_macro"/>
 		<!-- Faction Battleships -->
+
+		<entry name="ship_bor_xl_battleship_01_macro" value="extensions\vro\assets\units\size_xl\macros\ship_bor_xl_battleship_01_macro" />
+
+
 		<!-- <entry name="ship_par_xl_battleship_01_macro" value="extensions\vro\assets\units\size_xl\macros\ship_par_xl_battleship_01_macro"/> -->
+		<entry name="ship_arg_xl_battleship_lc4_01_macro" value="extensions\vro\assets\units\size_xl\macros\ship_arg_xl_battleship_lc4_01_macro" />
+		<entry name="dockarea_arg_xl_battleship_lc4_01_macro" value="extensions\vro\assets\structures\dock\macros\dockarea_arg_xl_battleship_lc4_01_macro" />
+		<entry name="storage_arg_xl_battleship_lc4_01_macro" value="extensions\vro\assets\units\size_xl\macros\storage_arg_xl_battleship_lc4_01_macro" />
+		<!-- <entry name="shipstorage_arg_xl_battleship_lc4_macro" value="extensions\vro\assets\props\SurfaceElements\macros\shipstorage_arg_xl_battleship_lc4_macro" /> -->
+		<entry name="ship_tel_xl_battleship_lc4_01_macro" value="extensions\vro\assets\units\size_xl\macros\ship_tel_xl_battleship_lc4_01_macro" />
+		<entry name="storage_tel_xl_battleship_lc4_01_macro" value="extensions\vro\assets\units\size_xl\macros\storage_tel_xl_battleship_lc4_01_macro" />
 		<entry name="ship_par_xl_battleship_02_macro" value="extensions\vro\assets\units\size_xl\macros\ship_par_xl_battleship_02_macro"/>
-		<entry name="ship_arg_xl_battleship_01_macro" value="extensions\vro\assets\units\size_xl\macros\ship_arg_xl_battleship_01_macro"/>
-		<entry name="ship_arg_xl_corona_macro" value="extensions\vro\assets\units\size_xl\macros\ship_arg_xl_corona_macro"/>
-		<entry name="ship_tel_xl_battleship_01_macro" value="extensions\vro\assets\units\size_xl\macros\ship_tel_xl_battleship_01_macro"/>
+		<!-- <entry name="ship_arg_xl_battleship_01_macro" value="extensions\vro\assets\units\size_xl\macros\ship_arg_xl_battleship_01_macro"/> -->
+		<!-- <entry name="ship_arg_xl_corona_macro" value="extensions\vro\assets\units\size_xl\macros\ship_arg_xl_corona_macro"/> -->
+		<!-- <entry name="ship_tel_xl_battleship_01_macro" value="extensions\vro\assets\units\size_xl\macros\ship_tel_xl_battleship_01_macro"/> -->
 		<entry name="ship_xen_xl_mdestroyer_01_a_macro" value="extensions\vro\assets\units\size_xl\macros\ship_xen_xl_mdestroyer_01_a_macro"/>
 		<entry name="storage_arg_xl_battleship_01_a_macro" value="extensions\vro\assets\units\size_xl\macros\storage_arg_xl_battleship_01_a_macro"/>
 		<entry name="storage_par_xl_battleship_01_a_macro" value="extensions\vro\assets\units\size_xl\macros\storage_par_xl_battleship_01_a_macro"/>
@@ -273,6 +311,8 @@
 		<entry name="storage_sca_l_hound_macro" value="extensions\vro\assets\units\size_l\macros\storage_sca_l_hound_macro"/>
 		<!-- Cyclops -->
 		<entry name="ship_arg_l_cyclops_macro" value="extensions\vro\assets\units\size_l\macros\ship_arg_l_cyclops_macro"/>
+		<entry name="ship_arg_l_cyclops_2_macro" value="extensions\vro\assets\units\size_l\macros\ship_arg_l_cyclops_2_macro"/>
+
 		<!-- Hyperion -->
 		<entry name="ship_par_l_hyperion_macro" value="extensions\vro\assets\units\size_l\macros\ship_par_l_hyperion_macro"/>
 		<!-- cormorant vanguard -->
@@ -430,6 +470,24 @@
 		<entry name="ishield_pir_s_heavyfighter_01_macro" value="extensions\vro\extensions\ego_dlc_pirate\assets\props\surfaceelements\macros\ishield_pir_s_heavyfighter_01_macro"/>
 		<entry name="ishield_pir_s_trans_container_01_macro" value="extensions\vro\extensions\ego_dlc_pirate\assets\props\surfaceelements\macros\ishield_pir_s_trans_container_01_macro"/>
 		<entry name="ishield_pir_xl_battleship_01_macro" value="extensions\vro\extensions\ego_dlc_pirate\assets\props\surfaceelements\macros\ishield_pir_xl_battleship_01_macro"/>
+		<entry name="ishield_bor_s_fighter_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_s_fighter_01_a_macro"/>
+		<entry name="ishield_bor_s_heavyfighter_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_s_heavyfighter_01_a_macro"/>
+		<entry name="ishield_bor_s_miner_solid_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_s_miner_solid_01_a_macro"/>
+		<entry name="ishield_bor_s_scout_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_s_scout_01_a_macro"/>
+		<entry name="ishield_bor_s_scout_02_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_s_scout_02_a_macro"/>
+		<entry name="ishield_bor_s_trans_container_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_s_trans_container_01_a_macro"/>
+		<entry name="ishield_bor_m_corvette_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_m_corvette_01_a_macro"/>
+		<entry name="ishield_bor_m_gunboat_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_m_gunboat_01_a_macro"/>
+		<entry name="ishield_bor_m_miner_liquid_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_m_miner_liquid_01_a_macro"/>
+		<entry name="ishield_bor_m_trans_container_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_m_trans_container_01_a_macro"/>
+		<entry name="ishield_bor_l_carrier_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_l_carrier_01_a_macro"/>
+		<entry name="ishield_bor_l_destroyer_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_l_destroyer_01_a_macro"/>
+		<entry name="ishield_bor_l_miner_liquid_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_l_miner_liquid_01_a_macro"/>
+		<entry name="ishield_bor_l_trans_container_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_l_trans_container_01_a_macro"/>
+		<entry name="ishield_bor_xl_carrier_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_xl_carrier_01_a_macro"/>
+		<entry name="ishield_bor_xl_resupplier_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_xl_resupplier_01_a_macro"/>
+		<entry name="ishield_bor_xl_battleship_01_a_macro" value="extensions\vro\assets\props\SurfaceElements\macros\ishield_bor_xl_battleship_01_a_macro"/>
+
 		<!-- Docks -->
 		<entry name="dockarea_vroinv_s_macro" value="extensions\vro\assets\structures\dock\macros\dockarea_vroinv_s_macro"/>
 		<entry name="dockingbay_vroinv_s_macro" value="extensions\vro\assets\structures\dock\macros\dockingbay_vroinv_s_macro"/>

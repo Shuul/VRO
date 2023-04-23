@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported on 2022-11-15 14:21:01-->
+<components>
+  <component name="weapon_bor_s_proton" class="weapon">
+    <source geometry="extensions\ego_dlc_boron\assets\props\weaponsystems\boron\weapon_bor_s_laser_01_mk1_data" />
+    <layers>
+      <layer />
+    </layers>
+    <connections>
+      <connection name="position" tags="position" value="1" />
+      <connection name="ConnectionForfx_main_decals" tags="detail_l forceoutline nocollision part ">
+        <offset>
+          <position x="-1.225e-07" y="-0.1606299" z="0.1834244" />
+        </offset>
+        <parts>
+          <part name="fx_main_decals">
+            <size>
+              <max x="0.2554849" y="0.2930568" z="0.2754751" />
+              <center x="3.73e-08" y="0.1214864" z="0.09351341" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpart_main" tags="forceoutline part platformcollision ">
+        <parts>
+          <part name="part_main" wreck="part_main_wreck">
+            <size>
+              <max x="0.2519862" y="0.2897452" z="1.373915" />
+              <center x="0" y="-0.03974511" z="1.373282" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpart_rotator" tags="forceoutline nocollision part ">
+        <offset>
+          <position x="5.51e-08" y="-0.2409205" z="0.6615992" />
+        </offset>
+        <restrictions>
+          <restriction type="rotation_y">
+            <limits>
+              <min value="-10" />
+              <max value="10" />
+            </limits>
+          </restriction>
+        </restrictions>
+        <parts>
+          <part name="part_rotator">
+            <size>
+              <max x="0.2845784" y="0.3181184" z="0.189175" />
+              <center x="7.5e-09" y="0.1087261" z="-2.24e-08" />
+            </size>
+            <offset>
+              <position x="0" y="0" z="1.192e-07" />
+            </offset>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForfx_rotator_decals" tags="detail_l forceoutline iklink nocollision part " parent="part_rotator">
+        <offset>
+          <position x="2.68e-08" y="0.04660812" z="0.05144036" />
+        </offset>
+        <parts>
+          <part name="fx_rotator_decals">
+            <size>
+              <max x="0.2840379" y="0.2768073" z="0.1091307" />
+              <center x="1.043e-07" y="0.08920881" z="0.01615095" />
+            </size>
+            <offset>
+              <position x="0" y="1.49e-08" z="0" />
+            </offset>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpart_gun" tags="forceoutline iklink nocollision part " parent="part_rotator">
+        <offset>
+          <position x="-5.44e-08" y="0.2409203" z="7.153e-07" />
+        </offset>
+        <restrictions>
+          <restriction type="rotation_x">
+            <limits>
+              <min value="-10" />
+              <max value="10" />
+            </limits>
+          </restriction>
+        </restrictions>
+        <parts>
+          <part name="part_gun">
+            <size>
+              <max x="0.239686" y="0.2685504" z="1.279564" />
+              <center x="3.7e-09" y="0" z="0.8111674" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForanim_barrel" tags="animation forceoutline nocollision part " parent="part_gun">
+        <offset>
+          <position x="-8e-10" y="-0.001561322" z="1.958405" />
+        </offset>
+        <animations>
+          <animation name="weapon_firing" start="1" end="7" />
+        </animations>
+        <parts>
+          <part name="anim_barrel">
+            <size>
+              <max x="0.04703598" y="0.1224072" z="0.2584208" />
+              <center x="0" y="0.00195861" z="-0.1624105" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForfx_gun_decals" tags="detail_m forceoutline iklink nocollision part " parent="part_gun">
+        <offset>
+          <position x="-0.04550873" y="0.1664198" z="1.23395" />
+        </offset>
+        <parts>
+          <part name="fx_gun_decals">
+            <size>
+              <max x="0.1735213" y="0.2498972" z="1.234403" />
+              <center x="0.04550885" y="-0.1577445" z="-0.3882139" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="con_weapon_01" tags="boron combat component small weapon highpower" />
+      <connection name="con_laser_01" tags="laser " parent="part_gun">
+        <offset>
+          <position x="1.5e-09" y="0.0895971" z="2.054415" />
+        </offset>
+      </connection>
+      <connection name="con_laser_02" tags="laser " parent="part_gun">
+        <offset>
+          <position x="3e-09" y="-0.08880252" z="2.054415" />
+        </offset>
+      </connection>
+    </connections>
+  </component>
+</components>

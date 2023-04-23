@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff>
 	<add sel="/index">
-		<!-- Simon terran ships -->
-		<entry name="ship_ter_l_shikoku" value="extensions\vro\assets\units\size_l\ship_ter_l_shikoku"/>
+
+		<entry name="weapon_axe_autocannon" value="extensions\vro\assets\props\WeaponSystems\capital\weapon_axe_autocannon"/>
+
+		<entry name="turret_bor_l_projector" value="extensions\vro\assets\props\WeaponSystems\boron\turret_bor_l_projector"/>
+		<entry name="weapon_bor_m_proton" value="extensions\vro\assets\props\WeaponSystems\boron\weapon_bor_m_proton"/>
+		<entry name="weapon_bor_s_proton" value="extensions\vro\assets\props\WeaponSystems\boron\weapon_bor_s_proton"/>
+
+	<!-- Lint5 frigates -->
+		<entry name="ship_lint_frigate_akita" value="extensions\vro\assets\units\size_l\ship_lint_frigate_akita" />
+		<entry name="ship_lint_frigate_kitsune" value="extensions\vro\assets\units\size_l\ship_lint_frigate_kitsune" />
+		<entry name="bridge_akita" value="extensions\vro\assets\interiors\bridges\bridge_akita" />
+		<entry name="dockarea_akita_s" value="extensions\vro\assets\structures\dock\dockarea_akita_s" />
+
+		<entry name="missile_lint_kitsune_01" value="extensions\vro\assets\props\WeaponSystems\missile\missile_lint_kitsune_01" />
+		<entry name="weapon_missile_lint_kitsune" value="extensions\vro\assets\props\WeaponSystems\capital\weapon_missile_lint_kitsune" />
+
+		<!--  terran ships -->
+		<!-- <entry name="ship_ter_l_shikoku" value="extensions\vro\assets\units\size_l\ship_ter_l_shikoku"/>
 		<entry name="ship_ter_l_makhaira" value="extensions\vro\assets\units\size_l\ship_ter_l_makhaira"/>
 		<entry name="ship_ter_l_akita" value="extensions\vro\assets\units\size_l\ship_ter_l_akita"/>
-		<entry name="ship_ter_xl_sapporo" value="extensions\vro\assets\units\size_xl\ship_ter_xl_sapporo"/>
-		<entry name="ship_sdp_frigate_triton" value="extensions\vro\assets\units\size_l\ship_sdp_frigate_triton"/>
+		<entry name="ship_ter_xl_sapporo" value="extensions\vro\assets\units\size_xl\ship_ter_xl_sapporo"/>-->
+		<entry name="ship_sdp_frigate_triton" value="extensions\vro\assets\units\size_l\ship_sdp_frigate_triton"/> 
 		<!-- heavy lance turret -->
 		<entry name="bullet_gen_l_beam_lance" value="extensions\vro\assets\fx\weaponFx\bullet_gen_l_beam_lance"/>
 		<entry name="impact_gen_l_beam_01_mk1" value="extensions\vro\assets\fx\weaponFx\impact_gen_l_beam_01_mk1"/>
@@ -88,11 +104,14 @@
 		<entry name="dockingbay_vroinv_s" value="extensions\vro\assets\structures\dock\dockingbay_vroinv_s"/>
 		<entry name="launchtube_xen_s_vro" value="extensions\vro\assets\structures\dock\launchtube_xen_s_vro"/>
 		<!-- Faction Battleships -->
+		<entry name="ship_arg_xl_battleship_lc4_01" value="extensions\vro\assets\units\size_xl\ship_arg_xl_battleship_lc4_01" />
+		<entry name="dockarea_arg_xl_battleship_lc4_01" value="extensions\vro\assets\structures\dock\dockarea_arg_xl_battleship_lc4_01" />
+		<entry name="ship_tel_xl_battleship_lc4_01" value="extensions\vro\assets\units\size_xl\ship_tel_xl_battleship_lc4_01" />
 		<!-- <entry name="ship_par_xl_battleship_01" value="extensions\vro\assets\units\size_xl\ship_par_xl_battleship_01"/> -->
 		<entry name="ship_par_xl_battleship_02" value="extensions\vro\assets\units\size_xl\ship_par_xl_battleship_02"/>
-		<entry name="ship_arg_xl_corona" value="extensions\vro\assets\units\size_xl\ship_arg_xl_corona"/>
-		<entry name="ship_arg_xl_battleship_01" value="extensions\vro\assets\units\size_xl\ship_arg_xl_battleship_01"/>
-		<entry name="ship_tel_xl_battleship_01" value="extensions\vro\assets\units\size_xl\ship_tel_xl_battleship_01"/>
+		<!-- <entry name="ship_arg_xl_corona" value="extensions\vro\assets\units\size_xl\ship_arg_xl_corona"/>
+		<entry name="ship_arg_xl_battleship_01" value="extensions\vro\assets\units\size_xl\ship_arg_xl_battleship_01"/> -->
+		<!-- <entry name="ship_tel_xl_battleship_01" value="extensions\vro\assets\units\size_xl\ship_tel_xl_battleship_01"/> -->
 		<entry name="ship_xen_xl_mdestroyer_01" value="extensions\vro\assets\units\size_xl\ship_xen_xl_mdestroyer_01"/>
 		<entry name="ship_spl_xl_gharial" value="extensions\vro\assets\units\size_xl\ship_spl_xl_gharial"/>
 		<!-- Centaur -->
@@ -122,6 +141,7 @@
 		<entry name="ship_sca_l_hound" value="extensions\vro\assets\units\size_l\ship_sca_l_hound"/>
 		<!-- Cyclops -->
 		<entry name="ship_arg_l_cyclops" value="extensions\vro\assets\units\size_l\ship_arg_l_cyclops"/>
+		<entry name="ship_arg_l_cyclops_2" value="extensions\vro\assets\units\size_l\ship_arg_l_cyclops_2"/>
 		<!-- Hyperion -->
 		<entry name="ship_par_l_hyperion" value="extensions\vro\assets\units\size_l\ship_par_l_hyperion"/>
 		<!-- integrated shield -->
@@ -278,5 +298,23 @@
 		<entry name="ishield_pir_s_heavyfighter_01" value="extensions\vro\extensions\ego_dlc_pirate\assets\props\surfaceelements\ishield_pir_s_heavyfighter_01"/>
 		<entry name="ishield_pir_s_trans_container_01" value="extensions\vro\extensions\ego_dlc_pirate\assets\props\surfaceelements\ishield_pir_s_trans_container_01"/>
 		<entry name="ishield_pir_xl_battleship_01" value="extensions\vro\extensions\ego_dlc_pirate\assets\props\surfaceelements\ishield_pir_xl_battleship_01"/>
+		<entry name="ishield_bor_s_fighter_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_s_fighter_01_a"/>
+		<entry name="ishield_bor_s_heavyfighter_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_s_heavyfighter_01_a"/>
+		<entry name="ishield_bor_s_miner_solid_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_s_miner_solid_01_a"/>
+		<entry name="ishield_bor_s_scout_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_s_scout_01_a"/>
+		<entry name="ishield_bor_s_scout_02_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_s_scout_02_a"/>
+		<entry name="ishield_bor_s_trans_container_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_s_trans_container_01_a"/>
+		<entry name="ishield_bor_m_corvette_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_m_corvette_01_a"/>
+		<entry name="ishield_bor_m_gunboat_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_m_gunboat_01_a"/>
+		<entry name="ishield_bor_m_miner_liquid_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_m_miner_liquid_01_a"/>
+		<entry name="ishield_bor_m_trans_container_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_m_trans_container_01_a"/>
+		<entry name="ishield_bor_l_carrier_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_l_carrier_01_a"/>
+		<entry name="ishield_bor_l_destroyer_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_l_destroyer_01_a"/>
+		<entry name="ishield_bor_l_miner_liquid_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_l_miner_liquid_01_a"/>
+		<entry name="ishield_bor_l_trans_container_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_l_trans_container_01_a"/>
+		<entry name="ishield_bor_xl_carrier_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_xl_carrier_01_a"/>
+		<entry name="ishield_bor_xl_resupplier_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_xl_resupplier_01_a"/>
+		<entry name="ishield_bor_xl_battleship_01_a" value="extensions\vro\assets\props\SurfaceElements\ishield_bor_xl_battleship_01_a"/>
+
 	</add>
 </diff>

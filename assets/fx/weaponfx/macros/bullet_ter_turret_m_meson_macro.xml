@@ -4,7 +4,7 @@
   <macro name="bullet_ter_turret_m_meson_macro" class="bullet">
     <component ref="bullet_ter_turret_m_beam_01_mk1" />
     <properties>
-      <bullet speed="12000" lifetime="1.5" range="4000" amount="1" barrelamount="2" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
+      <bullet speed="12000" lifetime="1.5" range="3800" amount="1" barrelamount="2" icon="weapon_beam_mk1" maxhits="1" ricochet="0" scale="1" attach="1" />
       <damagecurves>
         <distance>
           <point position="0" value="1" />
@@ -13,7 +13,7 @@
         </distance>
       </damagecurves>
       <reload time="7" />
-      <damage value="1100" shield="-650" repair="0" />
+      <damage value="1000" noshield="600" repair="0" />
       <effects>
         <impact ref="impact_gen_s_beam_01_mk1" inside="impact_gen_s_beam_01_mk1_inside" />
         <bigobjectimpact ref="impact_gen_s_beam_01_mk1_bigobject" inside="impact_gen_s_beam_01_mk1_bigobject_inside" />

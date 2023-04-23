@@ -1,6 +1,39 @@
 <!-- <?xml version="1.0" encoding="utf-8"?>-->
 <diff>
   <add sel="//soundlibrary">
+    <sound id="wpn_axe_autocannon_shoot" description="shooting" repeat="1" is3d="1" preload="1">
+      <sample selection="random">
+        <select start="extensions\vro\sfx\weapons\axe_autocannon" />
+      </sample>
+      <volume start="1.0" distance="10" />
+    </sound>
+
+    <!-- Boron DLC _______
+___________________
+__________________-->
+    <sound id="wpn_proton_gun_shoot" description="shooting" repeat="1" is3d="1" preload="1">
+      <sample selection="random">
+        <select start="extensions\vro\sfx\weapons\proton_gun_01" />
+        <select start="extensions\vro\sfx\weapons\proton_gun_02" />
+        <select start="extensions\vro\sfx\weapons\proton_gun_03" />
+        <select start="extensions\vro\sfx\weapons\proton_gun_04" />
+      </sample>
+      <volume start="0.8" distance="6" />
+    </sound>
+
+    <sound id="wpn_proton_cannon_shoot" description="shooting" repeat="1" is3d="1" preload="1">
+      <sample selection="random">
+        <select start="sfx\weapons\turret\turret_xenon_l_muzzle_01"/>
+        <select start="sfx\weapons\turret\turret_xenon_l_muzzle_02"/>
+        <select start="sfx\weapons\turret\turret_xenon_l_muzzle_03"/>
+        <select start="sfx\weapons\turret\turret_xenon_l_muzzle_04"/>
+        <select start="sfx\weapons\turret\turret_xenon_l_muzzle_05"/>
+        <select start="sfx\weapons\turret\turret_xenon_l_muzzle_06"/>
+        <select start="sfx\weapons\turret\turret_xenon_l_muzzle_07"/>
+        <select start="sfx\weapons\turret\turret_xenon_l_muzzle_08"/>
+      </sample>
+      <volume start="0.8" distance="10"/>
+    </sound>
 
     <!-- TERRAN DLC _______
 ___________________
@@ -387,7 +420,7 @@ __________________-->
       <sample loop="extensions\vro\sfx\weapons\ciws" />
       <volume start="0.65" distance="7" />
       <effects>
-        <fade out="0.1" />
+        <fade out="0.4" />
       </effects>
     </sound>
     <!-- ROTOR turret-->

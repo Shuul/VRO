@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="bullet_bor_l_beam_01_mk1_macro" class="bullet">
+    <component ref="bullet_bor_l_beam_01_mk1" />
+    <properties>
+      <bullet speed="20000" lifetime="4" range="16000" amount="1" barrelamount="1" icon="weapon_beam_mk1" angle="0" maxhits="1" ricochet="0" restitution="1" scale="1" attach="1" chargetime="4" heatwhilecharging="0" requirefullcharge="1" firewhenfullcharge="1" influencelist="heavy_drive_disrupt" />
+      <heat value="2500" />
+      <reload time="4.1" />
+      <damage value="10000" shield="5000" repair="0" />
+      <effects>
+        <impact ref="impact_bor_l_beam_01_mk1" inside="impact_bor_l_beam_01_mk1_inside" />
+        <bigobjectimpact ref="impact_bor_l_beam_01_mk1_bigobject" inside="impact_bor_l_beam_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_bor_l_beam_01_mk1" />
+      </effects>
+      <sounds>
+        <firing ref="weapon_bor_l_beam_01_mk1_loop" />
+      </sounds>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+    </replace>
+</diff>

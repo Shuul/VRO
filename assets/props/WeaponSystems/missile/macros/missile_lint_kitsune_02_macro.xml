@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="missile_lint_kitsune_02_macro" class="missile">
+    <component ref="missile_lint_kitsune_01" />
+    <properties>
+      <identification name="{654612,220}" basename="{654612,220}" description="{654612,220}" />
+      <ammunition value="1" />
+      <missile amount="1" barrelamount="1" lifetime="45" range="15000" guided="1" icon="missile_torpedo_mk1" retarget="1" tags="cruise" />
+      <explosiondamage value="10000" hull="20000"/>
+      <reload time="60" />
+      <hull max="200" />
+      <effects>
+        <explosion ref="explosion_missile_cruise" />
+        <launch ref="muzzle_gen_cruise" />
+      </effects>
+      <weapon system="missile_guided" />
+      <countermeasure resilience="1" />
+      <physics mass="20.337">
+        <inertia pitch="50.646" yaw="50.646" roll="50.646" />
+        <drag forward="0.034" reverse="3.417" horizontal="50.188" vertical="50.188" pitch="90.269" yaw="90.269" roll="90.269" />
+      </physics>
+      <lock time="5" range="15000"/>
+    </properties>
+    <connections>
+      <connection ref="con_engine01">
+        <macro ref="engine_missile_guided_mk1_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>

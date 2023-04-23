@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.120) at 10.05.2019_16-52-31-->
+<macros>
+  <macro name="ship_arg_l_cyclops_2_macro" class="ship_l">
+    <component ref="ship_arg_l_cyclops_2" />
+    <properties>
+      <identification name="{6699,1908}" basename="{6699,1908}"  variation="{20111,5461}" description="{6699,19082}" icon="ship_l_frigate" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="1000" shield="6000" />
+      <storage missile="40" unit="10" />
+      <hull max="164000" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="31" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_l_01" />
+      </sounds>
+      <physics mass="175.0">
+        <inertia pitch="170.749" yaw="170.749" roll="170.999" />
+        <drag forward="27" reverse="160.22" horizontal="65" vertical="65" pitch="173" yaw="173" roll="165"/>
+      </physics>
+      <thruster tags="large" />
+      <ship type="frigate" />
+    </properties>
+    <connections>
+	
+	
+	  <connection ref="con_cockpit">
+        <macro ref="bridge_arg_l_01_macro" connection="con_cockpit" />
+      </connection>
+
+
+<!-- s storage from cobra -->
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_cap2_macro" connection="object" />
+      </connection>
+
+
+      <connection ref="con_dockarea_arg_s_ship_01">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+
+
+
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+	  
+	  
+	  
+      <connection ref="con_storage01">
+        <macro ref="storage_arg_l_destroyer_01_a_macro" connection="ShipConnection" />
+      </connection>
+
+	  
+	  
+    </connections>
+  </macro>
+</macros>

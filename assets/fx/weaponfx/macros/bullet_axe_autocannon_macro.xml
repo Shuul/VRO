@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="bullet_axe_autocannon_macro" class="bullet">
+    <component ref="bullet_gen_s_cannon_01_mk2" />
+    <properties>
+      <ammunition value="3" reload="2" />
+      <bullet speed="5200" lifetime="2.55" amount="8" barrelamount="1" icon="weapon_shotgun_mk2" timediff="0.004" angle="0.2" maxhits="2" ricochet="0.2" restitution="0.3" scale="0" attach="0" />
+      <heat value="40" />
+      <reload rate="2" />
+      <damage value="300" />
+      <effects>
+        <launch ref="muzzle_axe_autocannon" />
+        <impact ref="impact_axe_autocannon" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>

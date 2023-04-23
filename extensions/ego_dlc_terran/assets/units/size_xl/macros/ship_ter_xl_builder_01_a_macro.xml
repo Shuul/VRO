@@ -3,7 +3,7 @@
   <replace sel="//macros">
     <macros>
       <macro name="ship_ter_xl_builder_01_a_macro" class="ship_xl">
-        <component ref="ship_arg_xl_builder_01" />
+        <component ref="ship_ter_xl_builder_01" />
         <properties>
           <identification name="{20101,63701}" basename="{20101,63701}" description="{20101,63711}" icon="ship_xl_build_01" />
           <software>
@@ -16,7 +16,7 @@
             <software ware="software_targetmk1" compatible="1" />
             <software ware="software_trademk1" default="1" />
           </software>
-          <explosiondamage value="12000" />
+          <explosiondamage value="2000" shield="12000" />
           <storage missile="40" unit="100" />
           <hull max="175000" />
           <secrecy level="1" />
@@ -50,6 +50,9 @@
           </connection>
           <connection ref="con_test_argon_dockarea_m_04">
             <macro ref="dockarea_arg_xl_builder_01_macro" connection="Connection01" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
           </connection>
         </connections>
       </macro>
