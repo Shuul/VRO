@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="weapon_bor_m_torpedo_01_mk1_macro" class="missilelauncher">
+    <component ref="weapon_bor_m_torpedo_01_mk1" />
+    <properties>
+      <identification name="{20105,2554}" basename="{20105,2551}" shortname="{20105,2555}" makerrace="boron" description="{20105,2552}" mk="1" />
+      <ammunition tags="htorpedo mtorpedo " />
+      <bullet class="missile_tomahawk_macro" />
+      <reload />
+      <storage capacity="1" />
+      <hull max="1000" hittable="0" />
+    </properties>
+  </macro>
+</macros>
+        </replace>
+</diff>

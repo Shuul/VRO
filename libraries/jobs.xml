@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <diff>
+
+<!-- temp fix for argon constructors -->
+
+<replace sel="//jobs/job[@id='argon_construction_vessel_xl']/location">
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="ally" comparison="ge" matchextension="false" excludedtags="boronborder boroncore"/>
+</replace>
+
   <add sel="/jobs/job[@id='boron_carrier_patrol_l_sector']" pos="after">
   <!-- ############################# -->
   <!--    Borons, closed ones    -->
   <!-- ############################# -->
-      <!-- <job id="boron_battleship_patrol_xl" name="{20204,3201}" >
+      <job id="boron_battleship_patrol_xl" name="{20221,5031}" >
       <modifiers commandeerable="true" />
       <orders>
         <order order="Patrol" default="true">
@@ -53,7 +60,7 @@
 		<subordinate job="boron_destroyer_escort_l"/>
         <subordinate job="boron_fighter_escort_s_carrier_flagship" />
       </subordinates>
-    </job> -->
+    </job> 
 </add>
   <!-- ############################# -->
   <!--        ARGON FEDERATION       -->
