@@ -291,7 +291,7 @@
 		</subordinates>
 	  </job>
 
-	  <job id="trinity_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+	  <job id="trinity_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion" startactive="false">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -419,7 +419,7 @@
        		 <param name="range" value="class.sector"/>
 			</order>
 		</orders>
-		<category faction="split" tags="[factionlogic, military, frigate]" size="ship_l"/>
+		<category faction="split" tags="[factionlogic, military, frigate, colonialpolice]" size="ship_l"/>
 		<quota galaxy="3" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" faction="freesplit" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
@@ -527,7 +527,7 @@
 			</ship>
 		  </job>
 
-		  <job id="court_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion" startactive="false">
+		  <job id="court_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion" >
 			<modifiers commandeerable="true"/>
 			<orders>
 				<order order="Patrol" default="true">
@@ -536,7 +536,7 @@
 			</orders>
 			<category faction="court" tags="[factionlogic, military, battleship]" size="ship_xl"/>
 			<quota galaxy="1" maxgalaxy="4" sector="1"/>
-			<location class="galaxy" macro="xu_ep2_universe_macro" faction="[court, freesplit]" relation="self" comparison="exact" matchextension="false"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="[court]" relation="self" comparison="exact" matchextension="false"/>
 			<environment buildatshipyard="true"/>
 			<ship>
 				<select faction="court" tags="[military, battleship]" size="ship_xl"/>
@@ -555,7 +555,7 @@
   <!--        FALLEN SPLIT         -->
   <!-- ############################# -->
 
-	  <job id="fallensplit_panther_mixed_cluster" name="{20204,4201}" startactive="false">
+	  <job id="fallensplit_panther_mixed_cluster" name="{20204,4201}" >
 		<modifiers commandeerable="true"/>
 		<orders>
 		  <order order="Plunder" default="true">
