@@ -194,7 +194,7 @@
   <!--    GODREALM OF THE PARANID    -->
   <!-- ############################# -->
   
-	  <!-- <job id="paranid_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+	  <job id="paranid_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -216,7 +216,7 @@
 			<subordinate job="paranid_frigate_escort_m"/>
 		</subordinates>
 	  </job>
- -->
+ 
 	  <job id="paranid_hyperion_l" name="{20204,5201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
@@ -266,7 +266,7 @@
 		<subordinates>
 			<subordinate job="holyorder_frigate_escort_m"/>
 		</subordinates>
-	  </job>
+	  </job> 
 
 	  <job id="holyorder_hyperion_l" name="{20204,5201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
@@ -288,6 +288,29 @@
 		</ship>
 		<subordinates>
 			<subordinate job="holyorder_fighter_escort_s_frigate"/>
+		</subordinates>
+	  </job>
+
+	  <job id="trinity_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+		<modifiers commandeerable="true"/>
+		<orders>
+			<order order="Patrol" default="true">
+				<param name="range" value="class.sector"/>
+			</order>
+		</orders>
+		<category faction="trinity" tags="[factionlogic, military, battleship]" size="ship_xl"/>
+		<quota galaxy="6" sector="1"/>
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="trinity" relation="self" comparison="exact" matchextension="false"/>
+		<environment buildatshipyard="true"/>
+		<ship>
+			<select faction="trinity" tags="[military, battleship]" size="ship_xl"/>
+			<loadout>
+				<level min="0.85" max="1.0"/>
+			</loadout>
+			<owner exact="trinity" overridenpc="true"/>
+		</ship>
+		<subordinates>
+			<subordinate job="trinity_frigate_escort_m"/>
 		</subordinates>
 	  </job>
 

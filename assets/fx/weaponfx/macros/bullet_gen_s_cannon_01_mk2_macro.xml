@@ -6,12 +6,13 @@
   <macro name="bullet_gen_s_cannon_01_mk2_macro" class="bullet">
     <component ref="bullet_gen_s_cannon_01_mk2" />
     <properties>
-      <bullet speed="1900" lifetime="3" range="5700" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" selfdestruct="1" />
+      <bullet speed="1900" lifetime="3" range="5700" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" selfdestruct="1" plannedselfdestruct="1" selfdestructtimediff="0.015" selfdestructmintime="0.1"/>
       <heat value="335" />
       <reload rate="0.5" />
-      <areadamage value="370" range="100" falloff="1" lifetime="1" />
+      <areadamage value="1067" falloff="1" lifetime="1" />
+      <damage value="370" repair="0" >
       <multiplier surfaceelement="2" />
-      <damage value="1067" repair="0" />
+      </damage>
       <effects>
         <impact ref="explosion_flak" />
         <launch ref="muzzle_gen_s_flak_01_mk1" />

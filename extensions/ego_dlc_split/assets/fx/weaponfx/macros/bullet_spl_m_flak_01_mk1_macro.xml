@@ -6,12 +6,12 @@
         <component ref="bullet_spl_m_flak_01_mk1" />
         <properties>
           <ammunition value="6" reload="4" />
-          <bullet speed="5400" lifetime="0.5" amount="1" barrelamount="1" timediff="0.007" angle="2.5" maxhits="1" ricochet="0" scale="0" attach="0" selfdestruct="1" plannedselfdestruct="1" selfdestructtimediff="0.04" selfdestructmintime="0.15"/>
+          <bullet speed="9500" lifetime="0.4" amount="1" barrelamount="1" timediff="0.007" angle="2.0" maxhits="1" ricochet="0" scale="0" attach="0" selfdestruct="1" plannedselfdestruct="1" selfdestructtimediff="0.045" selfdestructmintime="0.15"/>
           <reload rate="1.5" />
-          <areadamage value="50" time="1" lifetime="1" />
-          <damage value="386" repair="0" />
+          <areadamage value="450" time="1" lifetime="1" />
+          <damage value="30" repair="0" />
           <effects>
-            <impact ref="impact_spl_m_flak_01_mk1" />
+            <impact ref="impact_gen_m_flak_vro" />
             <launch ref="muzzle_turret_spl_m_flak_01_mk1" />
           </effects>
           <weapon system="turret_midrange" />

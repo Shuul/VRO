@@ -7,9 +7,11 @@
     <component ref="turret_annihilator_bullet" />
     <properties>
       <ammunition value="4" reload="10" />
-      <bullet speed="4000" lifetime="3.8" amount="1" barrelamount="1" icon="weapon_plasma_mk1" timediff="0.003" angle="0.9" maxhits="1"  chargetime="1" ricochet="0" scale="0" attach="0" selfdestruct="1" />
+      <bullet speed="4000" lifetime="3.8" amount="1" barrelamount="1" icon="weapon_plasma_mk1" timediff="0.003" angle="0.9" maxhits="1"  ricochet="0" scale="0" attach="0" selfdestruct="1" />
       <reload rate="1" />
-      <damage value="4860" shield="2025" repair="0" />
+      <damage value="5100" shield="1525" repair="0" >
+      <multiplier surfaceelement="2" />
+      </damage>
       <effects>
         <impact ref="turret_annihilator_impact" />
         <launch ref="turret_annihilator_muzzle" />

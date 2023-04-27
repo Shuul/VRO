@@ -18,7 +18,7 @@
 		</ware>
 
     <ware id="turret_bor_l_projector" name="{6699,15201}" description="{6699,15204}" group="weapons" transport="equipment" volume="1" tags="equipment turret">
-      <price min="616113" average="746113" max="886113" />
+      <price min="716113" average="846113" max="1086113" />
       <production time="20" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="advancedelectronics" amount="76" />
@@ -33,32 +33,32 @@
     </ware>
 
     <ware id="weapon_bor_m_proton" name="{6699,15181}" description="{6699,15182}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-      <price min="369116" average="482155" max="555558" />
+      <price min="569116" average="782155" max="955558" />
       <production time="10" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="advancedelectronics" amount="50" />
           <ware ware="energycells" amount="60" />
-          <ware ware="weaponcomponents" amount="140" />
+          <ware ware="weaponcomponents" amount="150" />
         </primary>
       </production>
       <component ref="weapon_bor_m_proton_macro" />
       <restriction licence="militaryequipment" />
-      <use threshold="0.6" />
+      <use threshold="0.9" />
       <owner faction="boron" />
     </ware>
 
     <ware id="weapon_bor_s_proton_macro" name="{6699,15191}" description="{6699,15191}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
-      <price min="177955" average="237273" max="253710" />
+      <price min="80955" average="257273" max="313710" />
       <production time="10" amount="1" method="default" name="{20206,101}">
         <primary>
-          <ware ware="advancedelectronics" amount="26" />
+          <ware ware="advancedelectronics" amount="30" />
           <ware ware="energycells" amount="55" />
-          <ware ware="weaponcomponents" amount="30" />
+          <ware ware="weaponcomponents" amount="44" />
         </primary>
       </production>
       <component ref="weapon_bor_s_proton_macro" />
       <restriction licence="militaryequipment" />
-      <use threshold="0.6" />
+      <use threshold="0.9" />
       <owner faction="boron" />
     </ware>
 </add>
@@ -953,7 +953,7 @@ __________________ -->
 
 		<ware id="weapon_missile_lint_kitsune_ware" name="{654612,10}" description="{654612,10}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
 			<price min="2423602" average="2851296" max="3278990" />
-			<production time="10" amount="1" method="terran" name="{20206,901}">
+			<production time="10" amount="1" method="default" name="{20206,901}">
 				<primary>
 					<ware ware="computronicsubstrate" amount="123" />
 					<ware ware="energycells" amount="200" />
@@ -969,33 +969,41 @@ __________________ -->
 		</ware>
 
 		<ware id="missile_lint_kitsune_01_ware" name="{654612,301}" description="{654612,301}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-			<price min="2530" average="2800" max="3070" />
-			<production time="3" amount="1" method="terran" name="{20206,901}">
-				<primary>
-					<ware ware="computronicsubstrate" amount="4" />
-					<ware ware="energycells" amount="120" />
-					<ware ware="metallicmicrolattice" amount="31" />
-					<ware ware="siliconcarbide" amount="6" />
-				</primary>
-			</production>
+      <price min="69051" average="78468" max="87884" />
+      <production time="2" amount="1" method="default" name="{20206,901}">
+        <primary>
+          <ware ware="energycells" amount="100" />
+          <ware ware="metallicmicrolattice" amount="14" />
+          <ware ware="siliconcarbide" amount="3" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="770" />
+        </primary>
+      </production>
 			<component ref="missile_lint_kitsune_01_macro" amount="1" />
 			<container ref="sm_gen_pickup_equipment_01_macro" />
       <restriction licence="capitalequipment" />
-			<use threshold="0.0" />
+			<use threshold="0" />
 			<owner faction="pioneers" />
       <owner faction="terran" />
 		</ware>
     
 		<ware id="missile_lint_kitsune_02_ware" name="{654612,310}" description="{654612,310}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-			<price min="3030" average="3300" max="3570" />
-			<production time="3" amount="1" method="terran" name="{20206,901}">
-				<primary>
-					<ware ware="computronicsubstrate" amount="6" />
-					<ware ware="energycells" amount="200" />
-					<ware ware="metallicmicrolattice" amount="31" />
-					<ware ware="siliconcarbide" amount="8" />
-				</primary>
-			</production>
+      <price min="70051" average="79468" max="88884" />
+      <production time="2" amount="1" method="default" name="{20206,901}">
+        <primary>
+          <ware ware="energycells" amount="120" />
+          <ware ware="metallicmicrolattice" amount="15" />
+          <ware ware="siliconcarbide" amount="3" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="closedloop" name="{20206,1201}">
+        <primary>
+          <ware ware="energycells" amount="770" />
+        </primary>
+      </production>
 			<component ref="missile_lint_kitsune_02_macro" amount="1" />
 			<container ref="sm_gen_pickup_equipment_01_macro" />
       <restriction licence="capitalequipment" />
@@ -2990,7 +2998,7 @@ __________________ -->
       <owner faction="trinity" />
     </ware> -->
 
-    <!-- <ware id="ship_par_xl_battleship_02" name="{20101,31701}" description="{20101,31701}" group="ships_paranid" transport="ship" volume="1" tags="ship">
+    <ware id="ship_par_xl_battleship_02" name="{20101,31701}" description="{20101,31701}" group="ships_paranid" transport="ship" volume="1" tags="ship">
       <price min="36000000" average="40000000" max="44000000" />
       <production time="575" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -3003,7 +3011,7 @@ __________________ -->
       <owner faction="holyorder" />
       <owner faction="paranid" />
       <owner faction="trinity" />
-    </ware> -->
+    </ware> 
 
     <!-- <ware id="ship_arg_xl_battleship_a" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship noplayerbuild noblueprint noplayerblueprint">
       <price min="30000000" average="35000000" max="40000000" />
@@ -3017,10 +3025,10 @@ __________________ -->
       <restriction licence="capitalship" />
       <owner faction="antigone" />
       <owner faction="argon" />
-    </ware>
+    </ware>-->
 
     <ware id="ship_arg_xl_corona" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship">
-      <price min="35000000" average="40000000" max="45000000" />
+      <price min="32000000" average="36000000" max="42000000" />
       <production time="550" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="energycells" amount="6140" />
@@ -3030,14 +3038,14 @@ __________________ -->
       <component ref="ship_arg_xl_corona_macro" amount="1" />
       <restriction licence="capitalship" />
       <owner faction="antigone" />
-      <owner faction="argon" />
-    </ware> -->
+    </ware> 
+
 		<ware id="ship_arg_xl_battleship_lc4_01_ware" name="{20005,7016}" description="{20005,7016}" group="ships_argon" transport="ship" volume="1" tags="ship">
-      <price min="35000000" average="40000000" max="45000000" />
+      <price min="30000000" average="35000000" max="40000000" />
       <production time="550" amount="1" method="default" name="{20206,101}">
         <primary>
-          <ware ware="energycells" amount="6140" />
-          <ware ware="hullparts" amount="17000" />
+          <ware ware="energycells" amount="4140" />
+          <ware ware="hullparts" amount="15000" />
         </primary>
       </production>
 			<component ref="ship_arg_xl_battleship_lc4_01_macro" amount="1" />
@@ -3061,26 +3069,25 @@ __________________ -->
     </ware> -->
 
 		<ware id="ship_tel_xl_battleship_lc4_01_ware" name="{20101,22101}" description="{20101,22101}" group="ships_teladi" transport="ship" volume="1" tags="ship">
-      <price min="33000000" average="38000000" max="43000000" />
+      <price min="32000000" average="37000000" max="42000000" />
       <production time="550" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="energycells" amount="5900" />
-          <ware ware="hullparts" amount="15900" />
+          <ware ware="hullparts" amount="16500" />
         </primary>
       </production>
 			<component ref="ship_tel_xl_battleship_lc4_01_macro" amount="1" />
 			<restriction licence="capitalship" />
       <owner faction="teladi" />
       <owner faction="ministry" />
-<!-- AI-variants not being usable for the player -->			
 		</ware>
 
     <ware id="ship_spl_xl_gharial" name="{20101,42501}" description="{20101,42501}" group="ships_split" transport="ship" volume="1" tags="ship">
-      <price min="42000000" average="46000000" max="50000000" />
+      <price min="45000000" average="50000000" max="55000000" />
       <production time="575" amount="1" method="default" name="{20206,101}">
         <primary>
-          <ware ware="energycells" amount="85000" />
-          <ware ware="hullparts" amount="27500" />
+          <ware ware="energycells" amount="45000" />
+          <ware ware="hullparts" amount="25000" />
         </primary>
       </production>
       <component ref="ship_spl_xl_gharial_macro" amount="1" />
@@ -3933,7 +3940,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_firefly" name="{6699, 1204}" description="{6699, 1206}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -3985,7 +3992,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_firelance" name="{6699, 1207}" description="{6699, 1209}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -4073,7 +4080,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_blizzard" name="{6699, 1213}" description="{6699, 1215}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -4214,7 +4221,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_tornado" name="{6699, 1222}" description="{6699, 1224}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -4353,7 +4360,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_wasp" name="{6699, 1231}" description="{6699, 1233}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -4405,7 +4412,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_wildfire" name="{6699, 1234}" description="{6699, 1236}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -4633,7 +4640,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_tempest" name="{6699, 1249}" description="{6699, 1251}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -4685,7 +4692,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_thunderbolt" name="{6699, 1252}" description="{6699, 1254}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -5008,7 +5015,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_ibis" name="{6699, 1273}" description="{6699, 1275}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -5096,7 +5103,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_firestorm" name="{6699, 1279}" description="{6699, 1281}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -5237,7 +5244,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_shadow" name="{6699, 1288}" description="{6699, 1290}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -5289,7 +5296,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_wraith" name="{6699, 1291}" description="{6699, 1293}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -5390,7 +5397,7 @@ __________________ -->
       <owner faction="buccaneers" />
       <owner faction="yaki" />
       <owner faction="boron" />
-      <owner faction="scalepact" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_scatter" name="{6699, 1297}" description="{6699, 1299}" group="missiles" transport="equipment" volume="1" tags="equipment missile">

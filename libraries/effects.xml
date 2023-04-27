@@ -3,7 +3,7 @@
   <add sel="/effects">
 
     <!-- Boron DLC -->
-    <effect name="muzzle_bor_s_phase_gun" alignment="object">
+    <effect name="muzzle_bor_s_proton_gun" alignment="object">
       <elements>
         <!-- Muzzle Smoke-->
         <!-- <element id="1" ref="dummyemitter_macro" forkeffect="laser_muzzle_smoke_01" alignment="object" duration="0.2" minscale="0.7" maxscale="0.7" forklod="none"></element> -->
@@ -34,7 +34,7 @@
       </elements>
     </effect>
 
-    <effect name="muzzle_bor_m_phase_cannon" alignment="object">
+    <effect name="muzzle_bor_m_proton_cannon" alignment="object">
       <elements>
         <!-- Muzzle Smoke-->
         <!-- <element id="1" ref="dummyemitter_macro" forkeffect="laser_muzzle_smoke_01" alignment="object" duration="0.2" minscale="0.7" maxscale="0.7" forklod="none"></element> -->
@@ -261,6 +261,38 @@
     </effect>
 
     <!-- VANILLA AND SPLIT -->
+      <effect name="impact_gen_m_flak_vro" alignment="random" emitterspace="zone">
+    <elements>
+      <!-- 6 Lightsources to make sure at liest one is outsite of the mesh -->
+      <element id="1" ref="missile_impact_01_light_macro" forkeffect="none" alignment="random" duration="0.8" forklod="none"></element>
+      <!-- Explosion Fork Particles-->
+      <element id="2" ref="dummyemitter_macro" forkeffect="flak_impact" alignment="random" emitterspace="zone" forcezonespace="true" duration="0.80" minscale="0.9" maxscale="1.1" forklod="largeeffect"></element>
+      <!--element id="7" ref="dummyemitter_macro" forkeffect="sparkcloud" alignment="random" duration="7.0" minscale="2.0" maxscale="4.0" forklod="mediumeffect"></element-->
+      <!-- Area DMG -->
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
+        <areadamage range="180" falloff="0.5" duration="1.0"/>
+      </element>
+      <!-- Sound -->
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="2.5" forklod="mediumeffect">
+        <sound ref="flak_impact"></sound>
+      </element>
+    </elements>
+  </effect>
+  <effect name="startshooting_gen_s_shotgun_01_mk1" alignment="object" emitterspace="zone">
+    <elements>
+      <element id="1" ref="effect_dummy_macro" duration="1">
+        <sound ref="wpn_shotgun_startshooting" />
+      </element>
+    </elements>
+  </effect>
+  <effect name="stopshooting_gen_s_shotgun_01_mk1" alignment="object" emitterspace="zone">
+    <elements>
+      <element id="1" ref="effect_dummy_macro" duration="1">
+        <sound ref="wpn_shotgun_stopshooting" />
+      </element>
+    </elements>
+  </effect>
+
     <!-- PLASMA GUN-->
     <effect name="muzzle_gen_s_plasma_gun" alignment="object">
       <elements>

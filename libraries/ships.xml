@@ -75,7 +75,7 @@
 	<!--    GODREALM OF THE PARANID -->
 	<!-- ############################# -->
 
-	<add sel="//ships">
+	 <add sel="//ships">
 		<ship id="paranid_battleship_xl" group="par_battleship_xl">
 			<category tags="[military, battleship, mission]" faction="[paranid, alliance]"
 				size="ship_xl" />
@@ -85,7 +85,7 @@
 			<drop ref="ship_large_military" />
 			<people ref="paranid_military_crew" />
 		</ship>
-	</add>
+	</add> 
 
 	<add sel="//ships">
 		<ship id="paranid_hyperion" group="par_hyperion_l">
@@ -127,6 +127,17 @@
 		</ship>
 	</add>
 
+	<add sel="//ships">
+		<ship id="trinity_battleship_xl" group="hol_battleship_xl">
+			<category tags="[military, battleship, mission]" faction="[trinity]"
+				size="ship_xl" />
+			<pilot>
+				<select faction="paranid" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="trinity_military_crew" />
+		</ship>
+	</add>
 	<!-- ############################# -->
 	<!--    TELADI COMPANY & MINISTRY OF FINANCE-->
 	<!-- ############################# -->

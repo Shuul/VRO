@@ -8,91 +8,92 @@
 			<layer>
 				<waypoints>
 					<waypoint name="XU_Waypoint08" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="15.18201" y="-174.2649" z="1078.111" qx="-0" qy="-0" qz="-0" qw="-1">
-						<links />
+						<links/>
 					</waypoint>
 					<waypoint name="XU_Waypoint06" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="-11.81799" y="-174.2649" z="1078.111" qx="-0" qy="-0" qz="-0" qw="-1">
-						<links />
+						<links/>
 					</waypoint>
 					<waypoint name="XU_Waypoint05" tags="sizeLevel1 typedock start dynamicmasstraffic " x="6.989807" y="-157.1399" z="673.9904" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
 						<links>
-							<link ref="XU_Waypoint010" />
+							<link ref="XU_Waypoint010"/>
 						</links>
 					</waypoint>
 					<waypoint name="XU_Waypoint03" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="15.18201" y="-140.0149" z="1078.111" qx="-0" qy="-0" qz="-0" qw="-1">
 						<links>
-							<link ref="XU_Waypoint012" />
+							<link ref="XU_Waypoint012"/>
 						</links>
 					</waypoint>
 					<waypoint name="XU_Waypoint02" tags="sizeLevel1 typedock end dynamicmasstraffic " x="-5.731506" y="-157.1399" z="673.9905" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
-						<links />
+						<links/>
 					</waypoint>
 					<waypoint name="XU_Waypoint01" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="-11.81799" y="-140.0149" z="1078.111" qx="-0" qy="-0" qz="-0" qw="-1">
 						<links>
-							<link ref="XU_Waypoint013" />
+							<link ref="XU_Waypoint013"/>
 						</links>
 					</waypoint>
 					<waypoint name="XU_Waypoint009" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-5.731506" y="-157.1399" z="916.4865" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
 						<links>
-							<link ref="XU_Waypoint02" />
+							<link ref="XU_Waypoint02"/>
 						</links>
 					</waypoint>
 					<waypoint name="XU_Waypoint010" tags="typenormal sizeLevel1 dynamicmasstraffic " x="6.989807" y="-157.1399" z="916.4864" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
 						<links>
-							<link ref="XU_Waypoint014" />
-							<link ref="XU_Waypoint011" />
+							<link ref="XU_Waypoint014"/>
+							<link ref="XU_Waypoint011"/>
 						</links>
 					</waypoint>
 					<waypoint name="XU_Waypoint011" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-11.81799" y="-174.2649" z="990.2286" qx="-0" qy="-0" qz="-0" qw="-1">
 						<links>
-							<link ref="XU_Waypoint06" />
+							<link ref="XU_Waypoint06"/>
 						</links>
 					</waypoint>
 					<waypoint name="XU_Waypoint012" tags="typenormal sizeLevel1 dynamicmasstraffic " x="15.18201" y="-140.0149" z="990.2286" qx="-0" qy="-0" qz="-0" qw="-1">
 						<links>
-							<link ref="XU_Waypoint009" />
+							<link ref="XU_Waypoint009"/>
 						</links>
 					</waypoint>
 					<waypoint name="XU_Waypoint013" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-11.81799" y="-140.0149" z="990.2286" qx="-0" qy="-0" qz="-0" qw="-1">
 						<links>
-							<link ref="XU_Waypoint009" />
+							<link ref="XU_Waypoint009"/>
 						</links>
 					</waypoint>
 					<waypoint name="XU_Waypoint014" tags="typenormal sizeLevel1 dynamicmasstraffic " x="15.18201" y="-174.2649" z="990.2286" qx="-0" qy="-0" qz="-0" qw="-1">
 						<links>
-							<link ref="XU_Waypoint08" />
+							<link ref="XU_Waypoint08"/>
 						</links>
 					</waypoint>
 				</waypoints>
-				<lights></lights>
+				<lights>
+				</lights>
 			</layer>
 		</layers>
 		<connections>
-			<connection name="container" tags="contents" value="0" />
-			<connection name="position" tags="position" value="1" />
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
 			<connection name="space" tags="ship ship_xl">
-				<offset />
+				<offset/>
 			</connection>
 
 			<!-- DETAIL L MAIN -->
 			<connection name="Connection01" tags="part detail_l forceoutline nocollision">
 				<offset>
-					<position x="-1.525879E-05" y="-36.98327" z="85.04855" />
+					<position x="-1.525879E-05" y="-36.98327" z="85.04855"/>
 				</offset>
 				<parts>
 					<part name="detail_l_main">
 						<lods>
 							<lod index="0">
 								<materials>
-									<material id="1" ref="generic.generic_p1_hulltexture" />
-									<material id="2" ref="generic.generic_p1_fx" />
-									<material id="3" ref="generic.generic_p1_hulltexture" />
-									<material id="4" ref="generic.generic_p1_fx" />
+									<material id="1" ref="generic.generic_p1_hulltexture"/>
+									<material id="2" ref="generic.generic_p1_fx"/>
+									<material id="3" ref="generic.generic_p1_hulltexture"/>
+									<material id="4" ref="generic.generic_p1_fx"/>
 								</materials>
 							</lod>
 						</lods>
 						<size>
-							<max x="382.9386" y="187.1306" z="938.7021" />
-							<center x="1.525879E-05" y="-3.814697E-06" z="-3.051758E-05" />
+							<max x="382.9386" y="187.1306" z="938.7021"/>
+							<center x="1.525879E-05" y="-3.814697E-06" z="-3.051758E-05"/>
 						</size>
 					</part>
 				</parts>
@@ -101,42 +102,42 @@
 			<!-- PART MAIN -->
 			<connection name="Connection02" tags="part">
 				<offset>
-					<position x="-1.861572E-03" y="-120.05" z="-1.27713" />
+					<position x="-1.861572E-03" y="-120.05" z="-1.27713"/>
 				</offset>
 				<parts>
 					<part name="part_main" wreck="part_main_wreck">
 						<lods>
 							<lod index="0">
 								<materials>
-									<material id="1" ref="generic.generic_p1_hullpattern" />
-									<material id="2" ref="generic.generic_p1_hulltexture" />
-									<material id="3" ref="generic.generic_p1_fx" />
-									<material id="4" ref="p1paint.paint_p1_decal_01" />
+									<material id="1" ref="generic.generic_p1_hullpattern"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+									<material id="3" ref="generic.generic_p1_fx"/>
+									<material id="4" ref="p1paint.paint_p1_decal_01"/>
 								</materials>
 							</lod>
 							<lod index="1">
 								<materials>
-									<material id="1" ref="generic.generic_p1_hullpattern" />
-									<material id="2" ref="generic.generic_p1_hulltexture" />
-									<material id="3" ref="generic.generic_p1_fx" />
+									<material id="1" ref="generic.generic_p1_hullpattern"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+									<material id="3" ref="generic.generic_p1_fx"/>
 								</materials>
 							</lod>
 							<lod index="2">
 								<materials>
-									<material id="1" ref="generic.generic_p1_hullpattern" />
-									<material id="2" ref="generic.generic_p1_hulltexture" />
-									<material id="3" ref="generic.generic_p1_fx" />
+									<material id="1" ref="generic.generic_p1_hullpattern"/>
+									<material id="2" ref="generic.generic_p1_hulltexture"/>
+									<material id="3" ref="generic.generic_p1_fx"/>
 								</materials>
 							</lod>
 							<lod index="3">
 								<materials>
-									<material id="1" ref="generic.generic_p1_hullpattern" />
+									<material id="1" ref="generic.generic_p1_hullpattern"/>
 								</materials>
 							</lod>
 						</lods>
 						<size>
-							<max x="573.7707" y="295.3988" z="906.8679" />
-							<center x="-3.051758E-05" y="-8.281952" z="3.051758E-05" />
+							<max x="573.7707" y="295.3988" z="906.8679"/>
+							<center x="-3.051758E-05" y="-8.281952" z="3.051758E-05"/>
 						</size>
 					</part>
 				</parts>
@@ -145,28 +146,28 @@
 			<!-- PLAYER LOGO -->
 			<connection name="Connection03" tags="part nocollision forceoutline detail_l fx  ">
 				<offset>
-					<position x="0" y="-129.696" z="128.9282" />
+					<position x="0" y="-129.696" z="128.9282"/>
 				</offset>
 				<parts>
 					<part name="fx_licence01">
 						<lods>
 							<lod index="0">
 								<materials>
-									<material id="1" ref="p1paint.paint_idcode" />
-									<material id="2" ref="p1paint.paint_logo" />
+									<material id="1" ref="p1paint.paint_idcode"/>
+									<material id="2" ref="p1paint.paint_logo"/>
 								</materials>
 							</lod>
 						</lods>
 						<size>
-							<max x="567.6506" y="281.4869" z="482.3858" />
-							<center x="0" y="-11.40645" z="-1.525879E-05" />
+							<max x="567.6506" y="281.4869" z="482.3858"/>
+							<center x="0" y="-11.40645" z="-1.525879E-05"/>
 						</size>
 					</part>
 				</parts>
 			</connection>
 			<connection name="Connection04" tags="part detail_l forceoutline  nocollision">
 				<offset>
-					<position x="-7.629395E-06" y="127.9847" z="-532.666" />
+					<position x="-7.629395E-06" y="127.9847" z="-532.666"/>
 				</offset>
 			</connection>
 

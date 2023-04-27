@@ -23,6 +23,7 @@
         <drag forward="170.817" reverse="1819.268" horizontal="187.409" vertical="187.409" pitch="2074.817" yaw="2074.817" roll="2074.817" />
       </physics>
       <thruster tags="extralarge" />
+      <threatscore value="50" />
       <loadouts>
         <loadout id="default">
           <macros>
@@ -39,7 +40,7 @@
             <weapon macro="weapon_gen_l_waver_macro" path="../con_l_weapon_1" optional="1" />
           </macros>
           <groups>
-            <shield macro="shield_xen_xl_standard_01_mk1_macro" path=".." group="capital-engines" exact="1" optional="1" />
+            <shields macro="shield_xen_xl_standard_01_mk1_macro" path=".." group="capital-engines" exact="1" optional="1" />
             <turrets macro="turret_xen_l_obliterator_inv_macro" path=".." group="turrets" exact="12" optional="1" />
           </groups>
 
