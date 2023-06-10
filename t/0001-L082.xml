@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <language id="82">
- 
 <page id="20105" title="Weapons and Turrets" descr="Names and descriptions of weapons and turrets" voice="no">
 <!-- name = ARG L Beam Turret Mk1    basename=Beam Turret    shortname=Beam Mk1 -->
 <!-- arg L beam turr      <identification name="{20105,5084}" basename="{20105,5081}" shortname="{20105,5085}" makerrace="argon" description="{20105,5082}" unique="0" mk="1" /> -->
@@ -360,9 +359,51 @@
     <t id="5265">헤비 랜스</t>
     <t id="5262">헤비 랜스는 공동체의 붕괴 이후 아르곤 연방에 남아있던 아르곤과 소수의 보론들의 에너지 무기 협력 연구의 정점입니다. 낮은 발사율과 포탑 추적 속도는 어떤 전투기라도 한방에 격추시킬 수 있는 놀라운 사거리, 정확한 정밀도, 큰 알파 피해량으로 보상됩니다.</t>
    
+    <t id="1481">\033#96ddb56e#SL\033X 페이즈 건</t>
+    <t id="1482">크기: SMALL\n 무기 등급: LIGHT\n\n보론 페이즈 무기는 파라니드와 아르곤이 처음 개발한 입자 가속기 무기를 변형한 독특한 무기입니다. 이 무기는 고도로 가속되고 편광된 입자로 구성된 에너지 펄스를 발사하며, 선체에는 효과적이지만 보호막에는 그다지 효과적이지 않습니다. 따라서 위상 무기는 보호막과 기동성을 주로 손상시키는 경향이 있어 보론 군수 물자 중에서 독특한 위치를 차지합니다. 억제할 수 없는 적에 대항하는 최후의 수단인 페이즈 무기는 다양한 크기의 무기 또는 포탑으로 널리 사용 가능하며, 보론 무기와 함대 구성의 근간을 이룹니다.</t>
+    <t id="1483">페이즈 건</t>
+    <t id="1484">(BOR S Phase Gun Mk1){20202,203} {20111,5011} {20105,1481} {20111,101}</t>
+    <t id="1485">(Phase Gun){20105,1481}</t>
+
+    <t id="1491">\033#96ddb56e#SL\033X 아크 건</t>
+    <t id="1492">크기: SMALL\n 무기 등급: LIGHT\n\n보론 아크 무기는 피해를 입힐 뿐만 아니라 대상의 기동성을 손상시키기 위해 개발된 유틸리티 무기입니다. 아크는 점화된 이온 입자를 발사하여 충돌 시 전기 방전을 일으킵니다. 이는 함선 시스템을 손상시키고 특히 보호막을 고갈시키는 데 효과적이며, 보호막이 없는 표적에도 상당한 선체 피해를 입힐 수 있습니다. 이 포탑 변형은 공격자를 파괴하는 것이 목적이 아니라 공격자를 떨쳐내려는 민간 함선에 유용하다는 평가를 받고 있습니다. 아크 무기는 왕립 보론 군사 방위군이 개발하여 실전에 사용할 수 있도록 승인했지만, 아직은 다소 실험적인 것으로 간주됩니다.(Royal Boron Military Defence same as {20233,1021})</t>
+    <t id="1493">아크</t>
+    <t id="1494">(BOR S Arc Gun Mk1){20202,203} {20111,5011} {20105,1491} {20111,101}</t>
+    <t id="1495">(Arc Gun){20105,1491}</t>
+
+    <t id="1501">\033#96ddb56e#SL\033X 이온 개틀링</t>
+    <t id="1502">크기: SMALL\n 무기 등급: LIGHT\n\n이온 개틀링은 보론 도그파이터의 승률을 높이기 위해 페이드 드림 디펜스에서 개발했습니다. 전하를 띤 입자는 보호막에 효과적일 뿐만 아니라 표적의 기동성을 손상시켜 적 전투기를 고립시킬 수 있습니다. 이 무기는 일반적인 스플릿 침공에 효과적이지만, 선체 관통력이 약하다는 단점을 보완하기 위해 다른 무기나 함대와 결합되어야 합니다. 이온 개틀링의 서투른 스플릿 보호막에 대응하기 위해 스플릿 침입자들은 보호막이 없는 전투기를 배치하기 시작했습니다.(Faded Dreams Defences same as {20233,1051})</t>
+    <t id="1503">이온 개틀링</t>
+    <t id="1504">(BOR S Ion Gatling Mk1){20202,203} {20111,5011} {20105,1501} {20111,101}</t>
+
+    <t id="2491">\033#989db6ec#ML\033X 페이즈 캐논</t>
+    <t id="2492">크기: MEDIUM\n 무기 등급: LIGHT\n\n{20105,1482}</t>
+    <t id="2493">페이즈 캐논</t>
+    <t id="2494">\033#989db6ec#ML\033X BOR M 페이즈 캐논 </t>
+    <t id="2495">페이즈 캐논</t>
+
+    <t id="2501">\033#989db6ec#ML\033X 이온 아토마이저</t>
+    <t id="2502">크기: MEDIUM\n 무기 등급: LIGHT\n\n이온 아토마이저는 파라니드와 텔라디 위상 충격파 발생기 기술을 기반으로 한 무기 시스템입니다. 압축 에너지 발사체는 충격 시 팽창하여 일련의 위상 에너지 충격파를 생성하여 보호막을 크게 고갈시키고 함선 시스템을 교란합니다. 발사 시 각 발사체는 발사 시 포신과 표적 사이의 거리를 커버한 후 폭발하도록 준비되어 있어 발사체의 수명을 효과적으로 제한합니다. 이 시한 폭발은 목표물이 간신히 직접적인 충격을 피하더라도 폭발로 인해 목표물이 폭발에 휘말려 빗맞을 뻔한 상황을 명중으로 바꿔줍니다. 일부 보론 조종사들은 이 신관 덕분에 아군 사격도 일부 예방할 수 있었다고 안도하며 보고했습니다. 이온 아토마이저는 작고 빠른 표적에 사용하기 어렵다고 알려져 있지만, 일부 창의적이고 숙련된 조종사들은 이를 성공적으로 수행합니다.</t>
+    <t id="2503">이온 아토마이저</t>
+    <t id="2504">\033#989db6ec#ML\033X BOR M 이온 아토마이저</t>
+    <t id="2505">이온 아토마이저</t>
+
+    <t id="2511">\033#993d7bff#MH\033X 이온 펄스 레일건</t>
+    <t id="2512">크기: MEDIUM\n 무기 등급: HEAVY\n\n이온 펄스 무기는 자기 가속을 이용해 과열된 플라즈마 파편을 이온화하여 발사합니다. 대부분의 보론 무기와 마찬가지로, 이러한 발사체는 보호막이 없는 표적의 선체를 손상시키기보다는 보호막 자체를 고갈시키는 데 더 효과적입니다. 그럼에도 불구하고 엘레우스 아스트로시큐리티가 개발한 이 무기 시스템은 전투기 요격이라는 본연의 목적에 탁월합니다. 따라서 이온 펄스 터렛과 레일건은 보론 군함에서 널리 사용되며, 적 진형을 안전하게 통과하는 것으로 알려져 있습니다.(Eleius Astrosecurity same as {20233,1041})</t>
+    <t id="2513">이온 펄스</t>
+    <t id="2514">BOR M 이온 펄스 레일건</t>
+    <t id="2515">이온 펄스 레일건</t>
+
+    <t id="3061">\033#95e03b29#LM\033X 레이 이온 프로젝터</t>
+    <t id="3062">이온 프로젝터는 레이 구축함의 주포이자 개발사인 엘레우스 아스트로시큐리티의 자랑입니다. 충전되면 세 개의 배럴이 연이어 점화되어 이온화된 빔을 방출하여 표적 함선의 시스템에 영향을 미치고 기동성을 손상시킵니다. 표준 보론 무기 원칙에 따라 프로젝터는 선체를 손상시키는 것보다 보호막을 고갈시키는 데 더 효과적이며, 특히 보호막이 약한 스플릿 전투 함선을 빠르게 무방비 상태로 만듭니다. 이 무기를 사용하는 레이 구축함과 마찬가지로 이 무기는 군사력을 투사하여 보론이 공동체의 강대국 중 하나로 자리매김할 수 있게 해줍니다.(Eleius Astrosecurity same as {20233,1041})(Ray same as ship name, {20101,50201})</t>
+    <t id="3064">(BOR Ray Ion Projector){20202,203} {20105,3061}</t>
+
 </page>
 
 <page id="6699" title="VRO text" descr="VRO text" voice="yes">
+
+
+
 <t id="1011">ARG L 플랙 아틸러리 어레이</t>
 <t id="1012">PAR L 플랙 아틸러리 어레이</t>
 <t id="1013">TEL L 플랙 아틸러리 어레이</t>
@@ -404,7 +445,9 @@
 <t id="1104">크기: SMALL\n 무기 등급: HEAVY\n\n중대형 전투기에서 많이 발견되는 무기입니다. 방사선이 너무 위험해서 이 무기를 시장에 내놓을 때까지 오랜 기간 연구 개발을 거쳐야 했습니다. 이 위험요소는 무기의 주요 설계에 방사선 배출구를 추가함으로써 해결되었습니다. 사격 중 발생한 과다 방사선을 방출하는 무기입니다.</t>
 <t id="1111">ARG L 포톤 펄스 캐논 \(PPC\)</t>
 <t id="1112">ARG 포톤 펄스 캐논</t>
+<t id="11121">\033#95e03b29#LM\033X 디스트로이어 포톤 펄스 캐논</t>
 <t id="1113">PPC</t>
+<t id="11131">디스트로이어 PPC</t>
 <t id="1114">호위함, 구축함, 항공모함에서 발견되는 치명적인 무기입니다. 아르곤의 조 바이드나 교수에 의해 처음 개발된 포톤 펄스 캐논은 아르곤 군에서 널리 사용되었고 다른 종족들에게 설계를 판매했습니다. 이 무기는 매우 강력하며, 대형 주력함에만 장착할 수 있습니다. 고도로 충전된 광자 방사선을 일련의 코일을 통해 전송하여 전하를 배가시켜 매우 치명적인 방사선 펄스를 생성합니다.</t>
 <t id="1121">\033#96ddb56e#SL\033X 에너지 볼트 체인건 \(EBC\)</t>
 <t id="1122">에너지 볼트 체인건</t>
@@ -466,6 +509,7 @@
 <t id="11008">\033#95e03b29#LM\033X 포지트론 빔 어레이</t>
 <t id="110081">TEL L 포지트론 빔 터렛</t>
 <t id="110082">포지트론 빔 터렛</t>
+
 <t id="11009">\033#95e03b29#고출력 터렛\033X\n텔라디 함선 전용\n\n포지트론 빔 어레이는 멀리 있는 스테이션과 대형 주력함을 높은 정확도로 공격하기 위해 특별히 고안된 공격 무기입니다. 이것은 또한 M급 함선과 싸울 때도 사용됩니다.</t>
 
 <t id="11010">\033#95e03b29#LM\033X 이온 프로젝터</t>
@@ -573,7 +617,7 @@
 
 <!-- TERRAN T-file -->
 
-<t id="15001">\033#96ddb56e#SL\033X 펄스 캐논 </t>
+<t id="15001">\033#96ddb56e#SL\033X 펄스 캐논</t>
 <t id="15002">펄스 캐논</t>
 <t id="15003">펄스 캐논</t>
 <t id="15004">크기: SMALL\n 무기 등급: LIGHT\n\n테란 경전투기의 기본 무기인 펄스 캐논은 전투기 시스템에 과부하를 주지 않고 균형잡인 발사율, 피해량, 사거리를 제공합니다.</t>
@@ -663,24 +707,25 @@
 <t id="15172">TER 로터리 펄스 터렛</t>
 <t id="15173">로터리 펄스 터렛</t>
 <t id="15174">스타버스트 캐논의 대 초계함의 낮은 효율과 HEMPC와 같은 대체 무기의 높은 비용 때문에, 테란 보호국 과학자들은 펄스 캐논과 결합한 고속 사격 기술을 기반으로 한 새로운 무기를 설계하였습니다. 그 결과 대부분의 S와 M 크기의 목표물을 공격할 수 있는 다목적 무기가 만들어졌습니다.</t>
+
 <!-- boron T-file guns -->
 
-    <t id="15181">\033#993d7bff#MH\033X Proton Cannon</t>
-    <t id="15182">Size: MEDIUM\n Weapon Class: HEAVY\n\nThe Proton cannon is the dedicated anti-capital weapon developed by the Queendom of Boron.</t>
-    <t id="15183">\033#993d7bff#MH\033X Proton Cannon</t>
-    <t id="15184">BOR M Proton Cannon</t>
-    <t id="15185">\033#993d7bff#MH\033X Proton Cannon</t>
+    <t id="15181">\033#993d7bff#MH\033X 프로톤 캐논</t>
+    <t id="15182">크기: MEDIUM\n 무기 등급: HEAVY\n\n프로톤 캐논은 보론 여왕국이 개발한 대 주력함 전용 무기입니다.</t>
+    <t id="15183">\033#993d7bff#MH\033X 프로톤 캐논</t>
+    <t id="15184">BOR M 프로톤 캐논</t>
+    <t id="15185">\033#993d7bff#MH\033X 프로톤 캐논</t>
 
-    <t id="15191">\033#97e19b23#SH\033X Proton Gun</t>
-    <t id="15192">Size: SMALL\n Weapon Class: HEAVY\n\nThe Proton Gun was an attempt to arm the smaller fighters of the Boron fleet to an adequate capability to fight medium-sized and capital targets.</t>
-    <t id="15193">\033#97e19b23#SH\033X Proton Gun</t>
-    <t id="15194">BOR S Proton Gun</t>
-    <t id="15195">\033#97e19b23#SH\033X Proton Gun</t>
+    <t id="15191">\033#97e19b23#SH\033X 프로톤 건</t>
+    <t id="15192">크기: SMALL\n 무기 등급: HEAVY\n\n프로톤 건은 보론 함대의 소형 전투기를 중형 및 주력함 표적과 싸울 수 있는 적절한 성능으로 무장시키려는 시도였습니다.</t>
+    <t id="15193">\033#97e19b23#SH\033X 프로톤 건</t>
+    <t id="15194">BOR S 프로톤 건</t>
+    <t id="15195">\033#97e19b23#SH\033X 프로톤 건</t>
 
-    <t id="15201">BOR L Ion Projector Turret</t>
-    <t id="15202">BOR Ion Projector Turret</t>
-    <t id="15203">Ion Projector Turret</t>
-    <t id="15204">The Ion Projector turret is an attempt to bring main Ray's Ion Projector battery into moving platform for use on heavy ships and installations as anti-capital weapons. Due to its inability to operate on full power, it is less effective compared to the original.</t>
+    <t id="15201">BOR L 이온 프로젝터 터렛</t>
+    <t id="15202">BOR 이온 프로젝터 터렛</t>
+    <t id="15203">이온 프로젝터 터렛</t>
+    <t id="15204">이온 프로젝터 터렛은 레이의 이온 프로젝터 주포를 이동식 플랫폼에 탑재하여 대형 함선 및 시설에서 대 주력함 무기로 사용하려는 시도입니다. 최대 성능으로 작동할 수 없기 때문에 기존에 비해 효율이 떨어집니다.</t>
 
 <!-- Chiba carrier -->
 <t id="19111">최근 제논의 침입 이후 테란 보호국 사령부가 고속 이동용 경항공모함의 필요성을 느낀 가운데, 급히 민간용 홋카이도 섀시를 재사용하기로 결정하면서, 새로운 경항공모함을 짧은 시간 내에 배치할 수 있게 되었으나, 섀시의 한계로 인해 생존성과 화력 부족에 시달렸습니다.</t>
@@ -693,7 +738,7 @@
 <t id="1903">타이탄은 게이트 폐쇄 전 아르곤 함대에서 가장 큰 함선이었으나, 현재 이 모델은 구식이며 아르곤의 상징으로만 유지되고 있습니다. 수많은 터렛으로 무장하고 소형 전투기 격납고를 갖춘 전함입니다. 무겁고 기동하기 어렵지만, 능력 있는 아르곤 함장의 손에 쥐어진 이 배는 고귀한 전통을 가진 강력한 무기입니다. 이것의 이전 모델은 제논 분쟁과 보론 캠페인 두 전쟁의 많은 주요 전투에서 승리했습니다.</t>
 <t id="19031">타이탄 엔진</t>
 
-<t id="1904">쉬라이크는 저렴한 호위함으로서, 기본적으로 게이트 폐쇄 후 텔라디 우주 외곽을 순찰하는 데 필요한 경항모 역할에 맞게 상업용 함선을 개조한 것입니다. 이 함선들은 여전히 함대 작전이나 저위험 지역의 순찰에 사용됩니다.</t>
+<t id="1904">슈라이크는 저렴한 호위함으로서, 기본적으로 게이트 폐쇄 후 텔라디 우주 외곽을 순찰하는 데 필요한 경항모 역할에 맞게 상업용 함선을 개조한 것입니다. 이 함선들은 여전히 함대 작전이나 저위험 지역의 순찰에 사용됩니다.</t>
 
 <t id="1905">팬서는 게이트 폐쇄 전 패밀리 와이 조선소가 새 호위함급 양산 계약 입찰에 실패한 결과물입니다. 격납고 갑판을 설치하는 약간의 변경으로 결국 경항모로 사용되었고, 지난 10년 동안 일부 추가 무장이 설치되어 현재도 사용이 가능합니다. </t>
 <t id="1906">가비알은 최근 제논 I의 급습으로 일부 큰 손실을 입은 후 급습에 대한 해답으로서 개발되었습니다. 랩터는 수많은 제논 주력 함대의 직접적인 공격을 견디기에는 부족했고, 그래서 이 육중한 전함은 이제 스플릿 함대의 주요 전투함이 되었습니다.</t>
@@ -701,24 +746,24 @@
 <t id="1907">하운드</t>
 <t id="19071">최근 해적 파벌들 간의 좋은 관계와 협력으로 희귀한 하운드 구축함을 건조하게 되었습니다. 주로 오래되거나 도난당한 함선 부품을 사용하여 전형적인 해적 방식으로 제작되었습니다.</t>
 
-<t id="19081">그 상징적인 배와 유사하며 대체할 예정인 '센타우르 II'라는 애칭으로 불리는, 사이클롭스는 제논 전투기 떼의 활동이 증가하는 것에 대한 대응책으로 개발되었습니다. 크기에 비해 뛰어난 속도와 긴밀하게 연결된 전투용 터렛 시스템으로 무장한 이 함선은 대규모 주력 함대에 효과적인 전투용 호위함입니다. 사이클롭스는 또한 탐사 및 정찰 활동에 완벽한 속도를 만들어주므로 아르곤 비밀 작전을 위한 함선이 되었습니다.</t>
 <t id="1908">{20101,13001} {20111,5461}(Cyclops Enhanced)</t>
+<t id="19081">그 상징적인 배와 유사하며 대체할 예정인 '센타우르 II'라는 애칭으로 불리는, 사이클롭스는 제논 전투기 떼의 활동이 증가하는 것에 대한 대응책으로 개발되었습니다. 크기에 비해 뛰어난 속도와 긴밀하게 연결된 전투용 터렛 시스템으로 무장한 이 함선은 대규모 주력 함대에 효과적인 전투용 호위함입니다. 사이클롭스는 또한 탐사 및 정찰 활동에 완벽한 속도를 만들어주므로 아르곤 비밀 작전을 위한 함선이 되었습니다.</t>
+<t id="19082">사이클롭스의 새로운 개량 버전인 인핸스드 사이클롭스는 이 상징적인 함선과 매우 흡사하여 함장들 사이에서 '센타우르 II'라고도 불리며, 제논 전투기 떼의 활동이 증가함에 따라 이에 대응하기 위해 개발되었습니다. 크기에 비해 뛰어난 속도를 자랑하며 촘촘하게 배치된 대 전투기 터렛 시스템을 갖춘 사이클롭스는 대형 주력함의 효과적인 방공 호위함입니다. 또한 사이클롭스는 빠른 속도 덕분에 탐사 및 정찰 활동에도 적합하여 아르곤 비밀 요원들의 작전 수행에 가장 적합한 함선이 되었습니다.</t>
 
 <t id="1909">하이페리온</t>
 <t id="19091">이 선박의 생산은 게이트 폐쇄 이후 파라니드 구역을 표류하는 폰티펙스 막시무스 파라니디아의 개인 요트의 오래된 원형을 찾는 것으로 시작되었습니다. 당시 이것은 파라니드 혁신의 놀라운 궁극적 설계였습니다. 수년간 역설계를 한 끝에 선체 비용 때문에 여전히 희귀하지만 마침내 대량 생산에 들어갔습니다.</t>
 
 <t id="1910">V로 분류된 제논 미사일 구축함이 스플릿 영토를 침략하기 시작한 후, 부족의 군대에 장거리 미사일 지원이 부족하다는 것이 명백해져 바이퍼가 개발되었습니다. 이 함선은 주 무기로 잘 조화된 직사 화기와 장거리 교전을 위한 다중 발사관을 자랑합니다. 시간이 지나면서 제논과 아르곤 전투기를 포함한 가벼운 위협에 맞서기 위해 바이퍼 발사 시스템을 위한 새로운 미사일 유형이 개발되었습니다.</t>
-<t id="1911">The Shikoku is a light cruiser based on old USC designs that never had a chance to go into production before the gate shutdown. As the Terran Conflict unraveled a sudden expansion of Terran space became a distinct possibility. To prepare for this eventuality, the United Space Command began work on designing ships capable of policing newly conquered systems, serving as protection from pirates and hostile skirmishing fleets alike. They would have to be fast enough to chase down any enemy invader and durable enough to engage them on thier own until stronger reinforcements arrive. However, before the first hulls were completed the gate shutdown forced USC to direct it's resources elsewhere. Now that the gate network realigned and a threat of a new conflict is looming, the old designs were updated and scheduled for production. The Miyagi is the lightest of the terran cruisers. It is fast and well shielded. Intended mostly for rapid response to pirate and Khaak raids, it can stand up to lightly armed destroyers but is no match for Xenon capital ships. It sports an expanded S ships storage and a large crew component. Together with it's speed this ship is well suited for retaking larger trade vessels that had been boarded and taken over by pirates. </t>
-<t id="1912">The Makhaira is a medium cruiser based on old USC designs that never had a chance to go into production before the gate shutdown. As the Terran Conflict unraveled a sudden expansion of Terran space became a distinct possibility. To prepare for this eventuality, the United Space Command began work on designing ships capable of policing newly conquered systems, serving as protection from pirates and hostile skirmishing fleets alike. They would have to be fast enough to chase down any enemy invader and durable enough to engage them on thier own until stronger reinforcements arrive. However, before the first hulls were completed the gate shutdown forced USC to direct it's resources elsewhere. Now that the gate network realigned and a threat of a new conflict is looming, the old designs were updated and scheduled for production. The Makhaira is the most common of the terran cruisers. It is well shielded and has an impressive array of large turrets. It was designed to hunt down lone enemy destroyers and thier smaller escorts. Makhaira has a large crew component that comes in handy during boarding operations. If the conditions are right this expensive ship can even stand up to a Xenon K. </t>
-<t id="1913">The Akita is a heavy cruiser based on old USC designs that never had a chance to go into production before the gate shutdown. As other cruiser models were meant to counter pirate raiders and lone enemy destroyers, this mighty warship was made to handle more serious threats. While the lighter Shikoku and Makhaira were to patrol internal sectors, the Akita was meant to defend the most dangerous border sectors and strategically important areas and stations of the then unravelling Terran Conflict. As the gate shutdown began, the USC had to divert it's resources elsewhere and no heavy cruiser of this type was ever built. Now however, with the gate network realignment, the Terran Protectorate finds itself with a need for a heavy warhip. The Akita is heavily armed and very well shielded. It has a large crew capacity and a decent fighter docking pad. That power comes at a price however, as the heavy cruiser is both very expensive and relatively slow. This ship can easily stop a Xenon K, and with little luck, even a whole Xenon raid. </t>
-<t id="1914">The Sapporo is a battlecruiser based on old designs from the Terran-Conflict era. After the recent gate network realignment skirmishes with the Xenon forces revealed the much feared weaknesses of the Asgard. Its lack of mobility often prevents it from bringing its powerful forward artillery to bear on a moving target, rendering the ship nearly useless in actual combat. As more engagements happened, it became increasingly obvious that normally weaker mobile force would be at an advantage against the main Terran Fleet. This has raised concerns among the terran admiralty that requested a more flexible warship to be added to the Terran Protectorate's Fleet. In response, an old USC design was updated and made ready for production. The Kagawa is a mighty warship that pushes the engineering boundaries of what is possible with L-class ship power cores. This battlecruiser has an impressive array of heavy turrets and can have up to six L-class shield generators. Its hull is very durable and it has a large crew capacity. The Sapporo is however very slow and extremely expensive, with a price tag and an operating speed comparable to that of Asgard's. This has led many Terran captains to refer to it as a 'pocket battleship'. At the same time its many turrets can effectively counter any fleet formations that focus on speed rather than raw power. The Sapporo makes for an excellent flagship or a lead vessel of a larger fleet.</t>
+<t id="1911">시코쿠는 점프 게이트가 폐쇄되기 전에는 생산에 들어갈 기회가 없었던 오래된 USC 설계를 기반으로 한 경순양함입니다. 테란 분쟁이 해결되면서 테란 우주가 갑자기 확장될 가능성이 뚜렷해졌습니다. 이러한 사태에 대비하기 위해, 연합 우주 사령부는 새로 정복한 시스템을 순찰하고 해적과 적대적인 전투 함대로부터 보호할 수 있는 함선을 설계하는 작업을 시작했습니다. 함선은 어떠한 침입자도 추격할 수 있을 만큼 빠르고, 더 강력한 지원군이 도착할 때까지 혼자서 교전을 벌일 수 있을 만큼 내구성이 있어야 했습니다. 하지만 첫 번째 선체가 완성되기 전에 점프 게이트 폐쇄로 인해 USC는 자원을 다른 곳에 투입해야 했습니다. 이제 게이트 네트워크가 재조정되고 새로운 분쟁의 위협이 다가옴에 따라 기존 설계를 업데이트하고 생산 일정을 잡았습니다. 미야기는 테란 순양함 중 가장 가볍습니다. 빠르고 보호막도 잘 되어 있습니다. 해적과 카악의 공격에 신속하게 대응하는 데 주로 사용되며, 가벼운 무장을 한 구축함에는 맞설 수 있지만 제논 주력함에는 상대가 되지 못합니다. 확장된 S 함선 수용량과 대규모 승무원 구성 요소를 자랑합니다. 이 함선은 빠른 속도와 함께 해적에게 탈취당한 대형 무역선을 재탈환하는 데 매우 적합합니다.</t>
+<t id="1912">마하이라는 게이트 폐쇄 이전에는 생산에 들어갈 기회가 없었던 오래된 USC 설계를 기반으로 한 중형 순양함입니다. 테란 분쟁이 해결되면서 테란 우주가 갑자기 확장될 가능성이 뚜렷해졌습니다. 이러한 사태에 대비하기 위해, 연합 우주 사령부는 새로 정복한 시스템을 순찰하고 해적과 적대적인 전투 함대로부터 보호할 수 있는 함선을 설계하는 작업을 시작했습니다. 함선은 어떠한 침입자도 추격할 수 있을 만큼 빠르고, 더 강력한 지원군이 도착할 때까지 혼자서 교전을 벌일 수 있을 만큼 내구성이 있어야 했습니다. 하지만 첫 번째 선체가 완성되기 전에 점프 게이트 폐쇄로 인해 USC는 자원을 다른 곳에 투입해야 했습니다. 이제 게이트 네트워크가 재조정되고 새로운 분쟁의 위협이 다가옴에 따라 기존 설계를 업데이트하고 생산 일정을 잡았습니다. 마하이라는 테란 순양함 중 가장 흔한 함선입니다. 보호막이 잘 차폐되어 있고 인상적인 대형 포탑 배열을 가지고 있습니다. 혼자 있는 적 구축함과 그보다 작은 호위함을 사냥하도록 설계되었습니다. 마하이라는 나포 작전시 유용하게 사용할 수 있는 대규모 승무원 구성 요소가 있습니다. 조건만 맞으면 이 고가의 함선은 제논 K와도 맞설 수 있습니다.</t>
+<t id="1913">아키타는 게이트 폐쇄 전에는 생산에 들어갈 기회가 없었던 오래된 USC 설계를 기반으로 한 대형 순양함입니다. 다른 순양함은 해적 약탈대와 혼자 있는 적 구축함에 대응하기 위한 것이었지만, 이 강력한 전함은 더 심각한 위협에 대응하기 위해 만들어졌습니다. 가벼운 시코쿠와 마하이라가 내부 성계를 순찰하는 반면, 아키타는 가장 위험한 국경 성계와 전략적으로 중요한 지역 및 기지를 방어하는 역할을 맡았습니다. 게이트 폐쇄가 시작되면서 USC는 자원을 다른 곳으로 돌릴 수밖에 없었고, 이런 종류의 대형 순양함은 건조되지 않았습니다. 하지만 이제 게이트 네트워크가 재편성되면서 테란 보호국은 중전함의 필요성을 느끼게 되었습니다. 아키타는 중무장을 하고 보호막이 매우 뛰어납니다. 대규모 승무원 수용 능력과 전투기 도킹 패드가 잘 갖춰져 있습니다. 하지만 이 대형 순양함은 매우 비싸고 상대적으로 느리기 때문에 그 위력에는 대가가 따릅니다. 이 함선은 제논 K를 쉽게 막을 수 있으며, 운이 좋으면 제논 공격대 전체를 막을 수도 있습니다.</t>
+<t id="1914">삿포로는 테란-분쟁 시대의 오래된 설계를 기반으로 한 전투 순양함입니다. 최근 제논 세력과의 게이트 네트워크 재편성 전투 이후, 아스가르드의 매우 우려했던 약점이 드러났습니다. 기동성이 부족하여 강력한 전방 주포가 움직이는 목표물을 공격하지 못하는 경우가 많아 실제 전투에서는 거의 쓸모없는 함선이 되었습니다. 교전이 거듭될수록 기동력이 약한 아스가르드 함대가 테란 주 함대에 불리하다는 것이 점점 더 분명해졌습니다. 이로 인해 테란 해군성 사이에서 테란 보호국의 함대에 더 유연한 전함을 추가해야 한다는 의견이 제기되었습니다. 이에 따라 기존 USC 설계가 업데이트되어 생산 준비가 되었습니다. 카가와는 L급 함선 동력 코어로 가능한 공학적 한계를 뛰어넘는 강력한 전함입니다. 이 전투 순양함은 인상적인 대형 포탑을 갖추고 있으며 최대 6개의 L급 보호막 생성기를 장착할 수 있습니다. 선체는 매우 튼튼하고 승무원 수용 인원이 많습니다. 하지만 삿포로는 매우 느리고 매우 비싸며, 아스가르드에 필적하는 가격과 작동 속도로 매우 느리고 매우 비쌉니다. 이 때문에 많은 테란 함장들은 이 함선을 '포켓 전함'이라고 부릅니다. 동시에 삿포로의 많은 포탑은 원초적인 힘보다는 속도에 초점을 맞춘 함대 편성에 효과적으로 대응할 수 있습니다. 삿포로는 훌륭한 기함 또는 대규모 함대의 선두 함선으로 적합합니다.</t>
 
-<t id="1920">Triton</t>
-<t id="1921">As relations between the Protectorate and the Pioneers deteriorate, the Pioneers felt the need for a domestically designed and produced warship. As a result, the Triton was created as a prototype to test design ideas. Although it possesses a considerable amount of firepower for a ship of this size, the hull plating had to be thinned to create space for its power generation systems.</t>
+<t id="1920">트리톤</t>
+<t id="1921">보호국과 개척자들 사이의 관계가 악화되면서 개척자들은 자체 설계하고 생산한 전함의 필요성을 느꼈습니다.그 결과 트리톤은 설계 아이디어를 테스트하기 위한 프로토타입으로 제작되었습니다. 트리톤은 같은 크기의 함선치고는 상당한 화력을 보유하고 있지만, 발전 시스템을 위한 공간을 확보하기 위해 선체 장갑을 얇게 만들어야 했습니다.</t>
 
-<t id="1930">Megalodon</t>
-<t id="1931">Megalodon is a refit of civilian resupply vessel as an answer to the increased threat from Split incursions that followed the opening of the gates to the commonwealth.</t>
-
+<t id="1930">메갈로돈</t>
+<t id="1931">메갈로돈은 공동체로 통하는 게이트가 열린 후 스플릿의 침공으로 인한 위협이 증가하자 이에 대응하기 위해 민간 보급선을 개조한 것입니다.</t>
 
 <!--missiles-->
 <t id="1201">레이피어 미사일 LD</t>
@@ -839,79 +884,79 @@
 <t id="99001">아르곤 기함 면허</t>
 
 <!-- Internal shields -->
-<t id="13001">IG S - 노바  내부 생성기</t>
-<t id="13002">IG S - 엘리트  내부 생성기</t>
+<t id="13001">IG S - 노바 내부 생성기</t>
+<t id="13002">IG S - 엘리트 내부 생성기</t>
 <t id="13003">IG S - 펄서 내부 생성기</t>
 <t id="13004">IG S - 퀘이사 내부 생성기</t>
-<t id="13005">IG S - 이클립스  내부 생성기</t>
-<t id="13006">IG S - 디스커버러  내부 생성기</t>
-<t id="13007">IG S - 커리어  내부 생성기</t>
-<t id="13008">IG S - 칼리스토  내부 생성기</t>
+<t id="13005">IG S - 이클립스 내부 생성기</t>
+<t id="13006">IG S - 디스커버러 내부 생성기</t>
+<t id="13007">IG S - 커리어 내부 생성기</t>
+<t id="13008">IG S - 칼리스토 내부 생성기</t>
 <t id="13009">IG S - 칼리스토 \(광물\) 내부 생성기</t>
-<t id="13010">IG S - 노더스  내부 생성기</t>
-<t id="13011">IG S - 페르세우스  내부 생성기</t>
-<t id="13012">IG S - 테세우스  내부 생성기</t>
-<t id="13013">IG S - 페가수스  내부 생성기</t>
+<t id="13010">IG S - 노더스 내부 생성기</t>
+<t id="13011">IG S - 페르세우스 내부 생성기</t>
+<t id="13012">IG S - 테세우스 내부 생성기</t>
+<t id="13013">IG S - 페가수스 내부 생성기</t>
 <t id="13014">IG S - 테티스 \(광물\) 내부 생성기</t>
-<t id="13015">IG S - 테티스  내부 생성기</t>
-<t id="13016">IG S - 팔콘  내부 생성기</t>
-<t id="13017">IG S - 버자드  내부 생성기</t>
-<t id="13018">IG S - 케스트렐  내부 생성기</t>
-<t id="13019">IG S - 길몬트  내부 생성기</t>
+<t id="13015">IG S - 테티스 내부 생성기</t>
+<t id="13016">IG S - 팔콘 내부 생성기</t>
+<t id="13017">IG S - 버자드 내부 생성기</t>
+<t id="13018">IG S - 케스트렐 내부 생성기</t>
+<t id="13019">IG S - 길몬트 내부 생성기</t>
 <t id="13020">IG S - 매그파이 \(광물\) 내부 생성기</t>
-<t id="13021">IG S - 매그파이  내부 생성기</t>
+<t id="13021">IG S - 매그파이 내부 생성기</t>
 <t id="13022">IG S - N 내부 생성기</t>
 <t id="13023">IG S - M 내부 생성기</t>
-<t id="13024">IG M - 미노타우르  내부 생성기</t>
+<t id="13024">IG M - 미노타우르 내부 생성기</t>
 <t id="13025">IG M - 미노타우르 레이더 내부 생성기</t>
-<t id="13026">IG M - 케르베로스  내부 생성기</t>
-<t id="13027">IG M - 선더  내부 생성기</t>
-<t id="13028">IG M - 드릴  내부 생성기</t>
-<t id="13029">IG M - 머큐리  내부 생성기</t>
-<t id="13030">IG M - 아이즈  내부 생성기</t>
-<t id="13031">IG M - 네메시스  내부 생성기</t>
-<t id="13032">IG M - 고르고나  내부 생성기</t>
-<t id="13033">IG M - 플루토스 \(기체\)  내부 생성기</t>
-<t id="13034">IG M - 플루토스 \(광물\)  내부 생성기</t>
-<t id="13035">IG M - 데메테르  내부 생성기</t>
-<t id="13036">IG M - 헤르메스  내부 생성기</t>
-<t id="13037">IG M - 페리그린  내부 생성기</t>
-<t id="13038">IG M - 오스프리  내부 생성기</t>
-<t id="13039">IG M - 마노리나 \(기체\)  내부 생성기</t>
-<t id="13040">IG M - 마노리나 \(광물\)  내부 생성기</t>
-<t id="13041">IG M - 벌처  내부 생성기</t>
-<t id="13042">IG M - 턴  내부 생성기</t>
+<t id="13026">IG M - 케르베로스 내부 생성기</t>
+<t id="13027">IG M - 선더 내부 생성기</t>
+<t id="13028">IG M - 드릴 내부 생성기</t>
+<t id="13029">IG M - 머큐리 내부 생성기</t>
+<t id="13030">IG M - 아이즈 내부 생성기</t>
+<t id="13031">IG M - 네메시스 내부 생성기</t>
+<t id="13032">IG M - 고르곤 내부 생성기</t>
+<t id="13033">IG M - 플루토스 \(기체\) 내부 생성기</t>
+<t id="13034">IG M - 플루토스 \(광물\) 내부 생성기</t>
+<t id="13035">IG M - 데메테르 내부 생성기</t>
+<t id="13036">IG M - 헤르메스 내부 생성기</t>
+<t id="13037">IG M - 페리그린 내부 생성기</t>
+<t id="13038">IG M - 오스프리 내부 생성기</t>
+<t id="13039">IG M - 마노리나 \(기체\) 내부 생성기</t>
+<t id="13040">IG M - 마노리나 \(광물\) 내부 생성기</t>
+<t id="13041">IG M - 벌처 내부 생성기</t>
+<t id="13042">IG M - 턴 내부 생성기</t>
 <t id="13043">IG M - 코머런트 내부 생성기</t>
 <t id="13044">IG M - P 내부 생성기</t>
 <t id="13045">IG M - S 내부 생성기</t>
-<t id="13046">IG L - 센타우르  내부 생성기</t>
-<t id="13047">IG L - 베히모스  내부 생성기</t>
-<t id="13048">IG L - 마그네타 \(기체\)  내부 생성기</t>
-<t id="13049">IG L - 마그네타 \(광물\)  내부 생성기</t>
-<t id="13050">IG L - 벨레스  내부 생성기</t>
-<t id="13051">IG L - 모코시  내부 생성기</t>
-<t id="13052">IG L - 인카커투라  내부 생성기</t>
-<t id="13053">IG L - 슈야쿠  내부 생성기</t>
-<t id="13054">IG L - 소노라  내부 생성기</t>
-<t id="13055">IG L - 오디세우스  내부 생성기</t>
-<t id="13056">IG L - 크토니오스 \(기체\)  내부 생성기</t>
-<t id="13057">IG L - 크토니오스 \(광물\)  내부 생성기</t>
-<t id="13058">IG L - 헬리오스  내부 생성기</t>
-<t id="13059">IG L - 셀렌  내부 생성기</t>
-<t id="13060">IG L - 피닉스  내부 생성기</t>
-<t id="13061">IG L - 크래인 \(기체\)  내부 생성기</t>
-<t id="13062">IG L - 크래인  내부 생성기</t>
-<t id="13063">IG L - 펠리칸  내부 생성기</t>
-<t id="13064">IG L - 헤런  내부 생성기</t>
-<t id="13065">IG XL - 건축선  내부 생성기</t>
-<t id="13066">IG XL - 콜로서스  내부 생성기</t>
-<t id="13067">IG XL - 헤라클레스  내부 생성기</t>
-<t id="13068">IG XL - 제우스  내부 생성기</t>
-<t id="13069">IG XL - 알바트로스  내부 생성기</t>
-<t id="13070">IG XL - 콘도르  내부 생성기</t>
+<t id="13046">IG L - 센타우르 내부 생성기</t>
+<t id="13047">IG L - 베히모스 내부 생성기</t>
+<t id="13048">IG L - 마그네타 \(기체\) 내부 생성기</t>
+<t id="13049">IG L - 마그네타 \(광물\) 내부 생성기</t>
+<t id="13050">IG L - 벨레스 내부 생성기</t>
+<t id="13051">IG L - 모코시 내부 생성기</t>
+<t id="13052">IG L - 인카커투라 내부 생성기</t>
+<t id="13053">IG L - 슈야쿠 내부 생성기</t>
+<t id="13054">IG L - 소노라 내부 생성기</t>
+<t id="13055">IG L - 오디세우스 내부 생성기</t>
+<t id="13056">IG L - 크토니오스 \(기체\) 내부 생성기</t>
+<t id="13057">IG L - 크토니오스 \(광물\) 내부 생성기</t>
+<t id="13058">IG L - 헬리오스 내부 생성기</t>
+<t id="13059">IG L - 셀렌 내부 생성기</t>
+<t id="13060">IG L - 피닉스 내부 생성기</t>
+<t id="13061">IG L - 크래인 \(기체\) 내부 생성기</t>
+<t id="13062">IG L - 크래인 내부 생성기</t>
+<t id="13063">IG L - 펠리칸 내부 생성기</t>
+<t id="13064">IG L - 헤런 내부 생성기</t>
+<t id="13065">IG XL - 건축선 내부 생성기</t>
+<t id="13066">IG XL - 콜로서스 내부 생성기</t>
+<t id="13067">IG XL - 헤라클레스 내부 생성기</t>
+<t id="13068">IG XL - 제우스 내부 생성기</t>
+<t id="13069">IG XL - 알바트로스 내부 생성기</t>
+<t id="13070">IG XL - 콘도르 내부 생성기</t>
 <t id="13071">IG XL - I 내부 생성기</t>
 <t id="13072">IG XL - K 내부 생성기</t>
-<t id="13073">IG XL - 코로나 내부 생성기</t>
+<t id="13073">IG XL - 아르곤 전함 내부 생성기</t>
 <t id="13074">IG XL - 데이모스 내부 생성기</t>
 <t id="13075">IG XL - 풀머 내부 생성기</t>
 <t id="13076">IG XL - 노매드 뱅가드 내부 생성기</t>
@@ -944,7 +989,7 @@
 <t id="13103">IG XL - 랩터 내부 생성기</t>
 <t id="13104">IG XL - 모니터 내부 생성기</t>
 <t id="13105">IG XL - 가비알 내부 생성기</t>
-<t id="13106">IG L - 쉬라이크 내부 생성기</t>
+<t id="13106">IG L - 슈라이크 내부 생성기</t>
 <t id="13107">IG L - 팬서 내부 생성기</t>
 <t id="13108">IG L - 하운드 내부 생성기</t>
 <t id="13109">IG L - 사이클롭스 내부 생성기</t>
@@ -976,63 +1021,63 @@
 <t id="13135">IG XL - 도쿄 내부 생성기</t>
 <t id="13136">IG XL - 혼슈 내부 생성기</t>
 <t id="13137">IG L - 치바 내부 생성기</t>
-<t id="13138">IG L - Shikoku Internal Generator</t>
-<t id="13139">IG L - Makharia Internal Generator</t>
-<t id="13140">IG L - Akita Internal Generator</t>
-<t id="13141">IG XL - Sapporo Internal Generator</t>
-<t id="13142">IG L - Triton Internal Generator</t>
-<t id="13143">IG M - Astrid Internal Generator</t>
-<t id="13144">IG L - Donia Internal Generator</t>
-<t id="13145">IG L - Barbarossa Internal Generator</t>
-<t id="13146">IG L - Teuta Internal Generator</t>
-<t id="13147">IG S - Kyd Internal Generator</t>
-<t id="13148">IG S - Lux Internal Generator</t>
-<t id="13149">IG S - Shih Internal Generator</t>
-<t id="13150">IG S - Raleigh Internal Generator</t>
-<t id="13151">IG XL - Erlking Internal Generator</t>
+<t id="13138">IG L - 시코쿠 내부 생성기</t>
+<t id="13139">IG L - 마카리아 내부 생성기</t>
+<t id="13140">IG L - 아키타 내부 생성기</t>
+<t id="13141">IG XL - 삿포로 내부 생성기</t>
+<t id="13142">IG L - 테란 프리깃 내부 생성기</t>
 
-<t id="13152">IG S - Mako Internal Generator</t>
-<t id="13153">IG S - Barracuda Internal Generator</t>
-<t id="13154">IG S - Grouper Internal Generator</t>
-<t id="13155">IG S - Piranha Internal Generator</t>
-<t id="13156">IG S - Irukandji Internal Generator</t>
-<t id="13157">IG S - Terrapin Internal Generator</t>
-<t id="13158">IG M - Hydra Internal Generator</t>
-<t id="13159">IG M - Thresher Internal Generator</t>
-<t id="13160">IG M - Porpoise Internal Generator</t>
-<t id="13161">IG M - Dolphin Internal Generator</t>
-<t id="13162">IG L - Guppy Internal Generator</t>
-<t id="13163">IG L - Ray Internal Generator</t>
-<t id="13164">IG L - Rorqual Internal Generator</t>
-<t id="13165">IG L - Sturgeon Internal Generator</t>
-<t id="13166">IG XL - Shark Internal Generator</t>
-<t id="13167">IG XL - Orca Internal Generator</t>
-<t id="13168">IG XL - Megalodon Internal Generator</t>
+<t id="13143">IG M - 아스트리드 내부 생성기</t>
+<t id="13144">IG L - 도니아 내부 생성기</t>
+<t id="13145">IG L - 바르바로사 내부 생성기</t>
+<t id="13146">IG L - 테우타 내부 생성기</t>
+<t id="13147">IG S - 키드 내부 생성기</t>
+<t id="13148">IG S - 룩스 내부 생성기</t>
+<t id="13149">IG S - 시이 내부 생성기</t>
+<t id="13150">IG S - 롤리 내부 생성기</t>
+<t id="13151">IG XL - 얼킹 내부 생성기</t>
 
+<t id="13152">IG S - 마코 내부 생성기</t>
+<t id="13153">IG S - 바라쿠다 내부 생성기</t>
+<t id="13154">IG S - 그루퍼 내부 생성기</t>
+<t id="13155">IG S - 피라냐 내부 생성기</t>
+<t id="13156">IG S - 이루칸지 내부 생성기</t>
+<t id="13157">IG S - 테라핀 내부 생성기</t>
+<t id="13158">IG M - 히드라 내부 생성기</t>
+<t id="13159">IG M - 쓰레셔 내부 생성기</t>
+<t id="13160">IG M - 포퍼스 내부 생성기</t>
+<t id="13161">IG M - 돌핀 내부 생성기</t>
+<t id="13162">IG L - 구피 내부 생성기</t>
+<t id="13163">IG L - 레이 내부 생성기</t>
+<t id="13164">IG L - 롤퀄 내부 생성기</t>
+<t id="13165">IG L - 스터전 내부 생성기</t>
+<t id="13166">IG XL - 샤크 내부 생성기</t>
+<t id="13167">IG XL - 오르카 내부 생성기</t>
+<t id="13168">IG XL - 메갈로돈 내부 생성기</t>
 
 </page>
 
 		<page id="654612" title="lint_ter_frigate" descr="lint_ter_frigate" voice="no">
 			<!-- Ship -->
-			<t id="1">Commissioned not long after the Jump Gates shut down, the (Akita){20101, 64601}-class of frigates were designed during a period of uncertainty. Due to the restructuring of USC and ATF into the Terran Protectorate and the aftermath of recent war with the Commonwealth, Terran navy logistics were heavily strained with repairing and refitting tasks. The heavily strained logistics combined with the economic shock of losing the Torus Aeternal created a environment where a cheap and long enduring class of vessels were desired in replacing heavier classes of vessels for patrolling the outer rim of Sol. Given the urgency, Terran engineers based most systems of the (Akita){20101, 64601}-class on the mostly finalized Maccana(same as seen in X3AP)-class frigates to reduce cost and design time.\n\nAlthough designed for anti-piracy patrol and freighter escort, for the majority of its service history the (Akita){20101, 64601}-class frigates saw an unexpectedly peaceful Sol. Most of the newly built (Akita){20101, 64601}-classes were soon mothballed and stored in the outer rim stations. Even the ones remained active served more commonly as military transports rather than its orginal roles. As the gates reopened however, (Akita){20101, 64601}-class of ships saw a much heavier usage within both the Pioneer Initiative and Terran Protectorate. The long endurance of the (Akita){20101, 64601}-class made it the perfect frontier vessel for usage in the then empty Segairs systems. The same endurance also made it the perfect escort for Protectorate fleets' expeditions deep into Commonwealth space.</t>
+			<t id="1">점프 게이트가 폐쇄된 지 얼마 지나지 않아 취역한 (Akita){20101, 64601}-급 프리깃함은 불확실한 시기에 설계되었습니다. USC와 ATF가 테란 보호국으로 재편된 것과 최근 공동체 종족과의 전쟁의 여파로 인해 테란 해군 병참은 수리 및 개조 작업으로 인해 큰 부담을 안고 있었습니다. 토러스 요새를 잃은 경제적 충격과 함께 병참의 과중한 부담은 태양계 외곽을 순찰하기 위해 대형 함종을 대체할 값싸고 오래가는 함종이 필요한 환경을 조성했습니다. 긴급성을 고려하여 테란 엔지니어들은 비용과 설계 시간을 줄이기 위해 (Akita){20101, 64601}-급의 대부분의 시스템을 거의 완성된 마카나(same as seen in X3AP)-급 호위함을 기반으로 했습니다.\n\n해적 퇴치 순찰과 화물선 호위용으로 설계되었지만, (Akita){20101, 64601}-급 호위함은 대부분의 함생 동안 예상치 못하게 평화로운 태양계를 보냈습니다. 새로 건조된 (Akita){20101, 64601}-급 호위함들은 대부분 곧 퇴역하어 외곽 기지에 보관되었습니다. 현역으로 남아있는 것들도 원래의 역할보다는 군용 수송선으로 더 많이 사용되었습니다. 하지만 게이트가 다시 열리면서 (Akita){20101, 64601}-급 함선은 개척자 계획과 테란 보호국 내에서 훨씬 더 많이 사용되었습니다. (Akita){20101, 64601}-급의 긴 내구성은 당시 비어있던 세가리스 시스템에서 사용하기에 완벽한 개척 함선이었기 때문입니다. 또한 같은 내구성 덕분에 보호국 함대가 공동체 우주 깊숙이 원정할 수 있는 완벽한 호위함이 되었습니다.</t>
 
-			<t id="2">When the Pioneer Initiative was first established, a number of (Akita){20101, 64601}-class frigates were assigned into the initiative. Although the Pionners were satisfied with the anti-fighter performance of the (Akita){20101, 64601}-class, they soon wanted a class of dedicated anti-capital ships to complement the fleet of (Osaka){20101, 60201}-classes. After a short examination period, a descision was made to refit existing (Akita){20101, 64601}-classes for the role and thus the (Kitsune){20101, 13201} refit program was established. Although the program is still under devolepment and testing, early combat results are promising and plans are already being drawn to produce new (Kitsune){20101, 13201}-class directly.\n\nCompared to the (Akita){20101, 64601}-class, (Kitsune){20101, 13201}-class refits featured a much more distinguished anti-capital ships ability. The refits lost their upper deck turrets in favour of torpedo launchers while its extended fuel and cargo storage were also removed for more ammunition capacity.</t>
+			<t id="2">개척자 계획이 처음 수립되었을 때 (Akita){20101, 64601}-급 프리깃함 여러 척이 이 계획에 배정되었습니다. 개척자들은 (Akita){20101, 64601}-급의 대함 성능에 만족했지만, 곧 (Osaka){20101, 60201}-급 함대를 보완할 수 있는 대 주력함 전용 함선을 원했습니다. 짧은 검토 기간 끝에 기존 (Akita){20101, 64601}-급을 해당 역할에 맞게 개조하기로 결정하고 (Kitsune){20101, 13201} 개조 프로그램을 수립했습니다. 이 프로그램은 아직 개발 및 테스트 중이지만 초기 전투 결과는 유망하며 이미 새로운 (Kitsune){20101, 13201}-급을 직접 생산할 계획이 수립되었습니다.\n\n(Akita){20101, 64601}-급에 비해 (Kitsune){20101, 13201}-급 개조 함정은 훨씬 더 뛰어난 대 주력함 능력을 갖추고 있습니다. 이 개량형 함선은 어뢰 발사기를 대신해 상갑판 포탑을 제거했으며, 탄약 용량을 늘리기 위해 연료 및 화물 저장고도 제거되었습니다.</t>
 
 			<!-- Weapon -->
-			<t id="10">Hull-fixed Crusie Missile Launcher</t>
-			<t id="11">Hull-fixed Torpedo Launcher</t>
+			<t id="10">헐-픽스드 크루즈 미사일 런처</t>
+			<t id="11">헐-픽스드 어뢰 런처</t>
 
 			<!-- Ammo -->
-			<t id="200">General-purpose Cruise Missile</t>
+			<t id="200">제너럴-퍼포즈 크루즈 미사일</t>
 			<t id="201">(General-purpose Cruise Missile Mk1){654612, 200} {20111,101}</t>
 			<t id="202">(General-purpose Cruise Missile Mk2){654612, 200} {20111,201}</t>
-			<t id="210">Agile Cruise Missile</t>
-			<t id="220">Shield-bypass Cruise Missile</t>
+			<t id="210">애자일 크루즈 미사일</t>
+			<t id="220">실드-바이패스 크루즈 미사일</t>
 
-			<t id="300">High-yield Torpedo</t>
+			<t id="300">하이-일드 어뢰</t>
 			<t id="301">(High-yield Torpedo Mk1){654612,300} {20111,101}</t>
 			<t id="302">(High-yield Torpedo Mk2){654612,300} {20111,201}</t>
-			<t id="310">High-velocity Shield-bypass Torpedo</t>
+			<t id="310">하이-벨로시티 실드-바이패스 어뢰</t>
 
 			<!-- Ammo Desc -->
 			<!-- <t id="1200">(General-purpose Cruise Missile){654612, 200}</t>
@@ -1042,13 +1087,13 @@
 			<t id="1310">A torpedo featuring a experimental warhead design. The warhead of this torpedo have two sections, first section is used in breaking down localized enemy shielding while the second is delivered as the payload. The shield-breaking section is effectivly a cell of high-energy plasma that</t> -->
 
 			<!--VRO iShield-->
-			<t id="1000">IG L - (Akita){20101, 64601} Interal Generator</t>
-			<t id="1001">IG L - (Kitsune){20101, 13201} Interal Generator</t>
+			<t id="1000">IG L - (Akita){20101, 64601} 내부 생성기</t>
+			<t id="1001">IG L - (Kitsune){20101, 13201} 내부 생성기</t>
 		</page>
 
 		<page id="998843" title="Cyclops Autocannon" descr="Cyclops Autocannon" voice="yes">
-			<t id="13323">ARG Cyclops Autocannon</t>
-			<t id="13324">The "Lacerator" Autocannon utilizes a novel tightly-packed cluster ammunition. While not as effective as other weapons in its class versus capital vessels it excells at quick and efficient removal of smaller threats. When faced with the problem of designing a main battery for the Cyclops the team thought it best to lean into the ships strengths rather than attempt to overcome its weaknesses.</t>
+			<t id="13323">ARG 사이클롭스 오토캐논</t>
+			<t id="13324">"레이서레이터" 오토캐논은 새로운 고밀도 집속 탄약을 사용합니다. 동급의 다른 대 주력함 무기에 비해 효과적이지는 않지만, 작은 위협 요소를 빠르고 효율적으로 제거하는 데는 탁월합니다. 사이클롭스의 주포를 설계하는 문제에 직면했을 때 개발팀은 약점을 극복하기보다는 함선의 강점을 살리는 것이 최선이라고 생각했습니다.</t>
 		</page>
 
 </language> 

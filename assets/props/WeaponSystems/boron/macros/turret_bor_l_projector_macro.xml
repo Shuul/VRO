@@ -6,10 +6,13 @@
     <properties>
       <identification name="{6699,15201}" basename="{6699,15202}" shortname="{6699,15203}" makerrace="boron" description="{6699,15204}" />
       <bullet class="bullet_bor_turret_l_projector_macro" />
-      <rotationspeed max="8" />
+      <rotationspeed max="6" />
       <rotationacceleration max="80" />
       <reload rate="1" time="0.5" />
-      <hull max="2100" threshold="0.2" integrated="0" />
+      <hull max="21000" threshold="0.2" integrated="0" />
+      <effects>
+        <firing start="muzzle_bor_l_beam_01_mk1" stop="stopshooting_bor_l_beam_01_mk1" />
+      </effects>
     </properties>
   </macro>
 </macros>
