@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="turret_xen_l_plasma_01_mk1_macro" class="turret">
+    <component ref="turret_xen_l_plasma_01_mk1" />
+    <properties>
+      <identification name="{20105,5474}" basename="{20105,5471}" shortname="{20105,5475}" makerrace="xenon" description="{20105,5472}" mk="1" />
+      <bullet class="bullet_xen_turret_l_plasma_01_mk1_macro" />
+      <rotationspeed max="35" />
+      <rotationacceleration max="50" />
+      <reload rate="0.5" time="1" />
+      <hull max="20000" threshold="0.2" />
+      <effects>
+        <sefx_damage_low ref="surfacemodule_damage_l_low" />
+        <sefx_damage_medium ref="surfacemodule_damage_l_medium" />
+        <sefx_damage_high ref="surfacemodule_damage_l_high" />
+      </effects>
+    </properties>
+  </macro>
+</macros>
+</replace>
+  
+</diff>

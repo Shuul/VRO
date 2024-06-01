@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="engine_xen_s_virtual_01_mk1_macro" class="engine">
+    <component ref="engine_xen_s_virtual_01" />
+    <properties>
+      <identification name="{20107,1234}" basename="{20107,1231}" shortname="{20107,1235}" makerrace="xenon" description="{20107,1232}" mk="1" />
+      <boost duration="20" thrust="3" attack="0.25" release="1" />
+      <travel charge="1" thrust="19" attack="15" release="10" />
+      <thrust forward="600" reverse="768" />
+      <hull integrated="1" />
+      <sounds>
+        <enginedetail ref="enginedetail_ship_xenon_s_01" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>
+</replace>
+</diff>

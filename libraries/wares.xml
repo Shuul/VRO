@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Last exported: 13.02.2019 14:43:03-->
 <diff>
+<!-- 7.0 wares -->
+
+<!-- <replace sel="//wares/ware[@id='ship_xen_l_terraformer_01_a']">
+<ware id="ship_xen_l_terraformer_01_a" name="{20101,72001}" description="{20101,72011}" transport="ship" volume="1" tags="nocustomgamestart ship">
+  <price min="1424804" average="1676240" max="1927676" />
+  <production time="460" amount="1" method="default" name="{20206,601}" tags="noplayerbuild">
+    <primary>
+      <ware ware="energycells" amount="2503" />
+      <ware ware="ore" amount="1640" />
+      <ware ware="silicon" amount="1640" />
+    </primary>
+  </production>
+  <component ref="ship_xen_l_terraformer_01_a_macro" />
+  <restriction licence="capitalship" />
+  <owner faction="xenon" />
+</ware>
+</replace> -->
+
+
+
  <!-- BORON DLC wares -->
 <add sel="/wares">
 		<ware id="ship_bor_xl_battleship_01" name="{20101,51601}" description="{6699,1931}" group="ships_boron" transport="ship" volume="1" tags="ship">
@@ -7911,6 +7931,18 @@ __________________ -->
     <use threshold="0" />
     <restriction licence="generaluseequipment" />
     <owner faction="boron" />
+</ware>
+
+<ware id="ishield_xen_l_terraformer" name="{6699,13169}" description="{6699,13169}" group="shields" transport="equipment" volume="1" tags="equipment shield">
+  <price min="12" average="16" max="21" />
+  <production time="1" amount="1" method="default" name="{20206,101}">
+    <primary>
+      <ware ware="energycells" amount="1" />
+    </primary>
+  </production>
+  <component ref="ishield_xen_l_terraformer_macro" amount="1" />
+  <use threshold="0" />
+  <restriction licence="generaluseequipment" />
 </ware>
 
   </add>

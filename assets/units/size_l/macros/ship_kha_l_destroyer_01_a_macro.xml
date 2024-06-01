@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+  <macros>
+  <macro name="ship_kha_l_destroyer_01_a_macro" class="ship_l">
+    <component ref="ship_kha_l_destroyer_01" />
+    <properties>
+      <identification name="{20101,90701}" makerrace="khaak" description="{20101,90711}" icon="ship_l_fight_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="1000" shield="5000" />
+      <storage missile="0" unit="0" deployable="0" />
+      <hull max="390000" />
+      <secrecy level="1" />
+      <purpose primary="fight" />
+      <people capacity="0" />
+      <sounds>
+        <shipdetail ref="shipdetail_khaak_l_01" />
+      </sounds>
+      <physics mass="304.423">
+        <inertia pitch="380.036" yaw="380.036" roll="344.029" />
+        <drag forward="60.181" reverse="196.725" horizontal="99.05" vertical="99.05" pitch="127.885" yaw="127.885" roll="127.885" />
+      </physics>
+      <thruster tags="large" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_kha_l_destroyer_01_allround_01_mk1_macro" path="../con_engine_01" />
+            <shield macro="shield_kha_l_standard_01_mk1_macro" path="../con_shield_l_01" optional="1" />
+            <shield macro="shield_kha_l_standard_01_mk1_macro" path="../con_shield_l_02" optional="1" />
+            <shield macro="shield_kha_l_standard_01_mk1_macro" path="../con_shield_l_03" optional="1" />
+            <weapon macro="weapon_kha_l_beam_01_mk1_macro" path="../con_weapon_l_01" optional="1" />
+          </macros>
+          <groups>
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_mid_bottom" exact="2" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_mid_left" exact="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_mid_right" exact="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_mid_top_back" exact="2" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_top_mid_left" exact="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_top_mid_right" exact="1" />
+          </groups>
+          <ammunition>
+            <ammunition macro="countermeasure_flares_01_macro" min="0" max="20" optional="1" />
+          </ammunition>
+          <virtualmacros>
+            <thruster macro="thruster_gen_l_allround_01_mk3_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <ship type="destroyer" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit_01">
+        <macro ref="cockpit_gen_invisible_01_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>

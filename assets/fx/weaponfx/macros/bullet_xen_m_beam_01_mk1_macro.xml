@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="//macros">
+<macros>
+  <macro name="bullet_xen_m_beam_01_mk1_macro" class="bullet">
+    <component ref="bullet_xen_m_beam_01_mk1" />
+    <properties>
+      <bullet speed="50000" lifetime="2" range="3300" amount="1" barrelamount="1" maxhits="1" ricochet="0" restitution="1" scale="1" attach="1" />
+      <heat value="2500" />
+      <reload time="5" />
+      <damage value="1500" repair="0" />
+      <effects>
+        <impact ref="impact_xen_m_beam_01_01_mk1_bigobject" inside="impact_xen_m_beam_01_01_mk1_inside" />
+        <bigobjectimpact ref="impact_xen_m_beam_01_01_mk1_bigobject" inside="impact_xen_m_beam_01_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_xen_m_beam_01_mk1" />
+      </effects>
+      <sounds>
+        <firing ref="weapon_xen_m_beam_01_mk1_loop" />
+      </sounds>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+</replace>
+  </diff>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="//macros">
+<macros>
+  <macro name="bullet_xen_turret_l_plasma_01_mk1_macro" class="bullet">
+    <component ref="bullet_xen_l_plasma_01_mk1" />
+    <properties>
+      <bullet speed="6000" lifetime="2.5" amount="1" barrelamount="1" timediff="0.001" angle="0.4" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" selfdestruct="1" plannedselfdestruct="1" selfdestructtimediff="0.03" selfdestructmintime="1" />
+      <reload rate="0.25" />
+      <areadamage value="1000" shield="4000" />
+      <damage value="2500" repair="0">
+      </damage>
+      <effects>
+        <impact ref="impact_xen_l_plasma_01_mk1" inside="impact_xen_l_plasma_01_mk1_inside" />
+        <bigobjectimpact ref="impact_xen_l_plasma_01_mk1_bigobject" inside="impact_xen_l_plasma_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_xen_l_plasma_01_mk1" />
+      </effects>
+      <weapon system="turret_midrange" />
+    </properties>
+  </macro>
+</macros>
+</replace>
+  </diff>

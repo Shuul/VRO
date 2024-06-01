@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="//macros">
+<macros>
+  <macro name="bullet_kha_xl_beam_01_mk1_macro" class="bullet">
+    <component ref="bullet_kha_xl_beam_01_mk1" />
+    <properties>
+      <bullet speed="100000" lifetime="6" range="30000" amount="1" barrelamount="1" angle="0" maxhits="1" ricochet="0" restitution="1" scale="1" attach="1" chargetime="10" heatwhilecharging="0" requirefullcharge="1" firewhenfullcharge="1" forcecooldownaftershot="1" />
+      <heat value="1666" />
+      <reload time="10.1" />
+      <damage value="1200000" repair="0" />
+      <effects>
+        <impact ref="impact_kha_xl_beam_01_mk1" inside="impact_kha_xl_beam_01_mk1_inside" />
+        <bigobjectimpact ref="impact_kha_xl_beam_01_mk1_bigobject" inside="impact_kha_xl_beam_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_kha_xl_beam_01_mk1" />
+      </effects>
+      <sounds>
+        <firing ref="weapon_kha_xl_beam_01_mk1_loop" />
+      </sounds>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>
+</replace>
+  </diff>

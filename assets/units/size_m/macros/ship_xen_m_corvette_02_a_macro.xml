@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros/macro[@name='ship_xen_m_corvette_02_a_macro']">
+  <macro name="ship_xen_m_corvette_02_a_macro" class="ship_m">
+    <component ref="ship_xen_m_corvette_02" />
+    <properties>
+      <identification name="{20101,70302}" makerrace="xenon" description="{20101,70312}" icon="ship_m_corvette_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="500" shield="2500" />
+      <storage missile="12" />
+      <hull max="45000" />
+      <glow engine="1" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="1" />
+      <sounds>
+        <shipdetail ref="shipdetail_xenon_m_01" />
+      </sounds>
+      <physics mass="32.9">
+        <inertia pitch="11.4" yaw="11.4" roll="11.4" />
+        <drag forward="32" reverse="25.777" horizontal="19" vertical="19" pitch="20" yaw="20" roll="20" />
+      </physics>
+      <thruster tags="medium" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_xen_m_virtual_01_mk1_macro" path="../con_engine_01" />
+            <engine macro="engine_xen_m_virtual_01_mk1_macro" path="../con_engine_02" />
+            <engine macro="engine_xen_m_virtual_01_mk1_macro" path="../con_engine_03" />
+            <engine macro="engine_xen_m_virtual_01_mk1_macro" path="../con_engine_04" />
+            <shield macro="shield_xen_m_virtual_01_mk1_macro" path="../con_shield_01" />
+            <shield macro="shield_xen_m_virtual_01_mk1_macro" path="../con_shield_02" />
+            <shield macro="ishield_xen_m_fighter_01_a_macro" path="../con_ishield_01" optional="1" />
+
+            <turret macro="turret_xen_m_gatling_01_mk1_macro" path="../con_turret_m_01" optional="1" />
+            <turret macro="turret_xen_m_gatling_01_mk1_macro" path="../con_turret_m_02" optional="1" />
+            <weapon macro="weapon_xen_m_laser_02_mk1_macro" path="../con_weapon_01" optional="1" />
+            <weapon macro="weapon_xen_m_laser_02_mk1_macro" path="../con_weapon_02" optional="1" />
+            <weapon macro="weapon_xen_light_launcher_macro" path="../con_primaryweapon_03" optional="1" />
+          </macros>
+          <ammunition>
+            <ammunition macro="countermeasure_flares_01_macro" min="0" max="8" optional="1" />
+            <ammunition macro="missile_xen_xn101_macro" min="8" max="12" optional="1" />
+          </ammunition>
+          <virtualmacros>
+            <thruster macro="thruster_gen_m_combat_01_mk3_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <ship type="corvette" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit_01">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage_01">
+        <macro ref="storage_xen_m_corvette_02_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</replace>
+</diff>
