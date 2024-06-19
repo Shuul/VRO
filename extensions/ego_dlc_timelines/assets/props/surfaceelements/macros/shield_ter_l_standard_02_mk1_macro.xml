@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="shield_ter_l_standard_02_mk1_macro" class="shieldgenerator">
+    <component ref="shield_ter_l_standard_02_mk1" />
+    <properties>
+      <identification name="{20106,3164}" basename="{20106,3161}" shortname="{20106,3165}" makerrace="terran" description="{20106,3162}" mk="1" />
+      <recharge max="53000" rate="55" delay="0" />
+      <hull max="20000" threshold="0.2" />
+  <effects>
+        <sefx_damage_low ref="surfacemodule_damage_l_low" />
+        <sefx_damage_medium ref="surfacemodule_damage_l_medium" />
+        <sefx_damage_high ref="surfacemodule_damage_l_high" />
+      </effects>
+    </properties>
+  </macro>
+</macros>
+</replace>
+</diff>

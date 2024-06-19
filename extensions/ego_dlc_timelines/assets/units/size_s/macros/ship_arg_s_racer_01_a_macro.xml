@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros/macro[@name='ship_arg_s_racer_01_a_macro']">
+<macros>
+  <macro name="ship_arg_s_racer_01_a_macro" class="ship_s">
+    <component ref="ship_arg_s_racer_01" />
+    <properties>
+      <identification name="{20101,11904}" basename="{20101,11901}" makerrace="argon" description="{20101,11913}" variation="{20111,1701}" shortvariation="{20111,1703}" icon="ship_s_racer_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage missile="0" />
+      <hull max="5800" />
+      <secrecy level="2" />
+      <purpose primary="racing" />
+      <people capacity="0" />
+      <sounds>
+        <shieldcharging ref="ui_shield_start_recharge" />
+        <shieldcharged ref="ui_shield_full" />
+      </sounds>
+      <physics mass="3.772">
+        <inertia pitch="0.451" yaw="0.451" roll="0.361" />
+        <drag forward="0.893" reverse="8.772" horizontal="3.081" vertical="3.081" pitch="2.585" yaw="2.484" roll="2.585" />
+      </physics>
+      <thruster tags="small" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_arg_s_racer_01_mk1_macro" path="../con_engine_01" />
+            <shield macro="shield_arg_s_racer_01_mk1_macro" path="../con_shield_01" optional="1" />
+          </macros>
+          <software>
+            <software ware="software_flightassistmk1" />
+            <software ware="software_scannerlongrangemk1" />
+            <software ware="software_scannerobjectmk1" />
+            <software ware="software_targetmk1" />
+          </software>
+          <virtualmacros>
+            <thruster macro="thruster_gen_s_combat_01_mk3_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <ship type="fighter" />
+      <sound_occlusion inside="0.5" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>

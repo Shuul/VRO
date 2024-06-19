@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Martin (192.168.3.161) on 2024-04-16 18:58:59-->
+<macros>
+  <macro name="bullet_kha_l_scenariobeam_02_mk1_macro" class="bullet" ref="bullet_kha_l_beam_02_mk1_macro">
+    <component ref="bullet_kha_l_beam_02_mk1" />
+    <properties>
+      <reload time="4" />
+      <effects>
+        <impact ref="impact_kha_l_beam_01_mk1" inside="impact_kha_l_beam_01_mk1_inside" />
+        <bigobjectimpact ref="impact_kha_l_beam_01_mk1_bigobject" inside="impact_kha_l_beam_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_kha_l_destroyer_01_mk1" />
+      </effects>
+      <sounds>
+        <firing ref="weapon_kha_l_beam_01_mk1_loop" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>

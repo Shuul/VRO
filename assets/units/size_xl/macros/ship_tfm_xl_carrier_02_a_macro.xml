@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Exported by: nick (192.168.3.73) on 2024-01-18 15:31:03-->
-<macros>
+<!--Exported by: nick (192.168.3.120) at 12.02.2019_17-29-39-->
+<diff> 
+  <replace sel="//macros/macro[@name='ship_tfm_xl_carrier_02_a_macro']">
+  <macros>
   <macro name="ship_tfm_xl_carrier_02_a_macro" class="ship_xl">
     <component ref="ship_tfm_xl_carrier_02" />
     <properties>
@@ -15,13 +17,13 @@
       </software>
       <explosiondamage value="1500" shield="7500" />
       <storage countermeasure="0" missile="0" unit="0" deployable="0" />
-      <hull max="1190000" />
+      <hull max="3635000" />
       <secrecy level="2" />
       <purpose primary="fight" />
       <people capacity="0" />
       <physics mass="2104.8">
         <inertia pitch="1818.497" yaw="1818.497" roll="1454.797" />
-        <drag forward="1221.09" reverse="4884.36" horizontal="5766.936" vertical="5766.936" pitch="1120.96" yaw="1120.96" roll="1120.96" />
+        <drag forward="1000" reverse="400" horizontal="2766.936" vertical="2766.936" pitch="700" yaw="700" roll="700" />
       </physics>
       <thruster tags="extralarge" />
       <loadouts>
@@ -129,3 +131,5 @@
     </connections>
   </macro>
 </macros>
+</replace>
+</diff>

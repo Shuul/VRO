@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff> 
-  <replace sel="//macros">
-  <macros>
+  <replace sel="//macros/macro[@name='ship_kha_l_destroyer_01_a_macro']">
   <macro name="ship_kha_l_destroyer_01_a_macro" class="ship_l">
     <component ref="ship_kha_l_destroyer_01" />
     <properties>
@@ -22,6 +21,7 @@
       <secrecy level="1" />
       <purpose primary="fight" />
       <people capacity="0" />
+      <capture allow="0" />
       <sounds>
         <shipdetail ref="shipdetail_khaak_l_01" />
       </sounds>
@@ -63,6 +63,5 @@
       </connection>
     </connections>
   </macro>
-</macros>
 </replace>
 </diff>

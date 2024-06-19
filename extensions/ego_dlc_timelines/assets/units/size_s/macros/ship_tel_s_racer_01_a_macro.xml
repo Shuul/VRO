@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros/macro[@name='ship_tel_s_racer_01_a_macro']">
+<macros>
+  <macro name="ship_tel_s_racer_01_a_macro" class="ship_s">
+    <component ref="ship_tel_s_racer_01" />
+    <properties>
+      <identification name="{20101,20104}" basename="{20101,20101}" makerrace="teladi" description="{20101,20114}" variation="{20111,1701}" shortvariation="{20111,1703}" icon="ship_s_racer_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk2" default="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage missile="0" />
+      <hull max="4500" />
+      <secrecy level="1" />
+      <purpose primary="racing" />
+      <people capacity="0" />
+      <sounds>
+        <shieldcharging ref="ui_shield_start_recharge" />
+        <shieldcharged ref="ui_shield_full" />
+      </sounds>
+      <physics mass="7.609">
+        <inertia pitch="1.061" yaw="1.061" roll="0.848" />
+        <drag forward="1.1" reverse="8.627" horizontal="3.866" vertical="2.866" pitch="3.472" yaw="3.472" roll="3.472" />
+      </physics>
+      <thruster tags="small" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_tel_s_racer_01_mk1_macro" path="../con_engine_01" />
+            <engine macro="engine_tel_s_racer_01_mk1_macro" path="../con_engine_02" />
+            <shield macro="shield_tel_s_racer_01_mk1_macro" path="../con_shield_01" optional="1" />
+          </macros>
+          <software>
+            <software ware="software_flightassistmk1" />
+            <software ware="software_scannerlongrangemk1" />
+            <software ware="software_scannerobjectmk1" />
+            <software ware="software_targetmk1" />
+          </software>
+          <virtualmacros>
+            <thruster macro="thruster_gen_s_allround_01_mk3_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <ship type="scout" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>

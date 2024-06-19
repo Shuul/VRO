@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros/macro[@name='ship_kha_xl_battleship_01_a_macro']">
+<macros>
+  <macro name="ship_kha_xl_battleship_01_a_macro" class="ship_xl">
+    <component ref="ship_kha_xl_battleship_01" />
+    <properties>
+      <identification name="{20101,90801}" makerrace="khaak" description="{20101,90811}" icon="ship_xl_battleship_01" />
+      <explosiondamage shield="7500" />
+      <storage countermeasure="0" missile="0" unit="0" deployable="0" />
+      <hull max="675000" />
+      <threatscore value="35" />
+      <secrecy level="3" />
+      <purpose primary="fight" />
+      <people capacity="0" />
+      <sounds>
+        <shipdetail ref="shipdetail_khaak_l_01" />
+      </sounds>
+      <physics mass="487.388">
+        <inertia pitch="485.311" yaw="485.311" roll="388.249" />
+        <drag forward="133.108" reverse="532.433" horizontal="259.232" vertical="259.232" pitch="717.73" yaw="717.73" roll="717.73" />
+      </physics>
+      <thruster tags="extralarge" />
+      <loadouts>
+        <loadout id="default">
+          <macros>
+            <engine macro="engine_kha_xl_battleship_01_allround_01_mk1_macro" path="../con_engine_01" />
+            <shield macro="shield_kha_xl_standard_01_mk1_macro" path="../con_shield_xl_01" optional="1" />
+            <shield macro="shield_kha_xl_standard_01_mk1_macro" path="../con_shield_xl_02" optional="1" />
+            <shield macro="shield_kha_xl_standard_01_mk1_macro" path="../con_shield_xl_03" optional="1" />
+            <shield macro="shield_kha_xl_standard_01_mk1_macro" path="../con_shield_xl_04" optional="1" />
+            <weapon macro="weapon_kha_xl_battleship_01_mk1_macro" path="../con_weapon_xl_01" optional="1" />
+          </macros>
+          <groups>
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_front_bottom" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_front_bottom_left" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_front_bottom_right" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_front_top" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_front_top_left" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_front_top_right" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_mid_bottom" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_mid_bottom_left" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_mid_bottom_right" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_mid_left" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_mid_right" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_mid_top_back" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_top_mid_left" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_top_mid_right" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_top_mid_upper_left" min="0" max="1" optional="1" />
+            <turrets macro="turret_kha_l_beam_01_mk1_macro" path=".." group="group_top_mid_upper_right" min="0" max="1" optional="1" />
+          </groups>
+          <virtualmacros>
+            <thruster macro="thruster_gen_xl_allround_01_mk3_macro" />
+          </virtualmacros>
+        </loadout>
+      </loadouts>
+      <capture allow="0" />
+      <ship type="battleship" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit_01">
+        <macro ref="cockpit_gen_invisible_01_macro" connection="ship" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>

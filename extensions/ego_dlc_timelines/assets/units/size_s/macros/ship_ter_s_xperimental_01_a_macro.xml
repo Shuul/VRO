@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff> 
+  <replace sel="//macros">
+<macros>
+  <macro name="ship_ter_s_xperimental_01_a_macro" class="ship_s">
+    <component ref="ship_ter_s_xperimental_01" />
+    <properties>
+      <identification name="{20101,122801}" basename="{20101,122801}" makerrace="terran" description="{20101,122811}" icon="ship_s_heavyfighter_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <storage missile="0" />
+      <hull max="8580" />
+      <glow engine="1" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="2" />
+      <physics mass="6.814">
+        <inertia pitch="2.2" yaw="2.2" roll="2.2" />
+        <drag forward="2.422" reverse="5.689" horizontal="2.191" vertical="2.191" pitch="3" yaw="3" roll="3" />
+      </physics>
+      <thruster tags="small" />
+      <ship type="heavyfighter" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit_01">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage_01">
+        <macro ref="storage_ter_s_xperimental_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
+</replace>
+</diff>

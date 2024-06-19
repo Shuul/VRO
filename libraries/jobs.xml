@@ -837,6 +837,7 @@
         <param name="plundermode" value="1"/>
       </order>
     </orders>
+	<time interval="3600" />
     <category faction="scaleplate" tags="[plunderer]" size="ship_l"/>
     <quota galaxy="7" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
@@ -857,6 +858,7 @@
     <orders>
 		<order order="VROProtectRandomStationSCA" default="true"/>
 	</orders>
+	<time interval="3600" />
     <category faction="scaleplate" tags="[military, hound]" size="ship_l"/>
     <quota galaxy="3" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="neutral" comparison="ge" matchextension="false"/>
@@ -879,17 +881,18 @@
   <!--      XENON				      -->
   <!-- ############################# -->
 
-  <job id="xenon_patrol_xl_u" name="{20204,3201}" comment="one border cluster" startactive="false">
+  <job id="xenon_patrol_xl_u" name="{20204,6201}" comment="one border cluster" startactive="false">
     <modifiers commandeerable="true"/>
     <orders>
       <order order="Patrol" default="true">
         <param name="range" value="class.zone"/>
       </order>
     </orders>
+	<time interval="36000" />
     <category faction="xenon" tags="[factionlogic, military, xenu]" size="ship_xl"/>
-    <quota galaxy="0" maxgalaxy="1"/>
+    <quota galaxy="1" maxgalaxy="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="exact" matchextension="false"/>
-    <environment buildatshipyard="true"/>
+    <environment buildatshipyard="true" preferbuilding="true"/>
     <ship>
       <select faction="xenon" tags="[military, xenu]" size="ship_xl"/>
       <owner exact="xenon" overridenpc="true"/>
@@ -906,7 +909,7 @@
       </order>
     </orders>
     <category faction="xenon" tags="[military, fighter]" size="ship_s"/>
-    <quota wing="40" variation="10"/>
+    <quota wing="50" variation="5"/>
     <location class="galaxy" macro="xu_ep2_universe_macro"/>
     <environment buildatshipyard="true"/>
     <modifiers subordinate="true"/>
@@ -922,7 +925,7 @@
     <subordinate job="terran_frigate_escort_akita"/>
 	</add>
   <add sel="//jobs/job[@id='terran_battleship_intervention_xl']/subordinates">
-    <subordinate job="terran_frigate_escort_akita"/>
+    <subordinate job="terran_frigate_escort_akita" assignment="attack"/>
   </add>
 
   	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_frigate']/quota[@wing='4']">

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Volodymyr (192.168.3.62) on 2024-05-21 13:56:54-->
+<macros>
+  <macro name="bullet_ter_s_plasma_01_mk1_story_macro" class="bullet" ref="bullet_ter_s_plasma_01_mk1_macro">
+    <component ref="bullet_ter_s_plasma_01_mk1" />
+    <properties>
+      <bullet angle="0.2" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" recoil="6000" />
+      <heat value="320" />
+      <damage value="150" />
+      <effects>
+        <impact ref="impact_ter_s_plasma_01_mk1" inside="impact_ter_s_plasma_01_mk1_inside" />
+        <bigobjectimpact ref="impact_ter_s_plasma_01_mk1_bigobject" inside="impact_ter_s_plasma_01_mk1_bigobject_inside" />
+        <launch ref="muzzle_ter_s_plasma_01_mk1" />
+      </effects>
+      <sounds>
+        <firing ref="weapon_ter_s_plasma_01_mk1_loop" />
+      </sounds>
+    </properties>
+  </macro>
+</macros>

@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff>
+  <replace sel="//effect[@name='impact_xen_l_plasma_01_01_mk1_base']">
+    <effect name="impact_xen_l_plasma_01_01_mk1_base" alignment="normal">
+      <elements>
+        <!-- Impact Geometry -->
+        <element id="1" ref="impact_xen_l_plasma_01_mk1_macro" forkeffect="none" duration="2.0" fadein="0.0" fadeout="1.25" minscale="1.2" maxscale="1.2" forklod="none" delay="0.0" />
+        <element id="2" ref="impact_light_red_macro" forkeffect="none" duration="0.2" fadein="0.0" fadeout="0.5" minscale="1.0" maxscale="1.0" forklod="none" delay="0.0" />
+        <!-- Area DMG & Shockwave effect -->
+        <element id="3" ref="impact_xen_l_plasma_01_a_mk1_macro" forkeffect="none" duration="2.0" fadein="0.0" fadeout="2.0" minscale="1.0" maxscale="1.0" forklod="none" delay="0.3">
+          <areadamage range="300" falloff="0.5" duration="1.0" />
+        </element>
+      </elements>
+    </effect>
+  </replace>
+
   <add sel="/effects">
-    <replace sel="//effect[@name='impact_xen_l_plasma_01_01_mk1_base']">
-      <effect name="impact_xen_l_plasma_01_01_mk1_base" alignment="normal">
-        <elements>
-          <!-- Impact Geometry -->
-          <element id="1" ref="impact_xen_l_plasma_01_mk1_macro" forkeffect="none" duration="2.0" minscale="2.0" maxscale="2.0" fadein="0.0" fadeout="1.25" forklod="none"></element>
-          <element id="2" ref="impact_light_red_macro" forkeffect="none" duration="0.2" minscale="2.0" maxscale="2.0" fadeout="0.5" forklod="none"></element>
-          <!-- Area DMG & Shockwave effect -->
-          <element id="3" ref="impact_xen_l_plasma_01_a_mk1_macro" forkeffect="none" delay="0.6" duration="2.0" minscale="1.0" maxscale="1.0" fadein="0.0" fadeout="2.0" forklod="none">
-            <areadamage range="300" falloff="0.5" duration="1.0"/>
-          </element>
-        </elements>
-      </effect>
-    </replace>
-      
-  
     <!-- Boron DLC -->
     <effect name="muzzle_bor_s_proton_gun" alignment="object">
       <elements>
@@ -275,37 +274,37 @@
     </effect>
 
     <!-- VANILLA AND SPLIT -->
-      <effect name="impact_gen_m_flak_vro" alignment="random" emitterspace="zone">
-    <elements>
-      <!-- 6 Lightsources to make sure at liest one is outsite of the mesh -->
-      <element id="1" ref="missile_impact_01_light_macro" forkeffect="none" alignment="random" duration="0.8" forklod="none"></element>
-      <!-- Explosion Fork Particles-->
-      <element id="2" ref="dummyemitter_macro" forkeffect="flak_impact" alignment="random" emitterspace="zone" forcezonespace="true" duration="0.80" minscale="0.9" maxscale="1.1" forklod="largeeffect"></element>
-      <!--element id="7" ref="dummyemitter_macro" forkeffect="sparkcloud" alignment="random" duration="7.0" minscale="2.0" maxscale="4.0" forklod="mediumeffect"></element-->
-      <!-- Area DMG -->
-      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
-        <areadamage range="180" falloff="0.3" duration="1.0"/>
-      </element>
-      <!-- Sound -->
-      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="2.5" forklod="mediumeffect">
-        <sound ref="flak_impact"></sound>
-      </element>
-    </elements>
-  </effect>
-  <effect name="startshooting_gen_s_shotgun_01_mk1" alignment="object" emitterspace="zone">
-    <elements>
-      <element id="1" ref="effect_dummy_macro" duration="1">
-        <sound ref="wpn_shotgun_startshooting" />
-      </element>
-    </elements>
-  </effect>
-  <effect name="stopshooting_gen_s_shotgun_01_mk1" alignment="object" emitterspace="zone">
-    <elements>
-      <element id="1" ref="effect_dummy_macro" duration="1">
-        <sound ref="wpn_shotgun_stopshooting" />
-      </element>
-    </elements>
-  </effect>
+    <effect name="impact_gen_m_flak_vro" alignment="random" emitterspace="zone">
+      <elements>
+        <!-- 6 Lightsources to make sure at liest one is outsite of the mesh -->
+        <element id="1" ref="missile_impact_01_light_macro" forkeffect="none" alignment="random" duration="0.8" forklod="none"></element>
+        <!-- Explosion Fork Particles-->
+        <element id="2" ref="dummyemitter_macro" forkeffect="flak_impact" alignment="random" emitterspace="zone" forcezonespace="true" duration="0.80" minscale="0.9" maxscale="1.1" forklod="largeeffect"></element>
+        <!--element id="7" ref="dummyemitter_macro" forkeffect="sparkcloud" alignment="random" duration="7.0" minscale="2.0" maxscale="4.0" forklod="mediumeffect"></element-->
+        <!-- Area DMG -->
+        <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
+          <areadamage range="180" falloff="0.3" duration="1.0" />
+        </element>
+        <!-- Sound -->
+        <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="2.5" forklod="mediumeffect">
+          <sound ref="flak_impact"></sound>
+        </element>
+      </elements>
+    </effect>
+    <effect name="startshooting_gen_s_shotgun_01_mk1" alignment="object" emitterspace="zone">
+      <elements>
+        <element id="1" ref="effect_dummy_macro" duration="1">
+          <sound ref="wpn_shotgun_startshooting" />
+        </element>
+      </elements>
+    </effect>
+    <effect name="stopshooting_gen_s_shotgun_01_mk1" alignment="object" emitterspace="zone">
+      <elements>
+        <element id="1" ref="effect_dummy_macro" duration="1">
+          <sound ref="wpn_shotgun_stopshooting" />
+        </element>
+      </elements>
+    </effect>
 
     <!-- PLASMA GUN-->
     <effect name="muzzle_gen_s_plasma_gun" alignment="object">
@@ -1978,11 +1977,11 @@
         </element>
       </elements>
     </effect>
-    
-<!-- Lint5 frigates -->
+
+    <!-- Lint5 frigates -->
     <effect name="lint_kitsune_missile_effect" alignment="normal">
       <references>
-        <reference effect="ref_lint_kitsune_missile_effect"/>
+        <reference effect="ref_lint_kitsune_missile_effect" />
       </references>
       <elements>
         <!-- empty because anything is in the reference -->

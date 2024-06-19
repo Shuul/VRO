@@ -174,7 +174,7 @@
 					<position x="19" y="-4.509056" z="-3.129244E-06"/>
 				</offset>
 				<parts>
-					<part name="detail_xl_hull_R">
+					<part name="part_cover_R">
 						<lods>
 							<lod index="0">
 								<materials>
@@ -198,8 +198,8 @@
 							</lod>
 						</lods>
 						<size>
-							<max x="13.46444" y="4.089264" z="23.43267"/>
-							<center x="-4.499999" y="1.041735" z="1.2815E-06"/>
+							<max x="13.43887" y="4.089263" z="23.43267"/>
+							<center x="-4.474431" y="1.041732" z="1.2815E-06"/>
 						</size>
 						<size_raw>
 							<max x="8.964437" y="3.047534" z="23.43267"/>
@@ -213,7 +213,7 @@
 					<position x="-19" y="-4.509056" z="-2.831221E-07"/>
 				</offset>
 				<parts>
-					<part name="detail_xl_hull_L">
+					<part name="part_cover_L">
 						<lods>
 							<lod index="0">
 								<materials>
@@ -237,8 +237,8 @@
 							</lod>
 						</lods>
 						<size>
-							<max x="13.46444" y="4.089255" z="23.43267"/>
-							<center x="4.500001" y="1.041732" z="3.427267E-07"/>
+							<max x="13.43887" y="4.089254" z="23.43267"/>
+							<center x="4.474433" y="1.041731" z="3.427267E-07"/>
 						</size>
 						<size_raw>
 							<max x="8.964437" y="3.047523" z="23.43267"/>
@@ -251,8 +251,8 @@
 				<restrictions>
 					<restriction type="rotation_x">
 						<limits>
-							<min value="-5.0 "/>
-							<max value="90 "/>
+							<min value="-5"/>
+							<max value="90"/>
 						</limits>
 					</restriction>
 				</restrictions>
@@ -345,8 +345,8 @@
 							</lod>
 						</lods>
 						<size>
-							<max x="8.441437" y="5.998874" z="12.48466"/>
-							<center x="-1.419336E-06" y="-3.495547" z="-3.757486"/>
+							<max x="8.441437" y="5.998875" z="12.48466"/>
+							<center x="-1.419336E-06" y="-3.495548" z="-3.757487"/>
 						</size>
 						<size_raw>
 							<max x="8.441436" y="2.495138" z="9.303805"/>
@@ -380,7 +380,7 @@
 						</lods>
 						<size>
 							<max x="7.947481" y="6.019664" z="8.477944"/>
-							<center x="1.117587E-08" y="-3.495558" z="-3.46545"/>
+							<center x="1.117587E-08" y="-3.495558" z="-3.465452"/>
 						</size>
 						<size_raw>
 							<max x="7.947481" y="2.515937" z="5.004375"/>
@@ -409,6 +409,11 @@
 			</connection>
 			<connection name="con_turret_beam_l" tags="turret large highpower telonly component combat">
 				<offset/>
+			</connection>
+			<connection name="con_aimtarget_01" tags="aimtarget ">
+				<offset>
+					<position x="0" y="16.4243" z="0"/>
+				</offset>
 			</connection>
 		</connections>
 	</component>

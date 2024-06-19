@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Volodymyr (192.168.3.77) on 2024-06-14 15:56:37-->
+<macros>
+  <macro name="bullet_ter_s_laser_02_mk1_macro" class="bullet">
+    <component ref="bullet_ter_s_laser_02_mk1" />
+    <properties>
+      <bullet speed="3000" lifetime="1" barrelamount="1" timediff="0.002" angle="0.04" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" />
+      <heat value="180" />
+      <reload rate="1.5" />
+      <damage value="220" repair="0" />
+      <effects>
+        <impact ref="impact_ter_s_laser_02_mk1" inside="impact_ter_s_laser_02_mk1_inside" />
+        <bigobjectimpact ref="impact_ter_s_laser_02_mk1_bigobject" inside="impact_ter_s_laser_02_mk1_bigobject_inside" />
+        <launch ref="muzzle_ter_s_laser_02_mk1" />
+      </effects>
+      <weapon system="weapon_standard" />
+    </properties>
+  </macro>
+</macros>

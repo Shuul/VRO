@@ -1,124 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Exported by: nick (192.168.3.120) at 14.02.2019_11-32-04-->
-<macros>
-  <macro name="ship_xen_xl_u_macro" class="ship_xl">
-    <component ref="ship_xen_xl_u" />
-    <properties>
-      <identification name="{20101,71401}" description="{20101,71411}" icon="ship_xl_u" />
-      <software>
-        <software ware="software_dockmk2" default="1" />
-        <software ware="software_flightassistmk1" default="1" />
-        <software ware="software_scannerlongrangemk2" default="1" />
-        <software ware="software_scannerobjectmk2" default="1" />
-        <software ware="software_targetmk1" default="1" />
-        <software ware="software_trademk1" default="1" />
-      </software>
-      <explosiondamage value="1500" shield="7500" />
-      <hull max="3635000" />
-      <secrecy level="3" />
-      <purpose primary="fight" />
-      <people capacity="0" />
-      <physics mass="1874.085">
-        <inertia pitch="1397.262" yaw="1397.262" roll="1117.81" />
-        <drag forward="170.817" reverse="1819.268" horizontal="187.409" vertical="187.409" pitch="2074.817" yaw="2074.817" roll="2074.817" />
-      </physics>
-      <thruster tags="extralarge" />
-      <threatscore value="50" />
-      <loadouts>
-        <loadout id="default">
-          <macros>
-            <engine macro="engine_xen_xl_u_macro" path="../con_engine_01" />
+  <macros>
+    <macro name="ship_xen_xl_u_macro" class="ship_xl">
+      <component ref="ship_xen_xl_u" />
+        <properties>
+          <identification name="{20101,71401}" description="{20101,71411}" icon="ship_xl_u" />
+          <software>
+          <software ware="software_dockmk2" default="1" />
+          <software ware="software_flightassistmk1" default="1" />
+          <software ware="software_scannerlongrangemk2" default="1" />
+          <software ware="software_scannerobjectmk2" default="1" />
+          <software ware="software_targetmk1" default="1" />
+          <software ware="software_trademk1" default="1" />
+        </software>
+        <explosiondamage value="1500" shield="7500" />
+        <storage countermeasure="0" missile="0" unit="0" deployable="0" />
+        <hull max="3635000" />
+        <secrecy level="2" />
+        <purpose primary="fight" />
+        <people capacity="0" />
+        <physics mass="2104.8">
+          <inertia pitch="1818.497" yaw="1818.497" roll="1454.797" />
+          <drag forward="500" reverse="400" horizontal="2766.936" vertical="2766.936" pitch="700" yaw="700" roll="700" />
+        </physics>
+        <thruster tags="extralarge" />
+        <loadouts>
+          <loadout id="default">
+            <macros>
+              <engine macro="engine_tfm_xl_carrier_02_allround_01_mk1_macro" path="../con_engine_01" />
+              <shield macro="shield_xen_xl_standard_02_mk1_macro" path="../con_shield_xl_01" optional="1" />
+              <shield macro="shield_xen_xl_standard_02_mk1_macro" path="../con_shield_xl_02" optional="1" />
+              <shield macro="shield_xen_xl_standard_02_mk1_macro" path="../con_shield_xl_03" optional="1" />
+              <shield macro="shield_xen_xl_standard_02_mk1_macro" path="../con_shield_xl_04" optional="1" />
+              <shield macro="ishield_xen_xl_carrier_01_a_macro" path="../con_ishield_01" optional="1" />
 
-            <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../con_shieldgen_xl_1" optional="1" />
-            <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../con_shieldgen_xl_2" optional="1" />
-            <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../con_shieldgen_xl_3" optional="1" />
-            <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../con_shieldgen_xl_4" optional="1" />
-            <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../con_shieldgen_xl_5" optional="1" />
-            <shield macro="shield_xen_xl_standard_01_mk1_macro" path="../con_shieldgen_xl_6" optional="1" />
-            <shield macro="ishield_xen_xl_carrier_01_a_macro" path="../con_ishield_01" optional="1" />
+              <weapon macro="weapon_gen_l_waver_macro" path="../con_l_weapon_1" optional="1" />
+            </macros>
+            <groups>
+              <shields macro="shield_xen_m_standard_04_mk1_macro" path=".." group="group_bottom_right" exact="5" optional="1" />
+              <shields macro="shield_xen_m_standard_04_mk1_macro" path=".." group="group_engines" exact="6" optional="1" />
+              <shields macro="shield_xen_m_standard_04_mk1_macro" path=".." group="group_front_inside" exact="6" optional="1" />
+              <shields macro="shield_xen_m_standard_04_mk1_macro" path=".." group="group_mid_bottom" exact="5" optional="1" />
+              <shields macro="shield_xen_m_standard_04_mk1_macro" path=".." group="group_rear" exact="6" optional="1" />
+              <shields macro="shield_xen_m_standard_04_mk1_macro" path=".." group="group_top_left" exact="5" optional="1" />
+              <shields macro="shield_xen_m_standard_04_mk1_macro" path=".." group="group_top_right" exact="5" optional="1" />
+              <turrets macro="turret_xen_m_gatling_02_mk1_macro" path=".." group="group_bottom_right" exact="10" optional="1" />
+              <turrets macro="turret_xen_m_gatling_02_mk1_macro" path=".." group="group_front_inside" exact="12" optional="1" />
+              <turrets macro="turret_xen_m_gatling_02_mk1_macro" path=".." group="group_mid_bottom" exact="10" optional="1" />
+              <turrets macro="turret_xen_m_gatling_02_mk1_macro" path=".." group="group_rear" exact="12" optional="1" />
+              <turrets macro="turret_xen_m_gatling_02_mk1_macro" path=".." group="group_top_left" exact="10" optional="1" />
+              <turrets macro="turret_xen_m_gatling_02_mk1_macro" path=".." group="group_top_right" exact="10" optional="1" />
 
-            <weapon macro="weapon_gen_l_waver_macro" path="../con_l_weapon_1" optional="1" />
-          </macros>
-          <groups>
-            <shields macro="shield_xen_xl_standard_01_mk1_macro" path=".." group="capital-engines" exact="1" optional="1" />
-            <turrets macro="turret_xen_l_obliterator_inv_macro" path=".." group="turrets" exact="12" optional="1" />
-          </groups>
-
-          <ammunition>
-            <ammunition macro="countermeasure_flares_01_macro" min="0" max="100" optional="1" />
-          </ammunition>
-          <virtualmacros>
-            <thruster macro="thruster_gen_xl_allround_01_mk1_macro" />
-          </virtualmacros>
-        </loadout>
-      </loadouts>
-      <capture allow="0" />
-      <ship type="carrier" />
-    </properties>
-    <connections>
-      <connection ref="connection_cockpit">
-        <macro ref="cockpit_gen_invisible_01_macro" connection="ship" />
-      </connection> 
-
-      <connection ref="con_shipstorage_01">
-        <macro ref="shipstorage_gen_s_cap58_macro" connection="object" />
-      </connection>
-
-
-      <connection ref="con_launchtube_arg_s_01_a">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="con_launchtube_arg_s_01_j">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="con_launchtube_arg_s_01_k">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="con_launchtube_arg_s_01_l">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="con_launchtube_arg_s_01_m">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="con_launchtube_arg_s_01_n">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="con_launchtube_arg_s_01_o">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="con_launchtube_arg_s_01_p">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="con_launchtube_arg_s_01_q">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="con_launchtube_arg_s_01_r">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="launchtube_arg_s_01_b">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="launchtube_arg_s_01_c">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="launchtube_arg_s_01_d">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="launchtube_arg_s_01_e">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="launchtube_arg_s_01_f">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="launchtube_arg_s_01_g">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="launchtube_arg_s_01_h">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-      <connection ref="launchtube_arg_s_01_i">
-        <macro ref="launchtube_xen_s_vro_macro" connection="Connection02" />
-      </connection>
-    </connections>
-  </macro>
-</macros>
+              <turrets macro="turret_xen_l_obliterator_inv_macro" path=".." group="turrets" exact="12" optional="1" />
+            </groups>
+            <ammunition>
+              <ammunition min="0" max="40" optional="1" />
+            </ammunition>
+            <virtualmacros>
+              <thruster macro="thruster_gen_xl_allround_01_mk1_macro" />
+            </virtualmacros>
+          </loadout>
+        </loadouts>
+        <capture allow="0" />
+        <ship type="battleship" />
+      </properties>
+      <connections>
+        <connection ref="con_cockpit_01">
+          <macro ref="cockpit_gen_invisible_01_macro" connection="ship" />
+        </connection>
+        <connection ref="con_dock_xs">
+          <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+        </connection>
+        <connection ref="con_launchtube_s_01_a">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_b">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_c">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_d">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_e">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_f">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_g">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_h">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_i">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_j">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_k">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_l">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_m">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_n">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_o">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_p">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_q">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_launchtube_s_01_r">
+          <macro ref="launchtube_xen_s_01_macro" connection="Connection02" />
+        </connection>
+        <connection ref="con_shipstorage_s_01">
+          <macro ref="shipstorage_gen_s_02_macro" connection="object" />
+        </connection>
+        <connection ref="con_shipstorage_xs_01">
+          <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+        </connection>
+      </connections>
+    </macro>
+  </macros>

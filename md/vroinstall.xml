@@ -200,6 +200,11 @@
 
             <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_xen_l_terraformer_macro"/>
 
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_l_flagship_macro"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_m_corvette_02_macro"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_s_fighter_04_macro"/>
+            <append_to_list name="$vro_ishield_ware_list" exact="ware.ishield_ter_s_xperimental_01_macro"/>
+
             <do_all exact="$vro_ishield_ware_list.count" counter="$i">
               <set_value name="$Warescontainer" exact="$vro_ishield_ware_list.{$i}.objectmacro" />
               <add_encyclopedia_entry type="shieldgentypes" item="$Warescontainer.id" />

@@ -2,8 +2,12 @@
 
   <diff> 
   <!-- Boron DLC -->
-<add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_boron1']/player/ship/loadout/macros">
-  <shield macro="ishield_arg_s_scout_01_a_macro" path="../con_ishield_01" optional="true" />
+  <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_boron1']/player/ship/loadout/macros">
+    <shield macro="ishield_arg_s_scout_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  
+<add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_intro']/player/ship/loadout/macros">
+  <shield macro="ishield_arg_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
 </add>
 
   <replace sel="//gamestarts/gamestart[@id='x4ep1_gamestart_fight']/player/ship/loadout/ammunition">
@@ -31,6 +35,7 @@
             <ammunition macro="eq_arg_satellite_01_macro" exact="10" optional="true" />
           </ammunition>
  </replace>
+
 
  <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_tutorial2']/player/ship/loadout/macros">
   <shield macro="ishield_par_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
