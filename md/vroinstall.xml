@@ -3,7 +3,7 @@
 <mdscript name="Vroinstall">
   <cues>
     <!-- define the current version of the cue -->
-    <cue name="VRO_main" version="13">
+    <cue name="VRO_main" version="14">
       <conditions>
         <check_any>
           <event_cue_signalled cue="md.Setup.GameStart" />
@@ -16,7 +16,7 @@
          <show_help duration="10s" custom="'Please visit Egosoft forum mod thread for mod description and latest VRO patchnotes.'"/>
       </actions>
       <!-- if a cue is running that has a version like sinceversion or older then the patch will be applied -->
-      <patch sinceversion="13">
+      <patch sinceversion="14">
         <!-- simple reset so the sub cue is called again. -->
         <reset_cue cue="this"/>
       </patch>
@@ -210,6 +210,47 @@
               <add_encyclopedia_entry type="shieldgentypes" item="$Warescontainer.id" />
             </do_all>
             <show_help duration="10s" custom="'VRO - internal shield generators info added/updated in encyclopedia.'"/>
+
+            <!-- Adding all timelines blueprints -->
+            <add_blueprints wares="[ware.ship_gen_s_racer_01_a, ware.engine_gen_s_racer_01_mk2, ware.shield_gen_s_racer_01_mk1,]"/>
+            <add_blueprints wares="[ware.ship_ter_s_xperimental_01_a, ware.engine_ter_s_virtual_01_mk1, ware.shield_ter_s_virtual_01_mk1, ware.weapon_ter_s_laser_02_mk1, ware.weapon_ter_s_plasma_01_mk1]"/>
+            <add_blueprints wares="[ware.ship_ter_s_fighter_04_a,
+                                                   ware.shield_ter_s_virtual_01_mk1,
+                                                   ware.engine_ter_s_virtual_01_mk1,
+                                                   ware.weapon_ter_s_laser_02_mk1]"/>
+            <add_blueprints wares="[ware.ship_ter_m_corvette_02_a,
+                                                   ware.shield_ter_m_virtual_01_mk1,
+                                                   ware.engine_ter_m_virtual_01_mk1,
+                                                   ware.weapon_ter_m_laser_02_mk1,
+                                                   ware.turret_ter_m_laser_03_mk1]"/>
+            <add_blueprints wares="[ware.ship_ter_l_flagship_01_a,
+                                                   ware.shield_ter_l_standard_02_mk1,
+                                                   ware.shield_ter_l_standard_02_mk2,
+                                                   ware.shield_ter_l_standard_02_mk3,
+                                                   ware.shield_ter_m_standard_04_mk1,
+                                                   ware.shield_ter_m_standard_04_mk2,
+                                                   ware.shield_ter_m_standard_04_mk3,
+                                                   ware.engine_ter_l_allround_02_mk1,
+                                                   ware.turret_ter_m_laser_04_mk1]"/>
+            <add_blueprints wares="[ware.ship_arg_s_racer_01_a,
+                                                   ware.engine_arg_s_racer_01_mk1,
+                                                   ware.shield_arg_s_racer_01_mk1]"/>
+            <add_blueprints wares="[ware.ship_tel_s_racer_01_a,
+                                                   ware.engine_tel_s_racer_01_mk1,
+                                                   ware.shield_tel_s_racer_01_mk1]"/>
+            <add_blueprints wares="[ware.ship_par_s_racer_01_a,
+                                                   ware.engine_par_s_racer_01_mk1,
+                                                   ware.shield_par_s_racer_01_mk1]"/>
+            <add_blueprints wares="[ware.module_conn_arg_antigonearc_01,
+                                                   ware.module_conn_arg_antigonescaffolding_01,
+                                                   ware.module_conn_arg_antigonestraight_01,
+                                                   ware.module_hab_arg_antigonepillar_01,
+                                                   ware.module_hab_arg_antigonespire_01,
+                                                   ware.shield_ter_m_standard_04_mk2,
+                                                   ware.shield_ter_m_standard_04_mk3,
+                                                   ware.engine_ter_l_allround_02_mk1,
+                                                   ware.turret_ter_m_laser_04_mk1]"/>
+
           </actions>
         </cue> 
 
