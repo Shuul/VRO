@@ -51,7 +51,7 @@
   </replace>
 
   <replace sel="//droplists/droplist[@id='hidden_rare_lockbox']/drop[@macro='sm_gen_ammo_01_macro']">
-    <drop macro="sm_gen_ammo_01_macro" chance="10">
+    <drop macro="sm_gen_ammo_01_macro" chance="50">
       <collectable>
         <ammo selection="random">
           <select macro="missile_tornado_macro" weight="2" min="2" max="4"/>
@@ -61,10 +61,33 @@
           <select macro="missile_disruptor_macro" weight="11" min="2" max="4"/>
           <select macro="missile_hornet_macro" weight="13" min="1" max="3"/>
           <select macro="missile_wildfire_macro" weight="19" min="2" max="4"/>
-          <select macro="missile_hammerhead_macro" weight="50" min="1" max="3"/>
+          <select macro="missile_hammerhead_macro" weight="17" min="1" max="3"/>
           <select macro="missile_mosquito_macro" weight="23" min="2" max="4"/>
-          <select macro="missile_thunderbolt_macro" weight="50" min="1" max="3"/>
-          <select macro="missile_cyclone_macro" weight="40" min="2" max="4"/>
+          <select macro="missile_thunderbolt_macro" weight="19" min="1" max="3"/>
+          <select macro="missile_cyclone_macro" weight="29" min="2" max="4"/>
+          <select macro="missile_aurora_macro" weight="41" min="2" max="4"/>
+          <select macro="missile_dragonfly_macro" weight="31" min="1" max="3"/>
+          <select macro="missile_firefly_macro" weight="43" min="2" max="4"/>
+          <select macro="missile_firelance_macro" weight="37" min="1" max="3"/>
+        </ammo>
+      </collectable>
+    </drop>
+  </replace>
+  <replace sel="//droplists/droplist[@id='hidden_rare_lockbox']/drop[@macro='sm_gen_ammo_02_macro']">
+    <drop macro="sm_gen_ammo_02_macro" chance="20">
+      <collectable>
+        <ammo selection="random">
+          <select macro="missile_tornado_macro" weight="2" min="2" max="4"/>
+          <select macro="missile_beluga_macro" weight="5" min="1" max="3"/>
+          <select macro="missile_hurricane_macro" weight="3" min="1" max="3"/>
+          <select macro="missile_wasp_macro" weight="7" min="2" max="4"/>
+          <select macro="missile_disruptor_macro" weight="11" min="2" max="4"/>
+          <select macro="missile_hornet_macro" weight="13" min="1" max="3"/>
+          <select macro="missile_wildfire_macro" weight="19" min="2" max="4"/>
+          <select macro="missile_hammerhead_macro" weight="17" min="1" max="3"/>
+          <select macro="missile_mosquito_macro" weight="23" min="2" max="4"/>
+          <select macro="missile_thunderbolt_macro" weight="19" min="1" max="3"/>
+          <select macro="missile_cyclone_macro" weight="29" min="2" max="4"/>
           <select macro="missile_aurora_macro" weight="41" min="2" max="4"/>
           <select macro="missile_dragonfly_macro" weight="31" min="1" max="3"/>
           <select macro="missile_firefly_macro" weight="43" min="2" max="4"/>
@@ -235,5 +258,57 @@
       </collectable>
     </drop>
   </replace>
+
+  <replace sel="//droplists/droplist[@id='ship_medium_civilian']/drop[@macro='sm_gen_ammo_01_macro']">
+    <drop macro="sm_gen_ammo_01_macro" chance="50">
+      <collectable>
+        <ammo selection="random">
+          <select macro="missile_wraith_macro" weight="1" min="1" max="3"/>
+          <select macro="missile_shadow_macro" weight="1" min="1" max="3"/>
+          <select macro="missile_aurora_macro" weight="2" min="2" max="4"/>
+          <select macro="missile_dragonfly_macro" weight="5" min="1" max="3"/>
+          <select macro="missile_hurricane_macro" weight="3" min="1" max="3"/>
+          <select macro="missile_wasp_macro" weight="7" min="2" max="4"/>
+          <select macro="missile_disruptor_macro" weight="11" min="2" max="4"/>
+          <select macro="missile_tempest_macro" weight="13" min="1" max="3"/>
+          <select macro="missile_wildfire_macro" weight="19" min="2" max="4"/>
+          <select macro="missile_hornet_macro" weight="17" min="1" max="3"/>
+          <select macro="missile_silkworm_macro" weight="23" min="2" max="4"/>
+          <select macro="missile_thunderbolt_macro" weight="19" min="1" max="3"/>
+          <select macro="missile_cyclone_macro" weight="29" min="2" max="4"/>
+          <select macro="missile_flycatcher_macro" weight="41" min="2" max="4"/>
+          <select macro="missile_tornado_macro" weight="31" min="1" max="3"/>
+          <select macro="missile_firefly_macro" weight="43" min="2" max="4"/>
+          <select macro="missile_firelance_macro" weight="37" min="1" max="3"/>
+        </ammo>
+      </collectable>
+    </drop>
+  </replace>
+  <replace sel="//droplists/droplist[@id='ship_medium_civilian']/drop[@macro='sm_gen_ammo_02_macro']">
+    <drop macro="sm_gen_ammo_02_macro" chance="20">
+      <collectable>
+        <ammo selection="random">
+          <select macro="missile_wraith_macro" weight="1" min="1" max="3"/>
+          <select macro="missile_shadow_macro" weight="1" min="1" max="3"/>
+          <select macro="missile_aurora_macro" weight="2" min="2" max="4"/>
+          <select macro="missile_dragonfly_macro" weight="5" min="1" max="3"/>
+          <select macro="missile_hurricane_macro" weight="3" min="1" max="3"/>
+          <select macro="missile_wasp_macro" weight="7" min="2" max="4"/>
+          <select macro="missile_disruptor_macro" weight="11" min="2" max="4"/>
+          <select macro="missile_tempest_macro" weight="13" min="1" max="3"/>
+          <select macro="missile_wildfire_macro" weight="19" min="2" max="4"/>
+          <select macro="missile_hornet_macro" weight="17" min="1" max="3"/>
+          <select macro="missile_silkworm_macro" weight="23" min="2" max="4"/>
+          <select macro="missile_thunderbolt_macro" weight="19" min="1" max="3"/>
+          <select macro="missile_cyclone_macro" weight="29" min="2" max="4"/>
+          <select macro="missile_flycatcher_macro" weight="41" min="2" max="4"/>
+          <select macro="missile_tornado_macro" weight="31" min="1" max="3"/>
+          <select macro="missile_firefly_macro" weight="43" min="2" max="4"/>
+          <select macro="missile_firelance_macro" weight="37" min="1" max="3"/>
+        </ammo>
+      </collectable>
+    </drop>
+  </replace>
+
 
 </diff>
