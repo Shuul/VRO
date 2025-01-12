@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<diff> 
+<diff>
   <replace sel="//macros">
     <macros>
       <macro name="engine_spl_m_combat_01_mk1_macro" class="engine">
         <component ref="engine_spl_m_combat_01_mk1" />
         <properties>
           <identification name="{20107,2634}" basename="{20107,2631}" shortname="{20107,2635}" makerrace="split" description="{20107,2632}" mk="1" />
-          <boost duration="15" thrust="6" attack="1.5" release="1.25" />
+      <boost duration="21.86" recharge="128" thrust="2.62" acceleration="3.72" attack="0.25" release="4" coast="1.15" />
           <travel charge="1" thrust="11.6" attack="15" release="10" />
           <thrust forward="1264" reverse="1242" />
           <angular />
           <hull integrated="1" />
           <effects>
             <boosting ref="arg_boost_fx_m" />
+            <traveling ref="gen_traveldrive_fx_m" />
           </effects>
+
           <sounds>
             <enginedetail ref="enginedetail_ship_m_03" />
           </sounds>
+          <decelerationcurve>
+            <point position="1.01" value="1" />
+            <point position="1.2" value="2.2" />
+            <point position="1.6" value="4.5" />
+            <point position="2" value="8" />
+            <point position="2.4" value="11" />
+          </decelerationcurve>
+          <strafecurve>
+            <point position="1.01" value="1" />
+            <point position="1.25" value="3" />
+            <point position="1.75" value="6" />
+            <point position="2.1" value="8" />
+            <point position="2.5" value="11" />
+          </strafecurve>
         </properties>
       </macro>
     </macros>

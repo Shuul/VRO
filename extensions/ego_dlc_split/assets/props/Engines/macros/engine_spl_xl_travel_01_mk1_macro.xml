@@ -5,18 +5,33 @@
       <macro name="engine_spl_xl_travel_01_mk1_macro" class="engine">
         <component ref="engine_spl_xl_travel_01_mk1" />
         <properties>
-          <identification name="{20107,4094}" basename="{20107,4091}" shortname="{20107,4095}" makerrace="split" description="{20107,4092}" mk="1" />
+      <boost duration="28.56" recharge="128" thrust="2" acceleration="1.77" attack="10" release="3" coast="1.25" />
           <boost duration="70" thrust="5" attack="15" release="3" />
           <travel charge="12" thrust="30" attack="27" release="37.5" />
           <thrust forward="14900" reverse="12864" />
           <angular />
           <hull max="28550" threshold="0.3" />
-          <effects>
-            <boosting ref="arg_boost_fx_xl" />
-          </effects>
-          <sounds>
-            <enginedetail ref="enginedetail_ship_xl_01" />
-          </sounds>
+      <effects>
+        <boosting ref="arg_boost_fx_xl" />
+        <traveling ref="gen_traveldrive_fx_xl" />
+      </effects>
+      <sounds>
+        <enginedetail ref="enginedetail_ship_xl_01" />
+      </sounds>
+      <decelerationcurve>
+        <point position="1.01" value="1" />
+        <point position="1.25" value="3" />
+        <point position="1.75" value="6" />
+        <point position="2.1" value="15" />
+        <point position="2.5" value="21" />
+      </decelerationcurve>
+      <strafecurve>
+        <point position="1.01" value="1" />
+        <point position="1.25" value="3" />
+        <point position="1.75" value="6" />
+        <point position="2.1" value="15" />
+        <point position="2.5" value="21" />
+      </strafecurve>
         </properties>
       </macro>
     </macros>
