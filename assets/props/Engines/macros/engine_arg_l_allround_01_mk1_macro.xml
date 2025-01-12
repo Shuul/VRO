@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Exported by: Michael (192.168.3.81) at 04.11.2018_17-44-00-->
-<diff> 
+<diff>
   <replace sel="//macros">
-<macros>
-  <macro name="engine_arg_l_allround_01_mk1_macro" class="engine">
-    <component ref="engine_arg_l_allround_01_mk1" />
-    <properties>
-      <identification name="{20107,3004}" basename="{20107,3001}" shortname="{20107,3005}" makerrace="argon" description="{20107,3002}" mk="1" />
-      <boost duration="45" thrust="2" attack="10" release="2.5" />
-      <travel charge="10" thrust="30" attack="20" release="18" />
-      <thrust forward="5283" reverse="5591" />
-      <angular />
-      <hull max="25330" threshold="0.3" />
-      <effects>
-        <boosting ref="arg_boost_fx_l" />
-      </effects>
-      <sounds>
-        <enginedetail ref="enginedetail_ship_l_01" />
-      </sounds>
-    </properties>
-  </macro>
-</macros>
-    </replace>
+    <macros>
+      <macro name="engine_arg_l_allround_01_mk1_macro" class="engine">
+        <component ref="engine_arg_l_allround_01_mk1" />
+        <properties>
+          <identification name="{20107,3004}" basename="{20107,3001}" shortname="{20107,3005}" makerrace="argon" description="{20107,3002}" mk="1" />
+          <boost duration="27" recharge="92" thrust="3.4" acceleration="4.33" attack="10" release="5" coast="1.2" />
+          <travel charge="10" thrust="30" attack="20" release="18" />
+          <thrust forward="5283" reverse="5591" />
+          <angular />
+          <hull max="25330" threshold="0.3" />
+          <effects>
+            <boosting ref="arg_boost_fx_l" />
+            <traveling ref="gen_traveldrive_fx_l" />
+          </effects>
+          <sounds>
+            <enginedetail ref="enginedetail_ship_l_01" />
+          </sounds>
+          <decelerationcurve>
+            <point position="1.01" value="1" />
+            <point position="1.1" value="2" />
+            <point position="1.5" value="5" />
+            <point position="2.1" value="14" />
+            <point position="2.5" value="20" />
+          </decelerationcurve>
+          <strafecurve>
+            <point position="1.01" value="1" />
+            <point position="1.1" value="2" />
+            <point position="1.5" value="5" />
+            <point position="2.1" value="12" />
+            <point position="2.5" value="18" />
+          </strafecurve>
+        </properties>
+      </macro>
+    </macros>
+  </replace>
 </diff>
 
 <!-- <macros>

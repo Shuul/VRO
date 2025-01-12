@@ -8,17 +8,32 @@
     <component ref="engine_arg_s_travel_01_mk3" />
     <properties>
       <identification name="{20107,1484}" basename="{20107,1481}" shortname="{20107,1485}" makerrace="argon" description="{20107,1482}" mk="3" />
-      <boost duration="25" thrust="3.5" attack="4" release="2" />
+      <boost duration="9" recharge="92" thrust="3.4" acceleration="5.8" attack="0.25" release="3" coast="1.15" />
       <travel charge="0.5" thrust="19" attack="30" release="30" />
       <thrust forward="557" reverse="568" />
       <angular />
       <hull integrated="1" />
       <effects>
         <boosting ref="arg_boost_fx_s" />
+        <traveling ref="gen_traveldrive_fx_s" />
       </effects>
       <sounds>
         <enginedetail ref="enginedetail_ship_02" />
       </sounds>
+      <decelerationcurve>
+        <point position="1.1" value="1" />
+        <point position="1.25" value="3" />
+        <point position="1.75" value="5" />
+        <point position="2.1" value="7" />
+        <point position="2.5" value="10" />
+      </decelerationcurve>
+      <strafecurve>
+        <point position="1.1" value="1" />
+        <point position="1.25" value="2.8" />
+        <point position="1.75" value="6" />
+        <point position="2.1" value="8" />
+        <point position="2.5" value="10" />
+      </strafecurve>
     </properties>
   </macro>
 </macros>

@@ -8,14 +8,31 @@
     <component ref="engine_xen_m_travel_01_mk1" />
     <properties>
       <identification name="{20107,2434}" basename="{20107,2431}" shortname="{20107,2435}" makerrace="xenon" description="{20107,2432}" mk="1" />
-      <boost duration="30" thrust="2.5" attack="5" release="1" />
+      <boost duration="10" recharge="150" thrust="3" acceleration="8" attack="0.25" release="0" coast="0" />
       <travel charge="0.5" thrust="16" attack="45" release="30" />
       <thrust forward="1280" reverse="1125" />
       <angular />
       <hull integrated="1" />
+      <effects>
+        <traveling ref="gen_traveldrive_fx_m" />
+      </effects>
       <sounds>
-        <enginedetail ref="enginedetail_ship_m_01" />
+        <enginedetail ref="enginedetail_ship_m_02" />
       </sounds>
+      <decelerationcurve>
+        <point position="1.01" value="1" />
+        <point position="1.25" value="2.2" />
+        <point position="1.75" value="4.5" />
+        <point position="2.1" value="8" />
+        <point position="2.5" value="11" />
+      </decelerationcurve>
+      <strafecurve>
+        <point position="1.01" value="1" />
+        <point position="1.25" value="3" />
+        <point position="1.75" value="6" />
+        <point position="2.1" value="8" />
+        <point position="2.5" value="11" />
+      </strafecurve>
     </properties>
   </macro>
 </macros>

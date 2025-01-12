@@ -8,17 +8,33 @@
     <component ref="engine_tel_m_allround_01_mk1" />
     <properties>
       <identification name="{20107,2024}" basename="{20107,2021}" shortname="{20107,2025}" makerrace="teladi" description="{20107,2022}" mk="1" />
-      <boost duration="20" thrust="4" attack="2.25" release="1.5" />
+      <boost duration="26.4" recharge="120" thrust="2.25" acceleration="3.04" attack="0.25" release="5" coast="1.2" />
       <travel charge="1.5" thrust="21.6" attack="20" release="16" />
       <thrust forward="1120" reverse="1008" />
       <angular />
       <hull integrated="1" />
       <effects>
         <boosting ref="arg_boost_fx_m" />
+        <traveling ref="gen_traveldrive_fx_m" />
       </effects>
       <sounds>
         <enginedetail ref="enginedetail_ship_m_02" />
       </sounds>
+      <decelerationcurve>
+        <point position="1.01" value="1" />
+        <point position="1.25" value="3" />
+        <point position="1.75" value="6" />
+        <point position="2.1" value="8" />
+        <point position="2.5" value="10" />
+      </decelerationcurve>
+      <strafecurve>
+        <point position="0.8" value="1" />
+        <point position="1.1" value="1.15" />
+        <point position="1.25" value="3.5" />
+        <point position="1.7" value="6" />
+        <point position="2.1" value="8" />
+        <point position="2.5" value="10" />
+      </strafecurve>
     </properties>
   </macro>
 </macros>

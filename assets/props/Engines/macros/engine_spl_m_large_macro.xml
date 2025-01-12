@@ -4,17 +4,34 @@
         <component ref="engine_spl_m_large" />
         <properties>
           <identification name="{20107,3084}" basename="{20107,3081}" shortname="{20107,3085}" makerrace="split" description="{20107,3082}" mk="1" />
-          <boost duration="55" thrust="4" attack="10" release="2" />
+          <boost duration="30" recharge="136" thrust="2.2" acceleration="1.47" attack="10" release="3" coast="1.25" />
           <travel charge="10" thrust="25" attack="21" release="16" />
           <thrust forward="5600" reverse="5759" />
           <angular />
           <hull max="16180" threshold="0.3" />
           <effects>
             <boosting ref="arg_boost_fx_m" />
+        <traveling ref="gen_traveldrive_fx_m" />
           </effects>
           <sounds>
             <enginedetail ref="enginedetail_ship_l_01" />
           </sounds>
+      <decelerationcurve>
+        <point position="1.01" value="1" />
+        <point position="1.4" value="2" />
+        <point position="1.8" value="5" />
+        <point position="2.1" value="10" />
+        <point position="2.5" value="15" />
+      </decelerationcurve>
+      <strafecurve>
+        <point position="1.01" value="1" />
+        <point position="1.25" value="2" />
+        <point position="1.8" value="5" />
+        <point position="2.1" value="10" />
+        <point position="2.4" value="18" />
+        <point position="2.6" value="28" />
+        <point position="2.9" value="35" />
+      </strafecurve>
         </properties>
       </macro>
     </macros>  
