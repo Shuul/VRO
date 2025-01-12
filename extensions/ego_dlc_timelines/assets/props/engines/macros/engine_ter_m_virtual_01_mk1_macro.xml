@@ -6,13 +6,32 @@
     <component ref="engine_ter_m_virtual_01" />
     <properties>
       <identification name="{20107,2844}" basename="{20107,2841}" shortname="{20107,2845}" makerrace="terran" description="{20107,2842}" mk="1" />
-      <boost duration="25" thrust="5" attack="0.25" release="1.5" />
+      <boost duration="16" recharge="100" thrust="3.4" acceleration="4.8" attack="0.13" release="3" coast="1.2" />
       <travel charge="0" thrust="14.2" attack="10" release="3" />
       <thrust forward="1407" reverse="2102" />
       <hull integrated="1" />
+      <effects>
+        <boosting ref="arg_boost_fx_m_virtual" />
+        <traveling ref="gen_traveldrive_fx_m" />
+      </effects>
       <sounds>
         <enginedetail ref="enginedetail_ship_timelines_terran_m_01" />
       </sounds>
+      <decelerationcurve>
+        <point position="1.01" value="1" />
+        <point position="1.25" value="2.5" />
+        <point position="1.75" value="5" />
+        <point position="2.1" value="9" />
+        <point position="2.5" value="13" />
+      </decelerationcurve>
+      <strafecurve>
+        <point position="0.91" value="1" />
+        <point position="1" value="1.25" />
+        <point position="1.5" value="3" />
+        <point position="1.75" value="6" />
+        <point position="2.1" value="9" />
+        <point position="2.5" value="13" />
+      </strafecurve>
     </properties>
   </macro>
 </macros>

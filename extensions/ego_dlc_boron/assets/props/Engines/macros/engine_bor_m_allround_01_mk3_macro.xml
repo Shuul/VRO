@@ -6,14 +6,38 @@
     <component ref="engine_bor_m_01" />
     <properties>
       <identification name="{20107,2834}" basename="{20107,2831}" shortname="{20107,2835}" makerrace="boron" description="{20107,2832}" mk="3" />
-      <boost duration="20" thrust="6" attack="3" release="2" />
+      <boost duration="28.6" recharge="200" thrust="4" acceleration="2.88" attack="0.35" release="4" coast="1.5" />
       <travel charge="0" thrust="18" attack="42" release="1" />
       <thrust forward="1015" reverse="1060" />
       <angular />
       <hull integrated="1" />
+      <effects>
+        <boosting ref="arg_boost_fx_m_virtual" />
+        <traveling ref="gen_traveldrive_fx_m" />
+      </effects>
       <sounds>
         <enginedetail ref="enginedetail_ship_boron_m_01" />
       </sounds>
+      <decelerationcurve>
+        <point position="1.01" value="1" />
+        <point position="1.1" value="1.5" />
+        <point position="1.2" value="3" />
+        <point position="1.3" value="4" />
+        <point position="1.4" value="7" />
+        <point position="1.75" value="10" />
+        <point position="2.1" value="12" />
+        <point position="2.4" value="16" />
+      </decelerationcurve>
+      <strafecurve>
+        <point position="0.9" value="1" />
+        <point position="0.91" value="1.5" />
+        <point position="1.1" value="3" />
+        <point position="1.2" value="4" />
+        <point position="1.4" value="7" />
+        <point position="1.75" value="10" />
+        <point position="2.1" value="12" />
+        <point position="2.4" value="16" />
+      </strafecurve>
     </properties>
   </macro>
 </macros>

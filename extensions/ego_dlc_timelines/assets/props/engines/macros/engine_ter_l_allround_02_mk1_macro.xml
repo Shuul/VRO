@@ -6,13 +6,35 @@
     <component ref="engine_ter_l_allround_02_mk1" />
     <properties>
       <identification name="{20107,3154}" basename="{20107,3151}" shortname="{20107,3155}" makerrace="terran" description="{20107,3152}" mk="1" />
-      <boost duration="100" thrust="4" attack="10" release="2.5" />
+      <boost duration="32" recharge="90" thrust="2.4" acceleration="2.2" attack="7" release="3" coast="1.4" />
       <travel charge="8" thrust="34" attack="10" release="8" />
       <thrust forward="5083" reverse="5591" />
       <hull max="6000" threshold="0.3" />
+      <effects>
+        <traveling ref="gen_traveldrive_fx_l" />
+      </effects>
       <sounds>
         <enginedetail ref="enginedetail_ship_timelines_terran_l_01" />
       </sounds>
+      <decelerationcurve>
+        <point position="1.01" value="1" />
+        <point position="1.1" value="1.2" />
+        <point position="1.3" value="2" />
+        <point position="1.5" value="3" />
+        <point position="1.7" value="4" />
+        <point position="2.1" value="5" />
+        <point position="2.5" value="8" />
+      </decelerationcurve>
+      <strafecurve>
+        <point position="0.5" value="1" />
+        <point position="0.51" value="1.15" />
+        <point position="0.7" value="1.2" />
+        <point position="1.05" value="1.3" />
+        <point position="1.3" value="2" />
+        <point position="1.7" value="5" />
+        <point position="2.1" value="7" />
+        <point position="2.5" value="10" />
+      </strafecurve>
     </properties>
   </macro>
 </macros>

@@ -14,9 +14,25 @@
         <software ware="software_targetmk1" compatible="1" />
         <software ware="software_trademk1" compatible="1" />
       </software>
+      <boost rechargedelay="2" />
+      <jerk>
+        <forward accel="0.7" decel="0.8" ratio="3" />
+        <forward_boost accel="1" />
+        <forward_travel accel="0.5" decel="0.9" ratio="3" />
+        <strafe value="0.9" />
+        <angular value="1" />
+      </jerk>
       <storage missile="0" />
       <hull max="4500" />
       <secrecy level="1" />
+      <steeringcurve>
+        <point position="1.01" value="1" />
+        <point position="1.2" value="0.7" />
+        <point position="1.5" value="0.4" />
+        <point position="2" value="0.27" />
+        <point position="2.2" value="0.2" />
+        <point position="2.5" value="0.12" />
+      </steeringcurve>
       <purpose primary="racing" />
       <people capacity="0" />
       <sounds>
@@ -26,6 +42,7 @@
       <physics mass="7.609">
         <inertia pitch="1.061" yaw="1.061" roll="0.848" />
         <drag forward="1.1" reverse="8.627" horizontal="3.866" vertical="2.866" pitch="3.472" yaw="3.472" roll="3.472" />
+        <accfactors forward="1.5" reverse="1.5" horizontal="1.6" vertical="1.6" />
       </physics>
       <thruster tags="small" />
       <loadouts>

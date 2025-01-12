@@ -15,15 +15,33 @@
         <software ware="software_targetmk1" compatible="1" />
         <software ware="software_trademk1" compatible="1" />
       </software>
+      <jerk>
+        <forward accel="0.4" decel="0.3" ratio="3" />
+        <forward_boost accel="0.4" ratio="3" />
+        <forward_travel accel="0.4" decel="0.9" ratio="3" />
+        <strafe value="0.8" />
+        <angular value="0.8" />
+      </jerk>
       <storage missile="15" />
       <hull max="2600" />
       <glow engine="1" />
       <secrecy level="1" />
+      <steeringcurve>
+        <point position="0.91" value="1" />
+        <point position="0.92" value="0.9" />
+        <point position="1.1" value="0.6" />
+        <point position="1.3" value="0.4" />
+        <point position="1.7" value="0.25" />
+        <point position="2" value="0.18" />
+        <point position="2.2" value="0.1" />
+        <point position="2.6" value="0.07" />
+      </steeringcurve>
       <purpose primary="fight" />
       <people capacity="1" />
       <physics mass="5.582">
         <inertia pitch="0.73" yaw="0.73" roll="0.56" />
         <drag forward="1.6" reverse="8.08" horizontal="3.823" vertical="3.823" pitch="1.94" yaw="1.94" roll="1.94" />
+        <accfactors forward="0.8" />
       </physics>
       <thruster tags="small" />
       <ship type="interceptor" />
