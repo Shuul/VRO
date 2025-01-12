@@ -16,9 +16,24 @@
             <software ware="software_targetmk1" default="1" />
             <software ware="software_trademk1" compatible="1" />
           </software>
+      <jerk>
+        <forward accel="0.4" decel="0.8" ratio="3" />
+        <forward_boost accel="0.5" ratio="3" />
+        <forward_travel accel="0.4" decel="0.9" ratio="3" />
+        <strafe value="0.8" />
+        <angular value="1" />
+      </jerk>
           <storage missile="9" />
           <hull max="4500" />
           <secrecy level="2" />
+      <steeringcurve>
+        <point position="1.01" value="1" />
+        <point position="1.2" value="0.8" />
+        <point position="1.5" value="0.6" />
+        <point position="2" value="0.32" />
+        <point position="2.4" value="0.22" />
+        <point position="2.7" value="0.18" />
+      </steeringcurve>
           <purpose primary="fight" />
           <people capacity="2" />
           <sounds>

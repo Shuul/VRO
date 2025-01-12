@@ -7,17 +7,33 @@
         <component ref="engine_ter_s_travel_01_mk1" />
         <properties>
           <identification name="{20107,1774}" basename="{20107,1771}" shortname="{20107,1775}" makerrace="terran" description="{20107,1772}" mk="1" />
-          <boost duration="35" thrust="2.8" attack="2" release="1.5" />
+      <boost duration="15.3" recharge="100" thrust="2.55" acceleration="2.7" attack="0.25" release="2" coast="1.25" />
           <travel charge="0.5" thrust="18" attack="10" release="9" />
           <thrust forward="428" reverse="437" />
           <angular />
           <hull integrated="1" />
-          <effects>
-            <boosting ref="arg_boost_fx_s" />
-          </effects>
-          <sounds>
-            <enginedetail ref="enginedetail_ship_terran_s_03" />
-          </sounds>
+      <effects>
+        <boosting ref="arg_boost_fx_s" />
+        <traveling ref="gen_traveldrive_fx_s" />
+      </effects>
+      <sounds>
+        <enginedetail ref="enginedetail_ship_terran_s_01" />
+      </sounds>
+      <decelerationcurve>
+        <point position="1.01" value="1" />
+        <point position="1.25" value="4" />
+        <point position="1.75" value="8" />
+        <point position="2.1" value="10" />
+        <point position="2.5" value="14" />
+      </decelerationcurve>
+      <strafecurve>
+        <point position="0.8" value="1" />
+        <point position="1" value="1.5" />
+        <point position="1.25" value="4" />
+        <point position="1.75" value="8" />
+        <point position="2.1" value="10" />
+        <point position="2.5" value="14" />
+      </strafecurve>
         </properties>
       </macro>
     </macros>

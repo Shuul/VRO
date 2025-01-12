@@ -16,6 +16,13 @@
             <software ware="software_targetmk1" default="1" />
             <software ware="software_trademk1" compatible="1" />
           </software>
+      <jerk>
+        <forward accel="0.4" decel="0.8" ratio="3" />
+        <forward_boost accel="0.7" ratio="2" />
+        <forward_travel accel="0.3" decel="0.9" ratio="3" />
+        <strafe value="0.7" />
+        <angular value="0.5" />
+      </jerk>
           <explosiondamage value="5000" />
           <storage missile="30" />
           <hull max="49000" />
@@ -28,6 +35,7 @@
           <physics mass="29.28">
             <inertia pitch="9.4" yaw="9.4" roll="9.01" />
             <drag forward="11.5" reverse="16.203" horizontal="15.622" vertical="15.622" pitch="18" yaw="18" roll="18" />
+        <accfactors reverse="0.9" horizontal="1.45" vertical="1.45" />
           </physics>
           <thruster tags="medium" />
           <ship type="corvette" />

@@ -7,17 +7,35 @@
         <component ref="engine_ter_m_combat_01_mk3" />
         <properties>
           <identification name="{20107,2774}" basename="{20107,2771}" shortname="{20107,2775}" makerrace="terran" description="{20107,2772}" mk="3" />
-          <boost duration="25" thrust="5" attack="0.25" release="1.5" />
+      <boost duration="27" recharge="90" thrust="3.1" acceleration="2.61" attack="0.13" release="2" coast="1.3" />
           <travel charge="0" thrust="14.2" attack="10" release="3" />
           <thrust forward="1407" reverse="2102" />
           <angular />
           <hull integrated="1" />
-          <effects>
-            <boosting ref="arg_boost_fx_m" />
-          </effects>
-          <sounds>
-            <enginedetail ref="enginedetail_ship_terran_m_02" />
-          </sounds>
+      <effects>
+        <boosting ref="arg_boost_fx_m" />
+        <traveling ref="gen_traveldrive_fx_m" />
+      </effects>
+      <sounds>
+        <enginedetail ref="enginedetail_ship_terran_m_01" />
+      </sounds>
+      <decelerationcurve>
+        <point position="0.9" value="1" />
+        <point position="1" value="1.1" />
+        <point position="1.25" value="4" />
+        <point position="1.75" value="6" />
+        <point position="2.1" value="8" />
+        <point position="2.5" value="12" />
+      </decelerationcurve>
+      <strafecurve>
+        <point position="0.8" value="1" />
+        <point position="0.81" value="1.2" />
+        <point position="1.15" value="2" />
+        <point position="1.25" value="4" />
+        <point position="1.75" value="6" />
+        <point position="2.1" value="8" />
+        <point position="2.5" value="12" />
+      </strafecurve>
         </properties>
       </macro>
     </macros>

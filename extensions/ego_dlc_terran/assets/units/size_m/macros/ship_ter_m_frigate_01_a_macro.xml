@@ -16,10 +16,25 @@
             <software ware="software_targetmk1" default="1" />
             <software ware="software_trademk1" compatible="1" />
           </software>
+      <jerk>
+        <forward accel="0.4" decel="0.8" ratio="3" />
+        <forward_boost accel="0.7" ratio="2" />
+        <forward_travel accel="0.3" decel="0.9" ratio="3" />
+        <strafe value="0.7" />
+        <angular value="0.5" />
+      </jerk>
           <explosiondamage value="5000" />
           <storage missile="40" unit="13" />
           <hull max="39000" />
           <secrecy level="2" />
+      <steeringcurve>
+        <point position="1.01" value="1" />
+        <point position="1.15" value="0.82" />
+        <point position="1.6" value="0.55" />
+        <point position="2" value="0.32" />
+        <point position="2.5" value="0.18" />
+        <point position="2.8" value="0.13" />
+      </steeringcurve>
           <purpose primary="fight" />
           <people capacity="23" />
           <sounds>
@@ -28,6 +43,7 @@
           <physics mass="42.29">
             <inertia pitch="11" yaw="11" roll="10" />
             <drag forward="31" reverse="70.461" horizontal="13.477" vertical="13.477" pitch="17.3" yaw="17.3" roll="17.3" />
+        <accfactors forward="0.75" reverse="0.85" horizontal="1.35" vertical="1.35" />
           </physics>
           <thruster tags="medium" />
           <ship type="corvette" />
