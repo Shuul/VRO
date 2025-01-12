@@ -5,11 +5,26 @@
     <component ref="ship_kha_xl_battleship_01" />
     <properties>
       <identification name="{20101,90801}" makerrace="khaak" description="{20101,90811}" icon="ship_xl_battleship_01" />
+      <jerk>
+        <forward accel="0.2" decel="0.7" ratio="3" />
+        <forward_boost accel="0.2" ratio="3" />
+        <forward_travel accel="0.3" decel="0.7" ratio="3" />
+        <strafe value="0.3" />
+        <angular value="0.15" />
+      </jerk>
       <explosiondamage shield="7500" />
       <storage countermeasure="0" missile="0" unit="0" deployable="0" />
       <hull max="675000" />
       <threatscore value="35" />
       <secrecy level="3" />
+      <steeringcurve>
+        <point position="1.01" value="1" />
+        <point position="1.2" value="0.9" />
+        <point position="1.6" value="0.8" />
+        <point position="2.1" value="0.45" />
+        <point position="2.4" value="0.28" />
+        <point position="2.7" value="0.2" />
+      </steeringcurve>
       <purpose primary="fight" />
       <people capacity="0" />
       <sounds>
@@ -17,7 +32,7 @@
       </sounds>
       <physics mass="487.388">
         <inertia pitch="485.311" yaw="485.311" roll="388.249" />
-        <drag forward="133.108" reverse="532.433" horizontal="259.232" vertical="259.232" pitch="717.73" yaw="717.73" roll="717.73" />
+        <drag forward="133.108" reverse="532.433" horizontal="200" vertical="200" pitch="717.73" yaw="717.73" roll="717.73" />
       </physics>
       <thruster tags="extralarge" />
       <loadouts>

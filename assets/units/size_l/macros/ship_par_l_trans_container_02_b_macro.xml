@@ -18,15 +18,31 @@
         <software ware="software_targetmk1" compatible="1" />
         <software ware="software_trademk1" default="1" />
       </software>
+      <jerk>
+        <forward accel="0.2" decel="0.8" ratio="3" />
+        <forward_boost accel="0.2" ratio="3" />
+        <forward_travel accel="0.4" decel="0.9" ratio="3" />
+        <strafe value="0.4" />
+        <angular value="0.25" />
+      </jerk>
       <explosiondamage value="1000" shield="6000" />
       <storage missile="50" unit="15" />
       <hull max="69333" />
       <secrecy level="2" />
+      <steeringcurve>
+        <point position="1.01" value="1" />
+        <point position="1.2" value="0.9" />
+        <point position="1.6" value="0.8" />
+        <point position="2.1" value="0.45" />
+        <point position="2.4" value="0.28" />
+        <point position="2.7" value="0.2" />
+      </steeringcurve>
       <purpose primary="trade" />
       <people capacity="59" />
       <physics mass="310.905">
         <inertia pitch="124" yaw="124" roll="99" />
         <drag forward="90" reverse="345" horizontal="167" vertical="167" pitch="142" yaw="142" roll="142" />
+        <accfactors reverse="0.85" />
       </physics>
       <thruster tags="large" />
       <ship type="freighter" />

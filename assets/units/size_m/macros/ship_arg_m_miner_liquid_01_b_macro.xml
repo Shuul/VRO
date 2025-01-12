@@ -18,10 +18,26 @@
         <software ware="software_targetmk1" compatible="1" />
         <software ware="software_trademk1" compatible="1" />
       </software>
+      <jerk>
+        <forward accel="0.3" decel="0.8" ratio="3" />
+        <forward_boost accel="0.5" ratio="3" />
+        <forward_travel accel="0.6" decel="0.9" ratio="3" />
+        <strafe value="0.5" />
+        <angular value="0.5" />
+      </jerk>
       <explosiondamage value="1000" />
       <storage missile="20" />
       <hull max="25000" />
       <secrecy level="1" />
+      <steeringcurve>
+        <point position="1.01" value="1" />
+        <point position="1.1" value="0.8" />
+        <point position="1.3" value="0.6" />
+        <point position="1.5" value="0.35" />
+        <point position="2" value="0.25" />
+        <point position="2.3" value="0.15" />
+        <point position="2.7" value="0.15" />
+      </steeringcurve>
       <gatherrate gas="8" />
       <purpose primary="mine" />
       <people capacity="7" />
