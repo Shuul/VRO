@@ -173,7 +173,7 @@
 					<position x="19" y="-4.509056" z="-3.129244E-06"/>
 				</offset>
 				<parts>
-					<part name="detail_xl_hull_R">
+					<part name="part_cover_R">
 						<lods>
 							<lod index="0">
 								<materials>
@@ -212,7 +212,7 @@
 					<position x="-19" y="-4.509056" z="-2.831221E-07"/>
 				</offset>
 				<parts>
-					<part name="detail_xl_hull_L">
+					<part name="part_cover_L">
 						<lods>
 							<lod index="0">
 								<materials>
@@ -250,8 +250,8 @@
 				<restrictions>
 					<restriction type="rotation_x">
 						<limits>
-							<min value="-5.0 "/>
-							<max value="90 "/>
+							<min value="-5"/>
+							<max value="90"/>
 						</limits>
 					</restriction>
 				</restrictions>
@@ -411,6 +411,11 @@
 			</connection>
 			<connection name="con_turret_beam_l" tags="turret large highpower argonly component combat">
 				<offset/>
+			</connection>
+			<connection name="con_aimtarget_01" tags="aimtarget ">
+				<offset>
+					<position x="0" y="13.28383" z="0"/>
+				</offset>
 			</connection>
 		</connections>
 	</component>
