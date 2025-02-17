@@ -1,86 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-  <diff> 
+<diff>
   <!-- Boron DLC -->
   <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_boron1']/player/ship/loadout/macros">
     <shield macro="ishield_arg_s_scout_01_a_macro" path="../con_ishield_01" optional="true" />
   </add>
-  
-<add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_intro']/player/ship/loadout/macros">
-  <shield macro="ishield_arg_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
-</add>
+
+  <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_intro']/player/ship/loadout/macros">
+    <shield macro="ishield_arg_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
 
   <replace sel="//gamestarts/gamestart[@id='x4ep1_gamestart_fight']/player/ship/loadout/ammunition">
-          <ammunition>
-            <ammunition macro="missile_windstalker_macro" exact="5" optional="true" />
-            <ammunition macro="eq_arg_satellite_01_macro" exact="5" optional="true"/>
-            <ammunition macro="env_deco_nav_beacon_t1_macro" exact="5" optional="true"/>
-            <ammunition macro="eq_arg_resourceprobe_01_macro" exact="5" optional="true"/>
-          </ammunition>
- </replace>
+    <ammunition>
+      <ammunition macro="missile_windstalker_macro" exact="5" optional="true" />
+      <ammunition macro="eq_arg_satellite_01_macro" exact="5" optional="true" />
+      <ammunition macro="env_deco_nav_beacon_t1_macro" exact="5" optional="true" />
+      <ammunition macro="eq_arg_resourceprobe_01_macro" exact="5" optional="true" />
+    </ammunition>
+  </replace>
 
- <replace sel="//gamestarts/gamestart[@id='x4ep1_gamestart_tutorial2']/player/ship/loadout/ammunition">
-          <ammunition>
-            <ammunition macro="missile_guided_light_mk1_macro" exact="10" optional="true" />
-            <ammunition macro="eq_arg_satellite_01_macro" exact="5" optional="true"/>
-            <ammunition macro="env_deco_nav_beacon_t1_macro" exact="5" optional="true"/>
-            <ammunition macro="eq_arg_resourceprobe_01_macro" exact="5" optional="true"/>
-          </ammunition>
- </replace>
+  <replace sel="//gamestarts/gamestart[@id='x4ep1_gamestart_tutorial2']/player/ship/loadout/ammunition">
+    <ammunition>
+      <ammunition macro="missile_guided_light_mk1_macro" exact="10" optional="true" />
+      <ammunition macro="eq_arg_satellite_01_macro" exact="5" optional="true" />
+      <ammunition macro="env_deco_nav_beacon_t1_macro" exact="5" optional="true" />
+      <ammunition macro="eq_arg_resourceprobe_01_macro" exact="5" optional="true" />
+    </ammunition>
+  </replace>
 
-<replace sel="//gamestarts/gamestart[@id='custom_creative']/player/ship/loadout/ammunition">
-          <ammunition>
-            <ammunition macro="missile_dumbfire_light_mk1_macro" exact="20" optional="1" />
-            <ammunition macro="countermeasure_flares_01_macro" exact="4" optional="false"/>
-            <ammunition macro="eq_arg_satellite_01_macro" exact="10" optional="true" />
-          </ammunition>
- </replace>
+  <replace sel="//gamestarts/gamestart[@id='custom_creative']/player/ship/loadout/ammunition">
+    <ammunition>
+      <ammunition macro="missile_dumbfire_light_mk1_macro" exact="20" optional="1" />
+      <ammunition macro="countermeasure_flares_01_macro" exact="4" optional="false" />
+      <ammunition macro="eq_arg_satellite_01_macro" exact="10" optional="true" />
+    </ammunition>
+  </replace>
 
 
- <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_tutorial2']/player/ship/loadout/macros">
-  <shield macro="ishield_par_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
-</add>
-<add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_tutorial']/player/ship/loadout/macros">
-  <shield macro="ishield_arg_s_fighter_02_a_macro" path="../con_ishield_01" optional="true" />
-</add>
-<add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_trade']/player/ship/loadout/macros">
-  <shield macro="ishield_tel_s_scout_02_a_macro" path="../con_ishield_01" optional="true" />
-</add>
-<add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_fight']/player/ship/loadout/macros">
-  <shield macro="ishield_par_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
-</add>
-<add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_discover']/player/ship/loadout/macros">
-  <shield macro="ishield_arg_s_scout_01_a_macro" path="../con_ishield_01" optional="true" />
-</add>
-<!-- <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_scientist']/player/ship/loadout/macros">
+  <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_tutorial2']/player/ship/loadout/macros">
+    <shield macro="ishield_par_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_tutorial']/player/ship/loadout/macros">
+    <shield macro="ishield_arg_s_fighter_02_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_trade']/player/ship/loadout/macros">
+    <shield macro="ishield_tel_s_scout_02_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_fight']/player/ship/loadout/macros">
+    <shield macro="ishield_par_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_discover']/player/ship/loadout/macros">
+    <shield macro="ishield_arg_s_scout_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <!-- <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_scientist']/player/ship/loadout/macros">
   <shield macro="ishield_gen_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
 </add> -->
 
-<add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_split2']/player/ship/loadout/macros">
-  <shield macro="ishield_spl_s_fighter_02_a_macro" path="../con_ishield_01" optional="true" />
-</add>
+  <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_split2']/player/ship/loadout/macros">
+    <shield macro="ishield_spl_s_fighter_02_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
 
-<add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_terran1']/player/ship/loadout/macros">
-  <shield macro="ishield_ter_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
-</add>
+  <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_terran1']/player/ship/loadout/macros">
+    <shield macro="ishield_ter_s_fighter_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
 
-<replace sel="//gamestarts/gamestart[@id='x4ep1_gamestart_terran1']/player/ship/loadout/ammunition">
-  <ammunition>
-    <ammunition macro="env_deco_nav_beacon_t1_macro" exact="1"/>
-    <ammunition macro="eq_arg_satellite_01_macro" exact="1"/>
-    <ammunition macro="eq_arg_resourceprobe_01_macro" exact="1"/>
-  </ammunition>
-</replace>
+  <replace sel="//gamestarts/gamestart[@id='x4ep1_gamestart_terran1']/player/ship/loadout/ammunition">
+    <ammunition>
+      <ammunition macro="env_deco_nav_beacon_t1_macro" exact="1" />
+      <ammunition macro="eq_arg_satellite_01_macro" exact="1" />
+      <ammunition macro="eq_arg_resourceprobe_01_macro" exact="1" />
+    </ammunition>
+  </replace>
 
-<!-- <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_terran2']/player/ship/loadout/macros">
+  <!-- <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_terran2']/player/ship/loadout/macros">
   <shield macro="ishield_ter_s_scout_01_a_macro" path="../con_ishield_01" optional="true" />
 </add> -->
 
-<!-- TOA starts -->
+  <!-- TOA starts -->
 
-<add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_pirate1']/player/ship/loadout/macros">
-  <shield macro="ishield_pir_s_trans_container_01_macro" path="../con_ishield_01" optional="true" />
-</add>
+  <add sel="//gamestarts/gamestart[@id='x4ep1_gamestart_pirate1']/player/ship/loadout/macros">
+    <shield macro="ishield_pir_s_trans_container_01_macro" path="../con_ishield_01" optional="true" />
+  </add>
 
 
 </diff>

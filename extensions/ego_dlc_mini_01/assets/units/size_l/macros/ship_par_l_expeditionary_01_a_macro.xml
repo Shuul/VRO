@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff >
+  <replace sel="//macros" silent="true">
+<macros>
+  <macro name="ship_par_l_expeditionary_01_a_macro" class="ship_l">
+    <component ref="ship_par_l_expeditionary_01" />
+    <properties>
+      <identification name="{20101,33101}" makerrace="paranid" description="{20101,33111}" icon="ship_l_expeditionary_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <jerk>
+        <forward accel="0.4" decel="0.8" ratio="3" />
+        <forward_boost accel="0.4" ratio="3" />
+        <forward_travel accel="0.3" ratio="3" />
+        <strafe value="0.5" />
+        <angular value="0.6" />
+      </jerk>
+      <explosiondamage value="1000" shield="5000" />
+      <radar range="60000" />
+      <storage missile="240" unit="10" />
+      <hull max="126000" />
+      <secrecy level="3" />
+      <steeringcurve>
+        <point position="1.01" value="1" />
+        <point position="1.15" value="0.75" />
+        <point position="1.5" value="0.55" />
+        <point position="2" value="0.45" />
+        <point position="2.4" value="0.4" />
+      </steeringcurve>
+      <purpose primary="fight" />
+      <people capacity="72" />
+      <physics mass="148.081">
+        <inertia pitch="92.011" yaw="92.011" roll="70" />
+        <drag forward="20.718" reverse="118.387" horizontal="34.193" vertical="34.193" pitch="102.816" yaw="102.816" roll="102.816" />
+        <accfactors forward="1.1" horizontal="0.85" vertical="0.85" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="expeditionary" walkable="1" />
+      <threatscore value="10" />
+    </properties>
+    <connections>
+      <connection ref="con_buildmodule_01">
+        <macro ref="buildmodule_gen_carrier_s_macro" connection="object" />
+      </connection>
+      <connection ref="con_cockpit_01">
+        <macro ref="bridge_par_l_expeditionary_01_macro" connection="con_cockpit_01" />
+      </connection>
+      <connection ref="con_dockarea_par_l_expeditionary_01">
+        <macro ref="dockarea_par_l_expeditionary_01_macro" connection="con_dockarea_01" />
+      </connection>
+      <connection ref="con_dock_xs_01">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_two_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage_01">
+        <macro ref="storage_par_l_expeditionary_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>  </replace>
+</diff>
+<!-- <macros>
+  <macro name="ship_par_l_expeditionary_01_a_macro" class="ship_l">
+    <component ref="ship_par_l_expeditionary_01" />
+    <properties>
+      <identification name="{20101,33101}" makerrace="paranid" description="{20101,33111}" icon="ship_l_expeditionary_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <jerk>
+        <forward accel="0.4" decel="0.8" ratio="3" />
+        <forward_boost accel="0.4" ratio="3" />
+        <forward_travel accel="0.3" ratio="3" />
+        <strafe value="0.5" />
+        <angular value="0.6" />
+      </jerk>
+      <explosiondamage value="1000" shield="5000" />
+      <radar range="60000" />
+      <storage missile="240" unit="10" />
+      <hull max="56000" />
+      <secrecy level="3" />
+      <steeringcurve>
+        <point position="1.01" value="1" />
+        <point position="1.15" value="0.75" />
+        <point position="1.5" value="0.55" />
+        <point position="2" value="0.45" />
+        <point position="2.4" value="0.4" />
+      </steeringcurve>
+      <purpose primary="fight" />
+      <people capacity="106" />
+      <physics mass="63.081">
+        <inertia pitch="22.011" yaw="22.011" roll="17.609" />
+        <drag forward="20.718" reverse="118.387" horizontal="34.193" vertical="34.193" pitch="52.816" yaw="52.816" roll="52.816" />
+        <accfactors forward="1.1" horizontal="0.85" vertical="0.85" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="expeditionary" walkable="1" />
+    </properties>
+    <connections>
+      <connection ref="con_buildmodule_01">
+        <macro ref="buildmodule_gen_carrier_s_macro" connection="object" />
+      </connection>
+      <connection ref="con_cockpit_01">
+        <macro ref="bridge_par_l_expeditionary_01_macro" connection="con_cockpit_01" />
+      </connection>
+      <connection ref="con_dockarea_par_l_expeditionary_01">
+        <macro ref="dockarea_par_l_expeditionary_01_macro" connection="con_dockarea_01" />
+      </connection>
+      <connection ref="con_dock_xs_01">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_two_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage_01">
+        <macro ref="storage_par_l_expeditionary_01_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros> -->

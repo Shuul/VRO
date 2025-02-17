@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <macros>
+  <macro name="storage_par_l_expeditionary_01_a_macro" class="storage">
+    <component ref="generic_storage" />
+    <properties>
+      <cargo max="7000" tags="container" />
+      <hull integrated="1" />
+    </properties>
+  </macro>
+</macros>
+ -->
+<diff>
+  <replace sel="//macros" silent="true">
+    <macros>
+      <macro name="storage_par_l_expeditionary_01_a_macro" class="storage">
+        <component ref="generic_storage" />
+        <properties>
+          <cargo max="9300" tags="container" />
+          <hull integrated="1" />
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>

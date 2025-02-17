@@ -149,6 +149,17 @@
     </primary>
   </replace>
 
+
+  <replace sel="//wares/ware[@id='ship_par_l_expeditionary_01_a']/price">
+      <price min="4905313" average="5418015" max="6930717" />
+  </replace>
+  <replace sel="//wares/ware[@id='ship_par_l_expeditionary_01_a']/production[@method='default']/primary">
+        <primary>
+          <ware ware="energycells" amount="1600" />
+          <ware ware="hullparts" amount="4333" />
+        </primary>
+  </replace>
+
   <!-- SPLIT DLC wares -->
   <replace sel="//wares/ware[@id='turret_spl_l_beam_01_mk1']/use/@threshold">0.9</replace>
   <replace sel="//wares/ware[@id='turret_spl_l_plasma_01_mk1']/use/@threshold">1</replace>
@@ -3238,7 +3249,7 @@ __________________ -->
 
     <!-- Hyperion-->
 
-    <ware id="ship_par_l_hyperion" name="{6699,1909}" description="{6699,19091}" group="ships_paranid" transport="ship" size="ship" volume="1" tags="ship noblueprint noplayerblueprint">
+    <!-- <ware id="ship_par_l_hyperion" name="{6699,1909}" description="{6699,19091}" group="ships_paranid" transport="ship" size="ship" volume="1" tags="ship noblueprint noplayerblueprint">
       <price min="5595057" average="5958890" max="6622724" />
       <production time="100" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -3251,7 +3262,7 @@ __________________ -->
       <owner faction="paranid" />
       <owner faction="holyorder" />
     </ware>
-
+ -->
     <!-- Incarcatura raider-->
     <ware id="ship_arg_l_trans_container_03_p" name="{6699,1902}" description="{6699,19021}" transport="ship" volume="1" tags="ship">
       <price min="7457503" average="8167650" max="9077798" />

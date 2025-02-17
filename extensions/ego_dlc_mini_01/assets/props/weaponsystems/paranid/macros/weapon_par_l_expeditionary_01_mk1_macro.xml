@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="//macros" silent="true">
+    <macros>
+      <macro name="weapon_par_l_expeditionary_01_mk1_macro" class="weapon">
+        <component ref="weapon_par_l_expeditionary_01_mk1" />
+        <properties>
+          <identification name="{20105,3104}" basename="{20105,3101}" makerrace="paranid" description="{20105,3102}" mk="1" />
+          <bullet class="bullet_par_l_laser_02_mk1_macro" />
+          <heat overheat="10000" cooldelay="1.13" coolrate="9000" reenable="9500" />
+          <rotationspeed max="35.53" />
+          <rotationacceleration max="71.06" />
+          <hull max="15000" />
+        </properties>
+      </macro>
+    </macros>
+  </replace>
+</diff>
+
+<!-- <macros>
+  <macro name="weapon_par_l_expeditionary_01_mk1_macro" class="weapon">
+    <component ref="weapon_par_l_expeditionary_01_mk1" />
+    <properties>
+      <identification name="{20105,3104}" basename="{20105,3101}" makerrace="paranid" description="{20105,3102}" mk="1" />
+      <bullet class="bullet_par_l_laser_02_mk1_macro" />
+      <heat overheat="10000" cooldelay="1.13" coolrate="9000" reenable="9500" />
+      <rotationspeed max="35.53" />
+      <rotationacceleration max="71.06" />
+      <hull max="8000" />
+    </properties>
+  </macro>
+</macros> -->
