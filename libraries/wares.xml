@@ -150,10 +150,10 @@
   </replace>
 
 
-  <replace sel="//wares/ware[@id='ship_par_l_expeditionary_01_a']/price">
+  <replace sel="//wares/ware[@id='ship_par_l_expeditionary_01_a']/price" silent="true">
       <price min="4905313" average="5418015" max="6930717" />
   </replace>
-  <replace sel="//wares/ware[@id='ship_par_l_expeditionary_01_a']/production[@method='default']/primary">
+  <replace sel="//wares/ware[@id='ship_par_l_expeditionary_01_a']/production[@method='default']/primary" silent="true">
         <primary>
           <ware ware="energycells" amount="1600" />
           <ware ware="hullparts" amount="4333" />

@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<diff> 
+<diff>
   <replace sel="//macros">
     <macros>
       <macro name="engine_spl_xl_allround_01_mk1_macro" class="engine">
         <component ref="engine_spl_xl_allround_01_mk1" />
         <properties>
           <identification name="{20107,4084}" basename="{20107,4081}" shortname="{20107,4085}" makerrace="split" description="{20107,4082}" mk="1" />
-      <boost duration="33.6" recharge="128" thrust="2.5" acceleration="2.05" attack="10" release="4" coast="1.2" />
+          <boost duration="33.6" recharge="128" thrust="2.5" acceleration="2.05" attack="10" release="4" coast="1.2" />
           <travel charge="15" thrust="25" attack="21" release="22.5" />
           <thrust forward="16500" reverse="16509" />
           <angular />
           <hull max="29090" threshold="0.3" />
-      <effects>
-        <boosting ref="arg_boost_fx_xl" />
-        <traveling ref="gen_traveldrive_fx_xl" />
-      </effects>
-      <sounds>
-        <enginedetail ref="enginedetail_ship_xl_01" />
-      </sounds>
-      <decelerationcurve>
-        <point position="1.01" value="1" />
-        <point position="1.25" value="3" />
-        <point position="1.75" value="6" />
-        <point position="2.1" value="14" />
-        <point position="2.5" value="20" />
-      </decelerationcurve>
-      <strafecurve>
-        <point position="1.01" value="1" />
-        <point position="1.25" value="3" />
-        <point position="1.75" value="6" />
-        <point position="2.1" value="14" />
-        <point position="2.5" value="20" />
-        <point position="2.7" value="30" />
-      </strafecurve>
+          <effects>
+            <boosting ref="arg_boost_fx_xl" />
+            <traveling ref="gen_traveldrive_fx_xl" />
+          </effects>
+          <sounds>
+            <enginedetail ref="enginedetail_ship_xl_01" />
+          </sounds>
+          <decelerationcurve>
+            <point position="1.01" value="1" />
+            <point position="1.25" value="3" />
+            <point position="1.75" value="6" />
+            <point position="2.1" value="14" />
+            <point position="2.5" value="20" />
+          </decelerationcurve>
+          <strafecurve>
+            <point position="1.01" value="1" />
+            <point position="1.25" value="3" />
+            <point position="1.75" value="6" />
+            <point position="2.1" value="14" />
+            <point position="2.5" value="20" />
+            <point position="2.7" value="30" />
+          </strafecurve>
         </properties>
       </macro>
-    </macros> 
+    </macros>
   </replace>
 </diff>
