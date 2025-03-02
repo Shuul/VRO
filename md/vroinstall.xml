@@ -3,7 +3,7 @@
 <mdscript name="Vroinstall">
   <cues>
     <!-- define the current version of the cue -->
-    <cue name="VRO_main" version="14">
+    <cue name="VRO_main" version="15">
       <conditions>
         <check_any>
           <event_cue_signalled cue="md.Setup.GameStart" />
@@ -16,7 +16,7 @@
          <show_help duration="10s" custom="'Please visit Egosoft forum mod thread for mod description and latest VRO patchnotes.'"/>
       </actions>
       <!-- if a cue is running that has a version like sinceversion or older then the patch will be applied -->
-      <patch sinceversion="14">
+      <patch sinceversion="15">
         <!-- simple reset so the sub cue is called again. -->
         <reset_cue cue="this"/>
       </patch>
@@ -231,6 +231,7 @@
                                                    ware.shield_ter_m_standard_04_mk2,
                                                    ware.shield_ter_m_standard_04_mk3,
                                                    ware.engine_ter_l_allround_02_mk1,
+                                                   ware.weapon_ter_l_flagship_01_mk1,
                                                    ware.turret_ter_m_laser_04_mk1]"/>
             <add_blueprints wares="[ware.ship_arg_s_racer_01_a,
                                                    ware.engine_arg_s_racer_01_mk1,
