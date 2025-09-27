@@ -1,6 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Exported on 2025-08-21 15:36:14-->
-<components>
+<diff>
+	<add sel="//components/component/connections" silent="true">
+	  <connection name="con_ishield_01" tags="ishield shield  ishield_tel_m_trans_container_03_a">
+	  <offset>
+	   <position x="0" y="0" z="0"/>
+		 <quaternion qx="0" qy="0" qz="0" qw="0"/>
+	  </offset>
+	 </connection>
+	</add>
+
+  	<replace  sel="/components/component/connections/connection[@name='con_turret_m_01']/@tags"> advanced combat medium turret unhittable envoy</replace>
+  	<replace  sel="/components/component/connections/connection[@name='con_turret_m_02']/@tags"> advanced combat medium turret unhittable envoy</replace>
+
+</diff>
+
+
+
+<!-- <components>
   <component name="ship_gen_m_corvette_01" class="ship_m">
     <source geometry="extensions\ego_dlc_mini_02\assets\units\size_m\ship_gen_m_corvette_01_data" />
     <layers>
@@ -5663,4 +5678,4 @@
       </connection>
     </connections>
   </component>
-</components>
+</components> -->

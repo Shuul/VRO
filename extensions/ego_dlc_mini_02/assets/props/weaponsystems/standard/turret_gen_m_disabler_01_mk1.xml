@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Exported on 2025-06-24 13:20:04-->
-<components>
+<diff>
+  <replace sel="//connection[@name='con_turret']" silent="true">
+      <connection name="con_turret" tags="advanced combat component medium turret unhittable envoy " />
+  </replace>
+</diff>
+<!-- <components>
   <component name="turret_gen_m_disabler_01_mk1" class="turret">
     <source geometry="extensions\ego_dlc_mini_02\assets\props\weaponsystems\standard\turret_gen_m_disabler_01_mk1_data" />
     <layers>
@@ -368,4 +371,4 @@
       </connection>
     </connections>
   </component>
-</components>
+</components> -->
