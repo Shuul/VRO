@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff> 
-<!-- Hyperion DLC -->
+  <!-- Envoy DLC -->
+  <add sel="//loadouts/loadout[@id='gs_mini_dlc_02']/macros" silent="true">
+      <shield macro="ishield_tel_m_bomber_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_unbihexium_arg_envoy']/macros" silent="true">
+      <shield macro="ishield_tel_m_trans_container_03_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_unbihexium_tel_envoy']/macros" silent="true">
+      <shield macro="ishield_tel_m_trans_container_03_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_unbihexium_arg_nomad']/macros" silent="true">
+      <shield macro="ishield_arg_xl_resupplier_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_unbihexium_fighter']/macros" silent="true">
+      <shield macro="ishield_arg_s_fighter_02_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_unbihexium_heavy_fighter']/macros" silent="true">
+      <shield macro="ishield_arg_s_fighter_04_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_unbihexium_minotaur']/macros" silent="true">
+      <shield macro="ishield_arg_m_bomber_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_unbihexium_kestrel']/macros" silent="true">
+      <shield macro="ishield_tel_s_scout_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+  <add sel="//loadouts/loadout[@id='story_unbihexium_osprey']/macros" silent="true">
+      <shield macro="ishield_tel_m_frigate_01_a_macro" path="../con_ishield_01" optional="true" />
+  </add>
+
+  <!-- Hyperion DLC -->
   <add sel="//loadouts/loadout[@id='story_hyperion_reward_special']/macros" silent="true">
       <shield macro="ishield_par_l_hyperion_macro" path="../con_ishield_01" optional="true" />
   </add>
