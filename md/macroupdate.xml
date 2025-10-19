@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--    
+	This file is used to refresh/add/remove connections in an existing object in an ongoing save. 
+
+    If you only need to replace a macro used by a connection in an existing object use libraries\patchactions.xml.
+	-->
+<mdscript name="Macroupdate"  >
+	<cues>
+		<cue name="Macro_main" version="1" >
+			<conditions>
+				<check_any>
+					<!-- <event_cue_signalled/>-->
+					<event_game_loaded/>
+					<!-- <check_value value="false"/>  -->
+				  </check_any>
+			  </conditions>
+			<actions>
+			</actions>
+			<patch sinceversion="1">
+				<reset_cue cue="this"/>
+			</patch>
+			<cues>
+			   <cue name="Macro_update" instantiate="false">
+				 <delay exact="2s"/>
+				 <actions>
+					 <do_all>
+						<!-- <patch_macros macro="macro.buildmodule_imp_ships_m_dockarea_01_macro" />
+						<patch_macros macro="macro.buildmodule_imp_equip_m_dockarea_01_macro" /> -->
+
+						<patch_macros macro="macro.ishield_ter_l_carrier_01_a_macro"/>
+						<patch_macros macro="macro.ship_spl_l_panther_a_macro"/>
+
+					 </do_all>
+				 </actions>
+				</cue>
+			</cues>
+		</cue>
+	</cues>
+</mdscript>
