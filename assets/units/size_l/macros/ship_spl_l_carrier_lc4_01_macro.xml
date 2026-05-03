@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="ship_spl_l_carrier_lc4_01_macro" class="ship_l">
+    <component ref="ship_spl_l_carrier_lc4_01" />
+    <properties>
+			<identification name="{20101,41301}" basename="{20101,41301}" description="{6699,1905}" icon="ship_l_carrier_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk2" default="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <jerk>
+        <forward accel="0.2" decel="0.8" ratio="4" />
+        <forward_boost accel="0.4" ratio="2" />
+        <forward_travel accel="0.7" decel="0.9" ratio="3" />
+        <strafe value="0.3" />
+        <angular value="0.4" />
+      </jerk>
+      <explosiondamage value="1000" shield="5000" />
+      <storage missile="252" unit="10" />
+      <hull max="232500" />
+      <secrecy level="1" />
+      <steeringcurve>
+        <point position="1.01" value="1" />
+        <point position="1.25" value="0.85" />
+        <point position="1.6" value="0.65" />
+        <point position="1.85" value="0.45" />
+        <point position="2.4" value="0.33" />
+        <point position="2.7" value="0.28" />
+      </steeringcurve>
+      <purpose primary="fight" />
+      <people capacity="105" />
+      <physics mass="350">
+        <inertia pitch="300" yaw="300" roll="180" />
+        <drag forward="93" reverse="320" horizontal="125" vertical="125" pitch="165" yaw="165" roll="165" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="carrier" />
+			<radar range="55000" />
+    </properties>
+    <connections>
+      <connection ref="con_buildmodule_01">
+        <macro ref="buildmodule_gen_carrier_s_macro" connection="object" />
+      </connection>
+      <connection ref="con_cockpit_01">
+        <macro ref="bridge_spl_l_01_macro" connection="con_cockpit" />
+      </connection>
+      <connection ref="con_dockarea_spl_s_ship_lc4_01_1">
+        <macro ref="dockarea_spl_s_ship_lc4_01_macro" connection="con_dockarea_01" />
+      </connection>
+      <connection ref="con_dockarea_spl_s_ship_lc4_01_2">
+        <macro ref="dockarea_spl_s_ship_lc4_01_macro" connection="con_dockarea_01" />
+      </connection>
+      <connection ref="con_dock_xs_01">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_cap14_macro" connection="object" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage_01">
+        <macro ref="storage_spl_l_panther_a_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>

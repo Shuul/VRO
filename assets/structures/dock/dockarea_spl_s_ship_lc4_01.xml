@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Exported on 2026-01-04 14:02:55 from Blender-->
+<components>
+  <component name="dockarea_spl_s_ship_lc4_01" class="dockarea">
+    <source geometry="extensions\vro\assets\structures\dock\dockarea_spl_s_ship_lc4_01_data" />
+    <layers>
+      <layer />
+    </layers>
+    <connections>
+	  <connection name="container" tags="contents" value="0"/>
+      <connection name="position" tags="position" value="1" />
+      <connection name="con_dockarea_01" tags="dockarea" />
+<!-- Collision Mesh -->
+     <connection name="ConnectionForpart_main" tags="part noshadowcaster dockarea component platformcollision">
+        <parts>
+          <part name="part_main" wreck="part_main_wreck">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="generic.generic_p1_hulltexture" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="0.8157355" y="0.6352953" z="0.9177012" />
+              <center x="-1.490116e-08" y="-1.338901" z="2.980232e-07" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+<!-- Dockingbays -->
+      <connection name="ConnectionFordockingbay_arg_s_01_macro#001" group=" dockingbay_03 " tags=" dockingbay">
+        <offset>
+          <position x="0" y="0" z="-80" />
+          <quaternion qx="0" qy="0.7071067" qz="0" qw="-0.7071068" />
+        </offset>
+      </connection>
+      <connection name="ConnectionFordockingbay_arg_s_01_macro#002" tags=" dockingbay">
+        <offset>
+          <position x="0" y="0" z="-40" />
+          <quaternion qx="0" qy="0.7071067" qz="0" qw="-0.7071068" />
+        </offset>
+      </connection>
+      <connection name="ConnectionFordockingbay_arg_s_01_macro#003" tags=" dockingbay">
+        <offset>
+          <position x="0" y="0" z="0" />
+          <quaternion qx="0" qy="0.7071067" qz="0" qw="-0.7071068" />
+        </offset>
+      </connection>
+      <connection name="ConnectionFordockingbay_arg_s_01_macro#004" tags=" dockingbay">
+        <offset>
+          <position x="0" y="0" z="40" />
+          <quaternion qx="0" qy="0.7071067" qz="0" qw="-0.7071068" />
+        </offset>
+      </connection>
+      <connection name="ConnectionFordockingbay_arg_s_01_macro#005" tags=" dockingbay">
+        <offset>
+          <position x="0" y="0" z="80" />
+          <quaternion qx="0" qy="0.7071067" qz="0" qw="-0.7071068" />
+        </offset>
+      </connection>
+
+    </connections>
+  </component>
+</components>
