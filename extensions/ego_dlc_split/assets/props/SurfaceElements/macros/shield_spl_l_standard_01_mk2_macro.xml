@@ -8,6 +8,11 @@
           <identification name="{20106,3094}" basename="{20106,3091}" shortname="{20106,3095}" makerrace="split" description="{20106,3092}" mk="2" />
           <recharge max="53000" rate="52" delay="0" />
           <hull max="20000" threshold="0.2" />
+      <effects>
+        <sefx_damage_low ref="surfacemodule_damage_l_low" />
+        <sefx_damage_medium ref="surfacemodule_damage_l_medium" />
+        <sefx_damage_high ref="surfacemodule_damage_l_high" />
+      </effects>
         </properties>
       </macro>
     </macros>

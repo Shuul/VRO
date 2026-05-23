@@ -8,6 +8,11 @@
       <identification name="{20106,3154}" basename="{20106,3151}" shortname="{20106,3155}" makerrace="boron" description="{20106,3152}" mk="3" />
       <recharge max="66000" rate="90" delay="0" />
       <hull max="20000" threshold="0.2" />
+      <effects>
+        <sefx_damage_low ref="surfacemodule_damage_l_low" />
+        <sefx_damage_medium ref="surfacemodule_damage_l_medium" />
+        <sefx_damage_high ref="surfacemodule_damage_l_high" />
+      </effects>
     </properties>
   </macro>
 </macros>

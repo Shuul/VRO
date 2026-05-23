@@ -9,6 +9,11 @@
       <identification name="{20106,3044}" basename="{20106,3041}" shortname="{20106,3045}" makerrace="argon" description="{20106,3042}" mk="2" />
       <recharge max="60000" rate="43" delay="0" />
       <hull max="25000" threshold="0.2" />
+      <effects>
+        <sefx_damage_low ref="surfacemodule_damage_l_low" />
+        <sefx_damage_medium ref="surfacemodule_damage_l_medium" />
+        <sefx_damage_high ref="surfacemodule_damage_l_high" />
+      </effects>
     </properties>
   </macro>
 </macros>

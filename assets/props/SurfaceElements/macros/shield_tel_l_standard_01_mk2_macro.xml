@@ -10,6 +10,11 @@
       <identification name="{20106,3064}" basename="{20106,3061}" shortname="{20106,3065}" makerrace="teladi" description="{20106,3062}" mk="2" />
       <recharge max="67500" rate="27" delay="0" />
       <hull max="28000" threshold="0.2" />
+      <effects>
+        <sefx_damage_low ref="surfacemodule_damage_l_low" />
+        <sefx_damage_medium ref="surfacemodule_damage_l_medium" />
+        <sefx_damage_high ref="surfacemodule_damage_l_high" />
+      </effects>
     </properties>
   </macro>
 </macros>

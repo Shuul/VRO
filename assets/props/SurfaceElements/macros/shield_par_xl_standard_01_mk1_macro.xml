@@ -10,6 +10,11 @@
       <identification name="{20106,4014}" basename="{20106,4011}" shortname="{20106,4015}" makerrace="paranid" description="{20106,4012}" mk="1" />
       <recharge max="156666" rate="120" delay="0" />
       <hull max="60000" threshold="0.2" />
+      <effects>
+        <sefx_damage_low ref="surfacemodule_damage_l_low" />
+        <sefx_damage_medium ref="surfacemodule_damage_l_medium" />
+        <sefx_damage_high ref="surfacemodule_damage_l_high" />
+      </effects>
     </properties>
   </macro>
 </macros>

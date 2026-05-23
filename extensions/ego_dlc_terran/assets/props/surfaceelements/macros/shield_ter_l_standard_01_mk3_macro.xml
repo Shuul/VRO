@@ -8,6 +8,11 @@
           <identification name="{20106,3124}" basename="{20106,3121}" shortname="{20106,3125}" makerrace="terran" description="{20106,3122}" mk="3" />
           <recharge max="70000" rate="85" delay="0" />
           <hull max="25000" threshold="0.2" />
+      <effects>
+        <sefx_damage_low ref="surfacemodule_damage_l_low" />
+        <sefx_damage_medium ref="surfacemodule_damage_l_medium" />
+        <sefx_damage_high ref="surfacemodule_damage_l_high" />
+      </effects>
         </properties>
       </macro>
     </macros>
