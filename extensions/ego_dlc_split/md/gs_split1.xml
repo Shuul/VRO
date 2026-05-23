@@ -4,10 +4,6 @@
   <set_spacesuit_oxygen object="player.ship" percent="50"/>
   </replace>
 
-  <add sel="//create_loadout[@result='$JaguarLoadout']/macros"> 
-    <shield macro="ishield_spl_s_scout_01_a_macro" path="../con_ishield_01" />
-  </add>
-
   <replace sel="/mdscript/cues/cue[1]/cues/cue[1]/actions/create_ship[@name='$PickupShip']">
     <create_ship name="$PickupShip" macro="ship_spl_s_scout_01_a_macro" sector="$FiresOfSector">
       <owner exact="faction.freesplit" overridenpc="true"/>
