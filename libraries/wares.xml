@@ -193,10 +193,6 @@
     <owner faction="scaleplate" />
   </add>
 
-  <add sel="//wares/ware[@id='weapon_gen_s_guided_01_mk1']">
-    <owner faction="scaleplate" />
-  </add>
-
   <add sel="//wares/ware[@id='weapon_gen_s_gatling_01_mk1']">
     <owner faction="scaleplate" />
   </add>
@@ -2414,141 +2410,6 @@ __________________ -->
   </replace>
 
   <!-- launchers -->
-  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/price">
-    <price min="50396" average="60269" max="88141" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk1']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="10" />
-      <ware ware="energycells" amount="56" />
-      <ware ware="weaponcomponents" amount="28" />
-    </primary>
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/price">
-    <price min="70964" average="81960" max="91955" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_dumbfire_01_mk2']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="11" />
-      <ware ware="energycells" amount="58" />
-      <ware ware="weaponcomponents" amount="30" />
-    </primary>
-  </replace>
-
-  <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']/price">
-    <price min="22175" average="29290" max="26404" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk1']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="2" />
-      <ware ware="energycells" amount="13" />
-      <ware ware="weaponcomponents" amount="10" />
-    </primary>
-  </replace>
-
-  <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']/price">
-    <price min="35459" average="40704" max="47948" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_dumbfire_01_mk2']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="3" />
-      <ware ware="energycells" amount="20" />
-      <ware ware="weaponcomponents" amount="12" />
-    </primary>
-  </replace>
-
-
-  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1']/price">
-    <price min="116396" average="132269" max="148141" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk1']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="8" />
-      <ware ware="energycells" amount="50" />
-      <ware ware="weaponcomponents" amount="28" />
-    </primary>
-  </replace>
-
-  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/price">
-    <price min="143964" average="164960" max="190955" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_guided_01_mk2']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="11" />
-      <ware ware="energycells" amount="60" />
-      <ware ware="weaponcomponents" amount="32" />
-    </primary>
-  </replace>
-
-  <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk1']/price">
-    <price min="44175" average="51290" max="58404" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk1']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="3" />
-      <ware ware="energycells" amount="13" />
-      <ware ware="weaponcomponents" amount="11" />
-    </primary>
-  </replace>
-
-  <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/price">
-    <price min="58459" average="66704" max="72948" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_guided_01_mk2']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="4" />
-      <ware ware="energycells" amount="15" />
-      <ware ware="weaponcomponents" amount="14" />
-    </primary>
-  </replace>
-
-
-  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/price">
-    <price min="136396" average="152269" max="168141" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk1']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="8" />
-      <ware ware="energycells" amount="50" />
-      <ware ware="weaponcomponents" amount="28" />
-    </primary>
-  </replace>
-
-  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/price">
-    <price min="153964" average="174960" max="195113" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_01_mk2']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="11" />
-      <ware ware="energycells" amount="60" />
-      <ware ware="weaponcomponents" amount="40" />
-    </primary>
-  </replace>
-
-  <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/price">
-    <price min="72175" average="88290" max="95404" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="2" />
-      <ware ware="energycells" amount="15" />
-      <ware ware="weaponcomponents" amount="13" />
-    </primary>
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk1']/restriction">
-    <restriction licence="generaluseequipment" />
-  </replace>
-
-  <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk2']/price">
-    <price min="89883" average="124883" max="135883" />
-  </replace>
-  <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_01_mk2']/production[@method='default']/primary">
-    <primary>
-      <ware ware="advancedelectronics" amount="4" />
-      <ware ware="energycells" amount="18" />
-      <ware ware="weaponcomponents" amount="16" />
-    </primary>
-  </replace>
 
 
   <!-- Other vanilla weapons prices adn materials -->
@@ -3126,7 +2987,7 @@ __________________ -->
       <owner faction="ministry" />
     </ware>
 
-    <ware id="ship_ter_l_chiba" name="{20101,62901}" basename="{20101,62901}" group="ships_terran" transport="ship" size="ship" volume="1" tags="ship">
+    <ware id="ship_ter_l_chiba" name="{20101,62901}" description="{20101,62901}" group="ships_terran" transport="ship" size="ship" volume="1" tags="ship">
       <price min="6058790" average="7833870" max="8608951" />
       <production time="140" amount="1" method="default" name="{20206,901}">
         <primary>
@@ -3883,7 +3744,7 @@ __________________ -->
     </ware>
 
     <!-- MA -->
-    <ware id="weapon_gen_m_ma" name="{6699,11006}" description="{20105,11005}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <ware id="weapon_gen_m_ma" name="{6699,11006}" description="{6699,11007}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
       <price min="225000" average="238604" max="242000" />
       <production time="10" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -3905,7 +3766,7 @@ __________________ -->
       <owner faction="trinity" />
     </ware>
 
-    <ware id="weapon_gen_m_ma_centaur" name="{6699,110060}" description="{20105,11005}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
+    <ware id="weapon_gen_m_ma_centaur" name="{6699,110060}" description="{6699,11007}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
       <price min="225000" average="238604" max="242000" />
       <production time="10" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -5658,7 +5519,7 @@ __________________ -->
     </ware>
 
     <!-- XENON WAVE CANNON -->
-    <ware id="weapon_gen_l_waver" name="{6699,11019}" description="{20105,11020}" group="weapons" transport="equipment" volume="1" tags="equipment weapon noplayerblueprint">
+    <ware id="weapon_gen_l_waver" name="{6699,11019}" description="{6699,11019}" group="weapons" transport="equipment" volume="1" tags="equipment weapon noplayerblueprint">
       <price min="130920" average="145800" max="160680" />
       <production time="15" amount="1" method="default" name="{20206,101}">
         <primary>
