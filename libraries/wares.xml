@@ -3188,7 +3188,7 @@ __________________ -->
     </ware>
 
     <!-- Viper-->
-    <ware id="ship_spl_l_viper" name="{20101,41501}" description="{6699,1910}" group="ships_split" transport="ship" size="ship" volume="1" tags="ship">
+    <!-- <ware id="ship_spl_l_viper" name="{20101,41501}" description="{6699,1910}" group="ships_split" transport="ship" size="ship" volume="1" tags="ship">
       <price min="7195057" average="7858890" max="8522724" />
       <production time="90" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -3202,7 +3202,7 @@ __________________ -->
       <owner faction="split" />
       <owner faction="court" />
       <owner faction="fallensplit" />
-    </ware>
+    </ware> -->
 
     <!-- Centaur-->
     <!-- <ware id="ship_arg_l_centaur_a" name="{20101,12802}" description="{6699,1901}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
@@ -5782,25 +5782,6 @@ __________________ -->
       <use threshold="0" factions="xenon" />
       <owner faction="xenon" />
     </ware>
-
-    <!-- split medium large engine   -->
-    <ware id="engine_spl_m_large" name="{20107,3084}" description="{20107,3082}" group="engines" transport="equipment" volume="1" tags="engine equipment standard">
-      <price min="258153" average="368448" max="480054" />
-      <production time="20" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="antimatterconverters" amount="129" />
-          <ware ware="energycells" amount="37" />
-          <ware ware="engineparts" amount="101" />
-        </primary>
-      </production>
-      <component ref="engine_spl_m_large_macro" amount="1" />
-      <restriction licence="generaluseequipment" />
-      <use threshold="0" />
-      <owner faction="court" />
-      <owner faction="freesplit" />
-      <owner faction="split" />
-    </ware>
-
 
   </add>
   <!-- Vanilla missiles reomoval from being buildable by factions -->

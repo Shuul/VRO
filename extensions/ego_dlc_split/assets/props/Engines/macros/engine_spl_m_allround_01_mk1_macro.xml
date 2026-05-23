@@ -3,7 +3,7 @@
   <replace sel="//macros">
     <macros>
       <macro name="engine_spl_m_allround_01_mk1_macro" class="engine">
-        <component ref="engine_spl_m_allround_01_mk1" />
+        <component ref="engine_gen_m_virtual_01" />
         <properties>
           <identification name="{20107,2604}" basename="{20107,2601}" shortname="{20107,2605}" makerrace="split" description="{20107,2602}" mk="1" />
       <boost duration="17.5" recharge="128" thrust="2.52" acceleration="2.33" attack="0.25" release="4" coast="1.15" />
@@ -12,7 +12,7 @@
           <angular />
           <hull integrated="1" />
       <effects>
-        <boosting ref="arg_boost_fx_m" />
+        <boosting ref="gen_m_boosteffect_01" />
         <traveling ref="gen_traveldrive_fx_m" />
       </effects>
       <sounds>

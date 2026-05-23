@@ -5,7 +5,7 @@
 
 <macros>
   <macro name="engine_tel_s_combat_01_mk1_macro" class="engine">
-    <component ref="engine_tel_s_combat_01_mk1" />
+    <component ref="engine_gen_s_virtual_01" />
     <properties>
       <identification name="{20107,1224}" basename="{20107,1221}" shortname="{20107,1225}" makerrace="teladi" description="{20107,1222}" mk="1" />
       <boost duration="26.4" recharge="114" thrust="2.8" acceleration="3.7" attack="0.25" release="5" coast="1.2" />
@@ -14,7 +14,7 @@
       <angular />
       <hull integrated="1" />
       <effects>
-        <boosting ref="arg_boost_fx_s" />
+        <boosting ref="gen_s_boosteffect_01" />
         <traveling ref="gen_traveldrive_fx_s" />
       </effects>
       <sounds>
@@ -51,7 +51,7 @@
       <angular />
       <hull integrated="1" />
       <effects>
-        <boosting ref="arg_boost_fx_s" />
+        <boosting ref="gen_s_boosteffect_01" />
       </effects>
       <sounds>
         <enginedetail ref="enginedetail_ship_03" />
