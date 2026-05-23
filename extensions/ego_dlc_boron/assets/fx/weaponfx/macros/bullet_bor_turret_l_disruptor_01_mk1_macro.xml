@@ -6,9 +6,9 @@
     <component ref="bullet_bor_l_disruptor_01_mk1" />
     <properties>
       <ammunition value="3" reload="15" />
-      <bullet speed="12000" lifetime="1.5" barrelamount="1" icon="weapon_bor_disruptor_mk1" timediff="0.008" angle="2" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" selfdestruct="1" plannedselfdestruct="1" selfdestructtimediff="0.15" selfdestructmintime="0.2" influencelist="heavy_mam_thruster_disrupt" />
+      <bullet speed="12000" lifetime="1.5" barrelamount="1" icon="weapon_bor_disruptor_mk1" timediff="0.008" angle="2" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" selfdestruct="1" plannedselfdestruct="1" selfdestructtimediff="0.15" selfdestructmintime="0.2" influencelist="ion_disrupt_l" />
       <reload rate="2.5" />
-      <areadamage shield="5400" />
+      <areadamage shield="5400" shielddisruption="10" />
       <damage value="990" repair="0" />
       <effects>
         <impact ref="impact_bor_l_disruptor_01_mk1" inside="impact_bor_l_disruptor_01_mk1_inside" />

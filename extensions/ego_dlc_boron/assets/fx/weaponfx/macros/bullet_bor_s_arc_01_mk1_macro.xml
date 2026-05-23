@@ -8,7 +8,9 @@
       <bullet speed="4500" lifetime="0.7" barrelamount="1" icon="weapon_bor_arc_mk1" angle="0.02" maxhits="1" ricochet="0" restitution="1" scale="0" attach="0" influencelist="light_thruster_disrupt" />
       <heat value="400" />
       <reload rate="1.5" />
-      <damage value="310" shield="50" repair="0" />
+      <damage value="310" shield="50" repair="0" >
+        <multiplier traveldrive="4" />
+      </damage>
       <effects>
         <impact ref="impact_bor_s_arc_01_mk1" inside="impact_bor_s_arc_01_mk1_inside" />
         <bigobjectimpact ref="impact_bor_s_arc_01_mk1_bigobject" inside="impact_bor_s_arc_01_mk1_bigobject_inside" />
