@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- do not destroy shields when bail! -->
-<diff>
-	<replace sel="//find_object_component[@name='$subcomponents'][@object='$target']">
-	  <find_object_component name="$subcomponents" object="$target" class="[class.weapon, class.turret]" multiple="true"/>
-	</replace>
-</diff>
