@@ -6,7 +6,7 @@
 <identification name="{6699, 1258}" basename="{6699, 1259}" description="{6699, 1260}" />
 <ammunition value="1" />
 <missile amount="1" barrelamount="1" lifetime="70" range="12000" swarm="0" guided="1"  retarget="1" icon="hud_ms_smart_heavy_mk1" tags="hguided"/>
-<explosiondamage value="20000" />
+<explosiondamage value="20000" shielddisruption="10"/>
 <reload time="15" />
 <hull max="150" />
 <effects>
@@ -14,7 +14,7 @@
 <launch ref="muzzle_missile_heavy" />
 </effects>
 <weapon system="missile_guided" />
-<countermeasure resilience="0.95" />
+<countermeasure resilience="0.98" />
 <physics mass="3">
 <inertia pitch="2.5" yaw="2.5" roll="2.5" />
 <drag forward="0.24" reverse="1" horizontal="1" vertical="1" pitch="0.5" yaw="0.5" roll="0.5" />

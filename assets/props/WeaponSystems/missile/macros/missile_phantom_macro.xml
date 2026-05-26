@@ -6,7 +6,7 @@
 <identification name="{6699, 1270}" basename="{6699, 1271}" description="{6699, 1272}" />
 <ammunition value="1" />
 <missile amount="1" barrelamount="1" lifetime="90" range="12000" swarm="0" guided="1"  retarget="0" icon="hud_ms_torpedo_light_mk1" tags="mtorpedo"/>
-<explosiondamage value="25000" />
+<explosiondamage value="25000" shielddisruption="10"/>
 <reload time="18" />
 <hull max="250" />
 <effects>
@@ -14,7 +14,7 @@
 <launch ref="muzzle_missile_torpedo" />
 </effects>
 <weapon system="torpedo" />
-<countermeasure resilience="0.85" />
+<countermeasure resilience="0.95" />
 <physics mass="5">
 <inertia pitch="2.5" yaw="2.5" roll="2.5" />
 <drag forward="0.282" reverse="10" horizontal="10" vertical="10" pitch="5" yaw="5" roll="5" />

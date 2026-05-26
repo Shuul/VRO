@@ -6,7 +6,7 @@
 <identification name="{6699, 1288}" basename="{6699, 1289}" description="{6699, 1290}" />
 <ammunition value="1" />
 <missile amount="1" barrelamount="1" lifetime="30" range="21000" swarm="0" guided="1"  retarget="0" icon="hud_ms_torpedo_heavy_mk1" tags="cruise"/>
-<explosiondamage value="30000" />
+<explosiondamage value="30000" shielddisruption="10"/>
 <reload time="33" />
 <hull max="500" />
 <effects>
@@ -14,7 +14,7 @@
 <launch ref="muzzle_gen_cruise" />
 </effects>
 <weapon system="missile_guided" />
-<countermeasure resilience="0.97" />
+<countermeasure resilience="1" />
 <physics mass="15">
 <inertia pitch="25" yaw="25" roll="25" />
 <drag forward="0.04" reverse="80" horizontal="80" vertical="80" pitch="40" yaw="40" roll="40" />

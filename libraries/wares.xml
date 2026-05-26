@@ -947,7 +947,7 @@ __________________ -->
   <add sel="/wares">
 
     <!-- Lint5 frigates -->
-    <ware id="ship_lint_frigate_akita_ware" name="{20101,64601}" description="{20101,64601}" group="ships_terran" transport="ship" volume="1" tags="ship">
+    <!-- <ware id="ship_lint_frigate_akita_ware" name="{20101,64601}" description="{20101,64601}" group="ships_terran" transport="ship" volume="1" tags="ship">
       <price min="4884200" average="5200000" max="5889930" />
       <production time="73" amount="1" method="default" name="{20206,901}">
         <primary>
@@ -1035,7 +1035,7 @@ __________________ -->
       <use threshold="1.0" />
       <owner faction="pioneers" />
       <owner faction="terran" />
-    </ware>
+    </ware> -->
 
     <!-- SIMON TERRAN SHIPS -->
     <!-- <ware id="ship_ter_l_shikoku" name="{20101,63801}" description="{6699,1911}" group="ships_terran" transport="ship" volume="1" tags="ship">
@@ -1096,7 +1096,7 @@ __________________ -->
  -->
     <!-- PIO triton -->
 
-    <ware id="ship_sdp_frigate_triton" name="{6699,1920}" description="{6699,1921}" group="ships_terran" transport="ship" volume="1" tags="ship">
+    <!-- <ware id="ship_sdp_frigate_triton" name="{6699,1920}" description="{6699,1921}" group="ships_terran" transport="ship" volume="1" tags="ship">
       <price min="5558790" average="7033870" max="8008951" />
       <production time="140" amount="1" method="default" name="{20206,901}">
         <primary>
@@ -1108,7 +1108,7 @@ __________________ -->
       <component ref="ship_sdp_frigate_triton_macro" amount="1" />
       <restriction licence="militaryship" />
       <owner faction="pioneers" />
-    </ware>
+    </ware> -->
 
   </add>
 
@@ -2858,22 +2858,8 @@ __________________ -->
   <!-- Faction Battleships -->
   <add sel="/wares">
 
-    <!-- <ware id="ship_par_xl_battleship_a" name="{20101,31701}" description="{20101,31701}" group="ships_paranid" transport="ship" volume="1" tags="ship noblueprint noplayerblueprint noplayerbuild">
-      <price min="32000000" average="37000000" max="42000000" />
-      <production time="575" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="energycells" amount="3450" />
-          <ware ware="hullparts" amount="17940" />
-        </primary>
-      </production>
-      <component ref="ship_par_xl_battleship_01_macro" amount="1" />
-      <restriction licence="capitalship" />
-      <owner faction="holyorder" />
-      <owner faction="paranid" />
-      <owner faction="trinity" />
-    </ware> -->
 
-    <ware id="ship_par_xl_battleship_02" name="{20101,31701}" description="{20101,31701}" group="ships_paranid" transport="ship" volume="1" tags="ship">
+    <!-- <ware id="ship_par_xl_battleship_02" name="{20101,31701}" description="{20101,31701}" group="ships_paranid" transport="ship" volume="1" tags="ship">
       <price min="36000000" average="40000000" max="44000000" />
       <production time="575" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -2886,23 +2872,10 @@ __________________ -->
       <owner faction="holyorder" />
       <owner faction="paranid" />
       <owner faction="trinity" />
-    </ware>
+    </ware> -->
 
-    <!-- <ware id="ship_arg_xl_battleship_a" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship noplayerbuild noblueprint noplayerblueprint">
-      <price min="30000000" average="35000000" max="40000000" />
-      <production time="550" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="energycells" amount="4140" />
-          <ware ware="hullparts" amount="16675" />
-        </primary>
-      </production>
-      <component ref="ship_arg_xl_battleship_01_macro" amount="1" />
-      <restriction licence="capitalship" />
-      <owner faction="antigone" />
-      <owner faction="argon" />
-    </ware>-->
 
-    <ware id="ship_arg_xl_corona" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship">
+    <!-- <ware id="ship_arg_xl_corona" name="{20101,13401}" description="{20101,13401}" group="ships_argon" transport="ship" volume="1" tags="ship">
       <price min="30000000" average="35000000" max="40000000" />
       <production time="550" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -2913,7 +2886,7 @@ __________________ -->
       <component ref="ship_arg_xl_corona_macro" amount="1" />
       <restriction licence="capitalship" />
       <owner faction="antigone" />
-    </ware>
+    </ware> -->
 
     <ware id="ship_arg_xl_battleship_lc4_02_ware" name="{20005,7016}" description="{20005,7016}" group="ships_argon" transport="ship" volume="1" tags="ship">
       <price min="30000000" average="35000000" max="40000000" />
@@ -2927,20 +2900,6 @@ __________________ -->
       <restriction licence="capitalship" />
       <owner faction="argon" />
     </ware>
-
-    <!-- <ware id="ship_tel_xl_battleship_a" name="{20101,22101}" description="{20101,22101}" group="ships_teladi" transport="ship" volume="1" tags="ship">
-      <price min="33000000" average="39000000" max="42000000" />
-      <production time="550" amount="1" method="default" name="{20206,101}">
-        <primary>
-          <ware ware="energycells" amount="5900" />
-          <ware ware="hullparts" amount="15900" />
-        </primary>
-      </production>
-      <component ref="ship_tel_xl_battleship_01_macro" amount="1" />
-      <restriction licence="capitalship" />
-      <owner faction="teladi" />
-      <owner faction="ministry" />
-    </ware> -->
 
     <ware id="ship_tel_xl_battleship_lc4_02_ware" name="{20101,22101}" description="{20101,22101}" group="ships_teladi" transport="ship" volume="1" tags="ship">
       <price min="32000000" average="37000000" max="42000000" />
@@ -3094,7 +3053,7 @@ __________________ -->
 
     <!-- Cyclops-->
 
-    <ware id="ship_arg_l_cyclops" name="{20101,13001}" description="{6699,19081}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
+    <!-- <ware id="ship_arg_l_cyclops" name="{20101,13001}" description="{6699,19081}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
       <price min="5495057" average="5858890" max="6522724" />
       <production time="100" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -3133,7 +3092,7 @@ __________________ -->
       <restriction licence="militaryequipment" />
       <use threshold="0" />
       <owner faction="argon" />
-    </ware>
+    </ware> -->
 
     <!-- Hyperion-->
 

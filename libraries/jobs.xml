@@ -91,7 +91,7 @@
 		</subordinates>
 	  </job>
 
-	  	<job id="argon_cyclops_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
+	  	<!-- <job id="argon_cyclops_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -112,7 +112,7 @@
 		<subordinates>
 			<subordinate job="argon_fighter_escort_s_frigate"/>
 		</subordinates>
-	  </job>
+	  </job> -->
 
 	  <job id="argon_battleship_argon_one" name="{20204,6201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
@@ -144,7 +144,7 @@
   <!--       ANTIGONE REPUBLIC       -->
   <!-- ############################# -->
   
-	  <job id="antigone_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+	  <!-- <job id="antigone_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -165,9 +165,9 @@
 		<subordinates>
 			<subordinate job="antigone_frigate_escort_m"/>
 		</subordinates>
-	  </job>
+	  </job> -->
 
-		<job id="antigone_cyclops_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
+		<!-- <job id="antigone_cyclops_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -188,13 +188,13 @@
 		<subordinates>
 			<subordinate job="antigone_fighter_escort_s_frigate"/>
 		</subordinates>
-	  </job>
+	  </job> -->
 
   <!-- ############################# -->
   <!--    GODREALM OF THE PARANID    -->
   <!-- ############################# -->
   
-	  <job id="paranid_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+	  <!-- <job id="paranid_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -216,7 +216,7 @@
 			<subordinate job="paranid_frigate_escort_m"/>
 		</subordinates>
 	  </job>
- 
+  -->
 	  <!-- <job id="paranid_hyperion_l" name="{20204,5201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
@@ -245,7 +245,7 @@
   <!--   HOLY ORDER OF THE PONTIFEX  -->
   <!-- ############################# -->
   
-	  <job id="holyorder_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+	  <!-- <job id="holyorder_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -266,7 +266,7 @@
 		<subordinates>
 			<subordinate job="holyorder_frigate_escort_m"/>
 		</subordinates>
-	  </job> 
+	  </job>  -->
 
 	  <!-- <job id="holyorder_hyperion_l" name="{20204,5201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
@@ -457,7 +457,7 @@
 		</ship>
 	  </job>
 
-	  <job id="split_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+	  <!-- <job id="split_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -479,7 +479,7 @@
 			<subordinate job="zyarth_corvette_escort_m"/>
 			<subordinate job="zyarth_fighter_escort_s_patrol"/>
 		</subordinates>
-	  </job>
+	  </job> -->
 
 
 	  <job id="panther_l_sector_court" name="{20204,5201}" startactive="false" comment="panther">
@@ -684,7 +684,7 @@
   </job>
 
       <!-- Akita escort job -->
-    <job id="terran_frigate_escort_akita" name="{20204,5201}" startactive="false">
+    <!-- <job id="terran_frigate_escort_akita" name="{20204,5201}" startactive="false">
       <orders>
         <order order="Escort" default="true">
           <param name="formation" value="formationshape.xshapeforward"/>
@@ -703,10 +703,10 @@
         </loadout>
         <owner exact="terran" overridenpc="true"/>
       </ship>
-    </job>
+    </job> -->
 
     <!-- Akita patrol job -->
-    <job id="terran_frigate_patrol_akita" name="{20204,5201}">
+    <!-- <job id="terran_frigate_patrol_akita" name="{20204,5201}">
       <modifiers commandeerable="true"/>
       <orders>
         <order order="Patrol" default="true">
@@ -727,7 +727,7 @@
       <subordinates>
         <subordinate job="terran_frigate_escort_akita"/>
       </subordinates>
-    </job>
+    </job> -->
 
     <!-- <job id="pioneers_frigate_patrol_akita" name="{20204, 5201}">
       <modifiers commandeerable="true"/>
@@ -750,7 +750,7 @@
       <subordinates/>
     </job> -->
 
-	<job id="pioneers_frigate_patrol_kitsune" name="{20204,5201}">
+	<!-- <job id="pioneers_frigate_patrol_kitsune" name="{20204,5201}">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -769,7 +769,7 @@
 			<owner exact="pioneers" overridenpc="true"/>
 		</ship>
 		<subordinates/>
-	</job>
+	</job> -->
 
 
 <!-- PIONEERS -->
@@ -921,12 +921,12 @@
 </add>
 
   <!-- Adding escort job to existing terran job -->
-  <add sel="//jobs/job[@id='terran_carrier_intervention_xl']/subordinates">
+  <!-- <add sel="//jobs/job[@id='terran_carrier_intervention_xl']/subordinates">
     <subordinate job="terran_frigate_escort_akita"/>
 	</add>
   <add sel="//jobs/job[@id='terran_battleship_intervention_xl']/subordinates">
     <subordinate job="terran_frigate_escort_akita" assignment="attack"/>
-  </add>
+  </add> -->
 
   	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_frigate']/quota[@wing='4']">
 	<quota wing="4" variation="1"/>

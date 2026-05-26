@@ -6,7 +6,7 @@
 <identification name="{6699, 1306}" basename="{6699, 1307}" description="{6699, 1308}" />
 <ammunition value="1" />
 <missile amount="1" barrelamount="9" delay="0.15" angle="5" lifetime="60" range="18000" guided="1" retarget="1" icon="hud_ms_swarm_heavy_mk1" tags="serpentnest"/>
-<explosiondamage value="4000" />
+<explosiondamage value="4000" shielddisruption="10"/>
 <reload time="35" />
 <hull max="2" />
 <effects>
@@ -14,7 +14,7 @@
 <launch ref="muzzle_gen_cruise" />
 </effects>
 <weapon system="missile_guided" />
-<countermeasure resilience="0.92" />
+<countermeasure resilience="0.94" />
 <physics mass="0.4">
 <inertia pitch="0.7" yaw="0.7" roll="0.7" />
 <drag forward="0.12" reverse="0.32" horizontal="0.32" vertical="0.32" pitch="0.16" yaw="0.16" roll="0.16" />

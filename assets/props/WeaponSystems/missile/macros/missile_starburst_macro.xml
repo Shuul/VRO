@@ -6,7 +6,7 @@
 <identification name="{6699, 1300}" basename="{6699, 1301}" description="{6699, 1302}" />
 <ammunition value="1" />
 <missile amount="1" barrelamount="1" lifetime="40" range="13000" swarm="0" guided="1"  retarget="1" icon="hud_ms_starburst_heavy_mk1" tags="hguided"/>
-<explosiondamage value="14000" />
+<explosiondamage value="14000" shielddisruption="10"/>
 <reload time="20" />
 <hull max="150" />
 <effects>
@@ -14,7 +14,7 @@
 <launch ref="muzzle_missile_heavy" />
 </effects>
 <weapon system="missile_guided" />
-<countermeasure resilience="0.85" />
+<countermeasure resilience="0.94" />
 <physics mass="0.97">
 <inertia pitch="1.1" yaw="1.1" roll="1.1" />
 <drag forward="0.16" reverse="0.7" horizontal="0.7" vertical="0.7" pitch="0.41" yaw="0.41" roll="0.41" />
