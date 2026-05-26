@@ -1,34 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <diff>
-<replace sel="//parameters/lowattentioncombat"> 
-  <!-- VRO approach -->
+  <!-- <replace sel="//parameters/lowattentioncombat"> 
   <lowattentioncombat>
     <attack hitchance="0.9" missmultiplier="0.8" firingarea="36000000" laserweaponfactor="1.1" missileweaponfactor="1.0" turretfactor="0.65" moduleturretchance="0.3" dronebulletfactor="0.2275" dronemissilefactor="0.182" minspeed="100" surfaceelementchance="0.02" surfaceelementexplosivechance="0.1" surfaceelementfactor="0.8" shieldgeneratorchance="0.2" missilefirethreshold="0.2" missilehitfactor="0.4" guidedmissilehitfactor="0.8" bullethitfactor="0.7" beamhitfactor="0.9" flakhitfactor="0.9" turretfirechance="0.3"/>
     <defence maxspeed="600" minspeedfactor="0.1" maxspeedfactor="0.9" dodgedelay="0.25" maxsize="75" sizefactor="0.2" capshipfactor="1.0" countermeasurefactor="0.8" dronedistractionfactor="0.003" dronedamageamount="200000"/>
   </lowattentioncombat> 
-</replace>
+</replace> -->
 
-  <replace sel="//parameters/shipyardupgraderesources">
+  <!-- <replace sel="//parameters/shipyardupgraderesources">
     <shipyardupgraderesources>
-      <!-- large ships tend to have more turret and drone capacity, but relatively few front-mounted weapons -->
       <factor countermeasure="200" drone="120" engine="40" missile="300" mine="200" satellite="200" navbeacon="50" resourceprobe="50" lasertower="200" scanner="20" shield="80" thruster="15" turret="101" weapon="12" />
     </shipyardupgraderesources>
   </replace>
   <replace sel="//parameters/wharfupgraderesources">
     <wharfupgraderesources>
-      <!-- fewer turrets and drone/missile capacity but a bit more weapons -->
       <factor countermeasure="100" drone="20" engine="40" missile="100" mine="200" satellite="200" navbeacon="100" resourceprobe="100" lasertower="200" scanner="20" shield="55" thruster="15" turret="20" weapon="35" />
     </wharfupgraderesources>
   </replace>
   
   <replace sel="//parameters/shipupgraderesources">
   <shipupgraderesources>
-    <!-- all ships use countermeasures,
-          some ships use drones,
-          not all ships use missiles, but those that do need lots of them.
-          deployables are very situational. don't stock up on a lot of them for general use. -->
           <factor countermeasure="400" drone="120" missile="150" mine="5" satellite="4" navbeacon="5" resourceprobe="4" lasertower="4" scanner="0" engine="0" shield="0" thruster="0" turret="0" weapon="0"/>
   </shipupgraderesources>
-</replace>
+</replace> -->
 
+  <add sel="//parameters/combat/missile/tags/dumbfire">
+    <tag id="ldumbfire" />
+    <tag id="mdumbfire" />
+    <tag id="hdumbfire" />
+    <tag id="rapier" />
+  </add>
+  <add sel="//parameters/combat/missile/tags/guided">
+    <tag id="lguided" />
+    <tag id="mguided" />
+    <tag id="hguided" />
+    <tag id="mosquito" />
+    <tag id="serpentnest" />
+  </add>
+  <add sel="//parameters/combat/missile/tags/torpedo">
+    <tag id="ltorpedo" />
+    <tag id="mtorpedo" />
+    <tag id="htorpedo" />
+    <tag id="rgw" />
+    <tag id="cruise " />
+  </add>
 </diff> 

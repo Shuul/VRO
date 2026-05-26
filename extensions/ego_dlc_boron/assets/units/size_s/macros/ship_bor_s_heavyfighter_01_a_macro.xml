@@ -1,69 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<diff> 
+<diff>
   <replace sel="//macros">
-  <macros>
-  <macro name="ship_bor_s_heavyfighter_01_a_macro" class="ship_s">
-    <component ref="ship_bor_s_heavyfighter_01" />
-    <properties>
-      <identification name="{20101,50601}" basename="{20101,50601}" makerrace="boron" description="{20101,50611}" icon="ship_s_heavyfighter_01" />
-      <software>
-        <software ware="software_dockmk2" compatible="1" />
-        <software ware="software_flightassistmk1" default="1" />
-        <software ware="software_scannerlongrangemk1" default="1" />
-        <software ware="software_scannerlongrangemk2" compatible="1" />
-        <software ware="software_scannerobjectmk1" default="1" />
-        <software ware="software_scannerobjectmk2" compatible="1" />
-        <software ware="software_targetmk1" default="1" />
-        <software ware="software_trademk1" compatible="1" />
-      </software>
-      <jerk>
-        <forward accel="0.4" decel="0.3" ratio="3" />
-        <forward_boost accel="0.4" ratio="3" />
-        <forward_travel accel="0.4" decel="0.9" ratio="3" />
-        <strafe value="0.8" />
-        <angular value="0.8" />
-      </jerk>
-      <storage missile="22" />
-      <hull max="8000" />
-      <glow engine="1" />
-      <secrecy level="1" />
-      <steeringcurve>
-        <point position="1.01" value="1" />
-        <point position="1.3" value="0.65" />
-        <point position="1.6" value="0.4" />
-        <point position="2" value="0.25" />
-        <point position="2.25" value="0.15" />
-        <point position="2.7" value="0.1" />
-      </steeringcurve>
-      <purpose primary="fight" />
-      <people capacity="2" />
-      <sounds>
-        <shipdetail ref="shipdetail_ship_boron_s_01" />
-      </sounds>
-      <physics mass="7.791">
-        <inertia pitch="1.70" yaw="1.70" roll="1.36" />
-        <drag forward="1.25" reverse="8.63" horizontal="4.048" vertical="4.048" pitch="3.83" yaw="3.83" roll="3.83" />
-        <accfactors forward="1.1" horizontal="0.8" vertical="0.8" />
-      </physics>
-      <thruster tags="small" />
-      <ship type="heavyfighter" />
-      <sound_occlusion inside="0.5" />
-    </properties>
-    <connections>
-      <connection ref="con_cockpit_01">
-        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
-      </connection>
-      <connection ref="con_dock_xs">
-        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
-      </connection>
-      <connection ref="con_shipstorage_xs_01">
-        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
-      </connection>
-      <connection ref="con_storage_01">
-        <macro ref="storage_bor_s_heavyfighter_01_a_macro" connection="ShipConnection" />
-      </connection>
-    </connections>
-  </macro>
-</macros>
+    <macros>
+      <macro name="ship_bor_s_heavyfighter_01_a_macro" class="ship_s">
+        <component ref="ship_bor_s_heavyfighter_01" />
+        <properties>
+          <identification name="{20101,50601}" basename="{20101,50601}" makerrace="boron" description="{20101,50611}" icon="ship_s_heavyfighter_01" />
+          <software>
+            <software ware="software_dockmk2" compatible="1" />
+            <software ware="software_flightassistmk1" default="1" />
+            <software ware="software_scannerlongrangemk1" default="1" />
+            <software ware="software_scannerlongrangemk2" compatible="1" />
+            <software ware="software_scannerobjectmk1" default="1" />
+            <software ware="software_scannerobjectmk2" compatible="1" />
+            <software ware="software_targetmk1" default="1" />
+            <software ware="software_trademk1" compatible="1" />
+          </software>
+          <jerk>
+            <forward accel="0.4" decel="0.3" ratio="3" />
+            <forward_boost accel="0.4" ratio="3" />
+            <forward_travel accel="0.4" decel="0.9" ratio="3" />
+            <strafe value="0.8" />
+            <angular value="0.8" />
+          </jerk>
+          <storage missile="22" />
+          <hull max="8000" />
+          <glow engine="1" />
+          <secrecy level="1" />
+          <steeringcurve>
+            <point position="1.01" value="1" />
+            <point position="1.3" value="0.65" />
+            <point position="1.6" value="0.4" />
+            <point position="2" value="0.25" />
+            <point position="2.25" value="0.15" />
+            <point position="2.7" value="0.1" />
+          </steeringcurve>
+          <purpose primary="fight" />
+          <people capacity="2" />
+          <sounds>
+            <shipdetail ref="shipdetail_ship_boron_s_01" />
+          </sounds>
+          <physics mass="7.791">
+            <inertia pitch="1.70" yaw="1.70" roll="1.36" />
+            <drag forward="1.25" reverse="8.63" horizontal="4.048" vertical="4.048" pitch="3.83" yaw="3.83" roll="3.83" />
+            <accfactors forward="1.1" horizontal="0.8" vertical="0.8" />
+          </physics>
+          <thruster tags="small" />
+          <ship type="heavyfighter" />
+          <sound_occlusion inside="0.5" />
+          <modifiers>
+            <shield capacity="1.2" rechargerate="1.2" />
+          </modifiers>
+        </properties>
+        <connections>
+          <connection ref="con_cockpit_01">
+            <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+          </connection>
+          <connection ref="con_dock_xs">
+            <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+          </connection>
+          <connection ref="con_shipstorage_xs_01">
+            <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+          </connection>
+          <connection ref="con_storage_01">
+            <macro ref="storage_bor_s_heavyfighter_01_a_macro" connection="ShipConnection" />
+          </connection>
+        </connections>
+      </macro>
+    </macros>
   </replace>
 </diff>

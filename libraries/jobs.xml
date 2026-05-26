@@ -853,30 +853,6 @@
     </ship>
   </job>
 
-  <job id="scaleplate_hound" name="{20204,5201}" disabled="false">
-    <modifiers commandeerable="true"/>
-    <orders>
-		<order order="VROProtectRandomStationSCA" default="true"/>
-	</orders>
-	<time interval="3600" />
-    <category faction="scaleplate" tags="[military, hound]" size="ship_l"/>
-    <quota galaxy="3" sector="1"/>
-    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="neutral" comparison="ge" matchextension="false"/>
-    <environment buildatshipyard="false" gate="true"/>
-    <ship>
-      <select faction="scaleplate" tags="[military, hound]" size="ship_l"/>
-      <loadout>
-        <level exact="1"/>
-      </loadout>
-      <owner exact="scaleplate" overridenpc="true"/>
-	  <subordinates>
-		<subordinate job="scaleplate_fighter_escort_s"/>
-	</subordinates>
-    </ship>
-  </job>
-  
-
-
   <!-- ############################# -->
   <!--      XENON				      -->
   <!-- ############################# -->

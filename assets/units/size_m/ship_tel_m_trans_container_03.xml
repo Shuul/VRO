@@ -1,14 +1,4 @@
 <diff>
-<add sel="//components/component/connections">
-<!-- turrets -->
-      <connection name="con_turret_L04" tags="turret medium standard platformcollision unhittable combat">
-        <offset>
-          <position x="0" y="-5" z="-70.29195"/>
-          <rotation yaw="180" pitch="0" roll="180"/>
-        </offset>
-      </connection>
-
-</add>
 
 <replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags"> weapon medium standard platformcollision highpower combat</replace>
 

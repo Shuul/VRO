@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<diff> 
+<diff>
   <replace sel="//macros">
     <macros>
       <macro name="ship_ter_s_heavyfighter_01_a_macro" class="ship_s">
@@ -16,25 +16,25 @@
             <software ware="software_targetmk1" default="1" />
             <software ware="software_trademk1" compatible="1" />
           </software>
-      <jerk>
-        <forward accel="0.6" decel="0.8" ratio="4" />
-        <forward_boost accel="0.5" ratio="3" />
-        <forward_travel accel="0.4" decel="0.9" ratio="4" />
-        <strafe value="0.6" />
-        <angular value="0.7" />
-      </jerk>
+          <jerk>
+            <forward accel="0.6" decel="0.8" ratio="4" />
+            <forward_boost accel="0.5" ratio="3" />
+            <forward_travel accel="0.4" decel="0.9" ratio="4" />
+            <strafe value="0.6" />
+            <angular value="0.7" />
+          </jerk>
           <storage missile="16" />
           <hull max="7400" />
           <secrecy level="2" />
-      <glow engine="1" />
-      <steeringcurve>
-        <point position="1.01" value="1" />
-        <point position="1.2" value="0.75" />
-        <point position="1.65" value="0.5" />
-        <point position="2" value="0.3" />
-        <point position="2.4" value="0.18" />
-        <point position="2.7" value="0.16" />
-      </steeringcurve>
+          <glow engine="1" />
+          <steeringcurve>
+            <point position="1.01" value="1" />
+            <point position="1.2" value="0.75" />
+            <point position="1.65" value="0.5" />
+            <point position="2" value="0.3" />
+            <point position="2.4" value="0.18" />
+            <point position="2.7" value="0.16" />
+          </steeringcurve>
           <purpose primary="fight" />
           <people capacity="2" />
           <sounds>
@@ -47,6 +47,10 @@
           <thruster tags="small" />
           <ship type="heavyfighter" />
           <sound_occlusion inside="0.5" />
+          <modifiers>
+            <shield capacity="1.3" />
+            <weapon heat="0.9" />
+          </modifiers>
         </properties>
         <connections>
           <connection ref="con_cockpit">
@@ -61,7 +65,7 @@
           <connection ref="con_storage01">
             <macro ref="storage_ter_s_heavyfighter_01_a_macro" connection="ShipConnection" />
           </connection>
-    
+
         </connections>
       </macro>
     </macros>
