@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.81) on 2025-11-05 11:29:28-->
+
+<diff> 
+  <replace sel="//macros">
+    <macros>
+      <macro name="engine_kha_l_destroyer_01_allround_01_mk1_macro" class="engine">
+        <component ref="engine_kha_l_destroyer_01_allround_01_mk1" />
+        <properties>
+          <identification name="{20107,3204}" basename="{20107,3201}" shortname="{20107,3205}" makerrace="khaak" description="{20107,3202}" mk="1" />
+          <thrust forward="5058" reverse="5564" />
+          <travel charge="15" thrust="20" attack="25" release="23" />
+          <hull max="7500" threshold="0.3" integrated="1" scrapware="rawkhaakscrap" />
+          <effects>
+            <traveling ref="gen_traveldrive_fx_l" />
+          </effects>
+          <sounds>
+            <enginedetail ref="enginedetail_ship_khaak_l_01" />
+          </sounds>
+          <decelerationcurve>
+            <point position="1.01" value="1" />
+            <point position="1.1" value="2" />
+            <point position="1.5" value="5" />
+            <point position="2.1" value="14" />
+            <point position="2.5" value="20" />
+          </decelerationcurve>
+          <strafecurve>
+            <point position="1.01" value="1" />
+            <point position="1.1" value="2" />
+            <point position="1.5" value="5" />
+            <point position="2.1" value="14" />
+            <point position="2.5" value="20" />
+          </strafecurve>
+        </properties>
+      </macro>
+    </macros>
+    </replace>
+</diff>
