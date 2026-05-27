@@ -24,8 +24,8 @@
         <angular value="1" />
       </jerk>
       <explosiondamage value="2000" />
-      <storage missile="0" unit="0" />
-      <hull max="15000" />
+      <storage countermeasure="0" missile="0" unit="0" />
+      <hull max="15000" scrapware="rawkhaakscrap"/>
       <secrecy level="3" />
       <steeringcurve>
         <point position="1.01" value="1" />
@@ -47,9 +47,6 @@
             <shield macro="shield_kha_m_standard_01_mk1_macro" path="../con_shield_01" optional="1" />
             <weapon macro="weapon_kha_m_laser_01_mk1_macro" path="../con_primaryweapon_01" optional="1" />
           </macros>
-          <ammunition>
-            <ammunition macro="countermeasure_flares_01_macro" min="0" max="2" optional="1" />
-          </ammunition>
           <virtualmacros>
             <thruster macro="thruster_gen_m_combat_01_mk3_macro" />
           </virtualmacros>
