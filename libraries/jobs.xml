@@ -113,6 +113,32 @@
 			<subordinate job="argon_fighter_escort_s_frigate"/>
 		</subordinates>
 	  </job> -->
+	  
+		<job id="argon_scylla_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
+		<modifiers commandeerable="true"/>
+		<orders>
+			<order order="Patrol" default="true">
+       		 <param name="range" value="class.sector"/>
+			</order>
+		</orders>
+		<category faction="argon" tags="[factionlogic, military, frigate]" size="ship_l"/>
+		<quota galaxy="6" sector="1"/>
+     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
+		<environment buildatshipyard="true"/>
+		<ship>
+			<select faction="argon" tags="[military, frigatem scylla]" size="ship_l"/>
+			<loadout>
+				<level min="0.2" max="0.8"/>
+			</loadout>
+			<owner exact="argon" overridenpc="true"/>
+		</ship>
+		<subordinates>
+			<subordinate job="argon_fighter_escort_s_frigate"/>
+			<subordinate job="argon_fighter_escort_s_frigate"/>
+			<subordinate job="argon_fighter_escort_s_frigate"/>
+			<subordinate job="argon_fighter_escort_s_frigate"/>
+		</subordinates>
+	  </job>
 
 	  <job id="argon_battleship_argon_one" name="{20204,6201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
@@ -217,7 +243,7 @@
 		</subordinates>
 	  </job>
   -->
-	  <!-- <job id="paranid_hyperion_l" name="{20204,5201}" comment="each sector, expansion">
+	  <job id="paranid_ariadne_l" name="{20204,5201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -229,7 +255,7 @@
      	<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<ship>
-			<select faction="paranid" tags="[military, frigate, hyperion]" size="ship_l"/>
+			<select faction="paranid" tags="[military, frigate, ariadne]" size="ship_l"/>
 			<loadout>
 				<level exact="1"/>
 			</loadout>
@@ -237,8 +263,11 @@
 		</ship>
 		<subordinates>
 			<subordinate job="paranid_fighter_escort_s_frigate"/>
+			<subordinate job="paranid_fighter_escort_s_frigate"/>
+			<subordinate job="paranid_fighter_escort_s_frigate"/>
+			<subordinate job="paranid_fighter_escort_s_frigate"/>
 		</subordinates>
-	  </job> -->
+	  </job>
 
 
   <!-- ############################# -->
@@ -564,7 +593,7 @@
 		  </order>
 		</orders>
 		<category faction="fallensplit" tags="[plunderer, frigate]" size="ship_l"/>
-		<quota galaxy="2" sector="1"/>
+		<quota galaxy="1" sector="1"/>
 		<location class="galaxy" macro="xu_ep2_universe_macro" factionrace="split" negatefactionrace="true" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
 		<environment buildatshipyard="true"/>
 		<basket basket="pirate_container"/>
@@ -667,7 +696,7 @@
 	  </order>
 	</orders>
 	<category faction="terran" tags="[military, fighter]" size="ship_s"/>
-	<quota wing="3"/>
+	<quota wing="10"/>
 	<location class="galaxy" macro="xu_ep2_universe_macro"/>
 	<environment buildatshipyard="true"/>
 	<modifiers subordinate="true"/>
@@ -792,6 +821,7 @@
 	  <owner exact="pioneers" overridenpc="true"/>
 	</ship>
 	<subordinates>
+		<subordinate job="pioneers_fighter_escort_s"/>
 		<subordinate job="pioneers_fighter_escort_s"/>
 		<subordinate job="pioneers_fighter_escort_s"/>
 		<subordinate job="pioneers_corvette_escort_m"/>

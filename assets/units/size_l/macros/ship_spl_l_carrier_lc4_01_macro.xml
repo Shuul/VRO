@@ -22,7 +22,7 @@
       </jerk>
       <explosiondamage value="1000" shield="5000" />
       <storage missile="252" unit="10" />
-      <hull max="232500" />
+      <hull max="242500" />
       <secrecy level="1" />
       <steeringcurve>
         <point position="1.01" value="1" />
@@ -41,6 +41,9 @@
       <thruster tags="large" />
       <ship type="carrier" />
 			<radar range="55000" />
+			<modifiers>
+				<shield rechargerate="1.3" />
+			</modifiers>
     </properties>
     <connections>
       <connection ref="con_buildmodule_01">

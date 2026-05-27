@@ -32,6 +32,16 @@
 		</ship>
 	</add>
 
+	<add sel="//ships">
+		<ship id="argon_scylla" group="arg_scylla_l">
+			<category tags="[military, frigate, scylla]" faction="[argon]" size="ship_l" />
+			<pilot>
+				<select faction="argon" tags="fighterpilot" />
+			</pilot>
+			<drop ref="ship_large_military" />
+			<people ref="argon_military_crew" />
+		</ship>
+	</add>
 	<!-- <add sel="//ships">
 		<ship id="argon_cyclops" group="arg_cyclops_l">
 			<category tags="[military, frigate, mission]" faction="[argon]" size="ship_l" />
@@ -87,17 +97,17 @@
 		</ship>
 	</add> 
  -->
-	<!-- <add sel="//ships">
-		<ship id="paranid_hyperion" group="par_hyperion_l">
-			<category tags="[military, frigate, mission, hyperion]" faction="[paranid]"
+	<add sel="//ships">
+		<ship id="paranid_ariadne" group="par_ariadne_l">
+			<category tags="[military, frigate, mission, ariadne]" faction="[paranid]"
 				size="ship_l" />
 			<pilot>
 				<select faction="paranid" tags="elitepilot" />
 			</pilot>
 			<drop ref="ship_large_military" />
-			<people ref="paranid_elite_military_crew" />
+			<people ref="paranid_military_crew" />
 		</ship>
-	</add> -->
+	</add>
 
 	<!-- ############################# -->
 	<!--    HOLY ORDER OF THE PONTIFEX -->

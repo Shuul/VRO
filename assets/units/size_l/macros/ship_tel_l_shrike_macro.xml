@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Exported by: nick (192.168.3.66) on 2024-05-07 15:35:11-->
 <macros>
 	<macro name="ship_tel_l_shrike_macro" class="ship_l">
 		<component ref="ship_tel_l_shrike" />
 		<properties>
-			<identification name="{20101,21701}" description="{6699,1904}" icon="ship_l_neutral_01" />
+			<identification name="{20101,21701}" description="{6699,1904}" icon="ship_l_carrier_01" />
 			<software>
 				<software ware="software_dockmk2" compatible="1" />
 				<software ware="software_flightassistmk1" default="1" />
@@ -28,9 +27,9 @@
 			<thruster tags="large" />
 			<ship type="carrier" />
 			<threatscore value="10" />
-          <modifiers>
-            <shield capacity="1.5" rechargerate="0.8" />
-          </modifiers>
+			<modifiers>
+				<shield capacity="1.5" rechargerate="0.8" />
+			</modifiers>
 		</properties>
 		<connections>
 			<connection ref="con_cockpit_01">
@@ -53,22 +52,22 @@
 			</connection>
 			<connection ref="dockarea_s001">
 				<macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
-			</connection>			
+			</connection>
 			<connection ref="dockarea_s002">
 				<macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
-			</connection>			
+			</connection>
 			<connection ref="dockarea_s003">
 				<macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
-			</connection>			
+			</connection>
 			<connection ref="dockarea_s004">
 				<macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
-			</connection>			
+			</connection>
 			<connection ref="dockarea_s005">
 				<macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
-			</connection>			
+			</connection>
 			<connection ref="dockarea_s006">
 				<macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
-			</connection>			
-		</connections>				
+			</connection>
+		</connections>
 	</macro>
 </macros>
