@@ -320,7 +320,7 @@
 		</subordinates>
 	  </job> -->
 
-	  <job id="trinity_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion" startactive="false">
+	  <!-- <job id="trinity_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion" startactive="false">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -342,7 +342,7 @@
 			<subordinate job="trinity_frigate_escort_m"/>
 		</subordinates>
 	  </job>
-
+ -->
   <!-- ############################# -->
   <!--        TELADI COMPANY         -->
   <!-- ############################# -->
@@ -869,7 +869,7 @@
     </orders>
 	<time interval="3600" />
     <category faction="scaleplate" tags="[plunderer]" size="ship_l"/>
-    <quota galaxy="7" sector="1"/>
+    <quota galaxy="5" sector="1"/>
     <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
     <environment buildatshipyard="false" gate="true"/>
     <basket basket="pirate_container"/>
