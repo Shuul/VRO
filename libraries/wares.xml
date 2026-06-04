@@ -1450,8 +1450,27 @@ __________________ -->
     </primary>
   </replace>
 
+  <!-- Old ships removal -->
+  <replace sel="//ware[@id='ship_arg_l_destroyer_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_arg_l_destroyer_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_l_destroyer_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_l_destroyer_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_tel_l_destroyer_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_tel_l_destroyer_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+
+  <replace sel="//ware[@id='ship_tel_l_miner_solid_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_tel_l_miner_solid_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+
+  <replace sel="//ware[@id='ship_tel_l_miner_liquid_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_tel_l_miner_liquid_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+
+  <replace sel="//ware[@id='ship_tel_l_trans_container_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_tel_l_trans_container_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+
+  <replace sel="//ware[@id='ship_tel_l_trans_container_02_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_tel_l_trans_container_02_b']/@tags">ship noplayerbuild noblueprint</replace>
   <!-- paranid l ships removal -->
-  <!-- <replace sel="//ware[@id='ship_par_l_miner_liquid_01_a']/@tags">ship noplayerbuild noblueprint</replace>
+  <replace sel="//ware[@id='ship_par_l_miner_liquid_01_a']/@tags">ship noplayerbuild noblueprint</replace>
   <replace sel="//ware[@id='ship_par_l_miner_liquid_01_b']/@tags">ship noplayerbuild noblueprint</replace>
   <replace sel="//ware[@id='ship_par_l_miner_solid_01_a']/@tags">ship noplayerbuild noblueprint</replace>
   <replace sel="//ware[@id='ship_par_l_miner_solid_01_b']/@tags">ship noplayerbuild noblueprint</replace>
@@ -1462,7 +1481,8 @@ __________________ -->
   <replace sel="//ware[@id='ship_par_xl_carrier_01_a']/@tags">ship noplayerbuild noblueprint</replace>
   <replace sel="//ware[@id='ship_par_xl_carrier_01_b']/@tags">ship noplayerbuild noblueprint</replace>
   <replace sel="//ware[@id='ship_par_xl_resupplier_01_a']/@tags">ship noplayerbuild noblueprint</replace>
-  <replace sel="//ware[@id='ship_par_xl_resupplier_01_b']/@tags">ship noplayerbuild noblueprint</replace> -->
+  <replace sel="//ware[@id='ship_par_xl_resupplier_01_b']/@tags">ship noplayerbuild noblueprint</replace>
+
 
   <replace sel="//wares/ware[@id='ship_tel_l_destroyer_01_a']/price">
     <price min="6476958" average="7743480" max="8910002" />
@@ -3281,12 +3301,12 @@ __________________ -->
 
     <!-- ROTOR  -->
     <ware id="turret_sca_l_rotor" name="{6699,12055}" description="{6699,12058}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
-      <price min="617200" average="637200" max="657200" />
+      <price min="417200" average="437200" max="457200" />
       <production time="20" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="advancedelectronics" amount="30" />
           <ware ware="energycells" amount="350" />
-          <ware ware="turretcomponents" amount="200" />
+          <ware ware="turretcomponents" amount="150" />
         </primary>
       </production>
       <component ref="turret_sca_l_rotor_macro" amount="1" />

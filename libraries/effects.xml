@@ -231,7 +231,7 @@
         <element id="1" ref="impact_arg_s_ion_01_mk1_macro" forkeffect="none" duration="1.0" minscale="5.0" maxscale="5.0" emitterspace="zone" alignment="random" fadeout="0.2" forklod="megaeffect"></element>
         <element id="2" ref="impact_arg_s_ion_01_mk1_macro" forkeffect="none" duration="1.0" delay="0.15" minscale="10.0" maxscale="10.0" emitterspace="zone" alignment="random" fadeout="0.2" forklod="megaeffect"></element>
         <element id="3" ref="impact_arg_s_ion_01_mk1_macro" forkeffect="none" duration="1.0" delay="0.3" minscale="10.0" maxscale="10.0" emitterspace="zone" alignment="random" fadeout="0.2" forklod="megaeffect"></element>
-        <element id="1" ref="impact_gen_m_laser_01_mk1_macro" forkeffect="none" delay="0.4" duration="2.0" minscale="20.0" maxscale="20.0" emitterspace="zone" alignment="random" fadein="0.0" fadeout="0.15" forklod="megaeffect"></element>
+        <element id="1" ref="impact_gen_m_laser_01_mk1_macro" forkeffect="none" delay="0.4" duration="0.1" minscale="20.0" maxscale="20.0" emitterspace="zone" alignment="random" fadein="0.0" fadeout="0.15" forklod="megaeffect"></element>
         <element id="4" ref="explosion_xl_01_ring_macro" forkeffect="none" duration="4" delay="0.4" minscale="0.2" maxscale="0.2" emitterspace="zone" alignment="random" fadeout="0.5" forklod="megaeffect"></element>
         <!-- Area DMG -->
         <element id="5" ref="effect_dummy_macro" forkeffect="none" delay="0.4" duration="1.0" forklod="none">
@@ -663,7 +663,7 @@
 
     <effect name="impact_gen_m_isr" alignment="normal">
       <elements>
-        <element id="1" ref="impact_gen_m_laser_01_mk1_macro" forkeffect="none" duration="1.0" minscale="4.0" maxscale="4.0" fadein="0.0" fadeout="0.0" forklod="none"></element>
+        <element id="1" ref="impact_gen_m_laser_01_mk1_macro" forkeffect="none" duration="0.1" minscale="4.0" maxscale="4.0" fadein="0.0" fadeout="0.0" forklod="none"></element>
         <!-- Impact Smoke Particles-->
         <element id="2" ref="dummyemitter_macro" forkeffect="laser_impact_smoke_01" alignment="normal" duration="2.0" minscale="2.0" maxscale="3.0" forklod="none"></element>
         <!-- Impact Fire Particles-->
@@ -1274,34 +1274,17 @@
     <effect name="impact_gen_turret_flak" alignment="normal" emitterspace="zone">
       <elements>
         <!-- Distortion Particles -->
-        <element id="1" ref="dummyemitter_macro" forkeffect="explosion_m_01_distortion01" minscale="0.3" maxscale="0.3" duration="1.5" forklod="megaeffect">
+        <element id="1" ref="dummyemitter_macro" forkeffect="explosion_m_01_distortion01" minscale="0.3" maxscale="0.3" duration="1.0" forklod="megaeffect" fadeout="0.05">
         </element>
         <!-- Explosion particles (star-shaped) -->
-        <element id="2" ref="dummyemitter_macro" forkeffect="explosion_m_01_explosion01" minscale="0.4" maxscale="0.4" duration="1.5" forklod="megaeffect"></element>
+        <element id="2" ref="dummyemitter_macro" forkeffect="explosion_m_01_explosion01" minscale="0.4" maxscale="0.4" duration="1.0" forklod="megaeffect" fadeout="0.05" ></element>
         <!-- Smoke particles (star-shaped) -->
-        <element id="3" ref="dummyemitter_macro" forkeffect="explosion_m_01_smoke01" minscale="0.3" maxscale="0.3" duration="1.5" delay="0.2" forklod="megaeffect"></element>
-        <!-- Rumble -->
-        <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="0.6" forklod="none">
-          <force range="1000" falloff="1.0">
-            <rumble>
-              <camera>
-                <component frequency="10" attackduration="0.15" sustainduration="0" releaseduration="0.85">
-                  <amplitude randomize="true">
-                    <position x="0.01" y="0.01" z="0.01" />
-                  </amplitude>
-                </component>
-              </camera>
-              <controller>
-                <low amplitude="0.5" attackduration="0.5" sustainduration="0.3" releaseduration="0.2" />
-              </controller>
-            </rumble>
-          </force>
-        </element>
+        <element id="3" ref="dummyemitter_macro" forkeffect="explosion_m_01_smoke01" minscale="0.3" maxscale="0.3" duration="1.0" delay="0.2" forklod="megaeffect" fadeout="0.05"></element>
         <!-- OLD -->
         <!-- Light -->
         <!-- <element id="5" ref="explosion_m_02_explosion01" forkeffect="none" duration="1.0" fadein="0.02" fadeout="0.5" alignment="normal" forklod="largeeffect"></element> -->
         <!-- Explosion -->
-        <element id="6" ref="dummyemitter_up_macro" forkeffect="explosion_props_wps_mine_01_explosion_01" duration="1.5" delay="0.1" fadeout="1.0" alignment="normal" forklod="largeeffect"></element>
+        <element id="6" ref="dummyemitter_up_macro" forkeffect="explosion_props_wps_mine_01_explosion_01" duration="1.0" delay="0.1" fadeout="0.5" alignment="normal" forklod="largeeffect"></element>
         <!-- OLD -->
         <!-- area damage -->
         <element id="7" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
@@ -1349,7 +1332,7 @@
     <effect name="impact_gen_turret_fusion_ray" alignment="normal">
       <elements>
         <!-- Impact Geometry -->
-        <element id="1" ref="impact_gen_m_laser_01_mk1_macro" forkeffect="none" duration="1.0" minscale="5.0" maxscale="5.0" fadein="0.0" fadeout="0.0" forklod="none"></element>
+        <element id="1" ref="impact_gen_m_laser_01_mk1_macro" forkeffect="none" duration="0.1" minscale="5.0" maxscale="5.0" fadein="0.0" fadeout="0.0" forklod="none"></element>
         <!-- Impact Smoke Particles-->
         <element id="2" ref="dummyemitter_macro" forkeffect="laser_impact_smoke_01" alignment="normal" duration="2.0" minscale="4.0" maxscale="6.0" forklod="none"></element>
         <!-- Impact Fire Particles-->
@@ -1425,7 +1408,7 @@
     <effect name="turret_ppc_impact" alignment="normal">
       <elements>
         <!-- Impact Geometry -->
-        <element id="1" ref="impact_gen_m_laser_01_mk1_macro" forkeffect="none" duration="2.0" minscale="20.0" maxscale="20.0" fadein="0.0" fadeout="0.15" forklod="largeeffect"></element>
+        <element id="1" ref="impact_gen_m_laser_01_mk1_macro" forkeffect="none" duration="0.1" minscale="20.0" maxscale="20.0" fadein="0.0" fadeout="0.15" forklod="largeeffect"></element>
         <!-- Impact Smoke Particles-->
         <element id="2" ref="dummyemitter_macro" forkeffect="laser_impact_smoke_01" alignment="normal" duration="3.5" minscale="7.0" maxscale="10.0" fadeout="0.25" forklod="largeeffect"></element>
         <!-- Impact Fire Particles-->
@@ -1534,7 +1517,7 @@
     <effect name="impact_parray" alignment="normal">
       <elements>
         <!-- Impact Geometry -->
-        <element id="1" ref="impact_gen_s_plasma_01_mk1_macro" forkeffect="none" duration="1.3" minscale="8.0" maxscale="8.0" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element>
+        <element id="1" ref="impact_gen_s_plasma_01_mk1_macro" forkeffect="none" duration="0.1" minscale="8.0" maxscale="8.0" fadein="0.0" fadeout="0.0" forklod="largeeffect"></element>
         <!-- Impact Smoke Particles-->
         <element id="2" ref="dummyemitter_macro" forkeffect="plasma_impact_smoke_01" alignment="normal" duration="4.0" minscale="7.0" maxscale="7.0" forklod="largeeffect"></element>
         <!-- Impact Fire Particles-->

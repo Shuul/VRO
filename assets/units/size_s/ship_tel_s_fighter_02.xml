@@ -1,12 +1,5 @@
 <?xml version="1.0"?>
 <diff>
-<add sel="//components/component/connections">
-	<connection name="con_shield_03" tags="small shield unhittable standard">
-		<offset>
-			<position x="0" y="2.9134" z="-3.8563"/>
-		</offset>
-	</connection>
-</add>
 <replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags"> weapon small standard platformcollision symmetry combat</replace>
 <replace  sel="/components/component/connections/connection[@name='con_weapon_02']/@tags"> weapon small standard platformcollision symmetry_1 symmetry_left highpower combat</replace>
 <replace  sel="/components/component/connections/connection[@name='con_weapon_03']/@tags"> weapon small standard platformcollision symmetry_1 symmetry_right highpower combat</replace>
