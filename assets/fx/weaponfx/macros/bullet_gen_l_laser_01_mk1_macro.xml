@@ -2,28 +2,26 @@
 <!--Exported by: nick (192.168.3.52) at 25.11.2018_15-30-27-->
 <diff>
   <replace sel="//macros">
-  <macros>
-  <macro name="bullet_gen_l_laser_01_mk1_macro" class="bullet">
-    <component ref="bullet_gen_fa" />
-    <properties>
-      <ammunition value="3" reload="10" />
-      <bullet speed="5500" lifetime="3" amount="1" barrelamount="1" icon="weapon_laser_mk1" timediff="0.008" angle="0.45" maxhits="1" ricochet="0" scale="0" attach="0" />
-      <heat value="1755" />
-      <reload rate="0.5" />
-      <damage value="9350" shield="4000" repair="0" shielddisruption="10"/>
-      <effects>
-        <impact ref="turret_fa_impact" />
-        <launch ref="turret_fa_muzzle"  />
-      </effects>
-      <weapon system="weapon_standard" />
-    </properties>
-  </macro>
-</macros>
+    <macros>
+      <macro name="bullet_gen_l_laser_01_mk1_macro" class="bullet">
+        <component ref="bullet_gen_fa" />
+        <properties>
+          <ammunition value="3" reload="10" />
+          <bullet speed="5500" lifetime="3" amount="1" barrelamount="1" icon="weapon_laser_mk1" timediff="0.008" angle="0.45" maxhits="1" ricochet="0" scale="0" attach="0" />
+          <heat value="1755" />
+          <reload rate="0.5" />
+          <damage value="9350" shield="4000" repair="0" shielddisruption="10" />
+          <effects>
+            <impact ref="turret_fa_impact" inside="turret_fa_impact" />
+            <launch ref="turret_fa_muzzle" />
+          </effects>
+          <weapon system="weapon_standard" />
+        </properties>
+      </macro>
+    </macros>
   </replace>
-  </diff>
-  
-  
-  
+</diff>
+
 
 <!--<macros>
   <macro name="bullet_gen_l_laser_01_mk1_macro" class="bullet">

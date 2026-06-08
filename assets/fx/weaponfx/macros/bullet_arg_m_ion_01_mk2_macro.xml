@@ -9,7 +9,9 @@
       <bullet speed="5000" lifetime="1.1" amount="7" barrelamount="1" influencelist="medium_drive_disrupt" icon="weapon_ion_mk2" timediff="0.008" angle="1.0" maxhits="1" ricochet="0" scale="0" attach="0" />
       <heat value="130" />
       <reload rate="0.4" />
-      <damage value="61" shield="860" repair="0" shielddisruption="10"/>
+      <damage value="61" shield="860" repair="0" shielddisruption="10">
+        <multiplier traveldrive="4" />
+      </damage>
       <effects>
         <impact ref="impact_arg_m_ion_01_mk1" inside="impact_arg_m_ion_01_mk1_inside" />
         <bigobjectimpact ref="impact_arg_m_ion_01_mk1_bigobject" inside="impact_arg_m_ion_01_mk1_bigobject_inside" />
