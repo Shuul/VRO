@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- argonmattgriffon_macro.xml - Created by Argon_Matt -->
+<macros>
+  <macro name="argonmattgriffon_macro" class="ship_l">
+    <component ref="argonmattgriffon" />
+
+    <!-- PROPERTIES -->
+    <properties>
+      <identification name="{6699,1907}" basename="{6699,1907}" description="{6699,19071}" icon="ship_l_neutral_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk2" default="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" compatible="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="1000" shield="6000" />
+      <storage missile="1500" unit="50" />
+      <hull max="140000" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="38" />
+      <sounds>
+        <shipdetail ref="shipdetail_ship_l_01" />
+      </sounds>
+      <physics mass="160.0">
+        <inertia pitch="180.749" yaw="180.749" roll="180.999" />
+        <drag forward="55" reverse="160.22" horizontal="50" vertical="50" pitch="163" yaw="163" roll="155"/>
+        <accfactors reverse="0.85" />
+      </physics>
+      <thruster tags="large" />
+      <ship type="frigate" />
+      <modifiers>
+        <shield capacity="1.5" />
+      </modifiers>
+    </properties>
+
+      <!-- CONNECTIONS LINKED TO MACROS -->
+    <connections>
+      <connection ref="con_cockpit_01">
+        <macro ref="bridge_arg_l_01_macro" connection="con_cockpit" />
+      </connection>
+
+      <!-- FREIGHT STORAGE -->
+      <connection ref="con_storage_01">
+        <macro ref="storage_argonmattgriffon_macro" connection="ShipConnection" />
+      </connection>
+      
+      <!-- XS DOCK + STORAGE -->
+      <connection ref="con_dock_xs_01">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+
+      <!-- S DOCK + STORAGE -->
+      <connection ref="con_dockarea_01">
+        <macro ref="dockarea_arg_s_ship_01_macro" connection="Connection01" />
+      </connection>
+      <connection ref="con_shipstorage_s_01">
+        <macro ref="shipstorage_gen_s_cap4_macro" connection="object" />
+      </connection>
+
+    </connections>
+  </macro>
+</macros>
