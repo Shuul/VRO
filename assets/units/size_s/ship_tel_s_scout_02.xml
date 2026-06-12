@@ -1,6 +1,12 @@
 <diff>
-<add sel="//components/component/connections">
-</add>
-<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags"> weapon small platformcollision highpower combat</replace>
+    <add sel="//components/component/connections">
+        <connection name="con_shield_02" tags="advanced shield small ">
+            <offset>
+                <position x="-5e-10" y="-2.065731" z="1.467296" />
+                <quaternion qx="-2.3e-09" qy="-0.03045972" qz="-0.999536" qw="-7.55e-08" />
+            </offset>
+        </connection>
+    </add>
+    <replace sel="/components/component/connections/connection[@name='con_weapon_01']/@tags"> weapon small platformcollision highpower combat</replace>
 
 </diff>

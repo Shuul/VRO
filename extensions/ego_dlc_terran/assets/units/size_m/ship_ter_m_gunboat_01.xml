@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
 <diff>
-	<replace  sel="/components/component/connections/connection[@name='con_weapon_01']/@tags">weapon medium highpower platformcollision terronly combat</replace>
+	<replace sel="/components/component/connections/connection[@name='con_weapon_01']/@tags">weapon medium highpower platformcollision terronly combat</replace>
 
-	</diff>
+	<replace sel="/components/component/connections/connection[@name='con_missilelauncher_01']/@tags"> advanced medium torplauncher missile weapon</replace>
+
+	<replace sel="/components/component/connections/connection[@name='con_missilelauncher_02']/@tags"> advanced medium torplauncher missile weapon</replace>
+</diff>
 <!-- <components>
 	<component name="ship_ter_m_gunboat_01" class="ship_m">
 		<source geometry="extensions\ego_dlc_terran\assets\units\size_m\ship_ter_m_gunboat_01_data"/>

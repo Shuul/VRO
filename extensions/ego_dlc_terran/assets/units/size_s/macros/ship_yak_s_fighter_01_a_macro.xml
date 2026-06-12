@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<diff> 
+<diff>
   <replace sel="//macros">
     <macros>
       <macro name="ship_yak_s_fighter_01_a_macro" class="ship_s">
@@ -16,25 +16,25 @@
             <software ware="software_targetmk1" default="1" />
             <software ware="software_trademk1" compatible="1" />
           </software>
-      <jerk>
-        <forward accel="0.5" decel="0.3" ratio="3" />
-        <forward_boost accel="0.8" ratio="3" />
-        <forward_travel accel="0.5" decel="0.9" ratio="3" />
-        <strafe value="0.8" />
-        <angular value="0.8" />
-      </jerk>
-          <storage missile="9" />
+          <jerk>
+            <forward accel="0.5" decel="0.3" ratio="3" />
+            <forward_boost accel="0.8" ratio="3" />
+            <forward_travel accel="0.5" decel="0.9" ratio="3" />
+            <strafe value="0.8" />
+            <angular value="0.8" />
+          </jerk>
+          <storage missile="8" />
           <hull max="4500" />
           <secrecy level="2" />
-      <glow engine="1" />
-      <steeringcurve>
-        <point position="1.01" value="1" />
-        <point position="1.15" value="0.7" />
-        <point position="1.45" value="0.45" />
-        <point position="2" value="0.25" />
-        <point position="2.25" value="0.15" />
-        <point position="2.5" value="0.11" />
-      </steeringcurve>
+          <glow engine="1" />
+          <steeringcurve>
+            <point position="1.01" value="1" />
+            <point position="1.15" value="0.7" />
+            <point position="1.45" value="0.45" />
+            <point position="2" value="0.25" />
+            <point position="2.25" value="0.15" />
+            <point position="2.5" value="0.11" />
+          </steeringcurve>
           <purpose primary="fight" />
           <people capacity="3" />
           <physics mass="6.484">
@@ -42,7 +42,7 @@
             <drag forward="1.46" reverse="8.359" horizontal="3.726" vertical="3.726" pitch="3.79" yaw="3.79" roll="3.79" />
           </physics>
           <thruster tags="small" />
-      <ship type="fighter" prestige="15" />
+          <ship type="fighter" prestige="15" />
           <sound_occlusion inside="0.5" />
         </properties>
         <connections>
