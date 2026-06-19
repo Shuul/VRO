@@ -1,371 +1,370 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <diff>
-<!-- temp fix for argon constructors -->
+	<!-- temp fix for argon constructors -->
 
-<replace sel="//jobs/job[@id='argon_construction_vessel_xl']/location">
-    <location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="ally" comparison="ge" matchextension="false" excludedtags="boronborder boroncore"/>
-</replace>
+	<replace sel="//jobs/job[@id='argon_construction_vessel_xl']/location">
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="ally" comparison="ge" matchextension="false" excludedtags="boronborder boroncore" />
+	</replace>
 
 
-  <add sel="/jobs/job[@id='boron_carrier_patrol_l_sector']" pos="after">
-  <!-- ############################# -->
-  <!--    Borons, closed ones    -->
-  <!-- ############################# -->
-      <job id="boron_battleship_patrol_xl" name="{20221,5031}" >
-      <modifiers commandeerable="true" />
-      <orders>
-        <order order="Patrol" default="true">
-          <param name="range" value="class.sector" />
-        </order>
-      </orders>
-      <category faction="boron" tags="[factionlogic, military, battleship]" size="ship_xl" />
-      <quota galaxy="2" maxgalaxy="6" cluster="1" />
-     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="boron" relation="self" comparison="exact" excludedtags="boronborder" matchextension="false"/>
-      <environment buildatshipyard="true" />
-      <ship>
-        <select faction="boron" tags="[military, battleship]" size="ship_xl" />
-        <loadout>
-          <level exact="1.0" />
-        </loadout>
-        <owner exact="boron" overridenpc="true" />
-      </ship>
-      <subordinates>
-        <subordinate job="boron_carrier_escort_l_flagship" />
-        <subordinate job="boron_carrier_escort_l_flagship" />
-        <subordinate job="boron_destroyer_escort_l" />
-      </subordinates>
-    </job>
-
-    <job id="boron_carrier_patrol_xl_exp" name="{20204,3201}" >
-      <modifiers commandeerable="true" />
-      <orders>
-        <order order="Patrol" default="true">
-          <param name="range" value="class.sector" />
-        </order>
-      </orders>
-      <category faction="boron" tags="[factionlogic, military, carrier]" size="ship_xl" />
-      <quota galaxy="1" maxgalaxy="4" cluster="1" />
-    	<location class="galaxy" macro="xu_ep2_universe_macro" faction="boron" relation="self" comparison="exact" excludedtags="boronborder" matchextension="false"/>
-      <environment buildatshipyard="true" />
-      <ship>
-        <select faction="boron" tags="[military, carrier]" size="ship_xl" />
-        <loadout>
-          <level exact="1.0" />
-        </loadout>
-        <owner exact="boron" overridenpc="true" />
-      </ship>
-      <subordinates>
-        <subordinate job="boron_carrier_escort_l_flagship" />
-		<subordinate job="boron_destroyer_escort_l"/>
-        <subordinate job="boron_fighter_escort_s_carrier_flagship" />
-        <subordinate job="boron_escort_s_bomber" />
-        <subordinate job="boron_escort_s_bomber" />
-        <subordinate job="boron_escort_s_bomber" />
-      </subordinates>
-    </job> 
-
-				<job id="boron_escort_s_bomber" name="{20221,3001}" startactive="false">
+	<add sel="/jobs/job[@id='boron_carrier_patrol_l_sector']" pos="after">
+		<!-- ############################# -->
+		<!--    Borons, closed ones    -->
+		<!-- ############################# -->
+		<job id="boron_battleship_patrol_xl" name="{20221,5031}">
+			<modifiers commandeerable="true" />
 			<orders>
-			<order order="Escort" default="true">
-				<param name="formation" value="formationshape.pointguard"/>
-				<param name="overrideformationskill" value="true"/>
-			</order>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
 			</orders>
-			<category faction="boron" tags="[military, bomber]" size="ship_s"/>
-			<quota wing="3" variation="1"/>
-			<location class="galaxy" macro="xu_ep2_universe_macro"/>
-			<environment buildatshipyard="true"/>
-			<modifiers subordinate="true"/>
+			<category faction="boron" tags="[factionlogic, military, battleship]" size="ship_xl" />
+			<quota galaxy="2" maxgalaxy="6" cluster="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="boron" relation="self" comparison="exact" excludedtags="boronborder" matchextension="false" />
+			<environment buildatshipyard="true" />
 			<ship>
-			<select faction="boron" tags="[military, bomber]" size="ship_s"/>
-			<loadout>
-				<level exact="1"/>
-			</loadout>
-			<owner exact="boron" overridenpc="true"/>
+				<select faction="boron" tags="[military, battleship]" size="ship_xl" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+				<owner exact="boron" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="boron_carrier_escort_l_flagship" />
+				<subordinate job="boron_carrier_escort_l_flagship" />
+				<subordinate job="boron_destroyer_escort_l" />
+			</subordinates>
+		</job>
+
+		<job id="boron_carrier_patrol_xl_exp" name="{20204,3201}">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="boron" tags="[factionlogic, military, carrier]" size="ship_xl" />
+			<quota galaxy="1" maxgalaxy="4" cluster="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="boron" relation="self" comparison="exact" excludedtags="boronborder" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="boron" tags="[military, carrier]" size="ship_xl" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+				<owner exact="boron" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="boron_carrier_escort_l_flagship" />
+				<subordinate job="boron_destroyer_escort_l" />
+				<subordinate job="boron_fighter_escort_s_carrier_flagship" />
+				<subordinate job="boron_escort_s_bomber" />
+				<subordinate job="boron_escort_s_bomber" />
+				<subordinate job="boron_escort_s_bomber" />
+			</subordinates>
+		</job>
+
+		<job id="boron_escort_s_bomber" name="{20221,3001}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.pointguard" />
+					<param name="overrideformationskill" value="true" />
+				</order>
+			</orders>
+			<category faction="boron" tags="[military, bomber]" size="ship_s" />
+			<quota wing="3" variation="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
+			<ship>
+				<select faction="boron" tags="[military, bomber]" size="ship_s" />
+				<loadout>
+					<level exact="1" />
+				</loadout>
+				<owner exact="boron" overridenpc="true" />
 			</ship>
 		</job>
 
-</add>
-  <!-- ############################# -->
-  <!--        ARGON FEDERATION       -->
-  <!-- ############################# -->
-  <add sel="/jobs">
+	</add>
+	<!-- ############################# -->
+	<!--        ARGON FEDERATION       -->
+	<!-- ############################# -->
+	<add sel="/jobs">
 
-	  <job id="argon_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-       		 <param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="argon" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="5" sector="1"/>
-     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="argon" tags="[military, battleship]" size="ship_xl"/>
-			<loadout>
-				<level min="0.85" max="1.0"/>
-			</loadout>
-			<owner exact="argon" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="argon_frigate_escort_m"/>
-		</subordinates>
-	  </job>
+		<job id="argon_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="argon" tags="[factionlogic, military, battleship]" size="ship_xl" />
+			<quota galaxy="5" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="argon" tags="[military, battleship]" size="ship_xl" />
+				<loadout>
+					<level min="0.85" max="1.0" />
+				</loadout>
+				<owner exact="argon" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="argon_frigate_escort_m" />
+			</subordinates>
+		</job>
 
-	  	<job id="argon_cyclops_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-       		 <param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="argon" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="10" sector="1"/>
-     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="argon" tags="[military, frigate]" size="ship_l"/>
-			<loadout>
-				<level min="0.2" max="0.8"/>
-			</loadout>
-			<owner exact="argon" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="argon_fighter_escort_s_frigate"/>
-		</subordinates>
-	  </job>
-	  
+		<job id="argon_cyclops_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="argon" tags="[factionlogic, military, frigate]" size="ship_l" />
+			<quota galaxy="10" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="argon" tags="[military, frigate]" size="ship_l" />
+				<loadout>
+					<level min="0.2" max="0.8" />
+				</loadout>
+				<owner exact="argon" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="argon_fighter_escort_s_frigate" />
+			</subordinates>
+		</job>
+
 		<job id="argon_scylla_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-       		 <param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="argon" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="6" sector="1"/>
-     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="argon" tags="[military, frigate, scylla]" size="ship_l"/>
-			<loadout>
-				<level min="0.8" max="1.0"/>
-			</loadout>
-			<owner exact="argon" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="argon_fighter_escort_s_frigate"/>
-			<subordinate job="argon_fighter_escort_s_frigate"/>
-			<subordinate job="argon_fighter_escort_s_frigate"/>
-			<subordinate job="argon_fighter_escort_s_frigate"/>
-			<subordinate job="argon_escort_s_bomber"/>
-		</subordinates>
-	  </job>
-
-	  <job id="argon_battleship_argon_one" name="{20204,6201}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-       		 <param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="argon" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="1" />
-     	<location class="zone" macro="Zone002_Cluster_14_Sector001_macro" faction="argon" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="argon" tags="[battleship]" size="ship_xl"/>
-			<loadout>
-				<level exact ="1.0"/>
-			</loadout>
-			<owner exact="argon" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="argon_destroyer_escort_l"/>
-		</subordinates>
-	  </job>
-
-			<job id="argon_escort_s_bomber" name="{20221,3001}" startactive="false">
+			<modifiers commandeerable="true" />
 			<orders>
-			<order order="Escort" default="true">
-				<param name="formation" value="formationshape.pointguard"/>
-				<param name="overrideformationskill" value="true"/>
-			</order>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
 			</orders>
-			<category faction="argon" tags="[military, bomber]" size="ship_s"/>
-			<quota wing="3" variation="1"/>
-			<location class="galaxy" macro="xu_ep2_universe_macro"/>
-			<environment buildatshipyard="true"/>
-			<modifiers subordinate="true"/>
+			<category faction="argon" tags="[factionlogic, military, frigate]" size="ship_l" />
+			<quota galaxy="6" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
 			<ship>
-			<select faction="argon" tags="[military, bomber]" size="ship_s"/>
-			<loadout>
-				<level exact="1"/>
-			</loadout>
-			<owner exact="argon" overridenpc="true"/>
+				<select faction="argon" tags="[military, frigate, scylla]" size="ship_l" />
+				<loadout>
+					<level min="0.8" max="1.0" />
+				</loadout>
+				<owner exact="argon" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="argon_fighter_escort_s_frigate" />
+				<subordinate job="argon_fighter_escort_s_frigate" />
+				<subordinate job="argon_fighter_escort_s_frigate" />
+				<subordinate job="argon_fighter_escort_s_frigate" />
+				<subordinate job="argon_escort_s_bomber" />
+			</subordinates>
+		</job>
+
+		<job id="argon_battleship_argon_one" name="{20204,6201}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="argon" tags="[factionlogic, military, battleship]" size="ship_xl" />
+			<quota galaxy="1" />
+			<location class="zone" macro="Zone002_Cluster_14_Sector001_macro" faction="argon" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="argon" tags="[battleship]" size="ship_xl" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+				<owner exact="argon" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="argon_destroyer_escort_l" />
+			</subordinates>
+		</job>
+
+		<job id="argon_escort_s_bomber" name="{20221,3001}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.pointguard" />
+					<param name="overrideformationskill" value="true" />
+				</order>
+			</orders>
+			<category faction="argon" tags="[military, bomber]" size="ship_s" />
+			<quota wing="3" variation="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
+			<ship>
+				<select faction="argon" tags="[military, bomber]" size="ship_s" />
+				<loadout>
+					<level exact="1" />
+				</loadout>
+				<owner exact="argon" overridenpc="true" />
 			</ship>
 		</job>
 
 
-	
-  <!-- ############################# -->
-  <!--       ANTIGONE REPUBLIC       -->
-  <!-- ############################# -->
-  
-	  <job id="antigone_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="antigone" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="4" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="antigone" tags="[military, battleship]" size="ship_xl"/>
-			<loadout>
-				<level min="0.85" max="1.0"/>
-			</loadout>
-			<owner exact="antigone" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="antigone_frigate_escort_m"/>
-        <subordinate job="argon_escort_s_bomber" />
-		</subordinates>
-	  </job>
+		<!-- ############################# -->
+		<!--       ANTIGONE REPUBLIC       -->
+		<!-- ############################# -->
+
+		<job id="antigone_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="antigone" tags="[factionlogic, military, battleship]" size="ship_xl" />
+			<quota galaxy="4" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="antigone" tags="[military, battleship]" size="ship_xl" />
+				<loadout>
+					<level min="0.85" max="1.0" />
+				</loadout>
+				<owner exact="antigone" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="antigone_frigate_escort_m" />
+				<subordinate job="argon_escort_s_bomber" />
+			</subordinates>
+		</job>
 
 		<job id="antigone_griffon_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-       		 <param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="antigone" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="8" sector="1"/>
-     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="antigone" tags="[military, frigate]" size="ship_l"/>
-			<loadout>
-				<level min="0.8" max="1.0"/>
-			</loadout>
-			<owner exact="antigone" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="antigone_fighter_escort_s_frigate"/>
-			<subordinate job="antigone_escort_s_bomber"/>
-		</subordinates>
-	  </job>
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="antigone" tags="[factionlogic, military, frigate]" size="ship_l" />
+			<quota galaxy="8" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="antigone" tags="[military, frigate]" size="ship_l" />
+				<loadout>
+					<level min="0.8" max="1.0" />
+				</loadout>
+				<owner exact="antigone" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="antigone_fighter_escort_s_frigate" />
+				<subordinate job="antigone_escort_s_bomber" />
+			</subordinates>
+		</job>
 
 		<job id="antigone_escort_s_bomber" name="{20221,3001}" startactive="false">
 			<orders>
-			<order order="Escort" default="true">
-				<param name="formation" value="formationshape.pointguard"/>
-				<param name="overrideformationskill" value="true"/>
-			</order>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.pointguard" />
+					<param name="overrideformationskill" value="true" />
+				</order>
 			</orders>
-			<category faction="antigone" tags="[military, bomber]" size="ship_s"/>
-			<quota wing="2" variation="1"/>
-			<location class="galaxy" macro="xu_ep2_universe_macro"/>
-			<environment buildatshipyard="true"/>
-			<modifiers subordinate="true"/>
+			<category faction="antigone" tags="[military, bomber]" size="ship_s" />
+			<quota wing="2" variation="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
 			<ship>
-			<select faction="antigone" tags="[military, bomber]" size="ship_s"/>
-			<loadout>
-				<level exact="1"/>
-			</loadout>
-			<owner exact="antigone" overridenpc="true"/>
+				<select faction="antigone" tags="[military, bomber]" size="ship_s" />
+				<loadout>
+					<level exact="1" />
+				</loadout>
+				<owner exact="antigone" overridenpc="true" />
 			</ship>
 		</job>
 
-  <!-- ############################# -->
-  <!--    GODREALM OF THE PARANID    -->
-  <!-- ############################# -->
-  
-	  <job id="paranid_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="paranid" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="4" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="paranid" tags="[military, battleship]" size="ship_xl"/>
-			<loadout>
-				<level min="0.85" max="1.0"/>
-			</loadout>
-			<owner exact="paranid" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="paranid_frigate_escort_m"/>
-		</subordinates>
-	  </job>
+		<!-- ############################# -->
+		<!--    GODREALM OF THE PARANID    -->
+		<!-- ############################# -->
 
-	  <job id="paranid_ariadne_l" name="{20204,5201}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-       		 <param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="paranid" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="5" sector="2"/>
-     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="paranid" tags="[military, frigate, ariadne]" size="ship_l"/>
-			<loadout>
-				<level exact="1"/>
-			</loadout>
-			<owner exact="paranid" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="paranid_fighter_escort_s_frigate"/>
-			<subordinate job="paranid_fighter_escort_s_frigate"/>
-			<subordinate job="paranid_fighter_escort_s_frigate"/>
-			<subordinate job="paranid_fighter_escort_s_frigate"/>
-		</subordinates>
-	  </job>
+		<job id="paranid_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="paranid" tags="[factionlogic, military, battleship]" size="ship_xl" />
+			<quota galaxy="4" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="paranid" tags="[military, battleship]" size="ship_xl" />
+				<loadout>
+					<level min="0.85" max="1.0" />
+				</loadout>
+				<owner exact="paranid" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="paranid_frigate_escort_m" />
+			</subordinates>
+		</job>
+
+		<job id="paranid_ariadne_l" name="{20204,5201}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="paranid" tags="[factionlogic, military, frigate]" size="ship_l" />
+			<quota galaxy="5" sector="2" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="paranid" tags="[military, frigate, ariadne]" size="ship_l" />
+				<loadout>
+					<level exact="1" />
+				</loadout>
+				<owner exact="paranid" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="paranid_fighter_escort_s_frigate" />
+				<subordinate job="paranid_fighter_escort_s_frigate" />
+				<subordinate job="paranid_fighter_escort_s_frigate" />
+				<subordinate job="paranid_fighter_escort_s_frigate" />
+			</subordinates>
+		</job>
 
 
-  <!-- ############################# -->
-  <!--   HOLY ORDER OF THE PONTIFEX  -->
-  <!-- ############################# -->
-  
-	  <job id="holyorder_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="holyorder" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="2" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="holyorder" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="holyorder" tags="[military, battleship]" size="ship_xl"/>
-			<loadout>
-				<level min="0.85" max="1.0"/>
-			</loadout>
-			<owner exact="holyorder" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="holyorder_frigate_escort_m"/>
-		</subordinates>
-	  </job> 
+		<!-- ############################# -->
+		<!--   HOLY ORDER OF THE PONTIFEX  -->
+		<!-- ############################# -->
 
-	  <!-- <job id="holyorder_hyperion_l" name="{20204,5201}" comment="each sector, expansion">
+		<job id="holyorder_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="holyorder" tags="[factionlogic, military, battleship]" size="ship_xl" />
+			<quota galaxy="2" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="holyorder" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="holyorder" tags="[military, battleship]" size="ship_xl" />
+				<loadout>
+					<level min="0.85" max="1.0" />
+				</loadout>
+				<owner exact="holyorder" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="holyorder_frigate_escort_m" />
+			</subordinates>
+		</job>
+
+		<!-- <job id="holyorder_hyperion_l" name="{20204,5201}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -388,194 +387,197 @@
 		</subordinates>
 	  </job> -->
 
-	  <job id="trinity_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion" startactive="false">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="trinity" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="6" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="trinity" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="trinity" tags="[military, battleship]" size="ship_xl"/>
-			<loadout>
-				<level min="0.85" max="1.0"/>
-			</loadout>
-			<owner exact="trinity" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="trinity_frigate_escort_m"/>
-		</subordinates>
-	  </job>
-
-  <!-- ############################# -->
-  <!--        TELADI COMPANY         -->
-  <!-- ############################# -->
-  
-	  <job id="teladi_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="teladi" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="6" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="teladi" tags="[military, battleship]" size="ship_xl"/>
-			<loadout>
-				<level min="0.85" max="1.0"/>
-			</loadout>
-			<owner exact="teladi" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="teladi_frigate_escort_m"/>
-		</subordinates>
-	  </job>
-
-	  <job id="shrike_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-       		 <param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="teladi" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="6" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="member" comparison="ge" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="teladi" tags="[military, frigate]" size="ship_l"/>
-			<loadout>
-				<level min="0.8" max="1.0"/>
-			</loadout>
-			<owner exact="teladi" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="teladi_fighter_escort_s_shrike"/>
-		</subordinates>
-	  </job>
-
-	  <job id="teladi_fighter_escort_s_shrike" name="{20204,2901}" startactive="false">
-		<orders>
-		  <order order="Escort" default="true">
-			<param name="formation" value="formationshape.pointguard"/>
-			<param name="overrideformationskill" value="true"/>
-		  </order>
-		</orders>
-		<category faction="teladi" tags="[military, fighter]" size="ship_s"/>
-		<quota wing="12" variation="2"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro"/>
-		<environment buildatshipyard="true"/>
-		<modifiers subordinate="true"/>
-		<ship>
-		  <select faction="[teladi, ministry]" tags="[military, fighter, selection]" size="ship_s"/>
-		  <loadout>
-			<level min="0.8" max="1.0"/>
-		  </loadout>
-		  <owner exact="teladi" overridenpc="true"/>
-		</ship>
-	  </job>
-  <!-- ############################# -->
-  <!--        SPLIT         -->
-  <!-- ############################# -->
-
-  		<job id="panther_l_sector_exp" name="{20204,5201}" comment="panther">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-       		 <param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="split" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="6" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="split" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="split" tags="[military, frigate]" size="ship_l"/>
-			<loadout>
-				<level min="0.6" max="1"/>
-			</loadout>
-			<owner exact="split" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="split_fighter_escort_s_panther"/>
-			<subordinate job="zyarth_corvette_escort_m"/>
-		</subordinates>
-	  	</job>
-
-	 	<job id="panther_l_sector_colonial" name="{20204,5201}" comment="panther">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-       		 <param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="split" tags="[factionlogic, military, frigate, colonialpolice]" size="ship_l"/>
-		<quota galaxy="3" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="freesplit" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="split" tags="[military, frigate]" size="ship_l"/>
-			<loadout>
-				<level min="0.8" max="1.0"/>
-			</loadout>
-			<owner exact="split" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="split_fighter_escort_s_panther"/>
-			<subordinate job="zyarth_corvette_escort_m"/>
-		</subordinates>
-	  </job>
-
-	  <job id="split_fighter_escort_s_panther" name="{20204,2901}" startactive="false" >
-		<orders>
-		  <order order="Escort" default="true">
-			<param name="formation" value="formationshape.pointguard"/>
-			<param name="overrideformationskill" value="true"/>
-		  </order>
-		</orders>
-		<category faction="split" tags="[military, fighter]" size="ship_s"/>
-		<quota wing="16" variation="2"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro"/>
-		<environment buildatshipyard="true"/>
-		<modifiers subordinate="true"/>
-		<ship>
-			<select faction="split" tags="[military, fighter, light]" size="ship_s"/>
-		<loadout>
-			<level min="0.8" max="1.0"/>
-		  </loadout>
-		  <owner exact="split" overridenpc="true"/>
-		</ship>
-	  </job>
-
-		<job id="split_escort_s_bomber" name="{20221,3001}" startactive="false">
+		<job id="trinity_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion" startactive="false">
+			<modifiers commandeerable="true" />
 			<orders>
-			<order order="Escort" default="true">
-				<param name="formation" value="formationshape.pointguard"/>
-				<param name="overrideformationskill" value="true"/>
-			</order>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
 			</orders>
-			<category faction="split" tags="[military, bomber]" size="ship_s"/>
-			<quota wing="3" variation="1"/>
-			<location class="galaxy" macro="xu_ep2_universe_macro"/>
-			<environment buildatshipyard="true"/>
-			<modifiers subordinate="true"/>
+			<category faction="trinity" tags="[factionlogic, military, battleship]" size="ship_xl" />
+			<quota galaxy="6" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="trinity" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
 			<ship>
-			<select faction="split" tags="[military, bomber]" size="ship_s"/>
-			<loadout>
-				<level exact="1"/>
-			</loadout>
-			<owner exact="split" overridenpc="true"/>
+				<select faction="trinity" tags="[military, battleship]" size="ship_xl" />
+				<loadout>
+					<level min="0.85" max="1.0" />
+				</loadout>
+				<owner exact="trinity" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="trinity_frigate_escort_m" />
+			</subordinates>
+		</job>
+
+		<!-- ############################# -->
+		<!--        TELADI COMPANY         -->
+		<!-- ############################# -->
+
+		<job id="teladi_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="teladi" tags="[factionlogic, military, battleship]" size="ship_xl" />
+			<quota galaxy="6" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="teladi" tags="[military, battleship]" size="ship_xl" />
+				<loadout>
+					<level min="0.85" max="1.0" />
+				</loadout>
+				<owner exact="teladi" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="teladi_frigate_escort_m" />
+			</subordinates>
+		</job>
+
+		<job id="shrike_l_sector_exp" name="{20204,5201}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="teladi" tags="[factionlogic, military, frigate]" size="ship_l" />
+			<quota galaxy="6" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="member" comparison="ge" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="teladi" tags="[military, frigate]" size="ship_l" />
+				<loadout>
+					<level min="0.8" max="1.0" />
+				</loadout>
+				<owner exact="teladi" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="teladi_fighter_escort_s_shrike" />
+			</subordinates>
+		</job>
+
+		<job id="teladi_fighter_escort_s_shrike" name="{20204,2901}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.pointguard" />
+					<param name="overrideformationskill" value="true" />
+				</order>
+			</orders>
+			<category faction="teladi" tags="[military, fighter]" size="ship_s" />
+			<quota wing="12" variation="2" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
+			<ship>
+				<select faction="[teladi, ministry]" tags="[military, fighter, selection]" size="ship_s" />
+				<loadout>
+					<level min="0.8" max="1.0" />
+				</loadout>
+				<owner exact="teladi" overridenpc="true" />
+			</ship>
+		</job>
+		<!-- ############################# -->
+		<!--        SPLIT         -->
+		<!-- ############################# -->
+
+		<job id="panther_l_sector_exp" name="{20204,5201}" comment="panther">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="split" tags="[factionlogic, military, frigate]" size="ship_l" />
+			<quota galaxy="6" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="split" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="split" tags="[military, frigate]" size="ship_l" />
+				<loadout>
+					<level min="0.6" max="1" />
+				</loadout>
+				<owner exact="split" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="split_fighter_escort_s_panther" />
+				<subordinate job="zyarth_corvette_escort_m" />
+				<subordinate job="split_escort_s_bomber" />
+				<subordinate job="split_escort_s_bomber" />
+			</subordinates>
+		</job>
+
+		<job id="panther_l_sector_colonial" name="{20204,5201}" comment="panther">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="split" tags="[factionlogic, military, frigate, colonialpolice]" size="ship_l" />
+			<quota galaxy="3" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="freesplit" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="split" tags="[military, frigate]" size="ship_l" />
+				<loadout>
+					<level min="0.8" max="1.0" />
+				</loadout>
+				<owner exact="split" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="split_fighter_escort_s_panther" />
+				<subordinate job="zyarth_corvette_escort_m" />
+				<subordinate job="split_escort_s_bomber" />
+			</subordinates>
+		</job>
+
+		<job id="split_fighter_escort_s_panther" name="{20204,2901}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.pointguard" />
+					<param name="overrideformationskill" value="true" />
+				</order>
+			</orders>
+			<category faction="split" tags="[military, fighter]" size="ship_s" />
+			<quota wing="15" variation="2" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
+			<ship>
+				<select faction="split" tags="[military, fighter, light]" size="ship_s" />
+				<loadout>
+					<level min="0.8" max="1.0" />
+				</loadout>
+				<owner exact="split" overridenpc="true" />
 			</ship>
 		</job>
 
-	  <!-- <job id="split_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+		<job id="split_escort_s_bomber" name="{20221,3001}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.pointguard" />
+					<param name="overrideformationskill" value="true" />
+				</order>
+			</orders>
+			<category faction="split" tags="[military, bomber]" size="ship_s" />
+			<quota wing="2" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
+			<ship>
+				<select faction="split" tags="[military, bomber]" size="ship_s" />
+				<loadout>
+					<level exact="1" />
+				</loadout>
+				<owner exact="split" overridenpc="true" />
+			</ship>
+		</job>
+
+		<!-- <job id="split_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -600,318 +602,320 @@
 	  </job> -->
 
 
-	  <job id="panther_l_sector_court" name="{20204,5201}" startactive="false" comment="panther">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-       		 <param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="court" tags="[factionlogic, military, frigate]" size="ship_l"/>
-		<quota galaxy="8" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[court, freesplit]" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="court" tags="[military, frigate]" size="ship_l"/>
-			<loadout>
-				<level min="0.6" max="1"/>
-			</loadout>
-			<owner exact="court" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="court_fighter_escort_s_panther"/>
-			<subordinate job="court_corvette_escort_m"/>
-		</subordinates>
-		  </job>
-		  
-		  <job id="court_fighter_escort_s_panther" name="{20204,2901}" startactive="false">
-			<orders>
-			  <order order="Escort" default="true">
-				<param name="formation" value="formationshape.pointguard"/>
-				<param name="overrideformationskill" value="true"/>
-			  </order>
-			</orders>
-			<category faction="court" tags="[military, fighter]" size="ship_s"/>
-			<quota wing="16" variation="2"/>
-			<location class="galaxy" macro="xu_ep2_universe_macro"/>
-			<environment buildatshipyard="true"/>
-			<modifiers subordinate="true"/>
-			<ship>
-				<select faction="court" tags="[military, fighter, light]" size="ship_s"/>
-			<loadout>
-				<level min="0.8" max="1.0"/>
-			  </loadout>
-			  <owner exact="court" overridenpc="true"/>
-			</ship>
-		  </job>
-
-		  <job id="court_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion" >
-			<modifiers commandeerable="true"/>
+		<job id="panther_l_sector_court" name="{20204,5201}" startactive="false" comment="panther">
+			<modifiers commandeerable="true" />
 			<orders>
 				<order order="Patrol" default="true">
-					<param name="range" value="class.sector"/>
+					<param name="range" value="class.sector" />
 				</order>
 			</orders>
-			<category faction="court" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-			<quota galaxy="1" maxgalaxy="4" sector="1"/>
-			<location class="galaxy" macro="xu_ep2_universe_macro" faction="[court]" relation="self" comparison="exact" matchextension="false"/>
-			<environment buildatshipyard="true"/>
+			<category faction="court" tags="[factionlogic, military, frigate]" size="ship_l" />
+			<quota galaxy="8" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="[court, freesplit]" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
 			<ship>
-				<select faction="court" tags="[military, battleship]" size="ship_xl"/>
+				<select faction="court" tags="[military, frigate]" size="ship_l" />
 				<loadout>
-					<level min="0.85" max="1.0"/>
+					<level min="0.6" max="1" />
 				</loadout>
-				<owner exact="court" overridenpc="true"/>
+				<owner exact="court" overridenpc="true" />
 			</ship>
 			<subordinates>
-				<subordinate job="court_corvette_escort_m"/>
-				<subordinate job="court_fighter_escort_s_patrol"/>
+				<subordinate job="court_fighter_escort_s_panther" />
+				<subordinate job="court_corvette_escort_m" />
+				<subordinate job="court_escort_s_bomber" />
+				<subordinate job="court_escort_s_bomber" />
 			</subordinates>
-		  </job>
+		</job>
 
-		<job id="court_escort_s_bomber" name="{20221,3001}" startactive="false">
+		<job id="court_fighter_escort_s_panther" name="{20204,2901}" startactive="false">
 			<orders>
-			<order order="Escort" default="true">
-				<param name="formation" value="formationshape.pointguard"/>
-				<param name="overrideformationskill" value="true"/>
-			</order>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.pointguard" />
+					<param name="overrideformationskill" value="true" />
+				</order>
 			</orders>
-			<category faction="court" tags="[military, bomber]" size="ship_s"/>
-			<quota wing="3" variation="1"/>
-			<location class="galaxy" macro="xu_ep2_universe_macro"/>
-			<environment buildatshipyard="true"/>
-			<modifiers subordinate="true"/>
+			<category faction="court" tags="[military, fighter]" size="ship_s" />
+			<quota wing="15" variation="2" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
 			<ship>
-			<select faction="court" tags="[military, bomber]" size="ship_s"/>
-			<loadout>
-				<level exact="1"/>
-			</loadout>
-			<owner exact="court" overridenpc="true"/>
+				<select faction="court" tags="[military, fighter, light]" size="ship_s" />
+				<loadout>
+					<level min="0.8" max="1.0" />
+				</loadout>
+				<owner exact="court" overridenpc="true" />
 			</ship>
 		</job>
 
-  <!-- ############################# -->
-  <!--        FALLEN SPLIT         -->
-  <!-- ############################# -->
+		<job id="court_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="court" tags="[factionlogic, military, battleship]" size="ship_xl" />
+			<quota galaxy="1" maxgalaxy="4" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="[court]" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="court" tags="[military, battleship]" size="ship_xl" />
+				<loadout>
+					<level min="0.85" max="1.0" />
+				</loadout>
+				<owner exact="court" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="court_corvette_escort_m" />
+				<subordinate job="court_fighter_escort_s_patrol" />
+			</subordinates>
+		</job>
 
-	  <job id="fallensplit_panther_mixed_cluster" name="{20204,4201}" >
-		<modifiers commandeerable="true"/>
-		<orders>
-		  <order order="Plunder" default="true">
-			<param name="range_internal" value="'cluster'"/>
-			<param name="plundermode" value="0"/>
-		  </order>
-		</orders>
-		<category faction="fallensplit" tags="[plunderer, frigate]" size="ship_l"/>
-		<quota galaxy="1" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" factionrace="split" negatefactionrace="true" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<basket basket="pirate_container"/>
-		<ship>
-		  <select faction="fallensplit" tags="[military, plunder, frigate]" size="ship_l"/>
-		  <loadout>
-			<level min="0.4" max="0.8"/>
-		  </loadout>
-		  <owner exact="fallensplit" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="fallensplit_fighter_escort_s"/>
-		</subordinates>
+		<job id="court_escort_s_bomber" name="{20221,3001}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.pointguard" />
+					<param name="overrideformationskill" value="true" />
+				</order>
+			</orders>
+			<category faction="court" tags="[military, bomber]" size="ship_s" />
+			<quota wing="2" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
+			<ship>
+				<select faction="court" tags="[military, bomber]" size="ship_s" />
+				<loadout>
+					<level exact="1" />
+				</loadout>
+				<owner exact="court" overridenpc="true" />
+			</ship>
+		</job>
 
-	  </job>
-	
-  <!-- ############################# -->
-  <!--      MINISTRY OF FINANCE      -->
-  <!-- ############################# -->
-  
-	  <job id="ministry_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-				<param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="ministry" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="5" sector="1"/>
-		<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="ministry" tags="[military, battleship]" size="ship_xl"/>
-			<loadout>
-				<level min="0.85" max="1.0"/>
-			</loadout>
-			<owner exact="ministry" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="ministry_frigate_escort_m"/>
-		</subordinates>
-	  </job>
+		<!-- ############################# -->
+		<!--        FALLEN SPLIT         -->
+		<!-- ############################# -->
 
-  <!-- ############################# -->
-  <!--      TERRANS				      -->
-  <!-- ############################# -->
+		<job id="fallensplit_panther_mixed_cluster" name="{20204,4201}">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Plunder" default="true">
+					<param name="range_internal" value="'cluster'" />
+					<param name="plundermode" value="0" />
+				</order>
+			</orders>
+			<category faction="fallensplit" tags="[plunderer, frigate]" size="ship_l" />
+			<quota galaxy="1" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" factionrace="split" negatefactionrace="true" faction="xenon" relation="self" comparison="lt" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<basket basket="pirate_container" />
+			<ship>
+				<select faction="fallensplit" tags="[military, plunder, frigate]" size="ship_l" />
+				<loadout>
+					<level min="0.4" max="0.8" />
+				</loadout>
+				<owner exact="fallensplit" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="fallensplit_fighter_escort_s" />
+			</subordinates>
 
-  <job id="terran_lightcarrier_patrol_l" name="{20204,3201}">
-	<modifiers commandeerable="true"/>
-	<orders>
-	  <order order="Patrol" default="true">
-		<param name="range" value="class.zone"/>
-	  </order>
-	</orders>
-	<category faction="terran" tags="[factionlogic, military, carrier]" size="ship_l"/>
-	<quota galaxy="6" sector="1"/>
-	<location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="exact" matchextension="false"/>
-	<environment buildatshipyard="true"/>
-	<ship>
-	  <select faction="terran" tags="[military, carrier]" size="ship_l"/>
-	  <loadout>
-		<level exact="1.0"/>
-	  </loadout>
-	  <owner exact="terran" overridenpc="true"/>
-	</ship>
-	<subordinates>
-		<subordinate job="terran_escort_s_lightcarrier"/>
-		<subordinate job="terran_escort_s_bomber"/>
-		<subordinate job="terran_corvette_escort_m"/>
-	</subordinates>
-  </job>
+		</job>
 
-  <job id="terran_frigate_patrol_l" name="{20204,5201}">
-	<modifiers commandeerable="true"/>
-	<orders>
-	  <order order="Patrol" default="true">
-		<param name="range" value="class.zone"/>
-	  </order>
-	</orders>
-	<category faction="terran" tags="[factionlogic, military, frigate]" size="ship_l"/>
-	<quota galaxy="10" sector="1"/>
-	<location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="member" comparison="exact" matchextension="false"/>
-	<environment buildatshipyard="true"/>
-	<ship>
-	  <select faction="terran" tags="[military, frigate]" size="ship_l"/>
-	  <loadout>
-		<level exact="1.0"/>
-	  </loadout>
-	  <owner exact="terran" overridenpc="true"/>
-	</ship>
-	<subordinates>
-		<subordinate job="terran_corvette_escort_m"/>
-	</subordinates>
-  </job>
+		<!-- ############################# -->
+		<!--      MINISTRY OF FINANCE      -->
+		<!-- ############################# -->
 
-  <job id="terran_escort_s_lightcarrier" name="{20204,2901}" startactive="false">
-	<orders>
-	  <order order="Escort" default="true">
-		<param name="formation" value="formationshape.pointguard"/>
-		<param name="overrideformationskill" value="true"/>
-	  </order>
-	</orders>
-	<category faction="terran" tags="[military, fighter]" size="ship_s"/>
-	<quota wing="8"/>
-	<location class="galaxy" macro="xu_ep2_universe_macro"/>
-	<environment buildatshipyard="true"/>
-	<modifiers subordinate="true"/>
-	<ship>
-	  <select faction="terran" tags="[military, fighter, heavy]" size="ship_s"/>
-	  <loadout>
-		<level exact="0.8"/>
-	  </loadout>
-	  <owner exact="terran" overridenpc="true"/>
-	</ship>
-	<subordinates>
-	  <subordinate job="terran_fighter_escort_s_carrier_wing"/>
-	</subordinates>
-  </job>
+		<job id="ministry_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="ministry" tags="[factionlogic, military, battleship]" size="ship_xl" />
+			<quota galaxy="5" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, ministry]" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="ministry" tags="[military, battleship]" size="ship_xl" />
+				<loadout>
+					<level min="0.85" max="1.0" />
+				</loadout>
+				<owner exact="ministry" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="ministry_frigate_escort_m" />
+			</subordinates>
+		</job>
 
-  <job id="terran_escort_s_bomber" name="{20221,3001}" startactive="false">
-	<orders>
-	  <order order="Escort" default="true">
-		<param name="formation" value="formationshape.pointguard"/>
-		<param name="overrideformationskill" value="true"/>
-	  </order>
-	</orders>
-	<category faction="terran" tags="[military, bomber]" size="ship_s"/>
-	<quota wing="3" variation="1"/>
-	<location class="galaxy" macro="xu_ep2_universe_macro"/>
-	<environment buildatshipyard="true"/>
-	<modifiers subordinate="true"/>
-	<ship>
-	  <select faction="terran" tags="[military, bomber]" size="ship_s"/>
-	  <loadout>
-		<level exact="1"/>
-	  </loadout>
-	  <owner exact="terran" overridenpc="true"/>
-	</ship>
-  </job>
+		<!-- ############################# -->
+		<!--      TERRANS				      -->
+		<!-- ############################# -->
 
-      <!-- Akita escort job -->
-    <job id="terran_frigate_escort_akita" name="{20204,5201}" startactive="false">
-      <orders>
-        <order order="Escort" default="true">
-          <param name="formation" value="formationshape.xshapeforward"/>
-          <param name="overrideformationskill" value="true"/>
-        </order>
-      </orders>
-      <category faction="terran" tags="[military, akita]" size="ship_l"/>
-      <quota wing="1"/>
-      <location class="galaxy" macro="xu_ep2_universe_macro"/>
-      <environment buildatshipyard="true"/>
-      <modifiers subordinate="true"/>
-      <ship>
-        <select faction="terran" tags="[military, frigate]" size="ship_l"/>
-        <loadout>
-          <level exact="1.0"/>
-        </loadout>
-        <owner exact="terran" overridenpc="true"/>
-      </ship>
-    </job>
+		<job id="terran_lightcarrier_patrol_l" name="{20204,3201}">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.zone" />
+				</order>
+			</orders>
+			<category faction="terran" tags="[factionlogic, military, carrier]" size="ship_l" />
+			<quota galaxy="6" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="terran" tags="[military, carrier]" size="ship_l" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+				<owner exact="terran" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="terran_escort_s_lightcarrier" />
+				<subordinate job="terran_escort_s_bomber" />
+				<subordinate job="terran_corvette_escort_m" />
+			</subordinates>
+		</job>
 
-    <!-- Akita patrol job -->
-    <job id="terran_frigate_patrol_akita" name="{20204,5201}">
-      <modifiers commandeerable="true"/>
-      <orders>
-        <order order="Patrol" default="true">
-          <param name="range" value="class.cluster"/>
-        </order>
-      </orders>
-      <category faction="terran" tags="[military, akita]" size="ship_l"/>
-      <quota galaxy="8"/>
-	<location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="exact" matchextension="false"/>
-      <environment buildatshipyard="true"/>
-      <ship>
-        <select faction="terran" tags="[military, frigate]" size="ship_l"/>
-        <loadout>
-          <level exact="1.0"/>
-        </loadout>
-        <owner exact="terran" overridenpc="true"/>
-      </ship>
-      <subordinates>
-        <subordinate job="terran_frigate_escort_akita"/>
-      </subordinates>
-    </job>
+		<job id="terran_frigate_patrol_l" name="{20204,5201}">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.zone" />
+				</order>
+			</orders>
+			<category faction="terran" tags="[factionlogic, military, frigate]" size="ship_l" />
+			<quota galaxy="10" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="member" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="terran" tags="[military, frigate]" size="ship_l" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+				<owner exact="terran" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="terran_corvette_escort_m" />
+			</subordinates>
+		</job>
 
-    <job id="pioneers_frigate_patrol_akita" name="{20204, 5201}">
-      <modifiers commandeerable="true"/>
-      <orders>
-        <order order="Patrol" default="true">
-          <param name="range" value="class.zone"/>
-        </order>
-      </orders>
-      <category faction="pioneers" tags="[military, akita]" size="ship_l"/>
-      <quota galaxy="8" sector="1"/>
-      <location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="exact" matchextension="false"/>
-      <environment buildatshipyard="true"/>
-      <ship>
-        <select faction="pioneers" tags="[military, frigate]" size="ship_l"/>
-        <loadout>
-          <level exact="1.0"/>
-        </loadout>
-        <owner exact="pioneers" overridenpc="true"/>
-      </ship>
-      <subordinates/>
-    </job>
+		<job id="terran_escort_s_lightcarrier" name="{20204,2901}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.pointguard" />
+					<param name="overrideformationskill" value="true" />
+				</order>
+			</orders>
+			<category faction="terran" tags="[military, fighter]" size="ship_s" />
+			<quota wing="8" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
+			<ship>
+				<select faction="terran" tags="[military, fighter, heavy]" size="ship_s" />
+				<loadout>
+					<level exact="0.8" />
+				</loadout>
+				<owner exact="terran" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="terran_fighter_escort_s_carrier_wing" />
+			</subordinates>
+		</job>
 
-	<!-- <job id="pioneers_frigate_patrol_kitsune" name="{20204,5201}">
+		<job id="terran_escort_s_bomber" name="{20221,3001}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.pointguard" />
+					<param name="overrideformationskill" value="true" />
+				</order>
+			</orders>
+			<category faction="terran" tags="[military, bomber]" size="ship_s" />
+			<quota wing="3" variation="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
+			<ship>
+				<select faction="terran" tags="[military, bomber]" size="ship_s" />
+				<loadout>
+					<level exact="1" />
+				</loadout>
+				<owner exact="terran" overridenpc="true" />
+			</ship>
+		</job>
+
+		<!-- Akita escort job -->
+		<job id="terran_frigate_escort_akita" name="{20204,5201}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="formation" value="formationshape.xshapeforward" />
+					<param name="overrideformationskill" value="true" />
+				</order>
+			</orders>
+			<category faction="terran" tags="[military, akita]" size="ship_l" />
+			<quota wing="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
+			<ship>
+				<select faction="terran" tags="[military, frigate]" size="ship_l" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+				<owner exact="terran" overridenpc="true" />
+			</ship>
+		</job>
+
+		<!-- Akita patrol job -->
+		<job id="terran_frigate_patrol_akita" name="{20204,5201}">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.cluster" />
+				</order>
+			</orders>
+			<category faction="terran" tags="[military, akita]" size="ship_l" />
+			<quota galaxy="8" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="terran" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="terran" tags="[military, frigate]" size="ship_l" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+				<owner exact="terran" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="terran_frigate_escort_akita" />
+			</subordinates>
+		</job>
+
+		<job id="pioneers_frigate_patrol_akita" name="{20204, 5201}">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.zone" />
+				</order>
+			</orders>
+			<category faction="pioneers" tags="[military, akita]" size="ship_l" />
+			<quota galaxy="8" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="pioneers" tags="[military, frigate]" size="ship_l" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+				<owner exact="pioneers" overridenpc="true" />
+			</ship>
+			<subordinates />
+		</job>
+
+		<!-- <job id="pioneers_frigate_patrol_kitsune" name="{20204,5201}">
 		<modifiers commandeerable="true"/>
 		<orders>
 			<order order="Patrol" default="true">
@@ -933,39 +937,39 @@
 	</job> -->
 
 
-<!-- PIONEERS -->
-  <job id="pioneers_lightcarrier_patrol_l" name="{20204,3201}">
-	<modifiers commandeerable="true"/>
-	<orders>
-	  <order order="Patrol" default="true">
-		<param name="range" value="class.zone"/>
-	  </order>
-	</orders>
-	<category faction="pioneers" tags="[factionlogic, military, carrier]" size="ship_l"/>
-	<quota galaxy="6" sector="1"/>
-	<location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="exact" matchextension="false"/>
-	<environment buildatshipyard="true"/>
-	<ship>
-	  <select faction="pioneers" tags="[military, carrier]" size="ship_l"/>
-	  <loadout>
-		<level exact="1.0"/>
-	  </loadout>
-	  <owner exact="pioneers" overridenpc="true"/>
-	</ship>
-	<subordinates>
-		<subordinate job="pioneers_fighter_escort_s"/>
-		<subordinate job="pioneers_fighter_escort_s"/>
-		<subordinate job="pioneers_fighter_escort_s"/>
-		<subordinate job="pioneers_corvette_escort_m"/>
-		<subordinate job="pioneers_corvette_escort_m"/>
-	</subordinates>
-  </job>
+		<!-- PIONEERS -->
+		<job id="pioneers_lightcarrier_patrol_l" name="{20204,3201}">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.zone" />
+				</order>
+			</orders>
+			<category faction="pioneers" tags="[factionlogic, military, carrier]" size="ship_l" />
+			<quota galaxy="6" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="pioneers" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="pioneers" tags="[military, carrier]" size="ship_l" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+				<owner exact="pioneers" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="pioneers_fighter_escort_s" />
+				<subordinate job="pioneers_fighter_escort_s" />
+				<subordinate job="pioneers_fighter_escort_s" />
+				<subordinate job="pioneers_corvette_escort_m" />
+				<subordinate job="pioneers_corvette_escort_m" />
+			</subordinates>
+		</job>
 
-  <!-- ############################# -->
-  <!--      LOANSHARK		      -->
-  <!-- ############################# -->
+		<!-- ############################# -->
+		<!--      LOANSHARK		      -->
+		<!-- ############################# -->
 
-  <!-- <job id="loanshark_centaur_l_sector" name="{20204,5201}" comment="each sector">
+		<!-- <job id="loanshark_centaur_l_sector" name="{20204,5201}" comment="each sector">
 	<modifiers commandeerable="true"/>
 	<orders>
 		<order order="Patrol" default="true">
@@ -988,446 +992,473 @@
 	</subordinates>
   </job> -->
 
-  <!-- ############################# -->
-  <!--      PIRATE SHIPS		      -->
-  <!-- ############################# -->
-  
-  <job id="scaleplate_plunderer_l_inca" name="{20204,501}" disabled="false">
-    <modifiers commandeerable="true"/>
-    <orders>
-      <order order="Plunder" default="true">
-        <param name="range_internal" value="'cluster'"/>
-        <param name="plundermode" value="1"/>
-      </order>
-    </orders>
-	<time interval="3600" />
-    <category faction="scaleplate" tags="[plunderer]" size="ship_l"/>
-    <quota galaxy="5" sector="1"/>
-    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false"/>
-    <environment buildatshipyard="false" gate="true"/>
-    <basket basket="pirate_container"/>
-    <ship>
-      <select faction="scaleplate" tags="[plundererinca]" size="ship_l"/>
-      <loadout>
-        <level min="0.2" max="0.5"/>
-      </loadout>
-      <owner exact="scaleplate" overridenpc="true"/>
-	  <paint ware="paintmod_0002"/>
-    </ship>
-  </job>
+		<!-- ############################# -->
+		<!--      PIRATE SHIPS		      -->
+		<!-- ############################# -->
 
-  <!-- ############################# -->
-  <!--      XENON				      -->
-  <!-- ############################# -->
+		<job id="scaleplate_plunderer_l_inca" name="{20204,501}" disabled="false">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Plunder" default="true">
+					<param name="range_internal" value="'cluster'" />
+					<param name="plundermode" value="1" />
+				</order>
+			</orders>
+			<time interval="3600" />
+			<category faction="scaleplate" tags="[plunderer]" size="ship_l" />
+			<quota galaxy="5" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="lt" matchextension="false" />
+			<environment buildatshipyard="false" gate="true" />
+			<basket basket="pirate_container" />
+			<ship>
+				<select faction="scaleplate" tags="[plundererinca]" size="ship_l" />
+				<loadout>
+					<level min="0.2" max="0.5" />
+				</loadout>
+				<owner exact="scaleplate" overridenpc="true" />
+				<paint ware="paintmod_0002" />
+			</ship>
+		</job>
 
-  <job id="xenon_patrol_xl_u" name="{20204,6201}" comment="one border cluster" startactive="false">
-    <modifiers commandeerable="true"/>
-    <orders>
-      <order order="Patrol" default="true">
-        <param name="range" value="class.zone"/>
-      </order>
-    </orders>
-	<time interval="36000" />
-    <category faction="xenon" tags="[factionlogic, military, xenu]" size="ship_xl"/>
-    <quota galaxy="1" maxgalaxy="1"/>
-    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="exact" matchextension="false"/>
-    <environment buildatshipyard="true" preferbuilding="true"/>
-    <ship>
-      <select faction="xenon" tags="[military, xenu]" size="ship_xl"/>
-      <owner exact="xenon" overridenpc="true"/>
-    </ship>
-    <subordinates>
-      <subordinate job="xenon_fighter_escort_s_xenu"/>
-    </subordinates>
-  </job>
+		<!-- ############################# -->
+		<!--      XENON				      -->
+		<!-- ############################# -->
 
-  <job id="xenon_fighter_escort_s_xenu" name="{20204,3401}" startactive="false">
-    <orders>
-      <order order="Escort" default="true">
-        <param name="overrideformationskill" value="true"/>
-      </order>
-    </orders>
-    <category faction="xenon" tags="[military, fighter]" size="ship_s"/>
-    <quota wing="50" variation="5"/>
-    <location class="galaxy" macro="xu_ep2_universe_macro"/>
-    <environment buildatshipyard="true"/>
-    <modifiers subordinate="true"/>
-    <ship>
-      <select faction="xenon" tags="[military, fighter, selection]" size="ship_s"/>
-      <owner exact="xenon" overridenpc="true"/>
-    </ship>
-  </job>
-</add>
+		<job id="xenon_patrol_xl_u" name="{20204,6201}" comment="one border cluster" startactive="false">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.zone" />
+				</order>
+			</orders>
+			<time interval="36000" />
+			<category faction="xenon" tags="[factionlogic, military, xenu]" size="ship_xl" />
+			<quota galaxy="1" maxgalaxy="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" preferbuilding="true" />
+			<ship>
+				<select faction="xenon" tags="[military, xenu]" size="ship_xl" />
+				<owner exact="xenon" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="xenon_fighter_escort_s_xenu" />
+			</subordinates>
+		</job>
 
-  <!-- Adding escort job to existing terran job -->
-  <add sel="//jobs/job[@id='terran_carrier_intervention_xl']/subordinates">
-    <subordinate job="terran_frigate_escort_akita"/>
+		<job id="xenon_fighter_escort_s_xenu" name="{20204,3401}" startactive="false">
+			<orders>
+				<order order="Escort" default="true">
+					<param name="overrideformationskill" value="true" />
+				</order>
+			</orders>
+			<category faction="xenon" tags="[military, fighter]" size="ship_s" />
+			<quota wing="50" variation="5" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" />
+			<environment buildatshipyard="true" />
+			<modifiers subordinate="true" />
+			<ship>
+				<select faction="xenon" tags="[military, fighter, selection]" size="ship_s" />
+				<owner exact="xenon" overridenpc="true" />
+			</ship>
+		</job>
 	</add>
-  <add sel="//jobs/job[@id='terran_battleship_intervention_xl']/subordinates">
-    <subordinate job="terran_frigate_escort_akita" assignment="attack"/>
-  </add>
 
-  	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_frigate']/quota[@wing='4']">
-	<quota wing="4" variation="1"/>
+	<!-- Adding escort job to existing terran job -->
+	<add sel="//jobs/job[@id='terran_carrier_intervention_xl']/subordinates">
+		<subordinate job="terran_frigate_escort_akita" />
+	</add>
+	<add sel="//jobs/job[@id='terran_battleship_intervention_xl']/subordinates">
+		<subordinate job="terran_frigate_escort_akita" assignment="attack" />
+	</add>
+
+	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_frigate']/quota[@wing='4']">
+		<quota wing="4" variation="1" />
 	</replace>
 	<replace sel="//jobs/job[@id='xenon_fighter_escort_s_patrol']/quota[@wing='2']">
-	<quota wing="2" variation="1"/>
+		<quota wing="2" variation="1" />
 	</replace>
 
 	<!-- added S bombers to existing jobs -->
-	<add sel="/jobs/job[@id='boron_carrier_patrol_xl_flagship_phase2']/subordinates" >
-        <subordinate job="boron_escort_s_bomber" assignment="defence"/>
-        <subordinate job="boron_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='boron_carrier_patrol_xl_flagship_phase2']/subordinates">
+		<subordinate job="boron_escort_s_bomber" assignment="defence" />
+		<subordinate job="boron_escort_s_bomber" assignment="defence" />
 	</add>
-    <add sel="/jobs/job[@id='boron_carrier_patrol_xl_argon_phase2']/subordinates" >
-        <subordinate job="boron_escort_s_bomber" assignment="defence"/>
-        <subordinate job="boron_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='boron_carrier_patrol_xl_argon_phase2']/subordinates">
+		<subordinate job="boron_escort_s_bomber" assignment="defence" />
+		<subordinate job="boron_escort_s_bomber" assignment="defence" />
 	</add>
-    <add sel="/jobs/job[@id='boron_carrier_patrol_xl_argon']/subordinates" >
-        <subordinate job="boron_escort_s_bomber" assignment="defence"/>
-        <subordinate job="boron_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='boron_carrier_patrol_xl_argon']/subordinates">
+		<subordinate job="boron_escort_s_bomber" assignment="defence" />
+		<subordinate job="boron_escort_s_bomber" assignment="defence" />
 	</add>
-	<add sel="/jobs/job[@id='boron_carrier_patrol_xl_flagship']/subordinates" >
-        <subordinate job="boron_escort_s_bomber" assignment="defence"/>
-        <subordinate job="boron_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='boron_carrier_patrol_xl_flagship']/subordinates">
+		<subordinate job="boron_escort_s_bomber" assignment="defence" />
+		<subordinate job="boron_escort_s_bomber" assignment="defence" />
 	</add>
-    <add sel="/jobs/job[@id='boron_carrier_patrol_xl_argon_initial']/subordinates" >
-        <subordinate job="boron_escort_s_bomber" assignment="defence"/>
-        <subordinate job="boron_escort_s_bomber" assignment="defence"/>
-	</add>
-
-   <add sel="/jobs/job[@id='boron_carrier_patrol_l_sector']/subordinates" >
-        <subordinate job="boron_escort_s_bomber" assignment="defence"/>
-	</add>
-	  <add sel="/jobs/job[@id='boron_carrier_escort_l_flagship']/subordinates" >
-        <subordinate job="boron_escort_s_bomber" />
-	</add>
-  <add sel="/jobs/job[@id='boron_carrier_escort_l_flagship_phase2']/subordinates" >
-        <subordinate job="boron_escort_s_bomber" />
+	<add sel="/jobs/job[@id='boron_carrier_patrol_xl_argon_initial']/subordinates">
+		<subordinate job="boron_escort_s_bomber" assignment="defence" />
+		<subordinate job="boron_escort_s_bomber" assignment="defence" />
 	</add>
 
-    <add sel="/jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/subordinates" >
-        <subordinate job="argon_escort_s_bomber" assignment="defence"/>
-        <subordinate job="argon_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='boron_carrier_patrol_l_sector']/subordinates">
+		<subordinate job="boron_escort_s_bomber" assignment="defence" />
 	</add>
-    <add sel="/jobs/job[@id='argon_carrier_patrol_xl_center_galaxy_phase2']/subordinates" >
-        <subordinate job="argon_escort_s_bomber" assignment="defence"/>
-        <subordinate job="argon_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='boron_carrier_escort_l_flagship']/subordinates">
+		<subordinate job="boron_escort_s_bomber" />
 	</add>
-    <add sel="/jobs/job[@id='argon_carrier_patrol_xl_sector_phase2']/subordinates" >
-        <subordinate job="argon_escort_s_bomber" assignment="defence"/>
-        <subordinate job="argon_escort_s_bomber" assignment="defence"/>
-	</add>
-    <add sel="/jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/subordinates" >
-        <subordinate job="argon_escort_s_bomber" assignment="defence"/>
-        <subordinate job="argon_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='boron_carrier_escort_l_flagship_phase2']/subordinates">
+		<subordinate job="boron_escort_s_bomber" />
 	</add>
 
-    <add sel="/jobs/job[@id='terran_carrier_defence_xl_earth_heavy_phase2']/subordinates" >
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/subordinates">
+		<subordinate job="argon_escort_s_bomber" assignment="defence" />
+		<subordinate job="argon_escort_s_bomber" assignment="defence" />
 	</add>
-    <add sel="/jobs/job[@id='terran_carrier_defence_xl_asteroidbelt_heavy_phase2']/subordinates" >
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='argon_carrier_patrol_xl_center_galaxy_phase2']/subordinates">
+		<subordinate job="argon_escort_s_bomber" assignment="defence" />
+		<subordinate job="argon_escort_s_bomber" assignment="defence" />
 	</add>
-    <add sel="/jobs/job[@id='terran_carrier_defence_xl_earth_heavy']/subordinates" >
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='argon_carrier_patrol_xl_sector_phase2']/subordinates">
+		<subordinate job="argon_escort_s_bomber" assignment="defence" />
+		<subordinate job="argon_escort_s_bomber" assignment="defence" />
 	</add>
-    <add sel="/jobs/job[@id='terran_carrier_defence_xl_asteroidbelt_heavy']/subordinates" >
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
-	</add>
-    <add sel="/jobs/job[@id='terran_carrier_defence_xl_neptune_medium']/subordinates" >
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
-	</add>
-    <add sel="/jobs/job[@id='terran_carrier_defence_xl_mars_medium']/subordinates" >
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
-        <subordinate job="terran_escort_s_bomber" assignment="defence"/>
-	</add>
-    <add sel="/jobs/job[@id='terran_carrier_patrol_xl_mobile_light']/subordinates" >
-        <subordinate job="terran_escort_s_bomber" />
-        <subordinate job="terran_escort_s_bomber" />
-	</add>
-    <add sel="/jobs/job[@id='terran_carrier_intervention_xl']/subordinates" >
-        <subordinate job="terran_escort_s_bomber" />
-        <subordinate job="terran_escort_s_bomber" />
+	<add sel="/jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/subordinates">
+		<subordinate job="argon_escort_s_bomber" assignment="defence" />
+		<subordinate job="argon_escort_s_bomber" assignment="defence" />
 	</add>
 
-    <add sel="/jobs/job[@id='zyarth_carrier_patrol_xl_center']/subordinates" >
-        <subordinate job="split_escort_s_bomber" assignment="defence"/>
-        <subordinate job="split_escort_s_bomber" assignment="defence"/>
-        <subordinate job="split_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='terran_carrier_defence_xl_earth_heavy_phase2']/subordinates">
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
 	</add>
-    <add sel="/jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/subordinates" >
-        <subordinate job="split_escort_s_bomber" assignment="defence"/>
-        <subordinate job="split_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='terran_carrier_defence_xl_asteroidbelt_heavy_phase2']/subordinates">
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
 	</add>
-    <add sel="/jobs/job[@id='zyarth_carrier_patrol_xl_familykritt']/subordinates" >
-        <subordinate job="split_escort_s_bomber" assignment="defence"/>
-        <subordinate job="split_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='terran_carrier_defence_xl_earth_heavy']/subordinates">
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
 	</add>
-	
-    <add sel="/jobs/job[@id='court_carrier_patrol_xl_center']/subordinates" >
-        <subordinate job="court_escort_s_bomber" assignment="defence"/>
-        <subordinate job="court_escort_s_bomber" assignment="defence"/>
+	<add sel="/jobs/job[@id='terran_carrier_defence_xl_asteroidbelt_heavy']/subordinates">
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
+	</add>
+	<add sel="/jobs/job[@id='terran_carrier_defence_xl_neptune_medium']/subordinates">
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
+	</add>
+	<add sel="/jobs/job[@id='terran_carrier_defence_xl_mars_medium']/subordinates">
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
+		<subordinate job="terran_escort_s_bomber" assignment="defence" />
+	</add>
+	<add sel="/jobs/job[@id='terran_carrier_patrol_xl_mobile_light']/subordinates">
+		<subordinate job="terran_escort_s_bomber" />
+		<subordinate job="terran_escort_s_bomber" />
+	</add>
+	<add sel="/jobs/job[@id='terran_carrier_intervention_xl']/subordinates">
+		<subordinate job="terran_escort_s_bomber" />
+		<subordinate job="terran_escort_s_bomber" />
+	</add>
+
+	<add sel="/jobs/job[@id='zyarth_carrier_patrol_xl_center']/subordinates">
+		<subordinate job="split_escort_s_bomber" assignment="defence" />
+		<subordinate job="split_escort_s_bomber" assignment="defence" />
+		<subordinate job="split_escort_s_bomber" assignment="defence" />
+	</add>
+	<add sel="/jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/subordinates">
+		<subordinate job="split_escort_s_bomber" assignment="defence" />
+		<subordinate job="split_escort_s_bomber" assignment="defence" />
+	</add>
+	<add sel="/jobs/job[@id='zyarth_carrier_patrol_xl_familykritt']/subordinates">
+		<subordinate job="split_escort_s_bomber" assignment="defence" />
+		<subordinate job="split_escort_s_bomber" assignment="defence" />
+	</add>
+
+	<add sel="/jobs/job[@id='court_carrier_patrol_xl_center']/subordinates">
+		<subordinate job="court_escort_s_bomber" assignment="defence" />
+		<subordinate job="court_escort_s_bomber" assignment="defence" />
 	</add>
 
 
-<!-- Changes to loadout levels -->
-<!-- arg -->
-  <replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/ship/loadout">
-<loadout>
-				<level min="0.9" max="1.0"/>
-			</loadout>  </replace>
-  <replace sel="//jobs/job[@id='argon_destroyer_patrol_l_sector']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
+	<!-- Changes to loadout levels -->
+	<!-- arg -->
+	<replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/ship/loadout">
+		<loadout>
+			<level min="0.9" max="1.0" />
+		</loadout>
+	</replace>
+	<replace sel="//jobs/job[@id='argon_destroyer_patrol_l_sector']/ship/loadout">
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
 	<replace sel="//jobs/job[@id='argon_destroyer_escort_l']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
 	<replace sel="//jobs/job[@id='argon_resupplier_escort_xl']/ship/loadout">
-<loadout>
-				<level min="0.8" max="1.0"/>
-			</loadout>  </replace>
-<!-- ant -->
+		<loadout>
+			<level min="0.8" max="1.0" />
+		</loadout>
+	</replace>
+	<!-- ant -->
 	<replace sel="//jobs/job[@id='antigone_destroyer_patrol_l_border_sector']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
 	<replace sel="//jobs/job[@id='antigone_destroyer_escort_l']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
-<!-- par -->
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
+	<!-- par -->
 	<replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster']/ship/loadout">
-<loadout>
-				<level min="0.9" max="1.0"/>
-			</loadout>  </replace>
+		<loadout>
+			<level min="0.9" max="1.0" />
+		</loadout>
+	</replace>
 	<replace sel="//jobs/job[@id='paranid_destroyer_patrol_l_sector_exp']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
 	<replace sel="//jobs/job[@id='paranid_destroyer_escort_l']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
 	<replace sel="//jobs/job[@id='paranid_resupplier_escort_xl']/ship/loadout">
-<loadout>
-				<level min="0.8" max="1.0"/>
-			</loadout>  </replace>
-<!-- hop -->
+		<loadout>
+			<level min="0.8" max="1.0" />
+		</loadout>
+	</replace>
+	<!-- hop -->
 	<replace sel="//jobs/job[@id='holyorder_destroyer_patrol_l_cluster_exp']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
 	<replace sel="//jobs/job[@id='holyorder_destroyer_escort_l']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
 	<replace sel="//jobs/job[@id='holyorder_resupplier_escort_xl']/ship/loadout">
-<loadout>
-				<level min="0.8" max="1.0"/>
-			</loadout>  </replace>
-<!-- tel -->
+		<loadout>
+			<level min="0.8" max="1.0" />
+		</loadout>
+	</replace>
+	<!-- tel -->
 	<replace sel="//jobs/job[@id='teladi_carrier_patrol_xl_cluster']/ship/loadout">
-<loadout>
-				<level min="0.9" max="1.0"/>
-			</loadout>  </replace>
-  <replace sel="//jobs/job[@id='teladi_destroyer_patrol_l_border_cluster']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
+		<loadout>
+			<level min="0.9" max="1.0" />
+		</loadout>
+	</replace>
+	<replace sel="//jobs/job[@id='teladi_destroyer_patrol_l_border_cluster']/ship/loadout">
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
 	<replace sel="//jobs/job[@id='teladi_destroyer_escort_l']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
 	<replace sel="//jobs/job[@id='teladi_resupplier_escort_xl']/ship/loadout">
-<loadout>
-				<level min="0.8" max="1.0"/>
-			</loadout>  </replace>
-<!-- min -->
+		<loadout>
+			<level min="0.8" max="1.0" />
+		</loadout>
+	</replace>
+	<!-- min -->
 	<replace sel="//jobs/job[@id='ministry_destroyer_patrol_l_comp']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
 	<replace sel="//jobs/job[@id='ministry_destroyer_escort_l']/ship/loadout">
-<loadout>
-				<level min="0.65" max="1.0"/>
-			</loadout>  </replace>
-<!-- sca -->
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
+	<!-- sca -->
 	<replace sel="//jobs/job[@id='scaleplate_plunderer_l_cluster']/ship/loadout">
-<loadout>
-				<level min="0.6" max="0.9"/>
-			</loadout>  </replace>
+		<loadout>
+			<level min="0.6" max="0.9" />
+		</loadout>
+	</replace>
 
-<!-- spl -->
+	<!-- spl -->
 	<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_center']/ship/loadout">
-	<loadout>
-					<level min="0.9" max="1.0"/>
-	</loadout>  </replace>
-	  <replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/ship/loadout">
-	<loadout>
-					<level min="0.9" max="1.0"/>
-	</loadout>  </replace>
+		<loadout>
+			<level min="0.9" max="1.0" />
+		</loadout>
+	</replace>
+	<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/ship/loadout">
+		<loadout>
+			<level min="0.9" max="1.0" />
+		</loadout>
+	</replace>
 
 	<replace sel="//jobs/job[@id='zyarth_destroyer_escort_l_noescort']/ship/loadout">
 		<loadout>
-						<level min="0.8" max="1.0"/>
-		</loadout>  </replace>
-
-		<replace sel="//jobs/job[@id='zyarth_destroyer_patrol_l_border_sector']/ship/loadout">
-			<loadout>
-							<level min="0.8" max="1.0"/>
-			</loadout>  </replace>
-<!-- terran -->
-<replace sel="//jobs/job[@id='terran_destroyer_patrol_l_mobile_pack']/ship/loadout">
-	<loadout>
-	<level min="0.8" max="1.0"/>
-	</loadout>  
-</replace>
-<replace sel="//jobs/job[@id='terran_destroyer_patrol_l_comp']/ship/loadout">
-	<loadout>
-	<level min="0.8" max="1.0"/>
-	</loadout>  
-</replace>
-<replace sel="//jobs/job[@id='terran_destroyer_escort_l']/ship/loadout">
-	<loadout>
-	<level min="0.8" max="1.0"/>
-	</loadout>  
-</replace>
-<replace sel="//jobs/job[@id='terran_destroyer_escort_l_noescort']/ship/loadout">
-	<loadout>
-	<level min="0.8" max="1.0"/>
-	</loadout>  
-</replace>
-<replace sel="//jobs/job[@id='pioneers_destroyer_patrol_l_comp']/ship/loadout">
-	<loadout>
-	<level min="0.8" max="1.0"/>
-	</loadout>  
-</replace>
-
-<!-- court -->
-<replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/ship/loadout">
-	<loadout>
-			<level min="0.7" max="1.0"/>
-	</loadout>  </replace>
-<!-- carrier groups boost -->
-<replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/quota[@galaxy='1']">
-<quota galaxy="5" sector="1"/>
-</replace>
-
-<replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/location">
-<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact"/>
-</replace>
-
-<replace sel="//jobs/job[@id='teladi_carrier_patrol_xl_cluster']/quota[@galaxy='1']">
-<quota galaxy="5" sector="1"/>
-</replace>
-
-<replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster']/quota[@galaxy='1']">
-<quota galaxy="4" sector="1"/>
-</replace>
-
-<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_center']/quota[@galaxy='1']">
-	<quota galaxy="4" sector="1"/>
+			<level min="0.8" max="1.0" />
+		</loadout>
 	</replace>
 
-<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/quota[@galaxy='1']">
-<quota galaxy="4" sector="1"/>
-</replace>
-
-<replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/quota[@galaxy='1']">
-	<quota galaxy="4" sector="1"/>
+	<replace sel="//jobs/job[@id='zyarth_destroyer_patrol_l_border_sector']/ship/loadout">
+		<loadout>
+			<level min="0.8" max="1.0" />
+		</loadout>
+	</replace>
+	<!-- terran -->
+	<replace sel="//jobs/job[@id='terran_destroyer_patrol_l_mobile_pack']/ship/loadout">
+		<loadout>
+			<level min="0.8" max="1.0" />
+		</loadout>
+	</replace>
+	<replace sel="//jobs/job[@id='terran_destroyer_patrol_l_comp']/ship/loadout">
+		<loadout>
+			<level min="0.8" max="1.0" />
+		</loadout>
+	</replace>
+	<replace sel="//jobs/job[@id='terran_destroyer_escort_l']/ship/loadout">
+		<loadout>
+			<level min="0.8" max="1.0" />
+		</loadout>
+	</replace>
+	<replace sel="//jobs/job[@id='terran_destroyer_escort_l_noescort']/ship/loadout">
+		<loadout>
+			<level min="0.8" max="1.0" />
+		</loadout>
+	</replace>
+	<replace sel="//jobs/job[@id='pioneers_destroyer_patrol_l_comp']/ship/loadout">
+		<loadout>
+			<level min="0.8" max="1.0" />
+		</loadout>
 	</replace>
 
-<replace sel="//jobs/job[@id='zyarth_escort_s_carrier']/quota[@wing='5']">
-	<quota wing="8" variation="1"/>
+	<!-- court -->
+	<replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/ship/loadout">
+		<loadout>
+			<level min="0.7" max="1.0" />
+		</loadout>
+	</replace>
+	<!-- carrier groups boost -->
+	<replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/quota[@galaxy='1']">
+		<quota galaxy="5" sector="1" />
 	</replace>
 
-<replace sel="//jobs/job[@id='court_escort_s_carrier']/quota[@wing='5']">
-	<quota wing="8" variation="1"/>
-		</replace>
+	<replace sel="//jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/location">
+		<location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact" />
+	</replace>
 
-<!-- SPLIT DLC jobs loadouts -->
-<replace sel="//jobs/job[@id='argon_destroyer_patrol_l_sector_spl']/ship/loadout">
-	<loadout>
-					<level min="0.65" max="1.0"/>
-				</loadout>  </replace>
-	  <replace sel="//jobs/job[@id='ministry_destroyer_patrol_l_spl']/ship/loadout">
-	<loadout>
-					<level min="0.65" max="1.0"/>
-				</loadout>  </replace>
+	<replace sel="//jobs/job[@id='teladi_carrier_patrol_xl_cluster']/quota[@galaxy='1']">
+		<quota galaxy="5" sector="1" />
+	</replace>
+
+	<replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster']/quota[@galaxy='1']">
+		<quota galaxy="4" sector="1" />
+	</replace>
+
+	<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_center']/quota[@galaxy='1']">
+		<quota galaxy="4" sector="1" />
+	</replace>
+
+	<replace sel="//jobs/job[@id='zyarth_carrier_patrol_xl_familyzhin']/quota[@galaxy='1']">
+		<quota galaxy="4" sector="1" />
+	</replace>
+
+	<replace sel="//jobs/job[@id='court_carrier_patrol_xl_center']/quota[@galaxy='1']">
+		<quota galaxy="4" sector="1" />
+	</replace>
+
+	<replace sel="//jobs/job[@id='zyarth_escort_s_carrier']/quota[@wing='5']">
+		<quota wing="8" variation="1" />
+	</replace>
+
+	<replace sel="//jobs/job[@id='court_escort_s_carrier']/quota[@wing='5']">
+		<quota wing="8" variation="1" />
+	</replace>
+
+	<!-- SPLIT DLC jobs loadouts -->
+	<replace sel="//jobs/job[@id='argon_destroyer_patrol_l_sector_spl']/ship/loadout">
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
+	<replace sel="//jobs/job[@id='ministry_destroyer_patrol_l_spl']/ship/loadout">
+		<loadout>
+			<level min="0.65" max="1.0" />
+		</loadout>
+	</replace>
 
 	<replace sel="//jobs/job[@id='paranid_carrier_patrol_xl_cluster_spl']/ship/loadout">
-	<loadout>
-					<level min="0.9" max="1.0"/>
-				</loadout>  </replace>
+		<loadout>
+			<level min="0.9" max="1.0" />
+		</loadout>
+	</replace>
 
 
-
-<!-- Xenon combat and economy FE fix -->
-  <replace sel="//jobs/job[@id='xenon_free_miner_m_mineral']/quota/@cluster">7</replace>
-  <replace sel="//jobs/job[@id='xenon_free_trader_m_energy']/quota/@cluster">6</replace>
-  <!-- <replace sel="//jobs/job[@id='xenon_carrier_patrol_xl_border_cluster']/quota[@galaxy='1']">
+	<!-- Xenon combat and economy FE fix -->
+	<replace sel="//jobs/job[@id='xenon_free_miner_m_mineral']/quota/@cluster">7</replace>
+	<replace sel="//jobs/job[@id='xenon_free_trader_m_energy']/quota/@cluster">6</replace>
+	<!-- <replace sel="//jobs/job[@id='xenon_carrier_patrol_xl_border_cluster']/quota[@galaxy='1']">
 	<quota galaxy="1" maxgalaxy="2"/>
   </replace>
   <replace sel="//jobs/job[@id='xenon_destroyer_patrol_xl_defence']/quota[@galaxy='6']">
     <quota galaxy="10" cluster="4"/>
   </replace> -->
 
-  <!-- reserve XENON JOBS, cannot be commandeered, 1 per xenon sector -->
-<add sel="//jobs">
-  <job id="xenon_free_miner_m_mineral_reserve" name="{20204,1901}">
-    <modifiers rebuild="true" commandeerable="false"/>
-    <orders>
-      <order order="MiningRoutine" default="true">
-        <param name="minbuy" value="0"/>
-        <param name="maxbuy" value="2"/>
-        <param name="minsell" value="0"/>
-        <param name="maxsell" value="2"/>
-      </order>
-    </orders>
-    <basket basket="minerals_xenon"/>
-    <category faction="xenon" tags="[miner]" size="ship_m"/>
-    <quota galaxy="16" maxgalaxy="16" sector="1"/>
-    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="member" comparison="ge" regionbasket="minerals_xenon" matchextension="false"/>
-    <environment buildatshipyard="true"/>
-    <ship>
-      <select faction="xenon" tags="[miner, solid]" size="class.ship_m"/>
-      <owner exact="xenon" overridenpc="true"/>
-      <cargo>
-        <wares>
-          <fillpercent min="0" max="100" profile="inversebell"/>
-        </wares>
-      </cargo>
-    </ship>
-  </job>
+	<!-- reserve XENON JOBS, cannot be commandeered, 1 per xenon sector -->
+	<add sel="//jobs">
+		<job id="xenon_free_miner_m_mineral_reserve" name="{20204,1901}">
+			<modifiers rebuild="true" commandeerable="false" />
+			<orders>
+				<order order="MiningRoutine" default="true">
+					<param name="minbuy" value="0" />
+					<param name="maxbuy" value="2" />
+					<param name="minsell" value="0" />
+					<param name="maxsell" value="2" />
+				</order>
+			</orders>
+			<basket basket="minerals_xenon" />
+			<category faction="xenon" tags="[miner]" size="ship_m" />
+			<quota galaxy="16" maxgalaxy="16" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="member" comparison="ge" regionbasket="minerals_xenon" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="xenon" tags="[miner, solid]" size="class.ship_m" />
+				<owner exact="xenon" overridenpc="true" />
+				<cargo>
+					<wares>
+						<fillpercent min="0" max="100" profile="inversebell" />
+					</wares>
+				</cargo>
+			</ship>
+		</job>
 
-  <job id="xenon_free_trader_m_energy_reserve" name="{20204,4801}">
-    <modifiers rebuild="true" commandeerable="false"/>
-    <orders>
-      <order order="TradeRoutine" default="true">
-        <param name="minbuy" value="0"/>
-        <param name="maxbuy" value="2"/>
-        <param name="minsell" value="0"/>
-        <param name="maxsell" value="2"/>
-      </order>
-    </orders>
-    <basket basket="energycells"/>
-    <category faction="xenon" tags="[freighter, trader]" size="ship_m"/>
-    <quota galaxy="16" maxgalaxy="16" sector="1"/>
-    <location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="member" comparison="ge" matchextension="false"/>
-    <environment buildatshipyard="true"/>
-    <ship>
-      <!-- use miner ship for energy transport -->
-      <select faction="xenon" tags="[miner, solid]" size="class.ship_m"/>
-      <owner exact="xenon" overridenpc="true"/>
-    </ship>
-  </job>
-</add>
+		<job id="xenon_free_trader_m_energy_reserve" name="{20204,4801}">
+			<modifiers rebuild="true" commandeerable="false" />
+			<orders>
+				<order order="TradeRoutine" default="true">
+					<param name="minbuy" value="0" />
+					<param name="maxbuy" value="2" />
+					<param name="minsell" value="0" />
+					<param name="maxsell" value="2" />
+				</order>
+			</orders>
+			<basket basket="energycells" />
+			<category faction="xenon" tags="[freighter, trader]" size="ship_m" />
+			<quota galaxy="16" maxgalaxy="16" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="xenon" relation="member" comparison="ge" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<!-- use miner ship for energy transport -->
+				<select faction="xenon" tags="[miner, solid]" size="class.ship_m" />
+				<owner exact="xenon" overridenpc="true" />
+			</ship>
+		</job>
+	</add>
 </diff>

@@ -9,24 +9,24 @@
 		<ship id="boron_battleship_xl" group="bor_battleship_xl">
 			<category tags="[military, battleship, mission]" faction="boron" size="ship_xl" />
 			<pilot>
-			<select faction="boron" tags="fighterpilot" />
+				<select faction="boron" tags="fighterpilot" />
 			</pilot>
 			<drop ref="ship_large_military" />
 			<people ref="boron_military_crew" />
 		</ship>
 
 		<ship id="boron_bomber_s" group="bor_bomber_s">
-			<category tags="[military, bomber]" faction="[boron]" size="ship_s"/>
+			<category tags="[military, bomber]" faction="[boron]" size="ship_s" />
 			<pilot>
-			<select faction="boron" tags="fighterpilot"/>
+				<select faction="boron" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_small_military"/>
-			<people ref="boron_military_crew"/>
+			<drop ref="ship_small_military" />
+			<people ref="boron_military_crew" />
 		</ship>
 
-	<!-- ############################# -->
-	<!--    ARGON FEDERATION -->
-	<!-- ############################# -->
+		<!-- ############################# -->
+		<!--    ARGON FEDERATION -->
+		<!-- ############################# -->
 
 		<ship id="argon_battleship_xl" group="arg_battleship_xl">
 			<category tags="[military, battleship, mission]"
@@ -57,17 +57,17 @@
 		</ship>
 
 		<ship id="argon_bomber_s" group="argon_bomber_s">
-			<category tags="[military, bomber]" faction="[argon]" size="ship_s"/>
+			<category tags="[military, bomber]" faction="[argon]" size="ship_s" />
 			<pilot>
-			<select faction="argon" tags="fighterpilot"/>
+				<select faction="argon" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_small_military"/>
-			<people ref="argon_military_crew"/>
+			<drop ref="ship_small_military" />
+			<people ref="argon_military_crew" />
 		</ship>
 
-	<!-- ############################# -->
-	<!--    ANTIGONE REPUBLIC -->
-	<!-- ############################# -->
+		<!-- ############################# -->
+		<!--    ANTIGONE REPUBLIC -->
+		<!-- ############################# -->
 
 		<ship id="antigone_griffon" group="ant_griffon_l">
 			<category tags="[military, frigate, mission]" faction="[antigone]" size="ship_l" />
@@ -89,17 +89,17 @@
 		</ship>
 
 		<ship id="antigone_bomber_s" group="ant_bomber_s">
-			<category tags="[military, bomber]" faction="[antigone]" size="ship_s"/>
+			<category tags="[military, bomber]" faction="[antigone]" size="ship_s" />
 			<pilot>
-			<select faction="antigone" tags="fighterpilot"/>
+				<select faction="antigone" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_small_military"/>
-			<people ref="argon_military_crew"/>
+			<drop ref="ship_small_military" />
+			<people ref="argon_military_crew" />
 		</ship>
 
-	<!-- ############################# -->
-	<!--    GODREALM OF THE PARANID -->
-	<!-- ############################# -->
+		<!-- ############################# -->
+		<!--    GODREALM OF THE PARANID -->
+		<!-- ############################# -->
 
 		<ship id="paranid_battleship_xl" group="par_battleship_xl">
 			<category tags="[military, battleship, mission]" faction="[paranid, alliance]"
@@ -121,9 +121,9 @@
 			<people ref="paranid_military_crew" />
 		</ship>
 
-	<!-- ############################# -->
-	<!--    HOLY ORDER OF THE PONTIFEX -->
-	<!-- ############################# -->
+		<!-- ############################# -->
+		<!--    HOLY ORDER OF THE PONTIFEX -->
+		<!-- ############################# -->
 
 		<ship id="holyorder_battleship_xl" group="hol_battleship_xl">
 			<category tags="[military, battleship, mission]" faction="[holyorder, alliance]"
@@ -135,7 +135,7 @@
 			<people ref="paranid_military_crew" />
 		</ship>
 
-	<!-- <add sel="//ships">
+		<!-- <add sel="//ships">
 		<ship id="holyorder_hyperion" group="hol_hyperion_l">
 			<category tags="[military, frigate, mission, hyperion]" faction="[holyorder]"
 				size="ship_l" />
@@ -156,9 +156,9 @@
 			<drop ref="ship_large_military" />
 			<people ref="paranid_military_crew" />
 		</ship>
-	<!-- ############################# -->
-	<!--    TELADI COMPANY & MINISTRY OF FINANCE-->
-	<!-- ############################# -->
+		<!-- ############################# -->
+		<!--    TELADI COMPANY & MINISTRY OF FINANCE-->
+		<!-- ############################# -->
 
 		<ship id="teladi_battleship_xl" group="tel_battleship_xl">
 			<category tags="[military, battleship, mission]"
@@ -180,9 +180,9 @@
 			<people ref="teladi_military_crew" />
 		</ship>
 
-	<!-- ############################# -->
-	<!--    SPLIT-->
-	<!-- ############################# -->
+		<!-- ############################# -->
+		<!--    SPLIT-->
+		<!-- ############################# -->
 
 		<ship id="split_panther" group="spl_panther_l">
 			<category tags="[military, frigate, mission, plunder]"
@@ -222,26 +222,26 @@
 		</ship>
 
 		<ship id="split_bomber_s" group="spl_bomber_s">
-			<category tags="[military, bomber]" faction="[split, freesplit, fallensplit]" size="ship_s"/>
+			<category tags="[military, bomber]" faction="[split, freesplit, fallensplit]" size="ship_s" />
 			<pilot>
-			<select faction="split" tags="fighterpilot"/>
+				<select faction="split" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_small_military"/>
-			<people ref="split_military_crew"/>
+			<drop ref="ship_small_military" />
+			<people ref="split_military_crew" />
 		</ship>
 
 		<ship id="court_bomber_s" group="spl_bomber_s">
-			<category tags="[military, bomber]" faction="[court]" size="ship_s"/>
+			<category tags="[military, bomber]" faction="[court]" size="ship_s" />
 			<pilot>
-			<select faction="court" tags="fighterpilot"/>
+				<select faction="court" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_small_military"/>
-			<people ref="split_military_crew"/>
+			<drop ref="ship_small_military" />
+			<people ref="split_military_crew" />
 		</ship>
 
-	<!-- ############################# -->
-	<!--    TERRANS-->
-	<!-- ############################# -->
+		<!-- ############################# -->
+		<!--    TERRANS-->
+		<!-- ############################# -->
 
 		<ship id="terran_lightcarrier_l" group="ter_lightcarrier_l">
 			<category tags="[military, carrier, mission]" faction="[terran, pioneers]" size="ship_l" />
@@ -279,18 +279,18 @@
 		</ship>
 
 		<ship id="ter_bomber_s" group="ter_bomber_s">
-			<category tags="[military, bomber]" faction="[terran]" size="ship_s"/>
+			<category tags="[military, bomber]" faction="[terran]" size="ship_s" />
 			<pilot>
-			<select faction="terran" tags="fighterpilot"/>
+				<select faction="terran" tags="fighterpilot" />
 			</pilot>
-			<drop ref="ship_small_military"/>
-			<people ref="terran_military_crew"/>
+			<drop ref="ship_small_military" />
+			<people ref="terran_military_crew" />
 		</ship>
 
 
-	<!-- ############################# -->
-	<!--    Xenons-->
-	<!-- ############################# -->
+		<!-- ############################# -->
+		<!--    Xenons-->
+		<!-- ############################# -->
 
 		<ship id="xen_xl_mdestroyer_01_a_macro" group="xen_mdestroyer_xl" capturable="false">
 			<category tags="[military, destroyer, mission]" faction="[xenon]" size="ship_xl" />
@@ -308,12 +308,12 @@
 			<drop ref="ship_large_xenon" />
 		</ship>
 
-	<!-- ############################# -->
-	<!--    loanshark ships-->
-	<!-- ############################# -->
+		<!-- ############################# -->
+		<!--    loanshark ships-->
+		<!-- ############################# -->
 
 
-	<!-- <add sel="//ships">
+		<!-- <add sel="//ships">
 		<ship id="loanshark_centaur" group="pir_centaur_l">
 			<category tags="[military, frigate, mission]" faction="[loanshark]" size="ship_l" />
 			<pilot>
@@ -324,9 +324,9 @@
 		</ship>
 	</add> -->
 
-	<!-- ############################# -->
-	<!--    Pirate ships-->
-	<!-- ############################# -->
+		<!-- ############################# -->
+		<!--    Pirate ships-->
+		<!-- ############################# -->
 
 		<ship id="sca_refit_inca" group="sca_pirate_refit_inca">
 			<category tags="[military, plundererinca]" faction="[scaleplate]" size="ship_l" />
