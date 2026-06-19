@@ -19,6 +19,8 @@
 </ware>
 </replace> -->
 
+  <replace sel="//wares/ware[@id='weapon_gen_s_torpedo_02_mk1']/@name">{20105,2644} {1001,9021}</replace>
+  <replace sel="//wares/ware[@id='weapon_gen_m_torpedo_02_mk1']/@name">{20105,2654} {1001,9020}</replace>
 
   <!-- BORON DLC wares -->
   <add sel="/wares">
@@ -2981,7 +2983,7 @@ __________________ -->
       <owner faction="terran" />
     </ware>
 
-		<ware id="ship_arg_s_buster" name="{1111111,713}" description="{1111111,813}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
+		<ware id="ship_arg_s_buster" name="{6699,713}" description="{6699,813}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
 			<price min="143870" average="169259" max="194647" />
 			<production time="11" amount="1" method="default" name="{20206,101}">
 				<primary>
@@ -2995,7 +2997,7 @@ __________________ -->
 			<owner faction="antigone" />  
 
     </ware>
-      <ware id="ship_bor_s_candiru" name="{1111111,715}" description="{1111111,815}" transport="ship" volume="1" tags="ship">	
+      <ware id="ship_bor_s_candiru" name="{6699,715}" description="{6699,815}" transport="ship" volume="1" tags="ship">	
       <price min="203922" average="245690" max="287457" />
       <production time="15" amount="1" method="default" name="{20206,801}">
                   <primary>	
@@ -3009,7 +3011,7 @@ __________________ -->
       <owner faction="boron" />		
     </ware>
 	
-    <ware id="ship_ter_s_falchion" name="{1111111,711}" description="{1111111,811}" group="ships_terran" transport="ship" size="ship" volume="1" tags="ship">
+    <ware id="ship_ter_s_falchion" name="{6699,711}" description="{6699,811}" group="ships_terran" transport="ship" size="ship" volume="1" tags="ship">
 			<price min="291338" average="342750" max="394163" />
 			<production time="11" amount="1" method="default" name="{20206,901}">
 				<primary>
@@ -3024,7 +3026,7 @@ __________________ -->
 			<owner faction="terran" />
 		</ware>
 	
-    <ware id="ship_spl_s_wolf" name="{1111111,710}" description="{1111111,810}" transport="ship" volume="1" tags="ship">
+    <ware id="ship_spl_s_wolf" name="{6699,710}" description="{6699,810}" transport="ship" volume="1" tags="ship">
 			<price min="315429" average="350477" max="385525" />
      		 <production time="17" amount="1" method="default" name="{20206,101}">
        			 <primary>
@@ -3331,7 +3333,76 @@ __________________ -->
       <owner faction="scaleplate" />
     </ware>
 
-    <!-- multi-tube laucnher -->
+    <!--  laucnhers -->
+
+    <ware id="weapon_gen_s_torpedo_med_02_mk1" name="{20105,2644} {1001,12867}" description="{20105,2642}" group="weapons" transport="equipment" volume="1" tags="equipment missilelauncher weapon">
+    <price min="48362" average="52624" max="56886" />
+    <production time="5" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedcomposites" amount="12" />
+        <ware ware="energycells" amount="87" />
+        <ware ware="weaponcomponents" amount="10" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_s_torpedo_med_02_mk1_macro" />
+    <icon video="weapon_gen_s_torpedo_01_mk1_macro" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="buccaneers" />
+    <owner faction="holyorder" />
+    <owner faction="ministry" />
+    <owner faction="paranid" />
+    <owner faction="teladi" />
+    <owner faction="trinity" />
+    <owner faction="boron" />
+    <owner faction="loanshark" />
+    <owner faction="scavenger" />
+    <owner faction="court" />
+    <owner faction="freesplit" />
+    <owner faction="split" />
+    <owner faction="pioneers" />
+    <owner faction="terran" />
+    <owner faction="yaki" />
+    <owner faction="kaori" />
+  </ware>
+
+    <ware id="weapon_gen_m_torpedo_med_02_mk1" name="{20105,2654} {1001,12867}" description="{20105,2652}" group="weapons" transport="equipment" volume="1" tags="equipment missilelauncher weapon">
+    <price min="80690" average="87433" max="94176" />
+    <production time="5" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedelectronics" amount="20" />
+        <ware ware="energycells" amount="139" />
+        <ware ware="weaponcomponents" amount="20" />
+      </primary>
+    </production>
+    <component ref="weapon_gen_m_torpedo_med_02_mk1_macro" />
+    <icon video="weapon_gen_m_torpedo_01_mk1_macro" />
+    <restriction licence="militaryequipment" />
+    <use threshold="0" />
+    <owner faction="alliance" />
+    <owner faction="antigone" />
+    <owner faction="argon" />
+    <owner faction="buccaneers" />
+    <owner faction="holyorder" />
+    <owner faction="ministry" />
+    <owner faction="paranid" />
+    <owner faction="teladi" />
+    <owner faction="trinity" />
+    <owner faction="boron" />
+    <owner faction="loanshark" />
+    <owner faction="scavenger" />
+    <owner faction="court" />
+    <owner faction="freesplit" />
+    <owner faction="split" />
+    <owner faction="pioneers" />
+    <owner faction="terran" />
+    <owner faction="yaki" />
+    <owner faction="kaori" />
+  </ware>
+
     <!-- <ware id="weapon_spl_multilauncher" name="{6699,10212}" description="{6699,102121}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
   <price min="291883" average="327883" max="490883" />
   <production time="10" amount="1" method="default" name="{6699,1103}">
@@ -3349,6 +3420,7 @@ __________________ -->
   <owner faction="court" />
   <owner faction="fallensplit" />
 </ware>  -->
+
     <ware id="turret_spl_multilauncher" name="{6699,10212}" description="{6699,102121}" group="turrets" transport="equipment" volume="1" tags="equipment turret">
       <price min="291883" average="327883" max="490883" />
       <production time="10" amount="1" method="default" name="{6699,1103}">
@@ -4815,6 +4887,8 @@ __________________ -->
       <owner faction="hatikvah" />
       <owner faction="buccaneers" />
       <owner faction="boron" />
+      <owner faction="terran" />
+      <owner faction="pioneers" />
     </ware>
 
     <ware id="missile_typhoon" name="{6699, 1267}" description="{6699, 1269}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
@@ -4907,14 +4981,10 @@ __________________ -->
       <owner faction="teladi" />
       <owner faction="trinity" />
       <owner faction="court" />
-      <owner faction="freesplit" />
-      <owner faction="fallensplit" />
       <owner faction="split" />
       <owner faction="terran" />
       <owner faction="pioneers" />
       <owner faction="buccaneers" />
-      <owner faction="yaki" />
-      <owner faction="boron" />
       <owner faction="scaleplate" />
     </ware>
 
@@ -4952,6 +5022,11 @@ __________________ -->
       <use threshold="0" />
       <owner faction="teladi" />
       <owner faction="ministry" />
+      <owner faction="yaki" />
+      <owner faction="boron" />
+      <owner faction="freesplit" />
+      <owner faction="fallensplit" />
+      <owner faction="scaleplate" />
     </ware>
 
     <ware id="missile_tomahawk" name="{6699, 1276}" description="{6699, 1278}" group="missiles" transport="equipment" volume="1" tags="equipment missile">

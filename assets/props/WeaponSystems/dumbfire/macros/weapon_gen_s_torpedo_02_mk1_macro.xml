@@ -1,14 +1,17 @@
 <diff>
   <replace sel="//component">
-    <component ref="weapon_gen_s_torpedo_01" />
+    <component ref="weapon_gen_s_torpedo_light_01" />
   </replace>
   <replace sel="//ammunition">
-    <ammunition tags="ltorpedo mtorpedo rgw" />
+    <ammunition tags="ltorpedo" />
   </replace>
   <replace sel="//bullet">
     <bullet class="missile_typhoon_macro" />
   </replace>
   <replace sel="//storage">
-    <storage capacity="0" />
+    <storage capacity="3" />
+  </replace>
+  <replace sel="//identification">
+      <identification name="{20105,2644} {1001,9021}" basename="{20105,2641} {1001,9021}" shortname="{20105,2645} {1001,9021}" description="{20105,2642}" mk="1" />
   </replace>
 </diff>

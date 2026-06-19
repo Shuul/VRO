@@ -11,6 +11,12 @@
 		</group>
 	</add>
 
+	<add sel="//groups">
+		<group name="bor_bomber_s">
+			<select macro="ship_bor_s_candiru_macro" weight="100" />
+		</group>
+	</add>
+
 	<!-- ############################# -->
 	<!--    ARGON FEDERATION -->
 	<!-- ############################# -->
@@ -33,6 +39,13 @@
 		</group>
 	</add>
 
+	<add sel="//groups">
+		<group name="argon_bomber_s">
+			<select macro="ship_arg_s_buster_macro" weight="100" />
+		</group>
+	</add>
+
+
 	<!-- ############################# -->
 	<!--    ANTIGONE REPUBLIC -->
 	<!-- ############################# -->
@@ -48,6 +61,13 @@
 			<select macro="argonmattgriffon_macro" weight="100" />
 		</group>
 	</add>
+
+	<add sel="//groups">
+		<group name="ant_bomber_s">
+			<select macro="ship_arg_s_buster_macro" weight="100" />
+		</group>
+	</add>
+
 
 	<!-- ############################# -->
 	<!--    GODREALM OF THE PARANID -->
@@ -113,10 +133,15 @@
 		</group>
 	</add>
 
+	<add sel="//groups">
+		<group name="spl_bomber_s">
+			<select macro="ship_spl_s_wolf_macro" weight="100" />
+		</group>
+	</add>
+
 	<!-- ############################# -->
 	<!--    Terran-->
 	<!-- ############################# -->
-
 
 	<add sel="//groups">
 		<group name="ter_lightcarrier_l">
@@ -124,7 +149,13 @@
 		</group>
 	</add>
 
-	<!-- <add sel="//groups">
+	<add sel="//groups">
+		<group name="ter_bomber_s">
+			<select macro="ship_ter_s_falchion_macro" weight="100" />
+		</group>
+	</add>
+
+	<add sel="//groups">
 		<group name="group_ter_lint_akita">
 			<select macro="ship_lint_frigate_akita_macro" weight="40"/>
 			<select macro="ship_lint_frigate_kitsune_macro" weight="100"/>
@@ -132,7 +163,7 @@
 		<group name="group_pio_lint_kitsune">
 			<select macro="ship_lint_frigate_akita_macro"  weight="100"/>
 		</group>
-	</add> -->
+	</add> 
 
 	<!-- ############################# -->
 	<!--    xenons-->
