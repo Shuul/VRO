@@ -2981,6 +2981,64 @@ __________________ -->
       <owner faction="terran" />
     </ware>
 
+		<ware id="ship_arg_s_buster" name="{1111111,713}" description="{1111111,813}" group="ships_argon" transport="ship" size="ship" volume="1" tags="ship">
+			<price min="143870" average="169259" max="194647" />
+			<production time="11" amount="1" method="default" name="{20206,101}">
+				<primary>
+					<ware ware="energycells" amount="66" />
+					<ware ware="hullparts" amount="154" />
+				</primary>
+			</production>
+			<component ref="ship_arg_s_buster_macro" amount="1" />
+			<restriction licence="militaryship" />
+			<owner faction="argon" />
+			<owner faction="antigone" />  
+
+    </ware>
+      <ware id="ship_bor_s_candiru" name="{1111111,715}" description="{1111111,815}" transport="ship" volume="1" tags="ship">	
+      <price min="203922" average="245690" max="287457" />
+      <production time="15" amount="1" method="default" name="{20206,801}">
+                  <primary>	
+          <ware ware="energycells" amount="79" />
+          <ware ware="hullparts" amount="201" />
+          <ware ware="water" amount="110" />
+                  </primary>	
+            </production>	
+            <component ref="ship_bor_s_candiru_macro" />	
+      <restriction licence="militaryship" />	
+      <owner faction="boron" />		
+    </ware>
+	
+    <ware id="ship_ter_s_falchion" name="{1111111,711}" description="{1111111,811}" group="ships_terran" transport="ship" size="ship" volume="1" tags="ship">
+			<price min="291338" average="342750" max="394163" />
+			<production time="11" amount="1" method="default" name="{20206,901}">
+				<primary>
+					<ware ware="computronicsubstrate" amount="8" />
+					<ware ware="energycells" amount="60" />
+					<ware ware="metallicmicrolattice" amount="27" />
+				</primary>
+			</production>
+			<component ref="ship_ter_s_falchion_macro" />
+			<restriction licence="militaryship" />
+			<owner faction="pioneers" />
+			<owner faction="terran" />
+		</ware>
+	
+    <ware id="ship_spl_s_wolf" name="{1111111,710}" description="{1111111,810}" transport="ship" volume="1" tags="ship">
+			<price min="315429" average="350477" max="385525" />
+     		 <production time="17" amount="1" method="default" name="{20206,101}">
+       			 <primary>
+         			<ware ware="energycells" amount="273" />
+          			<ware ware="hullparts" amount="398" />
+        		</primary>
+			</production>
+			<component ref="ship_spl_s_wolf_macro" />
+			<restriction licence="militaryship" />
+			<owner faction="split" />
+			<owner faction="freesplit" />
+			<owner faction="court" />
+		</ware>
+
     <ware id="ship_par_l_ariadne" name="{6699,1940}" description="{6699,1941}" group="ships_paranid" transport="ship" volume="1" tags="ship">
       <price min="4739882" average="5576333" max="6412782" />
       <production time="276" amount="1" method="default" name="{20206,101}">

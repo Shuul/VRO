@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<macros>
+	<macro name="ship_spl_s_wolf_macro" class="ship_s">
+		<component ref="ship_spl_s_wolf" />
+		<properties>
+			<identification name="{6699,710}" makerrace="split" description="{6699,810}" icon="ship_s_bomber" />
+			<software>
+				<software ware="software_dockmk2" compatible="1" />
+				<software ware="software_flightassistmk1" default="1" />
+				<software ware="software_scannerlongrangemk2" default="1" />
+				<software ware="software_scannerobjectmk1" default="1" />
+				<software ware="software_scannerobjectmk2" compatible="1" />
+				<software ware="software_targetmk1" compatible="1" />
+				<software ware="software_trademk1" compatible="1" />
+			</software>
+			<storage missile="36" />	
+			<hull max="12000" />
+			<secrecy level="1" />
+			<purpose primary="fight" />
+			<people capacity="3" />
+			<sounds>
+				<shipdetail ref="shipdetail_ship_02" />
+			</sounds>
+			<physics mass="7.7676">
+				<inertia pitch="3.84" yaw="3.84" roll="3.84" />
+				<drag forward="5.904" reverse="24.78" horizontal="5.748" vertical="5.748" pitch="4.74" yaw="4.74" roll="4.74" />
+				<accfactors reverse="1.02" />
+			</physics>
+			<thruster tags="small" />
+			<glow engine="1" /> 
+			<ship type="bomber" />
+			<sound_occlusion inside="0.5" />
+			<modifiers>
+				<shield capacity="1.1" />
+				<weapon heat="0.8" />
+			</modifiers>
+		</properties>
+		<connections>
+			<connection ref="con_cockpit">
+				<macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+			</connection>
+			<connection ref="con_dock_xs">
+				<macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+			</connection>
+			<connection ref="con_shipstorage_xs_01">
+				<macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+			</connection>
+			<connection ref="con_storage01">
+				<macro ref="storage_spl_s_heavyfighter_02_a_macro" connection="ShipConnection" />
+			</connection>
+		</connections>
+	</macro>
+</macros>
