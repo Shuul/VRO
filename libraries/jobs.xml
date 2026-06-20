@@ -112,6 +112,9 @@
 			</ship>
 			<subordinates>
 				<subordinate job="argon_frigate_escort_m" />
+				<subordinate job="argon_frigate_escort_m" />
+				<subordinate job="argon_frigate_escort_m" />
+				<subordinate job="argon_frigate_escort_m" />
 			</subordinates>
 		</job>
 
@@ -234,6 +237,9 @@
 			</ship>
 			<subordinates>
 				<subordinate job="antigone_frigate_escort_m" />
+				<subordinate job="antigone_frigate_escort_m" />
+				<subordinate job="argon_escort_s_bomber" />
+				<subordinate job="argon_escort_s_bomber" />
 				<subordinate job="argon_escort_s_bomber" />
 			</subordinates>
 		</job>
@@ -307,6 +313,9 @@
 			</ship>
 			<subordinates>
 				<subordinate job="paranid_frigate_escort_m" />
+				<subordinate job="paranid_frigate_escort_m" />
+				<subordinate job="paranid_frigate_escort_m" />
+				<subordinate job="paranid_frigate_escort_m" />
 			</subordinates>
 		</job>
 
@@ -333,6 +342,7 @@
 				<subordinate job="paranid_fighter_escort_s_frigate" />
 				<subordinate job="paranid_fighter_escort_s_frigate" />
 				<subordinate job="paranid_fighter_escort_s_frigate" />
+				<subordinate job="paranid_frigate_escort_m" />
 			</subordinates>
 		</job>
 
@@ -360,6 +370,9 @@
 				<owner exact="holyorder" overridenpc="true" />
 			</ship>
 			<subordinates>
+				<subordinate job="holyorder_frigate_escort_m" />
+				<subordinate job="holyorder_frigate_escort_m" />
+				<subordinate job="holyorder_frigate_escort_m" />
 				<subordinate job="holyorder_frigate_escort_m" />
 			</subordinates>
 		</job>
@@ -406,6 +419,10 @@
 				<owner exact="trinity" overridenpc="true" />
 			</ship>
 			<subordinates>
+				<subordinate job="trinity_frigate_escort_m" />
+				<subordinate job="trinity_frigate_escort_m" />
+				<subordinate job="trinity_frigate_escort_m" />
+				<subordinate job="trinity_frigate_escort_m" />
 				<subordinate job="trinity_frigate_escort_m" />
 			</subordinates>
 		</job>
@@ -577,29 +594,32 @@
 			</ship>
 		</job>
 
-		<!-- <job id="split_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
-		<modifiers commandeerable="true"/>
-		<orders>
-			<order order="Patrol" default="true">
-       		 <param name="range" value="class.sector"/>
-			</order>
-		</orders>
-		<category faction="split" tags="[factionlogic, military, battleship]" size="ship_xl"/>
-		<quota galaxy="1" maxgalaxy="3" sector="1"/>
-     	<location class="galaxy" macro="xu_ep2_universe_macro" faction="split" relation="self" comparison="exact" matchextension="false"/>
-		<environment buildatshipyard="true"/>
-		<ship>
-			<select faction="split" tags="[military, battleship]" size="ship_xl"/>
-			<loadout>
-				<level min="0.85" max="1.0"/>
-			</loadout>
-			<owner exact="split" overridenpc="true"/>
-		</ship>
-		<subordinates>
-			<subordinate job="zyarth_corvette_escort_m"/>
-			<subordinate job="zyarth_fighter_escort_s_patrol"/>
-		</subordinates>
-	  </job> -->
+		<job id="split_battleship_patrol_xl_sector_exp" name="{20221,5031}" comment="each sector, expansion">
+			<modifiers commandeerable="true" />
+			<orders>
+				<order order="Patrol" default="true">
+					<param name="range" value="class.sector" />
+				</order>
+			</orders>
+			<category faction="split" tags="[factionlogic, military, battleship]" size="ship_xl" />
+			<quota galaxy="1" maxgalaxy="3" sector="1" />
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="split" relation="self" comparison="exact" matchextension="false" />
+			<environment buildatshipyard="true" />
+			<ship>
+				<select faction="split" tags="[military, battleship]" size="ship_xl" />
+				<loadout>
+					<level exact="1.0" />
+				</loadout>
+				<owner exact="split" overridenpc="true" />
+			</ship>
+			<subordinates>
+				<subordinate job="zyarth_corvette_escort_m" />
+				<subordinate job="zyarth_corvette_escort_m" />
+				<subordinate job="zyarth_corvette_escort_m" />
+				<subordinate job="zyarth_corvette_escort_m" />
+				<subordinate job="zyarth_fighter_escort_s_patrol" />
+			</subordinates>
+		</job>
 
 
 		<job id="panther_l_sector_court" name="{20204,5201}" startactive="false" comment="panther">
@@ -663,7 +683,7 @@
 			<ship>
 				<select faction="court" tags="[military, battleship]" size="ship_xl" />
 				<loadout>
-					<level min="0.85" max="1.0" />
+					<level exact="1.0" />
 				</loadout>
 				<owner exact="court" overridenpc="true" />
 			</ship>
