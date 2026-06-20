@@ -2937,7 +2937,7 @@ __________________ -->
       <owner faction="ministry" />
     </ware>
 
-    <!-- <ware id="ship_spl_xl_gharial" name="{20101,42501}" description="{20101,42501}" group="ships_split" transport="ship" volume="1" tags="ship">
+     <ware id="ship_spl_xl_gharial" name="{20101,42501}" description="{20101,42501}" group="ships_split" transport="ship" volume="1" tags="ship">
       <price min="45000000" average="50000000" max="55000000" />
       <production time="575" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -2951,7 +2951,7 @@ __________________ -->
       <owner faction="split" />
       <owner faction="court" />
       <owner faction="fallensplit" />
-    </ware> -->
+    </ware> 
 
     <!-- Shrike-->
     <ware id="ship_tel_l_shrike" name="{20101,21701}" description="{6699,1904}" group="ships_teladi" transport="ship" size="ship" volume="1" tags="ship">
@@ -5474,31 +5474,17 @@ __________________ -->
     </ware>
 
     <ware id="missile_serpentnest" name="{6699, 1306}" description="{6699, 1308}" group="missiles" transport="equipment" volume="1" tags="equipment missile">
-      <price min="70059" average="79613" max="89166" />
+      <price min="850" average="1000" max="1150" />
       <production time="3" amount="1" method="default" name="{20206,101}">
         <primary>
-          <ware ware="energycells" amount="200" />
-          <ware ware="missilecomponents" amount="108" />
-          <ware ware="smartchips" amount="43" />
-        </primary>
-      </production>
-      <production time="3" amount="1" method="xenon" name="{20206,601}">
-        <primary>
-          <ware ware="energycells" amount="2" />
-          <ware ware="ore" amount="2" />
-          <ware ware="silicon" amount="2" />
-        </primary>
-      </production>
-      <production time="2" amount="1" method="terran" name="{20206,901}">
-        <primary>
-          <ware ware="energycells" amount="120" />
-          <ware ware="metallicmicrolattice" amount="38" />
-          <ware ware="siliconcarbide" amount="2" />
+          <ware ware="energycells" amount="20" />
+          <ware ware="missilecomponents" amount="5" />
+          <ware ware="smartchips" amount="1" />
         </primary>
       </production>
       <production time="5" amount="1" method="closedloop" name="{20206,1201}">
         <primary>
-          <ware ware="energycells" amount="783" />
+          <ware ware="energycells" amount="50" />
         </primary>
       </production>
       <component ref="missile_serpentnest_macro" amount="1" />

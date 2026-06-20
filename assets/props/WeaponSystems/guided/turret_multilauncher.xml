@@ -11,7 +11,7 @@
 		<connections>
 			<connection name="container" tags="contents" value="0" />
 			<connection name="position" tags="position" value="1" />
-			<connection name="Connection01" hidden="true" tags="part animation  ">
+			<connection name="Connection01" hidden="true" tags="part animation nocollision ">
 				<offset />
 				<animations>
 					<animation name="turret_inactive" start="150" end="150" />
@@ -57,40 +57,6 @@
 					</part>
 				</parts>
 				<waypoints />
-			</connection>
-			<connection name="Connection02" hidden="true" tags="part animation textureanimation nocollision forceoutline detail_l iklink " parent="part_socket">
-				<animations />
-				<parts>
-					<part name="anim_lights">
-						<lods>
-							<lod index="0">
-								<materials>
-									<material id="1" ref="p1effects.p1_gradient_colour" />
-								</materials>
-							</lod>
-						</lods>
-						<size>
-							<max x="2.028663" y="0.1091456" z="28.79318" />
-							<center x="4.047656E-02" y="9.577765" z="-0.1124439" />
-						</size>
-						<size_raw>
-							<max x="1.988186" y="9.468618" z="28.90562" />
-							<center x="0.0404765" y="9.577765" z="-0.1124439" />
-						</size_raw>
-						<uv_animations>
-							<uv_animation mapchannel="1">
-								<uv_property name="u_offset" controller="linear_float">
-									<key frame="1" value="0" />
-									<key frame="45" value="0.67" />
-									<key frame="60" value="0.67" />
-									<key frame="80" value="0.67" />
-									<key frame="95" value="0.67" />
-									<key frame="150" value="0" />
-								</uv_property>
-							</uv_animation>
-						</uv_animations>
-					</part>
-				</parts>
 			</connection>
 			<connection name="Connection03" hidden="true" tags="part iklink nocollision forceoutline " parent="part_socket">
 				<restrictions>
@@ -230,56 +196,8 @@
 					<rotation yaw="0" pitch="90" roll="0"/>
 				</offset>
 			</connection>
-
-
-
-
-			<connection name="Connection05" hidden="true" tags="part nocollision forceoutline detail_xl " parent="detail_xl_gun">
-				<offset>
-					<position x="-9.739342E-08" y="2.178658" z="5.062176" />
-				</offset>
-				<parts>
-					<part name="fx_gun_decals">
-						<lods>
-							<lod index="0">
-								<materials>
-									<material id="1" ref="p1paint.paint_p1_decal_01" />
-								</materials>
-							</lod>
-						</lods>
-						<size>
-							<max x="14.60382" y="9.927573" z="11.64543" />
-							<center x="9.739342E-08" y="3.829166" z="9.536743E-07" />
-						</size>
-						<size_raw>
-							<max x="14.60382" y="6.098406" z="11.64542" />
-							<center x="9.739342E-08" y="0.707799" z="0" />
-						</size_raw>
-					</part>
-				</parts>
-			</connection>
-			<connection name="Connection06" hidden="true" tags="part detail_m nocollision forceoutline  ">
-				<offset>
-					<position x="0" y="0" z="-0.1116791" />
-				</offset>
-				<parts>
-					<part name="fx_decals_base">
-						<lods>
-							<lod index="0">
-								<materials>
-									<material id="1" ref="p1paint.paint_p1_decal_01" />
-								</materials>
-							</lod>
-						</lods>
-						<size>
-							<max x="31.98265" y="5.854172" z="31.34792" />
-							<center x="0" y="6.06053" z="0" />
-						</size>
-					</part>
-				</parts>
-			</connection>
 			<!-- <connection name="con_turret_dumbfire_l" tags="turret large missile component"> -->
-			<connection name="con_turret_dumbfire_l" tags="turret large multilauncher component">
+			<connection name="con_turret_dumbfire_l" tags="turret extralarge multilauncher component">
 				<offset />
 			</connection>
 		</connections>

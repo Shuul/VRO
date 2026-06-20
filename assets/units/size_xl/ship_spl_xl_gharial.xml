@@ -871,7 +871,7 @@
 					</part>
 				</parts>
 			</connection>
-			<connection name="Connection03" tags="part  ">
+<!--			<connection name="Connection03" tags="part  ">
 				<offset>
 					<position x="0" y="-2.204346" z="-123.7497"/>
 				</offset>
@@ -905,7 +905,7 @@
 						</size>
 					</part>
 				</parts>
-			</connection>
+			</connection>-->
 			<connection name="Connection04" tags="part detail_m nocollision forceoutline  ">
 				<offset>
 					<position x="2.005718" y="-20.85132" z="481.4188"/>
@@ -1007,7 +1007,143 @@
 					</part>
 				</parts>
 			</connection>
-			<connection name="con_launchtube_arg_s_01_h" tags="dockingbay">
+
+<!-- Gharial-unique geometry -->
+      <connection name="ConnectionFordetail_xl_battleship_plates" tags="detail_xl forceoutline nocollision part ">
+        <parts>
+          <part name="detail_xl_battleship_plates">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="p2generic.gen_p2_hulltexture_01_aged" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="113.5385" y="22.65384" z="175.3569" />
+              <center x="0" y="-13.23496" z="-86.57995" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpart_battleship_launchtubes" tags="forceoutline part ">
+        <offset>
+          <position x="3.920322e-05" y="-74.04814" z="-168.5324" />
+        </offset>
+        <parts>
+          <part name="part_battleship_launchtubes" wreck="part_battleship_launchtubes_wreck">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="p2generic.gen_p2_hulltexture_01_aged" />
+                  <material id="2" ref="p1split.spl_p1_fx" />
+                  <material id="3" ref="p1paint.paint_p1_decal_01" />
+                </materials>
+              </lod>
+              <lod index="1">
+                <materials>
+                  <material id="1" ref="p2generic.gen_p2_hulltexture_01_aged" />
+                  <material id="2" ref="p1split.spl_p1_fx" />
+                  <material id="3" ref="p1paint.paint_p1_decal_01" />
+                </materials>
+              </lod>
+              <lod index="2">
+                <materials>
+                  <material id="1" ref="p2generic.gen_p2_hulltexture_01_aged" />
+                  <material id="2" ref="p1split.spl_p1_fx" />
+                </materials>
+              </lod>
+              <lod index="3">
+                <materials>
+                  <material id="1" ref="p2generic.gen_p2_hulltexture_01_aged" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="100.5457" y="15" z="59.85536" />
+              <center x="-3.433228e-05" y="0.04069901" z="-0.4663849" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionForpart_battleship_plates" tags="part ">
+        <offset>
+          <position x="0" y="-14.57533" z="-34.62906" />
+        </offset>
+        <parts>
+          <part name="part_battleship_plates" wreck="part_battleship_plates_wreck">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="p2split.spl_p2_hulltexture_01" />
+                  <material id="2" ref="p2generic.gen_p2_hulltexture_01_aged" />
+                </materials>
+              </lod>
+              <lod index="1">
+                <materials>
+                  <material id="1" ref="p2split.spl_p2_hulltexture_01" />
+                  <material id="2" ref="p2generic.gen_p2_hulltexture_01_aged" />
+                </materials>
+              </lod>
+              <lod index="2">
+                <materials>
+                  <material id="1" ref="p2split.spl_p2_hulltexture_01" />
+                  <material id="2" ref="p2generic.gen_p2_hulltexture_01_aged" />
+                </materials>
+              </lod>
+              <lod index="3">
+                <materials>
+                  <material id="1" ref="p2split.spl_p2_hulltexture_01" />
+                  <material id="2" ref="p2generic.gen_p2_hulltexture_01_aged" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="161.814" y="44.18697" z="656.54" />
+              <center x="3.814697e-06" y="84.71504" z="529.0099" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+
+<!-- craft launchtubes replaced with missile launchtubes -->
+      <connection name="multilauncher_turret" group="multilaunchers" tags="extralarge missile turret multilauncher noshield ">
+        <offset>
+          <position x="-95.90875" y="-74.00745" z="-163.1923" />
+          <quaternion qx="-0.03084357" qy="-0.03084356" qz="-0.7064338" qw="-0.7064338" />
+        </offset>
+      </connection>
+      <connection name="multilauncher_turret001" group="multilaunchers" tags="extralarge missile turret multilauncher noshield ">
+        <offset>
+          <position x="-92.42252" y="-74.00745" z="-123.3445" />
+          <quaternion qx="-0.03084357" qy="-0.03084356" qz="-0.7064338" qw="-0.7064338" />
+        </offset>
+      </connection>
+      <connection name="multilauncher_turret002" group="multilaunchers" tags="extralarge missile turret multilauncher noshield ">
+        <offset>
+          <position x="-99.39497" y="-74.00745" z="-203.0401" />
+          <quaternion qx="-0.03084357" qy="-0.03084356" qz="-0.7064338" qw="-0.7064338" />
+        </offset>
+      </connection>
+      <connection name="multilauncher_turret003" group="multilaunchers" tags="extralarge missile turret multilauncher noshield ">
+        <offset>
+          <position x="95.90878" y="-74.00745" z="-163.1923" />
+          <quaternion qx="-0.03084357" qy="0.03084356" qz="0.7064338" qw="-0.7064338" />
+        </offset>
+      </connection>
+      <connection name="multilauncher_turret004" group="multilaunchers" tags="extralarge missile turret multilauncher noshield ">
+        <offset>
+          <position x="92.42254" y="-74.00745" z="-123.3445" />
+          <quaternion qx="-0.03084357" qy="0.03084356" qz="0.7064338" qw="-0.7064338" />
+        </offset>
+      </connection>
+      <connection name="multilauncher_turret005" group="multilaunchers" tags="extralarge missile turret multilauncher noshield ">
+        <offset>
+          <position x="99.39498" y="-74.00745" z="-203.0401" />
+          <quaternion qx="-0.03084357" qy="0.03084356" qz="0.7064338" qw="-0.7064338" />
+        </offset>
+      </connection>
+<!--	  			<connection name="con_launchtube_arg_s_01_h" tags="dockingbay">
 				<offset>
 					<position x="75" y="0" z="-35"/>
 					<quaternion qx="-0.7071071" qy="5.338507E-08" qz="0.7071065" qw="5.338509E-08"/>
@@ -1054,7 +1190,7 @@
 					<position x="0" y="10.92928" z="595.0627"/>
 					<quaternion qx="-1" qy="-2.400586E-14" qz="-3.179672E-07" qw="7.54979E-08"/>
 				</offset>
-			</connection>
+			</connection>-->
 			<connection name="dockarea_spl_xl_resupplier_01" tags="dockarea ">
 				<offset>
 					<position x="0" y="75.70328" z="-423.5324"/>
@@ -1072,7 +1208,7 @@
 					<quaternion qx="-2.135403E-07" qy="-0.7071068" qz="2.135403E-07" qw="-0.7071067"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_012" group="group_mid_left_top" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_012" group="group_mid_left_top" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-84.62895" y="81.06121" z="-580.254"/>
 					<quaternion qx="8.636503E-08" qy="-1.202673E-02" qz="-8.846786E-08" qw="-0.9999276"/>
@@ -1084,19 +1220,19 @@
 					<quaternion qx="-1.051403E-09" qy="-1.202665E-02" qz="-8.741645E-08" qw="-0.9999276"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_011" group="group_mid_left_top" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_011" group="group_mid_left_top" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-85.5145" y="82.19196" z="-628.1393"/>
 					<quaternion qx="8.636503E-08" qy="-1.202673E-02" qz="-8.846786E-08" qw="-0.9999276"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_010" group="group_front_left_top" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_010" group="group_front_left_top" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-74.66456" y="78.12961" z="-240.6301"/>
 					<quaternion qx="8.713378E-08" qy="-3.300423E-03" qz="-8.771084E-08" qw="-0.9999946"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_009" group="group_front_left_top" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_009" group="group_front_left_top" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-74.52192" y="77.21977" z="-192.6667"/>
 					<quaternion qx="8.713378E-08" qy="-3.300423E-03" qz="-8.771084E-08" qw="-0.9999946"/>
@@ -1108,7 +1244,7 @@
 					<quaternion qx="-2.885245E-10" qy="-3.300335E-03" qz="-8.742229E-08" qw="-0.9999945"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_008" group="group_front_right_top" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_008" group="group_front_right_top" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="74.52431" y="77.74277" z="-240.8435"/>
 					<quaternion qx="8.713378E-08" qy="-3.300423E-03" qz="-8.771084E-08" qw="-0.9999946"/>
@@ -1120,13 +1256,13 @@
 					<quaternion qx="-2.885245E-10" qy="-3.300335E-03" qz="-8.742229E-08" qw="-0.9999945"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_007" group="group_front_right_top" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_007" group="group_front_right_top" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="74.4249" y="77.21977" z="-192.7245"/>
 					<quaternion qx="8.713378E-08" qy="-3.300423E-03" qz="-8.771084E-08" qw="-0.9999946"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_006" group="group_mid_right_top" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_006" group="group_mid_right_top" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="85.45669" y="82.22072" z="-627.8929"/>
 					<quaternion qx="8.855864E-08" qy="1.307817E-02" qz="-8.627197E-08" qw="-0.9999145"/>
@@ -1138,7 +1274,7 @@
 					<quaternion qx="9.504618E-05" qy="1.325553E-03" qz="-1.04662E-03" qw="-0.9999986"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_005" group="group_mid_right_top" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_005" group="group_mid_right_top" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="84.59755" y="81.27094" z="-579.9871"/>
 					<quaternion qx="8.813973E-08" qy="8.234808E-03" qz="-8.669991E-08" qw="-0.9999661"/>
@@ -1166,13 +1302,13 @@
 					<quaternion qw="-0.02166413181575853" qx="0.9997653051554997" qy="0.0" qz="-0.0"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_004" group="group_back_mid_mid" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_004" group="group_back_mid_mid" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-22.67358" y="23.01723" z="-1110.823"/>
 					<quaternion qx="-3.293199E-03" qy="6.639073E-02" qz="-0.9977883" qw="-2.182424E-04"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_003" group="group_back_mid_mid" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_003" group="group_back_mid_mid" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="22.674" y="23.01723" z="-1110.823"/>
 					<quaternion qx="-3.293199E-03" qy="6.639073E-02" qz="-0.9977883" qw="-2.182424E-04"/>
@@ -1216,7 +1352,7 @@
 					<position x="0" y="77.54224" z="-840.3771"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_002" group="group_front_mid_down" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_002" group="group_front_mid_down" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-2.975464E-04" y="-106.1998" z="838.0213"/>
 					<quaternion qx="-3.300423E-03" qy="3.28738E-07" qz="-0.9999946" qw="8.770963E-07"/>
@@ -1228,7 +1364,7 @@
 					<quaternion qx="-3.300335E-03" qy="-1.477033E-07" qz="-0.9999945" qw="9.978786E-07"/>
 				</offset>
 			</connection>
-			<connection name="con_turret_001" group="group_front_mid_down" tags="turret medium standard missile hittable combat">
+			<connection name="con_turret_001" group="group_front_mid_down" tags="turret medium standard hittable combat">
 				<offset>
 					<position x="-2.975464E-04" y="-105.8327" z="875.7616"/>
 					<quaternion qx="-3.300423E-03" qy="3.28738E-07" qz="-0.9999946" qw="8.770963E-07"/>
@@ -1657,7 +1793,7 @@
 					<quaternion qw="-0.6447524042996395" qx="-0.023002065220789743" qy="0.02930065014101131" qz="0.7634832768612072"/>
 				</offset>
 			</connection>
-			<connection group="bottomnew" name="con_l_turret_bottomnew_1" tags="turret large standard highpower hittable splonly combat">
+			<connection group="bottomnew" name="con_l_turret_bottomnew_1" tags="turret large standard hittable splonly combat">
 				<offset>
 					<position x="-0.0" y="-137.346" z="-120.77310000000001"/>
 					<quaternion qw="6.732051033795384e-07" qx="-0.0" qy="0.0" qz="-0.9999999999997734"/>

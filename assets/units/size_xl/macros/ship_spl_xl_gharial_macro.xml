@@ -22,7 +22,7 @@
         <angular value="0.15" />
       </jerk>
       <explosiondamage value="1500" shield="7500" />
-      <storage missile="300" unit="16" />
+      <storage missile="3000" unit="16" />
       <hull max="1342000" />
       <secrecy level="2" />
       <steeringcurve>
@@ -44,7 +44,7 @@
       <radar range="50000" />
       <threatscore value="45" />
       <modifiers>
-        <shield capacity="2.0" />
+        <shield capacity="1.66" />
       </modifiers>
     </properties>
     <connections>
@@ -54,7 +54,7 @@
       <connection ref="con_dock_xs">
         <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
       </connection>
-      <connection ref="con_launchtube_arg_s_01_a">
+<!--      <connection ref="con_launchtube_arg_s_01_a">
         <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
       </connection>
       <connection ref="con_launchtube_arg_s_01_b">
@@ -77,7 +77,7 @@
       </connection>
       <connection ref="con_launchtube_arg_s_01_h">
         <macro ref="launchtube_arg_s_01_macro" connection="Connection02" />
-      </connection>
+      </connection>-->
       <connection ref="con_shipstorage_01">
         <macro ref="shipstorage_gen_s_cap12_macro" connection="object" />
       </connection>

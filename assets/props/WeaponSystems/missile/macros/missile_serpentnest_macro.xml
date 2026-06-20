@@ -4,14 +4,14 @@
 <component ref="missile_medium" />
 <properties>
 <identification name="{6699, 1306}" basename="{6699, 1307}" description="{6699, 1308}" />
-<ammunition value="1" />
-<missile amount="1" barrelamount="9" delay="0.15" angle="5" lifetime="60" range="18000" guided="1" retarget="1" icon="hud_ms_swarm_heavy_mk1" tags="serpentnest"/>
-<explosiondamage value="4000" />
-<reload time="35" />
+<ammunition value="9" reload="15"/>
+<missile amount="1" barrelamount="1" angle="5" lifetime="60" range="18000" guided="1" retarget="1" icon="hud_ms_ter_l_flagship_01_light_mk1" tags="serpentnest"/>
+<explosiondamage value="2000" />
+<reload time="0.25" />
 <hull max="2" />
 <effects>
 <explosion ref="missile_explosion_medium_01" />
-<launch ref="muzzle_gen_cruise" />
+<launch ref="missile_flagship_muzzle" />
 </effects>
 <weapon system="missile_guided" />
 <countermeasure resilience="0.94" />
