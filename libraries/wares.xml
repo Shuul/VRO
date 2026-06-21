@@ -977,7 +977,7 @@ __________________ -->
       <restriction licence="capitalship" />
       <owner faction="terran" />
     </ware>
-    
+
     <ware id="weapon_missile_lint_kitsune_ware" name="{654612,10}" description="{654612,10}" group="weapons" transport="equipment" volume="1" tags="equipment weapon">
       <price min="2423602" average="2851296" max="3278990" />
       <production time="10" amount="1" method="default" name="{20206,901}">
@@ -1037,7 +1037,7 @@ __________________ -->
       <use threshold="1.0" />
       <owner faction="pioneers" />
       <owner faction="terran" />
-    </ware> 
+    </ware>
 
     <!-- SIMON TERRAN SHIPS -->
     <!-- <ware id="ship_ter_l_shikoku" name="{20101,63801}" description="{6699,1911}" group="ships_terran" transport="ship" volume="1" tags="ship">
@@ -2937,7 +2937,7 @@ __________________ -->
       <owner faction="ministry" />
     </ware>
 
-     <ware id="ship_spl_xl_gharial" name="{20101,42501}" description="{20101,42501}" group="ships_split" transport="ship" volume="1" tags="ship">
+    <ware id="ship_spl_xl_gharial" name="{20101,42501}" description="{20101,42501}" group="ships_split" transport="ship" volume="1" tags="ship">
       <price min="45000000" average="50000000" max="55000000" />
       <production time="575" amount="1" method="default" name="{20206,101}">
         <primary>
@@ -2951,7 +2951,7 @@ __________________ -->
       <owner faction="split" />
       <owner faction="court" />
       <owner faction="fallensplit" />
-    </ware> 
+    </ware>
 
     <!-- Shrike-->
     <ware id="ship_tel_l_shrike" name="{20101,21701}" description="{6699,1904}" group="ships_teladi" transport="ship" size="ship" volume="1" tags="ship">
@@ -3344,6 +3344,14 @@ __________________ -->
           <ware ware="weaponcomponents" amount="10" />
         </primary>
       </production>
+      <production time="5" amount="1" method="terran" name="{20206,901}">
+        <primary>
+          <ware ware="computronicsubstrate" amount="3" />
+          <ware ware="energycells" amount="66" />
+          <ware ware="metallicmicrolattice" amount="21" />
+          <ware ware="siliconcarbide" amount="3" />
+        </primary>
+      </production>
       <component ref="weapon_gen_s_torpedo_med_02_mk1_macro" />
       <icon video="weapon_gen_s_torpedo_01_mk1_macro" />
       <restriction licence="militaryequipment" />
@@ -3376,6 +3384,14 @@ __________________ -->
           <ware ware="advancedelectronics" amount="20" />
           <ware ware="energycells" amount="139" />
           <ware ware="weaponcomponents" amount="20" />
+        </primary>
+      </production>
+      <production time="5" amount="1" method="terran" name="{20206,901}">
+        <primary>
+          <ware ware="computronicsubstrate" amount="3" />
+          <ware ware="energycells" amount="105" />
+          <ware ware="metallicmicrolattice" amount="40" />
+          <ware ware="siliconcarbide" amount="5" />
         </primary>
       </production>
       <component ref="weapon_gen_m_torpedo_med_02_mk1_macro" />
