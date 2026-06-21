@@ -5,7 +5,7 @@
     <properties>
       <identification name="{654612,220}" basename="{654612,220}" description="{654612,220}" />
       <ammunition value="1" />
-      <missile amount="1" barrelamount="1" lifetime="45" range="16000" guided="1" icon="hud_ms_torpedo_heavy_mk1" retarget="1" tags="cruise_lint" />
+      <missile amount="1" barrelamount="1" lifetime="45" range="16000" guided="1" swarm="0" icon="hud_ms_torpedo_heavy_mk1" retarget="0" tags="cruise_lint" targetable="1" />
       <explosiondamage value="15000" hull="20000" shielddisruption="10" />
       <reload time="60" />
       <hull max="200" />
@@ -13,13 +13,14 @@
         <explosion ref="explosion_missile_cruise" />
         <launch ref="muzzle_gen_cruise" />
       </effects>
-      <weapon system="missile_guided" />
+      <weapon system="torpedo" />
       <countermeasure resilience="1" />
-      <physics mass="8">
-        <inertia pitch="15" yaw="15" roll="15" />
-        <drag forward="0.034" reverse="60" horizontal="60" vertical="60" pitch="40" yaw="40" roll="40" />
+      <physics mass="7">
+        <inertia pitch="5" yaw="5" roll="5" />
+        <drag forward="0.034" reverse="2" horizontal="10" vertical="10" pitch="30" yaw="30" roll="30" />
+        <accfactors reverse="3" forward="3" />
       </physics>
-      <lock time="5" range="16000" />
+      <lock time="3" range="16000"/>
     </properties>
     <connections>
       <connection ref="con_engine01">

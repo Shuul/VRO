@@ -5,10 +5,10 @@
 <properties>
 <identification name="{6699, 1279}" basename="{6699, 1280}" description="{6699, 1281}" />
 <ammunition value="1" />
-<missile amount="1" barrelamount="1" lifetime="80" range="12000" swarm="0" guided="1"  retarget="0" icon="hud_ms_torpedo_heavy_mk1" tags="htorpedo"/>
+<missile amount="1" barrelamount="1" lifetime="80" range="12000" swarm="0" guided="1"  retarget="0" icon="hud_ms_torpedo_heavy_mk1" tags="htorpedo" targetable="1"/>
 <explosiondamage value="48000" shielddisruption="10"/>
 <reload time="35" />
-<hull max="250" />
+<hull max="150" />
 <effects>
 <explosion ref="explosion_missile_aoe_large" />
 <launch ref="muzzle_missile_torpedo" />
@@ -17,7 +17,7 @@
 <countermeasure resilience="0.96" />
 <physics mass="7">
 <inertia pitch="15" yaw="15" roll="15" />
-<drag forward="0.42" reverse="16" horizontal="16" vertical="16" pitch="8" yaw="8" roll="8" />
+<drag forward="0.42" reverse="16" horizontal="12" vertical="12" pitch="8" yaw="8" roll="8" />
 </physics>
 <lock time="5" range="15000"/>
 </properties>
