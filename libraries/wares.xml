@@ -3069,6 +3069,19 @@ __________________ -->
       <owner faction="argon" />
     </ware>
 
+		<ware id="axes_kea2_ware" name="{20101,21501}" description="{20101,21511}" group="ships_teladi" transport="ship" volume="1" tags="ship">
+			<price min="878951" average="1022295" max="1125639" />
+			<production time="20" amount="1" method="default" name="{20206,101}">
+				<primary>
+					<ware ware="energycells" amount="150" />
+					<ware ware="hullparts" amount="1020" />
+				</primary>
+			</production>
+			<component ref="axes_kea2_macro" amount="1" />
+			<restriction licence="militaryship" />
+			<owner faction="teladi" />
+		</ware>
+
     <!-- Panther-->
     <ware id="ship_spl_l_carrier_lc4_01" name="{20101,41301}" description="{6699,1905}" group="ships_split" transport="ship" size="ship" volume="1" tags="ship">
       <price min="6195057" average="6858890" max="7522724" />

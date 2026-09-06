@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<macros>
+  <macro name="axes_kea2_macro" class="ship_m">
+    <component ref="axes_kea2" />
+    <properties>
+      <identification name="{20101,21501}" basename="{20101,21501}" description="{20101,21511}" icon="ship_m_fight_01" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="2000" />
+      <storage missile="0" />
+      <hull max="51000" />
+      <secrecy level="2" />
+      <purpose primary="fight" />
+      <people capacity="12" />
+      <physics mass="40">
+        <inertia pitch="12" yaw="12" roll="12" />
+        <drag forward="22" reverse="44" horizontal="15.6" vertical="15.6" pitch="14" yaw="14" roll="14" />
+        <accfactors forward="1.0" reverse="1.2" horizontal="1.15" vertical="1.15" />
+      </physics>
+      <thruster tags="medium" />
+      <ship type="corvette" />
+      <sound_occlusion inside="0.4" />
+      <modifiers>
+        <shield capacity="1.2" />
+      </modifiers>
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="storage_arg_m_frigate_01_b_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>
